@@ -1,0 +1,16 @@
+"lycan_summon_wolves"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "wolf_damage"				"36 44 52 70"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "wolf_hp"					"350 450 600 850"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+"bounty_hunter_track"
+{
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "target_crit_multiplier"	"140 170 200"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_gold_radius"		    "0"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_gold_self"		    "0"
+            "LinkedSpecialBonus"	    "special_bonus_unique_bounty_hunter_3"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_gold"			    "0"
+            "LinkedSpecialBonus"	    "special_bonus_unique_bounty_hunter_3"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"				    "30.0"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cast_range_tooltip"		"1000"
+        }
+        "07"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "gold_steal"			    "0.0"
+        }			
+        "08"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_move_speed_pct"	    "16 18 20"
+        }
+
+    }
+}

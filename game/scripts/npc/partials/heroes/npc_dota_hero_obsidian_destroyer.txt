@@ -1,0 +1,7 @@
+"npc_dota_hero_obsidian_destroyer"
+{
+    "Ability3"		"obsidian_destroyer_essence_aura"
+    "Ability6"		"obsidian_destroyer_custom_mana_bonus"
+    "Ability15"		"special_bonus_mp_700"
+    "Ability16"		"special_bonus_attack_speed_120"
+}

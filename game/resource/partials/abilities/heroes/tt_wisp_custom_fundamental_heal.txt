@@ -1,0 +1,4 @@
+"DOTA_Tooltip_Ability_wisp_custom_fundamental_heal"						"Fundamental Heal"
+"DOTA_Tooltip_Ability_wisp_custom_fundamental_heal_Description"			"Io heals the target ally by a flat amount. Heal is double if used on the same hero twice in a row."
+"DOTA_Tooltip_Ability_wisp_custom_fundamental_heal_base_heal"		    "HEAL:"
+"DOTA_Tooltip_Ability_wisp_custom_fundamental_heal_Lore"				"Io is the embodiment of the mystery of the universe."

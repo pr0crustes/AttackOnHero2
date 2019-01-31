@@ -1,0 +1,4 @@
+"npc_dota_hero_legion_commander"
+{
+    "Ability6"          "sven_gods_strength"
+}

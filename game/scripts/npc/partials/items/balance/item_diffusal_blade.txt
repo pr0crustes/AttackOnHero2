@@ -1,0 +1,26 @@
+"item_diffusal_blade"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "feedback_mana_burn"	                "16"
+        }
+        "04"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "feedback_mana_burn_illusion_melee"	    "10"
+        }
+        "05"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "feedback_mana_burn_illusion_ranged"	"7"
+        }
+        "09"
+        {
+            "var_type"				                "FIELD_FLOAT"
+            "damage_per_burn"		                "2.0"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+"item_recipe_burning_radiance"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_recipe_radiance"
+
+    "ItemCost"						"700"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_burning_radiance"
+    "ItemRequirements"
+    {
+        "01"						"item_radiance;item_relic"
+    }
+}
+
+
+
+"item_burning_radiance"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_radiance"
+    "AbilityTextureName"		    "burning_radiance"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+    "AbilityCastRange" 				"700"
+
+    "ItemShopTags"					"damage"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"radiance"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ShouldBeSuggested"				"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"100"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_damage"			"300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_damage_illusions"	"35"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blind_pct"				"15"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_radius"			"700"
+        }
+    }
+}

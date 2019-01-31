@@ -1,0 +1,22 @@
+"invoker_alacrity"
+{
+    "AbilityCooldown"				"12"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_attack_speed"		"20 50 80 110 140 180 200 230"
+            "levelkey"					"wexlevel"
+            "LinkedSpecialBonus"		"special_bonus_unique_invoker_5"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_damage"				"25 40 55 70 85 100 115 130"
+            "levelkey"					"exortlevel"
+            "LinkedSpecialBonus"		"special_bonus_unique_invoker_5"
+        }
+    }
+}

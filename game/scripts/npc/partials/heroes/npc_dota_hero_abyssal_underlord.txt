@@ -1,0 +1,5 @@
+"npc_dota_hero_abyssal_underlord"
+{
+    "Ability6"		"abyssal_underlord_custom_bend"
+    "Ability7"		"generic_hidden"
+}

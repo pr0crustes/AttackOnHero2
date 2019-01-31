@@ -1,0 +1,13 @@
+"lycan_feral_impulse"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_hp_regen"		"3 5 7 9"
+            "LinkedSpecialBonus"	"special_bonus_unique_lycan_3"
+        }
+
+    }
+}

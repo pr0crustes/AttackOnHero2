@@ -1,0 +1,19 @@
+"leshrac_diabolic_edict"
+{
+    "AbilityDuration"				"50"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "num_explosions"		"200"
+            "LinkedSpecialBonus"	"special_bonus_unique_leshrac_1"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration_tooltip"		"100"
+        }
+    }
+}

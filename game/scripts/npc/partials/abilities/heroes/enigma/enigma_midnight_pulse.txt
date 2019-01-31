@@ -1,0 +1,21 @@
+"enigma_midnight_pulse"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"550"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "damage_percent"			"0.9 1.0 1.1 1.2"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"5"
+        }
+    }
+}

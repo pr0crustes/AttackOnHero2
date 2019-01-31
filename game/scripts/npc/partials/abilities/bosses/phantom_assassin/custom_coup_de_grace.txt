@@ -1,0 +1,26 @@
+"custom_coup_de_grace"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilitySound"					"Hero_PhantomAssassin.CoupDeGrace"
+    "BaseClass"                     "phantom_assassin_coup_de_grace"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_chance"				"25"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_bonus"				"500"
+        }
+    }
+}

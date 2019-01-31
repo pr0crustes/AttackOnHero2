@@ -1,0 +1,82 @@
+"npc_boss_clockwerk"
+{
+    "Model"						"models/heroes/rattletrap/rattletrap.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_Rattletrap"
+    "GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+    "VoiceFile"					"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
+    "ModelScale"				"2.5"
+    "Level"						"29"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+    "AbilityLayout"				"4"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_rattletrap"
+    }
+
+    "Ability1"					"custom_battery_assault"
+    "Ability2"					"custom_missile"
+    "Ability3"                  "omniknight_degen_aura"
+
+    "ArmorPhysical"				"25"
+    "MagicalResistance"			"15"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"450"
+    "AttackDamageMax"			"590"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"1.0"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"205"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"250"
+    "BountyGoldMax"				"350"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+    "RingRadius"				"180"
+    "HealthBarOffset"			"250"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"325"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"120000"
+    "StatusHealthRegen"			"50"
+    "StatusMana"				"5000"
+    "StatusManaRegen"			"20"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "60.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				"custom_battery_assault"
+            }
+            "Ability2"
+            {
+                "Name"				"custom_missile"
+            }
+        }
+        "EquippedItems"
+        {
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef" "12734" }
+            "2" { "ItemDef" "12735" }
+            "3" { "ItemDef" "12736" }
+            "4" { "ItemDef" "12737" }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+"queenofpain_scream_of_pain"
+{
+    "AbilityCooldown"				"8.0 7.0 6.0 5.0"
+
+    "AbilityDamage"					"100 200 300 400"
+}

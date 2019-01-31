@@ -1,0 +1,23 @@
+"npc_boss_razor"                     "Razor (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_static_link"										"Static Link"
+"DOTA_Tooltip_ability_custom_static_link_Description"							"Creates a charged link between Razor and an enemy Hero, stealing damage from the target and giving it to Razor."
+"DOTA_Tooltip_ability_custom_static_link_Lore"									"Razor's polarity channels electricity into his being, draining the power of his opposition."
+"DOTA_Tooltip_ability_custom_static_link_Note0"									"The link is broken when either unit dies or the distance between them becomes greater than 800 (1020 with Aether Lens)."
+"DOTA_Tooltip_ability_custom_static_link_Note1"									"Can target Spell Immune units."
+"DOTA_Tooltip_ability_custom_static_link_drain_rate"							"DAMAGE DRAIN RATE:"
+"DOTA_Tooltip_ability_custom_static_link_drain_length"							"LINK DURATION:"
+"DOTA_Tooltip_ability_custom_static_link_drain_duration"						"BUFF DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_eye_of_the_storm"									"Eye of the Storm"
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_Description"						"A powerful lightning storm strikes out at enemy units with the lowest health, dealing damage and reducing their armor.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_Lore"								"Ride the lightning."
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_Note0"							"Each blast targets the lowest health enemy unit within range."
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_Note1"							"Eye of the Storm will prioritize striking static linked heroes."
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_radius"							"RADIUS:"
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_duration"							"DURATION:"
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_strike_interval"					"STRIKE INTERVAL:"
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_armor_reduction"					"ARMOR REDUCTION:"
+"DOTA_Tooltip_ability_custom_eye_of_the_storm_damage"							"DAMAGE:"

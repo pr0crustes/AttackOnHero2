@@ -1,0 +1,43 @@
+"clinkz_custom_multiattack"
+{
+    "BaseClass"                 "ability_datadriven"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"        "clinkz_burning_army"
+
+    "AbilityCastPoint"          "0.35"
+    "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCastRange"          "800"
+
+    "AbilityCooldown"           "25 20 15"
+
+    "AbilityManaCost"           "150 200 250"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "attack_count"          "10 12 14"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "interval"              "0.2"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/clinkz_custom_multiattack.lua"
+            "Function"			"cast_clinkz_custom_multiattack"
+            "Target"			"TARGET"
+        }
+    }
+}

@@ -1,0 +1,106 @@
+"storm_spirit_custom_overload"
+{
+    "BaseClass"						"ability_datadriven"
+
+    "AbilityTextureName"			"storm_spirit_overload"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage"						"30 50 90 170"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "radius"					    "300"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "duration"					    "10.0"
+        }
+    }
+
+    
+    "Modifiers"
+    {
+        "modifier_storm_spirit_custom_overload"
+        {
+            "Passive"						"1"
+            "IsPurgable"					"0"
+            "IsHidden"						"1"
+            "IsBuff"						"1"
+            "Attributes"					"MODIFIER_ATTRIBUTE_PERMANENT"
+
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/heroes/storm_spirit_custom_overload.lua"
+                    "Function"				"on_attack_landed"
+                }
+            }
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/heroes/storm_spirit_custom_overload.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
+        }
+
+        "modifier_storm_spirit_custom_overload_hud"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "AbilityTextureName"    "storm_spirit_overload"
+        }
+
+        "modifier_storm_spirit_custom_overload_duration"
+        {
+            "IsHidden"				"1"
+            "IsPurgable"			"0"
+            "Duration"              "%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "OnAttackLanded"
+            {
+                "RemoveModifier"
+                {
+                    "Target"		"CASTER"
+                    "ModifierName"	"modifier_storm_spirit_custom_overload_duration"
+                }
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"increate_hud_modifier"
+                    "modifier"          "modifier_storm_spirit_custom_overload_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"decrease_hud_modifier"
+                    "modifier"          "modifier_storm_spirit_custom_overload_hud"
+                }
+            }
+        }
+    }
+}

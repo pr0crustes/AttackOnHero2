@@ -1,0 +1,43 @@
+"terrorblade_custom_consume"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName"		"terrorblade_sunder"
+
+    "AbilityCastPoint"			"0.5"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"			"35.0"
+    "AbilityManaCost"			"150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "heal_base"	            "1 2 3 4"	
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "heal_bonus"	        "4 5 6 7"	
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"            "abilities/heroes/terrorblade_custom_consume.lua"
+            "Function"              "cast_terrorblade_custom_consume"
+        }
+
+        "FireSound"
+        {
+            "Target"				"CASTER"
+            "EffectName"			"Hero_Terrorblade.Sunder.Cast"
+        }
+    }
+}

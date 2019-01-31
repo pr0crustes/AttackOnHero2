@@ -1,0 +1,74 @@
+"npc_boss_deathprophet"
+{
+    "Model"						"models/heroes/death_prophet/death_prophet.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"		            "Hero_DeathProphet"
+    "ModelScale"				"1.4"
+    "Level"						"1"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+
+    "Ability1"					"custom_carrion_swarm"
+
+    "ArmorPhysical"				"2"
+    "MagicalResistance"			"10"
+    
+    "AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackRange"				"600"
+    "ProjectileModel"		    "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+    "ProjectileSpeed"		    "1000"
+
+    "AttackDamageMin"			"50"
+    "AttackDamageMax"			"55"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"1.2"
+    "AttackAnimationPoint"		"0.30"
+    "AttackAcquisitionRange"	"2000"
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"20"
+    "BountyGoldMax"				"30"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"100"
+    "HealthBarOffset"			"240"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"290"
+    "MovementTurnRate"			"0.7"
+    "StatusHealth"				"3500"
+    "StatusHealthRegen"			"2"
+    "StatusMana"				"550"
+    "StatusManaRegen"			"10"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "30.0"
+
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				 "custom_carrion_swarm"
+                "AOE"                "1"
+                "Radius"             "700"
+                "MinimumTargets"     "1"
+            }
+        }
+
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "8571" }
+            "2" { "ItemDef"     "8570" }
+            "3" { "ItemDef"     "8569" }
+            "4" { "ItemDef"     "8568" }
+            "5" { "ItemDef"     "8567" }
+            "6"	{ "ItemDef"     "8566" }
+        }
+    }
+}

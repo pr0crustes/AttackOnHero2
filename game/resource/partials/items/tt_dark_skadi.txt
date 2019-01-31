@@ -1,0 +1,7 @@
+"DOTA_Tooltip_ability_item_dark_skadi"                                      "Dark Skadi"
+"DOTA_Tooltip_ability_item_dark_skadi_Description"							"<h1>Passive: Cold Attack</h1> Attacks lower enemy attack speed by %cold_attack_speed% and movement speed by %cold_movement_speed%%%. <br><br>Lasts %cold_duration_melee% seconds when used by melee heroes, and %cold_duration_ranged% seconds when used by ranged."
+"DOTA_Tooltip_ability_item_dark_skadi_Lore"									"Extremely epic artifact, guarded by the azure dragons."
+"DOTA_Tooltip_ability_item_dark_skadi_Note0"								"Lasts 5 seconds with melee Eye of Skadi, 2.5 seconds with ranged Eye of Skadi."		
+"DOTA_Tooltip_ability_item_dark_skadi_bonus_all_stats"						"+$all"
+"DOTA_Tooltip_ability_item_dark_skadi_bonus_health"							"+$health"
+"DOTA_Tooltip_ability_item_dark_skadi_bonus_mana"							"+$mana"

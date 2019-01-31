@@ -1,0 +1,25 @@
+"pangolier_swashbuckle"
+{
+    "AbilityCooldown"				"12 10 8 6"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				        "FIELD_FLOAT"
+            "attack_interval"		        "0.05"
+        }
+        "05"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "damage"				        "10 20 30 40"
+            "LinkedSpecialBonus"	        "special_bonus_unique_pangolier_3"
+            "CalculateSpellDamageTooltip"	"0"
+        }
+        "08"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "strikes"				        "9 10 11 12"
+        }
+    }
+}

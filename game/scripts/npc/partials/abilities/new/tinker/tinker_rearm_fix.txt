@@ -1,0 +1,28 @@
+"tinker_rearm_fix"
+{
+    "BaseClass"                     "ability_lua"
+    "ScriptFile"                    "abilities/heroes/tinker_rearm_fix.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilitySound"					"Hero_Tinker.Rearm"
+    "AbilityTextureName"		    "tinker_rearm"
+
+    "AbilityCastPoint"				"0.53"
+    "AbilityChannelTime"			"3.0 1.5 0.75"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+    "AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+    
+    "AbilityCooldown"				"3.0"
+
+    "AbilityManaCost"				"100 200 300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "channel_tooltip"		"3.0 1.5 0.75"
+        }
+    }
+}

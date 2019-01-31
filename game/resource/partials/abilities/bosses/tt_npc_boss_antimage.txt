@@ -1,0 +1,32 @@
+"npc_boss_antimage"                     "Antimage (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_aura_mana_drain"				    "Mana Drain Aura"
+"DOTA_Tooltip_ability_custom_aura_mana_drain_Description"       "Every enemy around Antimage looses %drain_pct%%  of its current mana every second."
+"DOTA_Tooltip_ability_custom_aura_mana_drain_radius"            "Radius:"
+
+
+"DOTA_Tooltip_modifier_mana_drain"					            "Mana Drain"
+"DOTA_Tooltip_modifier_mana_drain_Description"		            "Antimage is draining your mana."
+
+
+"DOTA_Tooltip_ability_custom_mana_break"						"Mana Break"
+"DOTA_Tooltip_ability_custom_mana_break_Description"			"Burns an opponent's mana on each attack.  Mana Break deals %damage_per_burn% damage for every point of mana burned."
+"DOTA_Tooltip_ability_custom_mana_break_Lore"					"A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner."
+"DOTA_Tooltip_ability_custom_mana_break_Note0"					"Mana Burn is blocked by spell immunity."
+"DOTA_Tooltip_ability_custom_mana_break_Note1"					"You can lifeleech the damage dealt by this skill with a Lifesteal aura."
+
+
+"DOTA_Tooltip_ability_custom_mana_void"								    "Mana Void"
+"DOTA_Tooltip_ability_custom_mana_void_Description"					    "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned."
+"DOTA_Tooltip_ability_custom_mana_void_Lore"							"After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts."
+"DOTA_Tooltip_ability_custom_mana_void_Note0"							"The stun passes through spell immunity."
+"DOTA_Tooltip_ability_custom_mana_void_Note1"							"Damage is calculated based on the primary target's mana, but applied to all enemies within the area of effect."
+"DOTA_Tooltip_ability_custom_mana_void_mana_void_damage_per_mana"		"DAMAGE:"
+"DOTA_Tooltip_ability_custom_mana_void_mana_void_ministun"				"STUN DURATION:"
+"DOTA_Tooltip_ability_custom_mana_void_mana_void_aoe_radius"			"RADIUS:"
+
+
+"DOTA_Tooltip_Ability_custom_spell_block"				"Spell Block"
+"DOTA_Tooltip_Ability_custom_spell_block_Description"	"Will block one targeted spell every 2 seconds."
+

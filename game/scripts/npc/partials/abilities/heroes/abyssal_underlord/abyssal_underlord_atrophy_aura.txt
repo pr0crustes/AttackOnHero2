@@ -1,0 +1,11 @@
+"abyssal_underlord_atrophy_aura"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage_reduction_pct"			"5 10 15 20"
+        }
+    }
+}

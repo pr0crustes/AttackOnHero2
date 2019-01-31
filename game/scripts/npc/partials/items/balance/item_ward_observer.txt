@@ -1,0 +1,19 @@
+"item_ward_observer"
+{
+    "ItemStockMax"					"10"
+    "ItemStockTime"					"60.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "lifetime"				        "900"
+        }
+        "04"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "duration_minutes_tooltip"		"15"
+        }
+    }
+}

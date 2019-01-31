@@ -1,0 +1,32 @@
+"custom_berserkers_call"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "BaseClass"                     "axe_berserkers_call"
+
+    "AbilityCastPoint"				"0.4"
+
+    "AbilityCooldown"				"8"
+    "AbilityManaCost"				"0"	
+    
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"350"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"15"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"3.5"
+        }	
+    }
+}

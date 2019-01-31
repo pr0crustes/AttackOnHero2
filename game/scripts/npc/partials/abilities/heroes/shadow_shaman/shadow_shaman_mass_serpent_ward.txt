@@ -1,0 +1,13 @@
+"shadow_shaman_mass_serpent_ward"
+{
+    "AbilityCooldown"				"80 70 60"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"25.0"
+        }
+    }
+}

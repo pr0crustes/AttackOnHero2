@@ -1,0 +1,12 @@
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence"						    "Dark Presence"
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence_Description"			    "Provides an aura that increases allies health regen while reducing the regen of enemies."
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence_Lore"				    "Enigma has a dark presence."
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence_regen_bonus"		        "Ally Regen:"
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence_regen_red"		        "Enemy Regen Reduction:"
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence_radius"		            "Aura Radius:"
+
+"DOTA_Tooltip_modifier_enigma_custom_dark_presence_ally"					"Dark Presence"
+"DOTA_Tooltip_modifier_enigma_custom_dark_presence_ally_Description"		"Enigma's presence is increasing health regen by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%."
+
+"DOTA_Tooltip_modifier_enigma_custom_dark_presence_enemy"					"Dark Presence"
+"DOTA_Tooltip_modifier_enigma_custom_dark_presence_enemy_Description"		"Enigma's presence is reducing health regen by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%."

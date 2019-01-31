@@ -1,0 +1,61 @@
+"doom_custom_warbringer"
+{
+    "BaseClass"                 "ability_datadriven"
+    "ID"                        "$ID"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"        "doom_bringer_doom"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "regen_bonus"           "20 40 60"
+        }
+       "02"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "armor_bonus"           "4 8 12"
+        }
+        "03"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "buff_duration"         "1.0 1.5 2.0"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_custom_doom_warbringer"
+        {
+            "Passive"           "1"
+            "IsBuff"            "1"
+            "IsHidden"          "1"
+            "IsPurgable"        "0"
+
+            "OnAttackLanded"
+            {
+                "ApplyModifier"
+                {
+                    "ModifierName"	"modifier_custom_doom_warbringer_buff"
+                    "Target"		"CASTER"
+                }
+            }
+        }
+
+        "modifier_custom_doom_warbringer_buff"
+        {
+            "IsBuff"            "1"
+            "IsHidden"          "1"
+            "IsPurgable"        "0"
+            "Duration"          "%buff_duration"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"        "%regen_bonus"
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
+            }
+        }
+    }
+}

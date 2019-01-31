@@ -1,0 +1,21 @@
+"elder_titan_natural_order"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"350"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "armor_reduction_pct"	    "5 10 15 20"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "magic_resistance_pct"		"5 10 15 20"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+"monkey_king_boundless_strike"
+{
+    "AbilityCooldown"				"18"
+}

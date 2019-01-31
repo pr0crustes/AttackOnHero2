@@ -1,0 +1,16 @@
+"pangolier_lucky_shot"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chance_pct"			"10"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"0.5 1 1.5 2"
+        }
+    }
+}

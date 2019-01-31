@@ -1,0 +1,1 @@
+"npc_custom_wolf"                     "Custom Wolf (Boss)"

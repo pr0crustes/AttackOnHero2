@@ -1,0 +1,11 @@
+"phantom_assassin_coup_de_grace"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_bonus"				"250 350 500"
+        }
+    }
+}

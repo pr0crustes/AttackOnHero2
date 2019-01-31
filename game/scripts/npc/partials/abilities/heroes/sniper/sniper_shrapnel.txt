@@ -1,0 +1,17 @@
+"sniper_shrapnel"
+{
+    "AbilitySpecial"
+    {
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"5"
+            "LinkedSpecialBonus"	"special_bonus_unique_sniper_2"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "charge_restore_time"	"30"
+        }
+    }
+}

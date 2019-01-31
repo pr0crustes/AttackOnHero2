@@ -1,0 +1,20 @@
+"riki_custom_dagger"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/heroes/riki_custom_dagger.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"			"riki_permanent_invisibility"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "agi_multiplier"		"0.2 0.5 1.0 1.5"
+            "LinkedSpecialBonus"    "riki_custom_bonus_unique_1"
+        }
+    }
+}

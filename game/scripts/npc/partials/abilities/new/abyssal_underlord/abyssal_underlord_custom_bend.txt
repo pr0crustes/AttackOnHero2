@@ -1,0 +1,60 @@
+"abyssal_underlord_custom_bend"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			"abyssal_underlord_dark_rift"
+
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"20.0"
+
+    "AbilityManaCost"				"150 100 50"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"	                "2.0 2.5 3.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "ModifierName"	"modifier_custom_bend_buff"
+            "Target"		"CASTER"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_custom_bend_buff" 
+        {
+            "IsBuff"	    "1"
+            "Duration"      "%duration"
+            
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/units/heroes/heroes_underlord/abyssal_underlord_darkrift_target.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                }
+                "FireSound"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "Hero_AbyssalUnderlord.DarkRift.Complete"
+                }
+            }
+
+            "States"
+            {
+                "MODIFIER_STATE_MAGIC_IMMUNE"			"MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}

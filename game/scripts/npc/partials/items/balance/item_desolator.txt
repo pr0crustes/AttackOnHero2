@@ -1,0 +1,21 @@
+"item_desolator"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"50"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "corruption_armor"		"-5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "corruption_duration"	"15.0"
+        }
+    }
+}

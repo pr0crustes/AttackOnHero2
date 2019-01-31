@@ -1,0 +1,73 @@
+"witch_doctor_custom_death_skull"
+{
+    "BaseClass"					"ability_datadriven"
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"		"witch_doctor_death_ward"
+
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+    "AbilityChannelAnimation"   "ACT_DOTA_CHANNEL_ABILITY_4"
+
+    "HasScepterUpgrade"			"1"
+
+    "AbilityCastPoint"			"0.3"
+    "AbilityCastRange"			"1500"
+    "AbilityChannelTime"		"8.0"
+    "AbilityCooldown"			"60.0"
+    "AbilityManaCost"			"150 250 300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "300 500 700"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "width"	                "100"			
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "velocity"	            "600"			
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "interval"	            "1.0"			
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"		"Hero_WitchDoctor.Death_WardBuild"
+            "Target"			"CASTER"
+        }
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/witch_doctor_custom_death_skull.lua"
+            "Function"			"cast_death_skull"
+            "Target"			"POINT"
+        }
+        
+    }
+
+    "OnProjectileHitUnit"
+    {
+        "FireSound"
+        {
+            "EffectName"		"Hero_WitchDoctor_Ward.ProjectileImpact"
+            "Target"			"TARGET"
+        }
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/witch_doctor_custom_death_skull.lua"
+            "Function"			"on_hit"
+        }
+    }
+}

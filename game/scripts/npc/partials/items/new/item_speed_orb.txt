@@ -1,0 +1,53 @@
+"item_speed_orb"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_datadriven"
+    
+    "AbilityTextureName"		    "speed_orb"
+
+    "ItemCost"						"800"	
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "ItemShopTags"					"move_speed"
+    "ItemQuality"					"common"
+    "ItemAliases"					"speed"
+
+    "AbilitySpecial"
+    {			
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus"         		"25"
+        }
+    }
+
+    "ItemCastOnPickup"				"1"
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"items/consumables.lua"
+            "Function"				"item_consumable_used"
+            "modifier"              "modifier_item_speed_orb_consumed"
+        }
+        "FireSound"
+        {
+            "EffectName"			"DOTA_Item.MoonShard.Consume"
+            "Target"				"CASTER"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_speed_orb_consumed"
+        {
+            "IsBuff"			"1"
+            "Attributes"		"MODIFIER_ATTRIBUTE_PERMANENT"
+            "TextureName"		"item_speed_orb"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"		"%bonus"
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+"custom_wave_of_silence"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "BaseClass"						"drow_ranger_wave_of_silence"
+
+    "AbilityCastRange"				"900"
+    "AbilityCastPoint"				"0.25"
+    "AbilityCooldown"				"10"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "wave_speed"		    "2000.0"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "wave_range_tooltip"	"1300"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "wave_width"		    "350"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "silence_duration"	    "5"
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "knockback_distance_max"	"500"
+        }
+        "06"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "knockback_duration"    "0.6"
+        }
+    }
+}

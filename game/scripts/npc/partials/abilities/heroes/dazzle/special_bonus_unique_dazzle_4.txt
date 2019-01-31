@@ -1,0 +1,11 @@
+"special_bonus_unique_dazzle_4"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "value"				"0.1"
+        }
+    }
+}

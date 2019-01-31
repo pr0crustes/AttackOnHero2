@@ -1,0 +1,11 @@
+"abaddon_frostmourne"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "hit_count"				"6"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+"DOTA_Tooltip_Ability_item_tome_agi"					        "Agility Tome"
+"DOTA_Tooltip_Ability_item_tome_agi_Description"		        "Permanently increases your agility by %bonus%."
+"DOTA_Tooltip_Ability_item_tome_agi_Lore"					    "Money is agility."
+
+"DOTA_Tooltip_modifier_item_tome_agi_consumed"					"Agility Bonus"
+"DOTA_Tooltip_modifier_item_tome_agi_consumed_Description"		"Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%."
+
+
+"DOTA_Tooltip_Ability_item_tome_int"					        "Intelicenge Tome"
+"DOTA_Tooltip_Ability_item_tome_int_Description"		        "Permanently increases your inteligence by %bonus%."
+"DOTA_Tooltip_Ability_item_tome_int_Lore"					    "Money is inteligence."
+
+"DOTA_Tooltip_modifier_item_tome_int_consumed"					"Inteligence Bonus"
+"DOTA_Tooltip_modifier_item_tome_int_consumed_Description"		"Inteligence increased by %dMODIFIER_PROPERTY_STATS_INTELLECT_BONUS%."
+
+
+"DOTA_Tooltip_Ability_item_tome_str"					        "Strength Tome"
+"DOTA_Tooltip_Ability_item_tome_str_Description"		        "Permanently increases your strength by %bonus%."
+"DOTA_Tooltip_Ability_item_tome_str_Lore"					    "Money is strength."
+
+"DOTA_Tooltip_modifier_item_tome_str_consumed"					"Strength Bonus"
+"DOTA_Tooltip_modifier_item_tome_str_consumed_Description"		"Strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."

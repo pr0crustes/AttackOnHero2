@@ -1,0 +1,33 @@
+"npc_boss_kunkka"                     "Kunkka (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_torrent"											"Torrent"
+"DOTA_Tooltip_ability_custom_torrent_Description"								"Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed."
+"DOTA_Tooltip_ability_custom_torrent_Lore"										"An ancestral rush of water explodes from the center of the world, called upon by the Admiral."
+"DOTA_Tooltip_ability_custom_torrent_Note0"										"The initial bubble effect is only visible to allies."
+"DOTA_Tooltip_ability_custom_torrent_Note1"										"Units tossed in the air will be stunned and still able to be attacked."
+"DOTA_Tooltip_ability_custom_torrent_delay"										"DELAY:"
+"DOTA_Tooltip_ability_custom_torrent_slow_duration"								"SLOW DURATION:"
+"DOTA_Tooltip_ability_custom_torrent_stun_duration"								"STUN DURATION:"
+"DOTA_Tooltip_ability_custom_torrent_movespeed_bonus"							"%MOVE SLOW:"
+"DOTA_Tooltip_ability_custom_torrent_radius"									"RADIUS:"
+"DOTA_Tooltip_ability_custom_torrent_torrent_damage"							"DAMAGE:"
+
+
+"DOTA_Tooltip_ability_custom_tidebringer"				    "Tidebringer"
+"DOTA_Tooltip_ability_custom_tidebringer_Description"		"Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike."
+"DOTA_Tooltip_ability_custom_tidebringer_Lore"				"A lost Claddish soul inhabits Kunkka's trusty Tidebringer, empowering it to destroy demons of the Cataract."
+
+
+"DOTA_Tooltip_ability_custom_ghostship"											"Ghostship"
+"DOTA_Tooltip_ability_custom_ghostship_Description"								"Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage."
+"DOTA_Tooltip_ability_custom_ghostship_Lore"									"The final ship of the Claddish Navy is nothing but a phantom, but it is all too real to the enemies of the Admiral."
+"DOTA_Tooltip_ability_custom_ghostship_tooltip_delay"							"IMPACT DELAY:"
+"DOTA_Tooltip_ability_custom_ghostship_movespeed_bonus"							"%RUM BONUS SPEED:"
+"DOTA_Tooltip_ability_custom_ghostship_ghostship_distance"						"RANGE:"
+"DOTA_Tooltip_ability_custom_ghostship_ghostship_width"							"WIDTH:"
+"DOTA_Tooltip_ability_custom_ghostship_stun_duration"							"STUN DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_summon_ancient_apparition"							"Ancient Apparition"
+"DOTA_Tooltip_ability_custom_summon_ancient_apparition_Description"				"Summons an Ancient Apparition to help."

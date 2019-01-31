@@ -1,0 +1,150 @@
+"custom_quill_spray"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"			"bristleback_quill_spray"
+    
+    "precache"
+    {
+        "particle"				"particles/units/heroes/hero_bristleback/bristleback_quill_spray.vpcf"
+        "particle"				"particles/units/heroes/hero_bristleback/bristleback_quill_spray_impact.vpcf"
+        "particle"				"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit.vpcf"
+    }
+    
+    "AbilityCastRange"				"600"
+    "AbilityCastPoint"				"0.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"600"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "base_damage"		    "50.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stack_damage"      	"50.0"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stack_duration"    	"10"
+        }
+    }
+
+    "OnOwnerDied"
+    {
+        "ApplyModifier"
+        {
+            "Target"
+            {
+                "Center"	    "CASTER"
+                "Radius"	    "%radius"
+                "Teams"		    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types"		    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
+            "ModifierName"	    "modifier_custom_quill_spray_stack"
+        }
+
+        "FireEffect"
+        {
+            "EffectName"		"particles/units/heroes/hero_bristleback/bristleback_quill_spray.vpcf"
+            "EffectAttachType"	"attach_hitloc"
+            "EffectRadius"		"%radius"
+            "Target"
+            {
+                "Center"	    "CASTER"
+                "Flags"		    "DOTA_UNIT_TARGET_FLAG_DEAD"
+            }
+        }
+
+        "FireSound"
+        {
+            "EffectName"	    "Hero_Bristleback.QuillSpray.Cast"
+            "Target"
+            {
+                "Center"	    "CASTER"
+                "Flags"		    "DOTA_UNIT_TARGET_FLAG_DEAD"
+            }
+        }
+
+        "FireSound"
+        {
+            "EffectName"		"Hero_Bristleback.QuillSpray.Target"
+            "Target"
+            {
+                "Center"	    "CASTER"
+                "Radius"	    "%radius"
+                "Teams"		    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types"		    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
+        }
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_custom_quill_spray_debuff"
+        {
+            "IsDebuff"	    "1"
+            "TextureName"   "bristleback_quill_spray"
+        }
+
+        "modifier_custom_quill_spray_stack"
+        {
+            "IsHidden"		"1"
+            "Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+            "Duration"		"%stack_duration"
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/bosses/custom_quill_spray.lua"
+                    "Function"			"create_stack"
+                    "base_damage"		"%base_damage"
+                    "stack_damage"		"%stack_damage"
+                }
+
+                "FireEffect"
+                {
+                    "EffectName"		"particles/units/heroes/hero_bristleback/bristleback_quill_spray_impact.vpcf"
+                    "EffectAttachType"	"follow_hitloc"
+                    "Target"			"TARGET"
+                }
+
+                "AttachEffect"
+                {
+                    "EffectName"		"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit.vpcf"
+                    "EffectAttachType"	"follow_hitloc"
+                    "Target"			"TARGET"
+
+                    "ControlPointEntities"
+                    {
+                        "TARGET"		"attach_hitloc"
+                        "TARGET"		"attach_hitloc"
+                        "TARGET"		"attach_hitloc"
+                        "TARGET"		"attach_hitloc"
+                    }
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/bosses/custom_quill_spray.lua"
+                    "Function"		"remove_stack"
+                }
+            }
+        }
+    }
+}

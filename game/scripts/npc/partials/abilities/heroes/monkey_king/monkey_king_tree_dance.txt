@@ -1,0 +1,4 @@
+"monkey_king_tree_dance"
+{
+    "AbilityCooldown"				"0.6"
+}

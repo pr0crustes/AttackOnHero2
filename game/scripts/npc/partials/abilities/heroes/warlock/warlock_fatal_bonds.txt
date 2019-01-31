@@ -1,0 +1,11 @@
+"warlock_fatal_bonds"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "count"						"4 5 7 9"
+        }
+    }
+}

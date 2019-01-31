@@ -1,0 +1,58 @@
+"custom_summon_wolves"
+{
+    "BaseClass"				        "ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"			"lycan_summon_wolves"
+
+    "precache"
+    {
+        "soundfile"		"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
+        "particle"		"particles/units/heroes/hero_lycan/lycan_summon_wolves_cast.vpcf"			
+    }	
+    
+    "AbilityCastPoint"				"0.3"
+    "AbilityCooldown"				"12.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "wolf_duration"				"60.0"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "wolf_count"				"6"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"	"Hero_Lycan.SummonWolves"
+            "Target"		"CASTER"
+        }
+
+        "AttachEffect"
+        {
+            "EffectName"	"particles/units/heroes/hero_lycan/lycan_summon_wolves_cast.vpcf"
+            "EffectName"	"start_at_customorigin"
+            "Target"		"CASTER"	
+        }	
+
+        "SpawnUnit"
+        {
+            "UnitName"		"npc_custom_wolf"
+            "Target"		"CASTER"
+            "Duration"		"%wolf_duration"
+            "UnitCount"		"%wolf_count" 
+            "UnitLimit"		"60"
+            "GrantsGold"	"0"
+            "GrantsXP"		"0"
+            "SpawnRadius"	"400"
+        }
+    }
+}

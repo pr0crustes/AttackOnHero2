@@ -1,0 +1,24 @@
+"item_tango"
+{
+    "ItemCost"						"30"
+    "ItemInitialCharges"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "health_regen"			"25.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "buff_duration"			"5.0"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_charges"	    "1"
+        }
+    }
+}

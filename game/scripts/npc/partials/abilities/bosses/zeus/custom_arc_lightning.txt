@@ -1,0 +1,42 @@
+"custom_arc_lightning"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilitySound"					"Hero_Zuus.ArcLightning.Cast"
+    "BaseClass"                     "zuus_arc_lightning"
+
+    "AbilityCastRange"				"1000"
+    "AbilityCastPoint"				"0.2"
+
+    "AbilityCooldown"				"1.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arc_damage"			"300"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"500"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "jump_count"			"15"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "jump_delay"			"0.25"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}

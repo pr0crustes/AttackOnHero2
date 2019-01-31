@@ -1,0 +1,25 @@
+"item_recipe_medallion_of_courage"
+{
+    "ItemCost"						"500"
+}
+
+
+
+"item_medallion_of_courage"
+{
+    "AbilityCooldown"				"14.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "armor_reduction"		"-5"
+        }
+    }
+}

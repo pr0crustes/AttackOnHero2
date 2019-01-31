@@ -1,0 +1,10 @@
+"DOTA_Tooltip_ability_lina_custom_burning_will"									"Burning Will"
+"DOTA_Tooltip_ability_lina_custom_burning_will_Description"						"Lina ignites her own soul, granting herself bonus cooldown reduction and a lower base attack time."
+"DOTA_Tooltip_ability_lina_custom_burning_will_Lore"							"Lina is always on fire."
+"DOTA_Tooltip_ability_lina_custom_burning_will_base_attack_time"                "BASE ATTACK TIME:"
+"DOTA_Tooltip_ability_lina_custom_burning_will_cooldown_reduction"			    "%COOLDOWN REDUCTION:"
+"DOTA_Tooltip_ability_lina_custom_burning_will_duration"					    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_lina_custom_burning_will"                                "Burning Will"
+"DOTA_Tooltip_modifier_lina_custom_burning_will_Description"                    "Receiving cooldown reduction and a base attack time reduction."

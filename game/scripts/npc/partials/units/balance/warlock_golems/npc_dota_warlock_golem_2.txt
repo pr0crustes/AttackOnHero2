@@ -1,0 +1,10 @@
+"npc_dota_warlock_golem_2"
+{										
+    "ArmorPhysical"				"12"
+
+    "AttackDamageMin"			"150"
+    "AttackDamageMax"			"150"
+
+    "StatusHealth"				"5000"
+    "StatusHealthRegen"			"75"
+}

@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_witch_doctor_custom_bonus_unique_1"          "Death Skull shoots twice"

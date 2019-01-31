@@ -1,0 +1,6 @@
+"npc_dota_hero_centaur"
+{
+    "Ability3"		"centaur_custom_return"
+    "Ability14"		"special_bonus_armor_8"
+    "Ability16"     "centaur_custom_bonus_strength"
+}

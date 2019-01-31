@@ -1,0 +1,3 @@
+"DOTA_Tooltip_ability_skeleton_king_custom_reincarnation"								"Reincarnation"
+"DOTA_Tooltip_ability_skeleton_king_custom_reincarnation_Description"					"Wraith King's form regroups after death, allowing him to fully heal when his health drops to zero."
+"DOTA_Tooltip_ability_skeleton_king_custom_reincarnation_Lore"							"Conspirators against the Wraith King wonder why he never stays dead."

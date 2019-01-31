@@ -1,0 +1,52 @@
+"item_tome_str"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_datadriven"
+    
+    "AbilityTextureName"		    "tome_str"
+
+    "ItemCost"						"900"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "ItemQuality"					"common"
+    "ItemAliases"					"str tome"
+
+    "AbilitySpecial"
+    {			
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus"         		"5"
+        }
+    }
+
+    "ItemCastOnPickup"				"1"
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"items/consumables.lua"
+            "Function"				"item_consumable_used"
+            "modifier"              "modifier_item_tome_str_consumed"
+        }
+        "FireSound"
+        {
+            "EffectName"			"DOTA_Item.MoonShard.Consume"
+            "Target"				"CASTER"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_tome_str_consumed"
+        {
+            "IsBuff"			"1"
+            "Attributes"		"MODIFIER_ATTRIBUTE_PERMANENT"
+            "TextureName"		"item_tome_str"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%bonus"
+            }
+        }
+    }
+}

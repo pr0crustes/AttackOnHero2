@@ -1,0 +1,20 @@
+"npc_boss_grimstroke"                     "Grimstroke (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_dark_artistry"								    "Stroke of Fate"
+"DOTA_Tooltip_ability_custom_dark_artistry_Description"					    "Grimstroke paints a path of ink with his brush, damaging and slowing enemies. The damage is increased with each enemy the ink hits."
+"DOTA_Tooltip_ability_custom_dark_artistry_Lore"							"The corruptive force of Grimstroke's ink, drawn from the reservoir of his fallen people, consumes any enemy caught in its path."
+"DOTA_Tooltip_ability_custom_dark_artistry_damage"			                "BASE DAMAGE:"
+"DOTA_Tooltip_ability_custom_dark_artistry_bonus_damage_per_target"	        "DAMAGE INCREMENT PER HIT:"
+"DOTA_Tooltip_ability_custom_dark_artistry_movement_slow_pct"	            "%MOVEMENT SPEED SLOW:"
+"DOTA_Tooltip_ability_custom_dark_artistry_slow_duration"		            "SLOW DURATION:"
+"DOTA_Tooltip_ability_custom_dark_artistry_range_tooltip"			        "RANGE:"
+
+
+"DOTA_Tooltip_ability_custom_ink_creature"								    "Phantom's Embrace"
+"DOTA_Tooltip_ability_custom_ink_creature_Description"					    "Summons a phantom that moves quickly towards the target, latching to it when she arrives. Once latched, the phantom damages and silences. If she survives the full latch duration she rends her victim for heavy damage and refreshes Phantom's Embrace's cooldown."
+"DOTA_Tooltip_ability_custom_ink_creature_Lore"							    "Grimstroke holds no sorrow for the downfall of his people. Only for Yaovhi, she who was most dear to him, does he feel even a semblance of longing."
+"DOTA_Tooltip_ability_custom_ink_creature_latch_duration"			        "LATCH DURATION:"
+"DOTA_Tooltip_ability_custom_ink_creature_destroy_attacks"	                "ATTACKS TO DESTROY:"
+"DOTA_Tooltip_ability_custom_ink_creature_dps_tooltip"	                    "DAMAGE PER SECOND:"
+"DOTA_Tooltip_ability_custom_ink_creature_pop_damage"		                "REND DAMAGE:"

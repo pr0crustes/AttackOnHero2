@@ -1,0 +1,18 @@
+"npc_boss_enigma"                     "Enigma (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_time_dilation"								"Time Dilation"
+"DOTA_Tooltip_ability_custom_time_dilation_Description"					"Faceless Void traps all nearby enemies in a time dilation field for %duration% seconds, freezing their cooldowns and slowing their movement and attack speed by %slow%%% for each cooldown frozen."
+"DOTA_Tooltip_ability_custom_time_dilation_lore"						"For those facing off against Darkterror, each moment seems to stretch into eternity."
+"DOTA_Tooltip_ability_custom_time_dilation_radius"					    "RADIUS:"
+"DOTA_Tooltip_ability_custom_time_dilation_duration"					"DURATION:"
+"DOTA_Tooltip_ability_custom_time_dilation_slow"					    "%SLOW PER COOLDOWN:"
+
+
+"DOTA_Tooltip_ability_custom_black_hole"										"Black Hole"
+"DOTA_Tooltip_ability_custom_black_hole_Description"							"CHANNELED - Summons a vortex that sucks in nearby enemy units.  Enemies affected by Black Hole cannot move, attack, or cast spells.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_black_hole_Lore"									"The ground trembles as Enigma channels his ultimate vortex of destruction, a singularity with the power to end worlds."
+"DOTA_Tooltip_ability_custom_black_hole_Note0"									"Disables enemies through spell immunity."
+"DOTA_Tooltip_ability_custom_black_hole_far_damage"								"DAMAGE PER SECOND:"
+"DOTA_Tooltip_ability_custom_black_hole_far_radius"								"RADIUS:"
+"DOTA_Tooltip_ability_custom_black_hole_duration"								"DURATION:"

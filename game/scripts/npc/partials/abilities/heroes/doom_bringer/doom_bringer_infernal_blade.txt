@@ -1,0 +1,12 @@
+"doom_bringer_infernal_blade"
+{
+	"AbilitySpecial"
+	{
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"burn_damage_pct"		"0.10 0.15 0.20 0.25"
+			"LinkedSpecialBonus"	"special_bonus_unique_doom_1"
+		}
+	}
+}

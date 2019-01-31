@@ -1,0 +1,105 @@
+"item_recipe_desolator_3"
+{
+    "ID"							"$ID"		
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"2500"	
+    "ItemShopTags"					""
+    
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_desolator_3"
+    "ItemRequirements"
+    {
+        "01"						"item_desolator_2;item_demon_edge"
+    }
+}
+
+
+
+"item_desolator_3"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"desolator_3"
+    
+    "ItemCost"						"12900"
+    "ItemShopTags"					"damage;unique"
+    "ItemPurchaseable"				"1"
+    "ItemDroppable"					"1"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"desolator 3"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_damage"			    "170"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "corruption_armor"		    "-14"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "corruption_duration"	    "5.0"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_item_desolator_3"
+        {
+            "Passive"			        "1"
+            "IsHidden"			        "1"
+            "Attributes" 		        "MODIFIER_ATTRIBUTE_MULTIPLE"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"			"%bonus_damage"
+            }
+            
+            "Orb"
+            {
+                "Priority"				"DOTA_ORB_PRIORITY_ITEM"
+                "ProjectileName"		"particles/items_fx/desolator_projectile.vpcf"
+                "CastAttack"			"0"
+            }
+
+            "OnOrbImpact"
+            {
+                "ApplyModifier"
+                {
+                    "Target"			"TARGET"
+                    "ModifierName"		"modifier_item_desolator_3_debuff"
+                }
+
+                "FireSound"
+                {
+                    "EffectName"		"Item_Desolator.Target"
+                    "Target"			"TARGET"
+                }
+            }
+        }
+
+        "modifier_item_desolator_3_debuff"
+        {
+            "Duration"				    "%corruption_duration"
+            "IsDebuff"				    "1"		
+            "Passive"				    "0"
+            "IsHidden"				    "0"
+            "TextureName"		        "item_desolator_3"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%corruption_armor"
+            }
+        }
+    }
+}

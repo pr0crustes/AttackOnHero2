@@ -1,0 +1,50 @@
+"ancient_increase_stats"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityBehavior"			    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"		    "omniknight_repel"
+    "MaxLevel"					    "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "health_base"	        "0"			
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "health_per_round"	    "500"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "armor_base"	        "0"			
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "armor_per_round"	    "1"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_ancient_increase_stats"
+        {
+            "IsHidden"          "1"
+            "Passive"           "1"
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/ancient_increase_stats.lua"
+                    "Function"			"on_created"
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+"item_recipe_trade_kaya_2"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_kaya"
+
+    "ItemCost"						"1500"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_trade_kaya_2"
+
+    "ItemRequirements"
+    {
+        "01"						"item_trade_kaya;item_staff_of_wizardry"
+    }
+}
+
+
+
+"item_trade_kaya_2"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_datadriven"
+    
+    "AbilityTextureName"		    "trade_kaya_2"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"int;mana"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"ky;kaya"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+    
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "stats_reduction"	    "-20"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spell_amp"			    "30"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_trade_kaya"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%stats_reduction"
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"         "%stats_reduction"
+                "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"    "%spell_amp"
+            }
+        } 
+    }
+}

@@ -1,0 +1,57 @@
+"item_recipe_ultimate_butterfly"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_recipe_butterfly"
+
+    "ItemCost"						"925"	
+    "ItemShopTags"					""
+    
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_butterfly"
+    "ItemRequirements"
+    {
+        "01"						"item_butterfly;item_eagle;item_talisman_of_evasion"
+    }
+}
+
+
+
+"item_ultimate_butterfly"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_butterfly"
+
+    "AbilityTextureName"		    "ultimate_butterfly"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemCost"						"13100"
+    "ItemShopTags"					"agi;damage;evasion;attack_speed"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"bfly;butterfly"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_agility"			"60"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"60"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_evasion"			"40"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"60"
+        }
+    }
+}

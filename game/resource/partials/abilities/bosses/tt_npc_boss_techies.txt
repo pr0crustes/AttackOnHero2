@@ -1,0 +1,9 @@
+"npc_boss_techies"                     "Techies (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_suicide"							"Blast Off!"
+"DOTA_Tooltip_ability_custom_suicide_Description"				"Techies hurtle themselves into the enemy's midst, detonating charges upon impact which deal massive area of effect damage and silence enemies."
+"DOTA_Tooltip_ability_custom_suicide_Lore"				        "Where we going?"
+"DOTA_Tooltip_ability_custom_suicide_damage"					"FULL DAMAGE:"
+"DOTA_Tooltip_ability_custom_suicide_radius"				    "RADIUS:"
+"DOTA_Tooltip_ability_custom_suicide_silence_duration"			"SILENCE DURATION:"

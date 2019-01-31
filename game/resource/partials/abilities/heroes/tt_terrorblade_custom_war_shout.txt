@@ -1,0 +1,9 @@
+"DOTA_Tooltip_Ability_terrorblade_custom_war_shout"							"War Shout"
+"DOTA_Tooltip_Ability_terrorblade_custom_war_shout_Description"				"On cast, provides every ally unit in a %radius% radius with bonus attack speed."
+"DOTA_Tooltip_ability_terrorblade_custom_war_shout_duration"				"Duration:"
+"DOTA_Tooltip_ability_terrorblade_custom_war_shout_attack_speed"		    "Attack Speed:"
+"DOTA_Tooltip_ability_terrorblade_custom_war_shout_Lore"				    "War never ends."
+
+
+"DOTA_Tooltip_modifier_terrorblade_custom_war_shout_buff"                    "War Shout"
+"DOTA_Tooltip_modifier_terrorblade_custom_war_shout_buff_description"        "Receiving %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% bonus attack speed."

@@ -1,0 +1,125 @@
+"undying_custom_decay"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityTextureName"			"undying_decay"
+    "AbilityCastAnimation"			"ACT_DOTA_UNDYING_DECAY"
+    "AbilityCastGestureSlot"		"DEFAULT"
+
+    "AbilityCastRange"				"500"
+    "AbilityCastPoint"				"0.45"
+
+    "AbilityCooldown"				"9.0 8.0 7.0 6.0"
+    "AbilityDuration"				"25.0 30.0 35.0 40.0"
+
+    "AbilityManaCost"				"85 95 105 115"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage"					    "50 100 150 200"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "str_bonus"						"4 5 6 7"
+        }	
+        "03"
+        {
+            "var_type"						"FIELD_FLOAT"
+            "duration"				        "25.0 30.0 35.0 40.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"			"CASTER"
+            "ModifierName"		"modifier_custom_decay"
+        }
+
+        "Damage"
+        {
+            "Target"		"TARGET"
+            "Type"			"%AbilityUnitDamageType"
+            "Damage"		"%damage"
+        }
+
+        "FireEffect"
+        {
+            "Target"      		    "TARGET"
+            "EffectName"		    "particles/units/heroes/heroes_underlord/abyssal_underlord_firestorm_wave_chunks.vpcf"
+            "EffectAttachType"		"follow_origin"
+        }
+
+        "FireSound"
+        {
+            "EffectName"			"Hero_Undying.Decay.Cast"
+            "Target"				"CASTER"
+        }
+    }
+
+    "Modifiers"
+    {
+
+        "modifier_custom_decay_hud"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "AbilityTextureName"    "undying_decay"
+        }
+
+        "modifier_custom_decay"
+        {
+            "IsHidden"				"1"
+            "IsBuff"				"1"
+            "Duration"				"%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/units/heroes/hero_undying/undying_decay_strength_buff.vpcf"
+                    "EffectAttachType"		"attach_attack1"
+                }
+                "FireSound"
+                {
+                    "EffectName"			"Hero_Undying.Decay.Transfer"
+                    "Target"				"CASTER"
+                }
+
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"increate_hud_modifier"
+                    "modifier"          "modifier_custom_decay_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"decrease_hud_modifier"
+                    "modifier"          "modifier_custom_decay_hud"
+                }
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"%str_bonus"
+            }
+        }
+    }
+}

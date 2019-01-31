@@ -1,0 +1,67 @@
+"item_recipe_great_heart"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_heart"
+
+    "ItemCost"						"700"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_great_heart"
+
+    "ItemRequirements"
+    {
+        "01"						"item_heart;item_vitality_booster;item_reaver"
+    }
+}
+
+
+
+"item_great_heart"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_heart"
+    "AbilityTextureName"		    "great_heart"
+
+    "ItemCost"						"10000"
+    "ItemShopTags"					"str;regen_health;health_pool"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"heart"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_strength"		    "55"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_health"			    "800"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "hp_regen_amp"			    "0"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "health_regen_rate"		    "3"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cooldown_melee"		    "2"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cooldown_ranged_tooltip"	"2"
+        }
+    }
+}

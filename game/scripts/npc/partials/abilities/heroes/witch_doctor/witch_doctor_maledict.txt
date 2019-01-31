@@ -1,0 +1,32 @@
+"witch_doctor_maledict"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"180"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "duration_tooltip"			"12"
+            "LinkedSpecialBonus"	    "special_bonus_unique_witch_doctor_4"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_damage"				"4 6 8 11"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_damage_threshold"	"100"
+        }			
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ticks"						"3"
+        }			
+    }
+}

@@ -1,0 +1,11 @@
+"npc_dota_hero_riki"
+{
+    "Ability1"		    "riki_custom_trick_hit"
+    "Ability3"          "riki_custom_dagger"
+    "Ability13"		    "special_bonus_armor_4"
+    "Ability14"		    "riki_custom_bonus_unique_1"
+    "Ability17"		    "special_bonus_agility_40"
+
+    "ArmorPhysical"		"-6"
+    "AttackRate"		"2.0"
+}

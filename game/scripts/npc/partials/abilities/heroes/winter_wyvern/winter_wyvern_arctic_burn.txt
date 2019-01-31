@@ -1,0 +1,11 @@
+"winter_wyvern_arctic_burn"
+{
+    "AbilitySpecial"
+    {		
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "percent_damage"		"0.05 0.1 0.15 0.2"
+        }
+    }
+}

@@ -1,0 +1,80 @@
+"custom_spirit_lance"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"			"phantom_lancer_spirit_lance"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+    "AbilityCastPoint"				"0"
+    "AbilityCooldown"				"8"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "radius"						"1000"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "max_targets"					"1"
+        }	
+    }
+    
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"		"Hero_PhantomLancer.Strike.Start"
+            "Target"			"CASTER"
+        }
+        "ActOnTargets"
+        {
+            "Target"
+            {
+                "Center"		"CASTER"
+                "Radius"		"%radius"
+                "Teams"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types"			"DOTA_UNIT_TARGET_HERO"
+                "Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+                "MaxTargets"	"%max_targets"
+                "Random"		"1"
+            }
+            "Action"
+            {
+                "Blink"
+                {
+                    "Target"			    "TARGET"
+                }
+                "AttachEffect"
+                {
+                    "EffectName"			"particles/units/heroes/hero_phantom_lancer/phantomlancer_spiritlance_projectile.vpcff"
+                    "EffectAttachType"		"follow_origin"
+                    "Target"				"CASTER"
+                }
+                "FireSound"
+                {
+                    "EffectName"		"Hero_PhantomLancer.Strike.End"
+                    "Target"			"CASTER"
+                }
+                "SpawnUnit"
+                {
+                    "UnitName"				"npc_boss_phantomlancer_clone"
+                    "UnitCount"				"1"
+                    "SpawnRadius"			"100"
+                    "Target"
+                    {
+                        "Center" 	        "CASTER"
+                    }
+                }
+            }
+        }
+    }
+}

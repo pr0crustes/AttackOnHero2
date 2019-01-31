@@ -1,0 +1,6 @@
+"npc_dota_hero_tinker"
+{
+    "Ability2"		"tinker_custom_energy_missile"
+    "Ability6"      "tinker_rearm_fix"
+    "Ability17"		"tinker_custom_bonus_unique_1"
+}

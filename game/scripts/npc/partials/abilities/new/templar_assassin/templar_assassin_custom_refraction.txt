@@ -1,0 +1,71 @@
+"templar_assassin_custom_refraction"
+{
+    "BaseClass"					"ability_datadriven"
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName"		"templar_assassin_refraction"
+
+    "AbilityCastPoint"			"0.20"
+
+    "AbilityCooldown"			"23.0 22.0 21.0 20.0"
+    "AbilityDuration"			"7.0"
+    
+    "AbilityManaCost"			"100 120 140 160"
+
+    "precache"
+    {
+        "particle"              "particles/custom/templar_assassin_shield_impact.vpcf"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_reduction"		"-30 -40 -50 -60"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"7.0"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"				"CASTER"
+            "ModifierName"			"modifier_templar_assassin_custom_refraction"
+        }
+        "FireSound"
+        {
+            "Target"				"CASTER"
+            "EffectName"			"Hero_TemplarAssassin.Refraction"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_templar_assassin_custom_refraction"
+        {
+            "IsBuff"				        "1"
+            "Duration"				        "%duration"
+            
+            "OnTakeDamage"
+            {
+                "FireEffect"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "particles/custom/templar_assassin_shield_impact.vpcf"
+                    "EffectAttachType"	    "follow_origin"
+                }
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"%damage_reduction"
+            }
+        }
+    }
+}

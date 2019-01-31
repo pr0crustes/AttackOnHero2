@@ -1,0 +1,12 @@
+"crystal_maiden_crystal_nova"
+{
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "nova_damage"			"170 270 370 470"
+            "LinkedSpecialBonus"	"special_bonus_unique_crystal_maiden_2"
+        }
+    }
+}

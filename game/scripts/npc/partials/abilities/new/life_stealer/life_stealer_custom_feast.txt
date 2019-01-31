@@ -1,0 +1,36 @@
+"life_stealer_custom_feast"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"			"life_stealer_feast"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "missing_hp_pct"        "3.0 4.0 5.0"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_life_stealer_custom_feast"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/other/lifesteal.lua"
+                    "Function"		"missing_health_lifesteal"
+                    "percentage"    "%missing_hp_pct"
+                    "particle"      "particles/custom/feaststeal.vpcf"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+"npc_boss_kobold_soldier"                     "Kobold Soldier (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_acid_spray"									"Acid Spray"
+"DOTA_Tooltip_ability_custom_acid_spray_Description"						"Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take damage per second and have their armor reduced."
+"DOTA_Tooltip_ability_custom_acid_spray_Lore"							    "Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals."
+"DOTA_Tooltip_ability_custom_acid_spray_radius"							    "RADIUS:"
+"DOTA_Tooltip_ability_custom_acid_spray_duration"						    "DURATION:"
+"DOTA_Tooltip_ability_custom_acid_spray_damage"							    "DAMAGE PER SECOND:"
+"DOTA_Tooltip_ability_custom_acid_spray_armor_reduction"					"ARMOR REDUCTION:"

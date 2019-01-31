@@ -1,0 +1,18 @@
+"riki_custom_trick_hit"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/heroes/riki_custom_trick_hit.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"		    "DAMAGE_TYPE_MAGICAL"
+    "AbilityTextureName"			"riki_smoke_screen"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "percentage"		    "5 10 15 20"
+        }
+    }
+}

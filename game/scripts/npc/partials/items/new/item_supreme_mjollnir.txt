@@ -1,0 +1,130 @@
+"item_recipe_supreme_mjollnir"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_mjollnir"
+    
+    "ItemCost"						"900"
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_supreme_mjollnir"
+    "ItemRequirements"
+    {
+        "01"						"item_mjollnir;item_hyperstone"
+    }
+}
+
+
+"item_supreme_mjollnir"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_mjollnir"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+    "AbilityTextureName"		    "supreme_mjollnir"
+
+    "AbilityCastRange"				"800"
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"35.0"
+
+    "AbilityManaCost"				"50"
+    "ItemShopTags"					"damage;attack_speed;unique"
+    "ItemQuality"					"artifact"
+    "ItemAliases"					"mjollnir"
+    "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"50"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"130"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "static_duration"		"15.0"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_chance"			"20"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_strikes"		"4"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_damage"			"300"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_primary_radius"	"600"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_seconary_radius"	"900"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "static_radius"			"900"
+        }
+        "10"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "static_cooldown"		"1.0"
+        }
+        "11"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chain_chance"			"25"
+        }
+        "12"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chain_damage"			"230"
+        }
+        "13"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chain_strikes"			"12"
+        }
+        "14"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chain_radius"			"900"
+        }
+        "15"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "chain_delay"			"0.25"
+        }
+        "16"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "chain_cooldown"		"0.2"
+        }
+        "17"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_range"			"800"
+        }
+    }
+}

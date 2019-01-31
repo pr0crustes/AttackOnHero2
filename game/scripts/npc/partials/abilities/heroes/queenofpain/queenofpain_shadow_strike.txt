@@ -1,0 +1,16 @@
+"queenofpain_shadow_strike"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "strike_damage"			"50 100 150 200"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration_damage"		"60 150 210 270"
+        }		
+    }
+}

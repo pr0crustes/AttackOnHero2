@@ -1,0 +1,4 @@
+"npc_dota_hero_shadow_demon"
+{
+    "Ability6"		"shadow_demon_custom_stop"
+}

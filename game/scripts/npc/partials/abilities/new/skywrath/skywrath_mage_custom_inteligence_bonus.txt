@@ -1,0 +1,31 @@
+"skywrath_mage_custom_inteligence_bonus"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"			"skywrath_mage_mystic_flare"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "inteligence_bonus"		"30 60 100"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_skywrath_mage_custom_inteligence_bonus"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+            "IsBuff"				"1"
+            "IsPurgable"			"0"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"		"%inteligence_bonus"
+            }
+        }
+    }
+}

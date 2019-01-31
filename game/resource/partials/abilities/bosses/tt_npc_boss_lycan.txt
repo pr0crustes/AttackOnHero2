@@ -1,0 +1,6 @@
+"npc_boss_lycan"                     "Lycan (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_summon_wolves"							"Summon Wolves"
+"DOTA_Tooltip_ability_custom_summon_wolves_Description"				"Summons multiple wolves to help."
+"DOTA_Tooltip_ability_custom_summon_wolves_wolf_count"              "COUNT:"

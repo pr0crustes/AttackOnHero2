@@ -1,0 +1,13 @@
+"npc_boss_juggernaut"                     "Juggernaut (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_blade_fury"									"Blade Fury"
+"DOTA_Tooltip_ability_custom_blade_fury_Description"						"Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. \n\nDISPEL TYPE: Basic Dispel"
+"DOTA_Tooltip_ability_custom_blade_fury_Lore"								"Yurnero's renowned katana techniques are feared by warriors and sorcerors alike."
+"DOTA_Tooltip_ability_custom_blade_fury_Note0"								"This skill doesn't affect mechanical units."
+"DOTA_Tooltip_ability_custom_blade_fury_Note1"								"You can use items during Blade Fury."
+"DOTA_Tooltip_ability_custom_blade_fury_Note2"								"Juggernaut can still perform attacks while in Blade Fury. However, only units that are not affected by Blade Fury, such as wards or structures, will take damage from these attacks."
+"DOTA_Tooltip_ability_custom_blade_fury_Note3"								"Deals a total of 400/525/650/775 damage."
+"DOTA_Tooltip_ability_custom_blade_fury_blade_fury_radius"					"RADIUS:"
+"DOTA_Tooltip_ability_custom_blade_fury_blade_fury_damage"					"DAMAGE:"
+"DOTA_Tooltip_ability_custom_blade_fury_duration"					        "DURATION:"

@@ -1,0 +1,52 @@
+"warlock_rain_of_chaos"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_hp_tooltip"			"2000 5000 8000"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_dmg_tooltip"			"100 150 200"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_armor_tooltip"		"9 12 15"
+            "LinkedSpecialBonus"		"special_bonus_unique_warlock_2"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_regen_tooltip"		"50 75 100"
+        }
+        "08"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "number_of_golems_scepter"	"2"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_hp_tooltip_scepter"	"2000 5000 8000"
+        }
+        "10"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "golem_dmg_tooltip_scepter"	"100 150 200"
+        }
+        "11"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "hp_dmg_reduction_scepter"	"0"
+        }
+        "12"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bounty_reduction_scepter"	"50"
+        }
+    }
+}

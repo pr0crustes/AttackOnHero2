@@ -1,0 +1,16 @@
+"invoker_wex"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "attack_speed_per_instance"	"4 8 12 16 20 24 28"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "move_speed_per_instance"	"2 4 6 8 10 12 14"
+        }
+    }
+}

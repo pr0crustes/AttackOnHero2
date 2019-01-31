@@ -1,0 +1,11 @@
+"item_radiance"
+{
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blind_pct"				"10"
+        }
+    }
+}

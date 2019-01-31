@@ -1,0 +1,25 @@
+"custom_slithereen_crush"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"slardar_slithereen_crush"
+
+    "AbilityCastRange"				"0"
+    "AbilityCastPoint"				"0.21"
+
+    "AbilityCooldown"				"6"
+
+    "AbilityDamage"					"300"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "crush_radius"				    "300"
+        }
+    }
+}

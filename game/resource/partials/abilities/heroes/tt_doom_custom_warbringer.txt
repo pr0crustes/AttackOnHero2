@@ -1,0 +1,5 @@
+"DOTA_Tooltip_Ability_doom_custom_warbringer"						    "Warbringer"
+"DOTA_Tooltip_Ability_doom_custom_warbringer_Description"			    "After every basic attack, Doom receives bonus armor and health regeneration for %buff_duration% seconds."
+"DOTA_Tooltip_Ability_doom_custom_warbringer_Lore"				        "War is comming."
+"DOTA_Tooltip_Ability_doom_custom_warbringer_regen_bonus"				"Bonus Regen:"
+"DOTA_Tooltip_Ability_doom_custom_warbringer_armor_bonus"				"Bonus Armor:"

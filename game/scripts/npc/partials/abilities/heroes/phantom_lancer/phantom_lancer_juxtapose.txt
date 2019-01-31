@@ -1,0 +1,16 @@
+"phantom_lancer_juxtapose"
+{
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "illusion_damage_out_pct"	"-70"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "tooltip_illusion_damage"	"30"
+        }
+    }
+}

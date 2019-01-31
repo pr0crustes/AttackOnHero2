@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_meepo_custom_divided_we_stand"					    "Divided We Stand"
+"DOTA_Tooltip_ability_meepo_custom_divided_we_stand_Description"		    "Meepo summons an imperfect, semi-autonomous duplicate of himself at the cast moment, which shares his experience, attributes, abilities and passsive items. Clones deals 50% damage."
+"DOTA_Tooltip_ability_meepo_custom_divided_we_stand_Lore"				    "Do I know you?"
+"DOTA_Tooltip_ability_meepo_custom_divided_we_stand_n_clones"	            "NUMBER OF MEEPOES:"
+
+
+"DOTA_Tooltip_modifier_meepo_custom_divided_we_stand"                       "Meepo Clone"
+"DOTA_Tooltip_modifier_meepo_custom_divided_we_stand_Description"           "This unit is no more than a clone."

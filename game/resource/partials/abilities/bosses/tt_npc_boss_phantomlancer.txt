@@ -1,0 +1,22 @@
+"npc_boss_phantomlancer"                     "Phantomlancer (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_spirit_lance"								"Spirit Lance Clone"
+"DOTA_Tooltip_ability_custom_spirit_lance_Description"					"Sends a magical spirit lance to a target enemy unit, teleporting to it and creating a clone."
+
+
+"DOTA_Tooltip_ability_custom_viper_strike"								"Viper Strike"
+"DOTA_Tooltip_ability_custom_viper_strike_Description"					"Viper slows the targeted enemy unit's movement and attack speed while also dealing poison damage over time.  The slowing effect reduces over the duration of the poison.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_viper_strike_Lore"							"Once used to slay his sadistic summoner, the most powerful of Netherdrake infections spreads through the veins of those foolish enough to cross Viper."
+"DOTA_Tooltip_ability_custom_viper_strike_Note0"						"Slow works on spell immune units."
+"DOTA_Tooltip_ability_custom_viper_strike_duration"						"DURATION:"
+"DOTA_Tooltip_ability_custom_viper_strike_damage"						"DAMAGE PER SECOND:"
+"DOTA_Tooltip_ability_custom_viper_strike_bonus_movement_speed"			"%MOVE SLOW:"
+"DOTA_Tooltip_ability_custom_viper_strike_bonus_attack_speed"			"ATTACK SLOW:"
+
+
+"DOTA_Tooltip_ability_custom_phantom_edge"								"Phantom Rush"
+"DOTA_Tooltip_ability_custom_phantom_edge_Description"					"When targetting an enemy for an attack, Phantom Lancer quickly charges into range."
+"DOTA_Tooltip_ability_custom_phantom_edge_Lore"							"Azwraith knows that on the field of battle, speed can mean everything."
+"DOTA_Tooltip_ability_custom_phantom_edge_min_distance"			        "MIN RUSH DISTANCE:"
+"DOTA_Tooltip_ability_custom_phantom_edge_max_distance"	                "MAX RUSH DISTANCE:"

@@ -1,0 +1,49 @@
+"pudge_custom_flesh_heap"
+{
+    "BaseClass"					    "ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityTextureName"		    "pudge_flesh_heap"
+
+    "AbilityCastPoint"				"0.2"
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilityCooldown"				"45.0 40.0 35.0 30.0"
+
+    "AbilityManaCost"				"100 140 170 200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "multiplier"      		"0.3 0.4 0.5 0.6"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"      		"6.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/pudge_custom_flesh_heap.lua"
+            "Function"			"cast_flesh_heap"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_pudge_custom_flesh_heap_stack"
+        {
+            "IsBuff"            "1"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"1"
+            }
+        }
+    }
+}

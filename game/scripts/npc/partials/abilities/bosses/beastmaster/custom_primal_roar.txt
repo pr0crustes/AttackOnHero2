@@ -1,0 +1,66 @@
+"custom_primal_roar"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"		
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "BaseClass"						"beastmaster_primal_roar"
+
+    "AbilityCastPoint"				"0.5"
+    "AbilityCooldown"				"20.0"
+    "AbilityManaCost"				"0"
+    "AbilityCastRange"				"800"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"3.0"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"450"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "side_damage"				"400"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_radius"				"300"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "slow_movement_speed_pct"	"-50 -50 -50"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "slow_attack_speed_pct"		"-50 -50 -50"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "push_distance"				"300"
+        }
+        "08"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "push_duration"				"0.6"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "slow_duration"				"2.0 3.0 4.0"
+        }
+    }
+}

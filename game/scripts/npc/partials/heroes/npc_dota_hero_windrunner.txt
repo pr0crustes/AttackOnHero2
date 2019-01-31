@@ -1,0 +1,4 @@
+"npc_dota_hero_windrunner"
+{
+    "Ability16"		"special_bonus_attack_damage_100"
+}

@@ -1,0 +1,42 @@
+"npc_boss_medusa"                     "Medusa (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_wave_of_silence"								"Gust"
+"DOTA_Tooltip_ability_custom_wave_of_silence_Description"					"Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to you."
+"DOTA_Tooltip_ability_custom_wave_of_silence_Lore"							"Traxex is rather fond of the tranquility of physical combat, calling on her Drow heritage to end the incantations of opposing magi."		
+"DOTA_Tooltip_ability_custom_wave_of_silence_wave_range_tooltip"			"CAST RANGE:"
+"DOTA_Tooltip_ability_custom_wave_of_silence_wave_width"					"WIDTH:"
+"DOTA_Tooltip_ability_custom_wave_of_silence_silence_duration"				"SILENCE DURATION:"
+"DOTA_Tooltip_ability_custom_wave_of_silence_knockback_duration"			"KNOCKBACK DURATION:"
+"DOTA_Tooltip_ability_custom_wave_of_silence_knockback_distance_max"		"KNOCKBACK MAX:"
+
+
+"DOTA_Tooltip_ability_custom_windrun"										"Windrun"
+"DOTA_Tooltip_ability_custom_windrun_Description" 							"Increases movement speed and adds evasion from all physical attacks, while slowing movement of nearby enemies."
+"DOTA_Tooltip_ability_custom_windrun_Lore"									"Lyralei enchants gusts of winds to fight incoming attacks."
+"DOTA_Tooltip_ability_custom_windrun_Note0"									"Activating Windrun will evade incoming projectiles."
+"DOTA_Tooltip_ability_custom_windrun_movespeed_bonus_pct"					"%MOVE SPEED BONUS:"
+"DOTA_Tooltip_ability_custom_windrun_evasion_pct_tooltip"					"%EVASION:"
+"DOTA_Tooltip_ability_custom_windrun_enemy_movespeed_bonus_pct"				"%ENEMY SLOW:"		
+"DOTA_Tooltip_ability_custom_windrun_radius"								"ENEMY SLOW RADIUS:"
+"DOTA_Tooltip_ability_custom_windrun_duration"								"DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_mystic_snake"								    "Mystic Snake"
+"DOTA_Tooltip_ability_custom_mystic_snake_Description"					    "A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage per jump and steals %snake_mana_steal%%% of the targets' total mana. Deals Pure damage to units petrified by Stone Gaze.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_mystic_snake_Lore"							    "The Gorgon's curse is her greatest strength."
+"DOTA_Tooltip_ability_custom_mystic_snake_Note0"						    "Mystic Snake cannot be disjointed."
+"DOTA_Tooltip_ability_custom_mystic_snake_radius"						    "JUMP RADIUS:"
+"DOTA_Tooltip_ability_custom_mystic_snake_snake_jumps"					    "JUMPS:"
+"DOTA_Tooltip_ability_custom_mystic_snake_snake_damage"					    "DAMAGE:"
+"DOTA_Tooltip_ability_custom_mystic_snake_snake_scale"					    "%DAMAGE INCREASE PER JUMP:"
+"DOTA_Tooltip_ability_custom_mystic_snake_snake_mana_steal"				    "%MANA STEAL:"
+
+
+"DOTA_Tooltip_ability_custom_split_shot"								"Split Shot"
+"DOTA_Tooltip_ability_custom_split_shot_Description"					"Medusa magically splits her shot into several arrows. These arrows deal a lower percent of her normal damage.\n\nThe extra targets will not receive other attack effects (such as critical strike)."
+"DOTA_Tooltip_ability_custom_split_shot_Lore"							"All who encounter the cursed Gorgon will feel her rage."
+"DOTA_Tooltip_ability_custom_split_shot_Note0"							"Secondary targets will be the closest enemy units excluding the primary target."
+"DOTA_Tooltip_ability_custom_split_shot_Note1"							"If illusions of Medusa are created while Split Shot is active, they will also have this ability."
+"DOTA_Tooltip_ability_custom_split_shot_damage_modifier_tooltip"		"%OUTGOING DAMAGE:"
+"DOTA_Tooltip_ability_custom_split_shot_arrow_count"				    "EXTRA TARGETS:"

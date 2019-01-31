@@ -1,0 +1,35 @@
+"monkey_king_custom_jingu_mastery"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"monkey_king_jingu_mastery"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "lifesteal"		        "5 8 12 15"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_monkey_king_custom_jingu_mastery"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+            "IsBuff"				"1"
+            "IsPurgable"			"0"
+
+            "OnDealDamage"
+            {
+                "Lifesteal"
+                {
+                    "Target"                "ATTACKER"
+                    "LifestealPercent"      "%lifesteal"
+                }
+            }
+        }
+    }
+}

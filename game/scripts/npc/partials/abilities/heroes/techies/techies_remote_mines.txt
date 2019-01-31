@@ -1,0 +1,23 @@
+"techies_remote_mines"
+{
+    "AbilityCooldown"				"9.0 8.0 7.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "max_mines"					"101"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"1200.0"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_scepter"			"600 900 1200"
+        }
+    }
+}

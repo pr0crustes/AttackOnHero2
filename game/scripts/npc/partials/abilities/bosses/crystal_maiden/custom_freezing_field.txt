@@ -1,0 +1,78 @@
+"custom_freezing_field"
+{
+    "ID"                            "$ID"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilitySound"					"hero_Crystal.freezingField.wind"
+    "BaseClass"                     "crystal_maiden_freezing_field"
+
+    "AbilityChannelTime"			"10"
+    "AbilityCastPoint"				"0"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+    "AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+
+    "AbilityCooldown"				"17.0"
+    "AbilityDuration"				"8.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "radius"			    "835"
+        }		
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "explosion_radius"	    "400"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "explosion_interval"	"0.15"
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "movespeed_slow"	    "-50"
+        }
+        "06"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "attack_slow"	        "-80"
+        }
+        "07"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "slow_duration"		    "1.0"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "explosion_min_dist"	"195"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "explosion_max_dist"	"785"
+        }
+        "10"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "170"
+        }
+        "11"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "duration_tooltip"	    "10"
+        }
+        "12"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "scepter_delay"         "2.5"
+        }
+    }
+}

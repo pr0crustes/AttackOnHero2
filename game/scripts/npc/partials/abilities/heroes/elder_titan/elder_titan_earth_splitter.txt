@@ -1,0 +1,11 @@
+"elder_titan_earth_splitter"
+{
+    "AbilitySpecial"
+    {
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_pct"				"3 4 5"
+        }
+    }
+}

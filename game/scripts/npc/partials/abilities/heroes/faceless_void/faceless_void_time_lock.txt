@@ -1,0 +1,27 @@
+"faceless_void_time_lock"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"0.05"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration_creep"		"0.05"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chance_pct"			"14 20 26 30"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"25 30 35 40"
+            "LinkedSpecialBonus"	"special_bonus_unique_faceless_void_3"
+        }
+    }
+}

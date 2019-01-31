@@ -1,0 +1,17 @@
+"npc_boss_bloodseeker"                     "Bloodseeker (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_blood_bath"									"Blood Rite"
+"DOTA_Tooltip_ability_custom_blood_bath_Description"						"Bloodseeker baptizes an area in sacred blood. After %delay_plus_castpoint_tooltip% seconds the ritual completes, causing any enemies caught in the area to take damage and become silenced."
+"DOTA_Tooltip_ability_custom_blood_bath_Lore"								"The Flayed Twins are ever willing to aid those who spill blood upon the field of battle."
+"DOTA_Tooltip_ability_custom_blood_bath_silence_duration"					"SILENCE DURATION:"
+"DOTA_Tooltip_ability_custom_blood_bath_damage"			                    "DAMAGE:"
+"DOTA_Tooltip_ability_custom_blood_bath_radius"			                    "RITUAL AREA:"
+
+
+"DOTA_Tooltip_ability_custom_rupture"										"Rupture"
+"DOTA_Tooltip_ability_custom_rupture_Description"							"Causes an enemy unit's skin to rupture. If the unit moves, it takes a percentage of the distance traveled as damage.  The damage is dealt through spell immunity.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_rupture_Lore"									"When the Bloodseeker hunts you, injuries become fatalities."
+"DOTA_Tooltip_ability_custom_rupture_duration"								"DURATION:"
+"DOTA_Tooltip_ability_custom_rupture_movement_damage_pct"					"%MOVE DAMAGE:"
+"DOTA_Tooltip_ability_custom_rupture_cast_range_tooltip"					"CAST RANGE:"

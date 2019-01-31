@@ -1,0 +1,73 @@
+"custom_ghostship"
+{
+    "ID"					        "$ID"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "AbilitySound"					"Ability.Ghostship"
+    "BaseClass"                     "kunkka_ghostship"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_GHOST_SHIP"
+    "AbilityCastGestureSlot"		"DEFAULT"
+    "AbilityCastRange"				"1000"
+    "AbilityCastPoint"				"0.3"
+    "AbilityCooldown"				"20"
+    "AbilityDamage"					"4000"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "tooltip_delay"				"3.1"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ghostship_distance"		"2000"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ghostship_width"			"425"
+        }			
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "movespeed_bonus"			"10"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "buff_duration"				"1"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"2.5"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ghostship_speed"			"500"
+        }
+        "08"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ghostship_speed_scepter"	"500"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ghostship_width_scepter"	"200"
+        }
+        "10"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "ghostship_absorb"			"0"
+        }
+    }
+}

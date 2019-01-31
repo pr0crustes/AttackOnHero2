@@ -1,0 +1,15 @@
+"npc_boss_phantom_assassin"                     "Phantom Assassin (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_blur"									"Blur"
+"DOTA_Tooltip_ability_custom_blur_Description"						"Phantom Assassin focuses inward, increasing her ability to evade enemy attacks, and allowing her to blur her body to disappear from the enemy team's minimap when far from enemy heroes.\n\nStacks diminishingly with other sources of Evasion."
+"DOTA_Tooltip_ability_custom_blur_Lore"								"Meditation allows a Veiled Sister to carefully anticipate her opponents in combat."
+"DOTA_Tooltip_ability_custom_blur_bonus_evasion"					"%EVASION:"
+"DOTA_Tooltip_ability_custom_blur_radius"							"MAP VANISH RADIUS:"
+
+
+"DOTA_Tooltip_ability_custom_coup_de_grace"							"Coup de Grace"
+"DOTA_Tooltip_ability_custom_coup_de_grace_Description"				"Phantom Assassin refines her combat abilities, gaining a chance of delivering a devastating critical strike to enemy units. Stifling Dagger shares the same critical strike chance."
+"DOTA_Tooltip_ability_custom_coup_de_grace_Lore"					"A divine strike, Mortred honors her opponent by choosing them for death."
+"DOTA_Tooltip_ability_custom_coup_de_grace_crit_chance"				"%CRITICAL CHANCE:"
+"DOTA_Tooltip_ability_custom_coup_de_grace_crit_bonus"				"%CRITICAL DAMAGE:"

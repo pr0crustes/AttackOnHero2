@@ -1,0 +1,16 @@
+"npc_boss_mirana"                     "Mirana (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_sacred_arrow"												"Sacred Arrow"
+"DOTA_Tooltip_ability_custom_sacred_arrow_Description"									"Fires multiple arrows, each one pointed towards an hero. Deals 650 damage."
+"DOTA_Tooltip_ability_custom_sacred_arrow_projectile_distance"							"RANGE:"
+
+
+"DOTA_Tooltip_ability_mirana_starfall"											"Starstorm"
+"DOTA_Tooltip_ability_mirana_starfall_Description"								"Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a %starfall_secondary_radius% radius will be struck a second time for 75%% of the damage."
+"DOTA_Tooltip_ability_mirana_starfall_Lore"										"The Goddess breaks the strata to empower her Princess in the time of need."
+"DOTA_Tooltip_ability_mirana_starfall_starfall_radius"							"RADIUS:"
+
+
+"DOTA_Tooltip_ability_custom_leap"												"Leap"
+"DOTA_Tooltip_ability_custom_leap_Description"									"Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts %leap_bonus_duration% seconds."

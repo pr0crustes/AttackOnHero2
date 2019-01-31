@@ -1,0 +1,20 @@
+"npc_boss_spectre"                     "Spectre (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_spectral_dagger"						"Spectral Dagger"
+"DOTA_Tooltip_ability_custom_spectral_dagger_Description"			"Spectre flings a dagger to draw a Shadow Path, dealing damage and slowing the movement speed of any enemies along the trail. Units hit by the dagger also trail a Shadow Path. While treading the path, Spectre phases through otherwise impassable terrain."
+"DOTA_Tooltip_ability_custom_spectral_dagger_Lore"					"Mercurial's dagger eclipses the physical plane in shadow, a state in which mortals cower, but spectres thrive."
+"DOTA_Tooltip_ability_custom_spectral_dagger_damage"				"DAMAGE:"
+"DOTA_Tooltip_ability_custom_spectral_dagger_bonus_movespeed"		"%MOVEMENT SPEED CHANGE:"
+"DOTA_Tooltip_ability_custom_spectral_dagger_hero_path_duration"	"DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_dispersion"							"Dispersion"
+"DOTA_Tooltip_ability_custom_dispersion_Description"				"Damage done to Spectre is reflected on her enemies, leaving her unharmed. The effect lessens with distance."
+"DOTA_Tooltip_ability_custom_dispersion_Lore"						"A daunting task lies before enemies of Mercurial - killing a shadow with blade and magic."
+"DOTA_Tooltip_ability_custom_dispersion_Note0"						"The reflected damage is not dealt to Spectre."
+"DOTA_Tooltip_ability_custom_dispersion_Note1"						"Illusions don't get this ability."
+"DOTA_Tooltip_ability_custom_dispersion_Note2"						"Damage is reflected before reductions, and is returned as the same damage type."
+"DOTA_Tooltip_ability_custom_dispersion_damage_reflection_pct"		"%DAMAGE REFLECTED:"
+"DOTA_Tooltip_ability_custom_dispersion_min_radius"				    "MIN RADIUS:"
+"DOTA_Tooltip_ability_custom_dispersion_max_radius"				    "MAX RADIUS:"

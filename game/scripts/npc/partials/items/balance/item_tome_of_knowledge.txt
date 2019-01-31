@@ -1,0 +1,7 @@
+"item_tome_of_knowledge"
+{
+    "ItemCost"						"200"
+    "ItemStockMax"					"10"
+    "ItemStockTime"					"600.0"			  
+    "ItemInitialStockTime"			"600.0"
+}

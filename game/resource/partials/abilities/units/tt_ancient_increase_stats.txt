@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_ancient_increase_stats"									"Ancient"
+"DOTA_Tooltip_ability_ancient_increase_stats_Description"						"With every round, this unit health and armor increases, being completely healed."
+"DOTA_Tooltip_ability_ancient_increase_stats_Lore"								"The last holy structure."
+
+"DOTA_Tooltip_ability_ancient_increase_stats_health_per_round"                  "HEALTH PER ROUND:"
+"DOTA_Tooltip_ability_ancient_increase_stats_armor_per_round"                   "ARMOR PER ROUND"

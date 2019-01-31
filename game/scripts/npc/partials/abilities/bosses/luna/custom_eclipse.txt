@@ -1,0 +1,74 @@
+"custom_eclipse"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "AbilitySound"					"Hero_Luna.Eclipse.Cast"
+    "BaseClass"                     "luna_eclipse"
+
+    "AbilityCastPoint"				"0.6"
+    "AbilityCastRange"				"0"
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				"20.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "beams"						"13"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "hit_count"					"13"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "beam_interval"				"0.4"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "beam_interval_scepter"	    "0.8"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration_tooltip"			"6.0"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"675"
+        }	
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "beams_scepter"				"18"
+        }
+        "08"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "hit_count_scepter"			"18"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration_tooltip_scepter"	"5.4"
+        }
+        "10"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "cast_range_tooltip_scepter"	     "2500"
+        }
+    }
+}

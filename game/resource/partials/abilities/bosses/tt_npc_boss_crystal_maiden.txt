@@ -1,0 +1,30 @@
+"npc_boss_crystal_maiden"                     "Crystal Maiden (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_crystal_nova"								"Crystal Nova"
+"DOTA_Tooltip_ability_custom_crystal_nova_Description"					"A burst of damaging frost slows enemy movement and attack rate in the targeted area."
+"DOTA_Tooltip_ability_custom_crystal_nova_Lore"							"The air temperature around Rylai drops rapidly, chilling all around her to the core."
+"DOTA_Tooltip_ability_custom_crystal_nova_duration"						"DURATION:"
+"DOTA_Tooltip_ability_custom_crystal_nova_movespeed_slow"				"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_crystal_nova_attackspeed_slow"				"ATTACK SLOW:"
+"DOTA_Tooltip_ability_custom_crystal_nova_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_custom_crystal_nova_nova_damage"					"DAMAGE:"
+
+"DOTA_Tooltip_ability_custom_frostbite"									"Frostbite"
+"DOTA_Tooltip_ability_custom_frostbite_Description"						"Encases an enemy unit in ice, prohibiting movement and attack, while dealing %damage_per_second_tooltip% damage every half-second."
+"DOTA_Tooltip_ability_custom_frostbite_Lore"							"Rylai channels winds from the Blueheart Glacier, imprisoning attackers in thick blocks of ice."
+"DOTA_Tooltip_ability_custom_frostbite_Note0"							"Blink abilities cannot be used while under the affects of Frostbite."		
+"DOTA_Tooltip_ability_custom_frostbite_damage_per_second_tooltip"		"DAMAGE PER HALF-SECOND:"
+"DOTA_Tooltip_ability_custom_frostbite_duration"						"HERO DURATION:"
+"DOTA_Tooltip_ability_custom_frostbite_hero_damage_tooltip"				"HERO TOTAL DAMAGE:"
+
+
+"DOTA_Tooltip_ability_custom_freezing_field"							"Freezing Field"
+"DOTA_Tooltip_ability_custom_freezing_field_Description"				"CHANNELED - Surrounds Crystal Maiden with random icy explosions that slow enemies and deal massive damage.  Lasts %duration_tooltip% seconds.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_freezing_field_Lore"						"Once the place of her exile, Icewrack has become an anchor for Rylai's frigid onslaught."
+"DOTA_Tooltip_ability_custom_freezing_field_movespeed_slow"				"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_freezing_field_attack_slow"				"ATTACK SLOW:"
+"DOTA_Tooltip_ability_custom_freezing_field_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_custom_freezing_field_explosion_radius"			"EXPLOSION RADIUS:"
+"DOTA_Tooltip_ability_custom_freezing_field_damage"						"DAMAGE:"
+"DOTA_Tooltip_ability_custom_freezing_field_explosion_interval"         "EXPLOSION INTERVAL:"

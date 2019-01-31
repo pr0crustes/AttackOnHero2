@@ -1,0 +1,5 @@
+"npc_dota_hero_dark_seer"
+{
+    "Ability6"		"dark_seer_custom_dark_clone"
+    "Ability16"     "dark_seer_custom_bonus_unique_1"
+}

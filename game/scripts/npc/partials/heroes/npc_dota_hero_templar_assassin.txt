@@ -1,0 +1,5 @@
+"npc_dota_hero_templar_assassin"
+{
+    "Ability1"		"templar_assassin_custom_refraction"
+    "Ability17"		"special_bonus_hp_400"
+}

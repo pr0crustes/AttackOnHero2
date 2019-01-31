@@ -1,0 +1,19 @@
+"lycan_shapeshift"
+{
+    "AbilityCooldown"                   "60 50 40"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"20"
+            "LinkedSpecialBonus"		"special_bonus_unique_lycan_1"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "crit_multiplier"		    "170 210 250"
+        }
+    }
+}

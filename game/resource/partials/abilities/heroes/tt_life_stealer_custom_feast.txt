@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_life_stealer_custom_feast"									"Feast"
+"DOTA_Tooltip_ability_life_stealer_custom_feast_Description"						"Lifestealer's attacks heal himself for a percentage of his missing health."		
+"DOTA_Tooltip_ability_life_stealer_custom_feast_Lore"								"After escaping from his cell in Devarque, N'aix subsisted on flesh and bones of those unfortunate to cross his path." 
+"DOTA_Tooltip_ability_life_stealer_custom_feast_missing_hp_pct"						"%MISSING HEALTH AS HEAL:"

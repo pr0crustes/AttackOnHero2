@@ -1,0 +1,22 @@
+"npc_boss_treant"                     "Treant (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_overgrowth"						"Overgrowth"
+"DOTA_Tooltip_ability_custom_overgrowth_Description"			"Summons an overgrowth of vines and branches around Treant that prevent afflicted enemies from moving, blinking, going invisible, or attacking."
+"DOTA_Tooltip_ability_custom_overgrowth_Lore"					"Rooftrellen calls the ancestral spirit of nature, releasing its power through all of his kin."
+"DOTA_Tooltip_ability_custom_overgrowth_Note0"					"Works on Spell Immune units, but if units gain spell immunity after the effect starts, they'll break free."
+"DOTA_Tooltip_ability_custom_overgrowth_Note1"					"Being entangled by Overgrowth through enchanted trees from Eyes of the Forest does damage. Being entangled by Overgrowth directly from Treant Protector does not."
+"DOTA_Tooltip_ability_custom_overgrowth_duration"				"DURATION:"
+"DOTA_Tooltip_ability_custom_overgrowth_radius"					"RADIUS:"
+
+
+"DOTA_Tooltip_ability_custom_primal_roar"									"Primal Roar"
+"DOTA_Tooltip_ability_custom_primal_roar_Description"						"Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 30% movement speed for 3 seconds.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_primal_roar_Lore"								"The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies."
+"DOTA_Tooltip_ability_custom_primal_roar_Note0"							    "The stun will hit Spell Immune units. The damage will not."
+"DOTA_Tooltip_ability_custom_primal_roar_duration"							"STUN DURATION:"
+"DOTA_Tooltip_ability_custom_primal_roar_damage"							"DAMAGE:"
+"DOTA_Tooltip_ability_custom_primal_roar_slow_duration"					    "SLOW DURATION:"
+"DOTA_Tooltip_ability_custom_primal_roar_damage_radius"					    "SHOUT WIDTH:"
+"DOTA_Tooltip_ability_custom_primal_roar_slow_movement_speed_pct"			"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_primal_roar_slow_attack_speed_pct"			    "ATTACK SLOW:"

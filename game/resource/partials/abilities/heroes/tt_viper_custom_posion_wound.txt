@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_viper_custom_poison_wound"                    "Poison Wound"
+"DOTA_Tooltip_ability_viper_custom_poison_wound_Description"	    "Viper injects poison in his victim. After %duration% seconds, the poison will react, dealing magic damage equal to %damage_percentage%%  of all damage dealt during the poison duration. This spell triggers an attack."
+"DOTA_Tooltip_ability_viper_custom_poison_wound_Lore"			    "There is nothing as lethal as Viper's fang."
+
+"DOTA_Tooltip_modifier_viper_custom_poison_wound"					"Wound Poisoning"
+"DOTA_Tooltip_modifier_viper_custom_poison_wound_Description"		"This unit is being poisoned by Poison Wound."

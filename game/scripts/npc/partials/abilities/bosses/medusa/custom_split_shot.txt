@@ -1,0 +1,25 @@
+"custom_split_shot"
+{
+    "ID"					            "$ID"
+    "BaseClass"						    "medusa_split_shot"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "damage_modifier"		    "-15"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_modifier_tooltip"	"85"
+        }
+        "03"
+        {	
+            "var_type"					"FIELD_INTEGER"
+            "arrow_count"				"10"
+            "LinkedSpecialBonus"		"special_bonus_unique_medusa_2"
+        }
+    }
+}

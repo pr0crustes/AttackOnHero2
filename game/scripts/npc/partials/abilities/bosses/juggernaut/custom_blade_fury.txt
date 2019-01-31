@@ -1,0 +1,40 @@
+"custom_blade_fury"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "BaseClass"                     "juggernaut_blade_fury"
+
+    "AbilityCastRange"				"400"
+    "AbilityCastPoint"				"0"
+    "AbilityCooldown"				"15"
+    "AbilityManaCost"				"0"		
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "blade_fury_damage_tick"	"0.2"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "blade_fury_radius"			"400"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "blade_fury_damage"			"120"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"5.0"
+        }
+    }
+
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}

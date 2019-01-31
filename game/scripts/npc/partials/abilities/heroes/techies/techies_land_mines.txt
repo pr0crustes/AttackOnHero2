@@ -1,0 +1,23 @@
+"techies_land_mines"
+{
+    "AbilityCooldown"				"9 8 7 6"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"				    "250"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "proximity_threshold"		"0.25"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "activation_delay"			"0.75"
+        }
+    }
+}

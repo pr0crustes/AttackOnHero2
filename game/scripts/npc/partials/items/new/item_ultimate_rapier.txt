@@ -1,0 +1,60 @@
+"item_recipe_ultimate_rapier"
+{
+    "ID"							"$ID"	
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "BaseClass"						"item_datadriven"
+
+    "ItemCost"						"0"
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_rapier"
+    "ItemRequirements"
+    {
+        "01"						"item_custom_rapier;item_custom_rapier"
+    }
+}
+
+
+
+"item_ultimate_rapier" 
+{
+    "ID"           				"$ID"
+    "BaseClass" 			    "item_datadriven"
+    "AbilityTextureName"		"ultimate_rapier"
+    "Model"       				"models/props_gameplay/divine_rapier.vmdl" 
+    "Effect"       				"particles/generic_gameplay/dropped_item_rapier.vpcf"
+    "ItemQuality"  				"epic"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemCost"     				"12400"
+    "ItemKillable" 				"0" 
+    "ItemSellable" 				"1"
+    "ItemPurchasable" 			"1"
+    "ItemDroppable" 			"1"
+    "ItemShareability" 			"ITEM_NOT_SHAREABLE"
+
+    "ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "bonus_damage"		"400"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_ultimate_rapier"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1" 
+            "Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"		"%bonus_damage"
+            }
+        } 
+    }
+} 

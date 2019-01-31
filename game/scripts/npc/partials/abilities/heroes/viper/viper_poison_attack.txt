@@ -1,0 +1,18 @@
+"viper_poison_attack"
+{
+    "AbilityCooldown"       "6.0 4.0 2.0 1.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"            "FIELD_FLOAT"
+            "duration"            "3"
+        }
+        "02"
+        {
+            "var_type"            "FIELD_FLOAT"
+            "damage"              "1.0 3.5 4.5 6.0"
+        }
+    }
+}

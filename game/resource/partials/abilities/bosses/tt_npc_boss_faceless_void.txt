@@ -1,0 +1,14 @@
+"npc_boss_faceless_void"                     "Faceless Void (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_caustic_finale"								"Caustic Finale"
+"DOTA_Tooltip_ability_custom_caustic_finale_Description"					"Sand King's attacks inject a venom that causes enemy units to violently explode when its timer expires, or when the unit dies, damaging and slowing nearby enemies. Deals less damage if its timer expires."
+"DOTA_Tooltip_ability_custom_caustic_finale_Lore"							"An injection from Crixalis makes one brittle and as dry as the arid wastes, subject to implosive demise."
+"DOTA_Tooltip_ability_custom_caustic_finale_Note0"							"Units afflicted with the debuff will explode even if Sand King did not deliver the killing blow."
+"DOTA_Tooltip_ability_custom_caustic_finale_Note1"							"The buff is not placed on allied units."
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_radius"			"EXPLODE RADIUS:"
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_damage"	        "EXPLODE DEATH DAMAGE:"
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_damage_expire"	"EXPLODE TIMER DAMAGE:"
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_duration"		"EXPLODE TIMER:"
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_slow"			"%MOVE SLOW:"
+"DOTA_Tooltip_ability_custom_caustic_finale_caustic_finale_slow_duration"	"SLOW DURATION:"

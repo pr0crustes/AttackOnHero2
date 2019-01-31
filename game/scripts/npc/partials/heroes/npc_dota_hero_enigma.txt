@@ -1,0 +1,4 @@
+"npc_dota_hero_enigma"
+{
+    "Ability2"		"enigma_custom_dark_presence"
+}

@@ -1,0 +1,4 @@
+"monkey_king_primal_spring"
+{
+    "AbilityChannelTime"			"0.7"
+}

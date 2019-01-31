@@ -1,0 +1,57 @@
+"item_recipe_ultimate_blink"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_magic_wand"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_blink"
+
+    "ItemRequirements"
+    {
+        "01"						"item_blink;item_blink"
+    }
+}
+
+
+
+"item_ultimate_blink"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "BaseClass"						"item_blink"
+    "AbilityTextureName"		    "ultimate_blink"
+
+    "ItemCost"						"4500"
+    "ItemShopTags"					"blink"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"ultimate blink"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilityCastRange"				"0"
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"9.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blink_range"			"1500"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "blink_damage_cooldown"	"3.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blink_range_clamp"		"1500"
+        }
+    }
+}

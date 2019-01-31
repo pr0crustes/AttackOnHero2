@@ -1,0 +1,18 @@
+"npc_boss_luna"                     "Luna (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_moon_glaive"											"Moon Glaives"
+"DOTA_Tooltip_ability_custom_moon_glaive_Description"								"Empowers Luna's glaives, causing her attacks to bounce between enemy units. Deals less damage with each bounce."
+"DOTA_Tooltip_ability_custom_moon_glaive_Lore"									    "Carefully sharpened, Luna's boomerang-like weapon cuts a wide swath through enemy numbers."
+"DOTA_Tooltip_ability_custom_moon_glaive_range"									    "BOUNCE RADIUS:"
+"DOTA_Tooltip_ability_custom_moon_glaive_bounces"									"BOUNCES:"
+"DOTA_Tooltip_ability_custom_moon_glaive_damage_reduction_percent"				    "%DAMAGE REDUCTION PER BOUNCE:"
+
+
+"DOTA_Tooltip_ability_custom_eclipse"												"Eclipse"
+"DOTA_Tooltip_ability_custom_eclipse_Lore"										    "In times of great need, Selemene herself descends into the world, blocking out the light and hope of the opposed."
+"DOTA_Tooltip_ability_custom_eclipse_Description"									"Showers random nearby enemies with strikes from Luna's current level of Lucent Beam. These beams do not stun their targets, and there is a maximum number of times that a single target can be struck. Also turns day into night for 10 seconds."
+"DOTA_Tooltip_ability_custom_eclipse_beams"										    "TOTAL BEAMS:"
+"DOTA_Tooltip_ability_custom_eclipse_hit_count"									    "MAX BEAMS PER UNIT:"
+"DOTA_Tooltip_ability_custom_eclipse_radius"										"RADIUS:"
+"DOTA_Tooltip_ability_custom_eclipse_duration_tooltip"							    "ECLIPSE DURATION:"

@@ -1,0 +1,18 @@
+"npc_boss_axe"                     "Axe (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_berserkers_call"										"Berserker's Call"
+"DOTA_Tooltip_ability_custom_berserkers_call_Description"							"Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration."
+"DOTA_Tooltip_ability_custom_berserkers_call_Note0"								    "Affects units with spell immunity."
+"DOTA_Tooltip_ability_custom_berserkers_call_Lore"									"Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe." 
+"DOTA_Tooltip_ability_custom_berserkers_call_radius"								"RADIUS:"
+"DOTA_Tooltip_ability_custom_berserkers_call_bonus_armor"							"BONUS ARMOR:"
+"DOTA_Tooltip_ability_custom_berserkers_call_duration"								"DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_counter_helix"										    "Counter Helix"
+"DOTA_Tooltip_ability_custom_counter_helix_Description"							    "When attacked, Axe performs a helix counter attack, dealing pure damage to all nearby enemies."
+"DOTA_Tooltip_ability_custom_counter_helix_Note0"									"Counter Helix triggers when the attack hits."
+"DOTA_Tooltip_ability_custom_counter_helix_Lore"									"Axe is the only reinforcement this army needs."
+"DOTA_Tooltip_ability_custom_counter_helix_radius"									"RADIUS:"
+"DOTA_Tooltip_ability_custom_counter_helix_trigger_chance"							"%CHANCE TO HELIX:"

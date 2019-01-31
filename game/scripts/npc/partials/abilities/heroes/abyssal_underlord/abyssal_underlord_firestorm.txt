@@ -1,0 +1,18 @@
+"abyssal_underlord_firestorm"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "wave_damage"					"25 40 55 100"
+            "LinkedSpecialBonus"			"special_bonus_unique_underlord_2"
+        }
+        "06"
+        {
+            "var_type"						"FIELD_FLOAT"
+            "burn_damage"					"0.05 0.1 0.15 0.2"
+            "CalculateSpellDamageTooltip"			"0"
+        }
+    }
+}

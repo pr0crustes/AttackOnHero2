@@ -1,0 +1,31 @@
+"custom_great_cleave"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "BaseClass"						"sven_great_cleave"
+
+    "AbilitySpecial"
+    {						
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cleave_starting_width"	    "150"
+        }			
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cleave_ending_width"	    "360"
+        }			
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cleave_distance"			"650"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "great_cleave_damage"	    "100 100 100 100"
+        }
+    }
+}

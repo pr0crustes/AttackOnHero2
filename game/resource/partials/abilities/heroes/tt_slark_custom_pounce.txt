@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_slark_custom_pounce"									"Pounce"
+"DOTA_Tooltip_ability_slark_custom_pounce_Description"						"Slark leaps forward, grabbing the first enemy he connects with.  Slark hits that unit multiple times."
+"DOTA_Tooltip_ability_slark_custom_pounce_Lore"								"Time in the Dark Reef made Slark a dangerous assassin; aggressive and fearless."
+"DOTA_Tooltip_ability_slark_custom_pounce_Note0"							"On cast, Slark leaps forward at a speed of 933.33, stopping when he latches onto an enemy or has traveled 700 distance."
+"DOTA_Tooltip_ability_slark_custom_pounce_cast_range_tooltip"				"DISTANCE:"
+"DOTA_Tooltip_ability_slark_custom_pounce_attack_count"						"ATTACK COUNT:"

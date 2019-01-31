@@ -1,0 +1,87 @@
+"item_recipe_echo_sabre_3"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_echo_sabre"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_echo_sabre_3"
+    "ItemRequirements"
+    {
+        "01"						"item_echo_sabre_2;item_recipe_echo_sabre_2"
+    }
+}
+
+
+
+"item_echo_sabre_3"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "FightRecapLevel"				"1"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+    "BaseClass"						"item_echo_sabre"
+
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"3.0"
+
+    "AbilityManaCost"				"0"
+    "ItemCost"						"4650"
+    "ItemShopTags"					"int;attack_speed;damage;regen_mana;damage;hard_to_tag"
+    "ItemQuality"					"artifact"
+    "ItemAliases"					"echo sabre"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ShouldBeSuggested"				"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_intellect"		"20"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_strength"		"20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"20"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"35"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bonus_mana_regen"		"1.5"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "proc_damage"			"0"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "movement_slow"			"100"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_speed_slow"		"0"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "slow_duration"			"0.7"
+        }
+    }
+}

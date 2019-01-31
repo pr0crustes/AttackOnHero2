@@ -1,0 +1,11 @@
+"undying_flesh_golem"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"1"
+        }
+    }
+}

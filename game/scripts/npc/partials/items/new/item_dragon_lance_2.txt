@@ -1,0 +1,50 @@
+"item_recipe_dragon_lance_2"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_dragon_lance"
+
+    "ItemCost"						"500"
+    "ItemShopTags"					""
+    
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_dragon_lance_2"
+    "ItemRequirements"
+    {
+        "01"						"item_dragon_lance;item_ogre_axe"
+    }
+}
+
+
+
+"item_dragon_lance_2"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_dragon_lance"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"damage"
+    "ItemQuality"					"artifact"
+    "ItemAliases"					"dragon lance"
+
+    "AbilityTextureName"			"dragon_lance_2"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_agility"			"20"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_strength"		"20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_attack_range"		"280"
+        }
+    }
+}

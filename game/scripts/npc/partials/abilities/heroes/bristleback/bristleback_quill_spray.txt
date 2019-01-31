@@ -1,0 +1,13 @@
+"bristleback_quill_spray"
+{
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "max_damage"			"1000.0"
+        }
+    }
+}

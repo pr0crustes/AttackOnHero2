@@ -1,0 +1,9 @@
+"custom_spell_block"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"                     "roshan_spell_block"
+
+    "AbilityCooldown"				"2.0"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_1"
+}

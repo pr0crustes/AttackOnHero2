@@ -1,0 +1,14 @@
+"DOTA_Tooltip_Ability_item_supreme_assault"                             "Supreme Assault Cuirass"
+"DOTA_Tooltip_Ability_item_supreme_assault_Description"					"<h1>Passive: Assault Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%"
+"DOTA_Tooltip_Ability_item_supreme_assault_Note0"						"Multiple instances of Assault Aura do not stack."
+"DOTA_Tooltip_Ability_item_supreme_assault_Lore"						"Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed."
+"DOTA_Tooltip_Ability_item_supreme_assault_bonus_attack_speed"			"+$attack"
+"DOTA_Tooltip_Ability_item_supreme_assault_bonus_armor"					"+$armor"
+
+
+"DOTA_Tooltip_modifier_item_supreme_assault_buff"				        "Supreme Assault Cuirass"
+"DOTA_Tooltip_modifier_item_supreme_assault_buff_Description"	        "Armor enhanced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nAttack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+
+"DOTA_Tooltip_modifier_item_supreme_assault_debuff"				        "Supreme Assault Cuirass"
+"DOTA_Tooltip_modifier_item_supreme_assault_debuff_Description"	        "Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."

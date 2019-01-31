@@ -1,0 +1,18 @@
+"spirit_breaker_greater_bash"
+{
+    "AbilityCooldown"				"0.5"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"0.1"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "knockback_duration"	"0.1"
+        }
+    }
+}

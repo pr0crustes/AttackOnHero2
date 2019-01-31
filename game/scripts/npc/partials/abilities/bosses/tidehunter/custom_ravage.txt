@@ -1,0 +1,38 @@
+"custom_ravage"
+{
+    "ID"					        "$ID"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+    "AbilitySound"					"Ability.Ravage"
+    "BaseClass"                     "tidehunter_ravage"
+
+    "AbilityCastRange"				"0"
+    "AbilityCastPoint"				"0.3"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+    
+    "AbilityCooldown"				"18.0"
+    "AbilityDamage"					"350"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "radius"			"2000"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "speed"				"725"
+        }
+        "03"
+        {	
+            "var_type"			"FIELD_FLOAT"
+            "duration"			"3.0"
+        }
+    }
+}

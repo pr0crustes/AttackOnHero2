@@ -1,0 +1,18 @@
+"npc_boss_doom"                     "Doom (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_fissure"						"Fissure"
+"DOTA_Tooltip_ability_custom_fissure_Description"			"Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line."
+"DOTA_Tooltip_ability_custom_fissure_Lore"					"The Nishian totem splits the world to its core with tectonic force."
+"DOTA_Tooltip_ability_custom_fissure_fissure_range"		    "FISSURE RANGE:"		
+"DOTA_Tooltip_ability_custom_fissure_fissure_duration"		"FISSURE DURATION:"
+"DOTA_Tooltip_ability_custom_fissure_stun_duration"			"STUN DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_doom"							"Doom"
+"DOTA_Tooltip_ability_custom_doom_Description"				"Inflicts a curse that prevents an enemy Hero from casting spells or using items, while taking damage over time.\n\nUpgradable by Aghanim's Scepter.\n\nDISPEL TYPE: Basic Dispel"
+"DOTA_Tooltip_ability_custom_doom_Lore"						"When a name is tolled from the bell of Vashundol, doom is sure to follow."
+"DOTA_Tooltip_ability_custom_doom_Note0"					"Units afflicted by Doom can be denied when their HP drops below 25%."
+"DOTA_Tooltip_ability_custom_doom_duration"					"DURATION:"
+"DOTA_Tooltip_ability_custom_doom_damage"					"DAMAGE PER SECOND:"
+"DOTA_Tooltip_ability_custom_doom_aghanim_description"		"Will suspend Doom's duration while the affected unit is within 900 range. Also causes it to remove positive buffs from the target when cast, and break most passive abilities while active."

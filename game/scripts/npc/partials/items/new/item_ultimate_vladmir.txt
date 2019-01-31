@@ -1,0 +1,68 @@
+"item_recipe_ultimate_vladmir"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_vladmir"
+
+    "ItemCost"						"1400"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_vladmir"
+
+    "ItemRequirements"
+    {
+        "01"						"item_vladmir"
+    }
+}
+
+
+
+"item_ultimate_vladmir"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_vladmir"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"		    "ultimate_vladmir"
+
+    "ItemShopTags"					"lifesteal;damage;armor;regen_mana"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"vladmir's offering;vlads"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "mana_regen_aura"		    "5.75"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "armor_aura"			    "6"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "damage_aura"			    "15"
+        }			
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "vampiric_aura"			    "20"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "vampiric_aura_ranged"		"13"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "aura_radius"	            "1500"
+        }			
+    }
+}

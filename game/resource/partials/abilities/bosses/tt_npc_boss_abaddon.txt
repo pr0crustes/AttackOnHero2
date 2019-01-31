@@ -1,0 +1,21 @@
+"npc_boss_abaddon"                     "Abaddon (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_death_coil"					"Mist Coil"
+"DOTA_Tooltip_ability_custom_death_coil_Description"		"Abaddon releases a coil of deathly mist that can damage an enemy unit or heal a friendly unit at the cost of some of Abaddon's health."
+"DOTA_Tooltip_ability_custom_death_coil_Lore"				"A mysterious vapor from the Font of Avernus now infuses the breath of Abaddon, who releases it at will."
+"DOTA_Tooltip_ability_custom_death_coil_target_damage"		"DAMAGE/HEAL:"
+"DOTA_Tooltip_ability_custom_death_coil_self_damage"		"SELF DAMAGE:"
+
+
+"DOTA_Tooltip_ability_custom_mortal_strike"					"Mortal Strike"
+"DOTA_Tooltip_ability_custom_mortal_strike_Description"		"Wraith King passively gains a chance to deal bonus damage on an attack."
+"DOTA_Tooltip_ability_custom_mortal_strike_Lore"			"One blow to crush a foe."
+"DOTA_Tooltip_ability_custom_mortal_strike_crit_chance"		"%CRITICAL CHANCE:"
+"DOTA_Tooltip_ability_custom_mortal_strike_crit_mult"		"%CRITICAL DAMAGE:"
+
+
+"DOTA_Tooltip_ability_custom_borrowed_time"				    "Borrowed Time"
+"DOTA_Tooltip_ability_custom_borrowed_time_Description"	    "When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below %hp_threshold%.\n\nUpgradable by Aghanim's Scepter.\n\nDISPEL TYPE: Strong Dispel"
+"DOTA_Tooltip_ability_custom_borrowed_time_Lore"			"The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding.  What should hurt, instead heals; and what should kill gives strength anew."
+"DOTA_Tooltip_ability_custom_borrowed_time_duration"		"DURATION:"

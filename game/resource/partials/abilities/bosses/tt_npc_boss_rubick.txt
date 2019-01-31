@@ -1,0 +1,41 @@
+"npc_boss_rubick"                     "Rubick (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_laser_arrow"									    "Laser"
+"DOTA_Tooltip_ability_custom_laser_arrow_Description"							"Fires multiple lasers, each one pointed towards an hero. Deals 1000 damage."
+"DOTA_Tooltip_ability_custom_laser_arrow_arrow_range"							"RANGE:"
+
+
+"DOTA_Tooltip_ability_custom_omni_slash"									    "Omnislash"
+"DOTA_Tooltip_ability_custom_omni_slash_Description"						    "Rubick leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 200-225 damage per slash.  Rubick is invulnerable for the duration."
+"DOTA_Tooltip_ability_custom_omni_slash_Lore"								    "'The fruits of discipline; with practice comes strength.'"
+"DOTA_Tooltip_ability_custom_omni_slash_omni_slash_jumps"					    "SLASHES:"
+"DOTA_Tooltip_ability_custom_omni_slash_omni_slash_radius"					    "SLASH JUMP RADIUS:"
+
+
+"DOTA_Tooltip_ability_custom_solar_strike"									    "Solar Strike"
+"DOTA_Tooltip_ability_custom_solar_strike_Description"							"Rubick sends catastrophic rays to all enemies, marking the ground with sunlight. After %delay%  seconds, the rays explodes, dealing %damage%  damage."
+
+
+"DOTA_Tooltip_ability_custom_telekinesis"								        "Telekinesis"
+"DOTA_Tooltip_ability_custom_telekinesis_Description"					        "Rubick uses his telekinetic powers to lift the enemy into the air briefly and then hurls them back at the ground. The unit lands on the ground with such force that it stuns nearby enemies."
+"DOTA_Tooltip_ability_custom_telekinesis_Lore"							        "Even the Grandest Magus may use his powers for enjoyment."
+"DOTA_Tooltip_ability_custom_telekinesis_lift_duration"					        "LIFT DURATION:"
+"DOTA_Tooltip_ability_custom_telekinesis_stun_duration"					        "STUN DURATION:"
+"DOTA_Tooltip_ability_custom_telekinesis_radius"						        "IMPACT RADIUS:"
+"DOTA_Tooltip_ability_custom_telekinesis_cast_range_tooltip"			        "CAST RANGE:"
+
+
+"DOTA_Tooltip_ability_custom_fade_bolt"									        "Fade Bolt"
+"DOTA_Tooltip_ability_custom_fade_bolt_Description"						        "Rubick creates a powerful stream of arcane energy that travels between enemy units, dealing damage and reducing their attack damage.  Each jump deals less damage."
+"DOTA_Tooltip_ability_custom_fade_bolt_Lore"							        "Rubick's favorite spell for dispatching would-be assassins is a rather simple conjuration."
+"DOTA_Tooltip_ability_custom_fade_bolt_damage"							        "DAMAGE:"
+"DOTA_Tooltip_ability_custom_fade_bolt_jump_damage_reduction_pct"               "%JUMP REDUCTION:"
+"DOTA_Tooltip_ability_custom_fade_bolt_hero_attack_damage_reduction"	        "HERO DAMAGE REDUCTION:"
+"DOTA_Tooltip_ability_custom_fade_bolt_creep_attack_damage_reduction"	        "CREEP DAMAGE REDUCTION:"		
+"DOTA_Tooltip_ability_custom_fade_bolt_duration"						        "DEBUFF DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_chaos_meteor"									    "Chaos Meteor"
+"DOTA_Tooltip_ability_custom_chaos_meteor_Description"							"Rubick pulls a flaming meteor from space. Deals 3000 damage."
+

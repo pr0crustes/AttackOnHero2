@@ -1,0 +1,19 @@
+"tusk_walrus_punch"
+{
+    "AbilityCooldown"				"14 12 10"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_multiplier"			"500 700 900"
+            "LinkedSpecialBonus"		"special_bonus_unique_tusk"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "air_time"					"0.2"
+        }
+    }
+}

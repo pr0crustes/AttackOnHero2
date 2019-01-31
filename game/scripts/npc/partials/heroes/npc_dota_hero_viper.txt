@@ -1,0 +1,4 @@
+"npc_dota_hero_viper"
+{
+    "Ability2"		"viper_custom_poison_wound"
+}

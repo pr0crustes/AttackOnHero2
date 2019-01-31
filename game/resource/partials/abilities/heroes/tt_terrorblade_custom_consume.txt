@@ -1,0 +1,5 @@
+"DOTA_Tooltip_Ability_terrorblade_custom_consume"						"Consume"
+"DOTA_Tooltip_Ability_terrorblade_custom_consume_Description"			"Terrorblade consumes all his illusions, regaining life based on his max health for each one consumed."
+"DOTA_Tooltip_ability_terrorblade_custom_consume_heal_base"				"%BASE HEALTH:"
+"DOTA_Tooltip_ability_terrorblade_custom_consume_heal_bonus"		    "%ILLUSION BONUS HEALTH:"
+"DOTA_Tooltip_ability_terrorblade_custom_consume_Lore"				    "My creation, my will."

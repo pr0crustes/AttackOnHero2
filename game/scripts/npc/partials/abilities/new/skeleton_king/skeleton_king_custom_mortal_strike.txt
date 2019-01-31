@@ -1,0 +1,22 @@
+"skeleton_king_custom_mortal_strike"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/heroes/skeleton_king_custom_mortal_strike.lua"
+    "AbilityTextureName"			"skeleton_king_mortal_strike"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_mult"				"200 240 270 300"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance"			"10 12 14 16"
+        }
+    }
+}

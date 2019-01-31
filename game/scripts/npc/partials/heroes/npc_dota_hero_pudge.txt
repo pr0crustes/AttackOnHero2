@@ -1,0 +1,4 @@
+"npc_dota_hero_pudge"
+{
+    "Ability3"		"pudge_custom_flesh_heap"
+}

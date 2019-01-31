@@ -1,0 +1,1 @@
+"npc_boss_kobold_foreman"                     "Kobold Foreman (Boss)"

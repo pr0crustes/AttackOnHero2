@@ -1,0 +1,43 @@
+"furion_custom_nature_heal"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityUnitTargetTeam"		    "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"		    "DOTA_UNIT_TARGET_HERO"
+
+    "AbilityTextureName"		    "furion_wrath_of_nature"
+
+    "AbilityCastRange"			    "1200"
+    "AbilityCastPoint"				"0.25"
+    "AbilityChannelTime"			"10.0"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+    
+    "AbilityCooldown"				"40.0 35.0 30.0 25.0"
+
+    "AbilityManaCost"				"200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "interval"		        "0.3"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "channel_tooltip"		"10.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/furion_custom_nature_heal.lua"
+            "Function"			"cast_furion_custom_nature_heal"
+            "Target"			"TARGET"
+        } 
+    }
+}

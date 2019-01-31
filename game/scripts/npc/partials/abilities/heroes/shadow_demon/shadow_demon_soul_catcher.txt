@@ -1,0 +1,21 @@
+"shadow_demon_soul_catcher"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "health_lost"			"1 2 3 4"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"175 200 225 250"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"10"
+        }
+    }
+}

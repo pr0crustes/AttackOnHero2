@@ -1,0 +1,4 @@
+"npc_dota_hero_mirana"
+{
+    "Ability2"		"keeper_of_the_light_chakra_magic"
+}

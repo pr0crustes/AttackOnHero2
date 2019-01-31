@@ -1,0 +1,14 @@
+"invoker_deafening_blast"
+{
+    "AbilityCooldown"				"35"
+
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage"				"120 160 200 240 280 320 360 400"
+            "levelkey"				"exortlevel"
+        }
+    }
+}

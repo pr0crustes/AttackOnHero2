@@ -1,0 +1,12 @@
+"ancient_apparition_ice_blast"
+{
+    "AbilitySpecial"
+    {
+        "08"
+        {	
+            "var_type"				"FIELD_FLOAT"
+            "kill_pct"				"4.0 7.0 10.0"
+            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_5"
+        }
+    }
+}

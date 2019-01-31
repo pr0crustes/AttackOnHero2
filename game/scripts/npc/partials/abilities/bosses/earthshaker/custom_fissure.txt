@@ -1,0 +1,45 @@
+"custom_fissure"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"earthshaker_fissure"
+    "precache"
+    {
+        "soundfile"					"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
+    }
+
+    "AbilityCastRange"				"4000"
+    "AbilityCastPoint"				"0.1"
+    "AbilityCooldown"				"10.0"
+    "AbilityDuration"				"1.0"
+    "AbilityDamage"					"500"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "fissure_range"				"4000"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "fissure_duration"			"6.0"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "fissure_radius"			"250"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"1.0"
+        }
+    }
+}

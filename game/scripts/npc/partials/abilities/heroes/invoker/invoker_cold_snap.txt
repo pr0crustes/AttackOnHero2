@@ -1,0 +1,25 @@
+"invoker_cold_snap"
+{
+    "AbilityCooldown"				"25"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "freeze_duration"		"0.2"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "freeze_cooldown"		"0.86 0.80 0.77 0.74 0.71 0.69 0.66 0.63"
+            "levelkey"				"quaslevel"	
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "freeze_damage"			"14 21 28 35 42 49 56 63"
+            "levelkey"				"quaslevel"	
+        }
+    }
+}

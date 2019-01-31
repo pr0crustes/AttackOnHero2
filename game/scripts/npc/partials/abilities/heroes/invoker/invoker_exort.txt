@@ -1,0 +1,11 @@
+"invoker_exort"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_damage_per_instance"	"8 16 24 32 40 48 56"
+        }
+    }
+}

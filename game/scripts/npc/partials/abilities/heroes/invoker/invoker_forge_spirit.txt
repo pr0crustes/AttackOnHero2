@@ -1,0 +1,4 @@
+"invoker_forge_spirit"
+{
+    "AbilityCooldown"				"22"
+}

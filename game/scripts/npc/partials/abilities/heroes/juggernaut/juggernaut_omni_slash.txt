@@ -1,0 +1,18 @@
+"juggernaut_omni_slash"
+{
+    "AbilityCooldown"				"120.0 110.0 100.0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"10 20 30"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "cooldown_scepter"	    "50"
+        }
+    }
+}

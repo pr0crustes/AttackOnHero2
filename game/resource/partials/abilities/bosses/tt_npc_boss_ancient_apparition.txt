@@ -1,0 +1,11 @@
+"npc_boss_ancient_apparition"                     "Ancient Apparition (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_no_heal_aura"					"No Heal Aura"
+"DOTA_Tooltip_ability_custom_no_heal_aura_Description"      "Ancient Apparition has an aura that blocks all health regeneration."
+"DOTA_Tooltip_ability_custom_no_heal_aura_radius"           "Radius:"
+
+
+"DOTA_Tooltip_modifier_custom_no_heal_effect"					"No Heal"
+"DOTA_Tooltip_modifier_custom_no_heal_effect_Description"		"Ancient Apparition is blocking your health regenration."
+

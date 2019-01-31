@@ -1,0 +1,8 @@
+"npc_dota_hero_furion"
+{
+    "Ability1"      "furion_teleportation"
+    "Ability2"		"furion_custom_nature_heal"
+    "Ability6"		"furion_custom_nature_presence"
+    "Ability15"		"special_bonus_attack_damage_100"
+    "Ability16"		"special_bonus_cooldown_reduction_25"
+}

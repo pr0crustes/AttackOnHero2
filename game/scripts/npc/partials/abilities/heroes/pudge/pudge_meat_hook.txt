@@ -1,0 +1,16 @@
+"pudge_meat_hook"
+{
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "cooldown_scepter"		"3.0"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_scepter"		"270 360 450 630"
+        }
+    }
+}

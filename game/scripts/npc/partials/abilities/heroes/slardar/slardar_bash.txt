@@ -1,0 +1,22 @@
+"slardar_bash"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"125 175 225 300"
+            "LinkedSpecialBonus"	"special_bonus_unique_slardar_2"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"0.15"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_count"			"7"
+        }
+    }
+}

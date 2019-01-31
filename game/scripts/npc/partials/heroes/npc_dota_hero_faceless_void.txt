@@ -1,0 +1,4 @@
+"npc_dota_hero_faceless_void"
+{
+    "Ability2"		"faceless_void_backtrack"
+}

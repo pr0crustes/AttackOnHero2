@@ -1,0 +1,21 @@
+"drow_ranger_frost_arrows"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						        "FIELD_INTEGER"
+            "frost_arrows_movement_speed"	        "-8 -16 -24 -32"
+        }
+        "02"
+        {
+            "var_type"						        "FIELD_FLOAT"
+            "frost_arrows_hero_duration_tooltip"	"3.0"
+        }
+        "03"
+        {
+            "var_type"						        "FIELD_FLOAT"
+            "frost_arrows_creep_duration"	        "3.0"
+        }
+    }
+}

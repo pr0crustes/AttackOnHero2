@@ -1,0 +1,57 @@
+"custom_fade_bolt"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+    "AbilitySound"					"Hero_Rubick.FadeBolt.Cast"
+    "BaseClass"                     "rubick_fade_bolt"
+
+    "AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+    "AbilityCooldown"				"5"
+    "AbilityManaCost"				"0"
+    "AbilityCastRange"				"1000"
+    "AbilityModifierSupportValue"	"0.35"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "damage"					        "320"
+        }
+        "02"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "jump_damage_reduction_pct"	        "8"
+        }
+        "03"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "hero_attack_damage_reduction"	    "20 25 30 35"
+        }
+        "04"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "creep_attack_damage_reduction"	    "10 13 15 17"
+        }			
+        "05"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "duration"					        "5.0"
+        }
+        "06"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "radius"					        "500"
+        }			
+        "07"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "jump_delay"				        "0.1"
+        }
+    }
+}	

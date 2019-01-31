@@ -1,0 +1,11 @@
+"earthshaker_enchant_totem"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "totem_damage_percentage"	"300 400 500 600"
+        }
+    }
+}

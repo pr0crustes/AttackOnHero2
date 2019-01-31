@@ -1,0 +1,85 @@
+"slark_custom_essence_shift"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"slark_essence_shift"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chance"                "20 30 40 50"
+        }
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"              "25.0 45.0 60.0 75.0"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_slark_custom_essence_shift"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+
+            "OnAttackLanded"
+            {
+                "Random"
+                {
+                    "Chance"		"%chance"
+                    "OnSuccess"
+                    {
+                        "ApplyModifier"
+                        {
+                            "Target"			"CASTER"
+                            "ModifierName"		"modifier_slark_custom_essence_shift_buff"
+                        }
+                    }
+                }
+            }
+        }
+
+        "modifier_slark_custom_essence_shift_hud"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "AbilityTextureName"    "slark_essence_shift"
+        }
+
+        "modifier_slark_custom_essence_shift_buff"
+        {
+            "IsHidden"				"1"
+            "IsPurgable"			"0"
+            "Duration"              "%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"		        "1"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"increate_hud_modifier"
+                    "modifier"          "modifier_slark_custom_essence_shift_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"decrease_hud_modifier"
+                    "modifier"          "modifier_slark_custom_essence_shift_hud"
+                }
+            }
+        }
+    }
+}

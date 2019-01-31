@@ -1,0 +1,7 @@
+"npc_dota_lycan_wolf4"
+{
+    "AttackDamageMin"			"68"
+    "AttackDamageMax"			"72"
+
+    "StatusHealth"				"850"
+}	

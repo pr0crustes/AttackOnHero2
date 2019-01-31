@@ -1,0 +1,28 @@
+"invoker_chaos_meteor"
+{
+    "AbilityCooldown"				"31"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "travel_distance"		"780 930 1095 1245 1410 1575 1800 2000"
+            "levelkey"				"wexlevel"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "main_damage"			"92.5 110 127.5 145 162.5 180 200 230"
+            "LinkedSpecialBonus"	"special_bonus_unique_invoker_6"
+            "levelkey"				"exortlevel"
+        }
+        "10"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "burn_dps"				"18.5 22 25.5 29 32.5 36 40.0 45.0"
+            "levelkey"				"exortlevel"
+            "CalculateSpellDamageTooltip"	"1"
+        }
+    }
+}

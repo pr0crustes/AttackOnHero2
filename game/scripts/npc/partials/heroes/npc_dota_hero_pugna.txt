@@ -1,0 +1,4 @@
+"npc_dota_hero_pugna"
+{
+    "Ability3"		"pugna_custom_replay"
+}

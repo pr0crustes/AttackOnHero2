@@ -1,0 +1,133 @@
+"item_recipe_supreme_assault"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_recipe_assault"
+
+    "ItemCost"						"400"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_supreme_assault"
+
+    "ItemRequirements"
+    {
+        "01"						"item_assault;item_platemail;item_hyperstone"
+    }
+}
+
+
+
+"item_supreme_assault"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+
+    "AbilityTextureName"		    "supreme_assault"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityCastRange"				"1200"
+
+    "ItemCost"						"9050"
+
+    "ItemShopTags"					"tank"
+    "ItemQuality"					"epic"
+
+    "ItemAliases"					"assault;assault;supreme"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"45"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"15"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_radius"			"1200"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_attack_speed"		"40"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_positive_armor"	"9"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_negative_armor"	"-6"
+        }			
+    }
+
+		
+    "Modifiers"
+    {
+        "modifier_item_supreme_assault"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_attack_speed"
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"			"%bonus_armor"
+            }
+        }
+
+        "modifier_item_supreme_assault_friendly_aura"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+            
+            "Aura" 					"modifier_item_supreme_assault_buff"
+            "Aura_Radius" 			"%aura_radius"
+            "Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+            "Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            "Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+            "Aura_ApplyToCaster" 	"1"
+        }
+
+        "modifier_item_supreme_assault_buff"
+        {
+            "TextureName"		    "item_supreme_assault"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%aura_attack_speed"
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"			"%aura_positive_armor"
+            }
+        }
+        
+        "modifier_item_supreme_assault_enemy_aura"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+            
+            "Aura" 					"modifier_item_supreme_assault_debuff"
+            "Aura_Radius" 			"%aura_radius"
+            "Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+            "Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            "Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+        }
+        
+        "modifier_item_supreme_assault_debuff"
+        {
+            "IsDebuff"              "1"
+            "TextureName"		    "item_supreme_assault"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"			"%aura_negative_armor"
+            }
+        }
+    }
+}

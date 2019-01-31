@@ -1,0 +1,11 @@
+"crystal_maiden_freezing_field"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "explosion_interval"	"0.05"
+        }
+    }
+}

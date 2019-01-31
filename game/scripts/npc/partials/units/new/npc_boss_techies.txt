@@ -1,0 +1,69 @@
+"npc_boss_techies"
+{
+    "Model"                                 "models/heroes/techies/techies.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_Techies"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+    "Level"                                 "20"
+    "ModelScale"                            "0.6"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+    "AbilityLayout"							"4"
+
+    "Ability1"								"custom_suicide"
+
+    "ArmorPhysical"                         "15"
+    "MagicalResistance"						"0"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "150"
+    "AttackDamageMax"                       "250"
+    "AttackRate"                            "1.0"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "1000"
+    "AttackRange"                           "550"
+    "ProjectileModel"                       "particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+    "ProjectileSpeed"                       "1100"
+    "RingRadius"                            "100"
+    "HealthBarOffset"                       "120"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "100"
+    "BountyGoldMax"                         "120"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "150"
+    "StatusHealth"                          "1200"
+    "StatusHealthRegen"                     "10"
+    "StatusMana"                            "2000"
+    "StatusManaRegen"                       "50"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"                      "custom_suicide"
+                "Radius"					"1000"
+                "MinimumTargets"			"1"
+                "AOE"						"1"
+            }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "487" }
+            "2" { "ItemDef"     "489" }
+            "3" { "ItemDef"     "490" }
+            "4" { "ItemDef"     "491" }
+            "5" { "ItemDef"     "492" }
+            "6" { "ItemDef"     "499" }
+            "7" { "ItemDef"     "394" }
+        }
+    }
+}

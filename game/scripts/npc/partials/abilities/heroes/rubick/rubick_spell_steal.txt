@@ -1,0 +1,4 @@
+"rubick_spell_steal"
+{
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+}	

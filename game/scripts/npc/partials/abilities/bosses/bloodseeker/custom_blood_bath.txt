@@ -1,0 +1,42 @@
+"custom_blood_bath"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"bloodseeker_blood_bath"
+    
+    "AbilityCastRange"				"1500"
+    "AbilityCastPoint"				"0.4"
+    "AbilityCooldown"				"5.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "radius"					        "350"
+        }
+        "02"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "silence_duration"			        "5"
+        }			
+        "03"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "damage"					        "1500"
+        }
+        "04"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "delay"						        "3.0"
+        }
+        "05"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "delay_plus_castpoint_tooltip"      "3.0"
+        }
+    }
+}

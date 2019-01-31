@@ -1,0 +1,10 @@
+"DOTA_Tooltip_ability_item_dragon_scale"                            "Dragon Scale"
+"DOTA_Tooltip_ability_item_dragon_scale_Description"				"<h1>Passive: Dragon Aura</h1> Grants %aura_bonus_health% health and %aura_bonus_strength% strength to nearby allied units.<br><br>Radius: %aura_radius%"
+"DOTA_Tooltip_ability_item_dragon_scale_Note0"						"Multiple instances of Dragon Aura do not stack."
+"DOTA_Tooltip_ability_item_dragon_scale_Note1"						"Dragon Aura does not affect the one holding the Dragon Scale."
+"DOTA_Tooltip_ability_item_dragon_scale_Lore"						"Once, a great warrior rip of this scale from a powefull dragon. The scale feels alive."
+"DOTA_Tooltip_ability_item_dragon_scale_bonus_health"				"+$health"
+"DOTA_Tooltip_ability_item_dragon_scale_bonus_strength"			    "+$str"
+
+"DOTA_Tooltip_modifier_item_dragon_scale_aura_buff"					"Dragon Aura"
+"DOTA_Tooltip_modifier_item_dragon_scale_aura_buff_Description"		"The precense of a Dragon Scale is increasing your health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and your strength by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."

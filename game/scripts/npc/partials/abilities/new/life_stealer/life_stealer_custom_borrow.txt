@@ -1,0 +1,96 @@
+"life_stealer_custom_borrow"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"life_stealer_assimilate_eject"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chance"                "20 30 40 50"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration"              "20 30 40 50"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "move_speed"            "1"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_health"          "6 8 10 12"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_life_stealer_custom_borrow"
+        {
+            "Passive"				"1"
+            "IsHidden"				"1"
+
+            "OnAttackLanded"
+            {
+                "Random"
+                {
+                    "Chance"		"%chance"
+                    "OnSuccess"
+                    {
+                        "ApplyModifier"
+                        {
+                            "Target"			"CASTER"
+                            "ModifierName"		"modifier_life_stealer_custom_borrow_buff"
+                        }
+                    }
+                }
+            }
+        }
+
+        "modifier_life_stealer_custom_borrow_hud"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "AbilityTextureName"    "life_stealer_assimilate_eject"
+        }
+
+        "modifier_life_stealer_custom_borrow_buff"
+        {
+            "IsHidden"				"1"
+            "IsPurgable"			"0"
+            "Duration"              "%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"		        "%move_speed"
+                "MODIFIER_PROPERTY_HEALTH_BONUS"                            "%bonus_health"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"increate_hud_modifier"
+                    "modifier"          "modifier_life_stealer_custom_borrow_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
+                    "Function"			"decrease_hud_modifier"
+                    "modifier"          "modifier_life_stealer_custom_borrow_hud"
+                }
+            }
+        }
+    }
+}

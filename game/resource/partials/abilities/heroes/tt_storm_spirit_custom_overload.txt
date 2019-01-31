@@ -1,0 +1,11 @@
+"DOTA_Tooltip_ability_storm_spirit_custom_overload"									"Overload"
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_Description"						"Casting a spell creates an electrical charge, which is released in a burst on his next attack, dealing damage nearby enemies.\nStorm Spirit can have multiple chages, but their duration does not refresh."
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_Lore"							"Pow!  Zip!  Zap!"
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_Note0"							"Using items doesn't trigger Overload."
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_radius"					        "RADIUS:"
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_damage"					        "STACK DAMAGE:"
+"DOTA_Tooltip_ability_storm_spirit_custom_overload_duration"				        "STACK DURATION:"
+
+
+"DOTA_Tooltip_modifier_storm_spirit_custom_overload_hud"							"Overload"
+"DOTA_Tooltip_modifier_storm_spirit_custom_overload_hud_Description"				"Gain charges by casting a spell"

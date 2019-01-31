@@ -1,0 +1,6 @@
+"npc_dota_hero_storm_spirit"
+{
+    "Ability3"		"storm_spirit_custom_overload"
+    "Ability10"		"special_bonus_attack_range_100"
+    "Ability16"		"special_bonus_spell_lifesteal_20"
+}

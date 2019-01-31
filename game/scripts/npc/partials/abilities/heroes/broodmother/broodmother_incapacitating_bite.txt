@@ -1,0 +1,21 @@
+"broodmother_incapacitating_bite"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "miss_chance"			"5 10 15 20"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_movespeed"		"-26 -36 -46 -50"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"			    "1.0 1.5 2.0 2.5"
+        }
+    }
+}

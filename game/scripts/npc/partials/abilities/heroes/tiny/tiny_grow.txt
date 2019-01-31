@@ -1,0 +1,21 @@
+"tiny_grow"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_armor"				"5 10 15"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_damage"				"100 200 300"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "attack_speed_reduction"	"50 100 150"
+        }
+    }
+}

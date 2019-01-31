@@ -1,0 +1,23 @@
+"queenofpain_sonic_wave"
+{
+    "AbilityCooldown"				"130 100 80"
+
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "damage"			"410 500 650"
+        }
+        "06"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "cooldown_scepter"	"24"
+        }
+        "07"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "damage_scepter"	"670 880 1390"
+        }
+    }
+}

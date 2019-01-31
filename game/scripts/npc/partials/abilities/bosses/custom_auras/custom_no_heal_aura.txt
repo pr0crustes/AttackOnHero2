@@ -1,0 +1,41 @@
+"custom_no_heal_aura"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"ancient_apparition_ice_blast"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"2000"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_custom_no_heal_aura"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+
+            "Aura" 				"modifier_custom_no_heal_effect"
+            "Aura_Radius" 		"%radius"
+            "Aura_Teams" 		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+            "Aura_Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        }
+
+        "modifier_custom_no_heal_effect"
+        {
+            "IsDebuff"			"1"
+            "IsPurgable"        "0"
+            "TextureName"       "ancient_apparition_ice_blast"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_DISABLE_HEALING"	    "1"
+            }
+        }
+    }
+}

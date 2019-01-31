@@ -1,0 +1,13 @@
+"phantom_assassin_blur"
+{
+    "AbilityCooldown"				"45 40 35 25"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"			   "FIELD_FLOAT"
+            "duration"			   "5"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+"npc_dota_warlock_golem_scepter_1"
+{										
+    "ArmorPhysical"				"9"
+
+    "AttackDamageMin"			"100"
+    "AttackDamageMax"			"100"
+
+    "StatusHealth"				"2000"
+    "StatusHealthRegen"			"50"
+}

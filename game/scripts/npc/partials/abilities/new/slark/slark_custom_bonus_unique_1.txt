@@ -1,0 +1,16 @@
+"slark_custom_bonus_unique_1"
+{
+    "ID"					"$ID"
+    "BaseClass"				"special_bonus_undefined"
+    "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"3"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+"npc_dota_hero_witch_doctor"
+{
+    "Ability6"		"witch_doctor_custom_death_skull"
+    "Ability14"		"special_bonus_attack_speed_140"
+    "Ability17"		"witch_doctor_custom_bonus_unique_1"
+}

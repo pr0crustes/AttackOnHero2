@@ -1,0 +1,7 @@
+"npc_dota_hero_slark"
+{
+    "Ability2"      "slark_custom_pounce"
+    "Ability3"		"slark_custom_essence_shift"
+    "Ability15"		"slark_custom_bonus_unique_1"
+    "Ability17"		"special_bonus_movement_speed_100"
+}

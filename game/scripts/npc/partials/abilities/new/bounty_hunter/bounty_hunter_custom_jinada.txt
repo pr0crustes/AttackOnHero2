@@ -1,0 +1,35 @@
+"bounty_hunter_custom_jinada"
+{
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"bounty_hunter_jinada"
+
+    "AbilityCooldown"				"4 3.5 3.3 3"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "gold_bonus" 			"6 14 20 30"
+        }
+    }
+
+    "Modifiers"
+    {
+        "custom_bounty_hunter_custom_jinada_buff"
+        {
+            "Passive"     "1"
+            "IsHidden"	  "1"
+
+            "OnAttack"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/heroes/bounty_hunter_custom_jinada.lua"
+                    "Function"      "cast_jinada"
+                }
+            }
+        }
+    }
+}

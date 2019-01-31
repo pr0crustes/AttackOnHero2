@@ -1,0 +1,50 @@
+"custom_telekinesis"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+    "BaseClass"                     "rubick_telekinesis"
+
+    "AbilityCastPoint"				"0.1"
+    "AbilityCooldown"				"9"
+    "AbilityManaCost"				"0"
+    "AbilityCastRange"				"900"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "lift_duration"				"1.5"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"1.5"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"400"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "max_land_distance"			"575"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "fall_duration"				"0.3"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "cast_range_tooltip"		"900"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}	

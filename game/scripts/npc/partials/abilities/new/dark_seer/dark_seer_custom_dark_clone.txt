@@ -1,0 +1,70 @@
+"dark_seer_custom_dark_clone"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO"
+
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"		"dark_seer_wall_of_replica"
+
+    "AbilityCastRange"			"1300"
+    "AbilityCastPoint"			"0.2"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"			"130.0 120.0 110.0"
+    "AbilityManaCost"			"200 400 600"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "illusion_taken"	    "300 250 200"			
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "duration"	            "10 15 20"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "n_clones"	            "1"
+            "LinkedSpecialBonus"    "dark_seer_custom_bonus_unique_1"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/dark_seer_custom_dark_clone.lua"
+            "Function"			"cast_dark_clone"
+            "Target"			"TARGET"
+        } 
+    }
+
+    "Modifiers"
+    {
+        "modifier_dark_clone_damage"
+        {
+            "Duration"	    "%duration"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"%illusion_taken"
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/heroes/dark_seer_custom_dark_clone.lua"
+                    "Function"		"on_dark_clone_expire"
+                }
+            }
+        }
+    }
+}

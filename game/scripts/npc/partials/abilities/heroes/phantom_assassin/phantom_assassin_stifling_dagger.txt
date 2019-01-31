@@ -1,0 +1,22 @@
+"phantom_assassin_stifling_dagger"
+{
+    "AbilityCastPoint"				"0.01 0.01 0.01 0.01"
+    
+    "AbilityCooldown"				"6 5 4 3"
+
+    "AbilityManaCost"				"30 20 15 10"
+
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_factor"			"-45 -30 -15 -0"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_factor_tooltip"	"55 70 85 100"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+"custom_starfall"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"                     "mirana_starfall"
+
+    "HasScepterUpgrade"			    "1"
+
+    "AbilityCastPoint"				"0.1"
+    "AbilityCooldown"				"6.0"
+    "AbilityDuration"				"1.0"
+    "AbilityDamage"					"1300"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			            "FIELD_INTEGER"
+            "starfall_radius"	            "1000"		
+        }
+        "02"
+        {
+            "var_type"			            "FIELD_INTEGER"
+            "starfall_secondary_radius"	    "600"
+        }
+        "03"
+        {
+            "var_type"			            "FIELD_FLOAT"
+            "interval_scepter"	            "6.0"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}

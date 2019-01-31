@@ -1,0 +1,16 @@
+"item_guardian_greaves"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"450"
+        }		
+        "12"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "replenish_mana"		"1000"
+        }
+    }
+}

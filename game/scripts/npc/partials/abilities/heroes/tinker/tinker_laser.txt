@@ -1,0 +1,22 @@
+"tinker_laser"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration_hero"			"1.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration_creep"		"1.0"
+        }
+        "04"	
+        {
+            "var_type"				"FIELD_INTEGER"
+            "laser_damage"			"160 240 320 380"
+            "LinkedSpecialBonus"	"special_bonus_unique_tinker"
+        }
+    }
+}

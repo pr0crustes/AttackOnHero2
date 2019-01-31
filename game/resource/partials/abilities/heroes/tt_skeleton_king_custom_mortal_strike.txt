@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_skeleton_king_custom_mortal_strike"								"Mortal Strike"
+"DOTA_Tooltip_ability_skeleton_king_custom_mortal_strike_Description"					"Wraith King passively gains a chance to deal bonus damage on an attack."
+"DOTA_Tooltip_ability_skeleton_king_custom_mortal_strike_Lore"							"One blow to crush a foe."
+"DOTA_Tooltip_ability_skeleton_king_custom_mortal_strike_crit_chance"					"%CRITICAL CHANCE:"
+"DOTA_Tooltip_ability_skeleton_king_custom_mortal_strike_crit_mult"					    "%CRITICAL DAMAGE:"

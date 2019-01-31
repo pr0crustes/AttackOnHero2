@@ -1,0 +1,55 @@
+"custom_leap"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+    "BaseClass"                     "mirana_leap"
+
+    "AbilityCooldown"				"0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "leap_distance"			"550"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "leap_speed"			"1300.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "leap_acceleration"		"6000.0"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "leap_speedbonus"	    "40"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "leap_speedbonus_as"	"200"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "leap_bonus_duration"	"2.5"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"1"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "charge_restore_time"	"10"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+}

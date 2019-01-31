@@ -1,0 +1,44 @@
+"custom_chaos_bolt"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"chaos_knight_chaos_bolt"
+
+    "AbilityCastRange"				"700"
+    "AbilityCastPoint"				"0.4"
+    "AbilityCooldown"				"15.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "chaos_bolt_speed"		"700"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "stun_min"				"0.2"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "stun_max"				"4"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_min"			"1"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_max"			"450"
+        }
+    }
+}

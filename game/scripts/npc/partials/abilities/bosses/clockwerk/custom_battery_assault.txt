@@ -1,0 +1,33 @@
+"custom_battery_assault"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"rattletrap_battery_assault"
+
+    "AbilityCastPoint"				"0.2"
+    "AbilityCooldown"				"15.0"
+    "AbilityManaCost"				"0"
+    "AbilityDamage"					"200"
+    "AbilityModifierSupportValue"	"0.2"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "radius"			"325"
+        }
+        "02"
+        {	
+            "var_type"			"FIELD_FLOAT"
+            "duration"			"15"
+        }
+        "03"
+        {	
+            "var_type"			"FIELD_FLOAT"
+            "interval"			"0.8"
+        }
+    }
+}

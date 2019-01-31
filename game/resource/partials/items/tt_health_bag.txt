@@ -1,0 +1,9 @@
+"DOTA_Tooltip_ability_item_health_bag"                          "Health Bag"
+"DOTA_Tooltip_ability_item_health_bag_Description"			    "<h1>Active: Open Bag</h1> Provides a %duration% seconds buff to an ally, healling by %base_heal% plus %heal_pct%%  of its max life every %heal_interval% seconds." 
+"DOTA_Tooltip_ability_item_health_bag_Lore"						"Contains the essence of life."
+"DOTA_Tooltip_ability_item_health_bag_hp_regen"				    "+$hp_regen"
+"DOTA_Tooltip_ability_item_health_bag_mana_regen"				"+$mana_regen"
+"DOTA_Tooltip_ability_item_health_bag_bonus_all_stats"			"+$all"
+
+"DOTA_Tooltip_modifier_health_bag"					            "Seed of Life"
+"DOTA_Tooltip_modifier_health_bag_Description"		            "A Health Bag was used at you. You are being healed."

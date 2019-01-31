@@ -1,0 +1,9 @@
+"npc_boss_small_tinker"                     "Small Tinker (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_march_of_the_machines"								"March of the Machines"
+"DOTA_Tooltip_ability_custom_march_of_the_machines_Description"					"Enlists an army of robotic minions to destroy enemy units in an area around Tinker."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_Lore"						"Even though the laboratory has since been sealed off, the ability to radio in robotic drones is still in working order."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_Note0"						"Robots spawn at a rate of 50 per second."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_custom_march_of_the_machines_duration"					"DURATION:"

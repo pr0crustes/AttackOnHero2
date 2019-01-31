@@ -1,0 +1,13 @@
+"npc_dota_goodguys_fort"
+{
+    "Ability1"					"ancient_increase_stats"
+
+    "ArmorPhysical"				"1"
+    "MagicalResistance"			"0"
+
+    "StatusHealth"				"100000"
+    "StatusHealthRegen"			"0"
+
+    "VisionDaytimeRange"		"2000"
+    "VisionNighttimeRange"		"2000"
+}	

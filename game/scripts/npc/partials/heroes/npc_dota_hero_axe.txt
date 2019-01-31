@@ -1,0 +1,4 @@
+"npc_dota_hero_axe"
+{
+    "Ability6"		"axe_custom_last_cleave"
+}

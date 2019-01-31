@@ -1,0 +1,83 @@
+"npc_boss_antimage"
+{
+    "Model"						"models/heroes/antimage/antimage.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_AntiMage"
+    "VoiceFile"					"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
+    "GameSoundsFile"            "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+    "ModelScale"				"1.5"
+    "Level"						"38"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "HasInventory"				"1"
+    "AbilityLayout"				"4"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_antimage"
+    }
+
+    "Ability1"					"custom_aura_mana_drain"
+    "Ability2"                  "custom_mana_break"
+    "Ability3"                  "custom_mana_void"
+    "Ability4"                  "custom_spell_block"
+
+    "ArmorPhysical"				"65"
+    "MagicalResistance"			"65"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"1280"
+    "AttackDamageMax"			"1495"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"0.7"
+    "AttackAnimationPoint"		"0.3"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"280"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"420"
+    "BountyGoldMax"				"420"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"160"
+    "HealthBarOffset"			"340"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"500"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"340000"
+    "StatusHealthRegen"			"50"
+    "StatusMana"				"300"
+    "StatusManaRegen"			"10"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability3"
+            {
+                "Name"               		"custom_mana_void"
+            }
+        }
+        "EquippedItems"
+        {
+            "Moonshard"             { "Item"		"item_moon_shard" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef" "7277" }
+            "2" { "ItemDef" "5636" }
+            "3" { "ItemDef" "9763" }
+            "4" { "ItemDef" "9764" }
+            "5" { "ItemDef" "9765" }
+            "6" { "ItemDef" "9769" }
+            "7" { "ItemDef" "7276" }
+        }
+    }
+}

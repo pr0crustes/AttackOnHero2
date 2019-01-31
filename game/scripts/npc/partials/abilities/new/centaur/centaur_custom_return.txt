@@ -1,0 +1,43 @@
+"centaur_custom_return"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+    "AbilityTextureName"            "centaur_return"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "base_damage"				"16 32 48 64"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "str_bonus"	    	    	"30 40 50 60"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_centaur_custom_return"
+        {
+            "Passive"       "1"
+            "IsHidden"      "1"
+
+            "OnAttacked"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		"abilities/heroes/centaur_custom_return.lua"
+                    "Function"			"on_attacked"
+                    "damage"		    "%attack_damage"
+                }
+            }
+        }
+    }
+}

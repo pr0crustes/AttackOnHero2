@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_item_custom_refresher"                                "Refresher Orb"
+"DOTA_Tooltip_ability_item_custom_refresher_Description"					"<h1>Active: Reset Cooldowns</h1>Resets the cooldowns of all your items and abilities.\n\nThe cooldown of this item will be equal to the highest among your spells. It cannot be less than %min_cooldown% or more than %max_cooldown%.\nRefresher Orb is not affected by cooldown reduction."
+"DOTA_Tooltip_ability_item_custom_refresher_Lore"							"A powerful artifact created for wizards."
+"DOTA_Tooltip_ability_item_custom_refresher_bonus_health_regen"				"+$hp_regen"
+"DOTA_Tooltip_ability_item_custom_refresher_bonus_mana_regen"				"+$mana_regen"

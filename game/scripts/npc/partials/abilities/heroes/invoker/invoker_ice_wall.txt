@@ -1,0 +1,14 @@
+"invoker_ice_wall"
+{
+    "AbilityCooldown"				"18"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_per_second"		"18 24 30 36 42 48 56 80"
+            "levelkey"				"exortlevel"
+        }
+    }
+}

@@ -1,0 +1,252 @@
+"DOTAHeroes"
+{
+
+	// Balance changes.
+
+"npc_dota_hero_abyssal_underlord"
+{
+    "Ability6"		"abyssal_underlord_custom_bend"
+    "Ability7"		"generic_hidden"
+}
+"npc_dota_hero_axe"
+{
+    "Ability6"		"axe_custom_last_cleave"
+}
+"npc_dota_hero_bloodseeker"
+{
+    "Ability3"          "bloodseeker_custom_thirst"
+    "Ability6"          "bloodseeker_custom_rampage"
+}
+"npc_dota_hero_bounty_hunter"
+{
+    "Ability2"		"bounty_hunter_custom_jinada"
+    "Ability15"		"special_bonus_armor_8"
+    "Ability17"		"special_bonus_attack_speed_200"
+}
+"npc_dota_hero_centaur"
+{
+    "Ability3"		"centaur_custom_return"
+    "Ability14"		"special_bonus_armor_8"
+    "Ability16"     "centaur_custom_bonus_strength"
+}
+"npc_dota_hero_clinkz"
+{
+    "Ability6"		"clinkz_custom_multiattack"
+    "Ability10"		"special_bonus_mp_regen_10"
+    "Ability11"		"special_bonus_unique_clinkz_3"
+    "Ability17"		"special_bonus_magic_resistance_25"
+}
+"npc_dota_hero_dark_seer"
+{
+    "Ability6"		"dark_seer_custom_dark_clone"
+    "Ability16"     "dark_seer_custom_bonus_unique_1"
+}
+"npc_dota_hero_doom_bringer"
+{
+    "Ability1"		"doom_custom_dash"
+    "Ability4"		"generic_hidden"
+    "Ability5"		"generic_hidden"
+    "Ability6"		"doom_custom_warbringer"
+    "Ability13"		"special_bonus_armor_8"
+    "Ability14"		"special_bonus_attack_speed_80"
+    "Ability15"		"special_bonus_hp_regen_20"
+    "Ability16"		"special_bonus_strength_30"
+}
+"npc_dota_hero_enigma"
+{
+    "Ability2"		"enigma_custom_dark_presence"
+}
+"npc_dota_hero_faceless_void"
+{
+    "Ability2"		"faceless_void_backtrack"
+}
+"npc_dota_hero_furion"
+{
+    "Ability1"      "furion_teleportation"
+    "Ability2"		"furion_custom_nature_heal"
+    "Ability6"		"furion_custom_nature_presence"
+    "Ability15"		"special_bonus_attack_damage_100"
+    "Ability16"		"special_bonus_cooldown_reduction_25"
+}
+"npc_dota_hero_huskar"
+{
+    "Ability6"		"huskar_custom_life_trade"
+    "Ability15"     "special_bonus_attack_speed_80"
+}
+"npc_dota_hero_legion_commander"
+{
+    "Ability6"          "sven_gods_strength"
+}
+"npc_dota_hero_life_stealer"
+{
+    "Ability2"		"life_stealer_custom_borrow"
+    "Ability4"		"generic_hidden"
+    "Ability5"		"generic_hidden"
+    "Ability6"		"life_stealer_custom_feast"
+    "Ability7"		"generic_hidden"
+    "Ability8"		"generic_hidden"
+    "Ability9"		"generic_hidden"
+    "Ability16"		"special_bonus_attack_speed_100"
+}
+"npc_dota_hero_lina"
+{
+    "Ability6"		"lina_custom_burning_will"
+}
+"npc_dota_hero_meepo"
+{
+    "Ability6"		"meepo_custom_divided_we_stand"
+}
+"npc_dota_hero_mirana"
+{
+    "Ability2"		"keeper_of_the_light_chakra_magic"
+}
+"npc_dota_hero_monkey_king"
+{
+    "Ability4"		"monkey_king_custom_jingu_mastery"
+    "Ability5"		"generic_hidden"
+    "Ability13"		"special_bonus_attack_speed_60"
+}
+"npc_dota_hero_necrolyte"
+{
+    "Ability3"		"necrophos_intelligence_supremacy"
+    "Ability6"		"necrophos_custom_aura_heal"
+}
+"npc_dota_hero_obsidian_destroyer"
+{
+    "Ability3"		"obsidian_destroyer_essence_aura"
+    "Ability6"		"obsidian_destroyer_custom_mana_bonus"
+    "Ability15"		"special_bonus_mp_700"
+    "Ability16"		"special_bonus_attack_speed_120"
+}
+"npc_dota_hero_pudge"
+{
+    "Ability3"		"pudge_custom_flesh_heap"
+}
+"npc_dota_hero_pugna"
+{
+    "Ability3"		"pugna_custom_replay"
+}
+"npc_dota_hero_riki"
+{
+    "Ability1"		    "riki_custom_trick_hit"
+    "Ability3"          "riki_custom_dagger"
+    "Ability13"		    "special_bonus_armor_4"
+    "Ability14"		    "riki_custom_bonus_unique_1"
+    "Ability17"		    "special_bonus_agility_40"
+
+    "ArmorPhysical"		"-6"
+    "AttackRate"		"2.0"
+}
+"npc_dota_hero_shadow_demon"
+{
+    "Ability6"		"shadow_demon_custom_stop"
+}
+"npc_dota_hero_silencer"
+{
+    "Ability6"		"silencer_custom_read_book"
+    "Ability13"		"special_bonus_movement_speed_60"
+    "Ability17"		"special_bonus_attack_speed_160"
+}
+"npc_dota_hero_skeleton_king"
+{
+    "Ability2"		"skeleton_king_custom_vampiric_aura"
+    "Ability3"		"skeleton_king_custom_mortal_strike"
+    "Ability6"		"skeleton_king_custom_reincarnation"
+    "Ability13"		"special_bonus_attack_damage_35"
+    "Ability14"		"special_bonus_all_stats_8"
+    "Ability15"		"special_bonus_lifesteal_15"
+    "Ability16"		"special_bonus_movement_speed_60"
+    "Ability17"		"special_bonus_cleave_40"
+}
+"npc_dota_hero_skywrath_mage"
+{
+    "Ability2"      "skywrath_custom_orb"
+    "Ability6"		"skywrath_mage_custom_inteligence_bonus"
+    "Ability14"		"special_bonus_intelligence_35"
+    "Ability17"		"special_bonus_magic_resistance_25"
+}
+"npc_dota_hero_slark"
+{
+    "Ability2"      "slark_custom_pounce"
+    "Ability3"		"slark_custom_essence_shift"
+    "Ability15"		"slark_custom_bonus_unique_1"
+    "Ability17"		"special_bonus_movement_speed_100"
+}
+"npc_dota_hero_sniper"
+{
+    "Ability6"		"sniper_custom_rifle"
+    "Ability14"		"special_bonus_hp_400"
+    "Ability15"		"special_bonus_corruption_4"
+}
+"npc_dota_hero_spectre"
+{
+    "Ability4"		"generic_hidden"
+    "Ability6"		"spectre_custom_shadow_heal"
+}
+"npc_dota_hero_storm_spirit"
+{
+    "Ability3"		"storm_spirit_custom_overload"
+    "Ability10"		"special_bonus_attack_range_100"
+    "Ability16"		"special_bonus_spell_lifesteal_20"
+}
+"npc_dota_hero_templar_assassin"
+{
+    "Ability1"		"templar_assassin_custom_refraction"
+    "Ability17"		"special_bonus_hp_400"
+}
+"npc_dota_hero_terrorblade"
+{
+    "Ability1"		"terrorblade_custom_war_shout"
+    "Ability3"		"terrorblade_custom_consume"
+    "Ability6"		"terrorblade_custom_metamorphosis"
+    "Ability15"		"special_bonus_cooldown_reduction_25"
+    "Ability16"		"special_bonus_magic_resistance_20"
+}
+"npc_dota_hero_tinker"
+{
+    "Ability2"		"tinker_custom_energy_missile"
+    "Ability6"      "tinker_rearm_fix"
+    "Ability17"		"tinker_custom_bonus_unique_1"
+}
+"npc_dota_hero_tusk"
+{
+    "Ability16"		"special_bonus_attack_damage_120"
+}
+"npc_dota_hero_undying"
+{
+    "Ability1"		"undying_custom_decay"
+    "Ability12"		"special_bonus_movement_speed_40"
+    "Ability13"		"special_bonus_mp_regen_10"
+    "Ability16"		"special_bonus_hp_600"
+    "Ability17"		"special_bonus_cooldown_reduction_25"
+}
+"npc_dota_hero_ursa"
+{
+    "ArmorPhysical"		"0"
+    "AttackRate"		"2.500000"
+}
+"npc_dota_hero_viper"
+{
+    "Ability2"		"viper_custom_poison_wound"
+}
+"npc_dota_hero_warlock"
+{
+    "Ability14"		"special_bonus_hp_500"
+}
+"npc_dota_hero_windrunner"
+{
+    "Ability16"		"special_bonus_attack_damage_100"
+}
+"npc_dota_hero_wisp"
+{
+    "Ability6"		"wisp_custom_fundamental_heal"
+    "Ability16"		"special_bonus_movement_speed_100"
+}
+"npc_dota_hero_witch_doctor"
+{
+    "Ability6"		"witch_doctor_custom_death_skull"
+    "Ability14"		"special_bonus_attack_speed_140"
+    "Ability17"		"witch_doctor_custom_bonus_unique_1"
+}
+
+}

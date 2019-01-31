@@ -1,0 +1,3 @@
+"DOTA_Tooltip_Ability_item_ultimate_rapier"									"Ultimate Rapier"
+"DOTA_Tooltip_Ability_item_ultimate_rapier_Lore"							"So powerful that the wielder is often driven mad."
+"DOTA_Tooltip_Ability_item_ultimate_rapier_bonus_damage"					"+$damage"

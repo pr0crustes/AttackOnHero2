@@ -1,0 +1,8 @@
+"npc_dota_hero_terrorblade"
+{
+    "Ability1"		"terrorblade_custom_war_shout"
+    "Ability3"		"terrorblade_custom_consume"
+    "Ability6"		"terrorblade_custom_metamorphosis"
+    "Ability15"		"special_bonus_cooldown_reduction_25"
+    "Ability16"		"special_bonus_magic_resistance_20"
+}

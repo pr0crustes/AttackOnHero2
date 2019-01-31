@@ -1,0 +1,50 @@
+"custom_torrent"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+    "AbilitySound"					"Ability.Torrent"
+    "BaseClass"                     "kunkka_torrent"
+
+    "AbilityCastRange"				"1500"
+    "AbilityCastPoint"				"0.8"
+    "AbilityCooldown"				"7"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"225"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "movespeed_bonus"			"-35"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "slow_duration"				"2.5"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"2.0"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "delay"						"2.0"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "torrent_damage"			"800"
+        }
+    }		
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}

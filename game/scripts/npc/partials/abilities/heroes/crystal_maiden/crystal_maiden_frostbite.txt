@@ -1,0 +1,29 @@
+"crystal_maiden_frostbite"
+{
+    "AbilityCooldown"				"15 14 13 12"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "total_damage"			"200 300 400 500"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "creep_total_damage"	"200 300 400 500"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"1.0 2.0 3.0 4.0"
+            "LinkedSpecialBonus"	"special_bonus_unique_crystal_maiden_1"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "creep_duration"	    "1.0 2.0 3.0 4.0"
+        }
+    }
+}	

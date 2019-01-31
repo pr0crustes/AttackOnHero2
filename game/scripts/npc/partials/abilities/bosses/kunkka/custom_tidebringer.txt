@@ -1,0 +1,45 @@
+"custom_tidebringer"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilitySound"					"Hero_Kunkka.Tidebringer.Attack"
+    "BaseClass"                     "kunkka_tidebringer"
+
+    "AbilityCooldown"				"12.0"
+    "AbilityCastRange"				"150"
+    "AbilityCastPoint"				"0.0"
+
+    "AbilitySpecial"
+    {		
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "cleave_starting_width"			"150"
+        }			
+        "02"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "cleave_ending_width"			"650"
+        }			
+        "03"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "cleave_distance"			    "1200"
+        }
+        "04"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "damage_bonus"				    "100"
+        }
+        "05"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "cleave_damage"				    "200"
+        }
+    }
+}

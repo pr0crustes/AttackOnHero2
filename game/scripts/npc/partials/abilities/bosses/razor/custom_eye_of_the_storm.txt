@@ -1,0 +1,43 @@
+"custom_eye_of_the_storm"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "BaseClass"						"razor_eye_of_the_storm"
+
+    "AbilityCastPoint"				"0.3"
+    "AbilityCooldown"				"20"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "radius"			    "500"		
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "duration"			    "25.0"		
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "strike_interval"	    "0.5"		
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "armor_reduction"	    "1"		
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "50"		
+        }
+    }
+}

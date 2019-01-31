@@ -1,0 +1,14 @@
+"npc_bristle_large"                     "Bristle Large (Boss)"
+
+// The modifier should only be in one file.
+"DOTA_Tooltip_modifier_custom_quill_spray_debuff"					"Quill Stack"
+"DOTA_Tooltip_modifier_custom_quill_spray_debuff_Description"		"Receiving more damage from Quill Spray."
+
+
+"DOTA_Tooltip_ability_custom_quill_spray"							"Last Quill"
+"DOTA_Tooltip_ability_custom_quill_spray_Description"				"Lauches a Quill Spray when this unit dies."
+
+
+"DOTA_Tooltip_ability_bristle_split_medium"                         "Split"
+"DOTA_Tooltip_ability_bristle_split_medium_Description"             "When this unit dies, it will split into smaller parts."
+

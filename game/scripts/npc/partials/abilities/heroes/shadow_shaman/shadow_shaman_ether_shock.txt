@@ -1,0 +1,17 @@
+"shadow_shaman_ether_shock"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "targets"					"2 4 6 8"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"140 300 560 720"
+            "LinkedSpecialBonus"		"special_bonus_unique_shadow_shaman_3"
+        }
+    }
+}

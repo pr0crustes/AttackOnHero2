@@ -1,0 +1,11 @@
+"pudge_dismember"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "strength_damage"		"1.0 1.5 2.0"
+        }
+    }
+}

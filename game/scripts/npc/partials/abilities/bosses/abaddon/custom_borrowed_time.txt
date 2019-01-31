@@ -1,0 +1,30 @@
+"custom_borrowed_time"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "AbilitySound"					"Hero_Abaddon.BorrowedTime"
+    "BaseClass"                     "abaddon_borrowed_time"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+    "AbilityCastGestureSlot"		"ABSOLUTE"
+
+
+    "AbilityCooldown"				"15"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "hp_threshold"				"0"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"6.0"
+        }
+    }
+}

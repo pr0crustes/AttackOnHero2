@@ -1,0 +1,4 @@
+"DOTA_Tooltip_Ability_clinkz_custom_multiattack"						"Multiattack"
+"DOTA_Tooltip_Ability_clinkz_custom_multiattack_Description"			"Clinkz upgrades his bow, shooting multiple arrows at a target.\nEach arrow is considered a basic attack."
+"DOTA_Tooltip_Ability_clinkz_custom_multiattack_attack_count"           "ATTACK COUNT:"
+"DOTA_Tooltip_Ability_clinkz_custom_multiattack_lore"					"Let the souls burn."

@@ -1,0 +1,75 @@
+"item_recipe_ultimate_dagon"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_dagon"
+
+    "ItemCost"						"2000"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_dagon"
+
+    "ItemRequirements"
+    {
+        "01"						"item_dagon_5;item_mystic_staff"
+    }
+}
+
+
+
+"item_ultimate_dagon"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "BaseClass"                     "item_dagon_5"
+
+    "AbilityTextureName"		    "ultimate_dagon"
+    
+    "AbilityCastRange"				"1000"
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"15.0"
+    "AbilitySharedCooldown"			"dagon"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilityManaCost"				"300"
+    "ItemCost"						"12400"
+    "ItemShopTags"					"damage;int;str;agi;hard_to_tag"
+    "ItemQuality"					"rare"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_intellect"		"32"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_all_stats"		"6"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"3000"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "range_tooltip"			"1000"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_delay"			"0"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "mana_cost_tooltip"		"300"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+"dazzle_bad_juju"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {	
+            "var_type"					"FIELD_INTEGER"
+            "cooldown_reduction"		"20 35 50"
+        }
+        "02"
+        {	
+            "var_type"					"FIELD_FLOAT"
+            "armor_reduction"			"0.1 0.2 0.3"
+            "LinkedSpecialBonus"	    "special_bonus_unique_dazzle_4"
+        }
+        "03"
+        {	
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"8.0"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "radius"					"1200"
+        }
+    }
+}

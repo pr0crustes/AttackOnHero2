@@ -1,0 +1,11 @@
+"tinker_march_of_the_machines"
+{
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "machines_per_sec"		"34"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+"custom_mana_break"
+{
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"		
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"					    "antimage_mana_break"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_per_burn"		"2.5"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_per_hit"			"50"
+        }
+    }
+}

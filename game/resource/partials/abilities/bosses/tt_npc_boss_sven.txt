@@ -1,0 +1,23 @@
+"npc_boss_sven"                     "Sven (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_overwhelming_odds"				            "Overwhelming Odds"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_Description"	            "Turns the enemies' numbers against them, dealing damage and granting you bonus movement speed per unit or per hero.  Deals bonus damage to illusions and summoned units as a percent of their current health."
+"DOTA_Tooltip_ability_custom_overwhelming_odds_Lore"			        "The archers of Stonehall are ready at Tresdin's command."
+"DOTA_Tooltip_ability_custom_overwhelming_odds_radius"		            "RADIUS:"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_damage"		            "BASE DAMAGE:"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_damage_per_unit"         "DAMAGE PER CREEP:"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_damage_per_hero"         "DAMAGE PER HERO:"		
+"DOTA_Tooltip_ability_custom_overwhelming_odds_illusion_dmg_pct"	    "%ILLUSION DAMAGE:"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_bonus_speed_creeps"	    "%BONUS SPEED (CREEPS):"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_bonus_speed_heroes"	    "%BONUS SPEED (HEROES):"
+"DOTA_Tooltip_ability_custom_overwhelming_odds_duration"		        "SPEED DURATION:"
+
+
+"DOTA_Tooltip_ability_custom_great_cleave"								"Great Cleave"
+"DOTA_Tooltip_ability_custom_great_cleave_Description"					"Sven strikes with great force, cleaving all nearby enemy units with his attack."
+"DOTA_Tooltip_ability_custom_great_cleave_Lore"							"The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors."
+"DOTA_Tooltip_ability_custom_great_cleave_Note0"						"Cleave damage is reduced by armor type but not by armor value."
+"DOTA_Tooltip_ability_custom_great_cleave_Note1"						"Cleave damage goes through spell immunity."
+"DOTA_Tooltip_ability_custom_great_cleave_Note2"						"The cleave damages a circular area in front of Sven."
+"DOTA_Tooltip_ability_custom_great_cleave_great_cleave_damage"			"%CLEAVE DAMAGE:"

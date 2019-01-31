@@ -1,0 +1,4 @@
+"beastmaster_wild_axes"
+{
+    "AbilityCooldown"				"5"
+}

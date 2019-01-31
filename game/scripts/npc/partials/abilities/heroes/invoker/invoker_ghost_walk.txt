@@ -1,0 +1,4 @@
+"invoker_ghost_walk"
+{
+    "AbilityCooldown"				"33"
+}

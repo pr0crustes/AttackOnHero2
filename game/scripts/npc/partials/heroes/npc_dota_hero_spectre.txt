@@ -1,0 +1,5 @@
+"npc_dota_hero_spectre"
+{
+    "Ability4"		"generic_hidden"
+    "Ability6"		"spectre_custom_shadow_heal"
+}

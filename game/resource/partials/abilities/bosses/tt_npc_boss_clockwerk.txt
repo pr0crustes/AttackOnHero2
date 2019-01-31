@@ -1,0 +1,23 @@
+"npc_boss_clockwerk"                     "Clockwerk (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_battery_assault"								"Battery Assault"
+"DOTA_Tooltip_ability_custom_battery_assault_Description"					"Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun."
+"DOTA_Tooltip_ability_custom_battery_assault_Lore"							"Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver."
+"DOTA_Tooltip_ability_custom_battery_assault_Note0"							"Deals damage every 0.7 seconds."
+"DOTA_Tooltip_ability_custom_battery_assault_Note1"							"Remains active if Clockwerk is disabled."
+"DOTA_Tooltip_ability_custom_battery_assault_Note2"							"Total damage: 320/800/1280/1760"
+"DOTA_Tooltip_ability_custom_battery_assault_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_custom_battery_assault_duration"						"DURATION:"
+"DOTA_Tooltip_ability_custom_battery_assault_interval"						"INTERVAL:"
+
+
+"DOTA_Tooltip_ability_custom_missile"							"Homing Missile"
+"DOTA_Tooltip_ability_custom_missile_Description"				"Fires a homing missile to seek the targeted enemy unit. The missile gains speed over time, dealing damage and stunning when it impacts the target. Enemy units can destroy the missile before it reaches its target."
+"DOTA_Tooltip_ability_custom_missile_Lore"						"The biggest missile Aurel could possibly attach to his craft, The Bomb™ has carefully calculated aerodynamics and explosives for maximum impact."
+"DOTA_Tooltip_ability_custom_missile_Note0"						"Towers do half damage to the missile."
+"DOTA_Tooltip_ability_custom_missile_Note1"						"The crosshair effect is visible to allies only."
+"DOTA_Tooltip_ability_custom_missile_Note2"						"The missile will follow and hit invisible units."
+"DOTA_Tooltip_ability_custom_missile_hits_to_kill_tooltip"		"HITS TO DESTROY:"
+"DOTA_Tooltip_ability_custom_missile_tower_hits_to_kill_tooltip"	"TOWER HITS TO DESTROY:"
+"DOTA_Tooltip_ability_custom_missile_stun_duration"				"STUN DURATION:"

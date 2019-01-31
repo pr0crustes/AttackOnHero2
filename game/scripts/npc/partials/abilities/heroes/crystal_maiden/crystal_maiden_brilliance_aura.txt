@@ -1,0 +1,16 @@
+"crystal_maiden_brilliance_aura"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "mana_regen"		"5.0 10.0 15.0 20.0"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "mana_regen_self"	"15.0 20.0 25.0 30.0"
+        }
+    }
+}

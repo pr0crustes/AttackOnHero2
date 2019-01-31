@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"

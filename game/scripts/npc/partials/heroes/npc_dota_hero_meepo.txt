@@ -1,0 +1,4 @@
+"npc_dota_hero_meepo"
+{
+    "Ability6"		"meepo_custom_divided_we_stand"
+}

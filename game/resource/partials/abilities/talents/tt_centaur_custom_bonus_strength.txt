@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"

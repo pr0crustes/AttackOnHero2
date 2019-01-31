@@ -1,0 +1,16 @@
+"item_vladmir"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "mana_regen_aura"		"3.75"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_aura"			"10"
+        }
+    }
+}

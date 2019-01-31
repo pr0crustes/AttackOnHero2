@@ -1,0 +1,50 @@
+"item_recipe_ultimate_crit"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_greater_crit"
+
+    "ItemCost"						"340"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_crit"
+
+    "ItemRequirements"
+    {
+        "01"						"item_greater_crit;item_lesser_crit;item_demon_edge"
+    }
+}
+
+
+
+"item_ultimate_crit"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_greater_crit"
+    "AbilityTextureName"		    "ultimate_crit"
+
+    "ItemCost"						"10000"
+    "ItemShopTags"					"damage;crit"
+    "ItemQuality"					"epic"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"140"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance"			"30"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_multiplier"		"300"
+        }
+    }
+}

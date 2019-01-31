@@ -1,0 +1,85 @@
+"item_recipe_ultimate_octarine"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_octarine_core"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ultimate_octarine"
+
+    "ItemRequirements"
+    {
+        "01"						"item_octarine_core;item_octarine_core"
+    }
+}
+
+
+
+"item_ultimate_octarine"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_datadriven"
+    "AbilityTextureName"		    "ultimate_octarine"
+
+    "ItemCost"						"11800"
+    "ItemQuality"					"epic"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_intelligence"	"40"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_health"			"700"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"700"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_cooldown"		"30"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "lifesteal"		        "10"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_ultimate_octarine"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%bonus_intelligence"
+                "MODIFIER_PROPERTY_HEALTH_BONUS"                "%bonus_health"
+                "MODIFIER_PROPERTY_MANA_BONUS"                  "%bonus_mana"
+                "MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"         "%bonus_cooldown"
+
+            }
+            "OnDealDamage"
+            {
+                "Lifesteal"
+                {
+                    "Target"                "ATTACKER"
+                    "LifestealPercent"      "%lifesteal"
+                }
+            }
+        } 
+    }
+}

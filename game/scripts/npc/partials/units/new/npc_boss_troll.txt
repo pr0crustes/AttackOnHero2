@@ -1,0 +1,63 @@
+"npc_boss_troll"
+{
+    "Model"		                "models/heroes/troll_warlord/troll_warlord.vmdl"
+    "SoundSet"		            "Hero_TrollWarlord"
+    "BaseClass"					"npc_dota_creature"
+	"GameSoundsFile"		    "soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
+    "ModelScale"				"1.6"
+    "Level"						"18"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+    "Ability1"					"troll_warlord_fervor"
+    "ArmorPhysical"				"20"
+    "MagicalResistance"			"10"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"80"
+    "AttackDamageMax"			"90"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"1.8"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"2000"
+    "AttackRange"				"128"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"70"
+    "BountyGoldMax"				"90"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"180"
+    "HealthBarOffset"			"280"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"350"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"14000"
+    "StatusHealthRegen"			"10"
+    "StatusMana"				"180"
+    "StatusManaRegen"			"10"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "30.0"
+        "EquippedItems"
+        {
+            "Sange and Yasha"           { "Item"        "item_sange_and_yasha" }
+            "Desolator"					{ "Item"		"item_desolator" }
+            "Mjollnir"                  { "Item"        "item_mjollnir" }
+            "Mjollnir"                  { "Item"        "item_mjollnir" }
+        }
+        "AttachWearables"
+        {
+            "1"  { "ItemDef"     "12559" }
+            "2"  { "ItemDef"     "12560" }
+            "3"  { "ItemDef"     "12561" }
+            "4"  { "ItemDef"     "12562" }
+        }
+    }
+}

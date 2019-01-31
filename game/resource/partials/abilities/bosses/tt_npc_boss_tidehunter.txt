@@ -1,0 +1,10 @@
+"npc_boss_tidehunter"                     "Tidehunter (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_ravage"										"Ravage"
+"DOTA_Tooltip_ability_custom_ravage_Description"							"Slams the ground, causing tentacles to erupt in all directions, damaging and stunning all nearby enemy units."
+"DOTA_Tooltip_ability_custom_ravage_Lore"									"Calling to the abyssal god Maelrawn has resulted in entire armadas being lost at sea."
+"DOTA_Tooltip_ability_custom_ravage_Note0"									"Ravage will hit invisible units."
+"DOTA_Tooltip_ability_custom_ravage_Note1"									"Ravage waves move outwards at a speed of 400."
+"DOTA_Tooltip_ability_custom_ravage_radius"									"RADIUS:"
+"DOTA_Tooltip_ability_custom_ravage_duration"								"DURATION:"

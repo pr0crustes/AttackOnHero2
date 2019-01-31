@@ -1,0 +1,9 @@
+"DOTA_Tooltip_ability_skeleton_king_custom_vampiric_aura"							"Vampiric Aura"
+"DOTA_Tooltip_ability_skeleton_king_custom_vampiric_aura_Description"				"Nearby friendly units restore health based on the damage they deal when attacking enemy units."
+"DOTA_Tooltip_ability_skeleton_king_custom_vampiric_aura_Lore"						"Wraith King's blade drains his enemy's essence to feed his aura."
+"DOTA_Tooltip_ability_skeleton_king_custom_vampiric_aura_Note0"						"Stacks additively with other sources of Lifesteal."
+"DOTA_Tooltip_ability_skeleton_king_custom_vampiric_aura_lifesteal"				    "%LIFESTEAL:"
+
+
+"DOTA_Tooltip_modifier_skeleton_king_custom_vampiric_aura_buff"				        "Vampiric Aura"
+"DOTA_Tooltip_modifier_skeleton_king_custom_vampiric_aura_buff_Description"	        "Regaining health with each attack"

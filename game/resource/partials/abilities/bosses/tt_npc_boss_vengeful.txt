@@ -1,0 +1,12 @@
+"npc_boss_vengeful"                     "Vengeful (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_nether_swap"							"Nether Swap"
+"DOTA_Tooltip_ability_custom_nether_swap_Description"				"In an outbreak of madness, Vengefull swaps the positions of all the heroes."
+
+
+"DOTA_Tooltip_ability_vengefulspirit_custom_magic_missile"							"Magic Missile"
+"DOTA_Tooltip_ability_vengefulspirit_custom_magic_missile_Description"				"Fires a magic missile at an enemy unit, stunning and dealing damage."
+"DOTA_Tooltip_ability_vengefulspirit_custom_magic_missile_Lore"						"A simple Skywrath technique, the magic missile is Shendel's primary tool for vengeance."
+"DOTA_Tooltip_ability_vengefulspirit_custom_magic_missile_magic_missile_stun"		"STUN DURATION:"
+"DOTA_Tooltip_ability_vengefulspirit_custom_magic_missile_magic_missile_damage"		"DAMAGE:"

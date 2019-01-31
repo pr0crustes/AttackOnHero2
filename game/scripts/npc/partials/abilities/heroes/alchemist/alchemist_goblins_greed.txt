@@ -1,0 +1,31 @@
+"alchemist_goblins_greed"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration"				"1"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_gold"			"0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_bonus_gold"		"0"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_gold_cap"		"0"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bounty_multiplier"		"3.0 6.0 9.0 12.0"
+        }
+    }
+}

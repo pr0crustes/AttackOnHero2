@@ -1,0 +1,4 @@
+"npc_dota_hero_lina"
+{
+    "Ability6"		"lina_custom_burning_will"
+}

@@ -1,0 +1,11 @@
+"npc_dota_hero_skeleton_king"
+{
+    "Ability2"		"skeleton_king_custom_vampiric_aura"
+    "Ability3"		"skeleton_king_custom_mortal_strike"
+    "Ability6"		"skeleton_king_custom_reincarnation"
+    "Ability13"		"special_bonus_attack_damage_35"
+    "Ability14"		"special_bonus_all_stats_8"
+    "Ability15"		"special_bonus_lifesteal_15"
+    "Ability16"		"special_bonus_movement_speed_60"
+    "Ability17"		"special_bonus_cleave_40"
+}

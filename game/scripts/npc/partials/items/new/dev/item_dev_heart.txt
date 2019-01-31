@@ -1,0 +1,44 @@
+"item_dev_heart"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_heart"
+    "AbilityTextureName"		    "item_heart"
+
+    "ItemCost"						"99999"
+    "ItemPurchasable"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_strength"		    "1000"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_health"			    "10000"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "hp_regen_amp"			    "0"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "health_regen_rate"		    "10"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cooldown_melee"		    "2"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "cooldown_ranged_tooltip"	"2"
+        }
+    }
+}

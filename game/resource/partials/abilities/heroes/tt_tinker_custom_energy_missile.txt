@@ -1,0 +1,4 @@
+"DOTA_Tooltip_Ability_tinker_custom_energy_missile"							"Energy Missile"
+"DOTA_Tooltip_Ability_tinker_custom_energy_missile_Description"				"Fires an orb made of energy that deals damage based in your intelligence."
+"DOTA_Tooltip_Ability_tinker_custom_energy_missile_base_damage"	            "BASE DAMAGE:"
+"DOTA_Tooltip_Ability_tinker_custom_energy_missile_int_mult"			        "INT MULTIPLIER:"

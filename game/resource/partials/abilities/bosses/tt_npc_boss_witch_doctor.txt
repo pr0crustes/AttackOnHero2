@@ -1,0 +1,19 @@
+"npc_boss_witch_doctor"                     "Witch Doctor (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_paralyzing_cask"								"Paralyzing Cask"
+"DOTA_Tooltip_ability_custom_paralyzing_cask_Description"					"Launches a cask of paralyzing powder that ricochets between enemy units, stunning and damaging those it hits."
+"DOTA_Tooltip_ability_custom_paralyzing_cask_Lore"						    "The Witch Doctor recycles the bones of fallen friends and foes, using the powder as part of his arsenal of charms and alchemy."
+"DOTA_Tooltip_ability_custom_paralyzing_cask_Note0"						    "Targets can be hit multiple times, as long as another unit is struck in between the bounces."
+"DOTA_Tooltip_ability_custom_paralyzing_cask_bounces_tooltip"				"BOUNCES:"
+"DOTA_Tooltip_ability_custom_paralyzing_cask_hero_duration"				    "HERO STUN DURATION:"
+"DOTA_Tooltip_ability_custom_paralyzing_cask_hero_damage"					"HERO DAMAGE:"
+
+
+"DOTA_Tooltip_ability_custom_death_ward"									"Death Ward"
+"DOTA_Tooltip_ability_custom_death_ward_Description"						"CHANNELED - Summons a deadly ward to attack enemy heroes within 700 range. Lasts a maximum of 8 seconds.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_death_ward_Lore"								"Witch Doctor performs a ritualistic dance, one that haunts the dreams of those who live to recount it."
+"DOTA_Tooltip_ability_custom_death_ward_Note0"							    "The Death Ward is invulnerable, and is only destroyed if Witch Doctor is interrupted or its duration expires."
+"DOTA_Tooltip_ability_custom_death_ward_Note1"							    "The Death Ward can be controlled, and made to attack a specific target."
+"DOTA_Tooltip_ability_custom_death_ward_Note2"							    "Death Ward attacks once every 0.22 seconds."
+"DOTA_Tooltip_ability_custom_death_ward_damage"							    "DAMAGE:"

@@ -1,0 +1,6 @@
+"warlock_shadow_word"
+{
+    "AbilityCooldown"				"14"
+
+    "AbilityDamage"					"25 35 45 55"
+}

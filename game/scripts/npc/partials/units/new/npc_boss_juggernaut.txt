@@ -1,0 +1,78 @@
+"npc_boss_juggernaut"
+{
+    "Model"						"models/heroes/juggernaut/juggernaut.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_Juggernaut"
+    "ModelScale"				"1.6"
+    "Level"						"4"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_juggernaut"
+        "soundfile"				"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+    }
+
+    "Ability1"					"juggernaut_blade_dance"
+    "Ability2"					"beastmaster_inner_beast"
+    "Ability3"					"custom_blade_fury"
+
+    "ArmorPhysical"				"5"
+    "MagicalResistance"			"10"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"50"
+    "AttackDamageMax"			"85"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"0.8"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"2000"
+    "AttackRange"				"140"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyGoldMin"				"20"
+    "BountyGoldMax"				"30"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"100"
+    "HealthBarOffset"			"240"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"310"
+    "MovementTurnRate"			"0.7"
+    "StatusHealth"				"10000"
+    "StatusHealthRegen"			"1"
+    "StatusMana"				"550"
+    "StatusManaRegen"			"20"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"800"
+    "VisionNighttimeRange"		"800"
+
+    "Creature"
+    {
+        "DisableResistance"          "40.0"
+
+        "OffensiveAbilities"
+        {
+            "Ability3"
+            {
+                "Name"				 "custom_blade_fury"
+                "AOE"                "500"
+                "Radius"             "500"
+                "MinimumTargets"     "1"
+            }
+        }
+
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "7481" }
+            "2" { "ItemDef"     "9059" }
+            "3" { "ItemDef"     "7164" }
+            "4" { "ItemDef"     "4884" }
+            "5" { "ItemDef"     "7075" }
+        }
+    }
+}
