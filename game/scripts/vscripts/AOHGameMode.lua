@@ -276,6 +276,7 @@ function AOHGameMode:_ThinkPrepTime()
 			self._entPrepTimeQuest = nil
 		end
 
+		GameRules.GLOBAL_roundNumber = self._nRoundNumber  -- Set a global.
 		self._currentRound = self._vRounds[self._nRoundNumber]
 		self._currentRound:Begin()
 		RoundStartCallback:_CallCallbacks(self._currentRound)

@@ -51,6 +51,8 @@ function BuildGameArray()
     local game = {}
 
     -- Add game values here as game.someValue = GetSomeGameValue()
+    game.game_time = GameRules:GetGameTime()
+    game.round = GameRules.GLOBAL_roundNumber
 
     return game
 end
@@ -70,6 +72,17 @@ function BuildPlayersArray()
 
                     -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
                     -- Add player values here as someValue = GetSomePlayerValue(),
+                    hero_name = GetHeroName(playerID),
+                    level = hero:GetLevel(),
+                    deaths = hero:GetDeaths(),
+
+                    item1 = GetItemSlot(hero, 0),
+                    item2 = GetItemSlot(hero, 1),
+                    item3 = GetItemSlot(hero, 2),
+                    item4 = GetItemSlot(hero, 3),
+                    item5 = GetItemSlot(hero, 4),
+                    item6 = GetItemSlot(hero, 5),
+
                 })
             end
         end
