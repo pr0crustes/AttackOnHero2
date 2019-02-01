@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_item_dark_bloodstone"                                 "Dark Bloodstone"
+"DOTA_Tooltip_ability_item_dark_bloodstone_Description"						"<h1>Active: Bloodpact</h1> Converts %mana_cost_percentage%%% of your max mana to health regeneration over %restore_duration% seconds."
+"DOTA_Tooltip_ability_item_dark_bloodstone_Lore"							"The Dark Bloodstone's dark ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit."
+"DOTA_Tooltip_ability_item_dark_bloodstone_bonus_health"					"+$health"
+"DOTA_Tooltip_ability_item_dark_bloodstone_bonus_mana"						"+$mana"
+"DOTA_Tooltip_ability_item_dark_bloodstone_mana_regen_multiplier"			"%+Mana Regeneration"
+"DOTA_Tooltip_ability_item_dark_bloodstone_bonus_health_regen"				"+$hp_regen"
+"DOTA_Tooltip_ability_item_dark_bloodstone_bonus_mana_regen"				"+$mana_regen"

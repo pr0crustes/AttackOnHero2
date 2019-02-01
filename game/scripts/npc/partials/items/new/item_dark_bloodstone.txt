@@ -1,0 +1,105 @@
+"item_recipe_dark_bloodstone"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_bloodstone"
+
+    "ItemCost"						"2200"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_dark_bloodstone"
+    "ItemRequirements"
+    {
+        "01"						"item_bloodstone;item_soul_booster"
+    }
+}
+
+
+
+
+"item_dark_bloodstone"
+{
+    "ID"							    "$ID"
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "BaseClass"                         "item_bloodstone"
+
+    "AbilityTextureName"			    "dark_bloodstone"
+
+    "AbilityCastPoint"				    "0.0"
+    "AbilityCooldown"				    "250.0"
+
+    "ItemInitialCharges"			    "1"
+    "ItemDisplayCharges"			    "0"
+
+    "ItemShopTags"					    "regen_health;regen_mana;mana_pool;health_pool"
+    "ItemQuality"					    "epic"
+    "ItemAliases"					    "bs;bloodstone"
+    "ItemDeclarations"				    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "AllowedInBackpack"				    "0"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_health"			    "550"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_mana"			    "500"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "bonus_health_regen"	    "10.0"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "bonus_mana_regen"		    "200.0"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "mana_regen_multiplier"		"200"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "regen_per_charge"		    "0.0"
+        }
+        "07"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "death_charges"				"0"
+        }
+        "08"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "kill_charges"			    "0"
+        }
+        "09"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "charge_range"			    "0"
+        }
+        "10"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "initial_charges_tooltip"   "1"
+        }
+        "11"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "mana_cost_percentage"      "80"
+        }
+        "12"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "restore_duration"          "2.0"
+        }
+    }
+}
