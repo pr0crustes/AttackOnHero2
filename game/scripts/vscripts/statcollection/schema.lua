@@ -54,6 +54,13 @@ function BuildGameArray()
     game.game_time = GameRules:GetGameTime()
     game.round = GameRules.GLOBAL_roundNumber
 
+    game.ancient_alive = false
+
+    local ancient = Entities:FindByName(nil, "dota_goodguys_fort")
+    if ancient and ancient:IsAlive() then
+        game.ancient_alive = true
+    end
+
     return game
 end
 
