@@ -1,5 +1,4 @@
 "DOTA_Tooltip_ability_tinker_rearm_fix"												"Rearm"
-"DOTA_Tooltip_ability_tinker_rearm_fix_Description"									"CHANNELED - Resets the cooldown on most of Tinker's items and abilities."
+"DOTA_Tooltip_ability_tinker_rearm_fix_Description"									"CHANNELED - Resets the cooldown on most of Tinker's items and abilities.\nRearm works on all items except Abyssal Blade, Aeon Disk, Arcane Boots, Black King Bar, Bloodthorn, Ethereal Blade, Eul's Scepter of Divinity, Guardian Greaves, Hand Of Midas, Health Bag, Helm Of The Dominator, Linken's Sphere, Meteor Hammer, Necronomicon 2, Necronomicon 3, Necronomicon, Nullifier, Orchid, Pipe, Refresher Orb, Rod Of Atos, Scythe Of Vyse and Silver Edge."
 "DOTA_Tooltip_ability_tinker_rearm_fix_Lore"										"A new battery here, another set of rockets there, Boush continually improves on existing technology."
-"DOTA_Tooltip_ability_tinker_rearm_fix_Note0"										"Rearm works on all items except Aeon Disk, Arcane Boots, Black King Bar, Hand of Midas, Helm of the Dominator, Linken's Sphere, Meteor Hammer, Necronomicon, Pipe of Insight, Refresher Orb and Health Bag."
 "DOTA_Tooltip_ability_tinker_rearm_fix_channel_tooltip"								"TIME TO REARM:"
