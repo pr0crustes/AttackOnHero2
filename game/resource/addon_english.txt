@@ -735,6 +735,15 @@
 "DOTA_Tooltip_ability_centaur_custom_return_Lore"							"Bradwarden has no need to parry his opponent's attacks; his armor-like hide does it for him."
 "DOTA_Tooltip_ability_centaur_custom_return_base_damage"					"DAMAGE:"
 "DOTA_Tooltip_ability_centaur_custom_return_str_bonus"						"%STRENGTH BONUS DAMAGE:"
+"DOTA_Tooltip_ability_chen_custom_god_presence"								"God's Presence"
+"DOTA_Tooltip_ability_chen_custom_god_presence_Description"					"Chen uses the power of God to increase the armor of an ally."
+"DOTA_Tooltip_ability_chen_custom_god_presence_Lore"						"Chen incorporates faith into the Fold in the same way he himself was converted."
+"DOTA_Tooltip_ability_chen_custom_god_presence_armor_bonus"					"BONUS ARMOR:"
+"DOTA_Tooltip_ability_chen_custom_god_presence_duration"					"DURATION:"
+
+
+"DOTA_Tooltip_modifier_chen_custom_god_presence_buff"                       "God's Presence"
+"DOTA_Tooltip_modifier_chen_custom_god_presence_buff_Description"           "The Presence of God is increasing this unit armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
 "DOTA_Tooltip_Ability_clinkz_custom_multiattack"						"Multiattack"
 "DOTA_Tooltip_Ability_clinkz_custom_multiattack_Description"			"Clinkz upgrades his bow, shooting multiple arrows at a target.\nEach arrow is considered a basic attack."
 "DOTA_Tooltip_Ability_clinkz_custom_multiattack_attack_count"           "ATTACK COUNT:"

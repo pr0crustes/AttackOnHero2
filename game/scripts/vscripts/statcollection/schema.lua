@@ -73,20 +73,20 @@ function BuildPlayersArray()
 
                 local hero = PlayerResource:GetSelectedHeroEntity(playerID)
 
-                table.insert(players, {
-                    -- steamID32 required in here
-                    steamID32 = PlayerResource:GetSteamAccountID(playerID),
+                if hero then
+                    table.insert(players, {
+                        -- steamID32 required in here
+                        steamID32 = PlayerResource:GetSteamAccountID(playerID),
 
-                    -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
-                    -- Add player values here as someValue = GetSomePlayerValue(),
-                    if hero then
+                        -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
+                        -- Add player values here as someValue = GetSomePlayerValue(),
                         hero_name = GetHeroName(playerID),
                         level = hero:GetLevel(),
                         deaths = hero:GetDeaths(),
 
                         items = GetItemList(hero)
-                    end
-                })
+                    })
+                end
             end
         end
     end

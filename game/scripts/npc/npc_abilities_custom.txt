@@ -4035,6 +4035,27 @@
         }
     }
 }
+"chen_hand_of_god"
+{
+    "AbilityCooldown"				"40 30 20"
+
+    "AbilityManaCost"				"200 300 400"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "heal_amount"			    "250 450 650"
+            "LinkedSpecialBonus"	    "special_bonus_unique_chen_2"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "ancient_creeps_scepter"	"0"
+        }
+    }
+}
 "clinkz_searing_arrows"
 {
     "AbilitySpecial"
@@ -5895,6 +5916,63 @@
                     "Function"			"on_attacked"
                     "damage"		    "%attack_damage"
                 }
+            }
+        }
+    }
+}
+"chen_custom_god_presence"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO"
+
+    "AbilityTextureName"		"chen_holy_persuasion"
+
+    "AbilityCastRange"			"1200"
+    "AbilityCastPoint"			"0.3"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilityCooldown"			"22.0 20.0 18.0 16.0"
+    "AbilityManaCost"			"150 200 250 300"
+
+    "AbilityDuration"           "4.0 5.0 5.5 6.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "armor_bonus"	        "30 40 50 60"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "duration"	            "4.0 5.0 5.5 6.0"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "ModifierName"	    "modifier_chen_custom_god_presence_buff"
+            "Target"		    "TARGET"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_chen_custom_god_presence_buff"
+        {
+            "IsBuff"            "1"
+            "IsPurgable"        "0"
+            "Duration"          "%duration"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
             }
         }
     }

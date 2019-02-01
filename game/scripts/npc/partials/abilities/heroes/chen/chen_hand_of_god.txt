@@ -1,0 +1,21 @@
+"chen_hand_of_god"
+{
+    "AbilityCooldown"				"40 30 20"
+
+    "AbilityManaCost"				"200 300 400"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "heal_amount"			    "250 450 650"
+            "LinkedSpecialBonus"	    "special_bonus_unique_chen_2"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "ancient_creeps_scepter"	"0"
+        }
+    }
+}

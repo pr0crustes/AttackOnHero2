@@ -29,6 +29,10 @@
     "Ability14"		"special_bonus_armor_8"
     "Ability16"     "centaur_custom_bonus_strength"
 }
+"npc_dota_hero_chen"
+{
+    "Ability3"		"chen_custom_god_presence"
+}
 "npc_dota_hero_clinkz"
 {
     "Ability6"		"clinkz_custom_multiattack"
