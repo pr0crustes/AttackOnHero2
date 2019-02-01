@@ -130,6 +130,7 @@
 		"item"		"item_heart"	
 		"item"		"item_assault"
 		"item"		"item_dragon_scale"
+		"item"		"item_formidable_chest"
 	}
 			
 	"weapons"
