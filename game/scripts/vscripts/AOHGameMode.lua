@@ -262,7 +262,8 @@ function AOHGameMode:_CheckForDefeat()
 	end
 
 	if bAllPlayersDead or not self._entAncient or self._entAncient:GetHealth() <= 0 then
-		GameRules:MakeTeamLose(DOTA_TEAM_GOODGUYS)
+		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
+		--GameRules:MakeTeamLose(DOTA_TEAM_GOODGUYS)
 	end
 end
 

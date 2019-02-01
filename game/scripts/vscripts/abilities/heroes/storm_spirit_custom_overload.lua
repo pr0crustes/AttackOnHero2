@@ -2,6 +2,7 @@ require("lib/my")
 
 
 local modifier_hud = "modifier_storm_spirit_custom_overload_hud"
+local modifier_duration = "modifier_storm_spirit_custom_overload_duration"
 
 
 function on_ability_executed(keys)
@@ -10,8 +11,8 @@ function on_ability_executed(keys)
     local used_ability = keys.event_ability
 
 
-    if used_ability and used_ability:GetCaster() == caster and caster:IsAlive() and not used_ability:IsItem() then
-        ability:ApplyDataDrivenModifier(caster, caster, "modifier_storm_spirit_custom_overload_duration", {})
+    if used_ability and caster:IsAlive() and not used_ability:IsItem() then
+        ability:ApplyDataDrivenModifier(caster, caster, modifier_duration, {})
     end
 end
 
@@ -49,6 +50,10 @@ function on_attack_landed(keys)
                 damage_type = ability:GetAbilityDamageType(),
                 ability = ability,
             })
+        end
+
+        while caster:HasModifier(modifier_duration) do
+            caster:RemoveModifierByName(modifier_duration)
         end
     end
 end

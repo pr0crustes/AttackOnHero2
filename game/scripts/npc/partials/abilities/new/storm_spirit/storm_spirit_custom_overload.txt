@@ -73,15 +73,6 @@
             "Duration"              "%duration"
             "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
 
-            "OnAttackLanded"
-            {
-                "RemoveModifier"
-                {
-                    "Target"		"CASTER"
-                    "ModifierName"	"modifier_storm_spirit_custom_overload_duration"
-                }
-            }
-
             "OnCreated"
             {
                 "RunScript"

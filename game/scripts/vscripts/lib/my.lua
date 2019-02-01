@@ -50,6 +50,17 @@ function decrease_modifier(caster, target, modifier)
 end
 
 
+function increase_lua_modifier(caster, target, modifier)
+	if target:HasModifier(modifier) then
+		local newCount = target:GetModifierStackCount(modifier, caster) + 1
+        target:SetModifierStackCount(modifier, caster, newCount)
+	else
+		target:AddNewModifier(caster, nil, modifier, {})
+		target:SetModifierStackCount(modifier, caster, 1)
+    end
+end
+
+
 function consumable_used(caster, item, modifier)
 	increase_modifier(caster, caster, item, modifier)
     caster:RemoveItem(item)

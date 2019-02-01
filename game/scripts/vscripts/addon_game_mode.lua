@@ -1,4 +1,5 @@
 require("AOHGameMode")
+require("statcollection/init")
 
 
 

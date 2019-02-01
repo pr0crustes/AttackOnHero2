@@ -15,7 +15,7 @@
     "AbilityCastPoint"				"0.45"
 
     "AbilityCooldown"				"9.0 8.0 7.0 6.0"
-    "AbilityDuration"				"25.0 30.0 35.0 40.0"
+    "AbilityDuration"				"30.0 40.0 50.0 60.0"
 
     "AbilityManaCost"				"85 95 105 115"
 
@@ -23,18 +23,18 @@
     {
         "01"
         {
-            "var_type"						"FIELD_INTEGER"
-            "damage"					    "50 100 150 200"
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"100 200 300 400"
         }
         "02"
         {
-            "var_type"						"FIELD_INTEGER"
-            "str_bonus"						"4 5 6 7"
+            "var_type"				"FIELD_INTEGER"
+            "str_bonus"				"4 5 6 7"
         }	
         "03"
         {
-            "var_type"						"FIELD_FLOAT"
-            "duration"				        "25.0 30.0 35.0 40.0"
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"30.0 40.0 50.0 60.0"
         }
     }
 
@@ -42,15 +42,15 @@
     {
         "ApplyModifier"
         {
-            "Target"			"CASTER"
-            "ModifierName"		"modifier_custom_decay"
+            "Target"			    "CASTER"
+            "ModifierName"		    "modifier_custom_decay"
         }
 
         "Damage"
         {
-            "Target"		"TARGET"
-            "Type"			"%AbilityUnitDamageType"
-            "Damage"		"%damage"
+            "Target"		        "TARGET"
+            "Type"			        "%AbilityUnitDamageType"
+            "Damage"		        "%damage"
         }
 
         "FireEffect"
@@ -97,12 +97,11 @@
                     "EffectName"			"Hero_Undying.Decay.Transfer"
                     "Target"				"CASTER"
                 }
-
                 "RunScript"
                 {
-                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
-                    "Function"			"increate_hud_modifier"
-                    "modifier"          "modifier_custom_decay_hud"
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_custom_decay_hud"
                 }
             }
 
@@ -110,9 +109,9 @@
             {
                 "RunScript"
                 {
-                    "ScriptFile"		"abilities/other/modify_hud_modifier.lua"
-                    "Function"			"decrease_hud_modifier"
-                    "modifier"          "modifier_custom_decay_hud"
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_custom_decay_hud"
                 }
             }
 
