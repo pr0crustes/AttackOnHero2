@@ -1,5 +1,0 @@
-"DOTA_Tooltip_ability_item_supreme_mjollnir"                                    "Supreme Mjollnir"
-"DOTA_Tooltip_ability_item_supreme_mjollnir_Description"						"<h1>Active: Static Charge</h1>Places a charged shield on a target unit for %static_duration% seconds which has a %static_chance%%% chance to release a %static_damage% magical damage shocking bolt at a nearby attacker and %static_strikes% additional enemies.<br><br>Range: %tooltip_range%\n<h1>Passive: Chain Lightning</h1>Grants a %chain_chance%%% chance on attack to release a bolt of electricity that leaps between %chain_strikes% targets within a %chain_radius% radius, dealing %chain_damage% magical damage to each. Lightning proc pierces evasion. Lightning has a %chain_cooldown% second cooldown."
-"DOTA_Tooltip_ability_item_supreme_mjollnir_Lore"								"Thor's magical hammer, made for him by the dwarves Brok and Eitri."
-"DOTA_Tooltip_ability_item_supreme_mjollnir_bonus_damage"						"+$damage"
-"DOTA_Tooltip_ability_item_supreme_mjollnir_bonus_attack_speed"					"+$attack"	

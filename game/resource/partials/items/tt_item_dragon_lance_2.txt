@@ -1,6 +1,0 @@
-"DOTA_Tooltip_ability_item_dragon_lance_2"                                "Dragon Lance LVL 2"
-"DOTA_Tooltip_ability_item_dragon_lance_2_Description"                    "<h1>Passive: Dragon's Reach</h1> Increases attack range of ranged heroes by %base_attack_range%."
-"DOTA_Tooltip_ability_item_dragon_lance_2_Note0"                          "Passive does not stack."
-"DOTA_Tooltip_ability_item_dragon_lance_2_bonus_agility"                  "+$agi"
-"DOTA_Tooltip_ability_item_dragon_lance_2_bonus_strength"                 "+$str"
-"DOTA_Tooltip_ability_item_dragon_lance_2_Lore"                           "The forward charge of the wyvern host grants no quarter."

@@ -1,8 +1,0 @@
-"DOTA_Tooltip_ability_item_great_shivas_guard"                              "Great Shivas Guard"
-"DOTA_Tooltip_ability_item_great_shivas_guard_Description"					"<h1>Active: Arctic Blast</h1> Emits a freezing wave that deals %blast_damage% magical damage to enemies and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds.<br><br>Radius: %blast_radius%\n<h1>Passive: Freezing Aura</h1> Reduces the attack speed of all enemies by %aura_attack_speed%. <br><br>Radius: %aura_radius%"
-"DOTA_Tooltip_ability_item_great_shivas_guard_Lore"							"Said to have belonged to a goddess, today it retains much of its former power."
-"DOTA_Tooltip_ability_item_great_shivas_guard_Note0"						"The wave extends at a speed of 350 to a max size of 900."
-"DOTA_Tooltip_ability_item_great_shivas_guard_Note1"						"The Arctic Blast follows its caster."
-"DOTA_Tooltip_ability_item_great_shivas_guard_Note2" 						"Multiple instances of Freezing Aura do not stack."
-"DOTA_Tooltip_ability_item_great_shivas_guard_bonus_intellect"				"+$int"
-"DOTA_Tooltip_ability_item_great_shivas_guard_bonus_armor"					"+$armor"
