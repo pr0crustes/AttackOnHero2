@@ -51,14 +51,14 @@ function BuildGameArray()
     local game = {}
 
     -- Add game values here as game.someValue = GetSomeGameValue()
-    game.game_time = GameRules:GetGameTime()
-    game.round = GameRules.GLOBAL_roundNumber
+    game.gt = math.ceil(GameRules:GetGameTime() / 60)  -- in minutes.
+    game.gr = GameRules.GLOBAL_roundNumber
 
-    game.ancient_alive = false
+    game.aa = 0
 
     local ancient = Entities:FindByName(nil, "dota_goodguys_fort")
     if ancient and ancient:IsAlive() then
-        game.ancient_alive = true
+        game.aa = 1
     end
 
     return game
@@ -80,11 +80,11 @@ function BuildPlayersArray()
 
                         -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
                         -- Add player values here as someValue = GetSomePlayerValue(),
-                        hero_name = GetHeroName(playerID),
-                        level = hero:GetLevel(),
-                        deaths = hero:GetDeaths(),
+                        ph = GetHeroName(playerID),
+                        pl = hero:GetLevel(),
+                        pd = hero:GetDeaths(),
 
-                        items = GetItemList(hero)
+                        pi = GetItemList(hero)
                     })
                 end
             end
