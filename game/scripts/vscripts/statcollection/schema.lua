@@ -76,13 +76,7 @@ function BuildPlayersArray()
                     level = hero:GetLevel(),
                     deaths = hero:GetDeaths(),
 
-                    item1 = GetItemSlot(hero, 0),
-                    item2 = GetItemSlot(hero, 1),
-                    item3 = GetItemSlot(hero, 2),
-                    item4 = GetItemSlot(hero, 3),
-                    item5 = GetItemSlot(hero, 4),
-                    item6 = GetItemSlot(hero, 5),
-
+                    items = GetItemList(hero)
                 })
             end
         end
