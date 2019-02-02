@@ -5046,6 +5046,20 @@
         }
     }
 }
+"riki_tricks_of_the_trade"
+{
+    "AbilityCooldown"				"45 40 35"
+    "AbilityManaCost"				"75 100 125"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "attack_rate"				"0.35 0.25 0.15"
+        }
+    }
+}
 "rubick_spell_steal"
 {
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
