@@ -1,4 +1,7 @@
 "npc_dota_hero_legion_commander"
 {
-    "Ability6"          "sven_gods_strength"
+    "Ability6"          "legion_commander_custom_unite"
+    "Ability12"			"special_bonus_attack_speed_60"
+    "Ability13"			"special_bonus_cooldown_reduction_25"
+    "Ability16"			"special_bonus_attack_damage_150"
 }
