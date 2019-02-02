@@ -259,5 +259,10 @@
     "Ability14"		"special_bonus_attack_speed_140"
     "Ability17"		"witch_doctor_custom_bonus_unique_1"
 }
+"npc_dota_hero_zuus"
+{
+    "Ability6"		"zuus_custom_thundergods_wrath"
+    "Ability13"		"special_bonus_attack_speed_200"
+}
 
 }

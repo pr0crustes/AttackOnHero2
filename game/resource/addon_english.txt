@@ -1018,6 +1018,13 @@
 "DOTA_Tooltip_Ability_witch_doctor_custom_death_skull_damage"					"DAMAGE:"
 "DOTA_Tooltip_Ability_witch_doctor_custom_death_skull_interval"			        "SHOOT SPEED:"
 "DOTA_Tooltip_ability_witch_doctor_custom_death_skull_aghanim_description"		"Death Skull shoots at your attack speed."
+"DOTA_Tooltip_Ability_zuus_custom_thundergods_wrath"				    "Thundergod's Wrath"
+"DOTA_Tooltip_Ability_zuus_custom_thundergods_wrath_Description"		"After cast, the next thunder spell used will be recasted %casts% times.\nNimbus is not recasted by Thundergod's Wrath."
+"DOTA_Tooltip_Ability_zuus_custom_thundergods_wrath_lore"				"The Lord of Heaven smites all who oppose him."
+
+
+"DOTA_Tooltip_zuus_custom_thundergods_wrath_buff"                       "Thundergod's Wrath"
+"DOTA_Tooltip_zuus_custom_thundergods_wrath_buff_Description"           "The next thunder spell used will be recasted."
 "DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"
 "DOTA_Tooltip_Ability_dark_seer_custom_bonus_unique_1"          "+1 clone to Dark Clone."
 "DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"

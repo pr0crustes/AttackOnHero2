@@ -5610,6 +5610,29 @@
         }			
     }
 }
+"zuus_arc_lightning"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arc_damage"			"110 140 170 200"
+            "LinkedSpecialBonus"	"special_bonus_unique_zeus_2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "jump_delay"			"0.20"
+        }
+    }
+}
+"zuus_lightning_bolt"
+{
+    "AbilityDamage"					"100 225 350 475"
+
+    "AbilityCooldown"				"8.0 7.0 6.0 5.0"
+}
 "zuus_static_field"
 {   
     "AbilitySpecial"
@@ -5617,7 +5640,7 @@
         "01"
         {
             "var_type"					"FIELD_FLOAT"
-            "damage_health_pct"			"0.5 1 1.5 2"
+            "damage_health_pct"			"0.25 0.5 0.75 1.0"
             "LinkedSpecialBonus"		"special_bonus_unique_zeus"
         }
     }
@@ -8428,6 +8451,68 @@
         {
             "ScriptFile"		"abilities/heroes/witch_doctor_custom_death_skull.lua"
             "Function"			"on_hit"
+        }
+    }
+}
+"zuus_custom_thundergods_wrath"
+{
+    "BaseClass"						        "ability_datadriven"
+    "AbilityBehavior"                       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					        "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			        "zuus_thundergods_wrath"
+
+    "AbilityCastPoint"				        "0.1"
+
+    "AbilityCooldown"				        "70.0 65.0 60.0"
+
+    "AbilityManaCost"				        "150 200 250"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "casts"	                        "4 6 8"
+        }
+        "02"
+        {
+            "var_type"				        "FIELD_FLOAT"
+            "interval"	                    "0.3"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"		                "CASTER"
+            "ModifierName"	                "zuus_custom_thundergods_wrath_buff"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "zuus_custom_thundergods_wrath_buff" 
+        {
+            "IsBuff"	                    "1"
+
+            "OnCreated"
+            {
+                "FireSound"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "Hero_Zuus.GodsWrath.PreCast"
+                }
+            }
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/heroes/zuus_custom_thundergods_wrath.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
         }
     }
 }
