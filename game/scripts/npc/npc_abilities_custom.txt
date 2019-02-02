@@ -4035,6 +4035,58 @@
         }
     }
 }
+"broodmother_insatiable_hunger"
+{
+    "AbilityCooldown"				"50.0"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"80 160 240"
+            "LinkedSpecialBonus"	"special_bonus_unique_broodmother_1"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "lifesteal_pct"			"60 80 100"
+            "LinkedSpecialBonus"	"special_bonus_unique_broodmother_1"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"15.0"
+        }
+    }
+}
+"broodmother_spin_web"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "count"					"4 6 8 12"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heath_regen"			"6 10 14 18"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"4 6 8 12"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "charge_restore_time"	"30.0"
+        }
+    }
+}
 "chen_hand_of_god"
 {
     "AbilityCooldown"				"40 30 20"
@@ -5858,6 +5910,46 @@
                     "Function"      "cast_jinada"
                 }
             }
+        }
+    }
+}
+"broodmother_custom_spawn_spiderlings"
+{
+    "BaseClass"                     "ability_datadriven"
+    
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName"            "broodmother_spawn_spiderlings"
+
+    "AbilityCooldown"               "14.0 12.0 10.0 8.0"
+
+    "AbilityManaCost"               "70 80 90 100"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "count"			    "1 2 3 4"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"			"70 80 90 100"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "SpawnUnit"
+        {
+            "Target"			"CASTER"
+            "UnitName"			"npc_dota_broodmother_spiderling"
+            "UnitCount"			"%count"
+            "Duration"			"%duration"
+            "UnitLimit"			"50"
+            "SpawnRadius"		"50"
         }
     }
 }

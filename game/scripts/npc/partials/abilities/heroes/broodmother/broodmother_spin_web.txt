@@ -1,0 +1,26 @@
+"broodmother_spin_web"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "count"					"4 6 8 12"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heath_regen"			"6 10 14 18"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"4 6 8 12"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "charge_restore_time"	"30.0"
+        }
+    }
+}

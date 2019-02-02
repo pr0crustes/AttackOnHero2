@@ -1,0 +1,59 @@
+"item_recipe_wicked_locket"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_recipe_holy_locket"
+
+    "ItemCost"						"550"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_wicked_locket"
+    "ItemRequirements"
+    {
+        "01"						"item_holy_locket;item_ring_of_tarrasque"
+    }
+}
+
+
+
+"item_wicked_locket"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_holy_locket"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityTextureName"		    "wicked_locket"
+
+    "ItemQuality"					"rare"
+    "ActiveDescriptionLine"			"2"
+
+    
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_health"			"300"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"425"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "health_regen"	        "8"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "magic_resist"		    "15"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal_increase"		    "35"
+        }
+    }
+}

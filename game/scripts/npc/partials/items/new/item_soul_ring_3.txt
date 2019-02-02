@@ -1,0 +1,66 @@
+"item_recipe_soul_ring_3"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_soul_ring"
+
+    "ItemCost"						"400"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_soul_ring_3"
+    "ItemRequirements"
+    {
+        "01"						"item_soul_ring_2"
+    }
+}	
+
+
+
+"item_soul_ring_3"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_soul_ring"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+    "AbilityTextureName"		    "soul_ring_3"
+
+    "AbilityCooldown"				"12.0"
+    "AbilitySharedCooldown"			"soul_ring"
+
+    "AbilityManaCost"				"0"
+    "ItemShopTags"					"regen_health;boost_mana"
+    "ItemQuality"					"common"
+    "ItemAliases"					"soul ring"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"	
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_strength"		"12"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bonus_health_regen"	"6.5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "health_sacrifice"		"200"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_gain"				"250"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration"				"10"
+        }
+    }
+}

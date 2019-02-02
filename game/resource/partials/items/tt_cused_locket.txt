@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_item_wicked_locket"                       "Cursed Locket"
+"DOTA_Tooltip_ability_item_wicked_locket_Description"			"<h1>Passive: Bad Fortune </h1>Amplifies heals and regeneration you provide by %heal_increase%%%."
+"DOTA_Tooltip_ability_item_wicked_locket_bonus_health"			"+$health"
+"DOTA_Tooltip_ability_item_wicked_locket_bonus_mana"			"+$mana"
+"DOTA_Tooltip_ability_item_wicked_locket_health_regen"			"+$hp_regen"
+"DOTA_Tooltip_ability_item_wicked_locket_magic_resist"			"%+$spell_resist"

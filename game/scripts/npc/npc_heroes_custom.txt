@@ -23,6 +23,13 @@
     "Ability15"		"special_bonus_armor_8"
     "Ability17"		"special_bonus_attack_speed_200"
 }
+"npc_dota_hero_broodmother"
+{
+    "Ability1"		"broodmother_custom_spawn_spiderlings"
+    "Ability10"		"special_bonus_mp_regen_10"
+    "Ability14"		"special_bonus_armor_8"
+    "Ability17"		"special_bonus_attack_damage_100"
+}
 "npc_dota_hero_centaur"
 {
     "Ability3"		"centaur_custom_return"

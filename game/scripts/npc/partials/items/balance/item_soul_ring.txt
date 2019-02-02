@@ -1,0 +1,4 @@
+"item_soul_ring"
+{
+    "AbilitySharedCooldown"			"soul_ring"
+}

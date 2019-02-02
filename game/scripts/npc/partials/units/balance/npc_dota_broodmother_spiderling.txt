@@ -1,0 +1,16 @@
+"npc_dota_broodmother_spiderling"
+{
+    "Ability2"					""
+
+    "ArmorPhysical"				"2"
+    "MagicalResistance"			"50"
+
+    "AttackDamageMin"			"30"
+    "AttackDamageMax"			"40"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"700"
+}

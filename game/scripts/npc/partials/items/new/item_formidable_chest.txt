@@ -1,0 +1,42 @@
+"item_recipe_formidable_chest"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe"
+
+    "ItemCost"						"400"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_formidable_chest"
+    "ItemRequirements"
+    {
+        "01"						"item_platemail;item_platemail"
+    }
+}	
+
+
+
+"item_formidable_chest"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"                     "item_platemail"
+
+    "AbilityTextureName"		    "formidable_chest"
+
+    "ItemShopTags"					"armor"
+    "ItemQuality"					"secret_shop"
+    "ItemAliases"					"Formidable Chest"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"22"
+        }
+    }
+}

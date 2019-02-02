@@ -1,0 +1,40 @@
+"broodmother_custom_spawn_spiderlings"
+{
+    "BaseClass"                     "ability_datadriven"
+    
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName"            "broodmother_spawn_spiderlings"
+
+    "AbilityCooldown"               "14.0 12.0 10.0 8.0"
+
+    "AbilityManaCost"               "70 80 90 100"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "count"			    "1 2 3 4"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"			"70 80 90 100"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "SpawnUnit"
+        {
+            "Target"			"CASTER"
+            "UnitName"			"npc_dota_broodmother_spiderling"
+            "UnitCount"			"%count"
+            "Duration"			"%duration"
+            "UnitLimit"			"50"
+            "SpawnRadius"		"50"
+        }
+    }
+}
