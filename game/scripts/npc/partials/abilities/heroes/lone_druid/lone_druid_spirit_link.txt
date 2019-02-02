@@ -1,0 +1,24 @@
+"lone_druid_spirit_link"
+{
+    "AbilityCooldown"				"43 36 29 25"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			        "FIELD_INTEGER"
+            "bonus_attack_speed"		"20 40 60 80"		
+            "LinkedSpecialBonus"	    "special_bonus_unique_lone_druid_6"
+        }
+        "02"
+        {
+            "var_type"			        "FIELD_INTEGER"
+            "lifesteal_percent"			"10 20 30 40"
+        }
+        "03"
+        {
+            "var_type"			        "FIELD_FLOAT"
+            "duration"	                "10"
+        }
+    }
+}

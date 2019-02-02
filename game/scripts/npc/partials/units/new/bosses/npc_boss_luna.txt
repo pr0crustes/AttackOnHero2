@@ -1,0 +1,83 @@
+"npc_boss_luna"
+{
+    "Model"						"models/heroes/luna/luna.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_Luna"
+    "GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
+    "VoiceFile"		            "soundevents/voscripts/game_sounds_vo_luna.vsndevts"
+    
+    "Level"						"15"
+    "ModelScale" 				"1.7"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "AbilityLayout"				"6"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_luna"
+    }
+
+    "Ability1"					"custom_moon_glaive"
+    "Ability2"					"custom_eclipse"
+    "Ability3"					"luna_lucent_beam"
+
+    "ArmorPhysical"				"25"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+
+    "AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackAcquisitionRange"	"1200"
+    "AttackRange"		        "350"
+    "ProjectileModel"		    "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
+    "ProjectileSpeed"		    "900"
+
+    "AttackDamageMin"			"345"
+    "AttackDamageMax"			"370"
+
+    "RingRadius"				"160"
+    "HealthBarOffset"			"380"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"110"
+    "BountyGoldMax"				"123"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"300"
+    "StatusHealth"				"33000"
+    "StatusHealthRegen"			"12"
+    "StatusMana"				"2500"
+    "StatusManaRegen"			"34"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"				"50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"                      "custom_eclipse"
+                "MinimumTargets"			"1"
+                "Radius"					"450"
+            }
+            "Ability2"
+            {
+                "Name"                      "luna_lucent_beam"
+            }
+        }
+        "EquippedItems"
+        {
+            "Sange and Yasha"           { "Item"        "item_sange_and_yasha" }
+        }
+        "AttachWearables"
+        {
+            "1"	{ "ItemDef"     "5441" }
+            "2"	{ "ItemDef"     "5442" }
+            "3" { "ItemDef"     "5443" }
+            "4" { "ItemDef"     "5444" }
+            "5" { "ItemDef"     "452"  }
+        }
+    }
+}

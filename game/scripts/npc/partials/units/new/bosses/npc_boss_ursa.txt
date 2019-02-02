@@ -1,0 +1,83 @@
+"npc_boss_ursa"
+{
+    "Model"						"models/heroes/ursa/ursa.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_Ursa"
+    "GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+    "Level"						"7"
+    "ModelScale" 				"1.9"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+
+    "Ability1"					"ursa_earthshocks"
+    "Ability2"					"ursa_overpower"
+    "Ability3"					"custom_fury_swipes"
+    "Ability4"					"ursa_enrage"
+    "Ability5"					"troll_warlord_fervor"
+    "Ability6"                  "tidehunter_kraken_shell"
+
+    "ArmorPhysical"				"20"
+    "MagicalResistance"			"-30"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"5"
+    "AttackDamageMax"			"10"
+    "AttackRate"				"0.8"
+    "AttackAnimationPoint"		"0.43"
+    "AttackAcquisitionRange"	"500"
+    "AttackRange"				"164"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			"0"
+    "RingRadius"				"70"
+    "HealthBarOffset"			"215"
+    "BountyXP"					"200"
+    "BountyGoldMin"				"300"
+    "BountyGoldMax"				"300"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"400"
+    "MovementTurnRate"			"0.001"
+    "StatusHealth"				"30000"
+    "StatusHealthRegen"			"2"
+    "StatusMana"				"3000"
+    "StatusManaRegen"			"20"
+    "VisionDaytimeRange"		"1400"
+    "VisionNighttimeRange"		"1400"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "70.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				"ursa_overpower"
+            }
+            "Ability2"
+            {
+                "Name"				"ursa_enrage"
+            }
+            "Ability3"
+            {
+                "Name"				"ursa_earthshock"
+                "AOE"				"1"
+                "Radius"			"275"
+                "MinimumTargets"	"2"
+            }
+        }
+        "EquippedItems"
+        {
+            "Aghs"       		{ "Item"        "item_ultimate_scepter" }
+            "Octarine"       	{ "Item"        "item_octarine_core"    }
+        }
+        "AttachWearables"
+        {
+            "1"         { "ItemDef"     "85" }
+            "2"         { "ItemDef"     "86" }
+            "3"         { "ItemDef"     "87" }
+            "4"         { "ItemDef"     "88" }
+        }
+    }
+}

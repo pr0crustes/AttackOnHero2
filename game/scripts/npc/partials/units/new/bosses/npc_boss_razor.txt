@@ -1,0 +1,74 @@
+"npc_boss_razor"
+{
+    "Model"                                 "models/heroes/razor/razor.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_Razor"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
+    "Level"                                 "20"
+    "ModelScale"                            "1.5"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+    "AbilityLayout"							"4"
+
+    "Ability1"                              "custom_static_link"
+    "Ability2"                              "custom_eye_of_the_storm"
+
+    "ArmorPhysical"                         "30"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "700"
+    "AttackDamageMax"                       "745"
+    "AttackRate"                            "0.8"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "1600"
+    "AttackRange"                           "450"
+    "ProjectileModel"                       "particles/units/heroes/hero_razor/razor_base_attack.vpcf"
+    "ProjectileSpeed"                       "2000"
+    "RingRadius"                            "200"
+    "HealthBarOffset"                       "350"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "130"
+    "BountyGoldMax"                         "140"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "300"
+    "StatusHealth"                          "70000"
+    "StatusHealthRegen"                     "27"
+    "StatusMana"                            "2500"
+    "StatusManaRegen"                       "44"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"              "custom_eye_of_the_storm"
+                "MinimumTargets"	"1"
+                "Radius"			"450"
+            }
+            "Ability1"
+            {
+                "Name"              "custom_static_link"
+            }
+        }
+        "EquippedItems"
+        {
+            "Maelstrom"       { "Item"        "item_maelstrom" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "12574" }
+            "2" { "ItemDef"     "12575" }
+            "3" { "ItemDef"     "12576" }
+            "4" { "ItemDef"     "12577" }
+            "5" { "ItemDef"     "12578" }
+        }
+    }
+}

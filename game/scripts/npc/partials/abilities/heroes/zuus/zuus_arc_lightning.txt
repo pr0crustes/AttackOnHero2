@@ -1,0 +1,17 @@
+"zuus_arc_lightning"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arc_damage"			"110 140 170 200"
+            "LinkedSpecialBonus"	"special_bonus_unique_zeus_2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "jump_delay"			"0.20"
+        }
+    }
+}

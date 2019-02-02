@@ -1,0 +1,62 @@
+"zuus_custom_thundergods_wrath"
+{
+    "BaseClass"						        "ability_datadriven"
+    "AbilityBehavior"                       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					        "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			        "zuus_thundergods_wrath"
+
+    "AbilityCastPoint"				        "0.1"
+
+    "AbilityCooldown"				        "70.0 65.0 60.0"
+
+    "AbilityManaCost"				        "150 200 250"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "casts"	                        "4 6 8"
+        }
+        "02"
+        {
+            "var_type"				        "FIELD_FLOAT"
+            "interval"	                    "0.3"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"		                "CASTER"
+            "ModifierName"	                "zuus_custom_thundergods_wrath_buff"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "zuus_custom_thundergods_wrath_buff" 
+        {
+            "IsBuff"	                    "1"
+
+            "OnCreated"
+            {
+                "FireSound"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "Hero_Zuus.GodsWrath.PreCast"
+                }
+            }
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/heroes/zuus_custom_thundergods_wrath.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
+        }
+    }
+}

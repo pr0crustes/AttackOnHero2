@@ -1,0 +1,78 @@
+"npc_boss_vengeful"
+{
+	"Model"		                            "models/heroes/vengeful/vengeful.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_VengefulSpirit"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_vengeful.vsndevts"
+    "Level"                                 "10"
+    "ModelScale"                            "2.0"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+
+    "precache"
+    {
+        "particle_folder"				    "particles/units/heroes/hero_vengeful"
+    }
+
+    "Ability1"                              "custom_nether_swap"
+    "Ability2"                              "custom_magic_missile"
+
+    "ArmorPhysical"                         "28"
+    "MagicalResistance"						"20"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "370"
+    "AttackDamageMax"                       "420"
+    "AttackRate"                            "0.8"
+    "AttackAnimationPoint"          		"0.2"
+    "AttackAcquisitionRange"       		    "2500"
+    "AttackRange"                           "1000"
+    "ProjectileModel"                       "particles/units/heroes/hero_vengeful/vengeful_base_attack.vpcf"
+    "ProjectileSpeed"                       "1300"
+    "RingRadius"                            "100"
+    "HealthBarOffset"                       "250"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "165"
+    "BountyGoldMax"                         "190"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "320"
+    "StatusHealth"                          "180000"
+    "StatusHealthRegen"                     "30"
+    "StatusMana"                            "2500"
+    "StatusManaRegen"                       "44"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "65.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"              "custom_nether_swap"
+            }
+            "Ability2"
+            {
+                "Name"              "custom_magic_missile"
+            }
+        }
+        "EquippedItems"
+        {
+            "Mjollnir"       { "Item"        "item_mjollnir"   }
+            "Moonshard"      { "Item"		 "item_moon_shard" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "8616" }
+            "2" { "ItemDef"     "8617" }
+            "3" { "ItemDef"     "8618" }
+            "4" { "ItemDef"     "8619" }
+            "5" { "ItemDef"     "9749" }
+        }
+    }
+}

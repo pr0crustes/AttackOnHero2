@@ -1,0 +1,78 @@
+"npc_bristle_large"
+{
+    "BaseClass"					"npc_dota_creature"
+    "Model"						"models/heroes/bristleback/bristleback.vmdl"
+    "ModelScale"				"2.0"
+    "SoundSet"                  "Hero_Bristleback"
+    "VoiceFile"					"soundevents/voscripts/game_sounds_vo_bristleback.vsndevts"
+    "GameSoundsFile"            "soundevents/game_sounds_heroes/game_sounds_bristleback.vsndevts"
+    "Level"						"12"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "HasInventory"				"1"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_bristleback"
+    }
+
+    "Ability1"					"custom_quill_spray"
+    "Ability2"					"bristleback_viscous_nasal_goo"
+    "Ability3"					"bristleback_bristleback"
+    "Ability4"					"bristle_split_medium"
+
+    "ArmorPhysical"				"9"
+    "MagicalResistance"			"45"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"400"
+    "AttackDamageMax"			"500"
+    "AttackRate"				"1.5"
+    "AttackAnimationPoint"		"0.3"
+    "AttackAcquisitionRange"	"600"
+    "AttackRange"				"128"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "BountyXP"					"0"
+    "BountyGoldMin"				"40"
+    "BountyGoldMax"				"50"
+    "RingRadius"				"90"
+    "HealthBarOffset"			"210"
+    "BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"200"
+    "MovementTurnRate"			"0.2"
+    "StatusHealth"				"13000"
+    "StatusHealthRegen"			"1.0"
+    "StatusMana"				"1000"
+    "StatusManaRegen"			"25"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1400"
+    "VisionNighttimeRange"		"1400"
+
+    "Creature"
+    {
+        "DisableResistance"          "30.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"				"bristleback_viscous_nasal_goo"
+            }
+        }
+        "EquippedItems"
+        {
+            "Ultimate Scepter"		{"Item"		   "item_ultimate_scepter"}
+        }
+        "AttachWearables"
+        {
+            "1"	{ "ItemDef"	    "5762" }
+            "2"	{ "ItemDef"	    "8391" }
+            "3"	{ "ItemDef"	    "5764" }
+            "4"	{ "ItemDef"	    "5765" }
+            "5"	{ "ItemDef"	    "5766" }
+        }
+    }
+}

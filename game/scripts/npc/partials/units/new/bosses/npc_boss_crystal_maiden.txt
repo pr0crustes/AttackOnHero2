@@ -1,0 +1,89 @@
+"npc_boss_crystal_maiden"
+{
+    "Model"                                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "hero_Crystal"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+    "Level"                                 "25"
+    "ModelScale"                            "2.0"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+    "AbilityLayout"							"4"
+
+    "precache"
+    {
+        "particle_folder"				    "particles/units/heroes/hero_crystalmaiden"
+    }
+
+    "Ability1"								"custom_crystal_nova"
+    "Ability2"                              "custom_frostbite"
+    "Ability3"                              "custom_freezing_field"
+
+    "ArmorPhysical"                         "37"
+    "MagicalResistance"						"25"
+
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "800"
+    "AttackDamageMax"                       "900"
+    "AttackRate"                            "1.0"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "1000"
+    "AttackRange"                           "600"
+    "ProjectileModel"		                "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+    "ProjectileSpeed"		                "900"
+    "RingRadius"                            "180"
+    "HealthBarOffset"                       "400"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "150"
+    "BountyGoldMax"                         "160"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "320"
+    "StatusHealth"                          "130000"
+    "StatusHealthRegen"                     "10"
+    "StatusMana"                            "4000"
+    "StatusManaRegen"                       "100"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability3"
+            {
+                "Name"					    "custom_freezing_field"
+                "Radius"             	    "500"
+                "MinimumTargets"     	    "1"
+            }
+            "Ability2"
+            {
+                "Name"                      "custom_frostbite"
+            }
+            "Ability1"
+            {
+                "Name"                      "custom_crystal_nova"
+                "AOE"                       "1"
+                "Radius"             	    "500"
+                "MinimumTargets"     	    "1"
+            }
+        }
+        "EquippedItems"
+        {
+        }
+        "AttachWearables"
+        {
+            "Arcane"     { "ItemDef"     "7385" }
+            "1"  { "ItemDef"     "39"   }
+            "2"	 { "ItemDef"	 "40"   }
+            "3"  { "ItemDef"	 "41"   }
+            "4"	 { "ItemDef"	 "311"  }
+            "5"  { "ItemDef"     "502"  }
+        }
+    }
+}

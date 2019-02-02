@@ -1,0 +1,72 @@
+"npc_boss_small_tinker"
+{
+    "Model"                                 "models/heroes/tinker/tinker.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_Tinker"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
+    "Level"                                 "25"
+    "ModelScale"                            "1.2"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+    "AbilityLayout"							"4"
+
+    "precache"
+    {
+        "particle_folder"				    "particles/units/heroes/hero_tinker"
+    }
+
+    "Ability1"                              "custom_march_of_the_machines"
+
+    "ArmorPhysical"                         "28"
+    "MagicalResistance"						"25"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "350"
+    "AttackDamageMax"                       "450"
+    "AttackRate"                            "1.0"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "1000"
+    "AttackRange"                           "550"
+    "ProjectileModel"                       "particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+    "ProjectileSpeed"                       "1100"
+    "RingRadius"                            "100"
+    "HealthBarOffset"                       "150"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "150"
+    "BountyGoldMax"                         "160"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "320"
+    "StatusHealth"                          "55000"
+    "StatusHealthRegen"                     "6"
+    "StatusMana"                            "2000"
+    "StatusManaRegen"                       "50"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "40.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"               "custom_march_of_the_machines"
+                "Radius"			 "250"
+                "AOE"				 "1"
+            }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef" "7143" }
+            "2" { "ItemDef" "6224" }
+            "3"	{ "ItemDef"	"467"  }
+            "4"	{ "ItemDef"	"464"  }
+            "5"	{ "ItemDef"	"367"  }
+            "6" { "ItemDef" "463"  }
+        }
+    }
+}

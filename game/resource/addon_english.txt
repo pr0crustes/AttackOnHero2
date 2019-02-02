@@ -824,6 +824,9 @@
 
 "DOTA_Tooltip_modifier_lina_custom_burning_will"                                "Burning Will"
 "DOTA_Tooltip_modifier_lina_custom_burning_will_Description"                    "Receiving cooldown reduction and a base attack time reduction."
+"DOTA_Tooltip_Ability_lone_druid_custom_bear_style"						"Bear Style"
+"DOTA_Tooltip_Ability_lone_druid_custom_bear_style_Description"			"Switches your mana and health percentage with your bear."
+"DOTA_Tooltip_Ability_lone_druid_custom_bear_style_Lore"				"A spell created by the bear."
 "DOTA_Tooltip_ability_meepo_custom_divided_we_stand"					    "Divided We Stand"
 "DOTA_Tooltip_ability_meepo_custom_divided_we_stand_Description"		    "Meepo summons an imperfect, semi-autonomous duplicate of himself at the cast moment, which shares his experience, attributes, abilities and passsive items. Clones deals 50% damage."
 "DOTA_Tooltip_ability_meepo_custom_divided_we_stand_Lore"				    "Do I know you?"

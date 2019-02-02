@@ -1,0 +1,10 @@
+"npc_dota_lone_druid_bear3"
+{
+    "StatusHealth"				"4000"
+    "StatusHealthRegen"			"20"
+
+    "ArmorPhysical"				"15"
+
+    "VisionDaytimeRange"		"300"
+    "VisionNighttimeRange"		"200"
+}	

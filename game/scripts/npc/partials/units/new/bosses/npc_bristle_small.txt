@@ -1,0 +1,58 @@
+"npc_bristle_small"
+{
+    "BaseClass"					"npc_dota_creature"
+    "Model"						"models/heroes/bristleback/bristleback.vmdl"
+    "ModelScale"				"1.0"
+    "SoundSet"                  "Hero_Bristleback"
+    "VoiceFile"					"soundevents/voscripts/game_sounds_vo_bristleback.vsndevts"
+    "GameSoundsFile"            "soundevents/game_sounds_heroes/game_sounds_bristleback.vsndevts"
+    "Level"						"10"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+
+    "Ability1"					"custom_quill_spray"
+
+    "ArmorPhysical"				"2"
+    "MagicalResistance"			"40"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"100"
+    "AttackDamageMax"			"120"
+    "AttackRate"				"0.4"
+    "AttackAnimationPoint"		"0.3"
+    "AttackAcquisitionRange"	"600"
+    "AttackRange"				"128"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "BountyXP"					"0"
+    "BountyGoldMin"				"10"
+    "BountyGoldMax"				"20"
+    "RingRadius"				"70"
+    "HealthBarOffset"			"160"
+    "BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"320"
+    "MovementTurnRate"			"0.2"
+    "StatusHealth"				"650"
+    "StatusHealthRegen"			"1.0"
+    "StatusMana"				"0"
+    "StatusManaRegen"			"0"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1400"
+    "VisionNighttimeRange"		"1400"
+
+    "Creature"
+    {
+        "DisableResistance"          "50.0"
+        "AttachWearables"
+        {
+            "1"	{ "ItemDef"	    "5762" }
+            "2"	{ "ItemDef"	    "5763" }
+            "3"	{ "ItemDef"	    "5764" }
+            "4"	{ "ItemDef"	    "5765" }
+            "5"	{ "ItemDef"	    "5766" }
+        }
+    }
+}

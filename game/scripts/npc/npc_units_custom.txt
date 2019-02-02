@@ -32,6 +32,46 @@
     "VisionDaytimeRange"		"2000"
     "VisionNighttimeRange"		"2000"
 }	
+"npc_dota_lone_druid_bear1"
+{
+    "StatusHealth"				"2000"
+    "StatusHealthRegen"			"10"
+
+    "ArmorPhysical"				"5"
+
+    "VisionDaytimeRange"		"300"
+    "VisionNighttimeRange"		"200"
+}	
+"npc_dota_lone_druid_bear2"
+{
+    "StatusHealth"				"3000"
+    "StatusHealthRegen"			"15"
+
+    "ArmorPhysical"				"10"
+
+    "VisionDaytimeRange"		"300"
+    "VisionNighttimeRange"		"200"
+}	
+"npc_dota_lone_druid_bear3"
+{
+    "StatusHealth"				"4000"
+    "StatusHealthRegen"			"20"
+
+    "ArmorPhysical"				"15"
+
+    "VisionDaytimeRange"		"300"
+    "VisionNighttimeRange"		"200"
+}	
+"npc_dota_lone_druid_bear4"
+{
+    "StatusHealth"				"5000"
+    "StatusHealthRegen"			"25"
+
+    "ArmorPhysical"				"20"
+
+    "VisionDaytimeRange"		"300"
+    "VisionNighttimeRange"		"200"
+}	
 "npc_dota_lycan_wolf1"
 {
     "AttackDamageMin"			"34"

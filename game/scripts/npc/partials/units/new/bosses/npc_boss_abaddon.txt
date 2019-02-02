@@ -1,0 +1,87 @@
+"npc_boss_abaddon"
+{
+    "Model"						"models/heroes/abaddon/abaddon.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_Abaddon"
+    "ModelScale"				"2.0"
+    "Level"						"30"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+    "AbilityLayout"				"5"
+
+    "precache"
+    {
+        "particle_folder"       "particles/units/heroes/hero_abaddon"  
+    }
+
+    "Ability1"					"custom_death_coil"
+    "Ability2"					"custom_mortal_strike"
+    "Ability3"					"custom_tidebringer"
+    "Ability4"					"custom_borrowed_time"
+
+    "ArmorPhysical"				"30"
+    "MagicalResistance"			"10"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"590"
+    "AttackDamageMax"			"650"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"1.2"
+    "AttackAnimationPoint"		"0.3"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"250"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"300"
+    "BountyGoldMax"				"400"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+    "RingRadius"				"320"
+    "HealthBarOffset"			"500"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"325"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"150000"
+    "StatusHealthRegen"			"45"
+    "StatusMana"				"5000"
+    "StatusManaRegen"			"62"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "60.0"
+        "OffensiveAbilities"
+        {
+            "Ability4"
+            {
+                "Name"              "custom_borrowed_time"
+            }
+            "Ability3"
+            {
+                "Name"				"custom_tidebringer"
+            }
+            "Ability1"
+            {
+                "Name"              "custom_death_coil"
+            }
+        }
+        "EquippedItems"
+        {
+            "MKB"           		{ "Item"        "item_monkey_king_bar" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "7496" }
+            "2" { "ItemDef"     "7497" }
+            "3" { "ItemDef"     "7498" }
+            "4" { "ItemDef"     "7499" }
+            "5" { "ItemDef"     "7500" }
+        }
+    }
+}

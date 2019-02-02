@@ -1,0 +1,16 @@
+"templar_assassin_psi_blades"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_attack_range"		"60 180 260 420"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "attack_spill_range"		"600 650 700 750"
+        }
+    }
+}

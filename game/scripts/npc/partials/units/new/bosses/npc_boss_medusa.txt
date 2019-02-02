@@ -1,0 +1,88 @@
+"npc_boss_medusa"
+{
+    "Model"                                 "models/heroes/medusa/medusa.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_Medusa"
+    "GameSoundsFile"		                "soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
+    "Level"                                 "20"
+    "ModelScale"                            "1.8"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+
+    "precache"
+    {
+        "particle_folder"				    "particles/units/heroes/hero_medusa"
+    }
+
+    "Ability1"                              "custom_wave_of_silence"
+    "Ability2"                              "custom_windrun"
+    "Ability3"                              "custom_mystic_snake"
+    "Ability4"                              "custom_split_shot"
+
+    "ArmorPhysical"                         "40"
+    "MagicalResistance"						"20"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "534"
+    "AttackDamageMax"                       "665"
+    "AttackRate"                            "0.65"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "2500"
+    "AttackRange"                           "700"
+    "ProjectileModel"		                "particles/units/heroes/hero_medusa/medusa_base_attack.vpcf"
+    "ProjectileSpeed"		                "1200"
+    "RingRadius"                            "100"
+    "HealthBarOffset"                       "350"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "165"
+    "BountyGoldMax"                         "190"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "320"
+    "StatusHealth"                          "150000"
+    "StatusHealthRegen"                     "90"
+    "StatusMana"                            "2500"
+    "StatusManaRegen"                       "30"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"          "60.0"
+        "OffensiveAbilities"
+        {
+            "Ability3"
+            {
+                "Name"              "custom_mystic_snake"
+            }
+            "Ability2"
+            {
+                "Name"              "custom_windrun"
+            }
+            "Ability1"
+            {
+                "Name"              "custom_wave_of_silence"
+                "MinimumTargets"	"1"
+                "AOE"				"1"
+                "Radius"			"700"
+            }
+        }
+        "EquippedItems"
+        {
+            "Mjollnir"       { "Item"        "item_mjollnir" }
+            "Mjollnir"       { "Item"        "item_mjollnir" }
+            "Mjollnir"       { "Item"        "item_mjollnir" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "8191" }
+            "2" { "ItemDef"     "8193" }
+            "3" { "ItemDef"     "8194" }
+            "4" { "ItemDef"     "8195" }
+            "5" { "ItemDef"     "8196" }
+        }
+    }
+}

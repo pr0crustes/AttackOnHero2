@@ -1,0 +1,38 @@
+"lone_druid_spirit_bear"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bear_hp"					"2000 3000 4000 5000"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bear_regen_tooltip"	    "10 15 20 25"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "bear_bat"					"1.4 1.2 1.0 0.8"
+            "LinkedSpecialBonus"	    "special_bonus_unique_lone_druid_10"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bear_armor"				"5 10 15 20"
+            "LinkedSpecialBonus"	    "special_bonus_unique_lone_druid_2"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "backlash_damage"			"90.0"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "cooldown_scepter"			"40.0"
+        }
+    }
+}

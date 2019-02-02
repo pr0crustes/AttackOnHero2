@@ -1,0 +1,63 @@
+"npc_boss_hellbear"
+{
+    "Model"						"models/creeps/neutral_creeps/n_creep_furbolg/n_creep_furbolg_disrupter.vmdl"
+    "SoundSet"					"n_creep_Melee"
+    "BaseClass"					"npc_dota_creature"
+    
+    "ModelScale"				"2.0"
+    "Level"						"45"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "HasInventory"				"1"
+
+    "Ability1"					"custom_war_stomp"
+    "Ability2"                  "custom_heartstopper_aura"
+
+    "ArmorPhysical"				"70"
+    "MagicalResistance"			"55"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"2000"
+    "AttackDamageMax"			"2595"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"1.2"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"260"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"420"
+    "BountyGoldMax"				"420"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"160"
+    "HealthBarOffset"			"340"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"500"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"350000"
+    "StatusHealthRegen"			"50"
+    "StatusMana"				"3200"
+    "StatusManaRegen"			"100"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "70.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				"custom_war_stomp"
+                "AOE"				"1"
+                "Radius"			"500"
+                "MinimumTargets"	"1"
+            }
+        }
+    }
+}

@@ -103,6 +103,15 @@
 {
     "Ability6"		"lina_custom_burning_will"
 }
+"npc_dota_hero_lone_druid"
+{
+    "Ability3"		            "lone_druid_custom_bear_style"
+
+    "AttributeBaseStrength"		"15"
+    "AttributeStrengthGain"		"1.400000"
+    "AttributeBaseAgility"		"17"
+    "AttributeAgilityGain"		"1.000000"
+}
 "npc_dota_hero_meepo"
 {
     "Ability6"		"meepo_custom_divided_we_stand"

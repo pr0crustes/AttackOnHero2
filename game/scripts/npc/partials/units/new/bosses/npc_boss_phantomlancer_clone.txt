@@ -1,0 +1,77 @@
+"npc_boss_phantomlancer_clone"
+{
+    "Model"						"models/heroes/phantom_lancer/phantom_lancer.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_PhantomLancer"
+    "VoiceFile"					"soundevents/voscripts/game_sounds_vo_phantom_lancer.vsndevts"
+    "GameSoundsFile"            "soundevents/game_sounds_heroes/game_sounds_phantom_lancer.vsndevts"
+    "ModelScale"				"1.2"
+    "Level"						"36"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "HasInventory"				"1"
+    "AbilityLayout"				"4"
+    "Ability1"					"custom_phantom_edge"
+    "Ability2"                  "custom_mana_break"
+    "ArmorPhysical"				"35"
+    "MagicalResistance"			"0"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"450"
+    "AttackDamageMax"			"500"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"0.9"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"200"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"20"
+    "BountyGoldMax"				"60"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"140"
+    "HealthBarOffset"			"250"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"355"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"80000"
+    "StatusHealthRegen"			"40"
+    "StatusMana"				"4000"
+    "StatusManaRegen"			"100"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_phantom_lancer"
+    }
+
+    "Creature"
+    {
+        "DisableResistance"          "10.0"
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				"custom_phantom_charge"
+            }
+        }
+        "EquippedItems"
+        {
+            "Moonshard"            { "Item"        "item_moon_shard" }
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "6317" }
+            "2" { "ItemDef"     "6752" }
+            "3" { "ItemDef"     "6753" }
+            "4" { "ItemDef"     "6755" }
+            "5" { "ItemDef"     "127"  }
+        }
+    }
+}

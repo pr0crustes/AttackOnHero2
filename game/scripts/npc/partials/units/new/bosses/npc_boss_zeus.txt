@@ -1,0 +1,83 @@
+"npc_boss_zeus"
+{
+    "Model"						"models/heroes/zeus/zeus.vmdl"
+    "BaseClass"					"npc_dota_creature"
+    "SoundSet"					"Hero_zuus"
+    "GameSoundsFile"		    "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
+    "VoiceFile"		            "soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
+
+    "ModelScale"				"2.5"
+    "Level"						"21"
+    "CanBeDominated"			"0"
+    "ConsideredHero"			"1"
+    "HasInventory"				"1"
+    "AbilityLayout"				"4"
+
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_zuus"
+    }
+
+    "Ability1"					"custom_arc_lightning"
+    "Ability2"					"custom_lightning_bolt"
+    "Ability3"					"custom_static_field"
+
+    "ArmorPhysical"				"35"
+    "MagicalResistance"			"0"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"			"500"
+    "AttackDamageMax"			"680"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"0.7"
+    "AttackAnimationPoint"		"0.1"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"		        "680"
+    "ProjectileModel"		    "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
+    "ProjectileSpeed"		    "1100"
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"100"
+    "BountyGoldMax"				"110"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+    "RingRadius"				"200"
+    "HealthBarOffset"			"320"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"500"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"90000"
+    "StatusHealthRegen"			"10"
+    "StatusMana"				"2000"
+    "StatusManaRegen"			"30"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "60.0"
+
+        "OffensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"				"custom_arc_lightning"
+            }
+            "Ability2"
+            {
+                "Name"				"custom_lightning_bolt"
+            }
+        }
+        "EquippedItems"
+        {
+        }
+        "AttachWearables"
+        {
+            "1" { "ItemDef" "6914" }
+            "2" { "ItemDef" "8692" }
+            "3" { "ItemDef" "8693" }
+        }
+    }
+}
