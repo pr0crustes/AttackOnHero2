@@ -14,7 +14,7 @@
 
     "precache"
     {
-        "particle"              "particles/custom/templar_assassin_shield_impact.vpcf"
+        "particle"              "particles/custom/templar_assassin_custom_shield/templar_assassin_custom_shield.vpcf"
     }
 
     "AbilitySpecial"
@@ -52,13 +52,14 @@
             "IsBuff"				        "1"
             "Duration"				        "%duration"
             
-            "OnTakeDamage"
+            
+            "OnCreated"
             {
-                "FireEffect"
+                "AttachEffect"
                 {
-                    "Target"			    "CASTER"
-                    "EffectName"		    "particles/custom/templar_assassin_shield_impact.vpcf"
-                    "EffectAttachType"	    "follow_origin"
+                    "Target"                "CASTER"
+                    "EffectName"            "particles/custom/templar_assassin_custom_shield/templar_assassin_custom_shield.vpcf"
+                    "EffectAttachType"      "follow_origin"
                 }
             }
 

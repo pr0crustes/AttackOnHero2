@@ -5303,6 +5303,22 @@
         }
     }
 }
+"templar_assassin_psi_blades"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_attack_range"		"60 180 260 420"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "attack_spill_range"		"600 650 700 750"
+        }
+    }
+}
 "tinker_laser"
 {
     "AbilitySpecial"
@@ -7782,7 +7798,7 @@
 
     "precache"
     {
-        "particle"              "particles/custom/templar_assassin_shield_impact.vpcf"
+        "particle"              "particles/custom/templar_assassin_custom_shield/templar_assassin_custom_shield.vpcf"
     }
 
     "AbilitySpecial"
@@ -7820,13 +7836,14 @@
             "IsBuff"				        "1"
             "Duration"				        "%duration"
             
-            "OnTakeDamage"
+            
+            "OnCreated"
             {
-                "FireEffect"
+                "AttachEffect"
                 {
-                    "Target"			    "CASTER"
-                    "EffectName"		    "particles/custom/templar_assassin_shield_impact.vpcf"
-                    "EffectAttachType"	    "follow_origin"
+                    "Target"                "CASTER"
+                    "EffectName"            "particles/custom/templar_assassin_custom_shield/templar_assassin_custom_shield.vpcf"
+                    "EffectAttachType"      "follow_origin"
                 }
             }
 
