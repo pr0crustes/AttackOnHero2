@@ -1,0 +1,51 @@
+"keeper_of_the_light_custom_dawn"
+{
+   "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			"keeper_of_the_light_will_o_wisp"
+
+    "AbilityCastPoint"				"0.3"
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				"140 130 120"
+    "AbilityManaCost"				"125 175 225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "move_speed"	        "50 100 150"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"	            "30.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/heroes/keeper_of_the_light_custom_dawn.lua"
+            "Function"				"cast_keeper_of_the_light_custom_dawn"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_keeper_of_the_light_custom_dawn" 
+        {
+            "Passive"       "1"
+            "IsBuff"	    "1"
+            "IsHidden"      "1"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%move_speed"
+            }
+        }
+    }
+}

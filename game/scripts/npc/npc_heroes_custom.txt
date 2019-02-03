@@ -84,6 +84,12 @@
     "Ability6"		"huskar_custom_life_trade"
     "Ability15"     "special_bonus_attack_speed_80"
 }
+"npc_dota_hero_keeper_of_the_light"
+{
+    "Ability6"		"keeper_of_the_light_custom_dawn"
+    "Ability12"		"special_bonus_hp_regen_15"
+    "Ability16"		"special_bonus_cooldown_reduction_25"
+}
 "npc_dota_hero_legion_commander"
 {
     "Ability6"          "legion_commander_custom_unite"

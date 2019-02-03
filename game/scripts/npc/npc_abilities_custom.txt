@@ -4714,6 +4714,30 @@
         }
     }
 }
+"keeper_of_the_light_illuminate"
+{
+    "AbilityChannelTime"			    "2.0 2.4 2.8 3.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "damage_per_second"		    "100.0 166.6 214.2 266.6"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "max_channel_time"		    "2.0 2.4 2.8 3.0"
+        }
+        "12"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "total_damage"				"200 400 600 800"
+            "LinkedSpecialBonus"		"special_bonus_unique_keeper_of_the_light"
+        }
+    }
+}
 "leshrac_diabolic_edict"
 {
     "AbilityDuration"				"50"
@@ -6761,6 +6785,57 @@
                     "ScriptFile"    "abilities/heroes/huskar_custom_life_trade.lua"
                     "Function"      "on_interval_think"
                 }
+            }
+        }
+    }
+}
+"keeper_of_the_light_custom_dawn"
+{
+   "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			"keeper_of_the_light_will_o_wisp"
+
+    "AbilityCastPoint"				"0.3"
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				"140 130 120"
+    "AbilityManaCost"				"125 175 225"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "move_speed"	        "50 100 150"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"	            "30.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/heroes/keeper_of_the_light_custom_dawn.lua"
+            "Function"				"cast_keeper_of_the_light_custom_dawn"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_keeper_of_the_light_custom_dawn" 
+        {
+            "Passive"       "1"
+            "IsBuff"	    "1"
+            "IsHidden"      "1"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%move_speed"
             }
         }
     }
