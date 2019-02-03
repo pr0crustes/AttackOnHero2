@@ -1,0 +1,9 @@
+"npc_dota_hero_nevermore"
+{
+    "Ability4"		"nevermore_custom_necromastery"
+    "Ability6"		"nevermore_custom_requiem"
+    "Ability12"		"special_bonus_attack_range_125"
+    "Ability14"		"special_bonus_unique_nevermore_5"
+    "Ability16"		"nevermore_custom_bonus_unique_1"
+    "Ability17"		"special_bonus_cooldown_reduction_50"
+}

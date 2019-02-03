@@ -871,6 +871,24 @@
 
 "DOTA_Tooltip_modifier_intelligence_supremacy"					            "Intelligence Supremacy"
 "DOTA_Tooltip_modifier_intelligence_supremacy_Description"		            "Being damaged by a superior intellect."
+"DOTA_Tooltip_ability_nevermore_custom_necromastery"									"Necromastery"
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_Description"						"Shadow Fiend steals the soul from units he hits, gaining bonus damage.  On death, he releases half of them from bondage.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_Lore"								"Harvested souls swirl in and out of the Abysm, empowering the Shadow Fiend to increase the size of his collection."
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_necromastery_max_souls"			    "MAX SOULS:"
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_necromastery_damage_per_soul"		"DAMAGE PER SOUL:"
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_necromastery_max_souls_scepter"     "SCEPTER MAX SOULS:"
+"DOTA_Tooltip_ability_nevermore_custom_necromastery_aghanim_description"				"Increases max souls."
+
+
+"DOTA_Tooltip_modifier_nevermore_custom_necromastery_stack"				                "Necromastery"
+"DOTA_Tooltip_modifier_nevermore_custom_necromastery_stack_Description"	                "Stored souls granting bonus damage."
+"DOTA_Tooltip_ability_nevermore_custom_requiem"										"Requiem of Souls"
+"DOTA_Tooltip_ability_nevermore_custom_requiem_Description"							"Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown."
+"DOTA_Tooltip_ability_nevermore_custom_requiem_cast_time_tooltip"                  	"CAST DELAY:"
+"DOTA_Tooltip_ability_nevermore_custom_requiem_damage"                  	        "LINE DAMAGE:"
+"DOTA_Tooltip_ability_nevermore_custom_requiem_Lore"								"The captured souls of those past slain are released to ravage their former allies."
+"DOTA_Tooltip_ability_nevermore_custom_requiem_Note0"								"One line is generated from Shadow Fiend for every 2 souls in his possession."
+    
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus"					"Mana Bonus"
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus_Description"		"After researching for years, your mana increases."
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus_mana_bonus"		    "Mana Bonus:"
@@ -1049,6 +1067,7 @@
 "DOTA_Tooltip_zuus_custom_thundergods_wrath_buff_Description"           "The next thunder spell used will be recasted."
 "DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"
 "DOTA_Tooltip_Ability_dark_seer_custom_bonus_unique_1"          "+1 clone to Dark Clone."
+"DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+70 Necromastery soul limit."
 "DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"
 "DOTA_Tooltip_Ability_slark_custom_bonus_unique_1"          "+3 attacks to Pounce"
 "DOTA_Tooltip_Ability_tinker_custom_bonus_unique_1"          "Double Energy Missile Int Multiplier"

@@ -4981,6 +4981,23 @@
 {
     "AbilityCooldown"				"0.6"
 }
+"nevermore_dark_lord"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "presence_armor_reduction"		"-1 -2 -3 -4"
+            "LinkedSpecialBonus"			"special_bonus_unique_nevermore_5"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "presence_radius"				"1200"
+        }
+    }
+}
 "nyx_assassin_mana_burn"
 {
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
@@ -7386,6 +7403,229 @@
         }
     }
 }
+"nevermore_custom_bonus_unique_1"
+{
+    "ID"					"70069"
+    "BaseClass"				"special_bonus_undefined"
+    "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"70"
+        }
+    }
+}
+"nevermore_custom_necromastery"
+{
+    "BaseClass"					                "ability_datadriven"
+    
+    "AbilityTextureName"                        "nevermore_necromastery"
+
+    "AbilityBehavior"			                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityCastAnimation"		                "ACT_DOTA_CAST_ABILITY_4"
+
+    "OnCastbar"					                "0"
+    "HasScepterUpgrade"			                "1"
+
+    "precache"
+    {
+        "particle"				                "particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf"
+        "soundfile"				                "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
+        "soundfile"				                "soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+    }
+    
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_damage_per_soul"	    "1"
+        }
+        "02"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_max_souls"	        "60 80 100 120"
+            "LinkedSpecialBonus"                "nevermore_custom_bonus_unique_1"
+        }
+        "03"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_max_souls_scepter"    "120 140 160 180"
+            "LinkedSpecialBonus"                "nevermore_custom_bonus_unique_1"
+        }
+        "04"
+        {
+            "var_type"						    "FIELD_FLOAT"
+            "necromastery_soul_release"		    "0.5"
+        }		
+    }
+
+
+    "OnUpgrade"
+    {
+        "RunScript"
+        {
+            "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+            "Function"		"on_upgrade"
+        }
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_nevermore_custom_necromastery" 
+        {
+            "Passive"               "1"
+            "IsBuff"	            "1"
+            "IsHidden"              "1"
+            
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+                    "Function"		"on_attack_landed"
+                    "Target"        "TARGET"
+                }
+            }
+
+            "OnDeath"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+                    "Function"		"on_death"
+                }
+            }
+        }
+
+        "modifier_nevermore_custom_necromastery_stack"
+        {
+            "IsBuff"                "1"
+            "AbilityTextureName"    "nevermore_necromastery"
+
+            "Attributes"            "MODIFIER_ATTRIBUTE_PERMANENT"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "%necromastery_damage_per_soul"
+            }
+        }
+    }
+}
+"nevermore_custom_requiem"
+{
+    "BaseClass"					                "ability_datadriven"
+    
+    "AbilityTextureName"                        "nevermore_requiem"
+
+    "AbilityCastAnimation"		                "ACT_DOTA_CAST_ABILITY_6"
+
+    "AbilityBehavior"					        "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitTargetTeam"				        "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"				        "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+    "AbilityUnitDamageType"				        "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"					        "SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityType"						        "DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityCastPoint"					        "1.67"
+    "AbilityCooldown"					        "120 110 100"
+    "AbilityCastRange"					        "1000"
+
+    "AbilityManaCost"					        "150 200 250"
+
+
+    "precache"
+    {
+        "soundfile"		                        "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
+        "particle"		                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_a.vpcf"
+        "particle"		                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_line.vpcf"
+        "particle"		                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls.vpcf"
+    }
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "damage"					        "90 140 180"
+        }
+        "02"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "damage_reduction_pct"		        "60 70 80"
+        }
+        "03"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "souls_per_line"			        "3"
+        }
+        "04"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "lines_travel_speed"		        "700"
+        }
+        "05"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "travel_distance"			        "1000"
+        }
+        "06"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "lines_starting_width"		        "125"
+        }
+        "07"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "lines_end_width"			        "425"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "AttachEffect"
+        {
+            "Target"                            "CASTER"
+            "EffectName"                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls.vpcf"
+            "EffectAttachType"                  "attach_origin"
+        }
+        "AttachEffect"
+        {
+            "Target"                            "CASTER"
+            "EffectName"                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_a.vpcf"
+            "EffectAttachType"                  "attach_origin"
+        }
+        "FireSound"
+        {
+            "Target"			                "CASTER"
+            "EffectName"		                "Hero_Nevermore.RequiemOfSouls"
+        }
+        "RunScript"
+        {
+            "ScriptFile"		                "abilities/heroes/nevermore_custom_requiem.lua"
+            "Function"			                "cast_nevermore_custom_requiem"
+        }
+    }
+
+    "OnProjectileHitUnit"
+    {
+        "Damage"
+        {
+            "Target"	                        "TARGET"
+            "Type"		                        "DAMAGE_TYPE_MAGICAL"
+            "Damage"	                        "%damage"
+        }
+    }
+}
 "obsidian_destroyer_custom_mana_bonus"
 {
     "BaseClass"						"ability_datadriven"
@@ -7511,7 +7751,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70069"
+    "ID"					"70070"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7869,7 +8109,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70070"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7971,7 +8211,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70071"
+    "ID"                        "70072"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -8356,7 +8596,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70072"
+    "ID"							"70073"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -8492,7 +8732,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70073"
+    "ID"					"70074"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8801,7 +9041,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70075"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

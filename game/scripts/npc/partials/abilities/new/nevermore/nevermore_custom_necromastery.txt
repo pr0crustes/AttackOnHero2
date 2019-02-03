@@ -1,0 +1,99 @@
+"nevermore_custom_necromastery"
+{
+    "BaseClass"					                "ability_datadriven"
+    
+    "AbilityTextureName"                        "nevermore_necromastery"
+
+    "AbilityBehavior"			                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityCastAnimation"		                "ACT_DOTA_CAST_ABILITY_4"
+
+    "OnCastbar"					                "0"
+    "HasScepterUpgrade"			                "1"
+
+    "precache"
+    {
+        "particle"				                "particles/units/heroes/hero_nevermore/nevermore_necro_souls.vpcf"
+        "soundfile"				                "soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
+        "soundfile"				                "soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+    }
+    
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_damage_per_soul"	    "1"
+        }
+        "02"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_max_souls"	        "60 80 100 120"
+            "LinkedSpecialBonus"                "nevermore_custom_bonus_unique_1"
+        }
+        "03"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "necromastery_max_souls_scepter"    "120 140 160 180"
+            "LinkedSpecialBonus"                "nevermore_custom_bonus_unique_1"
+        }
+        "04"
+        {
+            "var_type"						    "FIELD_FLOAT"
+            "necromastery_soul_release"		    "0.5"
+        }		
+    }
+
+
+    "OnUpgrade"
+    {
+        "RunScript"
+        {
+            "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+            "Function"		"on_upgrade"
+        }
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_nevermore_custom_necromastery" 
+        {
+            "Passive"               "1"
+            "IsBuff"	            "1"
+            "IsHidden"              "1"
+            
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+                    "Function"		"on_attack_landed"
+                    "Target"        "TARGET"
+                }
+            }
+
+            "OnDeath"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	"abilities/heroes/nevermore_custom_necromastery.lua"
+                    "Function"		"on_death"
+                }
+            }
+        }
+
+        "modifier_nevermore_custom_necromastery_stack"
+        {
+            "IsBuff"                "1"
+            "AbilityTextureName"    "nevermore_necromastery"
+
+            "Attributes"            "MODIFIER_ATTRIBUTE_PERMANENT"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "%necromastery_damage_per_soul"
+            }
+        }
+    }
+}

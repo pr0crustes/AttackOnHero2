@@ -1,0 +1,17 @@
+"nevermore_dark_lord"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "presence_armor_reduction"		"-1 -2 -3 -4"
+            "LinkedSpecialBonus"			"special_bonus_unique_nevermore_5"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "presence_radius"				"1200"
+        }
+    }
+}
