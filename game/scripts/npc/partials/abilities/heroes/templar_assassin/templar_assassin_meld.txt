@@ -1,0 +1,12 @@
+"templar_assassin_meld"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_armor"				"-1 -2 -3 -4"
+            "LinkedSpecialBonus"		"special_bonus_unique_templar_assassin_2"
+        }
+    }
+}

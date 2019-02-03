@@ -1,0 +1,4 @@
+"shadow_shaman_voodoo"
+{
+    "AbilityCooldown"				"18"
+}

@@ -5341,8 +5341,8 @@
 }
 "shadow_shaman_shackles"
 {
-    "AbilityChannelTime"			"1.0 2.0 3.0 4.0"
-    "AbilityCooldown"				"12"
+    "AbilityChannelTime"			"1.0 1.0 2.0 3.0"
+    "AbilityCooldown"				"17"
 
     "AbilitySpecial"
     {
@@ -5354,10 +5354,14 @@
         "03"
         {
             "var_type"			    "FIELD_FLOAT"
-            "channel_time"		    "1.0 2.0 3.0 4.0"
+            "channel_time"		    "1.0 1.0 2.0 3.0"
             "LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_2"
         }
     }
+}
+"shadow_shaman_voodoo"
+{
+    "AbilityCooldown"				"18"
 }
 "skywrath_mage_arcane_bolt"
 {
@@ -5527,6 +5531,18 @@
         {
             "var_type"					"FIELD_INTEGER"
             "damage_scepter"			"600 900 1200"
+        }
+    }
+}
+"templar_assassin_meld"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_armor"				"-1 -2 -3 -4"
+            "LinkedSpecialBonus"		"special_bonus_unique_templar_assassin_2"
         }
     }
 }
