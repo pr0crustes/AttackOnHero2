@@ -17,6 +17,7 @@ require("lib/atr_fix")
 require("lib/callbacks")
 require("lib/timers")
 require("lib/ai")
+require("items/ice_staff")
 
 
 
@@ -60,7 +61,7 @@ function AOHGameMode:InitGameMode()
 	GameRules:GetGameModeEntity():SetThink("OnThink", self, 0.25)
 
 	GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(AOHGameMode, "OnExecuteOrder"), self)
-	--GameRules:GetGameModeEntity():SetModifyExperienceFilter(Dynamic_Wrap(AOHGameMode, "OnExperienceGain"), self)
+	GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(AOHGameMode, 'OnDamageDealt'), self)
 end
 
 
@@ -80,24 +81,20 @@ function AOHGameMode:OnExecuteOrder(keys)
 end
 
 
-function AOHGameMode:OnExperienceGain(keys)
-	-- XP will be shared.
-	local entity = PlayerResource:GetSelectedHeroEntity(keys.player_id_const)
+function AOHGameMode:OnDamageDealt(damageTable)
+    local attacker_index = damageTable.entindex_attacker_const
 
-	if entity and (entity:GetTeamNumber() == DOTA_TEAM_GOODGUYS) then
-		local heroes = ai_all_heroes()
-		local n_heroes = #heroes
-
-		if n_heroes > 0 then
-			local xp_per_hero = keys.experience / n_heroes
-
-			for i, hero in ipairs(heroes) do
-				hero:AddExperience(xp_per_hero, DOTA_ModifyXP_Unspecified, false, false)
+    if attacker_index then
+		local attacker = EntIndexToHScript(attacker_index)
+		
+		if attacker then
+			if attacker:HasItemInInventory("item_ice_staff") then
+				damageTable = ice_staff_calculate_crit(damageTable)
 			end
-
-			return false
 		end
-	end
+    end
+
+	
 	return true
 end
 

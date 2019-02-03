@@ -120,3 +120,14 @@ end
 function ability_behavior_includes(ability, behavior)
 	return bit.band(ability:GetBehavior(), behavior) == behavior
 end
+
+
+function find_item(caster, item_name)
+    for i = DOTA_ITEM_SLOT_1, DOTA_ITEM_SLOT_6 do
+        local item = caster:GetItemInSlot(i)
+        if item:GetName() == item_name then
+            return item
+        end
+    end
+    return nil
+end

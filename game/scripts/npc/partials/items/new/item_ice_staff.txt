@@ -1,0 +1,79 @@
+"item_recipe_ice_staff"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"500"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_ice_staff"
+
+    "ItemRequirements"
+    {
+        "01"						"item_greater_crit;item_kaya"
+    }
+}
+
+
+
+"item_ice_staff"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "AbilityTextureName"		    "ice_staff"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"crit"
+    "ItemQuality"					"epic"
+
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAliases"					"ice staff"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"	            "80"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_int" 	        "20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance" 	        "20"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_damage_mult" 	    "250"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "manacost_mult" 	    "100"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_ice_staff"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "%damage"
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%bonus_int"
+            }
+        }
+    }
+}
