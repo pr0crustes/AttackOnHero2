@@ -3575,7 +3575,7 @@
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_octarine_core"
 
-    "ItemCost"						"0"	
+    "ItemCost"						"2500"	
     "ItemShopTags"					""
 
     "ItemRecipe"					"1"
@@ -3583,7 +3583,7 @@
 
     "ItemRequirements"
     {
-        "01"						"item_octarine_core;item_octarine_core"
+        "01"						"item_octarine_core;item_soul_booster"
     }
 }
 
@@ -3596,7 +3596,6 @@
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "ultimate_octarine"
 
-    "ItemCost"						"11800"
     "ItemQuality"					"epic"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
@@ -3620,12 +3619,12 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_cooldown"		"30"
+            "bonus_cooldown"		"33"
         }
         "05"
         {
             "var_type"				"FIELD_FLOAT"
-            "lifesteal"		        "10"
+            "lifesteal"		        "15"
         }
     }
 
