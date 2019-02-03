@@ -5,7 +5,7 @@ function cast_energy_missile(keys)
 	local ability = keys.ability
 	local caster = keys.caster
 
-	local projectile_velocity = ability_value(ability, "velocity")
+	local projectile_velocity = ability:GetSpecialValueFor("velocity")
 
 
 	local projectileTable = {
@@ -38,8 +38,8 @@ function on_hit(keys)
 	local target = keys.target
 	local ability = keys.ability
 
-	local base_damage = ability_value(ability, "base_damage")
-	local int_mult = ability_value(ability, "int_mult")
+	local base_damage = ability:GetSpecialValueFor("base_damage")
+	local int_mult = ability:GetSpecialValueFor("int_mult")
 
 	local talent = caster:FindAbilityByName("tinker_custom_bonus_unique_1")
 	if talent and talent:GetLevel() > 0 then

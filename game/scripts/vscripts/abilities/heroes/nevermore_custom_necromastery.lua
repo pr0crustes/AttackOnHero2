@@ -23,7 +23,7 @@ function on_attack_landed(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local max_souls = ability_value(ability, value_if_scepter(caster, "necromastery_max_souls_scepter", "necromastery_max_souls"))
+    local max_souls = ability:GetSpecialValueFor(value_if_scepter(caster, "necromastery_max_souls_scepter", "necromastery_max_souls"))
 
     local talent = caster:FindAbilityByName("nevermore_custom_bonus_unique_1")
     if talent and talent:GetLevel() > 0 then
@@ -57,7 +57,7 @@ function on_death(keys)
 
     if caster == unit then
 
-        local release = ability_value(ability, "necromastery_soul_release")
+        local release = ability:GetSpecialValueFor("necromastery_soul_release")
 
         if caster:HasModifier(soul_stack_modifier) then
             local stack_count = caster:GetModifierStackCount(soul_stack_modifier, caster)

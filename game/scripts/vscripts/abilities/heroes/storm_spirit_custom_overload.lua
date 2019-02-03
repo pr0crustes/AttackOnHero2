@@ -30,8 +30,8 @@ function on_attack_landed(keys)
 
     if caster:HasModifier(modifier_hud) and caster:IsAlive() and target:IsAlive() then
         
-        local damage_per_stack = ability_value(ability, "damage")
-        local radius = ability_value(ability, "radius")
+        local damage_per_stack = ability:GetSpecialValueFor("damage")
+        local radius = ability:GetSpecialValueFor("radius")
 
         local stack_count = caster:GetModifierStackCount(modifier_hud, caster)
         

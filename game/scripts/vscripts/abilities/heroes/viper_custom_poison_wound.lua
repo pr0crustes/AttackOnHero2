@@ -9,8 +9,8 @@ function cast_poison_wound(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local duration = ability_value(ability, "duration")
-    local damage_percentage = ability_value(ability, "damage_percentage")
+    local duration = ability:GetSpecialValueFor("duration")
+    local damage_percentage = ability:GetSpecialValueFor("damage_percentage")
 
     target:AddNewModifier(caster, ability, "modifier_viper_custom_poison_wound", {duration = duration, damage_percentage = damage_percentage})
 

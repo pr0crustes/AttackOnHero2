@@ -7,8 +7,8 @@ function refresh(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-    local min_cooldown = ability_value(ability, "min_cooldown")
-    local max_cooldown = ability_value(ability, "max_cooldown")
+    local min_cooldown = ability:GetSpecialValueFor("min_cooldown")
+    local max_cooldown = ability:GetSpecialValueFor("max_cooldown")
 
     if not caster:IsTempestDouble() then
 

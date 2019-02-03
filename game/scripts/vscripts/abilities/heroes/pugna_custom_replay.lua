@@ -10,7 +10,7 @@ function on_ability_executed(keys)
 
     local cursor = used_ability:GetCursorPosition()
 
-    local delay = ability_value(ability, "delay")
+    local delay = ability:GetSpecialValueFor("delay")
 
     if used_ability and used_ability:GetCaster() == caster and used_ability:GetAbilityType() ~= 1 then  -- not ultimate.
         Timers:CreateTimer(

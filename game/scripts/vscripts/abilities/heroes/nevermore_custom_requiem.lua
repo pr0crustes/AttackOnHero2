@@ -16,10 +16,10 @@ end
 
 
 function create_requiem_line(caster, ability, end_position)
-	local lines_end_width = ability_value(ability, "lines_end_width")
-	local lines_starting_width = ability_value(ability, "lines_starting_width")
-	local lines_travel_speed = ability_value(ability, "lines_travel_speed")
-    local travel_distance = ability_value(ability, "travel_distance")
+	local lines_end_width = ability:GetSpecialValueFor("lines_end_width")
+	local lines_starting_width = ability:GetSpecialValueFor("lines_starting_width")
+	local lines_travel_speed = ability:GetSpecialValueFor("lines_travel_speed")
+    local travel_distance = ability:GetSpecialValueFor("travel_distance")
     
     local caster_pos = caster:GetAbsOrigin()
 
@@ -53,8 +53,8 @@ function cast_nevermore_custom_requiem(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-	local souls_per_line = ability_value(ability, "souls_per_line")
-    local travel_distance = ability_value(ability, "travel_distance")
+	local souls_per_line = ability:GetSpecialValueFor("souls_per_line")
+    local travel_distance = ability:GetSpecialValueFor("travel_distance")
 
 
     if caster:HasModifier(soul_stack_modifier) then

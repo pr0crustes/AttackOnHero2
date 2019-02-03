@@ -16,15 +16,15 @@ function ice_staff_calculate_crit(damageTable)
             local item = find_item(attacker, "item_ice_staff")
 
             if item then
-                local manacost_mult = ability_value(item, "manacost_mult")
+                local manacost_mult = item:GetSpecialValueFor("manacost_mult")
                 local ability_manacost = ability:GetManaCost(ability:GetLevel() - 1)
                 local manacost = ability_manacost * manacost_mult * 0.01
 
                 if attacker:GetMana() >= manacost then
-                    local crit_chance = ability_value(item, "crit_chance")
+                    local crit_chance = item:GetSpecialValueFor("crit_chance")
 
                     if RollPercentage(crit_chance) then
-                        local crit_damage_mult = ability_value(item, "crit_damage_mult")
+                        local crit_damage_mult = item:GetSpecialValueFor("crit_damage_mult")
 
                         damageTable.damage = damageTable.damage * crit_damage_mult * 0.01
 

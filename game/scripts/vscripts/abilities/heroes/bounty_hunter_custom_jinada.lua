@@ -12,7 +12,7 @@ function cast_jinada(keys)
 
     caster:EmitSound("Hero_BountyHunter.Jinada")
 
-    local gold_amount = ability_value(ability, "gold_bonus")
+    local gold_amount = ability:GetSpecialValueFor("gold_bonus")
 
     PlayerResource:ModifyGold(caster:GetPlayerID(), gold_amount, false, DOTA_ModifyGold_Unspecified)
 

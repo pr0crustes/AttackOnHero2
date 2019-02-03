@@ -7,8 +7,8 @@ function cast_last_cleave(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local base_damage = ability_value(ability, "base_damage")
-    local str_multiply = ability_value(ability, "str_multiply")
+    local base_damage = ability:GetSpecialValueFor("base_damage")
+    local str_multiply = ability:GetSpecialValueFor("str_multiply")
 
     local caster_str = caster:GetStrength()
 

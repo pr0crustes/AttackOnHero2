@@ -6,9 +6,9 @@ function cast_death_skull(keys)
 	local ability = keys.ability
 	local caster = keys.caster
 
-	local projectile_width = ability_value(ability, "width") 
-	local projectile_velocity = ability_value(ability, "velocity")
-	local interval = ability_value(ability, "interval")
+	local projectile_width = ability:GetSpecialValueFor("width") 
+	local projectile_velocity = ability:GetSpecialValueFor("velocity")
+	local interval = ability:GetSpecialValueFor("interval")
 
 	if caster:HasScepter() then
 		local aps = 1 / caster:GetAttacksPerSecond()
@@ -67,7 +67,7 @@ function on_hit(keys)
 	local target = keys.target
 	local ability = keys.ability
 
-	local damage = ability_value(ability, "damage")
+	local damage = ability:GetSpecialValueFor("damage")
 
 	ApplyDamage({
 		ability = ability,

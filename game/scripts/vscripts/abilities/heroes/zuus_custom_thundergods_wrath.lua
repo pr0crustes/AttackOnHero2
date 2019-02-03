@@ -10,8 +10,8 @@ function on_ability_executed(keys)
 
     local cursor = used_ability:GetCursorPosition()
 
-    local casts = ability_value(ability, "casts")
-    local interval = ability_value(ability, "interval")
+    local casts = ability:GetSpecialValueFor("casts")
+    local interval = ability:GetSpecialValueFor("interval")
 
     if 
         used_ability 

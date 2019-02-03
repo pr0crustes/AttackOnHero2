@@ -9,8 +9,8 @@ function cast_wisp_custom_fundamental_heal(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local base_heal = ability_value(ability, "base_heal")
-    local multiplier = ability_value(ability, "multiplier")
+    local base_heal = ability:GetSpecialValueFor("base_heal")
+    local multiplier = ability:GetSpecialValueFor("multiplier")
 
     local heal = base_heal
 

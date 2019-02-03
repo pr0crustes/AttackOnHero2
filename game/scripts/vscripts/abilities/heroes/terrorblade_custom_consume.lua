@@ -6,8 +6,8 @@ function cast_terrorblade_custom_consume(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-    local heal_base = ability_value(ability, "heal_base") * 0.01
-    local heal_bonus = ability_value(ability, "heal_bonus") * 0.01
+    local heal_base = ability:GetSpecialValueFor("heal_base") * 0.01
+    local heal_bonus = ability:GetSpecialValueFor("heal_bonus") * 0.01
 
     local max_health = caster:GetMaxHealth()
 

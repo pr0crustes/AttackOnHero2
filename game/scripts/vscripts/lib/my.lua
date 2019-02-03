@@ -13,11 +13,6 @@ function debug_start_at_round(rounds, startAt)
 end
 
 
-function ability_value(ability, text)
-	return ability:GetLevelSpecialValueFor(text, ability:GetLevel() - 1)
-end
-
-
 function value_if_scepter(caster, ifYes, ifNot)
 	if caster:HasScepter() then
 		return ifYes

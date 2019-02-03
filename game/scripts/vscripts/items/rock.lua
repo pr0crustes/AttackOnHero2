@@ -33,7 +33,7 @@ function on_rock_hit(keys)
     target:InterruptChannel()
     target:Interrupt()
 
-    local damage = ability_value(ability, "damage")
+    local damage = ability:GetSpecialValueFor("damage")
 
     ApplyDamage({
 		ability = ability,

@@ -30,8 +30,8 @@ end
 
 
 local function deal_damage(caster, ability, point)
-	local damage = ability_value(ability, "damage")
-	local radius = ability_value(ability, "radius")
+	local damage = ability:GetSpecialValueFor("damage")
+	local radius = ability:GetSpecialValueFor("radius")
 
 	local units = FindUnitsInRadius(caster:GetTeam(), point, nil, radius, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO, 0, 0, false)
 	for _, unit in ipairs(units) do
@@ -47,8 +47,8 @@ end
 
 
 local function create_strike(caster, ability, target)
-	local delay = ability_value(ability, "delay")
-	local radius = ability_value(ability, "radius")
+	local delay = ability:GetSpecialValueFor("delay")
+	local radius = ability:GetSpecialValueFor("radius")
 
 	local pos = target:GetAbsOrigin()
 

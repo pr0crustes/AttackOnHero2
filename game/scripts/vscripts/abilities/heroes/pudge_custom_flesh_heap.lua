@@ -8,8 +8,8 @@ function cast_flesh_heap(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-    local duration = ability_value(ability, "duration")
-    local multiplier = ability_value(ability, "multiplier")
+    local duration = ability:GetSpecialValueFor("duration")
+    local multiplier = ability:GetSpecialValueFor("multiplier")
 
     local bonus_int = caster:GetStrength() * multiplier
 

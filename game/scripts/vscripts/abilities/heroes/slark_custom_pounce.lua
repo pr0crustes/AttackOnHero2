@@ -11,13 +11,13 @@ function cast_slark_pounce(keys)
 	local ability = keys.ability
     local caster = keys.caster
 
-    local speed = ability_value(ability, "dash_speed")
-    local attack_count = ability_value(ability, "attack_count")
+    local speed = ability:GetSpecialValueFor("dash_speed")
+    local attack_count = ability:GetSpecialValueFor("attack_count")
 
     local talent = caster:FindAbilityByName("slark_custom_bonus_unique_1")
 
     if talent and talent:GetLevel() > 0 then
-        attack_count = attack_count + ability_value(talent, "value")
+        attack_count = attack_count + talent:GetSpecialValueFor("value")
     end
 
     local distance = ability:GetCastRange()

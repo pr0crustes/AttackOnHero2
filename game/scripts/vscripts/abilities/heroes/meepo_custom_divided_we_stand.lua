@@ -57,7 +57,7 @@ function cast_divided_we_stand(keys)
 
     kill_alive_clones(caster)
 
-    local n_clones = ability_value(ability, "n_clones")
+    local n_clones = ability:GetSpecialValueFor("n_clones")
 
     local n = 0
 

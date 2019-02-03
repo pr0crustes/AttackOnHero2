@@ -10,7 +10,7 @@ function health_bag_cast(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local duration = ability_value(ability, "duration")
+    local duration = ability:GetSpecialValueFor("duration")
 
     target:AddNewModifier(caster, ability, "modifier_health_bag", {duration = duration})
 end
@@ -32,7 +32,7 @@ end
 
 function modifier_health_bag:OnCreated()
     local ability = self:GetAbility()
-    local think_interval = ability_value(ability, "heal_interval")
+    local think_interval = ability:GetSpecialValueFor("heal_interval")
 
     self:StartIntervalThink(think_interval)
 end
@@ -41,8 +41,8 @@ end
 function modifier_health_bag:OnIntervalThink()
     local ability = self:GetAbility()
     local parent = self:GetParent()
-    local base_heal = ability_value(ability, "base_heal")
-    local heal_pct = ability_value(ability, "heal_pct")
+    local base_heal = ability:GetSpecialValueFor("base_heal")
+    local heal_pct = ability:GetSpecialValueFor("heal_pct")
 
     local heal_amount = base_heal + (parent:GetMaxHealth() * heal_pct * 0.01)
     parent:Heal(heal_amount, ability)

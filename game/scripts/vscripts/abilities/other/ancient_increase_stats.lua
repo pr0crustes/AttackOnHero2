@@ -16,11 +16,11 @@ function on_created(keys)
 	caster = keys.caster
 	local ability = keys.ability
 
-	health_base = ability_value(ability, "health_base")
-	health_per_round = ability_value(ability, "health_per_round")
+	health_base = ability:GetSpecialValueFor("health_base")
+	health_per_round = ability:GetSpecialValueFor("health_per_round")
 
-	armor_base = ability_value(ability, "armor_base")
-	armor_per_round = ability_value(ability, "armor_per_round")
+	armor_base = ability:GetSpecialValueFor("armor_base")
+	armor_per_round = ability:GetSpecialValueFor("armor_per_round")
 
 	RoundStartCallback:RegisterCallback(set_ancient_stats)
 	GlyphStartCallback:RegisterCallback(on_glyph_used)

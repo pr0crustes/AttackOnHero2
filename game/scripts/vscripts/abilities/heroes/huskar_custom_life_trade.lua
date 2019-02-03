@@ -7,7 +7,7 @@ function on_interval_think(keys)
 	local caster = keys.caster
 
 
-	local damage_pct = ability_value(ability, "damage_pct")
+	local damage_pct = ability:GetSpecialValueFor("damage_pct")
 
 	local health_loss = caster:GetMaxHealth() * damage_pct * 0.01
 	health_loss = health_loss + caster:GetHealthRegen()   -- so that it negates regen.

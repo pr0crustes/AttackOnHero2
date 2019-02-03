@@ -6,7 +6,7 @@ function cast_shadow_heal(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-    local duration = ability_value(ability, "duration")
+    local duration = ability:GetSpecialValueFor("duration")
 
     local heal = caster:GetHealthRegen() * duration
 

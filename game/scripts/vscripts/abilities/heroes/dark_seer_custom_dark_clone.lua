@@ -32,7 +32,7 @@ function cast_dark_clone(keys)
     local caster = keys.caster
     local target = keys.target
 
-    local n_clones = ability_value(ability, "n_clones")
+    local n_clones = ability:GetSpecialValueFor("n_clones")
 
     local talent = caster:FindAbilityByName("dark_seer_custom_bonus_unique_1")
 

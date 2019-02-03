@@ -6,8 +6,8 @@ function cast_aura_heal(keys)
     local caster = keys.caster
     local ability = keys.ability
 
-    local radius = ability_value(ability, "radius")
-    local health_pct = ability_value(ability, "health_pct")
+    local radius = ability:GetSpecialValueFor("radius")
+    local health_pct = ability:GetSpecialValueFor("health_pct")
 
     local health = caster:GetHealth()
 

@@ -6,7 +6,7 @@ function think_intelligence_supremacy(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local int_mult = ability_value(ability, "int_multiplier")
+    local int_mult = ability:GetSpecialValueFor("int_multiplier")
 
     local damage = caster:GetIntellect() * int_mult
 

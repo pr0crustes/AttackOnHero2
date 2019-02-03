@@ -12,8 +12,8 @@ function cast_doom_dash(keys)
     local caster = keys.caster
     local target = keys.target_points[1]
 
-    local speed = ability_value(ability, "dash_speed")
-    local treeRadius = ability_value(ability, "tree_radius")
+    local speed = ability:GetSpecialValueFor("dash_speed")
+    local treeRadius = ability:GetSpecialValueFor("tree_radius")
 
     local distance = (caster:GetAbsOrigin() - target):Length2D() 
 

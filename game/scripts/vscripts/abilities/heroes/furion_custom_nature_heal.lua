@@ -16,7 +16,7 @@ function cast_furion_custom_nature_heal(keys)
         return
     end
 
-    local interval = ability_value(ability, "interval")
+    local interval = ability:GetSpecialValueFor("interval")
 
 	Timers:CreateTimer(
 		function()

@@ -6,8 +6,8 @@ function on_attacked(keys)
     local ability = keys.ability
     local target = keys.attacker
     
-    local base_damage = ability_value(ability, "base_damage")
-    local str_bonus = ability_value(ability, "str_bonus") * 0.01
+    local base_damage = ability:GetSpecialValueFor("base_damage")
+    local str_bonus = ability:GetSpecialValueFor("str_bonus") * 0.01
 
     local caster_str = caster:GetStrength()
 

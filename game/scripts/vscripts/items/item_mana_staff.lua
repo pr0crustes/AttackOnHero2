@@ -7,7 +7,7 @@ function on_attack(keys)
     local ability = keys.ability
     local damage = keys.damage
 
-    local mana_steal_pct = ability_value(ability, "mana_steal")
+    local mana_steal_pct = ability:GetSpecialValueFor("mana_steal")
 
     local mana_gain = damage * mana_steal_pct * 0.01
 

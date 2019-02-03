@@ -8,8 +8,8 @@ function cast_clinkz_custom_multiattack(keys)
     local ability = keys.ability
     local target = keys.target
 
-    local attack_count = ability_value(ability, "attack_count")
-    local interval = ability_value(ability, "interval")
+    local attack_count = ability:GetSpecialValueFor("attack_count")
+    local interval = ability:GetSpecialValueFor("interval")
 
     local attacks = 0
 

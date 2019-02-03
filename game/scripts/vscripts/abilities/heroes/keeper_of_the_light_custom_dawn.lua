@@ -14,7 +14,7 @@ require("lib/timers")
 function cast_keeper_of_the_light_custom_dawn(keys)
     local ability = keys.ability
 
-    local duration = ability_value(ability, "duration")
+    local duration = ability:GetSpecialValueFor("duration")
 
     local previous_time_of_day = GameRules:GetTimeOfDay()
 
