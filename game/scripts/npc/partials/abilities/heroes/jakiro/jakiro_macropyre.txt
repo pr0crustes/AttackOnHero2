@@ -1,0 +1,21 @@
+"jakiro_macropyre"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"150 250 350"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_scepter"			"250 380 600"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "duration_scepter"			"30"
+        }
+    }	
+}

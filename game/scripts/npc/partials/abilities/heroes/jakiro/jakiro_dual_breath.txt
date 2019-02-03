@@ -1,0 +1,15 @@
+"jakiro_dual_breath"
+{
+    "AbilityCooldown"				"10.0 9.5 9.0 8.5"
+    "AbilityDuration"				"5.0"
+
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "burn_damage"			"40 100 160 220"
+            "LinkedSpecialBonus"	"special_bonus_unique_jakiro_2"
+        }
+    }
+}

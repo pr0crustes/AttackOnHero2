@@ -4692,6 +4692,53 @@
         }
     }
 }
+"jakiro_dual_breath"
+{
+    "AbilityCooldown"				"10.0 9.5 9.0 8.5"
+    "AbilityDuration"				"5.0"
+
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "burn_damage"			"40 100 160 220"
+            "LinkedSpecialBonus"	"special_bonus_unique_jakiro_2"
+        }
+    }
+}
+"jakiro_liquid_fire"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"20 40 70 110"
+        }
+    }
+}
+"jakiro_macropyre"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"150 250 350"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_scepter"			"250 380 600"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "duration_scepter"			"30"
+        }
+    }	
+}
 "juggernaut_blade_fury"
 {
     "AbilityCooldown"				"20 18 14 10"
