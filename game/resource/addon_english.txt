@@ -1159,8 +1159,13 @@
 "DOTA_Tooltip_modifier_item_dragon_scale_aura_buff"					"Dragon Aura"
 "DOTA_Tooltip_modifier_item_dragon_scale_aura_buff_Description"		"The precense of a Dragon Scale is increasing your health by %dMODIFIER_PROPERTY_HEALTH_BONUS% and your strength by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
 "DOTA_Tooltip_ability_item_formidable_chest"                            "Formidable Chest"
+"DOTA_Tooltip_ability_item_formidable_chest_Description"				"<h1>Active: Formidable Defense</h1> Grants %damage_reduction%%  damage reduction for %duration% seconds to all allies in a %radius% radius."
 "DOTA_Tooltip_ability_item_formidable_chest_bonus_armor"				"+$armor"
 "DOTA_Tooltip_ability_item_formidable_chest_Lore"						"A powerfull metal plate forged in an unknown and mysterious place."
+
+
+"DOTA_Tooltip_modifier_item_formidable_chest_buff"                      "Formidable Defense"
+"DOTA_Tooltip_modifier_item_formidable_chest_buff_Description"          "Formidable Chest is providing damage reduction."
 "DOTA_Tooltip_Ability_item_great_king_bar"		            		"Great King Bar"
 "DOTA_Tooltip_Ability_item_great_king_bar_Description"				"<h1>Passive: Pierce</h1>Grants each attack a %bonus_chance%%% chance to pierce through evasion and deal %bonus_chance_damage% bonus magical damage."
 "DOTA_Tooltip_Ability_item_great_king_bar_Lore"					    "A powerful staff used by a master warrior."
