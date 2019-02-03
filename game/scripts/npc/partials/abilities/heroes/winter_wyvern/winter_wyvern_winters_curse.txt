@@ -1,0 +1,6 @@
+"winter_wyvern_winters_curse"
+{
+    "AbilityCastRange"				"1300"
+
+    "AbilityCooldown"				"80 75 70"
+}

@@ -1,0 +1,7 @@
+"winter_wyvern_splinter_blast"
+{
+    "AbilityCastRange"				"2000"
+    "AbilityCooldown"				"7 6 5 4"
+
+    "AbilityDamage"					"100 240 380 520"
+}

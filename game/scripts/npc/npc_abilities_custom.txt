@@ -5764,13 +5764,45 @@
 "winter_wyvern_arctic_burn"
 {
     "AbilitySpecial"
-    {		
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_range_bonus"	"350 750 1050 1550"
+        }
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "percent_damage"		"0.05 0.1 0.15 0.2"
+            "percent_damage"		"0.1 0.15 0.2 0.25"
         }
     }
+}
+"winter_wyvern_cold_embrace"
+{
+    "AbilityCastRange"				"1500"
+
+
+    "AbilitySpecial"
+    {
+        "02"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "heal_additive"		    "20 30 40 50"
+        }
+    }
+}
+"winter_wyvern_splinter_blast"
+{
+    "AbilityCastRange"				"2000"
+    "AbilityCooldown"				"7 6 5 4"
+
+    "AbilityDamage"					"100 240 380 520"
+}
+"winter_wyvern_winters_curse"
+{
+    "AbilityCastRange"				"1300"
+
+    "AbilityCooldown"				"80 75 70"
 }
 "witch_doctor_maledict"
 {

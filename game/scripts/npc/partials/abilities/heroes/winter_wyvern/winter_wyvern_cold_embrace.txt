@@ -1,0 +1,14 @@
+"winter_wyvern_cold_embrace"
+{
+    "AbilityCastRange"				"1500"
+
+
+    "AbilitySpecial"
+    {
+        "02"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "heal_additive"		    "20 30 40 50"
+        }
+    }
+}
