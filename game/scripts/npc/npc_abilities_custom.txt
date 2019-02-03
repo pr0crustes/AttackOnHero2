@@ -5458,6 +5458,37 @@
         }
     }
 }
+"terrorblade_conjure_image"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"							        "FIELD_FLOAT"
+            "illusion_duration"					        "40.0"
+        }
+        "02"
+        {
+            "var_type"							        "FIELD_FLOAT"
+            "illusion_outgoing_damage"			        "-70 -60 -50 -40"		 
+        }
+        "03"
+        {
+            "var_type"							        "FIELD_FLOAT"
+            "illusion_outgoing_tooltip"			        "30 40 50 60"
+        }
+        "04"
+        {
+            "var_type"							        "FIELD_FLOAT"
+            "illusion_incoming_damage"			        "300.0 200.0 100.0"
+        }
+        "05"
+        {
+            "var_type"							        "FIELD_FLOAT"
+            "illusion_incoming_damage_total_tooltip"	"400.0 300.0 200.0"
+        }	
+    }
+}
 "tinker_laser"
 {
     "AbilitySpecial"
