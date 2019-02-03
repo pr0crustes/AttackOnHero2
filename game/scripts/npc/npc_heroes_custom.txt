@@ -110,10 +110,8 @@
 {
     "Ability3"		            "lone_druid_custom_bear_style"
 
-    "AttributeBaseStrength"		"15"
-    "AttributeStrengthGain"		"1.400000"
-    "AttributeBaseAgility"		"17"
-    "AttributeAgilityGain"		"1.000000"
+    "AttributeStrengthGain"		"1.500000"
+    "AttributeAgilityGain"		"1.200000"
 }
 "npc_dota_hero_meepo"
 {

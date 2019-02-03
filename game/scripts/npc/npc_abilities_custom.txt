@@ -4758,6 +4758,10 @@
 }
 "lone_druid_spirit_bear"
 {
+    "AbilityCastPoint"				"0.3"
+
+    "AbilityCooldown"				"60.0"
+
     "AbilitySpecial"
     {
         "01"
@@ -4796,6 +4800,8 @@
 }
 "lone_druid_spirit_link"
 {
+    "AbilityCastPoint"				"0.25"
+
     "AbilityCooldown"				"43 36 29 25"
 
     "AbilitySpecial"
@@ -7010,7 +7016,7 @@
 
     "AbilityTextureName"		"lone_druid_savage_roar"
 
-    "AbilityCastPoint"			"0.5"
+    "AbilityCastPoint"			"0.1"
     "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 
     "AbilityCooldown"			"50.0 45.0 40.0 35.0"

@@ -1,5 +1,9 @@
 "lone_druid_spirit_bear"
 {
+    "AbilityCastPoint"				"0.3"
+
+    "AbilityCooldown"				"60.0"
+
     "AbilitySpecial"
     {
         "01"

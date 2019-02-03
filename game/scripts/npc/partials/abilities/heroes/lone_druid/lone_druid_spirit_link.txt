@@ -1,5 +1,7 @@
 "lone_druid_spirit_link"
 {
+    "AbilityCastPoint"				"0.25"
+
     "AbilityCooldown"				"43 36 29 25"
 
     "AbilitySpecial"
