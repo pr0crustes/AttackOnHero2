@@ -1,0 +1,19 @@
+"tiny_toss"
+{
+    "AbilityCooldown"				"9"
+
+
+    "AbilitySpecial"
+    {
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "toss_damage"			"100 200 300 400"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "charge_restore_time"	"9"
+        }
+    }
+}

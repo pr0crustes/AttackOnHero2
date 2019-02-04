@@ -10,12 +10,12 @@
         "02"
         {
             "var_type"					"FIELD_INTEGER"
-            "bonus_damage"				"100 200 300"
+            "bonus_damage"				"150 250 350"
         }
         "03"
         {
             "var_type"					"FIELD_INTEGER"
-            "attack_speed_reduction"	"50 100 150"
+            "attack_speed_reduction"	"50 75 100"
         }
     }
 }

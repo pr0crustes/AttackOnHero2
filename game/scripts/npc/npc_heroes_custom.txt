@@ -249,6 +249,13 @@
     "Ability6"      "tinker_rearm_fix"
     "Ability17"		"tinker_custom_bonus_unique_1"
 }
+"npc_dota_hero_tiny"
+{
+    "Ability16"		            "special_bonus_armor_20"
+
+    "AttributeBaseAgility"		"10"
+    "AttributeAgilityGain"		"1.0"
+}
 "npc_dota_hero_tusk"
 {
     "Ability16"		"special_bonus_attack_damage_120"

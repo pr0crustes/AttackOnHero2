@@ -1,0 +1,7 @@
+"npc_dota_hero_tiny"
+{
+    "Ability16"		            "special_bonus_armor_20"
+
+    "AttributeBaseAgility"		"10"
+    "AttributeAgilityGain"		"1.0"
+}

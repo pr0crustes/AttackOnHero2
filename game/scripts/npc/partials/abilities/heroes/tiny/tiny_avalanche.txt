@@ -1,0 +1,20 @@
+"tiny_avalanche"
+{
+    "AbilityCooldown"				"22 18 14 10"
+
+
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"0.1"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "avalanche_damage"			"100 200 300 400"
+            "LinkedSpecialBonus"		"special_bonus_unique_tiny"
+        }
+    }
+}
