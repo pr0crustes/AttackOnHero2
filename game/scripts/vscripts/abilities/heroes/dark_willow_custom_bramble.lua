@@ -30,7 +30,7 @@ function cast_dark_willow_custom_bramble(keys)
     local count = 0
 
     Timers:CreateTimer(
-        interval,
+        0.1,
         function()
             if target:IsAlive() then
                 target:EmitSound("Hero_DarkWillow.Bramble.Target")

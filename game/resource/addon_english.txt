@@ -763,6 +763,10 @@
 
 "DOTA_Tooltip_modifier_dark_clone_damage"                               "Dark Clone"
 "DOTA_Tooltip_modifier_dark_clone_damage_Description"                   "This unit is a clone."
+"DOTA_Tooltip_Ability_dark_willow_custom_bramble"						"Bramble"
+"DOTA_Tooltip_Ability_dark_willow_custom_bramble_Description"			"Dark Willow calls a bramble to attack an enemy. Every %interval% second the bramble attacks, dealing magic damage equal to Dark Willow attack damage."
+"DOTA_Tooltip_Ability_dark_willow_custom_bramble_strikes"               "STRIKES:"
+"DOTA_Tooltip_Ability_dark_willow_custom_bramble_lore"					"The fae realm exists all around you, merely waiting to draw you in..."
 "DOTA_Tooltip_Ability_doom_custom_dash"						    "Doom Dash"
 "DOTA_Tooltip_Ability_doom_custom_dash_Description"			    "Doom dashes to a location, quickly attacking every enemy he colides with."
 "DOTA_Tooltip_Ability_doom_custom_dash_Lore"				    "FreeDOOM."
