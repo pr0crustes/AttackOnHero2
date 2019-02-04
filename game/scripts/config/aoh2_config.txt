@@ -51,19 +51,6 @@
 	
 	}
 
-	"LinkedXPEnemies"
-	{
-		"npc_dota_splitter_a"
-		{
-			"npc_dota_splitter_b"		"4"
-		}
-
-		"npc_dota_splitter_b"
-		{
-			"npc_dota_splitter_c"		"5"
-		}
-	}
-
 	"Rounds"
 	{
 		"1" // Death Prophet	
@@ -755,8 +742,25 @@
 				"SpawnInterval"			"30"
 			}
 		}
+
+		"33" // Roshan
+		{
+			"Title"						"The Immortal"
+			"MaxGold"					"13100"
+			"BagCount"					"1"
+			"BagVariance"				"30"
+			"FixedXP"					"6400"
+
+			"a"
+			{
+				"NPCName"				"npc_boss_roshan_1"
+				"TotalUnitsToSpawn"		"1"
+				"UnitsPerSpawn"			"1"
+				"SpawnInterval"			"30"
+			}
+		}
 		
-		"33" // Hellbear
+		"34" // Hellbear
 		{
 			"Title"						"Claw"
 			"MaxGold"					"13200"
@@ -773,13 +777,13 @@
 			}
 		}
 
-		"34" // Rubick
+		"35" // Rubick
 		{
 			"Title"						"Spells"
-			"MaxGold"					"12000"
+			"MaxGold"					"14000"
 			"BagCount"					"1"
 			"BagVariance"				"30"
-			"FixedXP"					"6400"
+			"FixedXP"					"6500"
 				
 			"a"
 			{

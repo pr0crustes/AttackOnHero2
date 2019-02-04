@@ -7,7 +7,7 @@ end
 
 
 function debug_start_at_round(rounds, startAt)
-	for i = 1, startAt do
+	for i = 1, startAt - 1 do
 		table.remove(rounds, 1)
 	end
 end

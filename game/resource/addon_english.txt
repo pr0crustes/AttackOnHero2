@@ -466,6 +466,27 @@
 "DOTA_Tooltip_ability_custom_eye_of_the_storm_strike_interval"					"STRIKE INTERVAL:"
 "DOTA_Tooltip_ability_custom_eye_of_the_storm_armor_reduction"					"ARMOR REDUCTION:"
 "DOTA_Tooltip_ability_custom_eye_of_the_storm_damage"							"DAMAGE:"
+"npc_boss_roshan_1"                     "Roshan (Boss)"
+"npc_boss_roshan_2"                     "Roshan (Boss)"
+"npc_boss_roshan_3"                     "Roshan (Boss)"
+"npc_boss_roshan_4"                     "Roshan (Boss)"
+
+
+"DOTA_Tooltip_ability_roshan_split_1"                         "Split"
+"DOTA_Tooltip_ability_roshan_split_1_Description"             "When this unit dies, it will split into smaller parts."
+
+"DOTA_Tooltip_ability_roshan_split_2"                         "Split"
+"DOTA_Tooltip_ability_roshan_split_2_Description"             "When this unit dies, it will split into smaller parts."
+
+"DOTA_Tooltip_ability_roshan_split_3"                         "Split"
+"DOTA_Tooltip_ability_roshan_split_3_Description"             "When this unit dies, it will split into smaller parts."
+
+
+"DOTA_Tooltip_Ability_custom_roshan_bash"					"Bash"
+"DOTA_Tooltip_Ability_custom_roshan_bash_Description"		"Roshan has a chance to stun on attack."
+"DOTA_Tooltip_Ability_custom_roshan_bash_bash_chance"		"%CHANCE:"
+"DOTA_Tooltip_Ability_custom_roshan_bash_bonus_damage"		"BONUS DAMAGE:"
+"DOTA_Tooltip_Ability_custom_roshan_bash_stun_duration"	    "STUN DURATION:"
 "npc_boss_rubick"                     "Rubick (Boss)"
 
 

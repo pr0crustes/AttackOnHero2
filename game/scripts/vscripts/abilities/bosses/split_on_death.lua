@@ -1,5 +1,5 @@
 
-function bristle_split_on_death(keys)
+function split_on_death(keys)
     local caster = keys.caster
     local ability = keys.ability
 

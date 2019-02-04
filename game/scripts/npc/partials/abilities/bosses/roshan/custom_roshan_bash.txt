@@ -1,0 +1,28 @@
+"custom_roshan_bash"
+{
+    "ID"					        "$ID"
+    "BaseClass"                     "roshan_bash"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "bash_chance"		    "15"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "bonus_damage"		    "100"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "stun_duration"		    "0.65"
+        }
+    }
+}

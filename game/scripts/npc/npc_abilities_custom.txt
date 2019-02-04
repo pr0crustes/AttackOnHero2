@@ -2764,9 +2764,37 @@
     }
     "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 }
+"custom_roshan_bash"
+{
+    "ID"					        "70044"
+    "BaseClass"                     "roshan_bash"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "bash_chance"		    "15"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "bonus_damage"		    "100"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "stun_duration"		    "0.65"
+        }
+    }
+}
 "custom_fade_bolt"
 {
-    "ID"							"70044"
+    "ID"							"70045"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -2823,7 +2851,7 @@
 }	
 "custom_telekinesis"
 {
-    "ID"							"70045"
+    "ID"							"70046"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -2873,7 +2901,7 @@
 }	
 "custom_caustic_finale"
 {
-    "ID"					        "70046"
+    "ID"					        "70047"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -2923,7 +2951,7 @@
 }
 "custom_slithereen_crush"
 {
-    "ID"							"70047"
+    "ID"							"70048"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -2948,7 +2976,7 @@
 }
 "custom_dispersion"
 {
-    "ID"							"70048"
+    "ID"							"70049"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
     "BaseClass"                     "spectre_dispersion"
@@ -2975,7 +3003,7 @@
 }
 "custom_spectral_dagger"
 {
-    "ID"							"70049"
+    "ID"							"70050"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
@@ -3056,8 +3084,8 @@
     {
         "RunScript"
         {
-            "ScriptFile"			"abilities/bosses/bristle_split.lua"
-            "Function"				"bristle_split_on_death"
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
             "unit_name"             "npc_bristle_medium"
             "unit_count"            "5"
         }
@@ -3073,10 +3101,61 @@
     {
         "RunScript"
         {
-            "ScriptFile"			"abilities/bosses/bristle_split.lua"
-            "Function"				"bristle_split_on_death"
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
             "unit_name"             "npc_bristle_small"
             "unit_count"            "4"
+        }
+    }
+}
+"roshan_split_1"
+{
+    "BaseClass" 					"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"phantom_lancer_juxtapose"
+
+    "OnOwnerDied"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
+            "unit_name"             "npc_boss_roshan_2"
+            "unit_count"            "2"
+        }
+    }
+}
+"roshan_split_2"
+{
+    "BaseClass" 					"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"phantom_lancer_juxtapose"
+
+    "OnOwnerDied"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
+            "unit_name"             "npc_boss_roshan_3"
+            "unit_count"            "2"
+        }
+    }
+}
+"roshan_split_3"
+{
+    "BaseClass" 					"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"phantom_lancer_juxtapose"
+
+    "OnOwnerDied"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
+            "unit_name"             "npc_boss_roshan_4"
+            "unit_count"            "2"
         }
     }
 }
@@ -3168,7 +3247,7 @@
 }
 "custom_great_cleave"
 {
-    "ID"					        "70050"
+    "ID"					        "70051"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
     "BaseClass"						"sven_great_cleave"
@@ -3199,7 +3278,7 @@
 }
 "custom_suicide"
 {
-    "ID"							"70051"
+    "ID"							"70052"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3239,7 +3318,7 @@
 }
 "custom_ravage"
 {
-    "ID"					        "70052"
+    "ID"					        "70053"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
@@ -3277,7 +3356,7 @@
 }
 "custom_march_of_the_machines"
 {
-    "ID"					        "70053"
+    "ID"					        "70054"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -3337,7 +3416,7 @@
 }
 "custom_overgrowth"
 {
-    "ID"							"70054"
+    "ID"							"70055"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"	
@@ -3373,7 +3452,7 @@
 }
 "custom_fury_swipes"
 {
-    "ID"					        "70055"
+    "ID"					        "70056"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
@@ -3402,7 +3481,7 @@
 }
 "custom_magic_missile"
 {
-    "ID"					        "70056"
+    "ID"					        "70057"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3466,7 +3545,7 @@
 }
 "custom_viper_strike"
 {
-    "ID"					        "70057"
+    "ID"					        "70058"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3541,7 +3620,7 @@
 }
 "custom_windrun"
 {
-    "ID"					        "70058"
+    "ID"					        "70059"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
     "BaseClass"						"windrunner_windrun"
@@ -3582,7 +3661,7 @@
 }
 "custom_death_ward"
 {
-    "ID"					        "70059"
+    "ID"					        "70060"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
@@ -3629,7 +3708,7 @@
 }
 "custom_paralyzing_cask"
 {
-    "ID"					        "70060"
+    "ID"					        "70061"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3691,7 +3770,7 @@
 }
 "custom_mortal_strike"
 {
-    "ID"					        "70061"
+    "ID"					        "70062"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
@@ -3739,7 +3818,7 @@
 }
 "custom_arc_lightning"
 {
-    "ID"					        "70062"
+    "ID"					        "70063"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3781,7 +3860,7 @@
 }
 "custom_lightning_bolt"
 {
-    "ID"					        "70063"
+    "ID"					        "70064"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3833,7 +3912,7 @@
 }
 "custom_static_field"
 {
-    "ID"					        "70064"
+    "ID"					        "70065"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"	
@@ -3854,7 +3933,7 @@
 }
 "talent_bonus_attack_speed_1000"
 {
-    "ID"					    "70065"
+    "ID"					    "70066"
     "BaseClass"				    "special_bonus_attack_speed_200"
     "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6485,7 +6564,7 @@
 }
 "centaur_custom_bonus_strength"
 {
-    "ID"					"70066"
+    "ID"					"70067"
     "BaseClass"				"special_bonus_strength_10"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6644,7 +6723,7 @@
 }
 "dark_seer_custom_bonus_unique_1"
 {
-    "ID"					"70067"
+    "ID"					"70068"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6781,7 +6860,7 @@
 "doom_custom_dash"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70068"
+    "ID"                        "70069"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "doom_bringer_devour"
 
@@ -6829,7 +6908,7 @@
 "doom_custom_warbringer"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70069"
+    "ID"                        "70070"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityTextureName"        "doom_bringer_doom"
@@ -7656,7 +7735,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70070"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8002,7 +8081,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8360,7 +8439,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70072"
+    "ID"					"70073"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8462,7 +8541,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70073"
+    "ID"                        "70074"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -8847,7 +8926,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70074"
+    "ID"							"70075"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -8983,7 +9062,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70075"
+    "ID"					"70076"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9292,7 +9371,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70076"
+    "ID"					"70077"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

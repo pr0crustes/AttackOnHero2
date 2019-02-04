@@ -1,4 +1,4 @@
-"bristle_split_medium"
+"roshan_split_1"
 {
     "BaseClass" 					"ability_datadriven"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -10,8 +10,8 @@
         {
             "ScriptFile"			"abilities/bosses/split_on_death.lua"
             "Function"				"split_on_death"
-            "unit_name"             "npc_bristle_medium"
-            "unit_count"            "5"
+            "unit_name"             "npc_boss_roshan_2"
+            "unit_count"            "2"
         }
     }
 }

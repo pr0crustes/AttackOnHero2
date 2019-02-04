@@ -164,7 +164,7 @@ function AOHGameMode:_ReadRoundConfigurations(kv)
 		table.insert(self._vRounds, AOHRoundFromConfiguration(roundData, self, roundNumber))
 	end
 
-	--debug_start_at_round(self._vRounds, 18)
+	--debug_start_at_round(self._vRounds, 32)
 end
 
 

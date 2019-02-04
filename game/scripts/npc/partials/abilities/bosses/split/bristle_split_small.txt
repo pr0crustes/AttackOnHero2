@@ -8,8 +8,8 @@
     {
         "RunScript"
         {
-            "ScriptFile"			"abilities/bosses/bristle_split.lua"
-            "Function"				"bristle_split_on_death"
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
             "unit_name"             "npc_bristle_small"
             "unit_count"            "4"
         }
