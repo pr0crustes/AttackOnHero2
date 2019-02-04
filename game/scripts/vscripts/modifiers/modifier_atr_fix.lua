@@ -1,9 +1,6 @@
 require("lib/my")
 
 
-local mr_per_str_lookup = {0.1000, 0.0800, 0.0800}
-
-
 modifier_atr_fix = class({})
 
 
@@ -26,22 +23,19 @@ function modifier_atr_fix:DeclareFunctions()
 end
 
 
+function modifier_atr_fix:GetAttributes()
+    return MODIFIER_ATTRIBUTE_PERMANENT
+end
+
+
 function modifier_atr_fix:GetModifierMagicalResistanceBonus()
     local parent = self:GetParent()
     local parent_str = parent:GetStrength()
 
-    if parent:HasModifier("modifier_priimary_attribute") then
-
-        local count = parent:GetModifierStackCount("modifier_priimary_attribute", parent)
-
-        if count > 0 then
-
-            local mr_per_str = mr_per_str_lookup[count]
-
-            local mr_bonus = 0 - (parent_str * mr_per_str)
-            
-            return mr_bonus * 0.35
-        end
-    end
+    local mr_per_str = 0.08
+    local factor = 0.5
+    
+    local mr_reduction = parent_str * mr_per_str * factor * -1  -- -1 so it is negative.
+    return mr_reduction
 end
 
