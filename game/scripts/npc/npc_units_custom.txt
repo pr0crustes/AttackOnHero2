@@ -100,6 +100,50 @@
 
     "StatusHealth"				"850"
 }	
+"npc_dota_venomancer_plague_ward_1"
+{
+    "AttackDamageMin"			"10"
+    "AttackDamageMax"			"10"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"50"
+}
+"npc_dota_venomancer_plague_ward_2"
+{
+    "AttackDamageMin"			"20"
+    "AttackDamageMax"			"20"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"100"
+}
+"npc_dota_venomancer_plague_ward_3"
+{
+    "AttackDamageMin"			"30"
+    "AttackDamageMax"			"30"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"200"
+}
+"npc_dota_venomancer_plague_ward_4"
+{
+    "AttackDamageMin"			"50"
+    "AttackDamageMax"			"50"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"300"
+}
 "npc_dota_warlock_golem_1"
 {
     "ArmorPhysical"				"9"

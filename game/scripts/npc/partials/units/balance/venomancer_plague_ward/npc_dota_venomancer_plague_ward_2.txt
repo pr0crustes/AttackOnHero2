@@ -1,0 +1,11 @@
+"npc_dota_venomancer_plague_ward_2"
+{
+    "AttackDamageMin"			"20"
+    "AttackDamageMax"			"20"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"100"
+}

@@ -273,6 +273,10 @@
     "ArmorPhysical"		"0"
     "AttackRate"		"2.500000"
 }
+"npc_dota_hero_venomancer"
+{
+    "Ability12"		"special_bonus_attack_damage_100"
+}
 "npc_dota_hero_viper"
 {
     "Ability2"		"viper_custom_poison_wound"

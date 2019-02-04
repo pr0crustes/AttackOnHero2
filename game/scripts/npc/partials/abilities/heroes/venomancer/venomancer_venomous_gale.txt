@@ -1,0 +1,11 @@
+"venomancer_venomous_gale"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tick_damage"			"10 60 210 600"
+        }
+    }
+}

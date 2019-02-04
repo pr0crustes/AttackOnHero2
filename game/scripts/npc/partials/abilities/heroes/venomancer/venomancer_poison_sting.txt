@@ -1,0 +1,16 @@
+"venomancer_poison_sting"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"5.0"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"10 20 40 80"
+        }
+    }
+}

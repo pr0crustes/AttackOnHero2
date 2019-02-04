@@ -1,0 +1,24 @@
+"venomancer_poison_nova"
+{
+    "AbilityCooldown"				"110.0 100.0 90.0"
+
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"40 70 120"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "cooldown_scepter"			"80.0 70.0 60.0"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_scepter"			"80 140 240"
+        }
+    }
+}

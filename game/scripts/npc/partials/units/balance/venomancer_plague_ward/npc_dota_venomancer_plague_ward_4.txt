@@ -1,0 +1,11 @@
+"npc_dota_venomancer_plague_ward_4"
+{
+    "AttackDamageMin"			"50"
+    "AttackDamageMax"			"50"
+
+    "BountyXP"					"0"
+    "BountyGoldMin"				"0"
+    "BountyGoldMax"				"0"
+
+    "StatusHealth"				"300"
+}

@@ -1,0 +1,39 @@
+"venomancer_plague_ward"
+{
+    "AbilityManaCost"				        "15 20 25 30"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_FLOAT"
+            "duration"				        "40.0"
+        }
+        "02"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "ward_hp_tooltip"		        "50 100 200 300"
+            "LinkedSpecialBonus"	        "special_bonus_unique_venomancer"
+            "LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+        }
+        "03"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "ward_damage_tooltip"	        "10 20 30 50"
+            "LinkedSpecialBonus"	        "special_bonus_unique_venomancer"
+            "LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+        }
+
+        // Special bonus lvl 25 talent. These values do not replace, but add to the base one.
+        "04"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "ward_hp"		                "100 250 400 600"
+        }
+        "05"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "ward_damage"	                "20 40 60 100"
+        }
+    }
+}

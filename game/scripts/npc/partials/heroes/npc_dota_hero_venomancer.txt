@@ -1,0 +1,4 @@
+"npc_dota_hero_venomancer"
+{
+    "Ability12"		"special_bonus_attack_damage_100"
+}
