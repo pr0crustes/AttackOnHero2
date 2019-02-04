@@ -138,6 +138,11 @@
     "Ability5"		"generic_hidden"
     "Ability13"		"special_bonus_attack_speed_60"
 }
+"npc_dota_hero_morphling"
+{
+    "Ability15"		"special_bonus_unique_morphling_5"
+    "Ability19"		"special_bonus_agility_30"
+}
 "npc_dota_hero_necrolyte"
 {
     "Ability3"		"necrophos_intelligence_supremacy"

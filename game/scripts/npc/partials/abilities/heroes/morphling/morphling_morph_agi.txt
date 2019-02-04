@@ -1,0 +1,11 @@
+"morphling_morph_agi"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attributes"		"8 10 12 14"
+        }
+    }
+}
