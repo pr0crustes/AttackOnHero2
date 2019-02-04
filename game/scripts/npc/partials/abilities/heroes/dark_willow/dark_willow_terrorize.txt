@@ -1,0 +1,4 @@
+"dark_willow_terrorize"
+{
+    "AbilityCooldown"				"70 60 50"
+}

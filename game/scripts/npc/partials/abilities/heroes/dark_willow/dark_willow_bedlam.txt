@@ -1,0 +1,16 @@
+"dark_willow_bedlam"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_damage"			"110 160 280"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "attack_interval"		"0.1"
+        }
+    }
+}

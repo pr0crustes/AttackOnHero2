@@ -40,8 +40,7 @@ function create_requiem_line(caster, ability, end_position)
 		iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
 		bDeleteOnHit = false,
 		vVelocity = velocity,
-		bProvidesVision = false,
-		ExtraData = {scepter_line = false}
+		bProvidesVision = false
 	})
 
 	requiem_line_effect(caster, velocity, (travel_distance / lines_travel_speed))

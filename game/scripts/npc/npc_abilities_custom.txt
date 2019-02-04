@@ -3852,6 +3852,22 @@
     }
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
 }
+"talent_bonus_attack_speed_1000"
+{
+    "ID"					    "70065"
+    "BaseClass"				    "special_bonus_attack_speed_200"
+    "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"1000"
+        }
+    }
+}
 "abaddon_borrowed_time"
 {
     "AbilityCooldown"				"70.0 60.0 50.0"
@@ -4188,6 +4204,46 @@
         }
     }
 }	
+"dark_willow_bedlam"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_damage"			"110 160 280"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "attack_interval"		"0.1"
+        }
+    }
+}
+"dark_willow_shadow_realm"
+{
+    "AbilityCooldown"				"26 20 14 10"
+
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage"						"100 200 300 600"
+            "LinkedSpecialBonus"			"special_bonus_unique_dark_willow_1"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "attack_range_bonus"			"400 600 800 1000"
+        }
+    }
+}
+"dark_willow_terrorize"
+{
+    "AbilityCooldown"				"70 60 50"
+}
 "dazzle_bad_juju"
 {
     "AbilitySpecial"
@@ -6300,7 +6356,7 @@
 }
 "centaur_custom_bonus_strength"
 {
-    "ID"					"70065"
+    "ID"					"70066"
     "BaseClass"				"special_bonus_strength_10"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6459,7 +6515,7 @@
 }
 "dark_seer_custom_bonus_unique_1"
 {
-    "ID"					"70066"
+    "ID"					"70067"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6543,10 +6599,60 @@
         }
     }
 }
+"dark_willow_custom_bramble"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+    "AbilityTextureName"		    "dark_willow_bramble_maze"
+
+    "AbilityCastRange"				"1100"
+    "AbilityCastPoint"				"0.2"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_1"
+    
+    "AbilityCooldown"				"21 16 11 6"
+
+    "AbilityManaCost"				"70 100 130 160"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "strikes"		        "1 2 4 6"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "interval"		        "0.5"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "Target"			    "CASTER"
+            "EffectName"		    "Hero_DarkWillow.Brambles.Cast"
+        }
+        "RunScript"
+        {
+            "ScriptFile"		    "abilities/heroes/dark_willow_custom_bramble.lua"
+            "Function"			    "cast_dark_willow_custom_bramble"
+            "Target"			    "TARGET"
+        } 
+    }
+}
 "doom_custom_dash"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70067"
+    "ID"                        "70068"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "doom_bringer_devour"
 
@@ -6594,7 +6700,7 @@
 "doom_custom_warbringer"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70068"
+    "ID"                        "70069"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityTextureName"        "doom_bringer_doom"
@@ -7421,7 +7527,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70069"
+    "ID"					"70070"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7767,7 +7873,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70070"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8125,7 +8231,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8227,7 +8333,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70072"
+    "ID"                        "70073"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -8612,7 +8718,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70073"
+    "ID"							"70074"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -8748,7 +8854,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70075"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9057,7 +9163,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70075"
+    "ID"					"70076"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

@@ -1,0 +1,16 @@
+"talent_bonus_attack_speed_1000"
+{
+    "ID"					    "$ID"
+    "BaseClass"				    "special_bonus_attack_speed_200"
+    "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"1000"
+        }
+    }
+}

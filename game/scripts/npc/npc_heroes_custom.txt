@@ -52,6 +52,11 @@
     "Ability6"		"dark_seer_custom_dark_clone"
     "Ability16"     "dark_seer_custom_bonus_unique_1"
 }
+"npc_dota_hero_dark_willow"
+{
+    "Ability1"		"dark_willow_custom_bramble"
+    "Ability16"		"talent_bonus_attack_speed_1000"
+}
 "npc_dota_hero_doom_bringer"
 {
     "Ability1"		"doom_custom_dash"
