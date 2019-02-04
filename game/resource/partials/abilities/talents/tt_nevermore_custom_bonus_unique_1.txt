@@ -1,1 +1,1 @@
-"DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+70 Necromastery soul limit."
+"DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+100 Necromastery soul limit."
