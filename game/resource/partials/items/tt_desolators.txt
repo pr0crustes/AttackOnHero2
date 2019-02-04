@@ -1,19 +1,11 @@
-
 "DOTA_Tooltip_Ability_item_desolator_2"                         "Desolator 2"
 "DOTA_Tooltip_Ability_item_desolator_2_Description"			    "<h1>Passive: Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
 "DOTA_Tooltip_Ability_item_desolator_2_Lore"				    "A wicked weapon, used in torturing political criminals."
 "DOTA_Tooltip_Ability_item_desolator_2_Note0"				    "Armor reduction works on buildings."
 "DOTA_Tooltip_Ability_item_desolator_2_bonus_damage"		    "+$damage"		
 
-"DOTA_Tooltip_modifier_item_desolator_2_debuff"					"Desolator"
-"DOTA_Tooltip_modifier_item_desolator_2_debuff_Description"		"Desolator attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
-
-
 "DOTA_Tooltip_Ability_item_desolator_3"                         "Desolator 3"
 "DOTA_Tooltip_Ability_item_desolator_3_Description"			    "<h1>Passive: Corruption</h1> Your attacks reduce the target's armor by %corruption_armor% for %corruption_duration% seconds."
 "DOTA_Tooltip_Ability_item_desolator_3_Lore"				    "A wicked weapon, used in torturing political criminals."
 "DOTA_Tooltip_Ability_item_desolator_3_Note0"				    "Armor reduction works on buildings."
 "DOTA_Tooltip_Ability_item_desolator_3_bonus_damage"		    "+$damage"		
-
-"DOTA_Tooltip_modifier_item_desolator_3_debuff"					"Desolator"
-"DOTA_Tooltip_modifier_item_desolator_3_debuff_Description"		"Desolator attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."

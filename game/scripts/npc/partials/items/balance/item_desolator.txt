@@ -2,11 +2,6 @@
 {
     "AbilitySpecial"
     {
-        "01"
-        {
-            "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"50"
-        }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
@@ -15,7 +10,7 @@
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "corruption_duration"	"15.0"
+            "corruption_duration"	"5.0"
         }
     }
 }
