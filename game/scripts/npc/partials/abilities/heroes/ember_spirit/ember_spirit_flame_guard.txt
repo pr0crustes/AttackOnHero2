@@ -1,0 +1,26 @@
+"ember_spirit_flame_guard"
+{
+    "AbilityCooldown"				        "35.0 25.0 15.0 10.0"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_FLOAT"
+            "duration"						"9.0"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "absorb_amount"					"100 200 400 800"
+            "LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_1"
+        }
+        "05"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage_per_second"				"40 80 120 160"
+            "LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_3"
+        }
+    }
+}
