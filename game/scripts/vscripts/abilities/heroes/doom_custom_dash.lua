@@ -27,6 +27,7 @@ function cast_doom_dash(keys)
         speed = speed
     }
 
+    ability:ApplyDataDrivenModifier(caster, caster, keys.modifier, {})
     caster:AddNewModifier(nil, nil, foward_modifier, kv)
 end
 

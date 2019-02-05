@@ -2,6 +2,11 @@
 {
 	"AbilitySpecial"
 	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"burn_damage"			"25 100 300 400"
+		}
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"

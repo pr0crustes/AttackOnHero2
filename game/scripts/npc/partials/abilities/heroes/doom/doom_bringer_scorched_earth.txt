@@ -1,0 +1,19 @@
+"doom_bringer_scorched_earth"
+{
+    "AbilityCooldown"				"50 45 35 25"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "damage_per_second"		        "40 80 120 160"
+            "LinkedSpecialBonus"	        "special_bonus_unique_doom_4"				
+        }
+        "03"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "bonus_movement_speed_pct"	    "12 16 20 24"
+        }
+    }
+}

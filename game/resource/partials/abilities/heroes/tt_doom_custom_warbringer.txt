@@ -1,5 +1,9 @@
 "DOTA_Tooltip_Ability_doom_custom_warbringer"						    "Warbringer"
-"DOTA_Tooltip_Ability_doom_custom_warbringer_Description"			    "After every basic attack, Doom receives bonus armor and health regeneration for %buff_duration% seconds."
+"DOTA_Tooltip_Ability_doom_custom_warbringer_Description"			    "Doom borrows energy from hell, decreasing all damage received for a brief duration."
 "DOTA_Tooltip_Ability_doom_custom_warbringer_Lore"				        "War is comming."
-"DOTA_Tooltip_Ability_doom_custom_warbringer_regen_bonus"				"Bonus Regen:"
-"DOTA_Tooltip_Ability_doom_custom_warbringer_armor_bonus"				"Bonus Armor:"
+"DOTA_Tooltip_Ability_doom_custom_warbringer_duration"				    "DURATION:"
+"DOTA_Tooltip_Ability_doom_custom_warbringer_reduction"				    "%DAMAGE REDUCTION:"
+
+
+"DOTA_Tooltip_modifier_custom_doom_warbringer"                          "Warbringer"
+"DOTA_Tooltip_modifier_custom_doom_warbringer_Description"              "Reducing all incoming damage."

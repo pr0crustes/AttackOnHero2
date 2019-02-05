@@ -4396,6 +4396,11 @@
 {
 	"AbilitySpecial"
 	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"burn_damage"			"25 100 300 400"
+		}
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
@@ -4403,6 +4408,25 @@
 			"LinkedSpecialBonus"	"special_bonus_unique_doom_1"
 		}
 	}
+}
+"doom_bringer_scorched_earth"
+{
+    "AbilityCooldown"				"50 45 35 25"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "damage_per_second"		        "40 80 120 160"
+            "LinkedSpecialBonus"	        "special_bonus_unique_doom_4"				
+        }
+        "03"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "bonus_movement_speed_pct"	    "12 16 20 24"
+        }
+    }
 }
 "drow_ranger_frost_arrows"
 {
@@ -6937,6 +6961,16 @@
             "var_type"				"FIELD_INTEGER"
             "cast_range_tooltip"	"500 600 700 800"
         }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "buff_duration"     	"5.0"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "buff_armor"	        "4 6 8 10"
+        }
     }
 
     "OnSpellStart"
@@ -6946,33 +6980,68 @@
             "ScriptFile"		"abilities/heroes/doom_custom_dash.lua"
             "Function"			"cast_doom_dash"
             "Target"			"POINT"
+            "modifier"          "modifier_doom_custom_dash_buff"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_doom_custom_dash_buff" 
+        {
+            "IsBuff"	        "1"
+            "Duration"          "%buff_duration"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%buff_armor"
+            }
         }
     }
 }
 "doom_custom_warbringer"
 {
-    "BaseClass"                 "ability_datadriven"
-    "ID"                        "70070"
-    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
-    "AbilityTextureName"        "doom_bringer_doom"
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"				    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"            "doom_bringer_doom"
+
+    "AbilityCastPoint"              "0.0"
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"               "45.0"
+
+    "AbilityManaCost"               "100 130 160"
+
+    "precache"
+    {
+        "particle"                  "particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+    }
 
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"              "FIELD_INTEGER"
-            "regen_bonus"           "20 40 60"
+            "duration"              "4 6 8"
         }
-       "02"
+        "02"
         {
             "var_type"              "FIELD_INTEGER"
-            "armor_bonus"           "4 8 12"
+            "reduction"             "-40"
         }
-        "03"
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
         {
-            "var_type"              "FIELD_FLOAT"
-            "buff_duration"         "1.0 1.5 2.0"
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_custom_doom_warbringer"
+        }
+        "FireSound"
+        {
+            "Target"			    "CASTER"
+            "EffectName"		    "Hero_DoomBringer.Doom"
         }
     }
 
@@ -6980,32 +7049,22 @@
     {
         "modifier_custom_doom_warbringer"
         {
-            "Passive"           "1"
-            "IsBuff"            "1"
-            "IsHidden"          "1"
-            "IsPurgable"        "0"
+            "IsBuff"                "1"
+            "Duration"              "%duration"
 
-            "OnAttackLanded"
+            "OnCreated"
             {
-                "ApplyModifier"
+                "AttachEffect"
                 {
-                    "ModifierName"	"modifier_custom_doom_warbringer_buff"
-                    "Target"		"CASTER"
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+                    "EffectAttachType"		"follow_origin"
                 }
             }
-        }
-
-        "modifier_custom_doom_warbringer_buff"
-        {
-            "IsBuff"            "1"
-            "IsHidden"          "1"
-            "IsPurgable"        "0"
-            "Duration"          "%buff_duration"
 
             "Properties" 
             {
-                "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"        "%regen_bonus"
-                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%armor_bonus"
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"         "%reduction"
             }
         }
     }
@@ -7779,7 +7838,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70070"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8125,7 +8184,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70072"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8483,7 +8542,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70073"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8585,7 +8644,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70074"
+    "ID"                        "70073"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -8970,7 +9029,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70075"
+    "ID"							"70074"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -9106,7 +9165,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70076"
+    "ID"					"70075"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9415,7 +9474,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70077"
+    "ID"					"70076"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

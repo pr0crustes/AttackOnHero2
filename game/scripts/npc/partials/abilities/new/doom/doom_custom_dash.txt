@@ -34,6 +34,16 @@
             "var_type"				"FIELD_INTEGER"
             "cast_range_tooltip"	"500 600 700 800"
         }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "buff_duration"     	"5.0"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "buff_armor"	        "4 6 8 10"
+        }
     }
 
     "OnSpellStart"
@@ -43,6 +53,21 @@
             "ScriptFile"		"abilities/heroes/doom_custom_dash.lua"
             "Function"			"cast_doom_dash"
             "Target"			"POINT"
+            "modifier"          "modifier_doom_custom_dash_buff"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_doom_custom_dash_buff" 
+        {
+            "IsBuff"	        "1"
+            "Duration"          "%buff_duration"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"         "%buff_armor"
+            }
         }
     }
 }
