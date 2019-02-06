@@ -1,15 +1,18 @@
-
-
 function cast_nyx_assassin_custom_mana_strike(keys)
-    local caster = keys.caster
-    local ability = keys.ability
-    local target = keys.target
+	local caster = keys.caster
+	local ability = keys.ability
+	local target = keys.target
+	
+	local mana_multiplier = ability:GetSpecialValueFor("mana_multiplier")
+	
+	local damage = caster:GetMana() * mana_multiplier
+	
+	caster:EmitSound("Hero_NyxAssassin.ManaBurn.Cast")
 
-    local mana_multiplier = ability:GetSpecialValueFor("mana_multiplier")
-
-    local damage = caster:GetMana() * mana_multiplier
-
-    ApplyDamage({
+	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_nyx_assassin/nyx_assassin_mana_burn.vpcf", PATTACH_ABSORIGIN, target)
+	ParticleManager:ReleaseParticleIndex(particle)
+	
+	ApplyDamage({
 		ability = ability,
 		attacker = caster,
 		damage = damage,
@@ -17,4 +20,3 @@ function cast_nyx_assassin_custom_mana_strike(keys)
 		victim = target
 	})
 end
-
