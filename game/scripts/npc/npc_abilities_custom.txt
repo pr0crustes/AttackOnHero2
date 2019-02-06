@@ -8366,7 +8366,7 @@
 
     "AbilityCooldown"				    "60.0"
 
-    "AbilityManaCost"				    "200 150 200"
+    "AbilityManaCost"				    "100 150 200"
 
     "AbilitySpecial"
     {
