@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike"					    "Mana Strike"
+"DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_Description"		    "Deals damage based on Nyx current mana."
+"DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_Lore"				    "The tome in Ultimyr describes one scarab with the ability eat away at the mind of lesser beings."
+"DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_mana_multiplier"	    "DAMAGE PER MANA:"

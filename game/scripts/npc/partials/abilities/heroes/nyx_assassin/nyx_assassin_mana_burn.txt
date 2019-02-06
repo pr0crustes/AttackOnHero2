@@ -1,4 +1,0 @@
-"nyx_assassin_mana_burn"
-{
-    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-}
