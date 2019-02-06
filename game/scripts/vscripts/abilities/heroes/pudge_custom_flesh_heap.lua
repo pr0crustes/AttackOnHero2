@@ -1,20 +1,26 @@
 require("lib/my")
 
 
-local modifier = "modifier_pudge_custom_flesh_heap_stack"
-
 
 function cast_flesh_heap(keys)
     local caster = keys.caster
     local ability = keys.ability
+    local stack_modifier = keys.modifier
 
-    local duration = ability:GetSpecialValueFor("duration")
     local multiplier = ability:GetSpecialValueFor("multiplier")
+    local duration = ability:GetSpecialValueFor("duration")
 
-    local bonus_int = caster:GetStrength() * multiplier
+    local talent = caster:FindAbilityByName("pudge_custom_bonus_unique_pudge_1")
+    if talent and talent:GetLevel() > 0 then
+        duration = duration + talent:GetSpecialValueFor("value")
+    end
 
-    ability:ApplyDataDrivenModifier(caster, caster, modifier, {duration = duration})
-    caster:SetModifierStackCount(modifier, caster, bonus_int)
+    local bonus_str = caster:GetStrength() * multiplier
+
+    ability:ApplyDataDrivenModifier(caster, caster, stack_modifier, {duration = duration})
+    caster:SetModifierStackCount(stack_modifier, caster, bonus_str)
+
+    caster:CalculateStatBonus()
 
     caster:EmitSound("Hero_Pudge.Dismember.Cast.Arcana")
 end

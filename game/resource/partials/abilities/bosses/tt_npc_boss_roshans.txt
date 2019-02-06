@@ -19,3 +19,12 @@
 "DOTA_Tooltip_Ability_custom_roshan_bash_bash_chance"		"%CHANCE:"
 "DOTA_Tooltip_Ability_custom_roshan_bash_bonus_damage"		"BONUS DAMAGE:"
 "DOTA_Tooltip_Ability_custom_roshan_bash_stun_duration"	    "STUN DURATION:"
+
+
+"DOTA_Tooltip_Ability_custom_roshan_slam"					        "Slam"
+"DOTA_Tooltip_Ability_custom_roshan_slam_Description"		        "Roshan slams the ground, damaging and slowing all nearby enemies."
+"DOTA_Tooltip_Ability_custom_roshan_slam_radius"			        "RADIUS:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_duration_hero"	    "HERO DURATION:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_duration_unit"	    "UNIT DURATION:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_amount"		        "%SLOW:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_damage"			        "DAMAGE:"

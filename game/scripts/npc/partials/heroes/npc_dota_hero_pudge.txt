@@ -1,4 +1,8 @@
 "npc_dota_hero_pudge"
 {
     "Ability3"		"pudge_custom_flesh_heap"
+    "Ability17"		"pudge_custom_bonus_unique_pudge_1"
+
+    "AttributeBaseIntelligence"		"22"
+    "AttributeIntelligenceGain"		"3.0"
 }

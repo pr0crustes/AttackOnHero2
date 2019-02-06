@@ -5,7 +5,7 @@
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "strength_damage"		"1.0 1.5 2.0"
+            "strength_damage"		"1.5 2.0 2.5"
         }
     }
 }

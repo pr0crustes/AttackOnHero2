@@ -487,6 +487,15 @@
 "DOTA_Tooltip_Ability_custom_roshan_bash_bash_chance"		"%CHANCE:"
 "DOTA_Tooltip_Ability_custom_roshan_bash_bonus_damage"		"BONUS DAMAGE:"
 "DOTA_Tooltip_Ability_custom_roshan_bash_stun_duration"	    "STUN DURATION:"
+
+
+"DOTA_Tooltip_Ability_custom_roshan_slam"					        "Slam"
+"DOTA_Tooltip_Ability_custom_roshan_slam_Description"		        "Roshan slams the ground, damaging and slowing all nearby enemies."
+"DOTA_Tooltip_Ability_custom_roshan_slam_radius"			        "RADIUS:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_duration_hero"	    "HERO DURATION:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_duration_unit"	    "UNIT DURATION:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_slow_amount"		        "%SLOW:"
+"DOTA_Tooltip_Ability_custom_roshan_slam_damage"			        "DAMAGE:"
 "npc_boss_rubick"                     "Rubick (Boss)"
 
 
@@ -1101,6 +1110,7 @@
 "DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"
 "DOTA_Tooltip_Ability_dark_seer_custom_bonus_unique_1"          "+1 clone to Dark Clone."
 "DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+100 Necromastery soul limit."
+"DOTA_Tooltip_Ability_pudge_custom_bonus_unique_pudge_1"          "+4s Flesh Heap Duration"
 "DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"
 "DOTA_Tooltip_Ability_slark_custom_bonus_unique_1"          "+3 attacks to Pounce"
 "DOTA_Tooltip_ability_talent_bonus_attack_speed_1000"	"+1000 Attack Speed"

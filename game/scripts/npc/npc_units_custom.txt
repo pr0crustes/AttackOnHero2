@@ -2242,9 +2242,10 @@
     "HasInventory"				"1"
 
     "Ability1"					"custom_roshan_bash"
-    "Ability2"                  "roshan_split_1"
+    "Ability2"                  "custom_roshan_slam"
+    "Ability3"                  "roshan_split_1"
 
-    "ArmorPhysical"				"50"
+    "ArmorPhysical"				"40"
     "MagicalResistance"			"30"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageMin"			"1000"
@@ -2266,7 +2267,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"500"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"300000"
+    "StatusHealth"				"200000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"300"
     "StatusManaRegen"			"10"
@@ -2280,6 +2281,15 @@
     "Creature"
     {
         "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"              "custom_roshan_slam"
+                "MinimumTargets"	"1"
+                "Radius"			"350"
+            }
+        }
     }
 }
 "npc_boss_roshan_2"
@@ -2295,9 +2305,10 @@
     "HasInventory"				"1"
 
     "Ability1"					"custom_roshan_bash"
-    "Ability2"                  "roshan_split_2"
+    "Ability2"                  "custom_roshan_slam"
+    "Ability3"                  "roshan_split_2"
 
-    "ArmorPhysical"				"50"
+    "ArmorPhysical"				"40"
     "MagicalResistance"			"30"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageMin"			"700"
@@ -2319,7 +2330,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"500"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"200000"
+    "StatusHealth"				"150000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"300"
     "StatusManaRegen"			"10"
@@ -2333,6 +2344,15 @@
     "Creature"
     {
         "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"              "custom_roshan_slam"
+                "MinimumTargets"	"1"
+                "Radius"			"350"
+            }
+        }
     }
 }
 "npc_boss_roshan_3"
@@ -2348,9 +2368,10 @@
     "HasInventory"				"1"
 
     "Ability1"                  "custom_roshan_bash"
-    "Ability2"                  "roshan_split_3"
+    "Ability2"                  "custom_roshan_slam"
+    "Ability3"                  "roshan_split_3"
 
-    "ArmorPhysical"				"50"
+    "ArmorPhysical"				"40"
     "MagicalResistance"			"30"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageMin"			"500"
@@ -2372,7 +2393,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"500"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"150000"
+    "StatusHealth"				"100000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"300"
     "StatusManaRegen"			"10"
@@ -2386,6 +2407,15 @@
     "Creature"
     {
         "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"              "custom_roshan_slam"
+                "MinimumTargets"	"1"
+                "Radius"			"350"
+            }
+        }
     }
 }
 "npc_boss_roshan_4"
@@ -2401,8 +2431,9 @@
     "HasInventory"				"1"
 
     "Ability1"                  "custom_roshan_bash"
+    "Ability2"                  "custom_roshan_slam"
 
-    "ArmorPhysical"				"50"
+    "ArmorPhysical"				"40"
     "MagicalResistance"			"30"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageMin"			"300"
@@ -2424,7 +2455,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"500"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"100000"
+    "StatusHealth"				"50000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"300"
     "StatusManaRegen"			"10"
@@ -2438,6 +2469,15 @@
     "Creature"
     {
         "DisableResistance"          "50.0"
+        "OffensiveAbilities"
+        {
+            "Ability2"
+            {
+                "Name"              "custom_roshan_slam"
+                "MinimumTargets"	"1"
+                "Radius"			"350"
+            }
+        }
     }
 }
 "npc_boss_rubick"

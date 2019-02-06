@@ -11,7 +11,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "rot_damage"			"60 90 120 150"
+            "rot_damage"			"30 60 90 120"
             "LinkedSpecialBonus"	"special_bonus_unique_pudge_2"
         }
     }

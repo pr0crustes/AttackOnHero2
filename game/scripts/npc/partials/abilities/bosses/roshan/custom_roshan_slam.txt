@@ -1,0 +1,48 @@
+"custom_roshan_slam"
+{
+    "BaseClass"                     "roshan_slam"
+    "ID"					        "$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+    "AbilityManaCost"				"0"
+
+    "AbilityCooldown"				"6.0"
+    "AbilityCastPoint"				"0.47"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "radius"			    "350"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "slow_duration_hero"	"2.0"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "slow_duration_unit"	"2.0"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "slow_amount"		    "50"
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "500"
+        }
+        "06"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage_growth"		    "0"
+        }
+    }
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+}

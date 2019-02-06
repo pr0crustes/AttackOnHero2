@@ -84,6 +84,10 @@
     "Ability15"		"special_bonus_attack_damage_100"
     "Ability16"		"special_bonus_cooldown_reduction_25"
 }
+"npc_dota_hero_grimstroke"
+{
+    "Enabled"				"0"
+}
 "npc_dota_hero_huskar"
 {
     "Ability6"		"huskar_custom_life_trade"
@@ -167,6 +171,10 @@
 "npc_dota_hero_pudge"
 {
     "Ability3"		"pudge_custom_flesh_heap"
+    "Ability17"		"pudge_custom_bonus_unique_pudge_1"
+
+    "AttributeBaseIntelligence"		"22"
+    "AttributeIntelligenceGain"		"3.0"
 }
 "npc_dota_hero_pugna"
 {
