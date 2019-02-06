@@ -1,0 +1,47 @@
+"nyx_assassin_custom_vendetta"
+{
+    "BaseClass"						    "ability_datadriven"
+    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			    "nyx_assassin_vendetta"
+
+    "AbilityCastPoint"				    "0.0"
+
+    "AbilityCooldown"				    "60.0"
+
+    "AbilityManaCost"				    "200 150 200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "crit_increase"	            "30 50 70"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "interval"	                "1.0"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "movement_speed"	        "20 30 40"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"	                "15.0"
+            "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/nyx_assassin_custom_vendetta.lua"
+            "Function"			"cast_nyx_assassin_custom_vendetta"
+        } 
+    }
+}

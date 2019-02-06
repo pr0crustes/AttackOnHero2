@@ -8216,6 +8216,22 @@
         }
     }
 }
+"nyx_assassin_custom_bonus_unique_1"
+{
+    "ID"					"70072"
+    "BaseClass"				"special_bonus_undefined"
+    "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"10"
+        }
+    }
+}
 "nyx_assassin_custom_mana_strike"
 {
     "BaseClass"					    "ability_datadriven"
@@ -8255,6 +8271,137 @@
         } 
     }
 }
+"nyx_assassin_custom_spiked_carapace"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityTextureName" 			"nyx_assassin_spiked_carapace"
+
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"35.0 30.0 25.0 20.0"
+
+    "AbilityManaCost"				"150 100 50 25"
+
+    "AbilityChannelTime"			"3.0"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "channel"		        "3.0"
+        }
+    }
+
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+
+    "OnChannelInterrupted"
+    {
+        "RemoveModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+
+    "OnChannelSucceeded"
+    {
+        "RemoveModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+    
+
+    "Modifiers"
+    {
+        "modifier_nyx_assassin_custom_spiked_carapace" 
+        {
+            "IsBuff"	            "1"
+            "Duration"              "%channel"
+            
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                }
+                "FireSound"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "Hero_NyxAssassin.SpikedCarapace"
+                }
+            }
+
+            "States"
+            {
+                "MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_MAGIC_IMMUNE"           "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_ATTACK_IMMUNE"          "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}
+"nyx_assassin_custom_vendetta"
+{
+    "BaseClass"						    "ability_datadriven"
+    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			    "nyx_assassin_vendetta"
+
+    "AbilityCastPoint"				    "0.0"
+
+    "AbilityCooldown"				    "60.0"
+
+    "AbilityManaCost"				    "200 150 200"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "crit_increase"	            "30 50 70"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "interval"	                "1.0"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "movement_speed"	        "20 30 40"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"	                "15.0"
+            "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/nyx_assassin_custom_vendetta.lua"
+            "Function"			"cast_nyx_assassin_custom_vendetta"
+        } 
+    }
+}
 "obsidian_destroyer_custom_mana_bonus"
 {
     "BaseClass"						"ability_datadriven"
@@ -8288,7 +8435,7 @@
 }
 "pudge_custom_bonus_unique_pudge_1"
 {
-    "ID"					"70072"
+    "ID"					"70073"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8398,7 +8545,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70073"
+    "ID"					"70074"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8756,7 +8903,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70075"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8858,7 +9005,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70075"
+    "ID"                        "70076"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -9243,7 +9390,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70076"
+    "ID"							"70077"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -9379,7 +9526,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70077"
+    "ID"					"70078"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9788,7 +9935,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70078"
+    "ID"					"70079"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

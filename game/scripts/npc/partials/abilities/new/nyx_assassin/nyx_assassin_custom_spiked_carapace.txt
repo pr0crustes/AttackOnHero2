@@ -1,0 +1,84 @@
+"nyx_assassin_custom_spiked_carapace"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityTextureName" 			"nyx_assassin_spiked_carapace"
+
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"35.0 30.0 25.0 20.0"
+
+    "AbilityManaCost"				"150 100 50 25"
+
+    "AbilityChannelTime"			"3.0"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "channel"		        "3.0"
+        }
+    }
+
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+
+    "OnChannelInterrupted"
+    {
+        "RemoveModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+
+    "OnChannelSucceeded"
+    {
+        "RemoveModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
+        }
+    }
+    
+
+    "Modifiers"
+    {
+        "modifier_nyx_assassin_custom_spiked_carapace" 
+        {
+            "IsBuff"	            "1"
+            "Duration"              "%channel"
+            
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                }
+                "FireSound"
+                {
+                    "Target"			    "CASTER"
+                    "EffectName"		    "Hero_NyxAssassin.SpikedCarapace"
+                }
+            }
+
+            "States"
+            {
+                "MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_MAGIC_IMMUNE"           "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_ATTACK_IMMUNE"          "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}

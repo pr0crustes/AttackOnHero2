@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_nyx_assassin_custom_bonus_unique_1"          "+10s Vendetta Duration"

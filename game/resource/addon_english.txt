@@ -935,6 +935,25 @@
 "DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_Description"		    "Deals damage based on Nyx current mana."
 "DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_Lore"				    "The tome in Ultimyr describes one scarab with the ability eat away at the mind of lesser beings."
 "DOTA_Tooltip_ability_nyx_assassin_custom_mana_strike_mana_multiplier"	    "DAMAGE PER MANA:"
+"DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace"						"Spiked Carapace"
+"DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace_Description"			"Nyx channels for up to %channel% seconds. During this time, he is completely invulnerable and unselectable."
+"DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace_Lore"				    "While their carapace is relatively thin, it's guarded by a retractable field of razor-sharp spikes."
+
+
+"DOTA_Tooltip_modifier_nyx_assassin_custom_spiked_carapace"                     "Spiked Carapace"
+"DOTA_Tooltip_modifier_nyx_assassin_custom_spiked_carapace_Description"         "Nyx is completely invulnerable and unselectable."
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta"							    "Vendetta"
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Description"				    "Allows Nyx Assassin to become invisible and gain a speed bonus.  If Nyx Assassin attacks to break the invisibility, massive bonus damage is dealt with the attack. The bonus damage is based on how long Nyx was invisible. Spells do not break Vendetta."
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Lore"						"The scarab kills for the glory of his queen."
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Note0"						"Has a 0 second fadetime."
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Note1"						"If the invisibility expires, the bonus damage is lost."
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_duration"					"DURATION:"
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_movement_speed"				"%MOVEMENT SPEED:"
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_crit_increase"				"CRIT INCREASE PER SECOND:"	
+
+
+"DOTA_Tooltip_modifier_nyx_assassin_custom_vendetta"                            "Vendetta"
+"DOTA_Tooltip_modifier_nyx_assassin_custom_vendetta_Description"                "Next attack will deal bonus damage."
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus"					"Mana Bonus"
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus_Description"		"After researching for years, your mana increases."
 "DOTA_Tooltip_Ability_obsidian_destroyer_custom_mana_bonus_mana_bonus"		    "Mana Bonus:"
@@ -1123,6 +1142,7 @@
 "DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"
 "DOTA_Tooltip_Ability_dark_seer_custom_bonus_unique_1"          "+1 clone to Dark Clone."
 "DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+100 Necromastery soul limit."
+"DOTA_Tooltip_Ability_nyx_assassin_custom_bonus_unique_1"          "+10s Vendetta Duration"
 "DOTA_Tooltip_Ability_pudge_custom_bonus_unique_pudge_1"          "+4s Flesh Heap Duration"
 "DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"
 "DOTA_Tooltip_Ability_slark_custom_bonus_unique_1"          "+3 attacks to Pounce"
