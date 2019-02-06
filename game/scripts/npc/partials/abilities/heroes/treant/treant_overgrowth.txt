@@ -1,0 +1,4 @@
+"treant_overgrowth"
+{
+    "AbilityCooldown"				"80 75 70"
+}

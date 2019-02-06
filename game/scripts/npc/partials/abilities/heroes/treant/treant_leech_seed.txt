@@ -1,0 +1,12 @@
+"treant_leech_seed"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "leech_damage"					"20 30 40 60"
+            "LinkedSpecialBonus"			"special_bonus_unique_treant_2"
+        }
+    }
+}

@@ -5988,6 +5988,48 @@
         }
     }
 }
+"treant_leech_seed"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "leech_damage"					"20 30 40 60"
+            "LinkedSpecialBonus"			"special_bonus_unique_treant_2"
+        }
+    }
+}
+"treant_living_armor"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "damage_count"		"2 3 4 5"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "health_regen"		"10 20 30 40"
+        }
+        "03"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "damage_block"		"50 100 150 200"
+        }
+        "04"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"			"6.0"
+        }
+    }
+}
+"treant_overgrowth"
+{
+    "AbilityCooldown"				"80 75 70"
+}
 "troll_warlord_berserkers_rage"
 {
     "AbilitySpecial"
@@ -9374,6 +9416,106 @@
         {
             "var_type"				"FIELD_FLOAT"
             "channel_tooltip"		"3.0 1.5 0.75"
+        }
+    }
+}
+"treant_custom_consume_tree"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_TREE"
+
+    "AbilityTextureName"			"treant_natures_guise"
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+    "AbilityCastRange"				"200"
+    "AbilityCastPoint"				"0.25"
+
+    "AbilityCooldown"				"30.0 25.0 20.0 15.0"
+    "AbilityDuration"				"5.0"
+
+    "AbilityManaCost"				"100 80 60 40"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "stack_health"		    "100"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"180.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"			    "CASTER"
+            "ModifierName"		    "modifier_custom_consume_tree"
+        }
+        "DestroyTrees"
+        {
+            "Target"                "POINT"
+            "Radius"                "10"
+        }
+        "FireSound"
+        {
+            "Target"				"CASTER"
+            "EffectName"			"Hero_Treant.NaturesGuise.On"
+        }
+        "FireEffect"
+        {
+            "Target"      		    "CASTER"
+            "EffectName"		    "particles/custom/treantheal.vpcf"
+            "EffectAttachType"		"follow_origin"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_custom_consume_tree_hud"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "AbilityTextureName"    "treant_natures_guise"
+        }
+
+        "modifier_custom_consume_tree"
+        {
+            "IsHidden"				"1"
+            "IsBuff"				"1"
+            "Duration"				"%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_custom_consume_tree_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_custom_consume_tree_hud"
+                }
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_HEALTH_BONUS"		"%stack_health"
+            }
         }
     }
 }
