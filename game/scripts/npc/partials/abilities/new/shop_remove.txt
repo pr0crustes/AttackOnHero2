@@ -11,3 +11,4 @@
 "item_wraith_band"          "REMOVE"
 "item_recipe_refresher"     "REMOVE"
 "item_refresher"            "REMOVE"
+"item_bfury"                "REMOVE"
