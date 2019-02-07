@@ -13,6 +13,6 @@ function get_hud() {
 
 
 function on_info_button_click() {
-    get_hud().FindChildTraverse("game_info_button").GetParent().style.transform = (open ? "translateX(-450px)" : "translateX(0)");
+    get_hud().FindChildTraverse("game_info_button").GetParent().style.transform = (open ? "translateX(-475px)" : "translateX(0)");
     open = !open;
 }

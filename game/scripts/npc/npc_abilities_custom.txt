@@ -6542,7 +6542,7 @@
         "04"
         {
             "var_type"			    "FIELD_FLOAT"
-            "armor_per_round"	    "1"
+            "armor_per_round"	    "9999"
         }
     }
 

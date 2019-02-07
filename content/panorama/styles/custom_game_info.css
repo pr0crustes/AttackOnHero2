@@ -1,12 +1,12 @@
-.custom_game_info_root
+.custom_game_info_root_panel
 {
-    width: 475px;
+    width: 500px;
     height: 100%;
     horizontal-align: left;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    transform: translateX(-450px);
+    transform: translateX(-475px);
 }
 
 
@@ -21,17 +21,18 @@
 }
 
 
-.game_info
+.game_info_panel
 {
     margin-right: 25px;
     width: 100%;
     height: 100%;
     padding: 15px;
     background-color: #202020;
+    flow-children: down;
 }
 
 
-.button_icon
+.button_icon_panel
 {
     horizontal-align: center;
     vertical-align: center;
@@ -45,8 +46,51 @@
 }
 
 
-.button_icon:hover
+.button_icon_panel:hover
 {
-    brightness: 2.0;
+    brightness: 10.0;
+}
+
+
+.title_panel
+{
+    flow-children: right;
+    width: 100%;
+}
+
+
+.title
+{
+    margin-top: 30px;
+    width: 100%;
+    color: rgb(194, 168, 21);
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.description_root_panel
+{
+    width: 100%;
+    margin-top: 30px;
+    flow-children: down;
+}
+
+
+.description_panel
+{
+    margin-top: 35px;
+    width: 75%;
+    horizontal-align: middle;
+    flow-children: down;
+}
+
+
+.description
+{
+    font-size: 18px;
+    color: azure;
+    text-align: center;
 }
 

@@ -5,13 +5,40 @@
     <scripts>
         <include src="file://{resources}/scripts/custom_game_info.js"/>
     </scripts>
-    <Panel class="custom_game_info_root">
+    <Panel class="custom_game_info_root_panel">
         <Button id="game_info_button" onactivate="on_info_button_click()">
-            <Panel class="button_icon"/>
+            <Panel class="button_icon_panel"/>
         </Button>
-        <Panel class="game_info">
-            <Panel id="title">
-                <Label text="Attack On Hero 2"/>
+        <Panel class="game_info_panel">
+            <Panel class="title_panel">
+                <Label class="title" text="#game_info_game_name"/>
+            </Panel>
+            <Panel class="description_root_panel">
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_objective"/>
+                </Panel>
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_loose_condition"/>
+                </Panel>
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_tombstone"/>
+                </Panel> 
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_drops"/>
+                </Panel> 
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_items"/>
+                </Panel>
+
+                <Panel class="description_panel">
+                    <Label class="description" text="#game_info_survivability"/>
+                </Panel>
+
             </Panel>
         </Panel>
     </Panel>
