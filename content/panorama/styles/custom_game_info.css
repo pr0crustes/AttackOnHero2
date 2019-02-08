@@ -63,7 +63,7 @@
 {
     margin-top: 30px;
     width: 100%;
-    color: rgb(194, 168, 21);
+    color: rgb(202, 176, 29);
     font-size: 45px;
     font-weight: bold;
     text-align: center;
@@ -73,15 +73,16 @@
 .description_root_panel
 {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
     flow-children: down;
 }
 
 
 .description_panel
 {
-    margin-top: 35px;
-    width: 75%;
+    margin-top: 30px;
+    width: 85%;
+    text-align: left;
     horizontal-align: middle;
     flow-children: down;
 }
@@ -91,6 +92,54 @@
 {
     font-size: 18px;
     color: azure;
+}
+
+
+.sideway
+{
+    width: 100%;
+    flow-children: right;
+}
+
+
+.rsideway
+{
+    width: 100%;
+    flow-children: left;
+}
+
+
+.image_icon
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.icon_description
+{
+    height: 100px;
+}
+
+
+.footer_panel
+{
+    flow-children: right;
+    width: 100%;
+}
+
+
+.footer
+{
+    margin-top: 30px;
+    width: 100%;
+    color: firebrick;
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
 }
 
