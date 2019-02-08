@@ -17,12 +17,17 @@
 
     "AbilityDuration"           "4.0 5.0 5.5 6.0"
 
+    "precache"
+    {
+        "particle"              "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
+    }
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"			    "FIELD_INTEGER"
-            "armor_bonus"	        "30 40 50 60"
+            "armor_bonus"	        "15 25 35 45"
         }
         "02"
         {
@@ -35,8 +40,14 @@
     {
         "ApplyModifier"
         {
-            "ModifierName"	    "modifier_chen_custom_god_presence_buff"
-            "Target"		    "TARGET"
+            "Target"		        "TARGET"
+            "ModifierName"	        "modifier_chen_custom_god_presence_buff"
+        }
+        "FireEffect"
+        {
+            "Target"                "TARGET"
+            "EffectName"            "particles/units/heroes/hero_chen/chen_holy_persuasion.vpcf"
+            "EffectAttachType"      "follow_origin"
         }
     }
 
@@ -45,8 +56,17 @@
         "modifier_chen_custom_god_presence_buff"
         {
             "IsBuff"            "1"
-            "IsPurgable"        "0"
             "Duration"          "%duration"
+
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"                    "TARGET"
+                    "EffectName"                "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
+                    "EffectAttachType"          "follow_origin"
+                }
+            }
 
             "Properties" 
             {
