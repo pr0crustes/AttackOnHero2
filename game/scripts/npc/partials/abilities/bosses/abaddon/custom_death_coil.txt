@@ -19,12 +19,12 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "self_damage"			"500"
+            "self_damage"			"1000"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "target_damage"			"700"
+            "target_damage"			"1000"
         }
         "03"
         {

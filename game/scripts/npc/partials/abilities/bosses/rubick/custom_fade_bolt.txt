@@ -31,12 +31,12 @@
         "03"
         {
             "var_type"						    "FIELD_INTEGER"
-            "hero_attack_damage_reduction"	    "20 25 30 35"
+            "hero_attack_damage_reduction"	    "60"
         }
         "04"
         {
             "var_type"						    "FIELD_INTEGER"
-            "creep_attack_damage_reduction"	    "10 13 15 17"
+            "creep_attack_damage_reduction"	    "60"
         }			
         "05"
         {

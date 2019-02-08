@@ -28,7 +28,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "magic_missile_damage"	"1425"
+            "magic_missile_damage"	"1550"
         }
     }
 }

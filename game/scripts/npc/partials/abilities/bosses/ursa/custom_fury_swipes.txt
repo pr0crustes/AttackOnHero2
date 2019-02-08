@@ -12,7 +12,7 @@
         "01"
         {
             "var_type"						"FIELD_FLOAT"
-            "bonus_reset_time"				"10 10 10 10"
+            "bonus_reset_time"				"10"
         }
         "02"
         {

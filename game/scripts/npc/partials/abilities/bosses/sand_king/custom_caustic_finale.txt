@@ -18,12 +18,12 @@
         "02"
         {
             "var_type"					    "FIELD_INTEGER"
-            "caustic_finale_damage"		    "170"
+            "caustic_finale_damage"		    "150"
         }
         "03"
         {
             "var_type"					    "FIELD_INTEGER"
-            "caustic_finale_damage_expire"	"150"
+            "caustic_finale_damage_expire"	"130"
         }
         "04"
         {

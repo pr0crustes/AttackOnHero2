@@ -18,7 +18,7 @@
         "01"
         {
             "var_type"					"FIELD_FLOAT"
-            "lift_duration"				"1.5"
+            "lift_duration"				"1.0"
         }
         "02"
         {
