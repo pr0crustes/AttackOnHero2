@@ -949,7 +949,7 @@
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Note1"						"If the invisibility expires, the bonus damage is lost."
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_duration"					"DURATION:"
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_movement_speed"				"%MOVEMENT SPEED:"
-"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_crit_increase"				"CRIT INCREASE PER SECOND:"	
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_crit_increase"				"%CRIT INCREASE PER SECOND:"	
 
 
 "DOTA_Tooltip_modifier_nyx_assassin_custom_vendetta"                            "Vendetta"
@@ -1142,7 +1142,7 @@
 "DOTA_Tooltip_Ability_centaur_custom_bonus_strength"        "+30 Strength"
 "DOTA_Tooltip_Ability_dark_seer_custom_bonus_unique_1"          "+1 clone to Dark Clone."
 "DOTA_Tooltip_Ability_nevermore_custom_bonus_unique_1"          "+100 Necromastery soul limit."
-"DOTA_Tooltip_Ability_nyx_assassin_custom_bonus_unique_1"          "+10s Vendetta Duration"
+"DOTA_Tooltip_Ability_nyx_assassin_custom_bonus_unique_1"          "+70% Crit / Sec for Vendetta"
 "DOTA_Tooltip_Ability_pudge_custom_bonus_unique_pudge_1"          "+4s Flesh Heap Duration"
 "DOTA_Tooltip_Ability_riki_custom_bonus_unique_1"          "+0.3 Dagger Agi Multiplier"
 "DOTA_Tooltip_Ability_slark_custom_bonus_unique_1"          "+3 attacks to Pounce"

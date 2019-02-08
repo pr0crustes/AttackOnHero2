@@ -8272,7 +8272,7 @@
         "01"
         {
             "var_type"			"FIELD_INTEGER"
-            "value"				"10"
+            "value"				"70"
         }
     }
 }
@@ -8418,6 +8418,7 @@
         {
             "var_type"				    "FIELD_INTEGER"
             "crit_increase"	            "30 50 70"
+            "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
         }
         "02"
         {
@@ -8433,7 +8434,6 @@
         {
             "var_type"				    "FIELD_FLOAT"
             "duration"	                "15.0"
-            "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
         }
     }
 

@@ -5,7 +5,7 @@
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Note1"						"If the invisibility expires, the bonus damage is lost."
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_duration"					"DURATION:"
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_movement_speed"				"%MOVEMENT SPEED:"
-"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_crit_increase"				"CRIT INCREASE PER SECOND:"	
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_crit_increase"				"%CRIT INCREASE PER SECOND:"	
 
 
 "DOTA_Tooltip_modifier_nyx_assassin_custom_vendetta"                            "Vendetta"

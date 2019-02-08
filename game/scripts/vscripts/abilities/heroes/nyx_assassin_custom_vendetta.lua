@@ -20,28 +20,6 @@ function modifier_nyx_assassin_custom_vendetta:CheckState()
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:OnCreated()
-    local ability = self:GetAbility()
-
-    if not ability then
-        self:Destroy()
-        return nil
-    end
-
-    self.crit_increase = ability:GetSpecialValueFor("crit_increase")
-    self.current_crit = self.crit_increase
-
-    self.interval = ability:GetSpecialValueFor("interval")
-
-    self:StartIntervalThink(self.interval)
-end
-
-
-function modifier_nyx_assassin_custom_vendetta:OnIntervalThink()
-    self.current_crit = self.current_crit + self.crit_increase
-end
-
-
 function modifier_nyx_assassin_custom_vendetta:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_INVISIBILITY_LEVEL,
@@ -54,11 +32,6 @@ end
 
 function modifier_nyx_assassin_custom_vendetta:GetModifierInvisibilityLevel()
     return 1
-end
-
-
-function modifier_nyx_assassin_custom_vendetta:GetModifierPreAttack_CriticalStrike()
-    return self.current_crit
 end
 
 
@@ -75,17 +48,51 @@ function modifier_nyx_assassin_custom_vendetta:GetModifierMoveSpeedBonus_Percent
 end
 
 
+if IsServer() then
+    function modifier_nyx_assassin_custom_vendetta:OnCreated(table)
+        local ability = self:GetAbility()
+
+        if not ability then
+            self:Destroy()
+            return nil
+        end
+
+        self.crit_increase = table.crit
+
+        self.current_crit = self.crit_increase
+
+        self.interval = ability:GetSpecialValueFor("interval")
+        self:StartIntervalThink(self.interval)
+    end
+
+
+    function modifier_nyx_assassin_custom_vendetta:OnIntervalThink()
+        print("Current " .. self.current_crit)
+        self.current_crit = self.current_crit + self.crit_increase
+    end
+
+    function modifier_nyx_assassin_custom_vendetta:GetModifierPreAttack_CriticalStrike()
+        return self.current_crit
+    end
+end
+
+
+
 function cast_nyx_assassin_custom_vendetta(keys)
     local caster = keys.caster
     local ability = keys.ability
     
     local duration = ability:GetSpecialValueFor("duration")
+    local crit_increase = ability:GetSpecialValueFor("crit_increase")
 
     local talent = caster:FindAbilityByName("nyx_assassin_custom_bonus_unique_1")
     if talent and talent:GetLevel() > 0 then
-        duration = duration + talent:GetSpecialValueFor("value")
+        crit_increase = crit_increase + talent:GetSpecialValueFor("value")
     end
 
-    caster:AddNewModifier(caster, ability, "modifier_nyx_assassin_custom_vendetta", {duration = duration})
+    caster:AddNewModifier(caster, ability, "modifier_nyx_assassin_custom_vendetta", {
+        duration = duration,
+        crit = crit_increase
+    })
 end
 
