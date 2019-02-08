@@ -1,0 +1,16 @@
+"luna_moon_glaive"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bounces"					"2 4 6 7"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_reduction_percent"	"15"
+        }
+    }
+}

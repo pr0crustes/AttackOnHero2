@@ -1,0 +1,4 @@
+"luna_eclipse"
+{
+    "AbilityCooldown"				"140.0 120.0 100.0"
+}

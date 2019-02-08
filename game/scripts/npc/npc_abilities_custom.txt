@@ -5179,6 +5179,49 @@
         }
     }
 }
+"luna_eclipse"
+{
+    "AbilityCooldown"				"140.0 120.0 100.0"
+}
+"luna_lucent_beam"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "beam_damage"			"150 225 300 400"
+            "LinkedSpecialBonus"	"special_bonus_unique_luna_1"
+        }
+    }
+}
+"luna_lunar_blessing"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "primary_attribute"			"8 16 24 32"
+        }
+    }
+}
+"luna_moon_glaive"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bounces"					"2 4 6 7"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_reduction_percent"	"15"
+        }
+    }
+}
 "lycan_feral_impulse"
 {
     "AbilitySpecial"

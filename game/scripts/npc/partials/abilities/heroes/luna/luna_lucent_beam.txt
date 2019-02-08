@@ -1,0 +1,12 @@
+"luna_lucent_beam"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "beam_damage"			"150 225 300 400"
+            "LinkedSpecialBonus"	"special_bonus_unique_luna_1"
+        }
+    }
+}

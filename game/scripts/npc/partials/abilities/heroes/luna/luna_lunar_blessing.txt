@@ -1,0 +1,11 @@
+"luna_lunar_blessing"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "primary_attribute"			"8 16 24 32"
+        }
+    }
+}
