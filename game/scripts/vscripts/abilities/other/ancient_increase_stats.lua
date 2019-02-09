@@ -75,7 +75,9 @@ end
 
 
 function set_ancient_stats(round)
-	set_ancient_health(round, true)
-	set_ancient_armor(round)
+	if caster and caster:FindAbilityByName("ancient_increase_stats") then
+		set_ancient_health(round, true)
+		set_ancient_armor(round)
+	end
 end
 

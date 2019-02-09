@@ -17,6 +17,7 @@ require("lib/atr_fix")
 require("lib/callbacks")
 require("lib/timers")
 require("lib/ai")
+require("lib/chat_handler")
 require("items/ice_staff")
 
 
@@ -57,6 +58,7 @@ function AOHGameMode:InitGameMode()
 	ListenToGameEvent("npc_spawned", Dynamic_Wrap(AOHGameMode, 'OnEntitySpawned'), self)
 	ListenToGameEvent("entity_killed", Dynamic_Wrap(AOHGameMode, 'OnEntityKilled'), self)
 	ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(AOHGameMode, "OnGameRulesStateChange"), self)
+	ListenToGameEvent("player_chat", Dynamic_Wrap(ChatHandler, "OnPlayerChat"), ChatHandler)
 
 	GameRules:GetGameModeEntity():SetThink("OnThink", self, 0.25)
 
