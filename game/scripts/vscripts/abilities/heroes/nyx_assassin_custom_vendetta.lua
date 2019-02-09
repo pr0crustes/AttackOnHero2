@@ -1,17 +1,38 @@
 
 
-LinkLuaModifier("modifier_nyx_assassin_custom_vendetta", "abilities/heroes/nyx_assassin_custom_vendetta.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_nyx_assassin_custom_vendetta_invis", "abilities/heroes/nyx_assassin_custom_vendetta.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_nyx_assassin_custom_vendetta_crit", "abilities/heroes/nyx_assassin_custom_vendetta.lua", LUA_MODIFIER_MOTION_NONE)
 
 
-modifier_nyx_assassin_custom_vendetta = class({})
 
 
-function modifier_nyx_assassin_custom_vendetta:GetTexture()
+nyx_assassin_custom_vendetta = class({})
+
+
+function nyx_assassin_custom_vendetta:GetIntrinsicModifierName()
+    return "modifier_nyx_assassin_custom_vendetta_crit"
+end
+
+
+function nyx_assassin_custom_vendetta:OnSpellStart()
+    local caster = self:GetCaster()
+    local duration = self:GetSpecialValueFor("duration")
+
+    caster:AddNewModifier(caster, self, "modifier_nyx_assassin_custom_vendetta_invis", {duration = duration})
+end
+
+
+
+
+modifier_nyx_assassin_custom_vendetta_invis = class({})
+
+
+function modifier_nyx_assassin_custom_vendetta_invis:GetTexture()
     return "nyx_assassin_vendetta"
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:CheckState()
+function modifier_nyx_assassin_custom_vendetta_invis:CheckState()
     return {
         [MODIFIER_STATE_INVISIBLE] = true,
         [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
@@ -20,22 +41,22 @@ function modifier_nyx_assassin_custom_vendetta:CheckState()
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:DeclareFunctions()
+function modifier_nyx_assassin_custom_vendetta_invis:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_INVISIBILITY_LEVEL,
-        MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
-        MODIFIER_EVENT_ON_ATTACK_LANDED,
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+        MODIFIER_EVENT_ON_ATTACK_LANDED,
+        MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
     }
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:GetModifierInvisibilityLevel()
+function modifier_nyx_assassin_custom_vendetta_invis:GetModifierInvisibilityLevel()
     return 1
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:OnAttackLanded(keys)
+function modifier_nyx_assassin_custom_vendetta_invis:OnAttackLanded(keys)
     local attacker = keys.attacker
     if attacker == self:GetParent() then 
         self:Destroy() 
@@ -43,56 +64,60 @@ function modifier_nyx_assassin_custom_vendetta:OnAttackLanded(keys)
 end
 
 
-function modifier_nyx_assassin_custom_vendetta:GetModifierMoveSpeedBonus_Percentage()
+function modifier_nyx_assassin_custom_vendetta_invis:GetModifierMoveSpeedBonus_Percentage()
     return self:GetAbility():GetSpecialValueFor("movement_speed")
 end
 
 
-if IsServer() then
-    function modifier_nyx_assassin_custom_vendetta:OnCreated(table)
-        local ability = self:GetAbility()
-
-        if not ability then
-            self:Destroy()
-            return nil
-        end
-
-        self.crit_increase = table.crit
-
-        self.current_crit = self.crit_increase
-
-        self.interval = ability:GetSpecialValueFor("interval")
-        self:StartIntervalThink(self.interval)
-    end
-
-
-    function modifier_nyx_assassin_custom_vendetta:OnIntervalThink()
-        print("Current " .. self.current_crit)
-        self.current_crit = self.current_crit + self.crit_increase
-    end
-
-    function modifier_nyx_assassin_custom_vendetta:GetModifierPreAttack_CriticalStrike()
-        return self.current_crit
-    end
+function modifier_nyx_assassin_custom_vendetta_invis:GetModifierSpellAmplify_Percentage()
+    return self:GetAbility():GetSpecialValueFor("spell_amp")
 end
 
 
 
-function cast_nyx_assassin_custom_vendetta(keys)
-    local caster = keys.caster
-    local ability = keys.ability
-    
-    local duration = ability:GetSpecialValueFor("duration")
-    local crit_increase = ability:GetSpecialValueFor("crit_increase")
 
-    local talent = caster:FindAbilityByName("nyx_assassin_custom_bonus_unique_1")
-    if talent and talent:GetLevel() > 0 then
-        crit_increase = crit_increase + talent:GetSpecialValueFor("value")
-    end
+modifier_nyx_assassin_custom_vendetta_crit = class({})
 
-    caster:AddNewModifier(caster, ability, "modifier_nyx_assassin_custom_vendetta", {
-        duration = duration,
-        crit = crit_increase
-    })
+
+function modifier_nyx_assassin_custom_vendetta_crit:GetTexture()
+    return "nyx_assassin_vendetta"
 end
 
+
+function modifier_nyx_assassin_custom_vendetta_crit:DeclareFunctions()
+    return {
+        MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+        MODIFIER_EVENT_ON_ATTACK_LANDED,
+    }
+end
+
+
+function modifier_nyx_assassin_custom_vendetta_crit:OnAttackLanded(keys)
+    local attacker = keys.attacker
+    if attacker == self:GetParent() then 
+        self:SetStackCount(0)
+    end
+end
+
+
+function modifier_nyx_assassin_custom_vendetta_crit:OnCreated()
+    local ability = self:GetAbility()
+
+    self.max_crit_stack = ability:GetSpecialValueFor("max_crit_stacks")
+    self.crit_increase = ability:GetSpecialValueFor("crit_increase")
+    self.interval = ability:GetSpecialValueFor("interval")
+
+    self:StartIntervalThink(self.interval)
+end
+
+
+function modifier_nyx_assassin_custom_vendetta_crit:OnIntervalThink()
+    if self:GetStackCount() < self.max_crit_stack then
+        self:IncrementStackCount()
+    end
+end
+
+
+function modifier_nyx_assassin_custom_vendetta_crit:GetModifierPreAttack_CriticalStrike()
+    return self.crit_increase * self:GetStackCount()
+end

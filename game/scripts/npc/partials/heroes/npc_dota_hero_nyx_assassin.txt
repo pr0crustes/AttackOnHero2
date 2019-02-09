@@ -9,5 +9,5 @@
 
     "Ability14"		"special_bonus_intelligence_20"
 
-    "Ability17"		"nyx_assassin_custom_bonus_unique_1"
+    "Ability17"		"special_bonus_cooldown_reduction_20"
 }

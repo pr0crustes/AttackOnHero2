@@ -8463,7 +8463,9 @@
 }
 "nyx_assassin_custom_vendetta"
 {
-    "BaseClass"						    "ability_datadriven"
+    "BaseClass"						    "ability_lua"
+    "ScriptFile"		                "abilities/heroes/nyx_assassin_custom_vendetta.lua"
+
     "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityType"					    "DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityTextureName" 			    "nyx_assassin_vendetta"
@@ -8480,32 +8482,32 @@
         {
             "var_type"				    "FIELD_INTEGER"
             "crit_increase"	            "50 70 100"
-            "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
         }
         "02"
         {
             "var_type"				    "FIELD_FLOAT"
             "interval"	                "1.0"
         }
-        "02"
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "max_crit_stacks"	        "20"
+        }
+        "04"
         {
             "var_type"				    "FIELD_INTEGER"
             "movement_speed"	        "20 30 40"
         }
-        "03"
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "spell_amp"	                "20 25 30"
+        }
+        "06"
         {
             "var_type"				    "FIELD_FLOAT"
             "duration"	                "15.0"
         }
-    }
-
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"		"abilities/heroes/nyx_assassin_custom_vendetta.lua"
-            "Function"			"cast_nyx_assassin_custom_vendetta"
-        } 
     }
 }
 "obsidian_destroyer_custom_mana_bonus"
