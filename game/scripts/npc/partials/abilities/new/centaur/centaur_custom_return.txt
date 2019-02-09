@@ -1,12 +1,12 @@
 "centaur_custom_return"
 {
-    "BaseClass"					    "ability_datadriven"
+    "BaseClass"					        "ability_datadriven"
 
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"				    "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"			    "DAMAGE_TYPE_PURE"
 
-    "AbilityTextureName"            "centaur_return"
+    "AbilityTextureName"                "centaur_return"
 
     "AbilitySpecial"
     {
@@ -18,7 +18,7 @@
         "02"
         {
             "var_type"					"FIELD_FLOAT"
-            "str_bonus"	    	    	"30 40 50 60"
+            "str_bonus"	    	    	"40 50 60 70"
         }
     }
 

@@ -32,16 +32,7 @@
         }
     }
 
-    "OnChannelInterrupted"
-    {
-        "RemoveModifier"
-        {
-            "Target"		        "CASTER"
-            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
-        }
-    }
-
-    "OnChannelSucceeded"
+    "OnChannelFinish"
     {
         "RemoveModifier"
         {
@@ -66,6 +57,16 @@
                     "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
                     "EffectAttachType"		"follow_origin"
                 }
+                "AttachEffect"
+                {
+                    "Target"				"TARGET"
+                    "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_burrow.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                    "ControlPoints"
+                    {
+                        "00"				"0 0 0"
+                    }
+                }
                 "FireSound"
                 {
                     "Target"			    "CASTER"
@@ -73,11 +74,17 @@
                 }
             }
 
+
             "States"
             {
                 "MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
                 "MODIFIER_STATE_MAGIC_IMMUNE"           "MODIFIER_STATE_VALUE_ENABLED"
                 "MODIFIER_STATE_ATTACK_IMMUNE"          "MODIFIER_STATE_VALUE_ENABLED"
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"-100"
             }
         }
     }

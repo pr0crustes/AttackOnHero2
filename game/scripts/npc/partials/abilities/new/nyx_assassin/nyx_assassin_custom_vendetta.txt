@@ -7,7 +7,7 @@
 
     "AbilityCastPoint"				    "0.0"
 
-    "AbilityCooldown"				    "60.0"
+    "AbilityCooldown"				    "60.0 55.0 50.0"
 
     "AbilityManaCost"				    "100 150 200"
 
@@ -16,7 +16,7 @@
         "01"
         {
             "var_type"				    "FIELD_INTEGER"
-            "crit_increase"	            "30 50 70"
+            "crit_increase"	            "50 70 100"
             "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
         }
         "02"

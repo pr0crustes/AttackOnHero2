@@ -1,0 +1,11 @@
+"juggernaut_blade_dance"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "blade_dance_crit_mult"		"170 180 190 200"
+        }
+    }
+}

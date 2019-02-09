@@ -417,7 +417,7 @@
 }
 "item_recipe_burning_radiance"
 {
-    "ID"							"70080"
+    "ID"							"70079"
     "BaseClass"                     "item_recipe_radiance"
 
     "ItemCost"						"700"	
@@ -435,7 +435,7 @@
 
 "item_burning_radiance"
 {
-    "ID"							"70081"
+    "ID"							"70080"
     "BaseClass"                     "item_radiance"
     "AbilityTextureName"		    "burning_radiance"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
@@ -478,7 +478,7 @@
 }
 "item_recipe_custom_rapier"
 {
-    "ID"							"70082"	
+    "ID"							"70081"	
     "Model"							"models/props_gameplay/recipe.mdl"
     "BaseClass"						"item_datadriven"
 
@@ -496,7 +496,7 @@
 
 "item_custom_rapier" 
 {
-    "ID"           				"70083"
+    "ID"           				"70082"
     "BaseClass" 			    "item_datadriven"
     "AbilityTextureName"		"item_rapier"
     "Model"       				"models/props_gameplay/divine_rapier.vmdl" 
@@ -539,7 +539,7 @@
 } 
 "item_recipe_custom_refresher"
 {
-    "ID"							"70084"
+    "ID"							"70083"
     "BaseClass"						"item_recipe_refresher"
 
     "ItemCost"						"1700"	
@@ -557,7 +557,7 @@
 
 "item_custom_refresher"
 {
-    "ID"							"70085"
+    "ID"							"70084"
     "BaseClass"						"item_datadriven"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
@@ -622,7 +622,7 @@
 }
 "item_recipe_dark_bloodstone"
 {
-    "ID"							"70086"
+    "ID"							"70085"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_bloodstone"
 
@@ -642,7 +642,7 @@
 
 "item_dark_bloodstone"
 {
-    "ID"							    "70087"
+    "ID"							    "70086"
     "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "BaseClass"                         "item_bloodstone"
 
@@ -727,7 +727,7 @@
 }
 "item_recipe_dark_skadi"
 {
-    "ID"							"70088"
+    "ID"							"70087"
     "BaseClass"                     "item_recipe_skadi"
 
     "ItemCost"						"1200"	
@@ -745,7 +745,7 @@
 
 "item_dark_skadi"
 {
-    "ID"							"70089"
+    "ID"							"70088"
     "BaseClass"                     "item_skadi"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"            "dark_skadi"
@@ -797,7 +797,7 @@
 }
 "item_recipe_desolator_2"
 {
-    "ID"							"70090"		
+    "ID"							"70089"		
     "BaseClass"						"item_recipe_desolator"
     "Model"							"models/props_gameplay/recipe.mdl"
 
@@ -816,7 +816,7 @@
 
 "item_desolator_2"
 {
-    "ID"							"70091"
+    "ID"							"70090"
     "BaseClass"						"item_desolator"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"			"desolator_2"
@@ -848,7 +848,7 @@
 }
 "item_recipe_desolator_3"
 {
-    "ID"							"70092"		
+    "ID"							"70091"		
     "BaseClass"						"item_recipe_desolator"
     "Model"							"models/props_gameplay/recipe.mdl"
 
@@ -867,7 +867,7 @@
 
 "item_desolator_3"
 {
-    "ID"							"70093"
+    "ID"							"70092"
     "BaseClass"						"item_desolator"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"			"desolator_3"
@@ -898,7 +898,7 @@
 }
 "item_recipe_dragon_lance_2"
 {
-    "ID"							"70094"
+    "ID"							"70093"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_dragon_lance"
 
@@ -917,7 +917,7 @@
 
 "item_dragon_lance_2"
 {
-    "ID"							"70095"
+    "ID"							"70094"
     "BaseClass"                     "item_dragon_lance"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
@@ -948,7 +948,7 @@
 }
 "item_recipe_dragon_scale"
 {
-    "ID"							"70096"
+    "ID"							"70095"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"			"custom_recipe"
 
@@ -968,7 +968,7 @@
 
 "item_dragon_scale"
 {
-    "ID"							"70097"
+    "ID"							"70096"
     "BaseClass"						"item_datadriven"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"			"dragon_scale"
@@ -1059,7 +1059,7 @@
 }
 "item_recipe_echo_sabre_2"
 {
-    "ID"							"70098"
+    "ID"							"70097"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_echo_sabre"
 
@@ -1078,7 +1078,7 @@
 
 "item_echo_sabre_2"
 {
-    "ID"							"70099"
+    "ID"							"70098"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "FightRecapLevel"				"1"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -1146,7 +1146,7 @@
 }
 "item_recipe_echo_sabre_3"
 {
-    "ID"							"70100"
+    "ID"							"70099"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_echo_sabre"
 
@@ -1165,7 +1165,7 @@
 
 "item_echo_sabre_3"
 {
-    "ID"							"70101"
+    "ID"							"70100"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "FightRecapLevel"				"1"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -1233,7 +1233,7 @@
 }
 "item_recipe_echo_sabre_4"
 {
-    "ID"							"70102"
+    "ID"							"70101"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_echo_sabre"
 
@@ -1252,7 +1252,7 @@
 
 "item_echo_sabre_4"
 {
-    "ID"							"70103"
+    "ID"							"70102"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
     "BaseClass"						"item_echo_sabre"
@@ -1319,7 +1319,7 @@
 }
 "item_recipe_echo_sabre_5"
 {
-    "ID"							"70104"
+    "ID"							"70103"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_echo_sabre"
 
@@ -1338,7 +1338,7 @@
 
 "item_echo_sabre_5"
 {
-    "ID"							"70105"
+    "ID"							"70104"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
     "BaseClass"						"item_echo_sabre"
@@ -1405,7 +1405,7 @@
 }
 "item_recipe_formidable_chest"
 {
-    "ID"							"70106"
+    "ID"							"70105"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "AbilityTextureName"			"item_recipe"
@@ -1425,7 +1425,7 @@
 
 "item_formidable_chest"
 {
-    "ID"							"70107"
+    "ID"							"70106"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "BaseClass"                     "item_datadriven"
 
@@ -1539,7 +1539,7 @@
 }
 "item_recipe_great_heart"
 {
-    "ID"							"70108"
+    "ID"							"70107"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_heart"
 
@@ -1559,7 +1559,7 @@
 
 "item_great_heart"
 {
-    "ID"							"70109"
+    "ID"							"70108"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "great_heart"
@@ -1606,7 +1606,7 @@
 }
 "item_recipe_great_king_bar"
 {
-    "ID"							"70110"
+    "ID"							"70109"
     "BaseClass"                     "item_recipe_monkey_king_bar"
     "AbilityTextureName"		    "custom_recipe"
 
@@ -1626,7 +1626,7 @@
 
 "item_great_king_bar"
 {
-    "ID"							"70111"
+    "ID"							"70110"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"                     "item_monkey_king_bar"
     "AbilityTextureName"		    "great_king_bar"
@@ -1663,7 +1663,7 @@
 }
 "item_recipe_great_manta"
 {
-    "ID"							"70112"
+    "ID"							"70111"
     "BaseClass"						"item_recipe_manta"
 
     "ItemCost"						"1300"	
@@ -1682,7 +1682,7 @@
 
 "item_great_manta"
 {
-    "ID"							"70113"
+    "ID"							"70112"
     "BaseClass"                     "item_manta"
     "AbilityTextureName"		    "great_manta"
 
@@ -1806,7 +1806,7 @@
 }
 "item_recipe_great_shivas_guard"
 {
-    "ID"							"70114"
+    "ID"							"70113"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_shivas_guard"
 
@@ -1825,7 +1825,7 @@
 
 "item_great_shivas_guard"
 {
-    "ID"							"70115"
+    "ID"							"70114"
     "BaseClass"                     "item_shivas_guard"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
@@ -1893,7 +1893,7 @@
 }
 "item_recipe_health_bag"
 {
-    "ID"							"70116"
+    "ID"							"70115"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_magic_wand"
 
@@ -1913,7 +1913,7 @@
 
 "item_health_bag"
 {
-    "ID"							"70117"
+    "ID"							"70116"
     "BaseClass"						"item_datadriven"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
@@ -2004,7 +2004,7 @@
 }
 "item_recipe_ice_staff"
 {
-    "ID"							"70118"
+    "ID"							"70117"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
@@ -2025,7 +2025,7 @@
 
 "item_ice_staff"
 {
-    "ID"							"70119"
+    "ID"							"70118"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "ice_staff"
 
@@ -2083,7 +2083,7 @@
 }
 "item_recipe_mana_staff"
 {
-    "ID"							"70120"
+    "ID"							"70119"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
@@ -2104,7 +2104,7 @@
 
 "item_mana_staff"
 {
-    "ID"							"70121"
+    "ID"							"70120"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "mana_staff"
 
@@ -2163,7 +2163,7 @@
 }
 "item_recipe_mana_staff_2"
 {
-    "ID"							"70122"
+    "ID"							"70121"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
@@ -2185,7 +2185,7 @@
 
 "item_mana_staff_2"
 {
-    "ID"							"70123"
+    "ID"							"70122"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "mana_staff_2"
 
@@ -2300,7 +2300,7 @@
 }
 "item_recipe_soul_ring_2"
 {
-    "ID"							"70124"
+    "ID"							"70123"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_soul_ring"
 
@@ -2319,7 +2319,7 @@
 
 "item_soul_ring_2"
 {
-    "ID"							"70125"
+    "ID"							"70124"
     "BaseClass"                     "item_soul_ring"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
@@ -2366,7 +2366,7 @@
 }
 "item_recipe_soul_ring_3"
 {
-    "ID"							"70126"
+    "ID"							"70125"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_soul_ring"
 
@@ -2385,7 +2385,7 @@
 
 "item_soul_ring_3"
 {
-    "ID"							"70127"
+    "ID"							"70126"
     "BaseClass"                     "item_soul_ring"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
@@ -2432,7 +2432,7 @@
 }
 "item_speed_orb"
 {
-    "ID"							"70128"
+    "ID"							"70127"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "speed_orb"
@@ -2485,7 +2485,7 @@
 }
 "item_recipe_supreme_assault"
 {
-    "ID"							"70129"
+    "ID"							"70128"
     "BaseClass"						"item_recipe_assault"
 
     "ItemCost"						"400"	
@@ -2504,7 +2504,7 @@
 
 "item_supreme_assault"
 {
-    "ID"							"70130"
+    "ID"							"70129"
     "BaseClass"						"item_datadriven"
 
     "AbilityTextureName"		    "supreme_assault"
@@ -2618,7 +2618,7 @@
 }
 "item_recipe_supreme_mjollnir"
 {
-    "ID"							"70131"
+    "ID"							"70130"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"                     "item_recipe_mjollnir"
     
@@ -2636,7 +2636,7 @@
 
 "item_supreme_mjollnir"
 {
-    "ID"							"70132"
+    "ID"							"70131"
     "BaseClass"                     "item_mjollnir"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -2775,7 +2775,7 @@
 }
 "item_tome_agi"
 {
-    "ID"							"70133"
+    "ID"							"70132"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "tome_agi"
@@ -2827,7 +2827,7 @@
 }
 "item_tome_int"
 {
-    "ID"							"70134"
+    "ID"							"70133"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "tome_int"
@@ -2879,7 +2879,7 @@
 }
 "item_tome_str"
 {
-    "ID"							"70135"
+    "ID"							"70134"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "tome_str"
@@ -2931,7 +2931,7 @@
 }
 "item_recipe_trade_kaya"
 {
-    "ID"							"70136"
+    "ID"							"70135"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_kaya"
 
@@ -2951,7 +2951,7 @@
 
 "item_trade_kaya"
 {
-    "ID"							"70137"
+    "ID"							"70136"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "trade_kaya"
@@ -2994,7 +2994,7 @@
 }
 "item_recipe_trade_kaya_2"
 {
-    "ID"							"70138"
+    "ID"							"70137"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_kaya"
 
@@ -3014,7 +3014,7 @@
 
 "item_trade_kaya_2"
 {
-    "ID"							"70139"
+    "ID"							"70138"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "trade_kaya_2"
@@ -3057,7 +3057,7 @@
 }
 "item_recipe_trade_kaya_3"
 {
-    "ID"							"70140"
+    "ID"							"70139"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_kaya"
 
@@ -3077,7 +3077,7 @@
 
 "item_trade_kaya_3"
 {
-    "ID"							"70141"
+    "ID"							"70140"
     "BaseClass"                     "item_datadriven"
     
     "AbilityTextureName"		    "trade_kaya_3"
@@ -3120,7 +3120,7 @@
 }
 "item_recipe_ultimate_blink"
 {
-    "ID"							"70142"
+    "ID"							"70141"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_magic_wand"
 
@@ -3140,7 +3140,7 @@
 
 "item_ultimate_blink"
 {
-    "ID"							"70143"
+    "ID"							"70142"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "BaseClass"						"item_blink"
     "AbilityTextureName"		    "ultimate_blink"
@@ -3177,7 +3177,7 @@
 }
 "item_recipe_ultimate_butterfly"
 {
-    "ID"							"70144"
+    "ID"							"70143"
     "BaseClass"                     "item_recipe_butterfly"
 
     "ItemCost"						"925"	
@@ -3195,7 +3195,7 @@
 
 "item_ultimate_butterfly"
 {
-    "ID"							"70145"
+    "ID"							"70144"
     "BaseClass"                     "item_butterfly"
 
     "AbilityTextureName"		    "ultimate_butterfly"
@@ -3234,7 +3234,7 @@
 }
 "item_recipe_ultimate_crit"
 {
-    "ID"							"70146"
+    "ID"							"70145"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_greater_crit"
 
@@ -3254,7 +3254,7 @@
 
 "item_ultimate_crit"
 {
-    "ID"							"70147"
+    "ID"							"70146"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_greater_crit"
     "AbilityTextureName"		    "ultimate_crit"
@@ -3284,7 +3284,7 @@
 }
 "item_recipe_ultimate_dagon"
 {
-    "ID"							"70148"
+    "ID"							"70147"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_dagon"
 
@@ -3304,7 +3304,7 @@
 
 "item_ultimate_dagon"
 {
-    "ID"							"70149"
+    "ID"							"70148"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3359,7 +3359,7 @@
 }
 "item_recipe_ultimate_heart"
 {
-    "ID"							"70150"
+    "ID"							"70149"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_heart"
 
@@ -3379,7 +3379,7 @@
 
 "item_ultimate_heart"
 {
-    "ID"							"70151"
+    "ID"							"70150"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "ultimate_heart"
@@ -3426,7 +3426,7 @@
 }
 "item_recipe_ultimate_octarine"
 {
-    "ID"							"70152"
+    "ID"							"70151"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_octarine_core"
 
@@ -3446,7 +3446,7 @@
 
 "item_ultimate_octarine"
 {
-    "ID"							"70153"
+    "ID"							"70152"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "ultimate_octarine"
@@ -3510,7 +3510,7 @@
 }
 "item_recipe_ultimate_rapier"
 {
-    "ID"							"70154"	
+    "ID"							"70153"	
     "Model"							"models/props_gameplay/recipe.mdl"
     "BaseClass"						"item_datadriven"
 
@@ -3527,7 +3527,7 @@
 
 "item_ultimate_rapier" 
 {
-    "ID"           				"70155"
+    "ID"           				"70154"
     "BaseClass" 			    "item_datadriven"
     "AbilityTextureName"		"ultimate_rapier"
     "Model"       				"models/props_gameplay/divine_rapier.vmdl" 
@@ -3570,7 +3570,7 @@
 } 
 "item_recipe_ultimate_vladmir"
 {
-    "ID"							"70156"
+    "ID"							"70155"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_vladmir"
 
@@ -3590,7 +3590,7 @@
 
 "item_ultimate_vladmir"
 {
-    "ID"							"70157"
+    "ID"							"70156"
     "BaseClass"						"item_vladmir"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -3638,7 +3638,7 @@
 }
 "item_recipe_wicked_locket"
 {
-    "ID"							"70158"
+    "ID"							"70157"
     "BaseClass"                     "item_recipe_holy_locket"
 
     "ItemCost"						"550"	
@@ -3656,7 +3656,7 @@
 
 "item_wicked_locket"
 {
-    "ID"							"70159"
+    "ID"							"70158"
     "BaseClass"                     "item_holy_locket"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
@@ -3697,7 +3697,7 @@
 }
 "item_dev_dagon"
 {
-    "ID"							"70160"
+    "ID"							"70159"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3750,7 +3750,7 @@
 }
 "item_dev_heart"
 {
-    "ID"							"70161"
+    "ID"							"70160"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "item_heart"

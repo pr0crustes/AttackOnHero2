@@ -23,7 +23,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "mana_multiplier"		"0.3 0.4 0.5 0.6"
+            "mana_multiplier"		"0.4 0.5 0.6 0.7"
         }
     }
 

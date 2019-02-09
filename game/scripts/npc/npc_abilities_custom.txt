@@ -4997,25 +4997,41 @@
         }
     }	
 }
+"juggernaut_blade_dance"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "blade_dance_crit_mult"		"170 180 190 200"
+        }
+    }
+}
 "juggernaut_blade_fury"
 {
     "AbilityCooldown"				"20 18 14 10"
 }
 "juggernaut_omni_slash"
 {
-    "AbilityCooldown"				"120.0 110.0 100.0"
+    "AbilityCooldown"				    "120.0 110.0 100.0"
 
     "AbilitySpecial"
     {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "attack_rate_multiplier"	"1.8 2.0 2.2"
+        }
         "02"
         {
-            "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"10 20 30"
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_damage"			    "10 20 30"
         }
         "06"
         {
-            "var_type"				"FIELD_FLOAT"
-            "cooldown_scepter"	    "50"
+            "var_type"				    "FIELD_FLOAT"
+            "cooldown_scepter"	        "45"
         }
     }
 }
@@ -5345,15 +5361,15 @@
 }
 "nyx_assassin_impale"
 {
-    "AbilityCooldown"				"14.0 13.0 12.0 11.0"
+    "AbilityCooldown"				"12.0 11.0 10.0 9.0"
 
 
     "AbilitySpecial"
     {
-        "04"
-        {
-            "var_type"			    "FIELD_INTEGER"
-            "speed"				    "1600 1600 1600 1600"
+        "02"
+        {	
+            "var_type"			    "FIELD_FLOAT"
+            "duration"			    "1.4 1.6 1.8 2.0"
         }
         "06"
         {
@@ -5617,6 +5633,41 @@
         {
             "var_type"			"FIELD_INTEGER"
             "damage_scepter"	"670 880 1390"
+        }
+    }
+}
+"razor_eye_of_the_storm"
+{
+    "AbilityCooldown"				    "75 70 65"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"			        "FIELD_FLOAT"
+            "duration"			        "14.0 16.0 18.0"		
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "strike_interval"		    "1.3 1.2 1.1"	
+            "LinkedSpecialBonus"	    "special_bonus_unique_razor_2"
+        }
+        "04"
+        {
+            "var_type"			        "FIELD_INTEGER"
+            "armor_reduction"	        "1"		
+        }
+        "05"
+        {
+            "var_type"			        "FIELD_INTEGER"
+            "damage"			        "50 100 150"		
+        }
+        "06"
+        {
+            "var_type"			        "FIELD_FLOAT"
+            "strike_interval_scepter"	"1.1 1.0 0.9"	
+            "LinkedSpecialBonus"	    "special_bonus_unique_razor_2"	
         }
     }
 }
@@ -6831,31 +6882,15 @@
         }
     }
 }
-"centaur_custom_bonus_strength"
-{
-    "ID"					"70068"
-    "BaseClass"				"special_bonus_strength_10"
-    "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
-    "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"			"FIELD_INTEGER"
-            "value"				"30"
-        }
-    }
-}
 "centaur_custom_return"
 {
-    "BaseClass"					    "ability_datadriven"
+    "BaseClass"					        "ability_datadriven"
 
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"				    "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"			    "DAMAGE_TYPE_PURE"
 
-    "AbilityTextureName"            "centaur_return"
+    "AbilityTextureName"                "centaur_return"
 
     "AbilitySpecial"
     {
@@ -6867,7 +6902,7 @@
         "02"
         {
             "var_type"					"FIELD_FLOAT"
-            "str_bonus"	    	    	"30 40 50 60"
+            "str_bonus"	    	    	"40 50 60 70"
         }
     }
 
@@ -7012,7 +7047,7 @@
 }
 "dark_seer_custom_bonus_unique_1"
 {
-    "ID"					"70069"
+    "ID"					"70068"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7149,7 +7184,7 @@
 "doom_custom_dash"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70070"
+    "ID"                        "70069"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "doom_bringer_devour"
 
@@ -8059,7 +8094,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70070"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8282,7 +8317,7 @@
 }
 "nyx_assassin_custom_bonus_unique_1"
 {
-    "ID"					"70072"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8292,7 +8327,7 @@
         "01"
         {
             "var_type"			"FIELD_INTEGER"
-            "value"				"70"
+            "value"				"100"
         }
     }
 }
@@ -8321,7 +8356,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "mana_multiplier"		"0.3 0.4 0.5 0.6"
+            "mana_multiplier"		"0.4 0.5 0.6 0.7"
         }
     }
 
@@ -8369,16 +8404,7 @@
         }
     }
 
-    "OnChannelInterrupted"
-    {
-        "RemoveModifier"
-        {
-            "Target"		        "CASTER"
-            "ModifierName"	        "modifier_nyx_assassin_custom_spiked_carapace"
-        }
-    }
-
-    "OnChannelSucceeded"
+    "OnChannelFinish"
     {
         "RemoveModifier"
         {
@@ -8403,6 +8429,16 @@
                     "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
                     "EffectAttachType"		"follow_origin"
                 }
+                "AttachEffect"
+                {
+                    "Target"				"TARGET"
+                    "EffectName"			"particles/units/heroes/hero_nyx_assassin/nyx_assassin_burrow.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                    "ControlPoints"
+                    {
+                        "00"				"0 0 0"
+                    }
+                }
                 "FireSound"
                 {
                     "Target"			    "CASTER"
@@ -8410,11 +8446,17 @@
                 }
             }
 
+
             "States"
             {
                 "MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
                 "MODIFIER_STATE_MAGIC_IMMUNE"           "MODIFIER_STATE_VALUE_ENABLED"
                 "MODIFIER_STATE_ATTACK_IMMUNE"          "MODIFIER_STATE_VALUE_ENABLED"
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"-100"
             }
         }
     }
@@ -8428,7 +8470,7 @@
 
     "AbilityCastPoint"				    "0.0"
 
-    "AbilityCooldown"				    "60.0"
+    "AbilityCooldown"				    "60.0 55.0 50.0"
 
     "AbilityManaCost"				    "100 150 200"
 
@@ -8437,7 +8479,7 @@
         "01"
         {
             "var_type"				    "FIELD_INTEGER"
-            "crit_increase"	            "30 50 70"
+            "crit_increase"	            "50 70 100"
             "LinkedSpecialBonus"        "nyx_assassin_custom_bonus_unique_1"
         }
         "02"
@@ -8499,7 +8541,7 @@
 }
 "pudge_custom_bonus_unique_pudge_1"
 {
-    "ID"					"70073"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8609,7 +8651,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70073"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8967,7 +9009,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70075"
+    "ID"					"70074"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9069,7 +9111,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70076"
+    "ID"                        "70075"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -9454,7 +9496,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70077"
+    "ID"							"70076"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -9590,7 +9632,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70078"
+    "ID"					"70077"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9999,7 +10041,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70079"
+    "ID"					"70078"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

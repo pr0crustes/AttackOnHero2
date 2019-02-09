@@ -34,7 +34,7 @@
 {
     "Ability3"		"centaur_custom_return"
     "Ability14"		"special_bonus_armor_8"
-    "Ability16"     "centaur_custom_bonus_strength"
+    "Ability16"     "special_bonus_strength_30"
 }
 "npc_dota_hero_chen"
 {
@@ -165,7 +165,10 @@
 {
     "Ability2"		"nyx_assassin_custom_mana_strike"
     "Ability3"		"nyx_assassin_custom_spiked_carapace"
+    "Ability4"		"generic_hidden"
+    "Ability5"		"generic_hidden"
     "Ability6"		"nyx_assassin_custom_vendetta"
+    "Ability7"		"generic_hidden"
 
     "Ability14"		"special_bonus_intelligence_20"
 
