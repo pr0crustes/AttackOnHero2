@@ -1524,7 +1524,7 @@
             {
                 "AttachEffect"
                 {
-                    "Target"                "CASTER"
+                    "Target"                "TARGET"
                     "EffectName"            "particles/custom/formidable_chest_shield/formidable_chest_shield.vpcf"
                     "EffectAttachType"      "follow_origin"
                 }
