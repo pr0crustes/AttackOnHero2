@@ -12,8 +12,9 @@
 
     "Ability1"                  "custom_roshan_bash"
     "Ability2"                  "custom_roshan_slam"
+    "Ability3"                  "roshan_split_4"
 
-    "ArmorPhysical"				"40"
+    "ArmorPhysical"				"35"
     "MagicalResistance"			"30"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageMin"			"300"
@@ -35,7 +36,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"500"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"50000"
+    "StatusHealth"				"25000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"300"
     "StatusManaRegen"			"10"

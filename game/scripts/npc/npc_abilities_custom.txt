@@ -2788,7 +2788,7 @@
         "03"
         {
             "var_type"			    "FIELD_FLOAT"
-            "stun_duration"		    "0.65"
+            "stun_duration"		    "0.5"
         }
     }
 }
@@ -3203,6 +3203,23 @@
             "ScriptFile"			"abilities/bosses/split_on_death.lua"
             "Function"				"split_on_death"
             "unit_name"             "npc_boss_roshan_4"
+            "unit_count"            "2"
+        }
+    }
+}
+"roshan_split_4"
+{
+    "BaseClass" 					"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"phantom_lancer_juxtapose"
+
+    "OnOwnerDied"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/bosses/split_on_death.lua"
+            "Function"				"split_on_death"
+            "unit_name"             "npc_boss_roshan_5"
             "unit_count"            "2"
         }
     }
@@ -5902,7 +5919,7 @@
 }
 "techies_land_mines"
 {
-    "AbilityCooldown"				"9 8 7 6"
+    "AbilityCooldown"				"8 7 6 5.5"
 
     "AbilitySpecial"
     {
@@ -5942,7 +5959,7 @@
         "07"
         {
             "var_type"					"FIELD_INTEGER"
-            "damage_scepter"			"600 900 1200"
+            "damage_scepter"			"600 900 1400"
         }
     }
 }

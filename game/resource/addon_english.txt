@@ -470,6 +470,7 @@
 "npc_boss_roshan_2"                     "Roshan (Boss)"
 "npc_boss_roshan_3"                     "Roshan (Boss)"
 "npc_boss_roshan_4"                     "Roshan (Boss)"
+"npc_boss_roshan_5"                     "Roshan (Boss)"
 
 
 "DOTA_Tooltip_ability_roshan_split_1"                         "Split"
@@ -480,6 +481,9 @@
 
 "DOTA_Tooltip_ability_roshan_split_3"                         "Split"
 "DOTA_Tooltip_ability_roshan_split_3_Description"             "When this unit dies, it will split into smaller parts."
+
+"DOTA_Tooltip_ability_roshan_split_4"                         "Split"
+"DOTA_Tooltip_ability_roshan_split_4_Description"             "When this unit dies, it will split into smaller parts."
 
 
 "DOTA_Tooltip_Ability_custom_roshan_bash"					"Bash"

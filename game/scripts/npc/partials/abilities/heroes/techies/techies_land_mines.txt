@@ -1,6 +1,6 @@
 "techies_land_mines"
 {
-    "AbilityCooldown"				"9 8 7 6"
+    "AbilityCooldown"				"8 7 6 5.5"
 
     "AbilitySpecial"
     {
