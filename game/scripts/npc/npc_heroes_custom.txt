@@ -187,6 +187,10 @@
     "Ability15"		"special_bonus_mp_700"
     "Ability16"		"special_bonus_attack_speed_120"
 }
+"npc_dota_hero_pangolier"
+{
+    "Ability10"					"special_bonus_exp_boost_20"
+}
 "npc_dota_hero_pudge"
 {
     "Ability3"		"pudge_custom_flesh_heap"

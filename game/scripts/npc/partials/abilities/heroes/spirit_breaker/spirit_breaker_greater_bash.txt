@@ -1,6 +1,6 @@
 "spirit_breaker_greater_bash"
 {
-    "AbilityCooldown"				"0.5"
+    "AbilityCooldown"				"0.2"
 
     "AbilitySpecial"
     {

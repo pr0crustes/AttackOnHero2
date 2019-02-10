@@ -1,0 +1,14 @@
+"spirit_breaker_nether_strike"
+{
+    "AbilityCooldown"				"70 60 55"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"300 400 500"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+"spirit_breaker_charge_of_darkness"
+{
+    "AbilityCastPoint"				"0.10"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "movement_speed"		"300 350 400 450"
+        }
+    }
+}

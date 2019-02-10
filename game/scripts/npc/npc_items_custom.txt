@@ -2717,7 +2717,7 @@
         "12"
         {
             "var_type"				"FIELD_INTEGER"
-            "chain_damage"			"230"
+            "chain_damage"			"240"
         }
         "13"
         {
