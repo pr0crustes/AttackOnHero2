@@ -1,4 +1,20 @@
 <root>
+	<script>
+		function findSetVisibility(root, find, newValue) {
+			root.FindChildTraverse(find).style.visibility = newValue;
+		}
+
+
+		var parent = $.GetContextPanel().GetParent().GetParent()
+		
+		findSetVisibility(parent, "HeroPickMinimap", "collapse")
+		findSetVisibility(parent, "GridTeamComp", "collapse")
+
+
+		var preGame = parent.FindChildTraverse("PreGame")
+
+		findSetVisibility(preGame, "Header", "visible")
+	</script>
   	<Panel>
     	<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" /> 
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/statcollection.xml" />
