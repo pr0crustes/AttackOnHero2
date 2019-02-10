@@ -842,6 +842,16 @@
 
 "DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff"                 "Nature's Presence"
 "DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff_Description"     "Max Health Increased by %dMODIFIER_PROPERTY_HEALTH_BONUS%."
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage"							    "Rocket Barrage"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Description"				    "Launches a rockets at a random nearby enemy periodically, with Gyrocopter attack speed. If Flak Cannon is active, affects all nearby enemies."
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Lore"						"Aurel's new craft has an increased payload for rockets, enhancing their rapid-fire capabilities."
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_rocket_damage"				"ROCKET DAMAGE:"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_duration"				    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_gyrocopter_custom_rocket_barrage"                            "Rocket Barrage"
+"DOTA_Tooltip_modifier_gyrocopter_custom_rocket_barrage_Description"                "Launching rockets at nearby enemies."
 "DOTA_Tooltip_ability_huskar_custom_life_trade"                        "Life Trade"
 "DOTA_Tooltip_ability_huskar_custom_life_trade_Description"			"<h1>Toggle: Life Tax</h1> While toggled, huskar pays %damage_pct%%  of his max health every %interval% seconds, getting %bonus_attack_speed% extra attack speed.<br>While toggled, huskar health regen is denied, but lifesteal still applies."
 "DOTA_Tooltip_ability_huskar_custom_life_trade_Lore"					"A tax I have pay with life, really?"

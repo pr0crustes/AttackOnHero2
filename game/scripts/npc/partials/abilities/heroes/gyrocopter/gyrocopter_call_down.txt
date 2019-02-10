@@ -1,0 +1,24 @@
+"gyrocopter_call_down"
+{
+    "AbilityCooldown"				"50 45 40"
+    
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_first"				"300 500 700"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_second"				"200 300 400"
+        }
+        "09"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_second_scepter"		"250 350 450"
+        }
+    }
+}

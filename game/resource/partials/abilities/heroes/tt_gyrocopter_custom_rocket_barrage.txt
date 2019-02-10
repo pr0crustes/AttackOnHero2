@@ -1,0 +1,10 @@
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage"							    "Rocket Barrage"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Description"				    "Launches a rockets at a random nearby enemy periodically, with Gyrocopter attack speed. If Flak Cannon is active, affects all nearby enemies."
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Lore"						"Aurel's new craft has an increased payload for rockets, enhancing their rapid-fire capabilities."
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_radius"						"RADIUS:"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_rocket_damage"				"ROCKET DAMAGE:"
+"DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_duration"				    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_gyrocopter_custom_rocket_barrage"                            "Rocket Barrage"
+"DOTA_Tooltip_modifier_gyrocopter_custom_rocket_barrage_Description"                "Launching rockets at nearby enemies."

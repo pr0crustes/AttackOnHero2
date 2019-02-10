@@ -88,6 +88,12 @@
 {
     "Enabled"				"0"
 }
+"npc_dota_hero_gyrocopter"
+{
+    "Ability1"		"gyrocopter_custom_rocket_barrage"
+    
+    "Ability13"		"special_bonus_attack_speed_40"
+}
 "npc_dota_hero_huskar"
 {
     "Ability6"		"huskar_custom_life_trade"

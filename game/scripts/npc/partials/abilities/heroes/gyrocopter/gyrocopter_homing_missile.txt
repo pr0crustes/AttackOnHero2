@@ -1,0 +1,21 @@
+"gyrocopter_homing_missile"
+{
+    "AbilityCooldown"				"16 14 12 10"
+    
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "stun_duration"				"2.25 2.5 2.75 3.0"
+            "LinkedSpecialBonus"		"special_bonus_unique_gyrocopter_6"
+        }
+        "12"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "charge_restore_time"	    "10"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+}
