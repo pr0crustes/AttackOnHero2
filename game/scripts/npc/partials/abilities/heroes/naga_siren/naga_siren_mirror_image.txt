@@ -1,0 +1,19 @@
+"naga_siren_mirror_image"
+{
+    "AbilityCooldown"				"40 30 25 20"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "illusion_duration"			"30"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "images_count"				"3 3 3 4"
+            "LinkedSpecialBonus"		"special_bonus_unique_naga_siren"
+        }	
+    }
+}

@@ -1,0 +1,4 @@
+"naga_siren_song_of_the_siren"
+{
+    "AbilityCooldown"				"160.0 130.0 100.0"
+}

@@ -154,6 +154,14 @@
     "Ability15"		"special_bonus_unique_morphling_5"
     "Ability19"		"special_bonus_agility_30"
 }
+"npc_dota_hero_naga_siren"
+{
+    "Ability2"		"naga_siren_custom_puppet"
+    "Ability3"		"naga_siren_custom_tide"
+
+    "Ability14"		"special_bonus_agility_30"
+    "Ability17"		"special_bonus_cooldown_reduction_25"
+}
 "npc_dota_hero_necrolyte"
 {
     "Ability3"		"necrophos_intelligence_supremacy"
