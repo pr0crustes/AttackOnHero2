@@ -4,3 +4,4 @@
 *.bin
 *.vpk
 settings.kv
+__pycache__

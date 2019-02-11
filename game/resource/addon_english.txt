@@ -1337,7 +1337,7 @@
 "DOTA_Tooltip_ability_item_ultimate_heart_bonus_strength"		"+$str"
 "DOTA_Tooltip_ability_item_ultimate_heart_bonus_health"         "+$health"
 "DOTA_Tooltip_Ability_item_ice_staff"                           "Ice Staff"
-"DOTA_Tooltip_Ability_item_ice_staff_Description"			    "<h1>Passive: Magical Crit</h1> Every instance of magic damage that you deal have a %crit_chance%%  chance to crit, dealing %crit_damage_mult%%  of the original damage. Mana is spend to crit."
+"DOTA_Tooltip_Ability_item_ice_staff_Description"			    "<h1>Passive: Magical Crit</h1> Every instance of MAGICAL DAMAGE that you deal has a %crit_chance%%  chance to crit, dealing %crit_damage_mult%%  of the original damage. Mana is spend to crit.\nPure damage cannot crit."
 "DOTA_Tooltip_Ability_item_ice_staff_Lore"				        "A staff made of permafrost, impossible to hold without gloves."
 "DOTA_Tooltip_Ability_item_ice_staff_damage"		            "+$damage"	
 "DOTA_Tooltip_Ability_item_ice_staff_bonus_int"		            "+$int"
