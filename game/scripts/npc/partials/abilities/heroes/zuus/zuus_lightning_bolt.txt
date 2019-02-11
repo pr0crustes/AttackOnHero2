@@ -1,6 +1,6 @@
 "zuus_lightning_bolt"
 {
-    "AbilityDamage"					"100 225 350 475"
+    "AbilityDamage"					"100 225 330 400"
 
     "AbilityCooldown"				"8.0 7.0 6.0 5.0"
 }

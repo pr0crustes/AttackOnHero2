@@ -5,7 +5,7 @@
         "01"
         {
             "var_type"					"FIELD_FLOAT"
-            "damage_health_pct"			"0.25 0.5 0.75 1.0"
+            "damage_health_pct"			"0.25 0.35 0.55 0.75"
             "LinkedSpecialBonus"		"special_bonus_unique_zeus"
         }
     }
