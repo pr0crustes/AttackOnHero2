@@ -1,13 +1,15 @@
 "custom_static_field"
 {
-    "ID"					        "$ID"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"	
-    "AbilitySound"					"Hero_Zuus.StaticField"
-    "BaseClass"                     "zuus_static_field"
+    "BaseClass"						"ability_datadriven"
 
-    "AbilityCastRange"				"1200"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityTextureName"            "zuus_static_field"
+
+    "AbilityCastRange"				"1500"
 
     "AbilitySpecial"
     {
@@ -16,6 +18,28 @@
             "var_type"				"FIELD_FLOAT"
             "damage_health_pct"		"10"
         }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "1500"
+        }
     }
-    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "Modifiers"
+    {
+        "modifier_custom_static_field"
+        {
+            "Passive"						"1"
+            "IsHidden"						"1"
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/bosses/custom_static_field.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
+        }
+    }
 }

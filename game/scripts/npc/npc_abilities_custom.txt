@@ -3895,9 +3895,9 @@
     "BaseClass"                     "zuus_arc_lightning"
 
     "AbilityCastRange"				"1000"
-    "AbilityCastPoint"				"0.2"
+    "AbilityCastPoint"				"0.1"
 
-    "AbilityCooldown"				"1.0"
+    "AbilityCooldown"				"0.9"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"
@@ -3979,14 +3979,16 @@
 }
 "custom_static_field"
 {
-    "ID"					        "70066"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"	
-    "AbilitySound"					"Hero_Zuus.StaticField"
-    "BaseClass"                     "zuus_static_field"
+    "BaseClass"						"ability_datadriven"
 
-    "AbilityCastRange"				"1200"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityTextureName"            "zuus_static_field"
+
+    "AbilityCastRange"				"1500"
 
     "AbilitySpecial"
     {
@@ -3995,12 +3997,34 @@
             "var_type"				"FIELD_FLOAT"
             "damage_health_pct"		"10"
         }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "1500"
+        }
     }
-    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "Modifiers"
+    {
+        "modifier_custom_static_field"
+        {
+            "Passive"						"1"
+            "IsHidden"						"1"
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/bosses/custom_static_field.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
+        }
+    }
 }
 "talent_bonus_attack_speed_1000"
 {
-    "ID"					    "70067"
+    "ID"					    "70066"
     "BaseClass"				    "special_bonus_attack_speed_200"
     "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7177,7 +7201,7 @@
 }
 "dark_seer_custom_bonus_unique_1"
 {
-    "ID"					"70068"
+    "ID"					"70067"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -7314,7 +7338,7 @@
 "doom_custom_dash"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70069"
+    "ID"                        "70068"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "doom_bringer_devour"
 
@@ -7623,7 +7647,7 @@
 }
 "gyrocopter_custom_bonus_unique_1"
 {
-    "ID"					    "70070"
+    "ID"					    "70069"
     "BaseClass"				    "special_bonus_undefined"
     "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8348,7 +8372,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70070"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8571,7 +8595,7 @@
 }
 "nyx_assassin_custom_bonus_unique_1"
 {
-    "ID"					"70072"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8797,7 +8821,7 @@
 }
 "pudge_custom_bonus_unique_pudge_1"
 {
-    "ID"					"70073"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8907,7 +8931,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70073"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9265,7 +9289,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70075"
+    "ID"					"70074"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9367,7 +9391,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70076"
+    "ID"                        "70075"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -9752,7 +9776,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70077"
+    "ID"							"70076"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -9888,7 +9912,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70078"
+    "ID"					"70077"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -10297,7 +10321,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70079"
+    "ID"					"70078"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

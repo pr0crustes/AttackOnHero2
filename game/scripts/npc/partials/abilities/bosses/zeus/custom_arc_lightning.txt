@@ -10,9 +10,9 @@
     "BaseClass"                     "zuus_arc_lightning"
 
     "AbilityCastRange"				"1000"
-    "AbilityCastPoint"				"0.2"
+    "AbilityCastPoint"				"0.1"
 
-    "AbilityCooldown"				"1.0"
+    "AbilityCooldown"				"0.9"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

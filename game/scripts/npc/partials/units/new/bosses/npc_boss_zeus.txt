@@ -61,13 +61,13 @@
 
         "OffensiveAbilities"
         {
-            "Ability1"
-            {
-                "Name"				"custom_arc_lightning"
-            }
             "Ability2"
             {
                 "Name"				"custom_lightning_bolt"
+            }
+            "Ability1"
+            {
+                "Name"				"custom_arc_lightning"
             }
         }
         "EquippedItems"
