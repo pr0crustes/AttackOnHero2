@@ -1,36 +1,55 @@
 require("lib/my")
+require("lib/popup")
 
 
 
+-- this will run multiple times every second, keep it optimized.
 function ice_staff_calculate_crit(damageTable)
-	local victim_index = damageTable.entindex_victim_const
     local attacker_index = damageTable.entindex_attacker_const
-    local ability_index = damageTable.entindex_inflictor_const
-
-    if victim_index and attacker_index and ability_index then
+    
+    if attacker_index then
         local attacker = EntIndexToHScript(attacker_index)
-        local victim = EntIndexToHScript(victim_index)
-        local ability = EntIndexToHScript(ability_index)
 
-        if attacker and victim and ability and victim ~= attacker and ability:GetAbilityDamageType() == DAMAGE_TYPE_MAGICAL then
+        if attacker and attacker:IsAlive() then
             local item = find_item(attacker, "item_ice_staff")
 
             if item then
-                local manacost_mult = item:GetSpecialValueFor("manacost_mult")
-                local ability_manacost = ability:GetManaCost(ability:GetLevel() - 1)
-                local manacost = ability_manacost * manacost_mult * 0.01
+                local ability_index = damageTable.entindex_inflictor_const
 
-                if attacker:GetMana() >= manacost then
-                    local crit_chance = item:GetSpecialValueFor("crit_chance")
+                if ability_index then
+                    local ability = EntIndexToHScript(ability_index)
 
-                    if RollPercentage(crit_chance) then
-                        local crit_damage_mult = item:GetSpecialValueFor("crit_damage_mult")
+                    if ability and ability:GetAbilityDamageType() == DAMAGE_TYPE_MAGICAL and not ability:IsItem() then
+                        local victim_index = damageTable.entindex_victim_const
 
-                        damageTable.damage = damageTable.damage * crit_damage_mult * 0.01
+                        if victim_index then
+                            local victim = EntIndexToHScript(victim_index)
 
-                        attacker:SpendMana(manacost, item)
+                            if victim and victim ~= attacker then
 
-                        ParticleManager:CreateParticle("particles/custom/spellcrit.vpcf", PATTACH_ABSORIGIN_FOLLOW, attacker)
+                                local crit_chance = item:GetSpecialValueFor("crit_chance")
+                                local mana_cost = item:GetManaCost(-1)
+
+                                if RollPercentage(crit_chance) and attacker:GetMana() >= mana_cost then
+
+                                    local crit_damage_mult = item:GetSpecialValueFor("crit_damage_mult")
+                                    damageTable.damage = damageTable.damage * crit_damage_mult * 0.01
+
+                                    create_popup({
+                                        target = victim,
+                                        value = damageTable.damage,
+                                        color = Vector(100, 149, 237),
+                                        type = "crit",
+                                        pos = 4
+                                    })
+
+                                    attacker:SpendMana(mana_cost, item)
+                
+                                    local fx1 = ParticleManager:CreateParticle("particles/econ/items/rubick/rubick_arcana/rbck_arc_skywrath_mage_mystic_flare_sparks.vpcf", PATTACH_ABSORIGIN_FOLLOW, attacker)
+                                    ParticleManager:ReleaseParticleIndex(fx1)
+                                end 
+                            end
+                        end
                     end
                 end
             end

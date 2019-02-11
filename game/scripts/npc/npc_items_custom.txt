@@ -2030,6 +2030,7 @@
     "AbilityTextureName"		    "ice_staff"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityManaCost"				"50"
 
     "ItemShopTags"					"crit"
     "ItemQuality"					"epic"
@@ -2057,12 +2058,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "crit_damage_mult" 	    "250"
-        }
-        "05"
-        {
-            "var_type"				"FIELD_INTEGER"
-            "manacost_mult" 	    "100"
+            "crit_damage_mult" 	    "220"
         }
     }
 

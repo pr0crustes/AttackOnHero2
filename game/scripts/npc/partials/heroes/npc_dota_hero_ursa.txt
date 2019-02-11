@@ -2,4 +2,6 @@
 {
     "ArmorPhysical"		"0"
     "AttackRate"		"2.500000"
+
+    "Ability15"		    "special_bonus_strength_20"
 }
