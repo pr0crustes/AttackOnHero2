@@ -4,6 +4,8 @@
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"			"ancient_apparition_ice_blast"
 
+    "AbilityCastRange"				"2000"
+
     "AbilitySpecial"
     {
         "01"

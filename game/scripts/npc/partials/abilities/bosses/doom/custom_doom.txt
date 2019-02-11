@@ -24,7 +24,7 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"180"
+            "damage"				"200"
         }
         "03"
         {
@@ -34,7 +34,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_scepter"		"180"
+            "damage_scepter"		"200"
         }
         "05"
         {

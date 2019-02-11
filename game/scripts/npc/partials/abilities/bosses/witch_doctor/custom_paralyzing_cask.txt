@@ -25,22 +25,22 @@
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "creep_duration"		"1.0"
+            "creep_duration"		"0.5"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "hero_damage"			"35"
+            "hero_damage"			"40"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "bounce_range"			"575"
+            "bounce_range"			"600"
         }
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "bounces"				"20"
+            "bounces"				"30"
         }
         "06"
         {

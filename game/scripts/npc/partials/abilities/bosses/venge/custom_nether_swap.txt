@@ -22,9 +22,9 @@
     {
         "RunScript"
         {
-            "ScriptFile"		"abilities/bosses/custom_nether_swap.lua"
-            "Function"			"cast_nether_swap"
-            "Target"			"TARGET"
+            "ScriptFile"		    "abilities/bosses/custom_nether_swap.lua"
+            "Function"			    "cast_nether_swap"
+            "Target"			    "TARGET"
         } 
     }
 }

@@ -22,7 +22,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "far_damage"			"200"
+            "far_damage"			"230"
         }
         "02"
         {
@@ -47,7 +47,7 @@
         "06"
         {
             "var_type"				"FIELD_INTEGER"
-            "near_damage"			"220"
+            "near_damage"			"260"
         }
         "07"
         {

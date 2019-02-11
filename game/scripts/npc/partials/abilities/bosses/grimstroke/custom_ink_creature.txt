@@ -46,12 +46,12 @@
         "06"
         {
             "var_type"					"FIELD_INTEGER"
-            "damage_per_tick"			"15"
+            "damage_per_tick"			"30"
         }
         "07"
         {
             "var_type"					"FIELD_INTEGER"
-            "dps_tooltip"				"30"
+            "dps_tooltip"				"60"
         }
         "08"
         {

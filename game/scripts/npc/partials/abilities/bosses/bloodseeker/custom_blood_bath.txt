@@ -7,8 +7,8 @@
     "BaseClass"						"bloodseeker_blood_bath"
     
     "AbilityCastRange"				"1500"
-    "AbilityCastPoint"				"0.4"
-    "AbilityCooldown"				"5.0"
+    "AbilityCastPoint"				"0.3"
+    "AbilityCooldown"				"4.5"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

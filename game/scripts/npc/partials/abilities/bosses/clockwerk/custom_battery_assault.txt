@@ -9,7 +9,7 @@
     "AbilityCastPoint"				"0.2"
     "AbilityCooldown"				"15.0"
     "AbilityManaCost"				"0"
-    "AbilityDamage"					"200"
+    "AbilityDamage"					"250"
     "AbilityModifierSupportValue"	"0.2"
 
     "AbilitySpecial"
@@ -27,7 +27,7 @@
         "03"
         {	
             "var_type"			"FIELD_FLOAT"
-            "interval"			"0.8"
+            "interval"			"0.7"
         }
     }
 }

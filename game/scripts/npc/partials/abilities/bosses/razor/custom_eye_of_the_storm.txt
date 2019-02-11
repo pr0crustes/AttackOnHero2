@@ -27,7 +27,7 @@
         "03"
         {
             "var_type"			    "FIELD_FLOAT"
-            "strike_interval"	    "0.5"		
+            "strike_interval"	    "0.4"		
         }
         "04"
         {

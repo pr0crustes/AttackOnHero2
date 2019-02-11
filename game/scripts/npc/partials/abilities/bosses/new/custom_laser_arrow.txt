@@ -9,7 +9,7 @@
     "AbilityCastPoint"				"0.5"
     "AbilityCooldown"				"8.0"
     "AbilityChannelTime"			"0.2"
-    "AbilityDamage"					"1000"
+    "AbilityDamage"					"1100"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

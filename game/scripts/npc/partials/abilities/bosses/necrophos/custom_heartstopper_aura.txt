@@ -18,7 +18,7 @@
         "02"
         {
             "var_type"			    "FIELD_FLOAT"
-            "aura_damage"		    "5.5"
+            "aura_damage"		    "5.8"
         } 	
         "03"
         {

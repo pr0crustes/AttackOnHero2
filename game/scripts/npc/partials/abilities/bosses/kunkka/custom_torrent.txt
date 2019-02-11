@@ -9,7 +9,7 @@
     "BaseClass"                     "kunkka_torrent"
 
     "AbilityCastRange"				"1500"
-    "AbilityCastPoint"				"0.8"
+    "AbilityCastPoint"				"0.4"
     "AbilityCooldown"				"7"
     "AbilityManaCost"				"0"
 
@@ -28,7 +28,7 @@
         "03"
         {
             "var_type"					"FIELD_FLOAT"
-            "slow_duration"				"2.5"
+            "slow_duration"				"4.5"
         }
         "04"
         {
