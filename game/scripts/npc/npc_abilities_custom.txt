@@ -7596,12 +7596,28 @@
         }
     }
 }
+"gyrocopter_custom_bonus_unique_1"
+{
+    "ID"					    "70070"
+    "BaseClass"				    "special_bonus_undefined"
+    "AbilityType"			    "DOTA_ABILITY_TYPE_ATTRIBUTES"
+    "AbilityBehavior"		    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "value"				"150"
+        }
+    }
+}
 "gyrocopter_custom_rocket_barrage"
 {
     "BaseClass"						    "ability_lua"
     "ScriptFile"		                "abilities/heroes/gyrocopter_custom_rocket_barrage.lua"
 
-    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
     "SpellImmunityType"				    "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityUnitDamageType"			    "DAMAGE_TYPE_MAGICAL"	
 
@@ -7611,8 +7627,8 @@
 
     "AbilityCastRange"                  "800"
     "AbilityCastPoint"				    "0.0"
-    "AbilityCooldown"				    "11.0 10.0 9.0 8.0"
-    "AbilityManaCost"				    "90 100 110 120"
+    "AbilityCooldown"				    "1.0"
+    "AbilityManaCost"				    "20 30 40 50"
 
     "AbilitySpecial"
     {
@@ -7623,13 +7639,9 @@
         }
         "02"
         {
-            "var_type"					"FIELD_FLOAT"
-            "duration"					"5.0"
-        }
-        "03"
-        {
             "var_type"					"FIELD_INTEGER"
-            "rocket_damage"				"100 170 230 300"
+            "rocket_damage"				"100 200 300 400"
+            "LinkedSpecialBonus"        "gyrocopter_custom_bonus_unique_1"
         }
     }
 }	
@@ -8236,7 +8248,7 @@
 }
 "nevermore_custom_bonus_unique_1"
 {
-    "ID"					"70070"
+    "ID"					"70071"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8459,7 +8471,7 @@
 }
 "nyx_assassin_custom_bonus_unique_1"
 {
-    "ID"					"70071"
+    "ID"					"70072"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8685,7 +8697,7 @@
 }
 "pudge_custom_bonus_unique_pudge_1"
 {
-    "ID"					"70072"
+    "ID"					"70073"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -8795,7 +8807,7 @@
 }
 "riki_custom_bonus_unique_1"
 {
-    "ID"					"70073"
+    "ID"					"70074"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9153,7 +9165,7 @@
 }
 "slark_custom_bonus_unique_1"
 {
-    "ID"					"70074"
+    "ID"					"70075"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -9255,7 +9267,7 @@
 "slark_custom_pounce"
 {
     "BaseClass"                 "ability_datadriven"
-    "ID"                        "70075"
+    "ID"                        "70076"
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "AbilityTextureName"        "slark_pounce"
 
@@ -9640,7 +9652,7 @@
 }
 "terrorblade_custom_metamorphosis"
 {
-    "ID"							"70076"
+    "ID"							"70077"
     "BaseClass"					    "terrorblade_metamorphosis"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
@@ -9776,7 +9788,7 @@
 }
 "tinker_custom_bonus_unique_1"
 {
-    "ID"					"70077"
+    "ID"					"70078"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -10185,7 +10197,7 @@
 }
 "witch_doctor_custom_bonus_unique_1"
 {
-    "ID"					"70078"
+    "ID"					"70079"
     "BaseClass"				"special_bonus_undefined"
     "AbilityType"			"DOTA_ABILITY_TYPE_ATTRIBUTES"
     "AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"

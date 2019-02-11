@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_gyrocopter_custom_bonus_unique_1"          "+150 Rocket Barrage Damage"

@@ -1,32 +1,79 @@
 
 LinkLuaModifier("modifier_gyrocopter_custom_rocket_barrage", "abilities/heroes/gyrocopter_custom_rocket_barrage.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_gyrocopter_custom_rocket_barrage_mana", "abilities/heroes/gyrocopter_custom_rocket_barrage.lua", LUA_MODIFIER_MOTION_NONE)
 
 
 
 gyrocopter_custom_rocket_barrage = class({})
 
 
-function gyrocopter_custom_rocket_barrage:OnSpellStart()
+function gyrocopter_custom_rocket_barrage:OnToggle()
     local caster = self:GetCaster()
-    local duration = self:GetSpecialValueFor("duration")
-
     caster:EmitSound("Hero_Gyrocopter.Rocket_Barrage")
-    caster:AddNewModifier(caster, self, "modifier_gyrocopter_custom_rocket_barrage", {duration = duration})
+
+    if self:GetToggleState() then
+        caster:AddNewModifier(caster, self, "modifier_gyrocopter_custom_rocket_barrage", {})
+        caster:AddNewModifier(caster, self, "modifier_gyrocopter_custom_rocket_barrage_mana", {})
+    else
+        caster:RemoveModifierByName("modifier_gyrocopter_custom_rocket_barrage")
+        caster:RemoveModifierByName("modifier_gyrocopter_custom_rocket_barrage_mana")
+    end
 end
 
 
-function gyrocopter_custom_rocket_barrage:OnProjectileHit(target)
-    local caster = self:GetCaster()
-    if target and caster and not caster:IsIllusion() then
-        ApplyDamage({
-            attacker = caster,
-            victim = target,
-            damage = self:GetSpecialValueFor("rocket_damage"),
-            damage_type = self:GetAbilityDamageType(),
-            ability = self
-        })
+if IsServer() then
+    function gyrocopter_custom_rocket_barrage:OnProjectileHit(target)
+        local caster = self:GetCaster()
+        if target and caster and not caster:IsIllusion() then
 
-        target:EmitSound("Hero_Gyrocopter.Rocket_Barrage.Impact")
+            local damage = self:GetSpecialValueFor("rocket_damage")
+
+            local talent = caster:FindAbilityByName("gyrocopter_custom_bonus_unique_1")
+            if talent and talent:GetLevel() > 0 then
+                damage = damage + talent:GetSpecialValueFor("value")
+            end
+
+            ApplyDamage({
+                attacker = caster,
+                victim = target,
+                damage = damage,
+                damage_type = self:GetAbilityDamageType(),
+                ability = self
+            })
+
+            target:EmitSound("Hero_Gyrocopter.Rocket_Barrage.Impact")
+        end
+    end
+end
+
+
+modifier_gyrocopter_custom_rocket_barrage_mana = class({})
+
+
+function modifier_gyrocopter_custom_rocket_barrage_mana:IsHidden()
+    return true
+end
+
+
+if IsServer() then
+    function modifier_gyrocopter_custom_rocket_barrage_mana:OnCreated()
+        local ability = self:GetAbility()
+
+        self.mana_cost = ability:GetManaCost(-1)
+        
+        self:StartIntervalThink(1.0)
+    end
+
+
+    function modifier_gyrocopter_custom_rocket_barrage_mana:OnIntervalThink()
+        local ability = self:GetAbility()
+        local parent = self:GetParent()
+
+        if parent:GetMana() >= self.mana_cost then
+            parent:SpendMana(self.mana_cost, ability)
+        else
+            ability:ToggleAbility()
+        end
     end
 end
 
@@ -46,13 +93,16 @@ end
 
 
 if IsServer() then
+    function modifier_gyrocopter_custom_rocket_barrage:SetIntervalThink()
+        self:StartIntervalThink(1 / self:GetParent():GetAttacksPerSecond())
+    end
+
     function modifier_gyrocopter_custom_rocket_barrage:OnCreated()
         local ability = self:GetAbility()
 
         self.radius = ability:GetSpecialValueFor("radius")
-        self.interval = 1 / self:GetParent():GetAttacksPerSecond()
-
-        self:StartIntervalThink(self.interval)
+        
+        self:SetIntervalThink()
     end
 
 
@@ -70,6 +120,7 @@ if IsServer() then
                 end
             end
         end
+        self:SetIntervalThink()
     end
 
 

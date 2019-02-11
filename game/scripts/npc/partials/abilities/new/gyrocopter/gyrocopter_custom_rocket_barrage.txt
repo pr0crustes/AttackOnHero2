@@ -3,7 +3,7 @@
     "BaseClass"						    "ability_lua"
     "ScriptFile"		                "abilities/heroes/gyrocopter_custom_rocket_barrage.lua"
 
-    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
     "SpellImmunityType"				    "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityUnitDamageType"			    "DAMAGE_TYPE_MAGICAL"	
 
@@ -13,8 +13,8 @@
 
     "AbilityCastRange"                  "800"
     "AbilityCastPoint"				    "0.0"
-    "AbilityCooldown"				    "11.0 10.0 9.0 8.0"
-    "AbilityManaCost"				    "90 100 110 120"
+    "AbilityCooldown"				    "1.0"
+    "AbilityManaCost"				    "20 30 40 50"
 
     "AbilitySpecial"
     {
@@ -25,13 +25,9 @@
         }
         "02"
         {
-            "var_type"					"FIELD_FLOAT"
-            "duration"					"5.0"
-        }
-        "03"
-        {
             "var_type"					"FIELD_INTEGER"
-            "rocket_damage"				"100 170 230 300"
+            "rocket_damage"				"100 200 300 400"
+            "LinkedSpecialBonus"        "gyrocopter_custom_bonus_unique_1"
         }
     }
 }	

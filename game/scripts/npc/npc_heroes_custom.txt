@@ -93,6 +93,7 @@
     "Ability1"		"gyrocopter_custom_rocket_barrage"
     
     "Ability13"		"special_bonus_attack_speed_40"
+    "Ability17"		"gyrocopter_custom_bonus_unique_1"
 }
 "npc_dota_hero_huskar"
 {
