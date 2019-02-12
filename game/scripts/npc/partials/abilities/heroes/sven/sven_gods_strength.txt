@@ -1,0 +1,12 @@
+"sven_gods_strength"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"			            "FIELD_INTEGER"
+            "gods_strength_bonus_str"		"20 30 40"		
+            "LinkedSpecialBonus"		    "special_bonus_unique_sven_2"
+        }
+    }
+}
