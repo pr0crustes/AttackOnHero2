@@ -124,10 +124,6 @@
     "Ability9"		"generic_hidden"
     "Ability16"		"special_bonus_attack_speed_100"
 }
-"npc_dota_hero_lina"
-{
-    "Ability6"		"lina_custom_burning_will"
-}
 "npc_dota_hero_lone_druid"
 {
     "Ability3"		            "lone_druid_custom_bear_style"

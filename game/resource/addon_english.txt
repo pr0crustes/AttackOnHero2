@@ -881,16 +881,6 @@
 "DOTA_Tooltip_ability_life_stealer_custom_feast_Description"						"Lifestealer's attacks heal himself for a percentage of his missing health."		
 "DOTA_Tooltip_ability_life_stealer_custom_feast_Lore"								"After escaping from his cell in Devarque, N'aix subsisted on flesh and bones of those unfortunate to cross his path." 
 "DOTA_Tooltip_ability_life_stealer_custom_feast_missing_hp_pct"						"%MISSING HEALTH AS HEAL:"
-"DOTA_Tooltip_ability_lina_custom_burning_will"									"Burning Will"
-"DOTA_Tooltip_ability_lina_custom_burning_will_Description"						"Lina ignites her own soul, granting herself bonus cooldown reduction and a lower base attack time."
-"DOTA_Tooltip_ability_lina_custom_burning_will_Lore"							"Lina is always on fire."
-"DOTA_Tooltip_ability_lina_custom_burning_will_base_attack_time"                "BASE ATTACK TIME:"
-"DOTA_Tooltip_ability_lina_custom_burning_will_cooldown_reduction"			    "%COOLDOWN REDUCTION:"
-"DOTA_Tooltip_ability_lina_custom_burning_will_duration"					    "DURATION:"
-
-
-"DOTA_Tooltip_modifier_lina_custom_burning_will"                                "Burning Will"
-"DOTA_Tooltip_modifier_lina_custom_burning_will_Description"                    "Receiving cooldown reduction and a base attack time reduction."
 "DOTA_Tooltip_Ability_lone_druid_custom_bear_style"						"Bear Style"
 "DOTA_Tooltip_Ability_lone_druid_custom_bear_style_Description"			"Switches your mana and health percentage with your bear."
 "DOTA_Tooltip_Ability_lone_druid_custom_bear_style_Lore"				"A spell created by the bear."
