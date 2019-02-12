@@ -4130,9 +4130,64 @@
         }
     }
 }
+"beastmaster_inner_beast"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"1200"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"15 30 40 60"
+            "LinkedSpecialBonus"	"special_bonus_unique_beastmaster_4"
+        }
+    }
+}
+"beastmaster_primal_roar"
+{
+    "AbilityCooldown"				    "40.0 35.0 30.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"3.0"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"600 800 1000"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "side_damage"				"600 800 1000"
+        }
+        "07"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "push_distance"				"250"
+        }
+        "11"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "cooldown_scepter"			"20.0"
+        }
+        "12"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "movement_speed"			"100"
+        }
+    }
+}
 "beastmaster_wild_axes"
 {
-    "AbilityCooldown"				"5"
+    "AbilityCooldown"				"5 5 5 4"
 }
 "bounty_hunter_track"
 {

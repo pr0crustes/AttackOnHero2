@@ -1,0 +1,17 @@
+"beastmaster_inner_beast"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"1200"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"15 30 40 60"
+            "LinkedSpecialBonus"	"special_bonus_unique_beastmaster_4"
+        }
+    }
+}

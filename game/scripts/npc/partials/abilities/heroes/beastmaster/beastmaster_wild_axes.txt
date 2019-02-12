@@ -1,4 +1,4 @@
 "beastmaster_wild_axes"
 {
-    "AbilityCooldown"				"5"
+    "AbilityCooldown"				"5 5 5 4"
 }
