@@ -1,0 +1,7 @@
+"DOTA_Tooltip_ability_legion_commander_custom_duel"                         "Duel"
+"DOTA_Tooltip_ability_legion_commander_custom_duel_Description"			    "Permanently increases your damage on cast."
+"DOTA_Tooltip_ability_legion_commander_custom_duel_Lore"					"Destroy all of them."
+"DOTA_Tooltip_ability_legion_commander_custom_duel_damage"					"BONUS DAMAGE:"
+
+"DOTA_Tooltip_modifier_legion_commander_custom_duel_buff"                   "Duel Buff"
+"DOTA_Tooltip_modifier_legion_commander_custom_duel_buff_Description"       "Increasing your damage by %dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE%."
