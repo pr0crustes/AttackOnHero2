@@ -1,10 +1,11 @@
 "item_recipe_ultimate_blink"
 {
     "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.vmdl"
-    "BaseClass"						"item_recipe_magic_wand"
+    "AbilityTextureName"			"item_recipe"
 
-    "ItemCost"						"0"	
+    "ItemCost"						"800"	
     "ItemShopTags"					""
 
     "ItemRecipe"					"1"
@@ -12,7 +13,7 @@
 
     "ItemRequirements"
     {
-        "01"						"item_blink;item_blink"
+        "01"						"item_blink"
     }
 }
 

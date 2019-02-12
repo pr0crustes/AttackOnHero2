@@ -1,0 +1,4 @@
+"item_blink"
+{
+    "ItemCost"						"1600"
+}
