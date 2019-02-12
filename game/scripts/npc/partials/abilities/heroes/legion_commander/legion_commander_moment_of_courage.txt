@@ -1,0 +1,11 @@
+"legion_commander_moment_of_courage"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "hp_leech_percent"			"10 20 30 40"
+        }
+    }
+}
