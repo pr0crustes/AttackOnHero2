@@ -1,0 +1,25 @@
+"ogre_magi_fireblast"
+{
+    "AbilityCooldown"				"10 9 8 7"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "stun_duration"		    "0.7"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "multicast_delay"	    "0.3"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "fireblast_damage"		"80 180 240 320"
+            "LinkedSpecialBonus"	"special_bonus_unique_ogre_magi_2"
+        }
+    }
+}

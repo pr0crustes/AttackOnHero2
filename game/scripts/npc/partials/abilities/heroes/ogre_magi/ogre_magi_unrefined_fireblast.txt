@@ -1,0 +1,24 @@
+"ogre_magi_unrefined_fireblast"
+{
+    "AbilityCooldown"				"6"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "stun_duration"		    "0.7"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "multicast_delay"	    "0.2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "fireblast_damage"		"575"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+"ogre_magi_bloodlust"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_movement_speed"	"10 15 20 22"
+        }
+    }
+}

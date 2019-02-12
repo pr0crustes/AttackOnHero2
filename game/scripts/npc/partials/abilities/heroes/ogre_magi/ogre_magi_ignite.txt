@@ -1,0 +1,19 @@
+"ogre_magi_ignite"
+{
+    "AbilityCooldown"				"15 12 10 8"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "duration"			    "5"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "burn_damage"		    "30 60 90 140"
+        }
+    }
+}
