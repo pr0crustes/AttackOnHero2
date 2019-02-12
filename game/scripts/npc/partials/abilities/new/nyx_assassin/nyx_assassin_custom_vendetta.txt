@@ -18,7 +18,7 @@
         "01"
         {
             "var_type"				    "FIELD_INTEGER"
-            "crit_increase"	            "50 70 100"
+            "crit_increase"	            "90 110 130"
         }
         "02"
         {
