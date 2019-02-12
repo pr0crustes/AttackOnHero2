@@ -1,0 +1,205 @@
+"item_recipe_triumviratus"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_triumviratus"
+
+    "ItemRequirements"
+    {
+        "01"						"item_yasha;item_sange;item_kaya"
+        "02"						"item_kaya_and_sange;item_yasha"
+        "03"						"item_sange_and_yasha;item_kaya"
+        "04"						"item_yasha_and_kaya;item_sange"
+    }
+}
+
+
+
+"item_triumviratus"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_datadriven"
+    "AbilityTextureName"		    "triumviratus"
+
+    "ItemQuality"					"epic"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "all_atributes"	        "30"
+        }
+
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_duration"	        "3"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_max_stack"	        "3"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_stack_move_speed"	"10"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_stack_spell_amp"	    "5"
+        }
+
+
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_duration"	        "10"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_max_stack"	        "3"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_stack_move_speed"	"10"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_damage_bonus"	    "5"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_triumviratus"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"        "%all_atributes"
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"         "%all_atributes"
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%all_atributes"
+            }
+
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	        "abilities/other/modify_hud_modifier.lua"
+                    "Function"		        "add_modifier_if_not_max"
+                    "modifier"              "modifier_triumviratus_a_stack"
+                    "max"                   "%a_max_stack"
+                }
+            }
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"items/triumviratus.lua"
+                    "Function"				"on_ability_executed"
+                    "modifier"              "modifier_triumviratus_s_stack"
+                    "max"                   "%s_max_stack"
+                }
+            }
+        }
+
+        "modifier_triumviratus_a_hud"
+        {
+            "IsBuff"                        "1"
+            "TextureName"                   "item_sange_and_yasha"
+        }
+
+        "modifier_triumviratus_a_stack"
+        {
+            "IsHidden"				        "1"
+            "IsPurgable"			        "0"
+            "Duration"                      "%a_duration"
+            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%a_stack_move_speed"
+                "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"        "%a_stack_spell_amp"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_triumviratus_a_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_triumviratus_a_hud"
+                }
+            }
+        }
+
+        "modifier_triumviratus_s_hud"
+        {
+            "IsBuff"                        "1"
+            "TextureName"                   "item_yasha_and_kaya"
+        }
+
+        "modifier_triumviratus_s_stack"
+        {
+            "IsHidden"				        "1"
+            "IsPurgable"			        "0"
+            "Duration"                      "%s_duration"
+            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%s_stack_move_speed"
+                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"       "%s_damage_bonus"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_triumviratus_s_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_triumviratus_s_hud"
+                }
+            }
+        }
+    }
+}

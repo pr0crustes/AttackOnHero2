@@ -3114,9 +3114,214 @@
         } 
     }
 }
-"item_recipe_ultimate_blink"
+"item_recipe_triumviratus"
 {
     "ID"							"70141"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_triumviratus"
+
+    "ItemRequirements"
+    {
+        "01"						"item_yasha;item_sange;item_kaya"
+        "02"						"item_kaya_and_sange;item_yasha"
+        "03"						"item_sange_and_yasha;item_kaya"
+        "04"						"item_yasha_and_kaya;item_sange"
+    }
+}
+
+
+
+"item_triumviratus"
+{
+    "ID"							"70142"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"						"item_datadriven"
+    "AbilityTextureName"		    "triumviratus"
+
+    "ItemQuality"					"epic"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "all_atributes"	        "30"
+        }
+
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_duration"	        "3"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_max_stack"	        "3"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_stack_move_speed"	"10"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "a_stack_spell_amp"	    "5"
+        }
+
+
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_duration"	        "10"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_max_stack"	        "3"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_stack_move_speed"	"10"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "s_damage_bonus"	    "5"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_triumviratus"
+        {
+            "Passive"			"1"
+            "IsHidden"			"1"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"        "%all_atributes"
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"         "%all_atributes"
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%all_atributes"
+            }
+
+            "OnAttackLanded"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"	        "abilities/other/modify_hud_modifier.lua"
+                    "Function"		        "add_modifier_if_not_max"
+                    "modifier"              "modifier_triumviratus_a_stack"
+                    "max"                   "%a_max_stack"
+                }
+            }
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"items/triumviratus.lua"
+                    "Function"				"on_ability_executed"
+                    "modifier"              "modifier_triumviratus_s_stack"
+                    "max"                   "%s_max_stack"
+                }
+            }
+        }
+
+        "modifier_triumviratus_a_hud"
+        {
+            "IsBuff"                        "1"
+            "TextureName"                   "item_sange_and_yasha"
+        }
+
+        "modifier_triumviratus_a_stack"
+        {
+            "IsHidden"				        "1"
+            "IsPurgable"			        "0"
+            "Duration"                      "%a_duration"
+            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%a_stack_move_speed"
+                "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"        "%a_stack_spell_amp"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_triumviratus_a_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_triumviratus_a_hud"
+                }
+            }
+        }
+
+        "modifier_triumviratus_s_hud"
+        {
+            "IsBuff"                        "1"
+            "TextureName"                   "item_yasha_and_kaya"
+        }
+
+        "modifier_triumviratus_s_stack"
+        {
+            "IsHidden"				        "1"
+            "IsPurgable"			        "0"
+            "Duration"                      "%s_duration"
+            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%s_stack_move_speed"
+                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"       "%s_damage_bonus"
+            }
+
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "increate_hud_modifier"
+                    "modifier"              "modifier_triumviratus_s_hud"
+                }
+            }
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+                    "Function"			    "decrease_hud_modifier"
+                    "modifier"              "modifier_triumviratus_s_hud"
+                }
+            }
+        }
+    }
+}
+"item_recipe_ultimate_blink"
+{
+    "ID"							"70143"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_magic_wand"
 
@@ -3136,7 +3341,7 @@
 
 "item_ultimate_blink"
 {
-    "ID"							"70142"
+    "ID"							"70144"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "BaseClass"						"item_blink"
     "AbilityTextureName"		    "ultimate_blink"
@@ -3173,7 +3378,7 @@
 }
 "item_recipe_ultimate_butterfly"
 {
-    "ID"							"70143"
+    "ID"							"70145"
     "BaseClass"                     "item_recipe_butterfly"
 
     "ItemCost"						"925"	
@@ -3191,7 +3396,7 @@
 
 "item_ultimate_butterfly"
 {
-    "ID"							"70144"
+    "ID"							"70146"
     "BaseClass"                     "item_butterfly"
 
     "AbilityTextureName"		    "ultimate_butterfly"
@@ -3230,7 +3435,7 @@
 }
 "item_recipe_ultimate_crit"
 {
-    "ID"							"70145"
+    "ID"							"70147"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_greater_crit"
 
@@ -3250,7 +3455,7 @@
 
 "item_ultimate_crit"
 {
-    "ID"							"70146"
+    "ID"							"70148"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_greater_crit"
     "AbilityTextureName"		    "ultimate_crit"
@@ -3280,7 +3485,7 @@
 }
 "item_recipe_ultimate_dagon"
 {
-    "ID"							"70147"
+    "ID"							"70149"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_dagon"
 
@@ -3300,7 +3505,7 @@
 
 "item_ultimate_dagon"
 {
-    "ID"							"70148"
+    "ID"							"70150"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3355,7 +3560,7 @@
 }
 "item_recipe_ultimate_heart"
 {
-    "ID"							"70149"
+    "ID"							"70151"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_heart"
 
@@ -3375,7 +3580,7 @@
 
 "item_ultimate_heart"
 {
-    "ID"							"70150"
+    "ID"							"70152"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "ultimate_heart"
@@ -3422,7 +3627,7 @@
 }
 "item_recipe_ultimate_octarine"
 {
-    "ID"							"70151"
+    "ID"							"70153"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_octarine_core"
 
@@ -3442,7 +3647,7 @@
 
 "item_ultimate_octarine"
 {
-    "ID"							"70152"
+    "ID"							"70154"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_datadriven"
     "AbilityTextureName"		    "ultimate_octarine"
@@ -3506,7 +3711,7 @@
 }
 "item_recipe_ultimate_rapier"
 {
-    "ID"							"70153"	
+    "ID"							"70155"	
     "Model"							"models/props_gameplay/recipe.mdl"
     "BaseClass"						"item_datadriven"
 
@@ -3523,7 +3728,7 @@
 
 "item_ultimate_rapier" 
 {
-    "ID"           				"70154"
+    "ID"           				"70156"
     "BaseClass" 			    "item_datadriven"
     "AbilityTextureName"		"ultimate_rapier"
     "Model"       				"models/props_gameplay/divine_rapier.vmdl" 
@@ -3566,7 +3771,7 @@
 } 
 "item_recipe_ultimate_vladmir"
 {
-    "ID"							"70155"
+    "ID"							"70157"
     "Model"							"models/props_gameplay/recipe.vmdl"
     "BaseClass"						"item_recipe_vladmir"
 
@@ -3586,7 +3791,7 @@
 
 "item_ultimate_vladmir"
 {
-    "ID"							"70156"
+    "ID"							"70158"
     "BaseClass"						"item_vladmir"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -3634,7 +3839,7 @@
 }
 "item_recipe_wicked_locket"
 {
-    "ID"							"70157"
+    "ID"							"70159"
     "BaseClass"                     "item_recipe_holy_locket"
 
     "ItemCost"						"550"	
@@ -3652,7 +3857,7 @@
 
 "item_wicked_locket"
 {
-    "ID"							"70158"
+    "ID"							"70160"
     "BaseClass"                     "item_holy_locket"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
@@ -3693,7 +3898,7 @@
 }
 "item_dev_dagon"
 {
-    "ID"							"70159"
+    "ID"							"70161"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -3746,7 +3951,7 @@
 }
 "item_dev_heart"
 {
-    "ID"							"70160"
+    "ID"							"70162"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "item_heart"
