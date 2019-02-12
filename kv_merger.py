@@ -104,8 +104,7 @@ def preprocess_no_ext(fileName, folder=""):
     Processor(folder).preprocess_file(f"{folder}{fileName}{PP_FILE_EXT}", f"{folder}{fileName}.txt")
 
 
-if __name__ == "__main__":
-
+def merge_kvs():
     folder_file_pairs = (
         ("game/scripts/npc", "npc_abilities_custom"),
         ("game/scripts/npc", "npc_heroes_custom"),
@@ -119,3 +118,7 @@ if __name__ == "__main__":
         preprocess_no_ext(file, folder)
 
 
+
+if __name__ == "__main__":
+
+    merge_kvs()

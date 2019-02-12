@@ -24,9 +24,12 @@ EXCLUDE_FOLDERS = [
 ]
 
 
-if __name__ == '__main__':
-
+def setup_files():
     copier.Copier(FROM_GAME, TO_GAME, exclude_folders=EXCLUDE_FOLDERS, exclude_extensions=EXCLUDE_EXTENSIONS).run()
     print("==> Copied Game folder.")
     copier.Copier(FROM_CONTENT, TO_CONTENT, exclude_folders=EXCLUDE_FOLDERS, exclude_extensions=EXCLUDE_EXTENSIONS).run()
     print("==> Copied Content folder.")
+
+
+if __name__ == '__main__':
+    setup_files()
