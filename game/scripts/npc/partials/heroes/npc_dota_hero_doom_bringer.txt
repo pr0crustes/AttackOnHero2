@@ -3,7 +3,7 @@
     "Ability1"		"doom_custom_dash"
     "Ability4"		"generic_hidden"
     "Ability5"		"generic_hidden"
-    "Ability6"		"doom_custom_warbringer"
+    "Ability6"		"doom_custom_flames"
     "Ability13"		"special_bonus_armor_8"
     "Ability14"		"special_bonus_attack_speed_80"
     "Ability15"		"special_bonus_hp_regen_20"

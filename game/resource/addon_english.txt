@@ -809,15 +809,14 @@
 
 "DOTA_Tooltip_modifier_doom_custom_dash_buff"                   "Doom Dash"
 "DOTA_Tooltip_modifier_doom_custom_dash_buff_Description"       "Armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
-"DOTA_Tooltip_Ability_doom_custom_warbringer"						    "Warbringer"
-"DOTA_Tooltip_Ability_doom_custom_warbringer_Description"			    "Doom borrows energy from hell, decreasing all damage received for a brief duration."
-"DOTA_Tooltip_Ability_doom_custom_warbringer_Lore"				        "War is comming."
-"DOTA_Tooltip_Ability_doom_custom_warbringer_duration"				    "DURATION:"
-"DOTA_Tooltip_Ability_doom_custom_warbringer_reduction"				    "%DAMAGE REDUCTION:"
+"DOTA_Tooltip_Ability_doom_custom_flames"						    "Hell Flames"
+"DOTA_Tooltip_Ability_doom_custom_flames_Description"			    "Doom borrows energy from hell, spitting fire that damages all enemies ahead of him.\nFire is launched every %interval% second and deals damage equal to Doom strength."
+"DOTA_Tooltip_Ability_doom_custom_flames_Lore"				        "Hell always has fire."
+"DOTA_Tooltip_Ability_doom_custom_flames_duration"				    "DURATION:"
 
 
-"DOTA_Tooltip_modifier_custom_doom_warbringer"                          "Warbringer"
-"DOTA_Tooltip_modifier_custom_doom_warbringer_Description"              "Reducing all incoming damage."
+"DOTA_Tooltip_modifier_doom_custom_flames_emitter"                  "Hell Flames"
+"DOTA_Tooltip_modifier_doom_custom_flames_emitter_Description"      "Spitting fire."
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence"						    "Dark Presence"
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence_Description"			    "Provides an aura that increases allies health regen while reducing the regen of enemies."
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence_Lore"				    "Enigma has a dark presence."

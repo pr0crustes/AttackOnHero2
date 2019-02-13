@@ -1,0 +1,8 @@
+"DOTA_Tooltip_Ability_doom_custom_flames"						    "Hell Flames"
+"DOTA_Tooltip_Ability_doom_custom_flames_Description"			    "Doom borrows energy from hell, spitting fire that damages all enemies ahead of him.\nFire is launched every %interval% second and deals damage equal to Doom strength."
+"DOTA_Tooltip_Ability_doom_custom_flames_Lore"				        "Hell always has fire."
+"DOTA_Tooltip_Ability_doom_custom_flames_duration"				    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_doom_custom_flames_emitter"                  "Hell Flames"
+"DOTA_Tooltip_modifier_doom_custom_flames_emitter_Description"      "Spitting fire."

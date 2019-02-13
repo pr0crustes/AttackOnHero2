@@ -1,0 +1,109 @@
+"doom_custom_flames"
+{
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+
+    "AbilityType"				    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"            "doom_bringer_doom"
+
+    "AbilityCastPoint"              "0.1"
+    "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCastRange"              "600"
+
+    "AbilityCooldown"               "35.0 30.0 25.0"
+    "AbilityManaCost"               "150 250 300"
+
+    "precache"
+    {
+        "soundfile"					"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+        "particle"                  "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "duration"              "2.0 2.5 3.0"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "interval"              "0.1"
+        }
+        "03"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "radius"                "600"
+        }
+        "04"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "str_multiplier"        "1.0"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"		        "CASTER"
+            "ModifierName"	        "modifier_doom_custom_flames_emitter"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_doom_custom_flames_emitter"
+        {
+            "IsBuff"                "1"
+            "Duration"              "%duration"
+
+            "ThinkInterval"         "%interval"
+            "OnIntervalThink"
+            {
+                "FireSound"
+                {
+                    "Target"        "CASTER"
+                    "EffectName"    "Hero_DragonKnight.BreathFire"
+                }
+                "LinearProjectile"
+                {
+                    "Target"            "CASTER"
+                    "EffectName"        "particles/units/heroes/hero_dragon_knight/dragon_knight_breathe_fire.vpcf"
+                    "StartRadius"       "150"
+                    "EndRadius"         "200"
+                    "MoveSpeed"         "1000"
+                    "FixedDistance"     "%radius"
+                    "TargetTeams"  		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                    "TargetTypes"   	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+                    "TargetFlags"   	"DOTA_UNIT_TARGET_FLAG_NONE"
+                    "HasFrontalCone"    "1"
+                    "ProvidesVision" 	"1"
+                }
+            }
+        }
+    }
+
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"               "0"
+
+        "FireSound"
+        {
+            "Target"			    "TARGET"
+            "EffectName"		    "Hero_DoomBringer.Attack.Impact"
+        }
+        "RunScript"
+        {
+            "ScriptFile"		    "abilities/heroes/doom_custom_flames.lua"
+            "Function"			    "on_hit"
+        }
+    }
+}
