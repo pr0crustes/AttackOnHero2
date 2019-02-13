@@ -163,7 +163,7 @@
                 {
                     "Target"				"CASTER"
                     "EffectName"			"particles/custom/triumviratus/blue_triumviratus.vpcf"
-                    "EffectAttachType"		"attach_attack1"
+                    "EffectAttachType"		"attach_attack2"
                 }
             }
 
