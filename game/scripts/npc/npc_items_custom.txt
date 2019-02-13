@@ -3676,7 +3676,7 @@
         "05"
         {
             "var_type"				"FIELD_FLOAT"
-            "lifesteal"		        "15"
+            "lifesteal"		        "20"
         }
     }
 
