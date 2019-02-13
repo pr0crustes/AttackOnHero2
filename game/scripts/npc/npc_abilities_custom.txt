@@ -8804,7 +8804,7 @@
     "AbilityCastPoint"				"0.31"
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
     
-    "AbilityCooldown"				"20 16 12 8"
+    "AbilityCooldown"				"20 15 10 7"
 
     "AbilityManaCost"				"90 110 130 150"
 
@@ -8929,7 +8929,7 @@
 
     "AbilityCastPoint"				    "0.0"
 
-    "AbilityCooldown"				    "60.0 55.0 50.0"
+    "AbilityCooldown"				    "60.0 50.0 40.0"
 
     "AbilityManaCost"				    "100 150 200"
 
