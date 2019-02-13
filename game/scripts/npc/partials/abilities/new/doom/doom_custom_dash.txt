@@ -42,7 +42,7 @@
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "buff_armor"	        "4 6 8 10"
+            "buff_armor"	        "2 4 6 8"
         }
     }
 
