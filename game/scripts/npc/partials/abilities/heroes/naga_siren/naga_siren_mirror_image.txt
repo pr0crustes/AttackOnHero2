@@ -1,19 +1,29 @@
 "naga_siren_mirror_image"
 {
-    "AbilityCooldown"				"40 30 25 20"
+    "AbilityCooldown"				                "40 30 25 20"
 
     "AbilitySpecial"
     {
         "01"
         {
-            "var_type"					"FIELD_FLOAT"
-            "illusion_duration"			"30"
+            "var_type"					            "FIELD_FLOAT"
+            "illusion_duration"			            "30"
+        }
+        "04"
+        {
+            "var_type"					            "FIELD_INTEGER"
+            "incoming_damage"			            "300 250 200 130"
+        }
+        "05"
+        {
+            "var_type"					            "FIELD_INTEGER"
+            "tooltip_incoming_damage_total_pct"		"400 350 300 230"
         }
         "06"
         {
-            "var_type"					"FIELD_INTEGER"
-            "images_count"				"3 3 3 4"
-            "LinkedSpecialBonus"		"special_bonus_unique_naga_siren"
+            "var_type"					            "FIELD_INTEGER"
+            "images_count"				            "3 3 3 4"
+            "LinkedSpecialBonus"		            "special_bonus_unique_naga_siren"
         }	
     }
 }

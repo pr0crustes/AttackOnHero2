@@ -1,0 +1,81 @@
+"naga_siren_custom_aquatica_grace"
+{
+    "BaseClass"						    "ability_datadriven"
+
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName" 			    "naga_siren_ensnare"
+
+    "AbilityCastAnimation"		        "ACT_DOTA_CAST_ABILITY_2"
+
+    "AbilityCastPoint"				    "0.0"
+    "AbilityCooldown"				    "23.0 20.0 17.0 15.0"
+    "AbilityManaCost"				    "160 120 80 40"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "damage_reduction"		    "-100"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"				    "5.0"
+        }
+    }
+
+    "precache"
+    {
+        "particle"                      "particles/units/heroes/hero_chen/chen_holy_persuasion.vpcf"
+        "particle"                      "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+        "soundfile"					    "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		        "abilities/heroes/naga_siren_custom_aquatica_grace.lua"
+            "Function"			        "cast_naga_siren_custom_aquatica_grace"
+            "modifier"                  "modifier_naga_siren_custom_aquatica_grace_buff"
+        }
+        "FireEffect"
+        {
+            "Target"                    "CASTER"
+            "EffectName"                "particles/units/heroes/hero_chen/chen_holy_persuasion.vpcf"
+            "EffectAttachType"          "follow_origin"
+        }
+        "FireSound"
+        {
+            "Target"			        "CASTER"
+            "EffectName"		        "Hero_Omniknight.GuardianAngel.Cast"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_naga_siren_custom_aquatica_grace_buff"
+        {
+            "IsBuff"                    "1"
+            "Duration"                  "%duration"
+
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"                    "TARGET"
+                    "EffectName"                "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+                    "EffectAttachType"          "follow_origin"
+                }
+            }
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"%damage_reduction"
+            }
+        }
+    }
+}	

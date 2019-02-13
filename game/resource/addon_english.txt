@@ -895,9 +895,14 @@
 "DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery"							"Jingu Mastery"
 "DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery_Description"				"Grants lifesteal from all damage sources."
 "DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery_lifesteal"		        "%LIFESTEAL:"
-"DOTA_Tooltip_Ability_naga_siren_custom_puppet"							    "Puppet Swap"
-"DOTA_Tooltip_Ability_naga_siren_custom_puppet_Description"				    "Swaps positions with the target Naga Siren illusion.\nCan be used at Naga Siren to teleport all illusions to her."
-"DOTA_Tooltip_Ability_naga_siren_custom_puppet_Lore"		                "The only way to escape the onslaught of a Slithereen is to never oppose one in the first place."
+"DOTA_Tooltip_Ability_naga_siren_custom_aquatica_grace"							    "Aquatica Grace"
+"DOTA_Tooltip_Ability_naga_siren_custom_aquatica_grace_Description"				    "Naga Siren applies a protection to all her illusions, granting damage immunity."
+"DOTA_Tooltip_Ability_naga_siren_custom_aquatica_grace_Lore"		                "The only way to escape the onslaught of a Slithereen is to never oppose one in the first place."
+"DOTA_Tooltip_Ability_naga_siren_custom_aquatica_grace_duration"                    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_naga_siren_custom_aquatica_grace_buff"                       "Aquatica Grace"
+"DOTA_Tooltip_modifier_naga_siren_custom_aquatica_grace_buff_Description"           "Granting damage immunity."
 "DOTA_Tooltip_Ability_naga_siren_custom_tide"							"Tide"
 "DOTA_Tooltip_Ability_naga_siren_custom_tide_Description"				"Naga Siren summons a jet of water that deals damage based on your attack damage. Nearby illusions also cast Tide."
 "DOTA_Tooltip_Ability_naga_siren_custom_tide_damage_percentage"		    "%DAMAGE PERCENTAGE:"

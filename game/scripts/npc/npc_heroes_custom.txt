@@ -152,7 +152,7 @@
 }
 "npc_dota_hero_naga_siren"
 {
-    "Ability2"		"naga_siren_custom_puppet"
+    "Ability2"		"naga_siren_custom_aquatica_grace"
     "Ability3"		"naga_siren_custom_tide"
 
     "Ability14"		"special_bonus_agility_30"
