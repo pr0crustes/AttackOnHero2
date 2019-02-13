@@ -3174,8 +3174,8 @@
 
     "precache"
     {
-        "particle"                  "particles/custom/triumviratus/blue_triumviratus.vpcf"
-        "particle"                  "particles/custom/triumviratus/red_triumviratus.vpcf"
+        "particle"                  "particles/custom/blue_triumviratus.vpcf"
+        "particle"                  "particles/custom/red_triumviratus.vpcf"
     }
 
     "AbilitySpecial"
@@ -3279,7 +3279,7 @@
                 "AttachEffect"
                 {
                     "Target"				"CASTER"
-                    "EffectName"			"particles/custom/triumviratus/red_triumviratus.vpcf"
+                    "EffectName"			"particles/custom/red_triumviratus.vpcf"
                     "EffectAttachType"		"attach_attack1"
                 }
             }
@@ -3301,7 +3301,7 @@
                 "AttachEffect"
                 {
                     "Target"				"CASTER"
-                    "EffectName"			"particles/custom/triumviratus/blue_triumviratus.vpcf"
+                    "EffectName"			"particles/custom/blue_triumviratus.vpcf"
                     "EffectAttachType"		"attach_attack2"
                 }
             }
