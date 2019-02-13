@@ -624,9 +624,9 @@
 			"b"
 			{
 				"NPCName"				"npc_boss_techies"
-				"TotalUnitsToSpawn"		"6"
+				"TotalUnitsToSpawn"		"7"
 				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"10"
+				"SpawnInterval"			"9"
 			}
 			
 			"c"
@@ -637,7 +637,7 @@
 				"NPCName"				"npc_boss_small_tinker"
 				"TotalUnitsToSpawn"		"3"
 				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"35"
+				"SpawnInterval"			"25"
 			}
 		}
 		
