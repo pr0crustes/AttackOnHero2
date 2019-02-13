@@ -351,6 +351,25 @@
 
     "ItemShareability"				"ITEM_NOT_SHAREABLE"
 }
+"item_tranquil_boots"
+{
+    "AbilityCooldown"				"3.0"
+
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_health_regen"	"20"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "break_time"			"3"
+        }
+    }
+}
 "item_travel_boots_2"
 {
     "AbilitySpecial"
