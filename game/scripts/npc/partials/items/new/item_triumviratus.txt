@@ -33,6 +33,12 @@
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
     "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 
+    "precache"
+    {
+        "particle"                  "particles/custom/triumviratus/blue_triumviratus.vpcf"
+        "particle"                  "particles/custom/triumviratus/red_triumviratus.vpcf"
+    }
+
     "AbilitySpecial"
     {
         "01"
@@ -103,10 +109,11 @@
             {
                 "RunScript"
                 {
-                    "ScriptFile"	        "abilities/other/modify_hud_modifier.lua"
-                    "Function"		        "add_modifier_if_not_max"
-                    "modifier"              "modifier_triumviratus_a_stack"
+                    "ScriptFile"			"items/triumviratus.lua"
+                    "Function"				"on_attack_landed"
+                    "modifier"              "modifier_triumviratus_a_hud"
                     "max"                   "%a_max_stack"
+                    "duration"              "%a_duration"
                 }
             }
 
@@ -116,8 +123,9 @@
                 {
                     "ScriptFile"			"items/triumviratus.lua"
                     "Function"				"on_ability_executed"
-                    "modifier"              "modifier_triumviratus_s_stack"
+                    "modifier"              "modifier_triumviratus_s_hud"
                     "max"                   "%s_max_stack"
+                    "duration"              "%s_duration"
                 }
             }
         }
@@ -126,39 +134,21 @@
         {
             "IsBuff"                        "1"
             "TextureName"                   "item_sange_and_yasha"
-        }
 
-        "modifier_triumviratus_a_stack"
-        {
-            "IsHidden"				        "1"
-            "IsPurgable"			        "0"
-            "Duration"                      "%a_duration"
-            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/custom/triumviratus/red_triumviratus.vpcf"
+                    "EffectAttachType"		"attach_attack1"
+                }
+            }
 
             "Properties"
             {
                 "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%a_stack_move_speed"
                 "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"        "%a_stack_spell_amp"
-            }
-
-            "OnCreated"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "increate_hud_modifier"
-                    "modifier"              "modifier_triumviratus_a_hud"
-                }
-            }
-
-            "OnDestroy"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "decrease_hud_modifier"
-                    "modifier"              "modifier_triumviratus_a_hud"
-                }
             }
         }
 
@@ -166,39 +156,21 @@
         {
             "IsBuff"                        "1"
             "TextureName"                   "item_yasha_and_kaya"
-        }
 
-        "modifier_triumviratus_s_stack"
-        {
-            "IsHidden"				        "1"
-            "IsPurgable"			        "0"
-            "Duration"                      "%s_duration"
-            "Attributes"			        "MODIFIER_ATTRIBUTE_MULTIPLE"
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/custom/triumviratus/blue_triumviratus.vpcf"
+                    "EffectAttachType"		"attach_attack1"
+                }
+            }
 
             "Properties"
             {
                 "MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"        "%s_stack_move_speed"
                 "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"       "%s_damage_bonus"
-            }
-
-            "OnCreated"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "increate_hud_modifier"
-                    "modifier"              "modifier_triumviratus_s_hud"
-                }
-            }
-
-            "OnDestroy"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "decrease_hud_modifier"
-                    "modifier"              "modifier_triumviratus_s_hud"
-                }
             }
         }
     }
