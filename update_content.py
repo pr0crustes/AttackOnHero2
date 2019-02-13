@@ -1,7 +1,7 @@
 import copier
 
 
-FROM_CONTENT = "D:/Steam/steamapps/common/dota 2 beta/content/dota_addons/attack_on_hero2/"
+FROM_CONTENT = "D:/Steam/steamapps/common/dota 2 beta/content/dota_addons/attack_on_hero_two/"
 TO_CONTENT = "D:/Development/attack_on_hero2/content/"
 
 
