@@ -1716,7 +1716,7 @@
     "AbilityCastGestureSlot"		"DEFAULT"
     "AbilityCastRange"				"1000"
     "AbilityCastPoint"				"0.3"
-    "AbilityCooldown"				"20"
+    "AbilityCooldown"				"17.0"
     "AbilityDamage"					"4000"
     "AbilityManaCost"				"0"
 
@@ -1786,7 +1786,7 @@
     "AbilitySound"					"Hero_Kunkka.Tidebringer.Attack"
     "BaseClass"                     "kunkka_tidebringer"
 
-    "AbilityCooldown"				"12.0"
+    "AbilityCooldown"				"10.0"
     "AbilityCastRange"				"150"
     "AbilityCastPoint"				"0.0"
 
@@ -1830,7 +1830,7 @@
     "BaseClass"                     "kunkka_torrent"
 
     "AbilityCastRange"				"1500"
-    "AbilityCastPoint"				"0.4"
+    "AbilityCastPoint"				"0.2"
     "AbilityCooldown"				"7"
     "AbilityManaCost"				"0"
 
@@ -2361,7 +2361,7 @@
     
     "AbilityCastPoint"				"2.0"
     "AbilityCooldown"				"20.0"
-    "AbilityDamage"					"2000"
+    "AbilityDamage"					"2500"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

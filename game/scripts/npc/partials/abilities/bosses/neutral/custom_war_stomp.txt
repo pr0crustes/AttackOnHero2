@@ -9,7 +9,7 @@
     
     "AbilityCastPoint"				"2.0"
     "AbilityCooldown"				"20.0"
-    "AbilityDamage"					"2000"
+    "AbilityDamage"					"2500"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

@@ -9,7 +9,7 @@
     "BaseClass"                     "kunkka_torrent"
 
     "AbilityCastRange"				"1500"
-    "AbilityCastPoint"				"0.4"
+    "AbilityCastPoint"				"0.2"
     "AbilityCooldown"				"7"
     "AbilityManaCost"				"0"
 
