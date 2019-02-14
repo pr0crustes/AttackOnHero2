@@ -9,13 +9,6 @@ if AOHGameRound == nil then
 end
 
 
-function AOHRoundFromConfiguration(roundData, gamemode, roundNumber)
-	local round = AOHGameRound()
-	round:ReadConfiguration(roundData, gamemode, roundNumber)
-	return round
-end
-
-
 
 function AOHGameRound:ReadConfiguration(kv, gameMode, roundNumber)
 	self._gameMode = gameMode

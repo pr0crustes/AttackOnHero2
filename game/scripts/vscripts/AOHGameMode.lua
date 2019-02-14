@@ -18,6 +18,7 @@ require("lib/timers")
 require("lib/ai")
 require("lib/chat_handler")
 require("items/ice_staff")
+require("lib/parsers")
 
 
 
@@ -105,9 +106,9 @@ function AOHGameMode:_ReadGameConfiguration()
 	self._flPrepTimeBetweenRounds = tonumber(kv.PrepTimeBetweenRounds or 0)
 	self._flItemExpireTime = tonumber(kv.ItemExpireTime or 10.0)
 
-	self:_ReadRandomSpawnsConfiguration(kv["RandomSpawns"])
-	self:_ReadLootItemDropsConfiguration(kv["ItemDrops"])
-	self:_ReadRoundConfigurations(kv["Rounds"])
+	self._vRandomSpawnsList = spawns_from_kv(kv["RandomSpawns"])
+	self._vLootItemDropsList = items_from_kv(kv["ItemDrops"])
+	self._vRounds = rounds_from_kv(kv["Rounds"], self)
 end
 
 
@@ -118,52 +119,6 @@ function AOHGameMode:ChooseRandomSpawnInfo()
 		return nil
 	end
 	return self._vRandomSpawnsList[RandomInt(1, #self._vRandomSpawnsList)]
-end
-
-
--- Verify valid spawns are defined and build a table with them from the keyvalues file
-function AOHGameMode:_ReadRandomSpawnsConfiguration(kvSpawns)
-	self._vRandomSpawnsList = {}
-	if type(kvSpawns) ~= "table" then
-		return
-	end
-	for _,sp in pairs(kvSpawns) do			-- Note "_" used as a shortcut to create a temporary throwaway variable
-		table.insert(self._vRandomSpawnsList, {
-			szSpawnerName = sp.SpawnerName or "",
-			szFirstWaypoint = sp.Waypoint or ""
-		})
-	end
-end
-
-
--- If random drops are defined read in that data
-function AOHGameMode:_ReadLootItemDropsConfiguration(kvLootDrops)
-	self._vLootItemDropsList = {}
-	if type(kvLootDrops) ~= "table" then
-		return
-	end
-	for _, lootItem in pairs(kvLootDrops) do
-		table.insert(self._vLootItemDropsList, {
-			szItemName = lootItem.Item or "",
-			nChance = tonumber(lootItem.Chance or 0)
-		})
-	end
-end
-
-
--- Set number of rounds without requiring index in text file
-function AOHGameMode:_ReadRoundConfigurations(kv)
-	self._vRounds = {}
-	while true do
-		local roundNumber = #self._vRounds + 1
-		local roundData = kv[tostring(roundNumber)]
-		if roundData == nil then
-			break
-		end
-		table.insert(self._vRounds, AOHRoundFromConfiguration(roundData, self, roundNumber))
-	end
-
-	--debug_start_at_round(self._vRounds, 33)
 end
 
 
