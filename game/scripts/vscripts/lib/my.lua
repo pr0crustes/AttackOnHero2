@@ -127,3 +127,17 @@ function find_item(caster, item_name)
     return nil
 end
 
+
+function refresh_players()
+	for playerID = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
+		if PlayerResource:HasSelectedHero(playerID) then
+			local hero = PlayerResource:GetSelectedHeroEntity(playerID)
+			if not hero:IsAlive() then
+				hero:RespawnUnit()
+			end
+			hero:SetHealth(hero:GetMaxHealth())
+			hero:SetMana(hero:GetMaxMana())
+			hero:SetBaseMagicalResistanceValue(25)
+		end
+	end
+end

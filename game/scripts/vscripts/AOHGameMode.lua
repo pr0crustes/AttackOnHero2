@@ -147,7 +147,7 @@ function AOHGameMode:OnThink()
 				self._currentRound:End()
 				self._currentRound = nil
 
-				self:_RefreshPlayers()
+				refresh_players()
 
 				self._nRoundNumber = self._nRoundNumber + 1
 				if self._nRoundNumber <= #self._vRounds then
@@ -172,23 +172,6 @@ end
 function AOHGameMode:_RevealShop()
 	local shopPos = Entities:FindByName(nil, "the_shop"):GetAbsOrigin()
 	AddFOWViewer(2, shopPos, 2000, 10000, true)
-end
-
-
-function AOHGameMode:_RefreshPlayers()
-	for nPlayerID = 0, DOTA_MAX_TEAM_PLAYERS-1 do
-		if PlayerResource:GetTeam(nPlayerID) == DOTA_TEAM_GOODGUYS then
-			if PlayerResource:HasSelectedHero(nPlayerID) then
-				local hero = PlayerResource:GetSelectedHeroEntity(nPlayerID)
-				if not hero:IsAlive() then
-					hero:RespawnUnit()
-				end
-				hero:SetHealth(hero:GetMaxHealth())
-				hero:SetMana(hero:GetMaxMana())
-				hero:SetBaseMagicalResistanceValue(25)
-			end
-		end
-	end
 end
 
 
