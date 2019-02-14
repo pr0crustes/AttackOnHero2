@@ -137,7 +137,8 @@ end
 function AOHGameMode:OnThink()
 	if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		self:_CheckForDefeat()
-		self:_ThinkLootExpiry()
+		
+		removed_expired_items(self._flItemExpireTime)
 
 		if self._flPrepTimeEnd ~= nil then
 			self:_ThinkPrepTime()
@@ -210,50 +211,6 @@ function AOHGameMode:_ThinkPrepTime()
 		round:Precache()
 	end
 	self._entPrepTimeQuest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self._flPrepTimeEnd - GameRules:GetGameTime())
-end
-
-
-function AOHGameMode:_ThinkLootExpiry()
-	if self._flItemExpireTime <= 0.0 then
-		return
-	end
-
-	local flCutoffTime = GameRules:GetGameTime() - self._flItemExpireTime
-
-	for _,item in pairs(Entities:FindAllByClassname("dota_item_drop")) do
-		local containedItem = item:GetContainedItem()
-		if containedItem:GetAbilityName() == "item_bag_of_gold" or item.Holdout_IsLootDrop then
-			self:_ProcessItemForLootExpiry(item, flCutoffTime)
-		end
-	end
-end
-
-
-function AOHGameMode:_ProcessItemForLootExpiry(item, flCutoffTime)
-	if item:IsNull() then
-		return false
-	end
-	if item:GetCreationTime() >= flCutoffTime then
-		return true
-	end
-
-	local containedItem = item:GetContainedItem()
-	if containedItem and containedItem:GetAbilityName() == "item_bag_of_gold" then
-		if self._currentRound and self._currentRound.OnGoldBagExpired then
-			self._currentRound:OnGoldBagExpired()
-		end
-	end
-
-	local nFXIndex = ParticleManager:CreateParticle("particles/items2_fx/veil_of_discord.vpcf", PATTACH_CUSTOMORIGIN, item)
-	ParticleManager:SetParticleControl(nFXIndex, 0, item:GetOrigin())
-	ParticleManager:SetParticleControl(nFXIndex, 1, Vector(35, 35, 25))
-	ParticleManager:ReleaseParticleIndex(nFXIndex)
-	local inventoryItem = item:GetContainedItem()
-	if inventoryItem then
-		UTIL_RemoveImmediate(inventoryItem)
-	end
-	UTIL_RemoveImmediate(item)
-	return false
 end
 
 

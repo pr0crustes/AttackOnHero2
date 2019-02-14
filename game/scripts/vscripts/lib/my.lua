@@ -154,3 +154,39 @@ function are_all_heroes_dead()
 	end
 	return true
 end
+
+
+-- Returns true if the item was removed.
+function process_item_expire(item, expire_time)
+	if item and not item:IsNull() then
+		if item:GetCreationTime() >= expire_time then
+			return false
+		end
+
+		local particle = ParticleManager:CreateParticle("particles/items2_fx/veil_of_discord.vpcf", PATTACH_CUSTOMORIGIN, item)
+		ParticleManager:SetParticleControl(particle, 0, item:GetOrigin())
+		ParticleManager:SetParticleControl(particle, 1, Vector(35, 35, 25))
+		ParticleManager:ReleaseParticleIndex(particle)
+	
+		local contained = item:GetContainedItem()
+		if contained then
+			UTIL_RemoveImmediate(contained)
+		end
+		UTIL_RemoveImmediate(item)
+
+	end
+
+	return true
+end
+
+
+function removed_expired_items(timeout)
+	local expire_time = GameRules:GetGameTime() - timeout
+
+	for _, item in pairs(Entities:FindAllByClassname("dota_item_drop")) do
+		local containedItem = item:GetContainedItem()
+		if containedItem:GetAbilityName() == "item_bag_of_gold" or item.Holdout_IsLootDrop then
+			process_item_expire(item, expire_time)
+		end
+	end
+end
