@@ -68,8 +68,6 @@ end
 
 function AOHGameMode:AtRoundStart()
 	local cost = 250 * self._nRoundNumber
-	
-	print("zzzzzzzzzzzzzzzzzzzzz")
 
     for playerID = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
         if PlayerResource:HasSelectedHero(playerID) then
