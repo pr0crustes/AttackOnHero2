@@ -235,13 +235,7 @@ end
 function AOHGameMode:CheckForLootItemDrop(killedUnit)
 	for _, itemDropInfo in pairs(self._vLootItemDropsList) do
 		if RollPercentage(itemDropInfo.nChance) then
-			local newItem = CreateItem(itemDropInfo.szItemName, nil, nil)
-			newItem:SetPurchaseTime(0)
-			if newItem:IsPermanent() and newItem:GetShareability() == ITEM_FULLY_SHAREABLE then
-				item:SetStacksWithOtherOwners(true)
-			end
-			local drop = CreateItemOnPositionSync(killedUnit:GetAbsOrigin(), newItem)
-			drop.Holdout_IsLootDrop = true
+			create_item_drop(itemDropInfo.szItemName, killedUnit:GetAbsOrigin())
 		end
 	end
 end

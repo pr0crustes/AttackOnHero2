@@ -203,3 +203,13 @@ function create_ressurection_tombstone(unit)
 
 	FindClearSpaceForUnit(tombstone, unit:GetAbsOrigin(), true)
 end
+
+
+function create_item_drop(item_name, pos)
+	local item = CreateItem(item_name, nil, nil)
+	item:SetPurchaseTime(0)
+	item:SetStacksWithOtherOwners(true)
+
+	local drop = CreateItemOnPositionSync(pos, item)
+	drop.Holdout_IsLootDrop = true
+end
