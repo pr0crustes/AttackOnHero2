@@ -3,7 +3,7 @@ From
 Holdout Example
 
 	Underscore prefix such as "_function()" denotes a local function and is used to improve readability
-	
+
 	Variable Prefix Examples
 		"fl"	Float
 		"n"		Int
@@ -68,35 +68,34 @@ end
 
 
 function AOHGameMode:OnExecuteOrder(keys)
-    local order = keys.order_type
-  
+	local order = keys.order_type
+
 	if order == DOTA_UNIT_ORDER_GLYPH then
 		Timers:CreateTimer(
 			1.0,
 			function()
 				GlyphStartCallback:_CallCallbacks(self._currentRound)
-		  	end
+			end
 		)
-    end
-  
-    return true
+	end
+
+	return true
 end
 
 
 function AOHGameMode:OnDamageDealt(damageTable)
-    local attacker_index = damageTable.entindex_attacker_const
+	local attacker_index = damageTable.entindex_attacker_const
 
-    if attacker_index then
+	if attacker_index then
 		local attacker = EntIndexToHScript(attacker_index)
-		
+
 		if attacker then
 			if attacker:HasItemInInventory("item_ice_staff") then
 				damageTable = ice_staff_calculate_crit(damageTable)
 			end
 		end
-    end
+	end
 
-	
 	return true
 end
 
@@ -355,7 +354,7 @@ function AOHGameMode:OnEntityKilled(event)
 		local tombstone = SpawnEntityFromTableSynchronous("dota_item_tombstone_drop", {})
 		tombstone:SetContainedItem(newItem)
 		tombstone:SetAngles(0, RandomFloat(0, 360), 0)
-		FindClearSpaceForUnit(tombstone, killedUnit:GetAbsOrigin(), true)	
+		FindClearSpaceForUnit(tombstone, killedUnit:GetAbsOrigin(), true)
 	end
 end
 
