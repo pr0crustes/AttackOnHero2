@@ -190,3 +190,16 @@ function removed_expired_items(timeout)
 		end
 	end
 end
+
+
+function create_ressurection_tombstone(unit)
+	local tombstone_item = CreateItem("item_tombstone", unit, unit)
+	tombstone_item:SetPurchaseTime(0)
+	tombstone_item:SetPurchaser(unit)
+
+	local tombstone = SpawnEntityFromTableSynchronous("dota_item_tombstone_drop", {})
+	tombstone:SetContainedItem(tombstone_item)
+	tombstone:SetAngles(0, RandomFloat(0, 360), 0)
+
+	FindClearSpaceForUnit(tombstone, unit:GetAbsOrigin(), true)
+end
