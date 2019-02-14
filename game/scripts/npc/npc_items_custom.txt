@@ -175,6 +175,7 @@
 "item_flask"
 {
     "ItemCost"						"100"
+    "ItemShareability"				"ITEM_FULLY_SHAREABLE"
 }
 "item_guardian_greaves"
 {
