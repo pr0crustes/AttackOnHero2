@@ -141,3 +141,16 @@ function refresh_players()
 		end
 	end
 end
+
+
+function are_all_heroes_dead()
+	for playerID = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
+		if PlayerResource:HasSelectedHero(playerID) then
+			local hero = PlayerResource:GetSelectedHeroEntity(playerID)
+			if hero and hero:IsAlive() then
+				return false
+			end
+		end
+	end
+	return true
+end

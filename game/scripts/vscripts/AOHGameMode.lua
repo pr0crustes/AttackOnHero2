@@ -176,28 +176,14 @@ end
 
 
 function AOHGameMode:_CheckForDefeat()
-	if GameRules:State_Get() ~= DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
-		return
-	end
-
-
-	local bAllPlayersDead = true
-	for nPlayerID = 0, DOTA_MAX_TEAM_PLAYERS-1 do
-		if PlayerResource:GetTeam(nPlayerID) == DOTA_TEAM_GOODGUYS then
-			if not PlayerResource:HasSelectedHero(nPlayerID) then
-				bAllPlayersDead = false
-			else
-				local hero = PlayerResource:GetSelectedHeroEntity(nPlayerID)
-				if hero and hero:IsAlive() then
-					bAllPlayersDead = false
-				end
+	if GameRules:State_Get() == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
+		if self._entAncient and self._entAncient:IsAlive() then
+			if are_all_heroes_dead() then
+				self._entAncient:ForceKill(false)
 			end
+		else
+			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 		end
-	end
-
-	if bAllPlayersDead or not self._entAncient or self._entAncient:GetHealth() <= 0 then
-		GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
-		--GameRules:MakeTeamLose(DOTA_TEAM_GOODGUYS)
 	end
 end
 
