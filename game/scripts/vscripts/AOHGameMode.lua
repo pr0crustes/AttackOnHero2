@@ -67,7 +67,7 @@ end
 
 
 function AOHGameMode:AtRoundStart()
-	local cost = 230 * self._nRoundNumber
+	local cost = 250 * self._nRoundNumber
 	
 	print("zzzzzzzzzzzzzzzzzzzzz")
 
