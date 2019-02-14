@@ -1,0 +1,77 @@
+"npc_boss_bounty_hunter"
+{
+    "Model"						"models/heroes/bounty_hunter/bounty_hunter.vmdl"
+    "SoundSet"					"Hero_BountyHunter"
+    "BaseClass"					"npc_dota_creature"
+    
+    "ModelScale"				"2.0"
+    "Level"						"45"
+    "ConsideredHero"			"1"
+    "CanBeDominated"			"0"
+    "HasInventory"				"1"
+
+    "Ability1"					"custom_shuriken_toss"
+    "Ability2"                  "custom_track"
+    "Ability3"                  "custom_hunter_combo"
+
+    "ArmorPhysical"				"55"
+    "MagicalResistance"			"30"
+    "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageMin"			"1700"
+    "AttackDamageMax"			"2100"
+    "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+    "AttackRate"				"0.9"
+    "AttackAnimationPoint"		"0.39"
+    "AttackAcquisitionRange"	"1600"
+    "AttackRange"				"260"
+    "ProjectileModel"			""
+    "ProjectileSpeed"			""
+    "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+    "BountyXP"					"0"
+    "BountyGoldMin"				"100"
+    "BountyGoldMax"				"100"
+    "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+    "RingRadius"				"160"
+    "HealthBarOffset"			"340"
+    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"				"500"
+    "MovementTurnRate"			"0.5"
+    "StatusHealth"				"350000"
+    "StatusHealthRegen"			"50"
+    "StatusMana"				"3200"
+    "StatusManaRegen"			"100"
+    "TeamName"					"DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "VisionDaytimeRange"		"1600"
+    "VisionNighttimeRange"		"1600"
+
+    "Creature"
+    {
+        "DisableResistance"          "60.0"
+        "OffensiveAbilities"
+        {
+            "Ability3"
+            {
+                "Name"				"custom_hunter_combo"
+            }
+        }
+
+        "EquippedItems"
+        {
+            "Ultimate Scepter"      { "Item"        "item_ultimate_scepter" }
+        }
+
+        "AttachWearables"
+        {
+            "1" { "ItemDef"     "50"   }
+            "2" { "ItemDef"     "51"   }
+            "3" { "ItemDef"     "8009" }
+            "4" { "ItemDef"     "53"   }
+            "5" { "ItemDef"     "54"   }
+            "6" { "ItemDef"     "55"   }
+            "7" { "ItemDef"     "564"  }
+        }
+    }
+}

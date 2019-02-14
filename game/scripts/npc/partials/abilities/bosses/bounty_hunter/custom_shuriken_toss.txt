@@ -1,0 +1,52 @@
+"custom_shuriken_toss"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "bounty_hunter_shuriken_toss"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilitySound"					"Hero_BountyHunter.Shuriken"
+
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityCastRange"				"6000"
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"0"
+    "AbilityManaCost"				"0"
+
+    "AbilityModifierSupportValue"	"0.1"
+
+    "HasScepterUpgrade"				"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"200"
+            "LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_2"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "speed"					"1000"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bounce_aoe"			"3000"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "ministun"			    "0.2"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "scepter_ministun"		"0.2"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+}
