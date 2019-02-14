@@ -14,7 +14,6 @@ require("AOHGameRound")
 require("AOHSpawner")
 require("lib/my")
 require("lib/atr_fix")
-require("lib/callbacks")
 require("lib/timers")
 require("lib/ai")
 require("lib/chat_handler")
@@ -54,6 +53,7 @@ function AOHGameMode:InitGameMode()
 	GameRules:GetGameModeEntity():SetRemoveIllusionsOnDeath(true)
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesOverride(true)
 	GameRules:GetGameModeEntity():SetTopBarTeamValuesVisible(false)
+	GameRules:GetGameModeEntity():SetCustomBuybackCostEnabled(true)
 
 	ListenToGameEvent("npc_spawned", Dynamic_Wrap(AOHGameMode, 'OnEntitySpawned'), self)
 	ListenToGameEvent("entity_killed", Dynamic_Wrap(AOHGameMode, 'OnEntityKilled'), self)
@@ -62,25 +62,25 @@ function AOHGameMode:InitGameMode()
 
 	GameRules:GetGameModeEntity():SetThink("OnThink", self, 0.25)
 
-	GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(AOHGameMode, "OnExecuteOrder"), self)
 	GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(AOHGameMode, 'OnDamageDealt'), self)
 end
 
 
-function AOHGameMode:OnExecuteOrder(keys)
-	local order = keys.order_type
+function AOHGameMode:AtRoundStart()
+	local cost = 230 * self._nRoundNumber
+	
+	print("zzzzzzzzzzzzzzzzzzzzz")
 
-	if order == DOTA_UNIT_ORDER_GLYPH then
-		Timers:CreateTimer(
-			1.0,
-			function()
-				GlyphStartCallback:_CallCallbacks(self._currentRound)
-			end
-		)
-	end
-
-	return true
+    for playerID = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
+        if PlayerResource:HasSelectedHero(playerID) then
+            local hero = PlayerResource:GetSelectedHeroEntity(playerID)
+            if hero then
+                PlayerResource:SetCustomBuybackCost(playerID, cost)
+            end
+        end
+    end
 end
+
 
 
 function AOHGameMode:OnDamageDealt(damageTable)
@@ -277,7 +277,7 @@ function AOHGameMode:_ThinkPrepTime()
 		GameRules.GLOBAL_roundNumber = self._nRoundNumber  -- Set a global.
 		self._currentRound = self._vRounds[self._nRoundNumber]
 		self._currentRound:Begin()
-		RoundStartCallback:_CallCallbacks(self._currentRound)
+		self:AtRoundStart()
 		return
 	end
 
