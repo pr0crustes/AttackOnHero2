@@ -14,6 +14,9 @@
     "precache"
     {
         "particle_folder"		"particles/units/heroes/hero_kunkka"
+        "particle"              "particles/units/heroes/hero_kunkka/kunkka_ghost_ship.vpcf"
+        "particle"              "particles/units/heroes/hero_kunkka/kunkka_ghost_ship_model.vpcf"
+        "model"                 "models/heroes/kunkka/ghostship.vmdl"
     }
 
     "Ability1"					"custom_torrent"
