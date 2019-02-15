@@ -28,27 +28,29 @@ function modifier_riki_custom_dagger:IsPurgable()
 end
 
 
-function modifier_riki_custom_dagger:DeclareFunctions()
-    local funcs = {
-		MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
-	}
-	return funcs
-end
-
-
-function modifier_riki_custom_dagger:GetModifierPreAttack_BonusDamage(keys)
-    local ability = self:GetAbility()
-    local parent = self:GetParent()
-
-    local agi_multiplier = ability:GetSpecialValueFor("agi_multiplier")
-
-    local talent = parent:FindAbilityByName("riki_custom_bonus_unique_1")
-
-    if talent and talent:GetLevel() > 0 then
-        agi_multiplier = agi_multiplier + 0.3
+if IsServer() then
+    function modifier_riki_custom_dagger:DeclareFunctions()
+        local funcs = {
+            MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+        }
+        return funcs
     end
 
-    local damage = parent:GetAgility() * agi_multiplier
 
-    return damage
+    function modifier_riki_custom_dagger:GetModifierPreAttack_BonusDamage(keys)
+        local ability = self:GetAbility()
+        local parent = self:GetParent()
+
+        local agi_multiplier = ability:GetSpecialValueFor("agi_multiplier")
+
+        local talent = parent:FindAbilityByName("riki_custom_bonus_unique_1")
+
+        if talent and talent:GetLevel() > 0 then
+            agi_multiplier = agi_multiplier + talent:GetSpecialValueFor("value")
+        end
+
+        local damage = parent:GetAgility() * agi_multiplier
+
+        return damage
+    end
 end
