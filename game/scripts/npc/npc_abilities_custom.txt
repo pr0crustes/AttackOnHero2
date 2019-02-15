@@ -3373,7 +3373,7 @@
 "custom_summon_ancient_apparition"
 {
     "BaseClass"						"ability_datadriven"
-    "AbilityTextureName"			"morphling_morph"
+    "AbilityTextureName"			"ancient_apparition_ice_blast"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
     "AbilityCooldown"				"20.0"
