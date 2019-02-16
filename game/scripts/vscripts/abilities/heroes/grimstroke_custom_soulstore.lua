@@ -22,7 +22,12 @@ function on_ability_executed(keys)
 
     local max_stack = ability:GetSpecialValueFor("max_stack")
 
-    if ability and not ability:IsItem() and ability:GetCaster() == caster and used_ability ~= ability and get_stack_count(caster, modifier) < max_stack then
+    if used_ability
+        and not used_ability:IsItem()
+        and used_ability:GetCaster() == caster
+        and used_ability ~= ability
+        and get_stack_count(caster, modifier) < max_stack then
+
         increase_modifier(caster, caster, ability, modifier)
     end
 end
@@ -120,5 +125,3 @@ if IsServer() then
         end
     end
 end
-
-
