@@ -871,6 +871,11 @@
 
 "DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff"                 "Nature's Presence"
 "DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff_Description"     "Max Health Increased by %dMODIFIER_PROPERTY_HEALTH_BONUS%."
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature"							"Ink Creature"
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_Description"				"Launches a ink creature that deals damage if the target is an enemy or heal if the target is an ally."
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_Lore"						"Grimstroke holds no sorrow for the downfall of his people. Only for Yaovhi, she who was most dear to him, does he feel even a semblance of longing."
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_damage"				    "DAMAGE:"
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_heal"				        "HEAL:"
 "DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage"							    "Rocket Barrage"
 "DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Description"				    "Launches a rockets at a random nearby enemy periodically, with Gyrocopter attack speed. If Flak Cannon is active, affects all nearby enemies."
 "DOTA_Tooltip_ability_gyrocopter_custom_rocket_barrage_Lore"						"Aurel's new craft has an increased payload for rockets, enhancing their rapid-fire capabilities."

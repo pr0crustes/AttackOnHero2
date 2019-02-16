@@ -86,7 +86,8 @@
 }
 "npc_dota_hero_grimstroke"
 {
-    "Enabled"				"0"
+    "Ability2"              "grimstroke_custom_ink_creature"
+    //"Enabled"				"0"
 }
 "npc_dota_hero_gyrocopter"
 {

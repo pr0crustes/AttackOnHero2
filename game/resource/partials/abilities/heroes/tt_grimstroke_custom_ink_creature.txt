@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature"							"Ink Creature"
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_Description"				"Launches a ink creature that deals damage if the target is an enemy or heal if the target is an ally."
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_Lore"						"Grimstroke holds no sorrow for the downfall of his people. Only for Yaovhi, she who was most dear to him, does he feel even a semblance of longing."
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_damage"				    "DAMAGE:"
+"DOTA_Tooltip_ability_grimstroke_custom_ink_creature_heal"				        "HEAL:"
