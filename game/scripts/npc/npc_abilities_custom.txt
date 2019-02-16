@@ -5038,6 +5038,67 @@
         }
     }
 }
+"grimstroke_dark_artistry"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "damage"					    "200 310 420 530"
+            "LinkedSpecialBonus"		    "special_bonus_unique_grimstroke_2"
+            "LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+        }
+        "05"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "bonus_damage_per_target"	    "50 100 150 200"
+            "LinkedSpecialBonus"		    "special_bonus_unique_grimstroke_2"
+            "LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+        }
+    }
+}
+"grimstroke_spirit_walk"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "buff_duration"			"3.0 4.0 5.0 6.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "movespeed_bonus_pct"	"14 18 22 26"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_damage"			"100"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "max_stun"				"1.0"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_tick"		"20 30 40 50"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "tick_rate"				"0.2"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tick_dps_tooltip"		"100 150 200 250"
+        }
+    }
+}	
 "gyrocopter_call_down"
 {
     "AbilityCooldown"				"50 45 40"
@@ -8197,7 +8258,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"		        "130 270 410 530"
+            "damage"		        "140 280 420 660"
         }
         "02"
         {
