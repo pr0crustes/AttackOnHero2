@@ -1,8 +1,0 @@
-"DOTA_Tooltip_Ability_shadow_demon_custom_stop"						"Stop"
-"DOTA_Tooltip_Ability_shadow_demon_custom_stop_Description"			"Shadow Demon stops an ally time, making it invincible but also unable to use spells, items or attack."
-"DOTA_Tooltip_Ability_shadow_demon_custom_stop_duration"            "DURATION:"
-"DOTA_Tooltip_Ability_shadow_demon_custom_stop_lore"				"Give up now."
-
-
-"DOTA_Tooltip_modifier_shadow_demon_custom_stop_buff"               "Stoped"
-"DOTA_Tooltip_modifier_shadow_demon_custom_stop_buff_Description"   "Shadow Demon stoped time for this soul."

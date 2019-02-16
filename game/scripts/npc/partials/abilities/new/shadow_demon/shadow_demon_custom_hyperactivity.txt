@@ -1,0 +1,66 @@
+"shadow_demon_custom_hyperactivity"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"		"shadow_demon_demonic_purge"
+
+    "AbilityCastPoint"			"0.8"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"			"60.0"
+    "AbilityManaCost"			"250 300 350"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"	        "5.0 7.0 10.0"			
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"			"CASTER"
+            "ModifierName"		"modifier_shadow_demon_custom_hyperactivity_buff"
+        }
+        "FireSound"
+        {
+            "Target"		    "CASTER"
+            "EffectName"		"Hero_ShadowDemon.DemonicPurge.Cast"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_shadow_demon_custom_hyperactivity_buff" 
+        {
+            "IsBuff"	        "1"
+            "Duration"          "%duration"
+
+            "OnAbilityExecuted"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"			"abilities/heroes/shadow_demon_custom_hyperactivity.lua"
+                    "Function"				"on_ability_executed"
+                }
+            }
+            
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"				"CASTER"
+                    "EffectName"			"particles/units/heroes/hero_shadow_demon/shadow_demon_demonic_purge_debuff_cloud.vpcf"
+                    "EffectAttachType"		"follow_origin"
+                }
+            }
+        }
+    }
+}
