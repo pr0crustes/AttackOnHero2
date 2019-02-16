@@ -562,6 +562,14 @@
 "DOTA_Tooltip_ability_custom_chaos_meteor"									    "Chaos Meteor"
 "DOTA_Tooltip_ability_custom_chaos_meteor_Description"							"Rubick pulls a flaming meteor from space. Deals 3000 damage."
 
+
+"DOTA_Tooltip_ability_custom_rotational_flames"									"Rotational Flames"
+"DOTA_Tooltip_ability_custom_rotational_flames_Description"					    "When Rubick's health drops bellow %use_at_hp%% , wrath consumes his head, causing Rubick to shoot periodic flames. The flames deal damage based on how far they travelled before hitting an enemy."
+"DOTA_Tooltip_ability_custom_rotational_flames_hp_damage_min"                   "%MIN HP DAMAGE:"
+"DOTA_Tooltip_ability_custom_rotational_flames_hp_damage_max"                   "%MAX HP DAMAGE:"
+"DOTA_Tooltip_ability_custom_rotational_flames_range"                           "RANGE:"
+"DOTA_Tooltip_ability_custom_rotational_flames_velocity"                        "VELOCITY:"
+"DOTA_Tooltip_ability_custom_rotational_flames_rotate"                          "ROTATION ANGLE:"
 "npc_boss_small_slardar"                     "Small Slardar (Boss)"
 
 

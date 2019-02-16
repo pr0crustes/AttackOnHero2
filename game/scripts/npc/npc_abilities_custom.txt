@@ -2646,12 +2646,12 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "hp_damage_max"			"20"
+            "hp_damage_max"			"10"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "hp_damage_min"			"5"
+            "hp_damage_min"			"3"
         }
         "04"
         {
