@@ -23,7 +23,8 @@
     "Ability4"                              "custom_telekinesis"
     "Ability5"								"custom_fade_bolt"
     "Ability6"                              "custom_chaos_meteor"
-    "Ability7"                              "tidehunter_kraken_shell"
+    "Ability7"                              "custom_rotational_flames"
+    "Ability8"                              "tidehunter_kraken_shell"
 
     "ArmorPhysical"                         "60"
     "MagicalResistance"						"25"
