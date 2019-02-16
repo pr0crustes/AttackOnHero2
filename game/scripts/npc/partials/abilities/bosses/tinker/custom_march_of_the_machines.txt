@@ -43,7 +43,7 @@
         "06"
         {
             "var_type"				"FIELD_INTEGER"
-            "machines_per_sec"		"55"
+            "machines_per_sec"		"60"
         }
         "07"
         {

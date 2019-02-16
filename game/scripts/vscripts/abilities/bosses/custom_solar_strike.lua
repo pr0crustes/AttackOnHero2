@@ -69,9 +69,9 @@ local function create_strike(caster, ability, target)
 end
 
 
-function solar_strike_start(event)
-	local caster = event.caster
-	local ability = event.ability
+function solar_strike_start(keys)
+	local caster = keys.caster
+	local ability = keys.ability
 
 	local heroes = ai_alive_heroes()
 	for _, hero in ipairs(heroes) do

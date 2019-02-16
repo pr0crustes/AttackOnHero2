@@ -2044,7 +2044,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_per_hero"		"100"
+            "damage_per_hero"		"120"
         }
         "05"
         {
@@ -2538,33 +2538,22 @@
     "AbilityCastRange"				"5000"
     "AbilityCastPoint"				"0.5"
     "AbilityCooldown"				"8.0"
-    "AbilityChannelTime"			"0.2"
-    "AbilityDamage"					"1100"
+    "AbilityDamage"					"1300"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"
     {
-        "01"
-        {
-            "var_type"				"FIELD_FLOAT"
-            "damage_reduction"		"0.1"
-        }
         "02"
-        {
-            "var_type"				"FIELD_FLOAT"
-            "speed_reduction"		"0.1"
-        }
-        "03"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_width"			"200"
         }
-        "04"
+        "03"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_range"			"5000"
         }
-        "05"
+        "04"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_speed"			"5000"
@@ -3009,7 +2998,7 @@
         "01"
         {
             "var_type"					        "FIELD_INTEGER"
-            "damage"					        "420"
+            "damage"					        "1400"
         }
         "02"
         {
@@ -3180,7 +3169,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_reflection_pct"	"19"
+            "damage_reflection_pct"	"20"
         }
         "02"
         {
@@ -3218,7 +3207,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"840"
+            "damage"				"940"
         }
         "02"
         {
@@ -3228,12 +3217,12 @@
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "dagger_path_duration"	"15.0"
+            "dagger_path_duration"	"8.0"
         }
         "04"
         {
             "var_type"				"FIELD_FLOAT"
-            "hero_path_duration"	"15.0"
+            "hero_path_duration"	"8.0"
         }
         "05"	
         {
@@ -3483,7 +3472,7 @@
         "04"
         {
             "var_type"				    "FIELD_INTEGER"
-            "great_cleave_damage"	    "140"
+            "great_cleave_damage"	    "200"
         }
     }
 }
@@ -3610,7 +3599,7 @@
         "06"
         {
             "var_type"				"FIELD_INTEGER"
-            "machines_per_sec"		"55"
+            "machines_per_sec"		"60"
         }
         "07"
         {
@@ -3785,7 +3774,7 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"200"
+            "damage"				"300"
         }
         "03"
         {

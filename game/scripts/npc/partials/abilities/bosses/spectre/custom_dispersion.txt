@@ -10,7 +10,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_reflection_pct"	"19"
+            "damage_reflection_pct"	"20"
         }
         "02"
         {

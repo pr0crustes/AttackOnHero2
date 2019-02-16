@@ -21,7 +21,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"840"
+            "damage"				"940"
         }
         "02"
         {
@@ -31,12 +31,12 @@
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "dagger_path_duration"	"15.0"
+            "dagger_path_duration"	"8.0"
         }
         "04"
         {
             "var_type"				"FIELD_FLOAT"
-            "hero_path_duration"	"15.0"
+            "hero_path_duration"	"8.0"
         }
         "05"	
         {

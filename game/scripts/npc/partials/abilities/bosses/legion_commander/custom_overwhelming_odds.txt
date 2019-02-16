@@ -29,7 +29,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_per_hero"		"100"
+            "damage_per_hero"		"120"
         }
         "05"
         {

@@ -8,33 +8,22 @@
     "AbilityCastRange"				"5000"
     "AbilityCastPoint"				"0.5"
     "AbilityCooldown"				"8.0"
-    "AbilityChannelTime"			"0.2"
-    "AbilityDamage"					"1100"
+    "AbilityDamage"					"1300"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"
     {
-        "01"
-        {
-            "var_type"				"FIELD_FLOAT"
-            "damage_reduction"		"0.1"
-        }
         "02"
-        {
-            "var_type"				"FIELD_FLOAT"
-            "speed_reduction"		"0.1"
-        }
-        "03"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_width"			"200"
         }
-        "04"
+        "03"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_range"			"5000"
         }
-        "05"
+        "04"
         {
             "var_type"				"FIELD_INTEGER"
             "arrow_speed"			"5000"
