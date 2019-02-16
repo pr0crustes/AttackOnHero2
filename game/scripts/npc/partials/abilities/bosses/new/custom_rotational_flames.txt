@@ -17,6 +17,7 @@
     "precache"
     {
         "particle"                  "particles/custom/rotational_fire.vpcf"
+        "particle"                  "particles/econ/items/rubick/rubick_arcana/rubick_arc_loadout_spell_steal.vpcf"
     }
 
     "AbilitySpecial"
@@ -29,12 +30,12 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "hp_damage_max"			"20"
+            "hp_damage_max"			"10"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "hp_damage_min"			"5"
+            "hp_damage_min"			"3"
         }
         "04"
         {
@@ -53,12 +54,12 @@
         }
         "07"
         {
-            "var_type"				"FIELD_INTEGER"
+            "var_type"				"FIELD_FLOAT"
             "interval_max"			"2.0"
         }
         "08"
         {
-            "var_type"				"FIELD_INTEGER"
+            "var_type"				"FIELD_FLOAT"
             "interval_min"			"0.5"
         }
     }

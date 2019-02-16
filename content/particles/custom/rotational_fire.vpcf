@@ -112,6 +112,21 @@
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_pulse.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_edge.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_wave.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_dust.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_graphic.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_invoker/invoker_deafening_blast_body.vpcf"
+		},
 	]
 	m_controlPointConfigurations = 
 	[

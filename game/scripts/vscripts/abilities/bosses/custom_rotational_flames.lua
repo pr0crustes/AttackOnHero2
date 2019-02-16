@@ -14,6 +14,7 @@ if IsServer() then
 		return "modifier_custom_rotational_flames"
 	end
 
+
 	function custom_rotational_flames:OnProjectileHit(target)
 		local caster = self:GetCaster()
 		if target then
@@ -54,6 +55,7 @@ end
 if IsServer() then
 	function modifier_custom_rotational_flames:SetIntervalThink()
 		local parent = self:GetParent()
+
 		local parent_hp_pct = parent:GetHealthPercent()
 
 		local interval = (parent_hp_pct / self.use_at_hp) * self.interval_max
@@ -85,7 +87,7 @@ if IsServer() then
         local ability = self:GetAbility()
 		local parent = self:GetParent()
 		
-		if parent:GetHealthPercent() <= self.use_at_hp and not parent:HasModifier("modifier_juggernaut_omnislash") then
+		if parent:IsAlive() and parent:GetHealthPercent() <= self.use_at_hp and not parent:HasModifier("modifier_juggernaut_omnislash") then
 
 			local parent_pos = parent:GetAbsOrigin()
 
