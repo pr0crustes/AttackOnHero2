@@ -8287,7 +8287,7 @@
         }
     }
 }
-"grimstroke_custom_soullink"
+"grimstroke_custom_soulstore"
 {
     "BaseClass"					    "ability_datadriven"
 
@@ -8318,17 +8318,27 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal"		            "100 150 200"
+            "heal"		            "100 125 175"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "damage"		        "150 200 250"
+            "damage"		        "125 160 200"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
             "max_stack"		        "20"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"		        "1.0"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "interval"		        "0.1"
         }
     }
 
@@ -8336,20 +8346,15 @@
     {
         "RunScript"
         {
-            "ScriptFile"			"abilities/heroes/grimstroke_custom_soullink.lua"
-            "Function"				"cast_grimstroke_custom_soullink"
-            "modifier"              "modifier_grimstroke_custom_soullink_hud"
-        }
-        "ApplyModifier"
-        {
-            "Target"			    "TARGET"
-            "ModifierName"		    "modifier_grimstroke_custom_soullink_effect"
+            "ScriptFile"			"abilities/heroes/grimstroke_custom_soulstore.lua"
+            "Function"				"cast_grimstroke_custom_soulstore"
+            "modifier"              "modifier_grimstroke_custom_soulstore_hud"
         }
     }
 
     "Modifiers"
     {
-        "modifier_grimstroke_custom_soullink"
+        "modifier_grimstroke_custom_soulstore"
         {
             "Passive"						"1"
             "IsHidden"						"1"
@@ -8358,29 +8363,14 @@
             {
                 "RunScript"
                 {
-                    "ScriptFile"			"abilities/heroes/grimstroke_custom_soullink.lua"
+                    "ScriptFile"			"abilities/heroes/grimstroke_custom_soulstore.lua"
                     "Function"				"on_ability_executed"
-                    "modifier"              "modifier_grimstroke_custom_soullink_hud"
+                    "modifier"              "modifier_grimstroke_custom_soulstore_hud"
                 }
             }
         }
 
-        "modifier_grimstroke_custom_soullink_effect"
-        {
-            "IsHidden"                      "1"
-            "Duration"                      "2.0"
-            "OnCreated"
-            {
-                "AttachEffect"
-                {
-                    "EffectName"		    "particles/units/heroes/hero_grimstroke/grimstroke_soulchain_debuff.vpcf"
-                    "EffectAttachType"	    "follow_origin"
-                    "Target"			    "TARGET"
-                }
-            }
-        }
-
-        "modifier_grimstroke_custom_soullink_hud"
+        "modifier_grimstroke_custom_soulstore_hud"
         {
             "IsBuff"                        "1"
         }
