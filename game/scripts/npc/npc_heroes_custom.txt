@@ -87,6 +87,7 @@
 "npc_dota_hero_grimstroke"
 {
     "Ability2"              "grimstroke_custom_ink_creature"
+    "Ability6"              "grimstroke_custom_soullink"
     //"Enabled"				"0"
 }
 "npc_dota_hero_gyrocopter"
