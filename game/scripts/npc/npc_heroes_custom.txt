@@ -68,6 +68,11 @@
     "Ability15"		"special_bonus_hp_regen_20"
     "Ability16"		"special_bonus_strength_30"
 }
+"npc_dota_hero_enchantress"
+{
+    "Ability2"		"enchantress_custom_nature_mastery"
+    "Ability15"		"special_bonus_magic_resistance_10"
+}
 "npc_dota_hero_enigma"
 {
     "Ability2"		"enigma_custom_dark_presence"

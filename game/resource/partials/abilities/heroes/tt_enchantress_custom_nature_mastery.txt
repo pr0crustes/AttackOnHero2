@@ -1,0 +1,5 @@
+"DOTA_Tooltip_Ability_enchantress_custom_nature_mastery"						"Nature Mastery"
+"DOTA_Tooltip_Ability_enchantress_custom_nature_mastery_Description"			"Passively increases your attack speed. If toggled, instead of attack speed, attack range is increased."
+"DOTA_Tooltip_Ability_enchantress_custom_nature_mastery_Lore"				    "A true steward of the forest, Aiushtha befriends all within it - from lowly trolls to powerful centaurs."
+"DOTA_Tooltip_Ability_enchantress_custom_nature_mastery_bonus_attack_speed"     "BONUS ATTACK SPEED:"
+"DOTA_Tooltip_Ability_enchantress_custom_nature_mastery_bonus_range"		    "BONUS ATTACK RANGE:"

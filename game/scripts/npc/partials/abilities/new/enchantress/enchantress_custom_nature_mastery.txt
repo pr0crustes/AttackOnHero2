@@ -1,0 +1,26 @@
+"enchantress_custom_nature_mastery"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/heroes/enchantress_custom_nature_mastery.lua"
+
+    "AbilityTextureName"            "enchantress_enchant"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+
+    "AbilityCooldown"               "0.3"
+    "HasInnateModifiers"			"1"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"    "30 50 70 90"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_range"		    "50 100 150 200"
+        }
+    }
+}
