@@ -1,0 +1,51 @@
+"item_recipe_refined_aether_lens"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_aether_lens"
+
+    "ItemCost"						"600"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_refined_aether_lens"
+    "ItemRequirements"
+    {
+        "01"						"item_aether_lens;item_void_stone"
+    }
+}
+
+
+
+"item_refined_aether_lens"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_aether_lens"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityTextureName"			"refined_aether_lens"
+
+    "ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"aether lens"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"650"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bonus_mana_regen"		"5.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "cast_range_bonus"		"600"
+        }
+    }
+}
