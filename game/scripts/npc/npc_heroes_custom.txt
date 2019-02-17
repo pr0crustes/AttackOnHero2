@@ -225,7 +225,12 @@
 }
 "npc_dota_hero_shadow_demon"
 {
+    "Ability2"		"shadow_demon_custom_soul_catcher"
     "Ability6"		"shadow_demon_custom_hyperactivity"
+    "Ability10"		"special_bonus_spell_lifesteal_10"
+    "Ability14"		"special_bonus_cast_range_175"
+    "Ability16"		"special_bonus_hp_600"
+    "Ability17"		"special_bonus_spell_amplify_12"
 }
 "npc_dota_hero_silencer"
 {

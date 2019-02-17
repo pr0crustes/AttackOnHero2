@@ -1,0 +1,59 @@
+"shadow_demon_custom_soul_catcher"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+    "AbilityTextureName"		    "shadow_demon_soul_catcher"
+
+    "AbilityCastRange"              "900"
+    "AbilityCastPoint"				"0.2"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
+    
+    "AbilityCooldown"				"25 20 15 12"
+
+    "AbilityManaCost"				"130 140 150 160"
+
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_shadow_demon/shadow_demon_soul_catcher_debuff.vpcf"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"		        "200 300 400 500"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"		        "3.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "interval"		        "0.1"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		    "abilities/heroes/shadow_demon_custom_soul_catcher.lua"
+            "Function"			    "cast_shadow_demon_custom_soul_catcher"
+            "Target"			    "TARGET"
+        }
+        "FireSound"
+        {
+            "Target"			    "CASTER"
+            "EffectName"		    "Hero_ShadowDemon.Soul_Catcher.Cast"
+        }
+    }
+}

@@ -1044,6 +1044,15 @@
 
 "DOTA_Tooltip_modifier_shadow_demon_custom_hyperactivity_buff"                  "Hyperactivity"
 "DOTA_Tooltip_modifier_shadow_demon_custom_hyperactivity_buff_Description"      "All cooldown reduced."
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher"						    "Soul Catcher"
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_Description"			    "Catches the soul of a target, causing it to take damage over time. Multiple instances stacks."
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_duration"                "DURATION:"
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_damage"                  "TOTAL DAMAGE:"
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_lore"				    "Trying to resist the Shadow Demon's corruption is mostly a useless endeavor."
+
+
+"DOTA_Tooltip_modifier_shadow_demon_custom_soul_catcher_buff"                   "Soul Catcher"
+"DOTA_Tooltip_modifier_shadow_demon_custom_soul_catcher_buff_Description"       "Taking damage over time."
 "DOTA_Tooltip_Ability_silencer_custom_read_book"						"Read a Book"
 "DOTA_Tooltip_Ability_silencer_custom_read_book_Description"			"Silencer stops and reads a book, multiplying his own intellect for a while."
 "DOTA_Tooltip_Ability_silencer_custom_read_book_multiplier"             "INT MULTIPLIER:"
