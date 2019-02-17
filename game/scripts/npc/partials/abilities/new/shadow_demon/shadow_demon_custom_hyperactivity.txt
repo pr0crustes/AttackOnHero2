@@ -18,10 +18,15 @@
         "01"
         {
             "var_type"			"FIELD_FLOAT"
-            "duration"	        "5.0 7.0 10.0"			
+            "duration"	        "7.0"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "cooldown"	        "1.0 0.7 0.4"
         }
     }
-    
+
     "OnSpellStart"
     {
         "ApplyModifier"
@@ -38,7 +43,7 @@
 
     "Modifiers"
     {
-        "modifier_shadow_demon_custom_hyperactivity_buff" 
+        "modifier_shadow_demon_custom_hyperactivity_buff"
         {
             "IsBuff"	        "1"
             "Duration"          "%duration"
@@ -51,7 +56,7 @@
                     "Function"				"on_ability_executed"
                 }
             }
-            
+
             "OnCreated"
             {
                 "AttachEffect"
