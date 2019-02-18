@@ -5,7 +5,7 @@
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
 
-    "ItemCost"						"1100"
+    "ItemCost"						"800"
     "ItemShopTags"					""
 
     "ItemRecipe"					"1"

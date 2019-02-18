@@ -3892,7 +3892,7 @@
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
 
-    "ItemCost"						"300"	
+    "ItemCost"						"500"	
     "ItemShopTags"					""
 
     "ItemRecipe"					"1"
@@ -3952,7 +3952,7 @@
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
 
-    "ItemCost"						"1100"
+    "ItemCost"						"800"
     "ItemShopTags"					""
 
     "ItemRecipe"					"1"
