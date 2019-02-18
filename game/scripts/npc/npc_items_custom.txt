@@ -4,6 +4,29 @@
 	// Balance changes.
 	// New items.
 	
+"item_abyssal_blade"
+{
+    "AbilityCooldown"				"40"
+
+    "AbilitySpecial"
+    {
+        "10"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bash_duration"			"1.0"
+        }
+        "12"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_chance_damage"	"250"
+        }
+        "13"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stun_duration"			"5.0"
+        }
+    }
+}
 "item_basher"
 {
     "AbilityCooldown"				"3.5"
