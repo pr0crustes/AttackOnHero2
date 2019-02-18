@@ -2,11 +2,26 @@
 {
     "AbilitySpecial"
     {
+        "05"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "frostbite_duration"	        "10"
+        }
+        "06"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "dot_damage"			        "100.0 150.0 200.0"
+        }
         "08"
         {	
-            "var_type"				"FIELD_FLOAT"
-            "kill_pct"				"4.0 7.0 10.0"
-            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_5"
+            "var_type"				        "FIELD_FLOAT"
+            "kill_pct"				        "7.0 8.0 9.0"
+            "LinkedSpecialBonus"	        "special_bonus_unique_ancient_apparition_5"
+        }
+        "10"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "frostbite_duration_scepter"	"20"
         }
     }
 }

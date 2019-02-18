@@ -1,0 +1,16 @@
+"ancient_apparition_cold_feet"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage"				"70 140 210 280"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stun_duration"			"2.0"
+        }
+    }
+}

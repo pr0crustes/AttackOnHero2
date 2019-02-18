@@ -1,0 +1,17 @@
+"ancient_apparition_chilling_touch"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"90 180 270 360"
+            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_range_bonus"	"80 160 240 320"
+        }
+    }
+}

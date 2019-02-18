@@ -4251,15 +4251,63 @@
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
     "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 }
+"ancient_apparition_chilling_touch"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"90 180 270 360"
+            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_range_bonus"	"80 160 240 320"
+        }
+    }
+}
+"ancient_apparition_cold_feet"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage"				"70 140 210 280"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stun_duration"			"2.0"
+        }
+    }
+}
 "ancient_apparition_ice_blast"
 {
     "AbilitySpecial"
     {
+        "05"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "frostbite_duration"	        "10"
+        }
+        "06"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "dot_damage"			        "100.0 150.0 200.0"
+        }
         "08"
         {	
-            "var_type"				"FIELD_FLOAT"
-            "kill_pct"				"4.0 7.0 10.0"
-            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_5"
+            "var_type"				        "FIELD_FLOAT"
+            "kill_pct"				        "7.0 8.0 9.0"
+            "LinkedSpecialBonus"	        "special_bonus_unique_ancient_apparition_5"
+        }
+        "10"
+        {	
+            "var_type"				        "FIELD_FLOAT"
+            "frostbite_duration_scepter"	"20"
         }
     }
 }
