@@ -12,6 +12,10 @@ end
 
 
 
+item_vampiric_blade_2 = class(item_vampiric_blade)
+
+
+
 modifier_item_vampiric_blade = class({})
 
 

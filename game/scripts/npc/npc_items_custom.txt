@@ -3945,9 +3945,69 @@
         }
     }
 }
-"item_recipe_wicked_locket"
+"item_recipe_vampiric_blade_2"
 {
     "ID"							"70164"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"1100"
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_vampiric_blade_2"
+
+    "ItemRequirements"
+    {
+        "01"						"item_vampiric_blade"
+    }
+}
+
+
+
+"item_vampiric_blade_2"
+{
+    "ID"							"70165"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/vampiric_blade.lua"
+    "AbilityTextureName"		    "vampiric_blade_2"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"lifesteal"
+    "ItemQuality"					"epic"
+
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAliases"					"vampiric"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_bonus"			"60"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_bonus_ranged"	"25"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal"			        "60"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal_ranged"	        "15"
+        }
+    }
+}
+"item_recipe_wicked_locket"
+{
+    "ID"							"70166"
     "BaseClass"                     "item_recipe_holy_locket"
 
     "ItemCost"						"550"	
@@ -3965,7 +4025,7 @@
 
 "item_wicked_locket"
 {
-    "ID"							"70165"
+    "ID"							"70167"
     "BaseClass"                     "item_holy_locket"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
@@ -4006,7 +4066,7 @@
 }
 "item_dev_dagon"
 {
-    "ID"							"70166"
+    "ID"							"70168"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -4059,7 +4119,7 @@
 }
 "item_dev_heart"
 {
-    "ID"							"70167"
+    "ID"							"70169"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "item_heart"
