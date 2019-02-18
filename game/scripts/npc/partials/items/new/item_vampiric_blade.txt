@@ -1,0 +1,60 @@
+"item_recipe_vampiric_blade"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"300"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_vampiric_blade"
+
+    "ItemRequirements"
+    {
+        "01"						"item_quelling_blade;item_lifesteal"
+    }
+}
+
+
+
+"item_vampiric_blade"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/vampiric_blade.lua"
+    "AbilityTextureName"		    "vampiric_blade"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"lifesteal"
+    "ItemQuality"					"rare"
+
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAliases"					"vampiric"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_bonus"			"40"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_bonus_ranged"	"20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal"			        "40"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal_ranged"	        "10"
+        }
+    }
+}
