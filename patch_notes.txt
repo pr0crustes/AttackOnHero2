@@ -5,7 +5,9 @@
 
     Lone Druid Spirit Bear: Base Attack time increased by "0.2".
 
-
+    Antimage Mana Break: Mana per hit increased from "28 40 52 64" to "20 40 60 80".
+    Antimage Blink: Cooldown decreased from "15 12 9 6" to "10 8 6 4", manacost increased from "60" to "60 80 100 120".
+    Antimage Mana Void: Cooldown decreased from "70.0 70.0 70.0" to "35.0 30.0 25.0".
 
 2.0.1:
     With this update:

@@ -4311,6 +4311,27 @@
         }
     }
 }
+"antimage_blink"
+{
+    "AbilityCooldown"				"10 8 6 4"
+
+    "AbilityManaCost"				"60 80 100 120"
+}
+"antimage_mana_break"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_per_hit"			"20 40 60 80"
+        }
+    }
+}
+"antimage_mana_void"
+{
+    "AbilityCooldown"				        "35.0 30.0 25.0"
+}
 "bane_brain_sap"
 {
     "AbilityManaCost"				        "100 130 160 190"

@@ -1,0 +1,4 @@
+"antimage_mana_void"
+{
+    "AbilityCooldown"				        "35.0 30.0 25.0"
+}

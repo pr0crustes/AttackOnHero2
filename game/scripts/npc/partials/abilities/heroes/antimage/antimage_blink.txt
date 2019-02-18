@@ -1,0 +1,6 @@
+"antimage_blink"
+{
+    "AbilityCooldown"				"10 8 6 4"
+
+    "AbilityManaCost"				"60 80 100 120"
+}
