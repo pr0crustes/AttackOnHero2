@@ -5949,7 +5949,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "mana_pool_damage_pct"	"5 6 6.5 7"
+            "mana_pool_damage_pct"	"4 5 6 7"
         }
         "02"
         {
@@ -5960,9 +5960,10 @@
         {
             "var_type"				"FIELD_FLOAT"
             "int_steal_duration"	"0"
+            "LinkedSpecialBonus"	"special_bonus_unique_outworld_devourer"
         }
     }
-}	
+}
 "ogre_magi_bloodlust"
 {
     "AbilitySpecial"
