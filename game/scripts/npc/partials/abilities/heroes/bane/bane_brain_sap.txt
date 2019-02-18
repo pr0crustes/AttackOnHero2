@@ -1,0 +1,21 @@
+"bane_brain_sap"
+{
+    "AbilityManaCost"				        "100 130 160 190"
+
+    
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "brain_sap_damage"				"150 300 600 1000"
+            "LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "tooltip_brain_sap_heal_amt"	"150 300 600 1000"
+            "LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+        }
+    }
+}

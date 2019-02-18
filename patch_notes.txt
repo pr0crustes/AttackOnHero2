@@ -13,3 +13,7 @@
     Changes to Puck Waning Rift: Silence reduced from "2.0 2.5 3.0 3.5" to always "0.1", damage increased from "100 160 220 280" to "200 300 400 500".
     Replaced Puck Ultimate.
 
+    Changes to Bane Enfeeble: Status Resistance Decrease decreased from "36 44 52 60" to "10 15 20 25".
+    Changes to Bane Brain Sap: Mana Cost increased from "90 115 140 165" to "100 130 160 190", damage increased from "75 150 225 300" to "150 300 600 1000".
+    Changes to Bane Nightmare: Duration reduced from "4.0 5.0 6.0 7.0" to "3.0 4.0 5.0 6.0".
+    Changes to Bane Friends Grip: Cooldown reduced from "120 110 100" to "110 100 90", damage increased from "100 155 215" to "300 500 800".

@@ -1,0 +1,13 @@
+"bane_nightmare"
+{
+    "AbilityDuration"		"3.0 4.0 5.0 6.0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"		"FIELD_FLOAT"
+            "duration"		"3.0 4.0 5.0 6.0"
+        }
+    }
+}

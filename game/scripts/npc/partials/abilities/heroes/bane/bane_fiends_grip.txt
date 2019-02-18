@@ -1,0 +1,13 @@
+"bane_fiends_grip"
+{
+    "AbilityCooldown"				        "110 100 90"
+	
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "fiend_grip_damage"				"300 500 800"
+        }
+    }
+}
