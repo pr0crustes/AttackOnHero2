@@ -37,6 +37,8 @@
     "StatusHealth"				"2000"
     "StatusHealthRegen"			"10"
 
+    "AttackRate"				"1.50"
+
     "ArmorPhysical"				"5"
 
     "VisionDaytimeRange"		"300"
@@ -46,6 +48,8 @@
 {
     "StatusHealth"				"3000"
     "StatusHealthRegen"			"15"
+
+    "AttackRate"				"1.40"
 
     "ArmorPhysical"				"10"
 
@@ -57,6 +61,8 @@
     "StatusHealth"				"4000"
     "StatusHealthRegen"			"20"
 
+    "AttackRate"				"1.30"
+
     "ArmorPhysical"				"15"
 
     "VisionDaytimeRange"		"300"
@@ -66,6 +72,8 @@
 {
     "StatusHealth"				"5000"
     "StatusHealthRegen"			"25"
+
+    "AttackRate"				"1.20"
 
     "ArmorPhysical"				"20"
 

@@ -1,5 +1,12 @@
 
 
+2.0.2:
+    With this update:
+
+    Lone Druid Spirit Bear: Base Attack time increased by "0.2".
+
+
+
 2.0.1:
     With this update:
 

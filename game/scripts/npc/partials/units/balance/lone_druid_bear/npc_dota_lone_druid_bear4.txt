@@ -3,6 +3,8 @@
     "StatusHealth"				"5000"
     "StatusHealthRegen"			"25"
 
+    "AttackRate"				"1.20"
+
     "ArmorPhysical"				"20"
 
     "VisionDaytimeRange"		"300"
