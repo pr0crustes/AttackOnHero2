@@ -39,6 +39,7 @@ class Processor(object):
 
         if content.count("{") != content.count("}") or content.count("\"") % 2 != 0:
             print(f"File {file_name} is imbalanced.")
+            exit(1)
 
         if not content.endswith("\n"):
             content += "\n"
