@@ -1,0 +1,30 @@
+"item_butterfly"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+    
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_agility"			"35 60"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"25 60"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_evasion"			"20 30"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"30 60"
+        }
+    }
+}

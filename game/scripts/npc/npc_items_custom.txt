@@ -138,6 +138,36 @@
         }
     }
 }
+"item_butterfly"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+    
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_agility"			"35 60"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"25 60"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_evasion"			"20 30"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"30 60"
+        }
+    }
+}
 "item_courier"
 {
 	"ItemCost"						"0"
@@ -3480,27 +3510,30 @@
     "ItemAliases"					"bfly;butterfly"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_agility"			"60"
+            "bonus_agility"			"35 60"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"60"
+            "bonus_damage"			"25 60"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_evasion"			"40"
+            "bonus_evasion"			"20 30"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_attack_speed"	"60"
+            "bonus_attack_speed"	"30 60"
         }
     }
 }
