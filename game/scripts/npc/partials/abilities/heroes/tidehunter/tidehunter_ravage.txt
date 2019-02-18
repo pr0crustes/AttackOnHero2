@@ -1,0 +1,6 @@
+"tidehunter_ravage"
+{
+    "AbilityCooldown"				"100.0 95.0 90.0"
+
+    "AbilityDamage"					"700 1400 2100"
+}

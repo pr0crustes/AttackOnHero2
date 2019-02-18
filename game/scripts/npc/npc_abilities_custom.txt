@@ -6820,6 +6820,64 @@
         }	
     }
 }
+"tidehunter_anchor_smash"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_damage"			"90 180 270 360"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_reduction"		"-5 -8 -12 -15"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter_3"
+        }
+    }
+}
+"tidehunter_gush"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "gush_damage"		    "130 260 390 420"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "negative_armor"		"2 3 4 5"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
+        }
+        "07"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "cooldown_scepter"		"3"
+        }
+    }
+}
+"tidehunter_kraken_shell"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_reduction"		"20 40 60 80"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter_4"
+        }
+    }
+}
+"tidehunter_ravage"
+{
+    "AbilityCooldown"				"100.0 95.0 90.0"
+
+    "AbilityDamage"					"700 1400 2100"
+}
 "tinker_laser"
 {
     "AbilitySpecial"

@@ -1,0 +1,12 @@
+"tidehunter_kraken_shell"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_reduction"		"20 40 60 80"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter_4"
+        }
+    }
+}

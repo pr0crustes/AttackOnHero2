@@ -1,0 +1,23 @@
+"tidehunter_gush"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "gush_damage"		    "130 260 390 420"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter_2"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "negative_armor"		"2 3 4 5"
+            "LinkedSpecialBonus"	"special_bonus_unique_tidehunter"
+        }
+        "07"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "cooldown_scepter"		"3"
+        }
+    }
+}
