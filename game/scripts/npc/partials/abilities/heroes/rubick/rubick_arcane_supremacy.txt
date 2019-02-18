@@ -1,0 +1,16 @@
+"rubick_arcane_supremacy"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spell_amp"				"12 18 24 30"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "status_resistance"		"10 16 22 30"
+        }
+    }
+}

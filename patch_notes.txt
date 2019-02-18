@@ -1,0 +1,12 @@
+
+
+2.0.1:
+    With this update:
+
+    New Item: Vampiric Blade.
+    New Item: Wicked Vampiric Blade.
+
+    Changes to Rubick W: Decreased Cooldown, increased damage.
+    Changes to Rubick Arcane Supremacy: Spell amp increased from "14 18 22 26" to "12 18 24 30", status resistance decreased from "20 28 36 44" to "10 16 22 30".
+
+

@@ -6278,6 +6278,59 @@
         }
     }
 }
+"rubick_arcane_supremacy"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spell_amp"				"12 18 24 30"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "status_resistance"		"10 16 22 30"
+        }
+    }
+}
+"rubick_fade_bolt"
+{
+    "AbilityCooldown"				"14 12 10 8"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "damage"					    "120 240 360 480"
+        }
+        "02"
+        {
+            "var_type"					    "FIELD_INTEGER"
+            "jump_damage_reduction_pct"	    "5"
+            "CalculateSpellDamageTooltip"	"0"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "hero_attack_damage_reduction"	"0"
+            "LinkedSpecialBonus"		    "special_bonus_unique_rubick_2"
+            "CalculateSpellDamageTooltip"	"0"
+        }
+        "04"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "creep_attack_damage_reduction"	"20 25 30 35"
+            "CalculateSpellDamageTooltip"	"0"
+        }			
+        "05"
+        {
+            "var_type"					    "FIELD_FLOAT"
+            "duration"					    "4.0"
+        }
+    }
+}
 "rubick_spell_steal"
 {
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
