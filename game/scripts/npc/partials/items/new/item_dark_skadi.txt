@@ -29,32 +29,35 @@
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_all_stats"		"50"
+            "bonus_all_stats"		"25 50"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_health"			"300"
+            "bonus_health"			"225 300"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_mana"			"300"
+            "bonus_mana"			"250 300"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "cold_movement_speed"	"-50"
+            "cold_movement_speed"	"-35 -50"
         }
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "cold_attack_speed"		"-50"
+            "cold_attack_speed"		"-45 -50"
         }
         "06"
         {
