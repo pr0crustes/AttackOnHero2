@@ -1,0 +1,24 @@
+"item_dragon_lance"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_agility"			"12 20"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_strength"		"12 20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_attack_range"		"140 280"
+        }
+    }
+}
