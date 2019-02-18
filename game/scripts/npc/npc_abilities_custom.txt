@@ -6990,23 +6990,24 @@
     {
         "01"
         {
-            "var_type"			"FIELD_INTEGER"
-            "damage_count"		"2 3 4 5"
+            "var_type"			    "FIELD_INTEGER"
+            "damage_count"		    "2 3 4 5"
+            "LinkedSpecialBonus"	"special_bonus_unique_treant"
         }
         "02"
         {
-            "var_type"			"FIELD_INTEGER"
-            "health_regen"		"10 20 30 40"
+            "var_type"			    "FIELD_INTEGER"
+            "health_regen"		    "10 20 30 40"
         }
         "03"
         {
-            "var_type"			"FIELD_INTEGER"
-            "damage_block"		"50 100 150 200"
+            "var_type"			    "FIELD_INTEGER"
+            "damage_block"		    "50 100 150 200"
         }
         "04"
         {
-            "var_type"			"FIELD_FLOAT"
-            "duration"			"6.0"
+            "var_type"			    "FIELD_FLOAT"
+            "duration"			    "6.0"
         }
     }
 }
