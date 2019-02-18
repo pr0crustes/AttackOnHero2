@@ -304,6 +304,11 @@
     "Ability15"		"special_bonus_cooldown_reduction_25"
     "Ability16"		"special_bonus_magic_resistance_20"
 }
+"npc_dota_hero_tidehunter"
+{
+    "Ability13"		"special_bonus_agility_20"
+    "Ability15"		"special_bonus_armor_6"
+}
 "npc_dota_hero_tinker"
 {
     "Ability2"		"tinker_custom_energy_missile"

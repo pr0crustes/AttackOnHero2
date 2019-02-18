@@ -1,0 +1,5 @@
+"npc_dota_hero_tidehunter"
+{
+    "Ability13"		"special_bonus_agility_20"
+    "Ability15"		"special_bonus_armor_6"
+}
