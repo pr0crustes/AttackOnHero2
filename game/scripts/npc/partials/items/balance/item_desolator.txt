@@ -1,11 +1,19 @@
 "item_desolator"
 {
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "1"
+
     "AbilitySpecial"
     {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"50 120 150"
+        }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "corruption_armor"		"-5"
+            "corruption_armor"		"-4 -9 -13"
         }
         "03"
         {

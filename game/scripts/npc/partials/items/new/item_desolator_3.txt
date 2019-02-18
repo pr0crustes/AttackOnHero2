@@ -29,17 +29,20 @@
     "ItemAliases"					"desolator 3"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "3"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"150"
+            "bonus_damage"			"50 120 150"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "corruption_armor"		"-13"
+            "corruption_armor"		"-4 -9 -13"
         }
         "03"
         {
