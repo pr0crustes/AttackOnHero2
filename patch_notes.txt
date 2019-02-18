@@ -10,6 +10,6 @@
     Changes to Rubick Arcane Supremacy: Spell amp increased from "14 18 22 26" to "12 18 24 30", status resistance decreased from "20 28 36 44" to "10 16 22 30".
 
     Changes to Puck Illusory Orb: Cooldown reduced by 1 second, damage increased from "70 140 210 280" to "140 280 560 700".
-    Changes to Puck Waning Rift: Silence reduced from "2.0 2.5 3.0 3.5" to always "0.1", damage increased from "100 160 220 280" to "200 260 330 400".
-
+    Changes to Puck Waning Rift: Silence reduced from "2.0 2.5 3.0 3.5" to always "0.1", damage increased from "100 160 220 280" to "200 300 400 500".
+    Replaced Puck Ultimate.
 

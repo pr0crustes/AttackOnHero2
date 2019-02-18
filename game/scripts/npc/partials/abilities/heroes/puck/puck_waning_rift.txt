@@ -10,7 +10,8 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"			    "200 260 330 400"
+            "damage"			    "200 300 400 500"
+            "LinkedSpecialBonus"	"special_bonus_unique_puck_4"
         }
     }
 }

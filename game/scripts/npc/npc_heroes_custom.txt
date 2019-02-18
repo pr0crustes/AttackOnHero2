@@ -205,6 +205,12 @@
 {
     "Ability10"					"special_bonus_exp_boost_20"
 }
+"npc_dota_hero_puck"
+{
+    "Ability6"		"puck_custom_dream_strike"
+
+    "Ability17"		"special_bonus_intelligence_30"
+}
 "npc_dota_hero_pudge"
 {
     "Ability3"		"pudge_custom_flesh_heap"
