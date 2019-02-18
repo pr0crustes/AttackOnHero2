@@ -6139,6 +6139,28 @@
         }
     }
 }
+"puck_illusory_orb"
+{
+    "AbilityCooldown"				"12 11 10 9"
+
+    "AbilityDamage"					"140 280 560 700"
+}
+"puck_waning_rift"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "silence_duration"		"0.1"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"			    "200 260 330 400"
+        }
+    }
+}
 "pudge_dismember"
 {
     "AbilitySpecial"

@@ -1,0 +1,6 @@
+"puck_illusory_orb"
+{
+    "AbilityCooldown"				"12 11 10 9"
+
+    "AbilityDamage"					"140 280 560 700"
+}

@@ -1,0 +1,16 @@
+"puck_waning_rift"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "silence_duration"		"0.1"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"			    "200 260 330 400"
+        }
+    }
+}
