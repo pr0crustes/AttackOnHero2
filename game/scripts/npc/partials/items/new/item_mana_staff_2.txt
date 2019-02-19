@@ -34,22 +34,25 @@
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
     "ItemAliases"					"mana staff"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_agi"	            "20"
+            "bonus_agi"	            "12 20"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_int" 	        "22"
+            "bonus_int" 	        "18 22"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "mana_steal" 	        "15"
+            "mana_steal" 	        "7 15"
         }
     }
 
