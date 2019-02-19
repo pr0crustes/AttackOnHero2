@@ -34,27 +34,30 @@
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
     "ItemAliases"					"vampiric"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_bonus"			"60"
+            "damage_bonus"			"40 60"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_bonus_ranged"	"25"
+            "damage_bonus_ranged"	"20 25"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal"			        "60"
+            "heal"			        "30 50"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal_ranged"	        "15"
+            "heal_ranged"	        "10 15"
         }
     }
 }
