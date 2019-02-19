@@ -29,12 +29,15 @@
     "ItemShopTags"					"damage;crit"
     "ItemQuality"					"epic"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"140"
+            "bonus_damage"			"80 140"
         }
         "02"
         {
@@ -44,7 +47,12 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "crit_multiplier"		"300"
+            "crit_multiplier"		"235 300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_crit_damage"	"135 200"
         }
     }
 }

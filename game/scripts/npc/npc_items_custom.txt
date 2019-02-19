@@ -401,6 +401,35 @@
     "ItemCost"						"100"
     "ItemShareability"				"ITEM_FULLY_SHAREABLE"
 }
+"item_greater_crit"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"80 140"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance"			"30"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_multiplier"		"235 300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_crit_damage"	"135 200"
+        }
+    }
+}
 "item_guardian_greaves"
 {
     "AbilitySpecial"
@@ -4197,12 +4226,15 @@
     "ItemShopTags"					"damage;crit"
     "ItemQuality"					"epic"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"140"
+            "bonus_damage"			"80 140"
         }
         "02"
         {
@@ -4212,7 +4244,12 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "crit_multiplier"		"300"
+            "crit_multiplier"		"235 300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_crit_damage"	"135 200"
         }
     }
 }

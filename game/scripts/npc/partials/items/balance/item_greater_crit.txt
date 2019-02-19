@@ -1,0 +1,29 @@
+"item_greater_crit"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"80 140"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance"			"30"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_multiplier"		"235 300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "tooltip_crit_damage"	"135 200"
+        }
+    }
+}
