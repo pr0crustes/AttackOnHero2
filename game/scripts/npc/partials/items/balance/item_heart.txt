@@ -1,16 +1,19 @@
 "item_heart"
 {
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "1"
+
 	"AbilitySpecial"
 	{
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_strength"			"30"
+			"bonus_strength"			"30 50 70"
 		}
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_health"				"500"
+			"bonus_health"				"500 900 1100"
 		}
 		"03"
 		{
@@ -20,7 +23,7 @@
 		"04"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"health_regen_rate"			"2"
+			"health_regen_rate"			"2 3 4"
 		}
         "05"
         {

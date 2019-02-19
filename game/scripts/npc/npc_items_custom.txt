@@ -334,17 +334,20 @@
 }
 "item_heart"
 {
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "1"
+
 	"AbilitySpecial"
 	{
 		"01"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_strength"			"30"
+			"bonus_strength"			"30 50 70"
 		}
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_health"				"500"
+			"bonus_health"				"500 900 1100"
 		}
 		"03"
 		{
@@ -354,7 +357,7 @@
 		"04"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"health_regen_rate"			"2"
+			"health_regen_rate"			"2 3 4"
 		}
         "05"
         {
@@ -1831,28 +1834,31 @@
     "ItemAliases"					"heart"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "bonus_strength"		    "55"
-        }
-        "02"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "bonus_health"			    "800"
-        }
-        "03"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "hp_regen_amp"			    "0"
-        }
-        "04"
-        {
-            "var_type"				    "FIELD_FLOAT"
-            "health_regen_rate"		    "3"
-        }
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "2"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_strength"			"30 50 70"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_health"				"500 900 1100"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"hp_regen_amp"				"0"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"health_regen_rate"			"2 3 4"
+		}
         "05"
         {
             "var_type"				    "FIELD_INTEGER"
@@ -1863,7 +1869,7 @@
             "var_type"				    "FIELD_INTEGER"
             "cooldown_ranged_tooltip"	"2"
         }
-    }
+	}
 }
 "item_recipe_great_king_bar"
 {
@@ -3879,28 +3885,31 @@
     "ItemAliases"					"heart"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "bonus_strength"		    "75"
-        }
-        "02"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "bonus_health"			    "1000"
-        }
-        "03"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "hp_regen_amp"			    "0"
-        }
-        "04"
-        {
-            "var_type"				    "FIELD_FLOAT"
-            "health_regen_rate"		    "4"
-        }
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "3"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_strength"			"30 50 70"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_health"				"500 900 1100"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"hp_regen_amp"				"0"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"health_regen_rate"			"2 3 4"
+		}
         "05"
         {
             "var_type"				    "FIELD_INTEGER"
@@ -3911,7 +3920,7 @@
             "var_type"				    "FIELD_INTEGER"
             "cooldown_ranged_tooltip"	"2"
         }
-    }
+	}
 }
 "item_recipe_ultimate_octarine"
 {
