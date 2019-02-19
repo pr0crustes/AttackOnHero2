@@ -1,0 +1,26 @@
+"brewmaster_cinder_brew"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"3"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "self_attack_chance"		"0"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ignite_dps"				"100 200 300 400"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ignite_threshold"			"300"
+        }
+    }
+}

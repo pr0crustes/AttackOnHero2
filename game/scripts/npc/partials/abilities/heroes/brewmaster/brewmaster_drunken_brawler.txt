@@ -1,0 +1,17 @@
+"brewmaster_drunken_brawler"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "dodge_chance"				"40 45 50 55"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_multiplier"			"180 220 260 300"
+            "LinkedSpecialBonus"		"special_bonus_unique_brewmaster_4"
+        }
+    }
+}

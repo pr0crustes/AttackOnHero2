@@ -16,6 +16,10 @@
     Timbersaw Reactive Armor: Bonus armor reescaled from "1 1.1 1.2 1.3" to "0.6 0.7 0.8 0.9", bonus hp regen reescaled from "1 1.1 1.2 1.3" to "0.7 0.8 0.9 1.0", stack limit increased from "6 12 18 24" to "10 20 30 40", duration increased from "10 13 16 19" to "10 20 40 60".
     Timbersaw Chakram: Pass damage increased from "100 140 180" to "200 250 300", dps increased from "50 75 100" to "250 350 550".
 
+    Brewmaster Thunder Clap: Cooldown reduced from "13" to "13 12 11 10", damage increased from "100 175 250 300" to "250 350 450 550".
+    Brewmaster Cinder Brew: Self Attack Chance reduced from "20 25 30 35" to "0", duration reduced from "5" to "3", dps increased from "20 30 40 50" to "100 200 300 400", threshold increased from "80" to "300".
+    Brewmaster Drunken Brawler: Dodge chance reduced from "50 60 70 80" to "40 45 50 55", crit damage increased from "140 180 220 260" to "180 220 260 300".
+
     Abyssal Blade: Cooldown increased from "35.0" t0 "40.0". Active stun duration increased from "2.0" to "5.0". Passive proc stun duration reduced from "1.5" to "1.0". Passive proc damage increased from "100" to "250".
 
     Removed Ultimate Vladmir due to a bug. Buffed Vladmir in compensation.

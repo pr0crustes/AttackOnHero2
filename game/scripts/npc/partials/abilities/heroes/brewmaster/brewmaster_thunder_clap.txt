@@ -1,0 +1,13 @@
+"brewmaster_thunder_clap"
+{
+    "AbilityCooldown"				    "13 12 11 10"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"250 350 450 550"
+        }
+    }
+}

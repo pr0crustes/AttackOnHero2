@@ -4541,6 +4541,62 @@
 
     }
 }
+"brewmaster_cinder_brew"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"3"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "self_attack_chance"		"0"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ignite_dps"				"100 200 300 400"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "ignite_threshold"			"300"
+        }
+    }
+}
+"brewmaster_drunken_brawler"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "dodge_chance"				"40 45 50 55"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_multiplier"			"180 220 260 300"
+            "LinkedSpecialBonus"		"special_bonus_unique_brewmaster_4"
+        }
+    }
+}
+"brewmaster_thunder_clap"
+{
+    "AbilityCooldown"				    "13 12 11 10"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"250 350 450 550"
+        }
+    }
+}
 "bristleback_quill_spray"
 {
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
