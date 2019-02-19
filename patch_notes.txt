@@ -5,6 +5,8 @@
 
     Replaced Hellbear (BOSS) with a new boss: Lich (BOSS). This is an attempt to fix crash reports I'm receiving that seens to be Valve's server fault. If this strange crash / disconnect continues to happen, please report exactly when it happened. Whas it when a spell was used? When the boss was killed? And so on. Thanks.
 
+    Upgradable items now show their level.
+
     Lone Druid Spirit Bear: Base Attack time increased by "0.2".
 
     Antimage Mana Break: Mana per hit increased from "28 40 52 64" to "20 40 60 80".
