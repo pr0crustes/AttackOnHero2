@@ -7938,6 +7938,39 @@
         }
     }
 }
+"brewmaster_custom_primal_split"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"		"brewmaster_primal_split"
+
+    "AbilityCastPoint"			"0.65"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"			"120.0 110.0 100.0"
+    "AbilityManaCost"			"200 300 400"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "duration"	        "16 18 20"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/brewmaster_custom_primal_split.lua"
+            "Function"			"cast_brewmaster_custom_primal_split"
+        } 
+    }
+}
 "broodmother_custom_spawn_spiderlings"
 {
     "BaseClass"                     "ability_datadriven"

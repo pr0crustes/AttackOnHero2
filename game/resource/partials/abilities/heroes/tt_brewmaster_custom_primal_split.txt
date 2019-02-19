@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_brewmaster_custom_primal_split"								"Primal Split"
+"DOTA_Tooltip_ability_brewmaster_custom_primal_split_Description"					"Splits Brewmaster summons all elements, forming 3 specialized warriors, adept at survival. \n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_brewmaster_custom_primal_split_Lore"							"It isn't clear whether Mangix is consciously aware of his potent bond with nature, as it often occurs in the midst of a drunken stupor."
+"DOTA_Tooltip_ability_brewmaster_custom_primal_split_duration"                      "DURATION:"
+"DOTA_Tooltip_ability_brewmaster_custom_primal_split_aghanim_description"			"Reduces the cooldown to 40 seconds."
