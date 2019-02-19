@@ -1,4 +1,36 @@
 "item_soul_ring"
 {
     "AbilitySharedCooldown"			"soul_ring"
+
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_strength"		"6 9 12"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bonus_health_regen"	"2.5 4.5 6.5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "health_sacrifice"		"170 190 210"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_gain"				"150 200 250"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "duration"				"10"
+        }
+    }
 }

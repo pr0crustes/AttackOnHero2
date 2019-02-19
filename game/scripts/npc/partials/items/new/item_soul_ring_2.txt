@@ -34,28 +34,30 @@
     "ItemAliases"					"soul ring"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"	
 
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "2"
 
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_strength"		"9"
+            "bonus_strength"		"6 9 12"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "bonus_health_regen"	"4.5"
+            "bonus_health_regen"	"2.5 4.5 6.5"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "health_sacrifice"		"175"
+            "health_sacrifice"		"170 190 210"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "mana_gain"				"200"
+            "mana_gain"				"150 200 250"
         }
         "05"
         {
