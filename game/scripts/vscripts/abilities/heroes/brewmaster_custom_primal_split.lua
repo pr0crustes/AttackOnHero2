@@ -5,66 +5,66 @@ require("lib/illusion")
 LinkLuaModifier("modifier_brewmaster_custom_primal_split", "abilities/heroes/brewmaster_custom_primal_split.lua", LUA_MODIFIER_MOTION_NONE)
 
 
-local modifier_split = "modifier_brewmaster_custom_primal_split"
-
 local spirit_earth = "npc_dota_brewmaster_earth_3"
 local spirit_storm = "npc_dota_brewmaster_storm_3"
 local spirit_fire = "npc_dota_brewmaster_fire_3"
 
 
+
+brewmaster_custom_primal_split = class({})
+
+
+function brewmaster_custom_primal_split:GetCooldown(iLevel)
+    if self:GetCaster():HasScepter() then
+        return self:GetSpecialValueFor("cooldown_scepter")
+    end
+    return self.BaseClass.GetCooldown(self, iLevel)
+end
+
+
 if IsServer() then
-    function max_abilities(illusion)
-        for slot = 0, 15 do
-            local ability = illusion:GetAbilityByIndex(slot)
-            if ability ~= nil then
-                ability:SetLevel(ability:GetMaxLevel())
-            end
-        end
+    function brewmaster_custom_primal_split:OnSpellStart()
+        local caster = self:GetCaster()
+
+        caster:EmitSound("Hero_Brewmaster.PrimalSplit.Cast")
+
+        self:CreateSpiritAsync(spirit_earth, 0.1)
+        self:CreateSpiritAsync(spirit_storm, 0.3)
+        self:CreateSpiritAsync(spirit_fire, 0.5)
     end
 
 
-    function create_spirit(caster, ability, unit_name)
-        local spawnPos = caster:GetAbsOrigin() + RandomVector(250)
-
-        local illusion = CreateUnitByName(unit_name, spawnPos, true, caster, nil, caster:GetTeamNumber())
-        illusion:SetControllableByPlayer(caster:GetPlayerID(), true)
-        illusion:SetMaxHealth(caster:GetMaxHealth())
-        illusion:SetHealth(caster:GetHealth())
-
-        max_abilities(illusion)
-        disable_inventory(illusion)
-
-        local duration = ability:GetSpecialValueFor("duration")
-
-        illusion:AddNewModifier(illusion, ability, modifier_split, {duration = duration})
-        illusion:AddNewModifier(illusion, ability, "modifier_arc_warden_tempest_double", {})
-
-        FindClearSpaceForUnit(illusion, spawnPos, true)
-
-        caster:EmitSound("Hero_Brewmaster.PrimalSplit.Spawn")
-    end
-
-
-    function spawn_spirit_after_delay(caster, ability, unit_name, delay)
+    function brewmaster_custom_primal_split:CreateSpiritAsync(name, delay)
         Timers(
             delay,
             function()
-                create_spirit(caster, ability, unit_name)
+                self:CreateSpirit(name)
             end
         )
     end
 
 
-    function cast_brewmaster_custom_primal_split(keys)
-        local ability = keys.ability
-        local caster = keys.caster
-        local target = keys.target
+    function brewmaster_custom_primal_split:CreateSpirit(name)
+        local caster = self:GetCaster()
 
-        caster:EmitSound("Hero_Brewmaster.PrimalSplit.Cast")
-
-        spawn_spirit_after_delay(caster, ability, spirit_earth, 0.1)
-        spawn_spirit_after_delay(caster, ability, spirit_storm, 0.3)
-        spawn_spirit_after_delay(caster, ability, spirit_fire, 0.5)
+        local spawnPos = caster:GetAbsOrigin() + RandomVector(250)
+    
+        local illusion = CreateUnitByName(name, spawnPos, true, caster, nil, caster:GetTeamNumber())
+        illusion:SetControllableByPlayer(caster:GetPlayerID(), true)
+        illusion:SetMaxHealth(caster:GetMaxHealth())
+        illusion:SetHealth(caster:GetHealth())
+    
+        max_all_abilities(illusion)
+        disable_inventory(illusion)
+    
+        local duration = self:GetSpecialValueFor("duration")
+    
+        illusion:AddNewModifier(illusion, self, "modifier_brewmaster_custom_primal_split", {duration = duration})
+        illusion:AddNewModifier(illusion, self, "modifier_arc_warden_tempest_double", {})
+    
+        FindClearSpaceForUnit(illusion, spawnPos, true)
+    
+        caster:EmitSound("Hero_Brewmaster.PrimalSplit.Spawn")
     end
 end
 

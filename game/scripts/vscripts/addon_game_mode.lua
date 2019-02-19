@@ -30,7 +30,9 @@ function Precache(context)
 	}
 
 	local units = { 
-
+		"npc_dota_brewmaster_earth_3",
+		"npc_dota_brewmaster_storm_3",
+		"npc_dota_brewmaster_fire_3",
 	}
 
 

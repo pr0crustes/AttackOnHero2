@@ -213,3 +213,13 @@ function create_item_drop(item_name, pos)
 	local drop = CreateItemOnPositionSync(pos, item)
 	drop.Holdout_IsLootDrop = true
 end
+
+
+function max_all_abilities(unit)
+	for slot = 0, 15 do
+		local ability = unit:GetAbilityByIndex(slot)
+		if ability ~= nil then
+			ability:SetLevel(ability:GetMaxLevel())
+		end
+	end
+end
