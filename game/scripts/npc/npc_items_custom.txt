@@ -570,6 +570,100 @@
         }
     }
 }
+"item_mjollnir"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_damage"			    "24 50"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_attack_speed"	    "75 130"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "static_duration"		    "15.0"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_chance"			    "20"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_strikes"		    "4"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_damage"			    "200 500"
+        }
+        "07"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_primary_radius"	    "600"
+        }
+        "08"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_seconary_radius"	"900"
+        }
+        "09"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "static_radius"			    "900"
+        }
+        "10"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "static_cooldown"		    "1.0"
+        }
+        "11"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "chain_chance"			    "25"
+        }
+        "12"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "chain_damage"			    "170 270"
+        }
+        "13"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "chain_strikes"			    "12"
+        }
+        "14"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "chain_radius"			    "900"
+        }
+        "15"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "chain_delay"			    "0.25"
+        }
+        "16"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "chain_cooldown"		    "0.2"
+        }
+        "17"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "tooltip_range"			    "800"
+        }
+    }
+}
 "item_monkey_king_bar"
 {
     "MaxUpgradeLevel"               "2"
@@ -3279,93 +3373,95 @@
     "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
 
     "AbilitySpecial"
     {
         "01"
         {
-            "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"50"
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_damage"			    "24 50"
         }
         "02"
         {
-            "var_type"				"FIELD_INTEGER"
-            "bonus_attack_speed"	"130"
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_attack_speed"	    "75 130"
         }
         "03"
         {
-            "var_type"				"FIELD_FLOAT"
-            "static_duration"		"15.0"
+            "var_type"				    "FIELD_FLOAT"
+            "static_duration"		    "15.0"
         }
         "04"
         {
-            "var_type"				"FIELD_INTEGER"
-            "static_chance"			"20"
+            "var_type"				    "FIELD_INTEGER"
+            "static_chance"			    "20"
         }
         "05"
         {
-            "var_type"				"FIELD_INTEGER"
-            "static_strikes"		"4"
+            "var_type"				    "FIELD_INTEGER"
+            "static_strikes"		    "4"
         }
         "06"
         {
-            "var_type"				"FIELD_INTEGER"
-            "static_damage"			"300"
+            "var_type"				    "FIELD_INTEGER"
+            "static_damage"			    "200 500"
         }
         "07"
         {
-            "var_type"				"FIELD_INTEGER"
-            "static_primary_radius"	"600"
+            "var_type"				    "FIELD_INTEGER"
+            "static_primary_radius"	    "600"
         }
         "08"
         {
-            "var_type"				"FIELD_INTEGER"
+            "var_type"				    "FIELD_INTEGER"
             "static_seconary_radius"	"900"
         }
         "09"
         {
-            "var_type"				"FIELD_INTEGER"
-            "static_radius"			"900"
+            "var_type"				    "FIELD_INTEGER"
+            "static_radius"			    "900"
         }
         "10"
         {
-            "var_type"				"FIELD_FLOAT"
-            "static_cooldown"		"1.0"
+            "var_type"				    "FIELD_FLOAT"
+            "static_cooldown"		    "1.0"
         }
         "11"
         {
-            "var_type"				"FIELD_INTEGER"
-            "chain_chance"			"25"
+            "var_type"				    "FIELD_INTEGER"
+            "chain_chance"			    "25"
         }
         "12"
         {
-            "var_type"				"FIELD_INTEGER"
-            "chain_damage"			"240"
+            "var_type"				    "FIELD_INTEGER"
+            "chain_damage"			    "170 270"
         }
         "13"
         {
-            "var_type"				"FIELD_INTEGER"
-            "chain_strikes"			"12"
+            "var_type"				    "FIELD_INTEGER"
+            "chain_strikes"			    "12"
         }
         "14"
         {
-            "var_type"				"FIELD_INTEGER"
-            "chain_radius"			"900"
+            "var_type"				    "FIELD_INTEGER"
+            "chain_radius"			    "900"
         }
         "15"
         {
-            "var_type"				"FIELD_FLOAT"
-            "chain_delay"			"0.25"
+            "var_type"				    "FIELD_FLOAT"
+            "chain_delay"			    "0.25"
         }
         "16"
         {
-            "var_type"				"FIELD_FLOAT"
-            "chain_cooldown"		"0.2"
+            "var_type"				    "FIELD_FLOAT"
+            "chain_cooldown"		    "0.2"
         }
         "17"
         {
-            "var_type"				"FIELD_INTEGER"
-            "tooltip_range"			"800"
+            "var_type"				    "FIELD_INTEGER"
+            "tooltip_range"			    "800"
         }
     }
 }
