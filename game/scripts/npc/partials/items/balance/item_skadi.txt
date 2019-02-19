@@ -28,7 +28,7 @@
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "cold_attack_speed"		"-45 -50"
+            "cold_attack_speed"		"-10 -20"
         }
         "06"
         {
