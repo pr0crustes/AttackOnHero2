@@ -44,6 +44,25 @@ if IsServer() then
     end
 
 
+    function brewmaster_custom_primal_split:LevelAbilities(unit)
+        local caster = self:GetCaster()
+
+        for slot = 0, 15 do
+            local unitAbility = unit:GetAbilityByIndex(slot)
+            if unitAbility then
+                local level = self:GetLevel()
+                
+                local casterAbility = caster:FindAbilityByName(unitAbility:GetName())
+                if casterAbility then  -- if not a summon spell, set the level to the same as the caster.
+                    level = casterAbility:GetLevel()
+                end
+
+                unitAbility:SetLevel(level)
+            end
+        end
+    end
+
+
     function brewmaster_custom_primal_split:CreateSpirit(name)
         local caster = self:GetCaster()
 
@@ -53,8 +72,8 @@ if IsServer() then
         illusion:SetControllableByPlayer(caster:GetPlayerID(), true)
         illusion:SetMaxHealth(caster:GetMaxHealth())
         illusion:SetHealth(caster:GetHealth())
-    
-        max_all_abilities(illusion)
+
+        self:LevelAbilities(illusion)
         disable_inventory(illusion)
     
         local duration = self:GetSpecialValueFor("duration")
