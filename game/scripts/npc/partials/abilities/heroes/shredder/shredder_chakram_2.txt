@@ -1,0 +1,16 @@
+"shredder_chakram_2"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "pass_damage"			"200 250 300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_second"		"250 350 550"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+"shredder_timber_chain"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "range"				    "1200 1400 1600 2000"
+            "LinkedSpecialBonus"	"special_bonus_unique_timbersaw_3"
+        }
+        "04"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "speed"				    "2400 2800 3200 3600"
+        }
+        "05"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "220 320 420 520"
+        }
+    }
+}
