@@ -1,0 +1,29 @@
+"item_monkey_king_bar"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"52 72"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"10 20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_chance"			"75"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_chance_damage"	"100 200"
+        }
+    }
+}

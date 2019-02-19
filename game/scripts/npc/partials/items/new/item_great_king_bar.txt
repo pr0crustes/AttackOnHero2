@@ -31,17 +31,20 @@
     "ItemAliases"					"great king bar"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"72"
+            "bonus_damage"			"52 72"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_attack_speed"	"15"
+            "bonus_attack_speed"	"10 20"
         }
         "03"
         {
@@ -51,7 +54,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_chance_damage"	"180"
+            "bonus_chance_damage"	"100 200"
         }
     }
 }
