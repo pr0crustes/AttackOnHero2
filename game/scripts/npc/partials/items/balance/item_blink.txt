@@ -1,4 +1,26 @@
 "item_blink"
 {
     "ItemCost"						"1600"
+
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blink_range"			"1200 1500"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "blink_damage_cooldown"	"3.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blink_range_clamp"		"960 1500"
+        }
+    }
 }

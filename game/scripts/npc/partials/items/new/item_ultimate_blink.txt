@@ -37,12 +37,15 @@
     "AbilityCooldown"				"9.0"
     "AbilityManaCost"				"0"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "blink_range"			"1500"
+            "blink_range"			"1200 1500"
         }
         "02"
         {
@@ -52,7 +55,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "blink_range_clamp"		"1500"
+            "blink_range_clamp"		"960 1500"
         }
     }
 }
