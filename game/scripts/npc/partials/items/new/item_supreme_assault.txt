@@ -34,17 +34,20 @@
 
     "ItemAliases"					"assault;assault;supreme"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_attack_speed"	"45"
+            "bonus_attack_speed"	"30 45"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_armor"			"15"
+            "bonus_armor"			"10 15"
         }
         "03"
         {
@@ -54,17 +57,17 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "aura_attack_speed"		"40"
+            "aura_attack_speed"		"25 40"
         }
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "aura_positive_armor"	"9"
+            "aura_positive_armor"	"5 9"
         }
         "06"
         {
             "var_type"				"FIELD_INTEGER"
-            "aura_negative_armor"	"-6"
+            "aura_negative_armor"	"-4 -6"
         }			
     }
 
