@@ -1021,22 +1021,6 @@
         }
     }
 }
-"item_vladmir"
-{
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"				"FIELD_FLOAT"
-            "mana_regen_aura"		"3.75"
-        }
-        "03"
-        {
-            "var_type"				"FIELD_INTEGER"
-            "damage_aura"			"10"
-        }
-    }
-}
 "item_ward_observer"
 {
     "ItemStockMax"					"10"
@@ -4546,77 +4530,9 @@
         } 
     }
 } 
-"item_recipe_ultimate_vladmir"
-{
-    "ID"							"70160"
-    "Model"							"models/props_gameplay/recipe.vmdl"
-    "BaseClass"						"item_recipe_vladmir"
-
-    "ItemCost"						"1400"	
-    "ItemShopTags"					""
-
-    "ItemRecipe"					"1"
-    "ItemResult"					"item_ultimate_vladmir"
-
-    "ItemRequirements"
-    {
-        "01"						"item_vladmir"
-    }
-}
-
-
-
-"item_ultimate_vladmir"
-{
-    "ID"							"70161"
-    "BaseClass"						"item_vladmir"
-
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"		    "ultimate_vladmir"
-
-    "ItemShopTags"					"lifesteal;damage;armor;regen_mana"
-    "ItemQuality"					"epic"
-    "ItemAliases"					"vladmir's offering;vlads"
-    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
-
-
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"				    "FIELD_FLOAT"
-            "mana_regen_aura"		    "5.75"
-        }
-        "02"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "armor_aura"			    "6"
-        }
-        "03"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "damage_aura"			    "15"
-        }			
-        "04"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "vampiric_aura"			    "20"
-        }
-        "05"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "vampiric_aura_ranged"		"13"
-        }
-        "06"
-        {
-            "var_type"				    "FIELD_INTEGER"
-            "aura_radius"	            "1500"
-        }			
-    }
-}
 "item_recipe_vampiric_blade"
 {
-    "ID"							"70162"
+    "ID"							"70160"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
@@ -4637,7 +4553,7 @@
 
 "item_vampiric_blade"
 {
-    "ID"							"70163"
+    "ID"							"70161"
     "BaseClass"						"item_lua"
     "ScriptFile"                    "items/vampiric_blade.lua"
     "AbilityTextureName"		    "vampiric_blade"
@@ -4676,7 +4592,7 @@
 }
 "item_recipe_vampiric_blade_2"
 {
-    "ID"							"70164"
+    "ID"							"70162"
     "BaseClass"						"item_datadriven"
     "Model"							"models/props_gameplay/recipe.mdl"
     "AbilityTextureName"			"custom_recipe"
@@ -4697,7 +4613,7 @@
 
 "item_vampiric_blade_2"
 {
-    "ID"							"70165"
+    "ID"							"70163"
     "BaseClass"						"item_lua"
     "ScriptFile"                    "items/vampiric_blade.lua"
     "AbilityTextureName"		    "vampiric_blade_2"
@@ -4736,7 +4652,7 @@
 }
 "item_recipe_wicked_locket"
 {
-    "ID"							"70166"
+    "ID"							"70164"
     "BaseClass"                     "item_recipe_holy_locket"
 
     "ItemCost"						"550"	
@@ -4754,7 +4670,7 @@
 
 "item_wicked_locket"
 {
-    "ID"							"70167"
+    "ID"							"70165"
     "BaseClass"                     "item_holy_locket"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
@@ -4795,7 +4711,7 @@
 }
 "item_dev_dagon"
 {
-    "ID"							"70168"
+    "ID"							"70166"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -4848,7 +4764,7 @@
 }
 "item_dev_heart"
 {
-    "ID"							"70169"
+    "ID"							"70167"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_heart"
     "AbilityTextureName"		    "item_heart"

@@ -11,7 +11,7 @@
 
     Abyssal Blade: Cooldown increased from "35.0" t0 "40.0". Active stun duration increased from "2.0" to "5.0". Passive proc stun duration reduced from "1.5" to "1.0". Passive proc damage increased from "100" to "250".
 
-
+    Removed Ultimate Vladmir due to a bug. Buffed Vladmir.
 
 
 

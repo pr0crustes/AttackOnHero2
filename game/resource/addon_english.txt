@@ -1535,20 +1535,6 @@
 "DOTA_Tooltip_Ability_item_ultimate_rapier"									"Ultimate Rapier"
 "DOTA_Tooltip_Ability_item_ultimate_rapier_Lore"							"So powerful that the wielder is often driven mad."
 "DOTA_Tooltip_Ability_item_ultimate_rapier_bonus_damage"					"+$damage"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir"							"Ultimate Vladmir"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_Description"				"Passive: Vladmir's Aura - Grants lifesteal, health regeneration, mana regeneration, and armor to allies in a %aura_radius% radius.  The lifesteal percentage is based on whether the hero affected by the aura is melee or ranged.\n\nMultiple instances of Vladmir's Aura do not stack."
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_Note0"						"Does not stack with armor auras from Ring of Basilius, Ring of Aquila, or Vladmir's Offering."
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_bonus_all_stats"			"+$all"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_hp_regen_aura"			    "Aura Health Regen:"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_mana_regen_aura"			"Aura Mana Regen:"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_vampiric_aura"				"%Aura Melee Lifesteal:"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_vampiric_aura_ranged"		"%Aura Ranged Lifesteal:"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_armor_aura"					"Aura Bonus Armor:"
-"DOTA_Tooltip_Ability_item_ultimate_vladmir_aura_radius"				"Aura Radius:"
-
-
-//"DOTA_Tooltip_modifier_item_ultimate_vladmir_buff"                      "Ultimate Vladmir's Aura"
-//"DOTA_Tooltip_modifier_item_ultimate_vladmir_buff_Description"          "Gaining lifesteal, as well as %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% health regen, %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen, and %MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% armor."
 "DOTA_Tooltip_Ability_item_vampiric_blade"							"Vampiric Blade"
 "DOTA_Tooltip_Ability_item_vampiric_blade_Description"				"Passive: Life Drain - Increases attack damage by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged. Your attacks heals %heal% for melee heroes, and %heal_ranged% for ranged.\n\nMultiple instances of Life Drain do not stack."
 
