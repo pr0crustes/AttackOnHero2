@@ -591,6 +591,60 @@
         }
     }
 }
+"item_shivas_guard"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_intellect"		"30 65"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"15 20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_radius"			"1200"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aura_attack_speed"		"-45 -55"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blast_damage"			"200 800"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blast_movement_speed"	"-40"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "blast_debuff_duration"	"4.0"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blast_radius"			"900"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "blast_speed"			"350"
+        }
+    }
+}
 "item_skadi"
 {
     "MaxUpgradeLevel"               "2"
@@ -2250,17 +2304,20 @@
     "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_intellect"		"65"
+            "bonus_intellect"		"30 65"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_armor"			"20"
+            "bonus_armor"			"15 20"
         }
         "03"
         {
@@ -2270,12 +2327,12 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "aura_attack_speed"		"-45"
+            "aura_attack_speed"		"-45 -55"
         }
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "blast_damage"			"400"
+            "blast_damage"			"200 800"
         }
         "06"
         {
