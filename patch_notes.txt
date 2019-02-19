@@ -3,6 +3,8 @@
 2.0.2:
     With this update:
 
+    Replaced Hellbear (BOSS) with a new boss: Lich (BOSS). This is an attempt to fix crash reports I'm receiving that seens to be Valve's server fault. If this strange crash / disconnect continues to happen, please report exactly when it happened. Whas it when a spell was used? When the boss was killed? And so on. Thanks.
+
     Lone Druid Spirit Bear: Base Attack time increased by "0.2".
 
     Antimage Mana Break: Mana per hit increased from "28 40 52 64" to "20 40 60 80".
@@ -11,7 +13,7 @@
 
     Abyssal Blade: Cooldown increased from "35.0" t0 "40.0". Active stun duration increased from "2.0" to "5.0". Passive proc stun duration reduced from "1.5" to "1.0". Passive proc damage increased from "100" to "250".
 
-    Removed Ultimate Vladmir due to a bug. Buffed Vladmir.
+    Removed Ultimate Vladmir due to a bug. Buffed Vladmir in compensation.
 
 
 
