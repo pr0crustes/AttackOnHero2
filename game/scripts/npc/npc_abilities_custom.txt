@@ -2093,7 +2093,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"1200"
+            "damage"				"1800"
         }
         "02"
         {
@@ -2103,7 +2103,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "jump_range"			"600"
+            "jump_range"			"1200"
         }
         "04"
         {
@@ -2123,7 +2123,7 @@
         "07"
         {
             "var_type"				"FIELD_INTEGER"
-            "projectile_speed"		"850"
+            "projectile_speed"		"1200"
         }
         "08"
         {
@@ -2133,7 +2133,7 @@
         "09"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_scepter"		"1200"
+            "damage_scepter"		"1800"
         }
         "10"
         {
@@ -2160,7 +2160,7 @@
     "AbilityDuration"				"1.0"
     "AbilityManaCost"				"0"
 
-    "AbilityDamage"					"1000"
+    "AbilityDamage"					"1500"
 
     "AbilitySpecial"
     {			
@@ -2182,7 +2182,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "aoe_damage"			"800"
+            "aoe_damage"			"1000"
         }
     }
 }

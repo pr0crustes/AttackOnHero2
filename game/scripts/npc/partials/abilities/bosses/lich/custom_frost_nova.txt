@@ -16,7 +16,7 @@
     "AbilityDuration"				"1.0"
     "AbilityManaCost"				"0"
 
-    "AbilityDamage"					"1000"
+    "AbilityDamage"					"1500"
 
     "AbilitySpecial"
     {			
@@ -38,7 +38,7 @@
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "aoe_damage"			"800"
+            "aoe_damage"			"1000"
         }
     }
 }
