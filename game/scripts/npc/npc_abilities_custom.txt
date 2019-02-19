@@ -463,7 +463,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_damage"			"600"
+            "bonus_damage"			"1000"
             "LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_2"
         }
         "02"
