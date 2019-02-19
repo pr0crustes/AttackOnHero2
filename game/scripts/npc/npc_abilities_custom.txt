@@ -4584,6 +4584,46 @@
         }
     }
 }
+"brewmaster_earth_hurl_boulder"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"300 600 900"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"1.0"
+        }
+    }
+}
+"brewmaster_fire_permanent_immolation"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"110 220 330"
+        }
+    }
+}
+"brewmaster_storm_cyclone"
+{
+    "AbilityCooldown"				    "20.0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration_unit"				"6.0"
+        }
+    }
+}
 "brewmaster_thunder_clap"
 {
     "AbilityCooldown"				    "13 12 11 10"
@@ -7951,7 +7991,7 @@
     "AbilityCastPoint"			"0.65"
     "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
 
-    "AbilityCooldown"			"120.0 110.0 100.0"
+    "AbilityCooldown"			"100.0 95.0 90.0"
     "AbilityManaCost"			"200 250 300"
 
     "HasScepterUpgrade"			"1"

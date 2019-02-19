@@ -1,0 +1,13 @@
+"brewmaster_storm_cyclone"
+{
+    "AbilityCooldown"				    "20.0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "duration_unit"				"6.0"
+        }
+    }
+}
