@@ -32,17 +32,20 @@
     "ItemAliases"					"ky;kaya"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
     
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "stats_reduction"	    "-20"
+            "stats_reduction"	    "-10 -20 -30"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "spell_amp"			    "30"
+            "spell_amp"			    "20 30 40"
         }
     }
 
