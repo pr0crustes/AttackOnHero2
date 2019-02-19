@@ -27,23 +27,25 @@
     "ItemQuality"					"rare"
     "ActiveDescriptionLine"			"2"
 
-    
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_health"			"300"
+            "bonus_health"			"200 300"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_mana"			"425"
+            "bonus_mana"			"325 425"
         }
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "health_regen"	        "8"
+            "health_regen"	        "4 8"
         }
         "04"
         {
@@ -53,7 +55,7 @@
         "05"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal_increase"		    "35"
+            "heal_increase"		    "25 35"
         }
     }
 }
