@@ -27,6 +27,30 @@
         }
     }
 }
+"item_aether_lens"
+{
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"450 650"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "bonus_mana_regen"		"3.0 5.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "cast_range_bonus"		"250 600"
+        }
+    }
+}
 "item_basher"
 {
     "AbilityCooldown"				"3.5"
@@ -2741,22 +2765,25 @@
     "ItemAliases"					"aether lens"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_mana"			"650"
+            "bonus_mana"			"450 650"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "bonus_mana_regen"		"5.0"
+            "bonus_mana_regen"		"3.0 5.0"
         }
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "cast_range_bonus"		"600"
+            "cast_range_bonus"		"250 600"
         }
     }
 }
