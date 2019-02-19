@@ -1,0 +1,5 @@
+"npc_dota_hero_jakiro"
+{
+    "Ability14"		"special_bonus_movement_speed_65"
+    "Ability17"		"special_bonus_agility_100"
+}

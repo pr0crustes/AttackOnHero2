@@ -2,6 +2,12 @@
 {
     "AbilitySpecial"
     {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow_attack_speed_pct" "-5 -10 -15 -20"
+            "LinkedSpecialBonus"	"special_bonus_unique_jakiro_4"
+        }
         "03"
         {
             "var_type"				"FIELD_INTEGER"

@@ -119,6 +119,11 @@
     "Ability6"		"huskar_custom_life_trade"
     "Ability15"     "special_bonus_attack_speed_80"
 }
+"npc_dota_hero_jakiro"
+{
+    "Ability14"		"special_bonus_movement_speed_65"
+    "Ability17"		"special_bonus_agility_100"
+}
 "npc_dota_hero_keeper_of_the_light"
 {
     "Ability6"		"keeper_of_the_light_custom_dawn"
