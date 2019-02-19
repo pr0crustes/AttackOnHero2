@@ -1,10 +1,12 @@
 "DOTA_Tooltip_ability_undying_custom_decay"							    "Decay"
-"DOTA_Tooltip_ability_undying_custom_decay_Description"				    "Undying steals strength from an enemy, dealing base damage as he claims the enemy's strength for himself."
+"DOTA_Tooltip_ability_undying_custom_decay_Description"				    "Undying steals strength from an enemy, dealing base damage as he claims the enemy's strength for himself. \n\nUpgradable by Aghanim's Scepter."
 "DOTA_Tooltip_ability_undying_custom_decay_Lore"						"The strength of the living is simply borrowed from the strength of the dead."
 "DOTA_Tooltip_ability_undying_custom_decay_damage"				        "DAMAGE:"
 "DOTA_Tooltip_ability_undying_custom_decay_str_bonus"					"STRENGTH STEAL:"
 "DOTA_Tooltip_ability_undying_custom_decay_duration"				    "STEAL DURATION:"
+"DOTA_Tooltip_ability_undying_custom_decay_aghanim_description"			"Reduces cooldown by 3 seconds."
 
 
-"DOTA_Tooltip_modifier_custom_decay_hud"						        "Decay"
-"DOTA_Tooltip_modifier_custom_decay_hud_Description"			        "Stealing strength."
+
+"DOTA_Tooltip_modifier_undying_custom_decay_hud"						"Decay"
+"DOTA_Tooltip_modifier_undying_custom_decay_hud_Description"			"Strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."

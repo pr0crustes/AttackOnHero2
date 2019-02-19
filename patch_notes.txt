@@ -1,5 +1,13 @@
 
 
+2.0.3:
+    With this update:
+
+    Undying Decay now has a scepter effect.
+
+
+
+
 2.0.2:
     With this update:
 
