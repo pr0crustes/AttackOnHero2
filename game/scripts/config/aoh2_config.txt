@@ -779,7 +779,7 @@
 		
 		"35" // Hellbear
 		{
-			"Title"						"Claw"
+			"Title"						"Ethreain"
 			"MaxGold"					"13300"
 			"BagCount"					"1"
 			"BagVariance"				"30"
@@ -787,7 +787,7 @@
 
 			"a"
 			{
-				"NPCName"				"npc_boss_hellbear"
+				"NPCName"				"npc_boss_lich"
 				"TotalUnitsToSpawn"		"1"
 				"UnitsPerSpawn"			"1"
 				"SpawnInterval"			"30"

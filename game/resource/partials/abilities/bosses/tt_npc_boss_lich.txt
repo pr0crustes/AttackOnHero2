@@ -1,0 +1,26 @@
+"npc_boss_lich"                     "Lich (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_frost_nova"										"Frost Blast"
+"DOTA_Tooltip_ability_custom_frost_nova_Description"							"Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for 4 seconds.  The primary target takes the most damage."
+"DOTA_Tooltip_ability_custom_frost_nova_Lore"									"Frost-mage Ethreain has not forgotten even the simplest of ice manipulation."
+"DOTA_Tooltip_ability_custom_frost_nova_aoe_damage"								"AREA DAMAGE:"
+"DOTA_Tooltip_ability_custom_frost_nova_radius"									"RADIUS:"
+"DOTA_Tooltip_ability_custom_frost_nova_slow_movement_speed"					"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_frost_nova_slow_attack_speed"						"ATTACK SLOW:"
+
+
+"DOTA_Tooltip_ability_custom_chain_frost"										"Chain Frost"
+"DOTA_Tooltip_ability_custom_chain_frost_Description"							"Releases an orb of frost that bounces between nearby enemy units up to %jumps% times, slowing and damaging each time it hits. \n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_chain_frost_Lore"									"Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him."
+"DOTA_Tooltip_ability_custom_chain_frost_Note0"									"Chain Frost cannot be disjointed."
+"DOTA_Tooltip_ability_custom_chain_frost_Note1"									"Chain Frost has a movement speed of 850."
+"DOTA_Tooltip_ability_custom_chain_frost_Note2"									"Chain Frost doesn't bounce to Zombies."
+"DOTA_Tooltip_ability_custom_chain_frost_damage"								"DAMAGE EACH BOUNCE:"
+"DOTA_Tooltip_ability_custom_chain_frost_jumps"									"BOUNCES:"
+"DOTA_Tooltip_ability_custom_chain_frost_jump_range"							"BOUNCE RANGE:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_movement_speed"					"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_attack_speed"						"ATTACK SLOW:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_duration"							"SLOW DURATION:"		
+"DOTA_Tooltip_ability_custom_chain_frost_damage_scepter"						"SCEPTER DAMAGE:"
+"DOTA_Tooltip_ability_custom_chain_frost_aghanim_description"					"Increases damage and casting range. Removes the limit on the number of times Chain Frost can jump."

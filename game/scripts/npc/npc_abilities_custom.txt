@@ -2068,9 +2068,127 @@
         }
     }
 }
-"custom_eclipse"
+"custom_chain_frost"
 {
     "ID"					        "70032"
+    "BaseClass"                     "lich_chain_frost"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+    "AbilityCastRange"				"1500"
+    "AbilityCastPoint"				"0.3"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				"9.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"1200"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "jumps"					"100"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "jump_range"			"600"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow_movement_speed"	"-65"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow_attack_speed"		"-65"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "slow_duration"			"2.5"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "projectile_speed"		"850"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "vision_radius"			"800"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_scepter"		"1200"
+        }
+        "10"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "cast_range_scepter"	"1500"
+        }
+    }
+}
+"custom_frost_nova"
+{
+    "ID"					        "70033"
+    "BaseClass"                     "lich_frost_nova"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+    "AbilityCastRange"				"1000"
+    "AbilityCastPoint"				"0.1"
+
+    "AbilityCooldown"				"3.0"
+    "AbilityDuration"				"1.0"
+    "AbilityManaCost"				"0"
+
+    "AbilityDamage"					"1000"
+
+    "AbilitySpecial"
+    {			
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"200"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow_movement_speed"	"-30"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow_attack_speed"		"-30"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aoe_damage"			"800"
+        }
+    }
+}
+"custom_eclipse"
+{
+    "ID"					        "70034"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -2144,7 +2262,7 @@
 }
 "custom_moon_glaive"
 {
-    "ID"					        "70033"
+    "ID"					        "70035"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
     "AbilitySound"					"Hero_Luna.MoonGlaive.Impact"
@@ -2172,7 +2290,7 @@
 }
 "custom_mystic_snake"
 {
-    "ID"					        "70034"
+    "ID"					        "70036"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
@@ -2243,7 +2361,7 @@
 }
 "custom_split_shot"
 {
-    "ID"					            "70035"
+    "ID"					            "70037"
     "BaseClass"						    "medusa_split_shot"
 
     "AbilitySpecial"
@@ -2268,7 +2386,7 @@
 }
 "custom_leap"
 {
-    "ID"					        "70036"
+    "ID"					        "70038"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
     "BaseClass"                     "mirana_leap"
@@ -2415,7 +2533,7 @@
 }
 "custom_starfall"
 {
-    "ID"					        "70037"
+    "ID"					        "70039"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -2445,85 +2563,6 @@
         {
             "var_type"			            "FIELD_FLOAT"
             "interval_scepter"	            "6.0"
-        }
-    }
-    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
-}
-"custom_heartstopper_aura"
-{
-    "ID"					        "70038"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
-    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-    "BaseClass"                     "necrolyte_heartstopper_aura"
-
-    "AbilityCastRange"				"6000"
-
-    "AbilitySpecial"
-    {
-        "01"
-        {   
-            "var_type"			    "FIELD_INTEGER"
-            "aura_radius"			"6000"
-        }
-        "02"
-        {
-            "var_type"			    "FIELD_FLOAT"
-            "aura_damage"		    "5.8"
-        } 	
-        "03"
-        {
-            "var_type"		        "FIELD_FLOAT"
-            "health_regen"	        "0"
-        }		
-        "04"
-        {
-            "var_type"		        "FIELD_FLOAT"
-            "mana_regen"	        "0"
-        }	
-        "05"
-        {
-            "var_type"		        "FIELD_FLOAT"
-            "regen_duration"		"0"
-        }			
-        "06"
-        {
-            "var_type"		        "FIELD_INTEGER"
-            "hero_multiplier"       "1"
-        }
-    }
-    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
-}
-"custom_war_stomp"
-{
-    "ID"							"70039"
-    "MaxLevel"						"1"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-    "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
-    "BaseClass"                     "centaur_khan_war_stomp"
-    
-    "AbilityCastPoint"				"2.0"
-    "AbilityCooldown"				"20.0"
-    "AbilityDamage"					"2500"
-    "AbilityManaCost"				"0"
-
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"						"FIELD_INTEGER"
-            "radius"						"5000"
-        }
-        "02"
-        {
-            "var_type"						"FIELD_FLOAT"
-            "non_hero_stun_duration"		"6.0"
-        }
-        "03"
-        {
-            "var_type"						"FIELD_FLOAT"
-            "hero_stun_duration"			"6.0"
         }
     }
     "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"

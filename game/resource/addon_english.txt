@@ -272,20 +272,6 @@
 "DOTA_Tooltip_ability_custom_ink_creature_destroy_attacks"	                "ATTACKS TO DESTROY:"
 "DOTA_Tooltip_ability_custom_ink_creature_dps_tooltip"	                    "DAMAGE PER SECOND:"
 "DOTA_Tooltip_ability_custom_ink_creature_pop_damage"		                "REND DAMAGE:"
-"npc_boss_hellbear"                     "Hellbear (Boss)"
-
-
-"DOTA_Tooltip_ability_custom_war_stomp"										"War Stomp"
-"DOTA_Tooltip_ability_custom_war_stomp_Description"							"The Centaur Conqueror's powerful hooves stomp the ground, stunning and damaging nearby enemies. Heroes recover more quickly."
-"DOTA_Tooltip_ability_custom_war_stomp_radius"								"RADIUS:"
-"DOTA_Tooltip_ability_custom_war_stomp_non_hero_stun_duration"				"STUN DURATION:"
-"DOTA_Tooltip_ability_custom_war_stomp_hero_stun_duration"					"HERO STUN:"
-
-
-"DOTA_Tooltip_ability_custom_heartstopper_aura"								"Heartstopper Aura"
-"DOTA_Tooltip_ability_custom_heartstopper_aura_Description"					"Necrophos stills the hearts of his opponents, causing every enemy in the map to lose a percentage of their max health over time."
-"DOTA_Tooltip_ability_custom_heartstopper_aura_Lore"						"Those who come within a short distance of Necrophos can feel pestilence and plague in the air."
-"DOTA_Tooltip_ability_custom_heartstopper_aura_aura_damage"					"%HEALTH DECAY:"
 "npc_boss_juggernaut"                     "Juggernaut (Boss)"
 
 
@@ -344,6 +330,32 @@
 
 "DOTA_Tooltip_ability_custom_summon_ancient_apparition"							"Ancient Apparition"
 "DOTA_Tooltip_ability_custom_summon_ancient_apparition_Description"				"Summons an Ancient Apparition to help."
+"npc_boss_lich"                     "Lich (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_frost_nova"										"Frost Blast"
+"DOTA_Tooltip_ability_custom_frost_nova_Description"							"Blasts the target enemy unit with damaging frost, dealing area damage and slowing movement and attack rates for 4 seconds.  The primary target takes the most damage."
+"DOTA_Tooltip_ability_custom_frost_nova_Lore"									"Frost-mage Ethreain has not forgotten even the simplest of ice manipulation."
+"DOTA_Tooltip_ability_custom_frost_nova_aoe_damage"								"AREA DAMAGE:"
+"DOTA_Tooltip_ability_custom_frost_nova_radius"									"RADIUS:"
+"DOTA_Tooltip_ability_custom_frost_nova_slow_movement_speed"					"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_frost_nova_slow_attack_speed"						"ATTACK SLOW:"
+
+
+"DOTA_Tooltip_ability_custom_chain_frost"										"Chain Frost"
+"DOTA_Tooltip_ability_custom_chain_frost_Description"							"Releases an orb of frost that bounces between nearby enemy units up to %jumps% times, slowing and damaging each time it hits. \n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_custom_chain_frost_Lore"									"Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him."
+"DOTA_Tooltip_ability_custom_chain_frost_Note0"									"Chain Frost cannot be disjointed."
+"DOTA_Tooltip_ability_custom_chain_frost_Note1"									"Chain Frost has a movement speed of 850."
+"DOTA_Tooltip_ability_custom_chain_frost_Note2"									"Chain Frost doesn't bounce to Zombies."
+"DOTA_Tooltip_ability_custom_chain_frost_damage"								"DAMAGE EACH BOUNCE:"
+"DOTA_Tooltip_ability_custom_chain_frost_jumps"									"BOUNCES:"
+"DOTA_Tooltip_ability_custom_chain_frost_jump_range"							"BOUNCE RANGE:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_movement_speed"					"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_attack_speed"						"ATTACK SLOW:"
+"DOTA_Tooltip_ability_custom_chain_frost_slow_duration"							"SLOW DURATION:"		
+"DOTA_Tooltip_ability_custom_chain_frost_damage_scepter"						"SCEPTER DAMAGE:"
+"DOTA_Tooltip_ability_custom_chain_frost_aghanim_description"					"Increases damage and casting range. Removes the limit on the number of times Chain Frost can jump."
 "npc_boss_luna"                     "Luna (Boss)"
 
 
