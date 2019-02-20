@@ -7813,6 +7813,8 @@
 "item_recipe_refresher"     "REMOVE"
 "item_refresher"            "REMOVE"
 "item_bfury"                "REMOVE"
+"item_lotus_orb"            "REMOVE"
+"item_sphere"               "REMOVE"
 "abyssal_underlord_custom_bend"
 {
     "BaseClass"						"ability_datadriven"
