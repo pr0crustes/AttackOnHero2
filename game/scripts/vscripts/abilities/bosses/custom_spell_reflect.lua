@@ -68,10 +68,10 @@ if IsServer() then
         parent:SetCursorCastTarget(usedAbilityCaster)
         ability:OnSpellStart()
 
-        local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_spellshield.vpcf", PATTACH_ABSORIGIN, parent)
+        local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_spellshield.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, parent)
+        ParticleManager:SetParticleControlEnt(particle, 0, parent, PATTACH_POINT_FOLLOW, "attach_hitloc", parent:GetAbsOrigin(), true)
         ParticleManager:ReleaseParticleIndex(particle)
 
         parent:EmitSound("Hero_Antimage.SpellShield.Reflect")
     end
-
 end

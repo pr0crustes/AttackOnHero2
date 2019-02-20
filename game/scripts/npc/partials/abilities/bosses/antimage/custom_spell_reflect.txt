@@ -8,6 +8,12 @@
 
     "AbilityCooldown"				"3.0"
 
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_antimage/antimage_spellshield.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+    }
+
     "AbilitySpecial"
     {
         "01"
