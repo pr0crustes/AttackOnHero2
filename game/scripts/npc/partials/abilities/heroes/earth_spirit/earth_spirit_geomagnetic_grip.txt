@@ -1,0 +1,18 @@
+"earth_spirit_geomagnetic_grip"
+{
+    "AbilityCooldown"				"12 11 10 9"
+
+    "AbilitySpecial"
+    {		
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "rock_damage"			"60 120 180 240"
+        }	
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"			    "1"
+        }	
+    }
+}

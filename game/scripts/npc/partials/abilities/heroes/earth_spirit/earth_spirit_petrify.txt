@@ -1,0 +1,18 @@
+"earth_spirit_petrify"
+{
+    "AbilityCooldown"			"20"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"		    "1"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "damage"	        "900"
+        }
+    }
+}

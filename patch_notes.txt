@@ -5,7 +5,14 @@
 
     Undying Decay now has a scepter effect.
 
+    Nerfed all Attack Speed Reduction.
 
+    Earth Spirit Boulder Smash: Cooldown reduced by 2 seconds, damage increased from "105 170 235 300" to "120 270 335 440".
+    Earth Spirit Rolling Boulder: Damage increased from "70 80 90 100" to "70 150 200 240", stun reduced from "0.4 0.6 0.8 1.0" to "0.2 0.3 0.4 0.5".
+    Earth Spirit Geomagnetic Grip: Cooldown reduced from "13" to "12 11 10 9", damage increased from "50 100 150 200" to "60 120 180 240", duration reduced from "2 2.5 3 3.5" to "1".
+    Earth Spirit Stone Caller: Max Charges reduced from "7" to "4", duration reduced from "120" to "60", cooldown reduced from "30.0" to "8.0".
+    Earth Spirit Petrify: Duration reduced from "3" to "1", cooldown reduced from "45" to "20", damage increased from "300" to "900".
+    Earth Spirit Magnetize: Damage increased from "50 75 100" to "250 450 650".
 
 
 2.0.2:

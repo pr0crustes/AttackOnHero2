@@ -5037,6 +5037,110 @@
         }
     }
 }
+"earth_spirit_boulder_smash"
+{
+    "AbilityCooldown"				"18.0 14.0 10.0 8.0"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "rock_damage"			"120 270 335 440"
+        }		
+    }
+}
+"earth_spirit_geomagnetic_grip"
+{
+    "AbilityCooldown"				"12 11 10 9"
+
+    "AbilitySpecial"
+    {		
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "rock_damage"			"60 120 180 240"
+        }	
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"			    "1"
+        }	
+    }
+}
+"earth_spirit_magnetize"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_second"		"250 450 650"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "silence_duration"		"1.0"
+        }
+    }
+}
+"earth_spirit_petrify"
+{
+    "AbilityCooldown"			"20"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "duration"		    "1"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_FLOAT"
+            "damage"	        "900"
+        }
+    }
+}
+"earth_spirit_rolling_boulder"
+{
+    "AbilitySpecial"
+    {
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"70 150 200 240"
+            "LinkedSpecialBonus"	"special_bonus_unique_earth_spirit"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "stun_duration"			"0.2 0.3 0.4 0.5"
+            "LinkedSpecialBonus"	"special_bonus_unique_earth_spirit_3"
+        }
+    }
+}
+"earth_spirit_stone_caller"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"4"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "charge_restore_time"	"8.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"60.0"
+        }
+    }
+}
 "elder_titan_earth_splitter"
 {
     "AbilitySpecial"

@@ -1,0 +1,13 @@
+"earth_spirit_boulder_smash"
+{
+    "AbilityCooldown"				"18.0 14.0 10.0 8.0"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "rock_damage"			"120 270 335 440"
+        }		
+    }
+}

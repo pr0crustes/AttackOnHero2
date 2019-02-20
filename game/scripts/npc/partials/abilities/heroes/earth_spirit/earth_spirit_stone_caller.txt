@@ -1,0 +1,21 @@
+"earth_spirit_stone_caller"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_charges"			"4"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "charge_restore_time"	"8.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"60.0"
+        }
+    }
+}

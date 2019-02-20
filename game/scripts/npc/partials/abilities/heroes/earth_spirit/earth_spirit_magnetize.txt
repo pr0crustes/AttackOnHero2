@@ -1,0 +1,16 @@
+"earth_spirit_magnetize"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_second"		"250 450 650"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "silence_duration"		"1.0"
+        }
+    }
+}
