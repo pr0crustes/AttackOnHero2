@@ -16,6 +16,9 @@
 
 
 "DOTA_Tooltip_ability_custom_borrowed_time"				    "Borrowed Time"
-"DOTA_Tooltip_ability_custom_borrowed_time_Description"	    "When activated, all damage dealt to you will heal instead of harm. Most negative buffs will also be removed. If the ability is not on cooldown, it will automatically activate if your health falls below %hp_threshold%.\n\nUpgradable by Aghanim's Scepter.\n\nDISPEL TYPE: Strong Dispel"
+"DOTA_Tooltip_ability_custom_borrowed_time_Description"	    "When activated, all damage dealt to you not harm, but heal for %heal_factor%%  it value."
 "DOTA_Tooltip_ability_custom_borrowed_time_Lore"			"The most unnatural of all the gifts of the Font of Avernus, this power defies mortal understanding.  What should hurt, instead heals; and what should kill gives strength anew."
 "DOTA_Tooltip_ability_custom_borrowed_time_duration"		"DURATION:"
+
+"DOTA_Tooltip_modifier_custom_borrowed_time"                "Borrowed Time"
+"DOTA_Tooltip_modifier_custom_borrowed_time_Description"    "Damage heals."

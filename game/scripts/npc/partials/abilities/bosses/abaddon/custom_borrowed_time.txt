@@ -1,30 +1,39 @@
 "custom_borrowed_time"
 {
-    "ID"							"$ID"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/bosses/custom_borrowed_time.lua"
+
+    "AbilityTextureName"            "abaddon_borrowed_time"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-    "AbilitySound"					"Hero_Abaddon.BorrowedTime"
-    "BaseClass"                     "abaddon_borrowed_time"
 
     "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
     "AbilityCastGestureSlot"		"ABSOLUTE"
 
-
     "AbilityCooldown"				"15"
     "AbilityManaCost"				"0"
+
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_abaddon/abaddon_borrowed_time_heal.vpcf"
+        "particle"                  "particles/units/heroes/hero_abaddon/abaddon_borrowed_time.vpcf"
+        "particle"                  "particles/status_fx/status_effect_abaddon_borrowed_time.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
+    }
 
     "AbilitySpecial"
     {
         "01"
         {
-            "var_type"					"FIELD_INTEGER"
-            "hp_threshold"				"0"
+            "var_type"					"FIELD_FLOAT"
+            "duration"					"6.0"
         }
         "02"
         {
-            "var_type"					"FIELD_FLOAT"
-            "duration"					"6.0"
+            "var_type"					"FIELD_INTEGER"
+            "heal_factor"			    "300"
         }
     }
 }
