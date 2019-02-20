@@ -372,13 +372,13 @@
         }
         "AttachWearables"
         {
-            "1" { "ItemDef" "7277" }
-            "2" { "ItemDef" "5636" }
-            "3" { "ItemDef" "9763" }
-            "4" { "ItemDef" "9764" }
-            "5" { "ItemDef" "9765" }
-            "6" { "ItemDef" "9769" }
-            "7" { "ItemDef" "7276" }
+            "1" { "ItemDef" "5636" }
+            "2" { "ItemDef" "9763" }
+            "3" { "ItemDef" "9764" }
+            "4" { "ItemDef" "9765" }
+            "5" { "ItemDef" "9769" }
+            "6" { "ItemDef" "5396" }
+            "7" { "ItemDef" "5395" }
         }
     }
 }
