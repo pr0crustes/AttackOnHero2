@@ -14,6 +14,8 @@
     Earth Spirit Petrify: Duration reduced from "3" to "1", cooldown reduced from "45" to "20", damage increased from "300" to "900".
     Earth Spirit Magnetize: Damage increased from "50 75 100" to "250 450 650".
 
+    Legion Commander Duel: Damge increased from "6" to "7".
+
 
 2.0.2:
     With this update:
