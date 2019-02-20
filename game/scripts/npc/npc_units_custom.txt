@@ -696,27 +696,24 @@
     "SoundSet"					"Hero_Rattletrap"
     "GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
     "VoiceFile"					"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
-    "ModelScale"				"2.5"
-    "Level"						"29"
+    "ModelScale"				"1.5"
+    "Level"						"26"
     "CanBeDominated"			"0"
     "ConsideredHero"			"1"
     "HasInventory"				"1"
-    "AbilityLayout"				"4"
 
     "precache"
     {
         "particle_folder"		"particles/units/heroes/hero_rattletrap"
     }
 
-    "Ability1"					"custom_battery_assault"
-    "Ability2"					"custom_missile"
-    "Ability3"                  "omniknight_degen_aura"
+    "Ability1"					"custom_march_of_the_machines"
 
     "ArmorPhysical"				"25"
     "MagicalResistance"			"15"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageMin"			"450"
-    "AttackDamageMax"			"590"
+    "AttackDamageMin"			"300"
+    "AttackDamageMax"			"350"
     "AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
     "AttackRate"				"1.0"
     "AttackAnimationPoint"		"0.39"
@@ -734,7 +731,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"325"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"120000"
+    "StatusHealth"				"30000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"5000"
     "StatusManaRegen"			"20"
@@ -747,16 +744,14 @@
 
     "Creature"
     {
-        "DisableResistance"          "60.0"
+        "DisableResistance"          "50.0"
         "OffensiveAbilities"
         {
             "Ability1"
             {
-                "Name"				"custom_battery_assault"
-            }
-            "Ability2"
-            {
-                "Name"				"custom_missile"
+                "Name"				"custom_march_of_the_machines"
+                "Radius"			 "250"
+                "AOE"				 "1"
             }
         }
         "EquippedItems"
@@ -2807,45 +2802,44 @@
         }
     }
 }
-"npc_boss_small_tinker"
+"npc_boss_sniper"
 {
-    "Model"                                 "models/heroes/tinker/tinker.vmdl"
+    "Model"                                 "models/heroes/sniper/sniper.vmdl"
     "BaseClass"                             "npc_dota_creature"
-    "SoundSet"                              "Hero_Tinker"
-    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
-    "Level"                                 "25"
-    "ModelScale"                            "1.2"
+    "SoundSet"                              "Hero_Sniper"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+    "Level"                                 "26"
+    "ModelScale"                            "0.5"
     "ConsideredHero"						"1"
     "CanBeDominated"						"0"
     "HasInventory"							"1"
-    "AbilityLayout"							"4"
 
     "precache"
     {
-        "particle_folder"				    "particles/units/heroes/hero_tinker"
+        "particle_folder"				    "particles/units/heroes/hero_sniper"
     }
 
-    "Ability1"                              "custom_march_of_the_machines"
+    "Ability1"                              "troll_warlord_fervor"
 
-    "ArmorPhysical"                         "28"
+    "ArmorPhysical"                         "25"
     "MagicalResistance"						"25"
     "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageMin"                       "350"
     "AttackDamageMax"                       "450"
-    "AttackRate"                            "1.0"
+    "AttackRate"                            "3.0"
     "AttackAnimationPoint"          		"0.4"
     "AttackAcquisitionRange"       		    "1000"
-    "AttackRange"                           "550"
-    "ProjectileModel"                       "particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
-    "ProjectileSpeed"                       "1100"
+    "AttackRange"                           "2000"
+    "ProjectileModel"                       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+    "ProjectileSpeed"                       "1200"
     "RingRadius"                            "100"
-    "HealthBarOffset"                       "150"
+    "HealthBarOffset"                       "100"
     "BountyXP"                              "0"
     "BountyGoldMin"                         "150"
     "BountyGoldMax"                         "160"
     "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"                         "320"
-    "StatusHealth"                          "55000"
+    "StatusHealth"                          "10000"
     "StatusHealthRegen"                     "6"
     "StatusMana"                            "2000"
     "StatusManaRegen"                       "50"
@@ -2858,24 +2852,14 @@
 
     "Creature"
     {
-        "DisableResistance"          "40.0"
-        "OffensiveAbilities"
-        {
-            "Ability1"
-            {
-                "Name"               "custom_march_of_the_machines"
-                "Radius"			 "250"
-                "AOE"				 "1"
-            }
-        }
+        "DisableResistance"                 "40.0"
         "AttachWearables"
         {
-            "1" { "ItemDef" "7143" }
-            "2" { "ItemDef" "6224" }
-            "3"	{ "ItemDef"	"467"  }
-            "4"	{ "ItemDef"	"464"  }
-            "5"	{ "ItemDef"	"367"  }
-            "6" { "ItemDef" "463"  }
+            "1" { "ItemDef" "7156" }
+            "2" { "ItemDef" "7157" }
+            "3"	{ "ItemDef"	"7158" }
+            "4"	{ "ItemDef"	"7160" }
+            "5"	{ "ItemDef"	"7163" }
         }
     }
 }
@@ -3042,75 +3026,6 @@
             "4" { "ItemDef"     "8849" }
             "5" { "ItemDef"     "8850" }
             "6"	{ "ItemDef"     "8851" }
-        }
-    }
-}
-"npc_boss_techies"
-{
-    "Model"                                 "models/heroes/techies/techies.vmdl"
-    "BaseClass"                             "npc_dota_creature"
-    "SoundSet"                              "Hero_Techies"
-    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
-    "Level"                                 "20"
-    "ModelScale"                            "0.6"
-    "ConsideredHero"						"1"
-    "CanBeDominated"						"0"
-    "HasInventory"							"1"
-    "AbilityLayout"							"4"
-
-    "Ability1"								"custom_suicide"
-
-    "ArmorPhysical"                         "15"
-    "MagicalResistance"						"0"
-    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageMin"                       "150"
-    "AttackDamageMax"                       "250"
-    "AttackRate"                            "1.0"
-    "AttackAnimationPoint"          		"0.4"
-    "AttackAcquisitionRange"       		    "1000"
-    "AttackRange"                           "550"
-    "ProjectileModel"                       "particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
-    "ProjectileSpeed"                       "1100"
-    "RingRadius"                            "100"
-    "HealthBarOffset"                       "120"
-    "BountyXP"                              "0"
-    "BountyGoldMin"                         "100"
-    "BountyGoldMax"                         "120"
-    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"                         "150"
-    "StatusHealth"                          "1200"
-    "StatusHealthRegen"                     "10"
-    "StatusMana"                            "2000"
-    "StatusManaRegen"                       "50"
-    "VisionDaytimeRange"                    "1600"
-    "VisionNighttimeRange"                  "1600"
-    "TeamName"                              "DOTA_TEAM_BADGUYS"
-    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    "Creature"
-    {
-        "DisableResistance"          "50.0"
-        "OffensiveAbilities"
-        {
-            "Ability1"
-            {
-                "Name"                      "custom_suicide"
-                "Radius"					"1000"
-                "MinimumTargets"			"1"
-                "AOE"						"1"
-            }
-        }
-        "AttachWearables"
-        {
-            "1" { "ItemDef"     "487" }
-            "2" { "ItemDef"     "489" }
-            "3" { "ItemDef"     "490" }
-            "4" { "ItemDef"     "491" }
-            "5" { "ItemDef"     "492" }
-            "6" { "ItemDef"     "499" }
-            "7" { "ItemDef"     "394" }
         }
     }
 }

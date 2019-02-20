@@ -616,28 +616,17 @@
 			"a"
 			{
 				"NPCName"				"npc_boss_clockwerk"
-				"TotalUnitsToSpawn"		"1"
+				"TotalUnitsToSpawn"		"5"
 				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"30"
-			}
-
-			"b"
-			{
-				"NPCName"				"npc_boss_techies"
-				"TotalUnitsToSpawn"		"7"
-				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"9"
+				"SpawnInterval"			"15"
 			}
 			
-			"c"
+			"b"
 			{
-				"WaitForUnit"			"a"
-				"WaitForTime"			"15"
-				
-				"NPCName"				"npc_boss_small_tinker"
-				"TotalUnitsToSpawn"		"3"
+				"NPCName"				"npc_boss_sniper"
+				"TotalUnitsToSpawn"		"7"
 				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"25"
+				"SpawnInterval"			"17"
 			}
 		}
 		

@@ -1,0 +1,61 @@
+"npc_boss_sniper"
+{
+    "Model"                                 "models/heroes/sniper/sniper.vmdl"
+    "BaseClass"                             "npc_dota_creature"
+    "SoundSet"                              "Hero_Sniper"
+    "GameSoundsFile"                        "soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+    "Level"                                 "26"
+    "ModelScale"                            "0.5"
+    "ConsideredHero"						"1"
+    "CanBeDominated"						"0"
+    "HasInventory"							"1"
+
+    "precache"
+    {
+        "particle_folder"				    "particles/units/heroes/hero_sniper"
+    }
+
+    "Ability1"                              "troll_warlord_fervor"
+
+    "ArmorPhysical"                         "25"
+    "MagicalResistance"						"25"
+    "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageMin"                       "350"
+    "AttackDamageMax"                       "450"
+    "AttackRate"                            "3.0"
+    "AttackAnimationPoint"          		"0.4"
+    "AttackAcquisitionRange"       		    "1000"
+    "AttackRange"                           "2000"
+    "ProjectileModel"                       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+    "ProjectileSpeed"                       "1200"
+    "RingRadius"                            "100"
+    "HealthBarOffset"                       "100"
+    "BountyXP"                              "0"
+    "BountyGoldMin"                         "150"
+    "BountyGoldMax"                         "160"
+    "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"                         "320"
+    "StatusHealth"                          "10000"
+    "StatusHealthRegen"                     "6"
+    "StatusMana"                            "2000"
+    "StatusManaRegen"                       "50"
+    "VisionDaytimeRange"                    "1600"
+    "VisionNighttimeRange"                  "1600"
+    "TeamName"                              "DOTA_TEAM_BADGUYS"
+    "CombatClassAttack"                     "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"                     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationshipClass"                 "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableResistance"                 "40.0"
+        "AttachWearables"
+        {
+            "1" { "ItemDef" "7156" }
+            "2" { "ItemDef" "7157" }
+            "3"	{ "ItemDef"	"7158" }
+            "4"	{ "ItemDef"	"7160" }
+            "5"	{ "ItemDef"	"7163" }
+        }
+    }
+}
