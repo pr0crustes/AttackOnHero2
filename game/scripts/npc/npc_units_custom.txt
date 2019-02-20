@@ -321,7 +321,7 @@
     "Ability1"					"custom_aura_mana_drain"
     "Ability2"                  "custom_mana_break"
     "Ability3"                  "custom_mana_void"
-    "Ability4"                  "custom_spell_block"
+    "Ability4"                  "custom_spell_reflect"
 
     "ArmorPhysical"				"65"
     "MagicalResistance"			"65"

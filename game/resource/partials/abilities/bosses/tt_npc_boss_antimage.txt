@@ -27,6 +27,5 @@
 "DOTA_Tooltip_ability_custom_mana_void_mana_void_aoe_radius"			"RADIUS:"
 
 
-"DOTA_Tooltip_Ability_custom_spell_block"				"Spell Block"
-"DOTA_Tooltip_Ability_custom_spell_block_Description"	"Will block one targeted spell every 2 seconds."
-
+"DOTA_Tooltip_Ability_custom_spell_reflect"				                "Spell Reflect"
+"DOTA_Tooltip_Ability_custom_spell_reflect_Description"	                "Will reflect the next targeted spell when ready."

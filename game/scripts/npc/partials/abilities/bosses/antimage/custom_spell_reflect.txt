@@ -1,0 +1,19 @@
+"custom_spell_reflect"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/bosses/custom_spell_reflect.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"            "antimage_counterspell"
+
+    "AbilityCooldown"				"5.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "cooldown"		        "5.0"
+        }
+    }
+}
