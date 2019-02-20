@@ -19,12 +19,12 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "move_speed"            "1"
+            "move_speed"            "3"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "bonus_health"          "6 8 10 12"
+            "bonus_health"          "8 10 12 14"
         }
     }
     
