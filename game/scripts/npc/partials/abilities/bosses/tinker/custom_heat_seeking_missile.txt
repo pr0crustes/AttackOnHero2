@@ -1,0 +1,46 @@
+"custom_heat_seeking_missile"
+{
+    "ID"					        "$ID"
+    "BaseClass"                     "tinker_heat_seeking_missile"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+    "AbilitySound"					"Hero_Tinker.Heat-Seeking_Missile"
+
+    "AbilityCastPoint"				"0 0 0 0"
+
+    "AbilityCooldown"				"6.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    { 
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "damage"			"400"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "radius"			"2500 2500 2500 2500"
+        }
+        "03"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "targets"			"2 2 2 2"
+        }
+        "04"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "speed"				"700"
+        }
+        "05"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "targets_scepter"	"4 4 4 4"
+        }
+    }
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+}

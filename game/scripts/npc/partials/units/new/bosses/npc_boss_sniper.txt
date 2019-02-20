@@ -17,7 +17,7 @@
 
     "Ability1"                              "troll_warlord_fervor"
 
-    "ArmorPhysical"                         "25"
+    "ArmorPhysical"                         "20"
     "MagicalResistance"						"25"
     "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageMin"                       "350"
@@ -25,7 +25,7 @@
     "AttackRate"                            "3.0"
     "AttackAnimationPoint"          		"0.4"
     "AttackAcquisitionRange"       		    "1000"
-    "AttackRange"                           "2000"
+    "AttackRange"                           "1000"
     "ProjectileModel"                       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
     "ProjectileSpeed"                       "1200"
     "RingRadius"                            "100"
@@ -34,8 +34,8 @@
     "BountyGoldMin"                         "150"
     "BountyGoldMax"                         "160"
     "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"                         "320"
-    "StatusHealth"                          "10000"
+    "MovementSpeed"                         "550"
+    "StatusHealth"                          "15000"
     "StatusHealthRegen"                     "6"
     "StatusMana"                            "2000"
     "StatusManaRegen"                       "50"

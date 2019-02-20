@@ -636,6 +636,23 @@
 "DOTA_Tooltip_ability_custom_ravage_Note1"									"Ravage waves move outwards at a speed of 400."
 "DOTA_Tooltip_ability_custom_ravage_radius"									"RADIUS:"
 "DOTA_Tooltip_ability_custom_ravage_duration"								"DURATION:"
+"npc_boss_tinker"                     "Tinker (Boss)"
+
+
+
+"DOTA_Tooltip_ability_custom_heat_seeking_missile"								"Heat-Seeking Missile"
+"DOTA_Tooltip_ability_custom_heat_seeking_missile_Description"					"Launches a pair of rockets at the nearest visible enemy heroes within 2500 range."
+"DOTA_Tooltip_ability_custom_heat_seeking_missile_Lore"							"The last contraption Boush was able to save was a retrofitted rocket launcher with a homing mechanism."
+"DOTA_Tooltip_ability_custom_heat_seeking_missile_damage"						"DAMAGE:"
+"DOTA_Tooltip_ability_custom_heat_seeking_missile_targets"						"TARGETS:"
+
+
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op"							"March of the Machines"
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op_Description"				"Enlists an army of robotic minions to destroy enemy units in an area around Tinker."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op_Lore"						"Even though the laboratory has since been sealed off, the ability to radio in robotic drones is still in working order."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op_Note0"					"Robots spawn at a rate of 50 per second."
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op_radius"					"RADIUS:"
+"DOTA_Tooltip_ability_custom_march_of_the_machines_op_duration"					"DURATION:"
 "npc_boss_tiny"                     "Tiny (Boss)"
 "npc_boss_treant"                     "Treant (Boss)"
 
