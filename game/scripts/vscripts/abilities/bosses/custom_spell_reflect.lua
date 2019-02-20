@@ -37,7 +37,9 @@ if IsServer() then
     function modifier_custom_spell_reflect:GetReflectSpell(keys)
         local parent = self:GetParent()
 
-        if parent:PassivesDisabled() then
+        local time = GameRules:GetGameTime()
+
+        if parent:PassivesDisabled() or self.last_time + self.cooldown > time then
             return
         end
 
@@ -60,6 +62,8 @@ if IsServer() then
 
             ability.isReflection = true
         end
+
+        self.last_time = time
 
         parent:SetCursorCastTarget(usedAbilityCaster)
         ability:OnSpellStart()

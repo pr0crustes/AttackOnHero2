@@ -198,14 +198,14 @@
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"            "antimage_counterspell"
 
-    "AbilityCooldown"				"5.0"
+    "AbilityCooldown"				"3.0"
 
     "AbilitySpecial"
     {
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "cooldown"		        "5.0"
+            "cooldown"		        "3.0"
         }
     }
 }
