@@ -12,7 +12,8 @@
 
     "Ability1"					"custom_roshan_bash"
     "Ability2"                  "custom_roshan_slam"
-    "Ability3"                  "roshan_split_2"
+    "Ability3"                  "boss_dash"
+    "Ability4"                  "roshan_split_2"
 
     "ArmorPhysical"				"40"
     "MagicalResistance"			"30"
@@ -57,6 +58,10 @@
                 "Name"              "custom_roshan_slam"
                 "MinimumTargets"	"1"
                 "Radius"			"350"
+            }
+            "Ability3"
+            {
+                "Name"              "boss_dash"
             }
         }
     }

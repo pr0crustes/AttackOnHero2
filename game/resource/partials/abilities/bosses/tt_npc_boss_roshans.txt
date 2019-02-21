@@ -18,6 +18,10 @@
 "DOTA_Tooltip_ability_roshan_split_4_Description"             "When this unit dies, it will split into smaller parts."
 
 
+"DOTA_Tooltip_ability_boss_dash"                         "Dash"
+"DOTA_Tooltip_ability_boss_dash_Description"             "Dashs foward."
+
+
 "DOTA_Tooltip_Ability_custom_roshan_bash"					"Bash"
 "DOTA_Tooltip_Ability_custom_roshan_bash_Description"		"Roshan has a chance to stun on attack."
 "DOTA_Tooltip_Ability_custom_roshan_bash_bash_chance"		"%CHANCE:"
