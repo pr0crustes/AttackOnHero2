@@ -7,7 +7,8 @@
 
     Removed Bounty Hunter (BOSS), seens like he was causing the crash.
 
-    Undying Decay now has a scepter effect.
+    Undying Decay now has a scepter upgrade.
+    Meepo Dived We Stand now has a scepter upgrade.
 
     Nerfed all Attack Speed Reduction.
 

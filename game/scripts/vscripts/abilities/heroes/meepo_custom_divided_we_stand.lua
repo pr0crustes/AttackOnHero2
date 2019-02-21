@@ -57,7 +57,7 @@ function cast_divided_we_stand(keys)
 
     kill_alive_clones(caster)
 
-    local n_clones = ability:GetSpecialValueFor("n_clones")
+    local n_clones = ability:GetSpecialValueFor(value_if_scepter(caster, "n_clones_scepter", "n_clones"))
 
     local n = 0
 
@@ -68,7 +68,7 @@ function cast_divided_we_stand(keys)
             n = n + 1
 
             if n_clones > n then
-                return 1.0
+                return 0.5
             end
         end
     )
