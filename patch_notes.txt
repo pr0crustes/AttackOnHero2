@@ -3,6 +3,8 @@
 2.0.3:
     With this update:
 
+    Removed Bounty Hunter (BOSS), seens like he was causing the crash.
+
     Undying Decay now has a scepter effect.
 
     Nerfed all Attack Speed Reduction.

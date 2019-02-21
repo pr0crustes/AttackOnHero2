@@ -759,25 +759,8 @@
 				"SpawnInterval"			"30"
 			}
 		}
-
-		"34" // Bounty Hunter
-		{
-			"Title"						"Gondar"
-			"MaxGold"					"13200"
-			"BagCount"					"1"
-			"BagVariance"				"30"
-			"FixedXP"					"6500"
-
-			"a"
-			{
-				"NPCName"				"npc_boss_bounty_hunter"
-				"TotalUnitsToSpawn"		"1"
-				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"30"
-			}
-		}
 		
-		"35" // Hellbear
+		"34" // Lich
 		{
 			"Title"						"Ethreain"
 			"MaxGold"					"13300"
@@ -794,7 +777,7 @@
 			}
 		}
 
-		"36" // Rubick
+		"35" // Rubick
 		{
 			"Title"						"Spells"
 			"MaxGold"					"14000"
