@@ -18,7 +18,7 @@ function on_created(keys)
 
 	Timers:CreateTimer(
 		function()
-			if caster and caster:IsAlive() and caster:FindAbilityByName("ancient_increase_stats") then
+			if caster and not caster:IsNull() and caster:IsAlive() and caster:FindAbilityByName("ancient_increase_stats") then
 				local round = GameRules.GLOBAL_roundNumber
 				if round and round > 0 then
 
