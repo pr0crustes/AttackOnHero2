@@ -5,6 +5,8 @@
     Nerfed Lich (BOSS) damage.
     Nerfed Vampiric Blade.
 
+    Shadow Fiend Requiem has now a scepter upgrade.
+
 
 
 2.0.3:

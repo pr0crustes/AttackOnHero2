@@ -1,6 +1,7 @@
 "nevermore_custom_requiem"
 {
-    "BaseClass"					                "ability_datadriven"
+    "BaseClass"						            "ability_lua"
+    "ScriptFile"		                        "abilities/heroes/nevermore_custom_requiem.lua"
     
     "AbilityTextureName"                        "nevermore_requiem"
 
@@ -20,6 +21,8 @@
     "AbilityCastRange"					        "1000"
 
     "AbilityManaCost"					        "150 200 250"
+
+    "HasScepterUpgrade"			                "1"
 
 
     "precache"
@@ -41,7 +44,7 @@
         "02"
         {
             "var_type"					        "FIELD_INTEGER"
-            "damage_reduction_pct"		        "60 70 80"
+            "damage_pct_scepter"		        "40"
         }
         "03"
         {
@@ -67,42 +70,6 @@
         {
             "var_type"					        "FIELD_INTEGER"
             "lines_end_width"			        "425"
-        }
-    }
-
-    "OnSpellStart"
-    {
-        "AttachEffect"
-        {
-            "Target"                            "CASTER"
-            "EffectName"                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls.vpcf"
-            "EffectAttachType"                  "attach_origin"
-        }
-        "AttachEffect"
-        {
-            "Target"                            "CASTER"
-            "EffectName"                        "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_a.vpcf"
-            "EffectAttachType"                  "attach_origin"
-        }
-        "FireSound"
-        {
-            "Target"			                "CASTER"
-            "EffectName"		                "Hero_Nevermore.RequiemOfSouls"
-        }
-        "RunScript"
-        {
-            "ScriptFile"		                "abilities/heroes/nevermore_custom_requiem.lua"
-            "Function"			                "cast_nevermore_custom_requiem"
-        }
-    }
-
-    "OnProjectileHitUnit"
-    {
-        "Damage"
-        {
-            "Target"	                        "TARGET"
-            "Type"		                        "DAMAGE_TYPE_MAGICAL"
-            "Damage"	                        "%damage"
         }
     }
 }
