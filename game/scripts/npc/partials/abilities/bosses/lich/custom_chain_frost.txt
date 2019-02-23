@@ -23,7 +23,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage"				"1800"
+            "damage"				"1600"
         }
         "02"
         {
@@ -33,7 +33,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "jump_range"			"1200"
+            "jump_range"			"600"
         }
         "04"
         {
