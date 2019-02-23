@@ -1,4 +1,11 @@
 
+2.0.4:
+    With this update:
+
+    Nerfed Lich (BOSS) damage.
+    Nerfed Vampiric Blade.
+
+
 
 2.0.3:
     With this update:

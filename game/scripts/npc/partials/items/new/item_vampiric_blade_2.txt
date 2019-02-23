@@ -42,7 +42,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_bonus"			"40 60"
+            "damage_bonus"			"30 40"
         }
         "02"
         {
@@ -52,7 +52,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal"			        "30 50"
+            "heal"			        "10 20"
         }
         "04"
         {
