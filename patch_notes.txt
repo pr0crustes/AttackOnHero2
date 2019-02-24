@@ -2,6 +2,8 @@
 2.0.5:
     With this update:
 
+    Bane got a reworked.
+
     Huskar Ultimate has new code.
 
     Fixed a bug where Shadow Fiend's Scepter buff would not be revoked.
