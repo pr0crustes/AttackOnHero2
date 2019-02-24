@@ -1,6 +1,7 @@
 "huskar_custom_life_trade"
 {
-    "BaseClass"					"ability_datadriven"
+    "BaseClass"             	"ability_lua"
+    "ScriptFile"             	"abilities/heroes/huskar_custom_life_trade.lua"
 
     "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
 
@@ -17,67 +18,27 @@
         "01"
         {
             "var_type"			    "FIELD_INTEGER"
-            "damage_pct"	        "5"			
+            "damage_pct"	        "5"
         }
         "02"
         {
             "var_type"			    "FIELD_INTEGER"
-            "bonus_attack_speed"	"100 200 300"
+            "bonus_attack_speed"	"150 250 350"
         }
         "03"
         {
             "var_type"			    "FIELD_INTEGER"
             "interval"	            "1"
         }
-    }
-    
-    "OnUpgrade"
-    {
-        "RunScript"
+        "04"
         {
-            "ScriptFile" "abilities/other/toggle.lua"
-            "Function"   "on_toggle_upgrade"
+            "var_type"			    "FIELD_FLOAT"
+            "tick_interval"	        "0.1"
         }
-    }
-
-    "OnToggleOn"
-    {
-        "ApplyModifier"
+        "05"
         {
-            "ModifierName"	    "modifier_huskar_custom_life_trade_stats_buff"
-            "Target"		    "CASTER"
-        }
-    }
-
-    "OnToggleOff"
-    {
-        "RemoveModifier"
-        {
-            "ModifierName"	    "modifier_huskar_custom_life_trade_stats_buff"
-            "Target"		    "CASTER"
-        }
-    }
-
-    "Modifiers"
-    {
-        "modifier_huskar_custom_life_trade_stats_buff"
-        {
-            "IsHidden"      "1"
-
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"      "%bonus_attack_speed"
-            }
-
-            "ThinkInterval"	        "%interval"
-            "OnIntervalThink"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"    "abilities/heroes/huskar_custom_life_trade.lua"
-                    "Function"      "on_interval_think"
-                }
-            }
+            "var_type"			    "FIELD_INTEGER"
+            "model_multiplier"	    "30 50 70"
         }
     }
 }
