@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_bane_custom_bonus_unique_2"          "3 Seconds Enfeeble Cooldown"
