@@ -1,3 +1,5 @@
+require("lib/my")
+
 
 modifier_enfeeble = "modifier_bane_custom_enfeeble"
 
@@ -14,6 +16,7 @@ if IsServer() then
         return self:GetAbilityDamageType()
     end
 
+
     function bane_custom_brain_sap:OnSpellStart()
         local caster = self:GetCaster()
         local target = self:GetCursorTarget()
@@ -21,7 +24,7 @@ if IsServer() then
         ApplyDamage({
             ability = self,
             attacker = caster,
-            damage = self:GetSpecialValueFor("damage"),
+            damage = self:GetSpecialValueFor("damage") + talent_value(caster, "bane_custom_bonus_unique_1"),
             damage_type = self:DamageTypeForTarget(target),
             victim = target
         })

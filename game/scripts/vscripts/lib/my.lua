@@ -223,3 +223,12 @@ function max_all_abilities(unit)
 		end
 	end
 end
+
+
+function talent_value(caster, talent_name)
+	local talent = caster:FindAbilityByName(talent_name)
+	if talent and talent:GetLevel() > 0 then
+		return talent:GetSpecialValueFor("value")
+	end
+	return 0
+end

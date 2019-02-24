@@ -1,0 +1,1 @@
+"DOTA_Tooltip_Ability_bane_custom_bonus_unique_1"          "+300 Brain Sap Damage"

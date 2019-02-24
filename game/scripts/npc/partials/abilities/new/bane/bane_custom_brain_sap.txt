@@ -26,13 +26,12 @@
         {
             "var_type"						"FIELD_INTEGER"
             "damage"				        "100 230 360 500"
-            //"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+            "LinkedSpecialBonus"			"bane_custom_bonus_unique_1"
         }
         "02"
         {
             "var_type"						"FIELD_INTEGER"
-            "heal"	                        "75 150 225 300"
-            //"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+            "heal"	                        "50 100 150 200"
         }
         "03"
         {
