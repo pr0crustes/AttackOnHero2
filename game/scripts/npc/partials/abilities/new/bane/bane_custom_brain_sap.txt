@@ -20,6 +20,13 @@
     "AbilityManaCost"				"110 140 170 200"
 
 
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_bane/bane_sap.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
+    }
+
+
     "AbilitySpecial"
     {
         "01"

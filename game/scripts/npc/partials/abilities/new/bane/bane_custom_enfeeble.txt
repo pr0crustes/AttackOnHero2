@@ -23,6 +23,7 @@
     "precache"
     {
         "particle"                  "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
     }
 
 
