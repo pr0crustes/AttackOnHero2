@@ -1,0 +1,80 @@
+"bane_custom_enfeeble"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityTextureName"		    "bane_enfeeble"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+    "AbilityCastRange"				"1000"
+    "AbilityCastPoint"				"0.3"
+    "AbilityCastGestureSlot"		"DEFAULT"
+
+    "AbilityCooldown"				"12 10 8 6"
+
+    "AbilityManaCost"				"50 75 100 125"
+
+    
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
+    }
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "slow"	                "-8 -10 -12 -14"			
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "duration"  	        "8"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"		"Hero_Bane.Enfeeble.Cast"
+            "Target"			"CASTER"
+        }
+        "ApplyModifier"
+        {
+            "ModifierName"	    "modifier_bane_custom_enfeeble"
+            "Target"		    "TARGET"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_bane_custom_enfeeble" 
+        {
+            "IsDebuff"				"1"
+            "Duration"              "%duration"
+            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"                    "TARGET"
+                    "EffectName"                "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
+                    "EffectAttachType"          "follow_overhead"
+                }
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%slow"
+            }
+        }
+    }
+}
