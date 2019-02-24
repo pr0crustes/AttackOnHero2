@@ -1,7 +1,7 @@
 "npc_dota_hero_bane"
 {
     "Ability1"		"bane_custom_enfeeble"
-    //"Ability2"		"bane_custom_brain_sap"
+    "Ability2"		"bane_custom_brain_sap"
     "Ability3"		"bane_nightmare"
     "Ability4"		"generic_hidden"
     "Ability5"		"generic_hidden"
