@@ -4,6 +4,8 @@
 
     Huskar Ultimate has new code.
 
+    Fixed a bug where Shadow Fiend's Scepter buff would not be revoked.
+
 
 2.0.4:
     With this update:

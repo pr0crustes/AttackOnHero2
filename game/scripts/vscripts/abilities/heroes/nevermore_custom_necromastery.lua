@@ -18,23 +18,29 @@ function on_upgrade(keys)
 end
 
 
+local function talent_additional_souls(caster)
+    local talent = caster:FindAbilityByName("nevermore_custom_bonus_unique_1")
+    if talent and talent:GetLevel() > 0 then
+        return talent:GetSpecialValueFor("value")
+    end
+    return 0
+end
+
+
 function on_attack_landed(keys)
     local caster = keys.caster
     local ability = keys.ability
     local target = keys.target
 
-    local max_souls = ability:GetSpecialValueFor(value_if_scepter(caster, "necromastery_max_souls_scepter", "necromastery_max_souls"))
+    local max_souls_key = value_if_scepter(caster, "necromastery_max_souls_scepter", "necromastery_max_souls")
+    local max_souls = ability:GetSpecialValueFor(max_souls_key) + talent_additional_souls(caster)
 
-    local talent = caster:FindAbilityByName("nevermore_custom_bonus_unique_1")
-    if talent and talent:GetLevel() > 0 then
-        max_souls = max_souls + talent:GetSpecialValueFor("value")
-    end
+    local soul_count = caster:GetModifierStackCount(soul_stack_modifier, caster)
+    local new_souls = math.min(soul_count + 1, max_souls)
 
-    local new_souls = caster:GetModifierStackCount(soul_stack_modifier, caster) + 1
+    caster:SetModifierStackCount(soul_stack_modifier, caster, new_souls)
 
-    if new_souls <= max_souls then
-        caster:SetModifierStackCount(soul_stack_modifier, caster, new_souls)
-
+    if new_souls < max_souls then
         ProjectileManager:CreateTrackingProjectile({
             Target = caster,
             Source = target,
