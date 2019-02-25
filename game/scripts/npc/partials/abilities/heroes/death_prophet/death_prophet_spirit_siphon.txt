@@ -5,12 +5,12 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "damage"			    "14 30 50 70"
+            "damage"			    "25 50 100 150"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "damage_pct"			"0.05 0.10 0.15 0.20"
+            "damage_pct"			"0.05 0.1 0.2 0.3"
             "LinkedSpecialBonus"	"special_bonus_unique_death_prophet_3"
         }
         "06"

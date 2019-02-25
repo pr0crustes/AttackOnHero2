@@ -1,0 +1,4 @@
+"death_prophet_carrion_swarm"
+{
+    "AbilityDamage"					"75 150 300 500"
+}

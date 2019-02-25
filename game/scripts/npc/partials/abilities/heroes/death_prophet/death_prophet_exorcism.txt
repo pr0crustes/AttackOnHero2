@@ -1,0 +1,29 @@
+"death_prophet_exorcism"
+{
+    "AbilityCooldown"				"145.0 130.0 120.0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spirits"				"10 20 30"
+            "LinkedSpecialBonus"	"special_bonus_unique_death_prophet"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "min_damage"			"60 80 100"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_damage"			"60 80 100"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "average_damage"		"60 80 100"
+        }
+    }
+}
