@@ -19,7 +19,7 @@
     "Ability1"                              "custom_heat_seeking_missile"
     "Ability2"                              "custom_march_of_the_machines_op"
 
-    "ArmorPhysical"                         "28"
+    "ArmorPhysical"                         "30"
     "MagicalResistance"						"25"
     "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageMin"                       "350"
@@ -37,7 +37,7 @@
     "BountyGoldMax"                         "160"
     "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"                         "320"
-    "StatusHealth"                          "70000"
+    "StatusHealth"                          "80000"
     "StatusHealthRegen"                     "6"
     "StatusMana"                            "2000"
     "StatusManaRegen"                       "50"
