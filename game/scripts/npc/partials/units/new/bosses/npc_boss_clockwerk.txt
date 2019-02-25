@@ -40,7 +40,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"325"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"33000"
+    "StatusHealth"				"36000"
     "StatusHealthRegen"			"50"
     "StatusMana"				"5000"
     "StatusManaRegen"			"20"
@@ -58,7 +58,7 @@
         {
             "Ability1"
             {
-                "Name"				"custom_march_of_the_machines"
+                "Name"				 "custom_march_of_the_machines"
                 "Radius"			 "250"
                 "AOE"				 "1"
             }
