@@ -1,0 +1,39 @@
+"death_prophet_custom_moving_life"
+{
+    "BaseClass"					    "ability_lua"
+    "ScriptFile"		            "abilities/heroes/death_prophet_custom_moving_life.lua"
+
+    "AbilityTextureName"		    "death_prophet_silence"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityCastRange"				"900"
+    "AbilityCastPoint"				"0.5 0.5 0.5 0.5"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
+
+    "AbilityCooldown"				"15 14 13 12"
+
+    "AbilityManaCost"				"90 100 110 120"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"150 250 350 450"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_as_heal"		"50"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "400"
+        }
+    }
+}

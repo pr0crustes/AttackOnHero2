@@ -1,0 +1,6 @@
+"npc_dota_hero_death_prophet"
+{
+    "Ability2"		"death_prophet_custom_moving_life"
+
+    "Ability12"		"special_bonus_mp_350"
+}
