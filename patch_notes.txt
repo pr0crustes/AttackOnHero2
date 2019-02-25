@@ -8,6 +8,9 @@
 
     Fixed a bug where Shadow Fiend's Scepter buff would not be revoked.
 
+    Ancient Apparition Ice Vortex: Slow decreased from "-15 -20 -25 -30" to "-5 -10 -15 -20", spell resistance decreased from "-15 -20 -25 -30" to "-5 -10 -15 -20".
+
+
 
 2.0.4:
     With this update:

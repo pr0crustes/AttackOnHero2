@@ -1,0 +1,18 @@
+"ancient_apparition_ice_vortex"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "movement_speed_pct"	"-5 -10 -15 -20"
+            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_4"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spell_resist_pct"		"-5 -10 -15 -20"
+            "LinkedSpecialBonus"	"special_bonus_unique_ancient_apparition_4"
+        }
+    }
+}
