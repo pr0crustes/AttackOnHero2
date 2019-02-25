@@ -2,6 +2,8 @@
 2.0.5:
     With this update:
 
+    Small changes to bosses.
+
     Bane got a reworked.
 
     Huskar Ultimate has new code.

@@ -16,7 +16,7 @@
     "AbilityDuration"				"1.0"
     "AbilityManaCost"				"0"
 
-    "AbilityDamage"					"1500"
+    "AbilityDamage"					"1900"
 
     "AbilitySpecial"
     {			
