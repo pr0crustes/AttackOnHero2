@@ -1,0 +1,17 @@
+"vengefulspirit_magic_missile"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "magic_missile_stun"	"1.5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "magic_missile_damage"	"150 250 350 450"
+            "LinkedSpecialBonus"	"special_bonus_unique_vengeful_spirit_1"
+        }
+    }
+}

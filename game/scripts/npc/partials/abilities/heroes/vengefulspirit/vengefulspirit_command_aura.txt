@@ -1,0 +1,12 @@
+"vengefulspirit_command_aura"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "bonus_damage_pct"	    "5 10 15 20"
+            "LinkedSpecialBonus"	"special_bonus_unique_vengeful_spirit_2"
+        }
+    }
+}

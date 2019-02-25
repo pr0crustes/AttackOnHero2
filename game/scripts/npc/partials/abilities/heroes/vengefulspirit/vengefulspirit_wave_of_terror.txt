@@ -1,0 +1,14 @@
+"vengefulspirit_wave_of_terror"
+{
+    "AbilityCooldown"				"13 11 9 8"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "armor_reduction"	    "-1 -2 -3 -4"
+            "LinkedSpecialBonus"	"special_bonus_unique_vengeful_spirit_4"
+        }
+    }
+}

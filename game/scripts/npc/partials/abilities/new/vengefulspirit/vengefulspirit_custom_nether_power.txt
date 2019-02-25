@@ -1,0 +1,54 @@
+"vengefulspirit_custom_nether_power"
+{
+    "BaseClass"					"ability_datadriven"
+
+    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"		"DOTA_UNIT_TARGET_HERO"
+
+    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"		"vengefulspirit_nether_swap"
+
+    "AbilityCastRange"			"1000"
+    "AbilityCastPoint"			"0.3"
+    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"			"70.0 65.0 60.0"
+    "AbilityManaCost"			"200 300 400"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "crit_chance"	    "15"
+        }
+        "02"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "crit_mult"	        "200 250 300"
+        }
+        "03"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "duration"	        "10"
+        }
+    }
+
+    "precache"
+    {
+        "particle"              "particles/units/heroes/hero_arc_warden/arc_warden_tempest_buff.vpcf"
+        "particle"              "particles/units/heroes/hero_vengeful/vengeful_nether_swap.vpcf"
+        "soundfile"             "soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/vengefulspirit_custom_nether_power.lua"
+            "Function"			"cast_vengefulspirit_custom_nether_power"
+            "Target"			"TARGET"
+        }
+    }
+}
