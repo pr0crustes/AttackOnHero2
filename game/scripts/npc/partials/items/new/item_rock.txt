@@ -14,7 +14,7 @@
     "AbilityCastPoint"				"0.15"
 
     "AbilityManaCost"				"0"
-    "ItemCost"						"200"
+    "ItemCost"						"110"
 
     "ItemShopTags"					"consumable"
     "ItemQuality"					"consumable"

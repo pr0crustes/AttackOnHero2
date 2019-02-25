@@ -1,6 +1,6 @@
 "item_tango"
 {
-    "ItemCost"						"30"
+    "ItemCost"						"25"
     "ItemInitialCharges"			"1"
 
     "AbilitySpecial"
