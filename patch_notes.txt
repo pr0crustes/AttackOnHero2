@@ -23,6 +23,7 @@
     Replaced Vengeful Spirit Nether Swap with a new spell: Nether Power.
 
     Treant Consume Tree: No longer stacks, bonus health increased to "500 900 1300 1700", now slows.
+    Replaced Treant Overgrow with a new spell: Ultimate Sacrifice.
 
     Rock: Cost reduced from "200" to "110".
     Tango: Cost reduced from "30" to "25".
