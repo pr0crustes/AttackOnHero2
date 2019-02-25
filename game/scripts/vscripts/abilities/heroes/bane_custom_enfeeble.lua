@@ -42,6 +42,11 @@ function modifier_bane_custom_enfeeble:GetEffectAttachType()
 end
 
 
+function modifier_bane_custom_enfeeble:GetAttributes()
+    return MODIFIER_ATTRIBUTE_MULTIPLE
+end
+
+
 function modifier_bane_custom_enfeeble:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,

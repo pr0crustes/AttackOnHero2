@@ -8,24 +8,23 @@ bane_custom_brain_sap = class({})
 
 
 if IsServer() then
-    function bane_custom_brain_sap:DamageTypeForTarget(target)
-        if target:HasModifier(modifier_enfeeble) then
-            target:RemoveModifierByName(modifier_enfeeble)
-            return DAMAGE_TYPE_PURE
-        end
-        return self:GetAbilityDamageType()
-    end
-
-
     function bane_custom_brain_sap:OnSpellStart()
         local caster = self:GetCaster()
         local target = self:GetCursorTarget()
 
+        local damage = self:GetSpecialValueFor("damage") + talent_value(caster, "bane_custom_bonus_unique_1")
+        local enfeeble_damage = self:GetSpecialValueFor("enfeeble_damage")
+
+        while target:HasModifier(modifier_enfeeble) do
+            damage = damage + enfeeble_damage
+            target:RemoveModifierByName(modifier_enfeeble)
+        end
+
         ApplyDamage({
             ability = self,
             attacker = caster,
-            damage = self:GetSpecialValueFor("damage") + talent_value(caster, "bane_custom_bonus_unique_1"),
-            damage_type = self:DamageTypeForTarget(target),
+            damage = damage,
+            damage_type = self:GetAbilityDamageType(),
             victim = target
         })
 

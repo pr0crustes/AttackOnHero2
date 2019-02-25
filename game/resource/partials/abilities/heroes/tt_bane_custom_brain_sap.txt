@@ -1,6 +1,7 @@
 "DOTA_Tooltip_ability_bane_custom_brain_sap"									"Brain Sap"
-"DOTA_Tooltip_ability_bane_custom_brain_sap_Description"					    "Feasts on the vital energies of an enemy unit, healing Bane and dealing damage. If the target is enfeebled, the effect is consumed and damage is done as pure damage.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_bane_custom_brain_sap_Description"					    "Feasts on the vital energies of an enemy unit, healing Bane and dealing damage. If the target is enfeebled, the effect is consumed and damage is increased.\n\nUpgradable by Aghanim's Scepter."
 "DOTA_Tooltip_ability_bane_custom_brain_sap_damage"							    "DAMAGE:"
+"DOTA_Tooltip_ability_bane_custom_brain_sap_enfeeble_damage"				    "ENFEEBLE EXTRA DAMAGE:"
 "DOTA_Tooltip_ability_bane_custom_brain_sap_heal"			                    "HEAL AMOUNT:"
 "DOTA_Tooltip_ability_bane_custom_brain_sap_cooldown_scepter"				    "SCEPTER COOLDOWN:"
 "DOTA_Tooltip_ability_bane_custom_brain_sap_Lore"								"Atropos finds no greater pleasure than to harvest the fear he creates."
