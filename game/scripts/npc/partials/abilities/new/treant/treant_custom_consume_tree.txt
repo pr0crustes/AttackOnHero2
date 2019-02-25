@@ -10,10 +10,10 @@
     "AbilityCastRange"				"200"
     "AbilityCastPoint"				"0.25"
 
-    "AbilityCooldown"				"30.0 25.0 20.0 15.0"
-    "AbilityDuration"				"5.0"
+    "AbilityCooldown"				"35.0 30.0 25.0 20.0"
+    "AbilityDuration"				"8.0"
 
-    "AbilityManaCost"				"100 80 60 40"
+    "AbilityManaCost"				"80 100 120 130"
 
 
     "AbilitySpecial"
@@ -21,12 +21,17 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "stack_health"		    "100"
+            "bonus_health"		    "500 900 1300 1700"
         }
         "02"
         {
+            "var_type"				"FIELD_INTEGER"
+            "slow"		            "-45"
+        }
+        "03"
+        {
             "var_type"				"FIELD_FLOAT"
-            "duration"				"180.0"
+            "duration"				"8.0"
         }
     }
 
@@ -35,7 +40,7 @@
         "ApplyModifier"
         {
             "Target"			    "CASTER"
-            "ModifierName"		    "modifier_custom_consume_tree"
+            "ModifierName"		    "modifier_treant_custom_consume_tree"
         }
         "DestroyTrees"
         {
@@ -57,43 +62,15 @@
 
     "Modifiers"
     {
-        "modifier_custom_consume_tree_hud"
+        "modifier_treant_custom_consume_tree"
         {
-            "IsBuff"                "1"
-            "IsPurgable"			"0"
-            "AbilityTextureName"    "treant_natures_guise"
-        }
-
-        "modifier_custom_consume_tree"
-        {
-            "IsHidden"				"1"
             "IsBuff"				"1"
             "Duration"				"%duration"
-            "Attributes"			"MODIFIER_ATTRIBUTE_MULTIPLE"
-
-            "OnCreated"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "increate_hud_modifier"
-                    "modifier"              "modifier_custom_consume_tree_hud"
-                }
-            }
-
-            "OnDestroy"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-                    "Function"			    "decrease_hud_modifier"
-                    "modifier"              "modifier_custom_consume_tree_hud"
-                }
-            }
 
             "Properties"
             {
-                "MODIFIER_PROPERTY_HEALTH_BONUS"		"%stack_health"
+                "MODIFIER_PROPERTY_HEALTH_BONUS"		            "%bonus_health"
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"      "%slow"
             }
         }
     }

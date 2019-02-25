@@ -1,9 +1,10 @@
 "DOTA_Tooltip_ability_treant_custom_consume_tree"							"Consume Tree"
-"DOTA_Tooltip_ability_treant_custom_consume_tree_Description"				"Treant eats the target tree, temporarily increasing his max health. This effect stacks."
+"DOTA_Tooltip_ability_treant_custom_consume_tree_Description"				"Treant eats the target tree, temporarily increasing his max health. While the health is increased, Treant is slowed."
 "DOTA_Tooltip_ability_treant_custom_consume_tree_Lore"						"The Protectors are able to consume trees, extending themselves."
-"DOTA_Tooltip_ability_treant_custom_consume_tree_stack_health"				"BONUS HEALTH:"
+"DOTA_Tooltip_ability_treant_custom_consume_tree_bonus_health"				"BONUS HEALTH:"
+"DOTA_Tooltip_ability_treant_custom_consume_tree_slow"				        "%SLOW:"
 "DOTA_Tooltip_ability_treant_custom_consume_tree_duration"					"DURATION:"
 
 
-"DOTA_Tooltip_modifier_custom_consume_tree_hud"						        "Consumed Tree"
-"DOTA_Tooltip_modifier_custom_consume_tree_hud_Description"			        "Max health is increased."
+"DOTA_Tooltip_modifier_treant_custom_consume_tree"						    "Consumed Tree"
+"DOTA_Tooltip_modifier_treant_custom_consume_tree_Description"			    "Max health increased, slowed."
