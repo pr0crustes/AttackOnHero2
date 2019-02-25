@@ -1,4 +1,4 @@
 "DOTA_Tooltip_ability_treant_custom_ultimate_sacrifice"							"Ultimate Sacrifice"
-"DOTA_Tooltip_ability_treant_custom_ultimate_sacrifice_Description"				"CHANNELED - Treant, in a moment of despair, sacrifices his own life and all trees around him, paying the cost to resurrect all his dead allies."
+"DOTA_Tooltip_ability_treant_custom_ultimate_sacrifice_Description"				"CHANNELED - Treant, in a moment of despair, sacrifices his own life and all trees around him, paying the cost to resurrect all his dead allies.\nThis ability has a base cooldown of %base_cooldown% seconds, plus %extra_cooldown% seconds for every ally that was ressurected.\n<font color='#F2A93E'>Ultimate Sacrifice is not affected by cooldown reduction.</font>"
 "DOTA_Tooltip_ability_treant_custom_ultimate_sacrifice_Lore"					"Rooftrellen calls the ancestral spirit of nature, releasing its power through all of his kin."
 "DOTA_Tooltip_ability_treant_custom_ultimate_sacrifice_channel_tooltip"			"CHANNEL DURATION:"

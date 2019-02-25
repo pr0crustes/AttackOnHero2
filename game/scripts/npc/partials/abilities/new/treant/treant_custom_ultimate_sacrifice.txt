@@ -9,20 +9,33 @@
     "AbilityTextureName"			"treant_overgrowth"
 
     "AbilityCastPoint"				"0.3"
-    "AbilityChannelTime"			"2.0"
+    "AbilityChannelTime"			"2.0 1.5 1.0"
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
-    
-    "AbilityCooldown"				"320.0 300.0 280.0"
 
-    "AbilityManaCost"				"300 250 200"
+    "AbilityManaCost"				"350 250 150"
+
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_chen/chen_holy_persuasion.vpcf"
+    }
 
 
     "AbilitySpecial"
     {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "base_cooldown"		    "60.0"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "extra_cooldown"		"60.0"
+        }
         "03"
         {
             "var_type"				"FIELD_FLOAT"
-            "channel_tooltip"		"2.0"
+            "channel_tooltip"		"2.0 1.5 1.0"
         }
     }
 }

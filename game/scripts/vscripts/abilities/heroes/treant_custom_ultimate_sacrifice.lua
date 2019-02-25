@@ -17,18 +17,37 @@ end
 if IsServer() then
     function treant_custom_ultimate_sacrifice:OnChannelFinish(interrupted)
         if not interrupted then
-            self:RessurectAll()
-            self:DestroyTrees()
-            self:Suicide(0.05)
-
             local caster = self:GetCaster()
-            caster:EmitSound("Hero_Treant.Overgrowth.Cast")
-            caster:EmitSound("Hero_Treant.Overgrowth.Target")
+            local ressurected = self:RessurectAll()
+
+            if ressurected > 0 then
+                caster:EmitSound("Hero_Treant.Overgrowth.Cast")
+
+                self:DestroyTrees()
+                self:Suicide(0.05)
+
+                self:StartCooldown(self:GetSpecialValueFor("base_cooldown") + self:GetSpecialValueFor("extra_cooldown") * ressurected)
+            else
+                caster:Interrupt()
+                caster:InterruptChannel()
+                self:RefundManaCost()
+                self:EndCooldown()
+            end
         end
     end
 
 
+    function treant_custom_ultimate_sacrifice:RessurectEffect(target)
+        local effect = ParticleManager:CreateParticle("particles/units/heroes/hero_chen/chen_holy_persuasion.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
+        ParticleManager:ReleaseParticleIndex(effect)
+
+        target:EmitSound("Hero_Treant.Overgrowth.Target")
+    end
+
+
     function treant_custom_ultimate_sacrifice:RessurectAll()
+        local ressurected = 0
+
         for playerID = 0, DOTA_MAX_TEAM_PLAYERS - 1 do
             if PlayerResource:HasSelectedHero(playerID) then
                 local hero = PlayerResource:GetSelectedHeroEntity(playerID)
@@ -37,9 +56,15 @@ if IsServer() then
                     hero:SetHealth(hero:GetMaxHealth())
                     hero:SetMana(hero:GetMaxMana())
                     hero:SetBaseMagicalResistanceValue(25)
+
+                    self:RessurectEffect(hero)
+
+                    ressurected = ressurected + 1
                 end
             end
         end
+
+        return ressurected
     end
 
 
