@@ -7,3 +7,9 @@
 
 "DOTA_Tooltip_modifier_rattletrap_custom_battle_mode"                       "Battle Mode"
 "DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_Description"           "Bonus armor and magic resistance."
+
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_talent_armor"                       "Armor Talent"
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_talent_armor_Description"           "Bonus armor talent."
+
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_talent_magic_res"                   "Magic Res Talent"
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_talent_magic_res_Description"       "Bonus magic resistance talent."

@@ -20,16 +20,28 @@
         {
             "var_type"					"FIELD_INTEGER"
             "bonus_armor"			    "6 8 10 12"
+            "LinkedSpecialBonus"	    "rattletrap_custom_bonus_unique_3"
         }
         "02"
         {
             "var_type"					"FIELD_INTEGER"
             "bonus_magic_res"			"4 6 8 10"
+            "LinkedSpecialBonus"	    "rattletrap_custom_bonus_unique_4"
         }
         "03"
         {
             "var_type"					"FIELD_INTEGER"
             "slow"			            "-30 -36 -43 -50"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "talent_armor"			    "10"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "talent_magic_res"			"15"
         }
     }
 }
