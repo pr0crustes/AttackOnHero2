@@ -1,0 +1,44 @@
+"rattletrap_custom_battery_assault"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/heroes/rattletrap_custom_battery_assault.lua"
+
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityTextureName" 			"rattletrap_battery_assault"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_1"
+
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+    "AbilityCooldown"				"30.0 27.0 24.0 20.0"
+
+    "AbilityManaCost"				"100"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "radius"			    "275"
+        }
+        "02"
+        {	
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"10.0"
+        }
+        "03"
+        {	
+            "var_type"			    "FIELD_FLOAT"
+            "interval"			    "0.35 0.30 0.25 0.20"
+        }
+        "04"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "attack_as_damage"		"40"
+        }
+    }
+}

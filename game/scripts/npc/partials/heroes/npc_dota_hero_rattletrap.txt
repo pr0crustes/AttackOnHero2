@@ -1,6 +1,6 @@
 "npc_dota_hero_rattletrap"
 {
-    "Ability1"		"rattletrap_battery_assault"
+    "Ability1"		"rattletrap_custom_battery_assault"
     "Ability2"		"rattletrap_custom_battle_mode"
     "Ability3"		"rattletrap_rocket_flare"
     "Ability6"		"rattletrap_hookshot"
