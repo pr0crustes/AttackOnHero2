@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_rattletrap_custom_battle_mode"						"Battle Mode"
+"DOTA_Tooltip_ability_rattletrap_custom_battle_mode_Description"			"Clockwerk upgrades his battle suit, increasing his armor at the cost of move speed while toggled.."
+"DOTA_Tooltip_ability_rattletrap_custom_battle_mode_Lore"					"One of Clockwerk's inventions of which he is most proud is his battle suit - though it is sometimes despised by his allies."
+"DOTA_Tooltip_ability_rattletrap_custom_battle_mode_bonus_armor"			"BONUS ARMOR:"
+"DOTA_Tooltip_ability_rattletrap_custom_battle_mode_slow"				    "%SLOW:"
+
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode"                       "Battle Mode"
+"DOTA_Tooltip_modifier_rattletrap_custom_battle_mode_Description"           "Armor increased by %bonus_armor%%."

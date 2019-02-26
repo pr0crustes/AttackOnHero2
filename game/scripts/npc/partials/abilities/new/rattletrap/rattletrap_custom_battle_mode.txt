@@ -1,0 +1,30 @@
+"rattletrap_custom_battle_mode"
+{
+    "BaseClass"						    "ability_lua"
+    "ScriptFile"		                "abilities/heroes/rattletrap_custom_battle_mode.lua"
+
+    "AbilityBehavior"                   "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+    "AbilityTextureName" 			    "rattletrap_power_cogs"
+
+    "AbilityCastAnimation"		        "ACT_DOTA_CAST_ABILITY_2"
+
+    "AbilityCastPoint"				    "0.0"
+    "AbilityCooldown"				    "3.0"
+    "AbilityManaCost"				    "0"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "bonus_armor"			    "6 8 10 12"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "slow"			            "-30 -33 -36 -40"
+        }
+    }
+}

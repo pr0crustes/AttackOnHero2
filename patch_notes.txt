@@ -6,6 +6,8 @@
 
     Bane got a reworked.
 
+    Clockwerk 4 abilities reworked.
+
     Huskar Ultimate has new code.
 
     Fixed a bug where Shadow Fiend's Scepter buff would not be revoked.
