@@ -24,7 +24,12 @@
         "02"
         {
             "var_type"					"FIELD_INTEGER"
-            "slow"			            "-30 -33 -36 -40"
+            "bonus_magic_res"			"4 6 8 10"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "slow"			            "-30 -36 -43 -50"
         }
     }
 }

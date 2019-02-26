@@ -25,6 +25,7 @@ modifier_rattletrap_custom_battle_mode = class({})
 function modifier_rattletrap_custom_battle_mode:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+        MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS,
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
         MODIFIER_PROPERTY_MODEL_SCALE,
     }
@@ -33,6 +34,11 @@ end
 
 function modifier_rattletrap_custom_battle_mode:GetModifierPhysicalArmorBonus()
     return self:GetAbility():GetSpecialValueFor("bonus_armor")
+end
+
+
+function modifier_rattletrap_custom_battle_mode:GetModifierMagicalResistanceBonus()
+    return self:GetAbility():GetSpecialValueFor("bonus_magic_res")
 end
 
 
