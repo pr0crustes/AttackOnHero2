@@ -1,3 +1,5 @@
+require("lib/my")
+
 
 LinkLuaModifier("modifier_rattletrap_custom_battery_assault", "abilities/heroes/rattletrap_custom_battery_assault.lua", LUA_MODIFIER_MOTION_NONE)
 
@@ -53,7 +55,7 @@ if IsServer() then
         local ability = self:GetAbility()
 
         self.radius = ability:GetSpecialValueFor("radius")
-        self.interval = ability:GetSpecialValueFor("interval")
+        self.interval = ability:GetSpecialValueFor("interval") + talent_value(self:GetCaster(), "rattletrap_custom_bonus_unique_1")
         
         self:StartIntervalThink(self.interval)
     end
