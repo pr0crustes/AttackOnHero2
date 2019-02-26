@@ -77,7 +77,9 @@ if IsServer() then
 
                     attacker:SetCursorCastTarget(target)
                     attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_dash", {})
-                    attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_cooldown", {duration = ability:GetSpecialValueFor("cooldown")})
+                    attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_cooldown", {
+                        duration = ability:GetSpecialValueFor("cooldown") + talent_value(attacker, "rattletrap_custom_bonus_unique_2")
+                    })
                 end
             end
         end

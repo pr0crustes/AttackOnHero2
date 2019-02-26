@@ -12,6 +12,6 @@
     "Ability14"		"special_bonus_unique_clockwerk_4"
     "Ability15"		"special_bonus_unique_clockwerk_2"
 
-    "Ability16"		"special_bonus_magic_resistance_50"
+    "Ability16"		"rattletrap_custom_bonus_unique_2"
     "Ability17"		"rattletrap_custom_bonus_unique_1"
 }
