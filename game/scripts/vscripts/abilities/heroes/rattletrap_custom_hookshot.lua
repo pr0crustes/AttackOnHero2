@@ -112,6 +112,13 @@ if IsServer() then
             self:Destroy()
             return
         end
+
+        local parent = self:GetParent()
+        self.effect = ParticleManager:CreateParticle("particles/units/heroes/hero_rattletrap/rattletrap_hookshot.vpcf", PATTACH_CUSTOMORIGIN, parent)
+        ParticleManager:SetParticleControlEnt(self.effect, 0, parent, PATTACH_POINT_FOLLOW, "attach_attack1", parent:GetAbsOrigin(), true)
+        ParticleManager:SetParticleControl(self.effect, 1, self.target:GetAbsOrigin())
+        ParticleManager:SetParticleControl(self.effect, 2, Vector(10000, 0, 0))
+        ParticleManager:SetParticleControl(self.effect, 3, Vector(10, 0, 0))
     end
 
 
@@ -119,6 +126,9 @@ if IsServer() then
         local parent = self:GetParent()
         parent:RemoveHorizontalMotionController(self)
         ResolveNPCPositions(parent:GetAbsOrigin(), self.stop_distance)
+
+        ParticleManager:DestroyParticle(self.effect, false)
+        ParticleManager:ReleaseParticleIndex(self.effect)
     end
 
 

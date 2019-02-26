@@ -17,7 +17,7 @@
 
     "precache"
     {
-        "particle"                  "particles/econ/items/clockwerk/clockwerk_paraflare/clockwerk_para_rocket_flare.vpcf"
+        "particle"                  "particles/units/heroes/hero_rattletrap/rattletrap_hookshot.vpcf"
         "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
     }
 
