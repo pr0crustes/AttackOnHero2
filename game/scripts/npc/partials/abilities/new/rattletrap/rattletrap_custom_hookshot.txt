@@ -1,0 +1,52 @@
+"rattletrap_custom_hookshot"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/heroes/rattletrap_custom_hookshot.lua"
+
+    "AbilityType"				    "DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_TOGGLE"
+
+    "AbilityTextureName" 			"rattletrap_hookshot"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCastRange"				"1000 2000 3000"
+    "AbilityCooldown"				"1.0"
+    "AbilityManaCost"				"0"
+
+    "precache"
+    {
+        "particle"                  "particles/econ/items/clockwerk/clockwerk_paraflare/clockwerk_para_rocket_flare.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "speed"				    "4000 5000 6000"
+        }
+        "02"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "range"		            "1000 2000 3000"
+        }
+        "03"
+        {	
+            "var_type"			    "FIELD_INTEGER"
+            "min_distance"		    "350"
+        }
+        "04"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "stop_distance"		    "150"
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "cooldown"		        "15.0 10.0 5.0"
+        }
+    }
+}

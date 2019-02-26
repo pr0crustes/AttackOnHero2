@@ -3,7 +3,7 @@
     "Ability1"		"rattletrap_custom_battery_assault"
     "Ability2"		"rattletrap_custom_battle_mode"
     "Ability3"		"rattletrap_custom_rocket_flare"
-    "Ability6"		"rattletrap_hookshot"
+    "Ability6"		"rattletrap_custom_hookshot"
 
     "Ability10"		"special_bonus_armor_5"
     "Ability11"		"special_bonus_movement_speed_20"
