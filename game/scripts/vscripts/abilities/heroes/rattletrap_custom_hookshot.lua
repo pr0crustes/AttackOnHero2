@@ -75,6 +75,8 @@ if IsServer() then
                 if self:ShouldCast(target) then
                     local ability = self:GetAbility()
 
+                    attacker:EmitSound("Hero_Rattletrap.Hookshot.Fire")
+
                     attacker:SetCursorCastTarget(target)
                     attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_dash", {})
                     attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_cooldown", {
@@ -144,6 +146,7 @@ if IsServer() then
         local distance_to_target = (target_pos - parent_pos):Length2D()
 
         if distance_to_target <= self.stop_distance then
+            parent:EmitSound("Hero_Rattletrap.Hookshot.Impact")
             self:Destroy()
         end
 
