@@ -1,3 +1,4 @@
+require("lib/timers")
 
 
 function debug_print(a)
@@ -231,4 +232,18 @@ function talent_value(caster, talent_name)
 		return talent:GetSpecialValueFor("value")
 	end
 	return 0
+end
+
+
+function kill_dummy(dummy)
+	Timers:CreateTimer(
+		0.01,
+		function()
+			if dummy and dummy:IsAlive() then
+				dummy:ForceKill(false)
+				return 0.01
+			end
+			return nil
+		end
+	)
 end

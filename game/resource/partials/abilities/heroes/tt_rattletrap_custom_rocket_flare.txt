@@ -1,5 +1,5 @@
 "DOTA_Tooltip_ability_rattletrap_custom_rocket_flare"					"Rocket Flare"
-"DOTA_Tooltip_ability_rattletrap_custom_rocket_flare_Description"		"Fires a global range flare that explodes over a given enemy, damaging enemies nearby and healing for half of damage dealt."
+"DOTA_Tooltip_ability_rattletrap_custom_rocket_flare_Description"		"Fires a global range flare that explodes over a given enemy, damaging enemies nearby and healing for half of damage dealt. Provides vision for %vision_duration% seconds."
 "DOTA_Tooltip_ability_rattletrap_custom_rocket_flare_Lore"				"What started as a festive display has become a useful scouting and bombardment tool."
 "DOTA_Tooltip_ability_rattletrap_custom_rocket_flare_radius"			"RADIUS:"
 "DOTA_Tooltip_ability_rattletrap_custom_rocket_flare_damage"			"DAMAGE:"

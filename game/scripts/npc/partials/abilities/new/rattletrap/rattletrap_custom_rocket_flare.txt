@@ -3,7 +3,7 @@
     "BaseClass"						"ability_lua"
     "ScriptFile"		            "abilities/heroes/rattletrap_custom_rocket_flare.lua"
 
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
@@ -48,6 +48,11 @@
         {	
             "var_type"			"FIELD_INTEGER"
             "heal"		        "50"
+        }
+        "05"
+        {	
+            "var_type"			"FIELD_FLOAT"
+            "vision_duration"   "6.0"
         }
     }
 }
