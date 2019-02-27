@@ -9,6 +9,7 @@
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
     "AbilityTextureName" 			"rattletrap_hookshot"
 
@@ -39,12 +40,17 @@
         "03"
         {	
             "var_type"			    "FIELD_INTEGER"
-            "min_distance"		    "350"
+            "min_distance"		    "300"
         }
         "04"
         {
             "var_type"			    "FIELD_INTEGER"
-            "stop_distance"		    "150"
+            "stop_distance"		    "200"
+        }
+        "05"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "damage"		        "500 750 1000"
         }
     }
 }

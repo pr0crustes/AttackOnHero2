@@ -20,12 +20,12 @@ if IsServer() then
 
 
     function rattletrap_custom_hookshot:OnSpellStart()
-        self:CastOnTarget(self:GetCursorTarget())
+        self:CastOnTarget(self:GetCursorTarget(), true)
     end
 
 
-    function rattletrap_custom_hookshot:CastOnTarget(target)
-        if self:ShouldCast(target) then
+    function rattletrap_custom_hookshot:CastOnTarget(target, is_manual)
+        if self:ShouldCast(target, is_manual) then
             local caster = self:GetCaster()
 
             caster:SetCursorCastTarget(target)
@@ -36,16 +36,27 @@ if IsServer() then
     end
 
 
-    function rattletrap_custom_hookshot:ShouldCast(target)
+    function rattletrap_custom_hookshot:ShouldCast(target, is_manual)
         local caster = self:GetCaster()
-
         local distance = CalcDistanceBetweenEntityOBB(caster, target)
 
-        return not (
-            caster:IsIllusion()
-            or distance < self:GetSpecialValueFor("min_distance")
-            or distance > self:GetSpecialValueFor("range")
-        )
+        if caster:IsIllusion() then
+            return false
+        end
+
+        if distance > self:GetSpecialValueFor("range") then
+            return false
+        end
+
+        if distance < self:GetSpecialValueFor("min_distance") and not is_manual then
+            return false
+        end
+
+        if caster:IsSilenced() or caster:IsStunned() or caster:PassivesDisabled() then
+            return false
+        end
+
+        return true
     end
 end
 
@@ -77,7 +88,7 @@ if IsServer() then
             if attacker == self:GetParent() and ability:GetAutoCastState() and ability:IsCooldownReady() then
                 local target = keys.target
 
-                ability:CastOnTarget(target)
+                ability:CastOnTarget(target, false)
             end
         end
     end
@@ -97,7 +108,6 @@ end
 
 if IsServer() then
     function modifier_rattletrap_custom_hookshot_dash:OnCreated()
-        print("OnCreated")
         self.target = self:GetAbility():GetCursorTarget()
 
         local ability = self:GetAbility()
@@ -154,8 +164,8 @@ if IsServer() then
         local direction = (target_pos - parent_pos):Normalized()
         local distance_to_target = (target_pos - parent_pos):Length2D()
 
-        if distance_to_target <= self.stop_distance then
-            parent:EmitSound("Hero_Rattletrap.Hookshot.Impact")
+        if distance_to_target <= self.stop_distance then  -- hit unit
+            self:OnHitTarget()
             self:Destroy()
         end
 
@@ -163,6 +173,25 @@ if IsServer() then
         local new_pos = parent_pos + (distance * direction)
 
         parent:SetAbsOrigin(new_pos)
+    end
+
+
+    function modifier_rattletrap_custom_hookshot_dash:OnHitTarget()
+        local parent = self:GetParent()
+        local ability = self:GetAbility()
+
+        parent:EmitSound("Hero_Rattletrap.Hookshot.Impact")
+            
+        self.target:Interrupt()
+        self.target:InterruptChannel()
+
+        ApplyDamage({
+            ability = ability,
+            attacker = parent,
+            damage = ability:GetSpecialValueFor("damage"),
+            damage_type = ability:GetAbilityDamageType(),
+            victim = self.target
+        })
     end
 
 

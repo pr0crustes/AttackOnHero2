@@ -1,4 +1,14 @@
 
+
+2.0.6:
+    With this update:
+
+    Clockwerk Hookshot: Now deals damage and interrupts.
+
+
+
+
+
 2.0.5:
     With this update:
 

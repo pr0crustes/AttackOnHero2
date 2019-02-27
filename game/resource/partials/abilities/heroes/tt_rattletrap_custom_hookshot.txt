@@ -1,4 +1,5 @@
 "DOTA_Tooltip_ability_rattletrap_custom_hookshot"							"Hookshot"
-"DOTA_Tooltip_ability_rattletrap_custom_hookshot_Description"				"Clockwerk fires a grappling device to close distance with an enemy. Can be set to autocast, casting when Clockwerk attacks."
+"DOTA_Tooltip_ability_rattletrap_custom_hookshot_Description"				"Clockwerk fires a grappling device to close distance with an enemy, dealing damage and interrupting any channels. Can be set to autocast, casting when Clockwerk attacks."
 "DOTA_Tooltip_ability_rattletrap_custom_hookshot_Lore"						"A somewhat unwieldy device, the Hookshot sends the otherwise clunky Clockwerk armor flying through the air."
 "DOTA_Tooltip_ability_rattletrap_custom_hookshot_range"				        "RANGE:"
+"DOTA_Tooltip_ability_rattletrap_custom_hookshot_damage"				    "DAMAGE:"
