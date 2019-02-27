@@ -8,23 +8,45 @@ function rattletrap_custom_hookshot:GetIntrinsicModifierName()
 end
 
 
-function rattletrap_custom_hookshot:OnToggle()
+function rattletrap_custom_hookshot:OnSpellStart()
+
 end
 
 
-
-LinkLuaModifier("modifier_rattletrap_custom_hookshot_cooldown", "abilities/heroes/rattletrap_custom_hookshot.lua", LUA_MODIFIER_MOTION_NONE)
-
-modifier_rattletrap_custom_hookshot_cooldown = class({})
-
-
-function modifier_rattletrap_custom_hookshot_cooldown:IsDebuff()
-    return true
-end
+if IsServer() then
+    function rattletrap_custom_hookshot:GetCooldown(iLevel)
+        return self.BaseClass.GetCooldown(self, iLevel) + talent_value(self:GetCaster(), "rattletrap_custom_bonus_unique_2")
+    end
 
 
-function modifier_rattletrap_custom_hookshot_cooldown:RemoveOnDeath()
-    return false
+    function rattletrap_custom_hookshot:OnSpellStart()
+        self:CastOnTarget(self:GetCursorTarget())
+    end
+
+
+    function rattletrap_custom_hookshot:CastOnTarget(target)
+        if self:ShouldCast(target) then
+            local caster = self:GetCaster()
+
+            caster:SetCursorCastTarget(target)
+            caster:AddNewModifier(caster, self, "modifier_rattletrap_custom_hookshot_dash", {})
+
+            self:StartCooldown(self:GetCooldown(self:GetLevel() - 1))
+        end
+    end
+
+
+    function rattletrap_custom_hookshot:ShouldCast(target)
+        local caster = self:GetCaster()
+
+        local distance = CalcDistanceBetweenEntityOBB(caster, target)
+
+        return not (
+            caster:IsIllusion()
+            or distance < self:GetSpecialValueFor("min_distance")
+            or distance > self:GetSpecialValueFor("range")
+        )
+    end
 end
 
 
@@ -40,24 +62,6 @@ end
 
 
 if IsServer() then
-    function modifier_rattletrap_custom_hookshot:ShouldCast(target)
-        local ability = self:GetAbility()
-        local parent = self:GetParent()
-
-        local distance = CalcDistanceBetweenEntityOBB(parent, target)
-
-        if parent:IsIllusion()
-            or parent:HasModifier("modifier_rattletrap_custom_hookshot_cooldown")
-            or distance < ability:GetSpecialValueFor("min_distance")
-            or distance > ability:GetSpecialValueFor("range") then
-
-            return false
-        end
-
-        return ability:GetToggleState()
-    end
-
-
     function modifier_rattletrap_custom_hookshot:DeclareFunctions()
         return {
             MODIFIER_EVENT_ON_ORDER,
@@ -68,21 +72,12 @@ if IsServer() then
     function modifier_rattletrap_custom_hookshot:OnOrder(keys)
         if keys.order_type == DOTA_UNIT_ORDER_ATTACK_TARGET then
             local attacker = keys.unit
+            local ability = self:GetAbility()
 
-            if attacker == self:GetParent() then
+            if attacker == self:GetParent() and ability:GetAutoCastState() and ability:IsCooldownReady() then
                 local target = keys.target
 
-                if self:ShouldCast(target) then
-                    local ability = self:GetAbility()
-
-                    attacker:EmitSound("Hero_Rattletrap.Hookshot.Fire")
-
-                    attacker:SetCursorCastTarget(target)
-                    attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_dash", {})
-                    attacker:AddNewModifier(attacker, ability, "modifier_rattletrap_custom_hookshot_cooldown", {
-                        duration = ability:GetSpecialValueFor("cooldown") + talent_value(attacker, "rattletrap_custom_bonus_unique_2")
-                    })
-                end
+                ability:CastOnTarget(target)
             end
         end
     end
@@ -102,6 +97,7 @@ end
 
 if IsServer() then
     function modifier_rattletrap_custom_hookshot_dash:OnCreated()
+        print("OnCreated")
         self.target = self:GetAbility():GetCursorTarget()
 
         local ability = self:GetAbility()
@@ -114,6 +110,9 @@ if IsServer() then
         end
 
         local parent = self:GetParent()
+
+        parent:EmitSound("Hero_Rattletrap.Hookshot.Fire")
+
         self.effect = ParticleManager:CreateParticle("particles/units/heroes/hero_rattletrap/rattletrap_hookshot.vpcf", PATTACH_CUSTOMORIGIN, parent)
         ParticleManager:SetParticleControlEnt(self.effect, 0, parent, PATTACH_POINT_FOLLOW, "attach_attack1", parent:GetAbsOrigin(), true)
         ParticleManager:SetParticleControl(self.effect, 1, self.target:GetAbsOrigin())
