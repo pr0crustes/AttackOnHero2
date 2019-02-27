@@ -12,31 +12,17 @@
     {
         "01"
         {
-            "var_type"			    "FIELD_FLOAT"
-            "duration"	            "5.0"			
+            "var_type"			"FIELD_FLOAT"
+            "multiplier"	    "4.0 5.0 6.0"
         }
     }
-    
+
     "OnSpellStart"
     {
         "RunScript"
         {
             "ScriptFile"		"abilities/heroes/spectre_custom_shadow_heal.lua"
             "Function"			"cast_shadow_heal"
-        }
-    }
-
-    "Modifiers"
-    {
-        "modifier_custom_shadow_heal_negation"
-        {
-            "IsHidden"			"1"
-            "IsPurgable"        "0"
-
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_DISABLE_HEALING"	    "1"
-            }
         }
     }
 }

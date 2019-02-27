@@ -1,3 +1,3 @@
 "DOTA_Tooltip_Ability_spectre_custom_shadow_heal"							"Shadow Heal"
-"DOTA_Tooltip_Ability_spectre_custom_shadow_heal_Description"				"Disables your health regeneration for %duration% seconds, healing you for the amount of health you would regenerate."
+"DOTA_Tooltip_Ability_spectre_custom_shadow_heal_Description"				"Instantaneously heals you for %multiplier% times your health regeneration."
 "DOTA_Tooltip_ability_spectre_custom_shadow_heal_Lore"						"A shadow is immortal."
