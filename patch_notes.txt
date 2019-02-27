@@ -6,7 +6,7 @@
 
     Bane got a reworked.
 
-    Clockwerk 4 abilities reworked.
+    Clockwerk got a full reworked.
 
     Huskar Ultimate has new code.
 
