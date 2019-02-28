@@ -13,6 +13,8 @@ end
 
 
 item_vampiric_blade_2 = class(item_vampiric_blade)
+item_vampiric_blade_3 = class(item_vampiric_blade)
+item_vampiric_blade_4 = class(item_vampiric_blade)
 
 
 

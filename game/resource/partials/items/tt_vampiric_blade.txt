@@ -1,5 +1,11 @@
 "DOTA_Tooltip_Ability_item_vampiric_blade"							"Vampiric Blade"
 "DOTA_Tooltip_Ability_item_vampiric_blade_Description"				"Passive: Life Drain - Increases attack damage by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged. Your attacks heals %heal% for melee heroes, and %heal_ranged% for ranged.\n\nMultiple instances of Life Drain do not stack."
 
-"DOTA_Tooltip_Ability_item_vampiric_blade_2"						"Wicked Vampiric Blade"
+"DOTA_Tooltip_Ability_item_vampiric_blade_2"						"Vampiric Blade LVL 2"
 "DOTA_Tooltip_Ability_item_vampiric_blade_2_Description"			"Passive: Life Drain - Increases attack damage by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged. Your attacks heals %heal% for melee heroes, and %heal_ranged% for ranged.\n\nMultiple instances of Life Drain do not stack."
+
+"DOTA_Tooltip_Ability_item_vampiric_blade_3"						"Vampiric Blade LVL 3"
+"DOTA_Tooltip_Ability_item_vampiric_blade_3_Description"			"Passive: Life Drain - Increases attack damage by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged. Your attacks heals %heal% for melee heroes, and %heal_ranged% for ranged.\n\nMultiple instances of Life Drain do not stack."
+
+"DOTA_Tooltip_Ability_item_vampiric_blade_4"						"Vampiric Blade LVL 4"
+"DOTA_Tooltip_Ability_item_vampiric_blade_4_Description"			"Passive: Life Drain - Increases attack damage by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged. Your attacks heals %heal% for melee heroes, and %heal_ranged% for ranged.\n\nMultiple instances of Life Drain do not stack."

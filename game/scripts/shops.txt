@@ -151,7 +151,7 @@
 		"item"		"item_custom_rapier"		// custom rapier
 		"item"		"item_abyssal_blade"	
 		"item"		"item_bloodthorn"
-		"item"		"item_vampiric_blade_2"
+		"item"		"item_vampiric_blade"
 	}
 		
 	// Level 4 - Orange / Orb / Artifacts				
