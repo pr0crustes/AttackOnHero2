@@ -1,3 +1,12 @@
-"DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery"							"Jingu Mastery"
-"DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery_Description"				"Grants lifesteal from all damage sources."
-"DOTA_Tooltip_Ability_monkey_king_custom_jingu_mastery_lifesteal"		        "%LIFESTEAL:"
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery"						    "Jingu Mastery"
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery_Description"			    "Monkey King's attacks awaken the Jingu Bang's power, after every %attack_count% attacks, his next attack has extra damage and lifesteal."
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery_Lore"					"Always sensitive to the moods of its master, the Jingu Bang radiates power when Sun Wukong's combat fervor is on full display."
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery_attack_count"			"REQUIRED HITS:"
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery_bonus_damage"			"BONUS DAMAGE:"
+"DOTA_Tooltip_ability_monkey_king_custom_jingu_mastery_lifesteal"				"%BONUS LIFESTEAL:"
+
+"DOTA_Tooltip_modifier_monkey_king_custom_jingu_mastery_hit"			        "Jingu Mastery"
+"DOTA_Tooltip_modifier_monkey_king_custom_jingu_mastery_hit_Description"	    "Hits from Monkey King"
+
+"DOTA_Tooltip_modifier_monkey_king_custom_jingu_mastery_buff"			        "Jingu Mastery"
+"DOTA_Tooltip_modifier_monkey_king_custom_jingu_mastery_buff_Description"	    "Bonus Damage and Lifesteal"

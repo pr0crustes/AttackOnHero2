@@ -10,6 +10,8 @@
     Spectre Desolate: Damage increased from "20 30 40 50" to "20 40 60 80".
     Spectre Shadow Heal: No longer disables health regen.
 
+    Reworked Monkey King Jingu Mastery.
+
 
 
 2.0.5:

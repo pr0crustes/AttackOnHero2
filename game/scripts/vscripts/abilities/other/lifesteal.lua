@@ -12,7 +12,8 @@ function attack_lifesteal(keys)
 
     local particle = keys.particle
     if particle then
-        ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN_FOLLOW, attacker)
+        local effect = ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN_FOLLOW, attacker)
+        ParticleManager:ReleaseParticleIndex(effect)
     end
 end
 
@@ -28,6 +29,7 @@ function missing_health_lifesteal(keys)
 
     local particle = keys.particle
     if particle then
-        ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN_FOLLOW, attacker)
+        local effect = ParticleManager:CreateParticle(particle, PATTACH_ABSORIGIN_FOLLOW, attacker)
+        ParticleManager:ReleaseParticleIndex(effect)
     end
 end
