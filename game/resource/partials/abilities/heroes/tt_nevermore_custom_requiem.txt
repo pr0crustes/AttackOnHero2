@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_nevermore_custom_requiem"										"Requiem of Souls"
+"DOTA_Tooltip_ability_nevermore_custom_requiem"										"<font color='#70EA72'>Requiem of Souls</font>"
 "DOTA_Tooltip_ability_nevermore_custom_requiem_Description"							"Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy. Requiem of Souls is automatically cast whenever Shadow Fiend dies, regardless of its cooldown.\n\nUpgradable by Aghanim's Scepter."
 "DOTA_Tooltip_ability_nevermore_custom_requiem_aghanim_description"				    "Causes Requiem of Souls to return back to Shadow Fiend. The wave back to Shadow Fiend deals less damage."	
 "DOTA_Tooltip_ability_nevermore_custom_requiem_cast_time_tooltip"                  	"CAST DELAY:"

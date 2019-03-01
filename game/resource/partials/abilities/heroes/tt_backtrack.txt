@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_faceless_void_backtrack"						"Backtrack"
+"DOTA_Tooltip_Ability_faceless_void_backtrack"						"<font color='#70EA72'>Backtrack</font>"
 "DOTA_Tooltip_Ability_faceless_void_backtrack_Description"			"Faceless Void's reflexes can sense danger before they occur, allowing him to avoid incoming damage."
 "DOTA_Tooltip_Ability_faceless_void_backtrack_lore"					"Darkterror's 6th sense sees what has yet to be seen."
 "DOTA_Tooltip_Ability_faceless_void_backtrack_dodge_chance_pct"		"%Chance:"

@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_chen_custom_god_presence"								"God's Presence"
+"DOTA_Tooltip_ability_chen_custom_god_presence"								"<font color='#70EA72'>God's Presence</font>"
 "DOTA_Tooltip_ability_chen_custom_god_presence_Description"					"Chen uses the power of God to increase the armor of an ally."
 "DOTA_Tooltip_ability_chen_custom_god_presence_Lore"						"Chen incorporates faith into the Fold in the same way he himself was converted."
 "DOTA_Tooltip_ability_chen_custom_god_presence_armor_bonus"					"BONUS ARMOR:"

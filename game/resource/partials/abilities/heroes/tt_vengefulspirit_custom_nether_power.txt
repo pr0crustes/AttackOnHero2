@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_vengefulspirit_custom_nether_power"				    "Nether Power"
+"DOTA_Tooltip_ability_vengefulspirit_custom_nether_power"				    "<font color='#70EA72'>Nether Power</font>"
 "DOTA_Tooltip_ability_vengefulspirit_custom_nether_power_Description"	    "Imbues the ally target with the Nether Power granted by revenge, giving it a chance to deal critical damage on every attack."
 "DOTA_Tooltip_ability_vengefulspirit_custom_nether_power_Lore"				"Martyrdom is a small price to pay for vengeance."
 "DOTA_Tooltip_ability_vengefulspirit_custom_nether_power_crit_chance"		"%CRITICAL CHANCE:"

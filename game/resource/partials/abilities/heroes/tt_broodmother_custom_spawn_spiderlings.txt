@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_broodmother_custom_spawn_spiderlings"							"Spawn Spiderlings"
+"DOTA_Tooltip_ability_broodmother_custom_spawn_spiderlings"							"<font color='#70EA72'>Spawn Spiderlings</font>"
 "DOTA_Tooltip_ability_broodmother_custom_spawn_spiderlings_Description"				"Broodmother summons spiderlings to help her."
 "DOTA_Tooltip_ability_broodmother_custom_spawn_spiderlings_Lore"					"Black Arachnia continues to raise her young, even amidst the field of combat.  The brood quickly learns how to support their mother."
 "DOTA_Tooltip_ability_broodmother_custom_spawn_spiderlings_duration"		        "LIFETIME:"

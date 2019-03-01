@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_necrophos_intelligence_supremacy"						"Intelligence Supremacy"
+"DOTA_Tooltip_Ability_necrophos_intelligence_supremacy"						"<font color='#70EA72'>Intelligence Supremacy</font>"
 "DOTA_Tooltip_Ability_necrophos_intelligence_supremacy_Description"			"Every %interval% seconds, damages every enemy nearby, with the damage based on your intelligence."
 "DOTA_Tooltip_Ability_necrophos_intelligence_supremacy_int_multiplier"      "INT MULTIPLIER:"
 "DOTA_Tooltip_Ability_necrophos_intelligence_supremacy_interval"            "INTERVAL"

@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_terrorblade_custom_metamorphosis"									"Metamorphosis"
+"DOTA_Tooltip_ability_terrorblade_custom_metamorphosis"									"<font color='#70EA72'>Metamorphosis</font>"
 "DOTA_Tooltip_ability_terrorblade_custom_metamorphosis_Description"						"Terrorblade transforms into a powerful demon with a ranged attack. Any of Terrorblade's illusions that are within %metamorph_aura_tooltip% range will also be transformed by Metamorphosis."
 "DOTA_Tooltip_ability_terrorblade_custom_metamorphosis_Lore"							"Temper, temper. The rage rises up and takes control.  Meet Terrorblade's own worst self."
 "DOTA_Tooltip_ability_terrorblade_custom_metamorphosis_duration"						"DURATION:"

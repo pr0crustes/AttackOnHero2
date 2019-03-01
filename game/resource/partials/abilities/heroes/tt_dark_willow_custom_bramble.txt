@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_dark_willow_custom_bramble"						"Bramble"
+"DOTA_Tooltip_Ability_dark_willow_custom_bramble"						"<font color='#70EA72'>Bramble</font>"
 "DOTA_Tooltip_Ability_dark_willow_custom_bramble_Description"			"Dark Willow calls a bramble to attack an enemy. Every %interval% second the bramble attacks, dealing magic damage equal to Dark Willow attack damage."
 "DOTA_Tooltip_Ability_dark_willow_custom_bramble_strikes"               "STRIKES:"
 "DOTA_Tooltip_Ability_dark_willow_custom_bramble_lore"					"The fae realm exists all around you, merely waiting to draw you in..."

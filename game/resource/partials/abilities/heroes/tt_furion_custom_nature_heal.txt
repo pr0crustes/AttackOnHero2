@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_furion_custom_nature_heal"						    "Nature's Blessing"
+"DOTA_Tooltip_Ability_furion_custom_nature_heal"						    "<font color='#70EA72'>Nature's Blessing</font>"
 "DOTA_Tooltip_Ability_furion_custom_nature_heal_Description"			    "CHANNELED - While channeling, both your health and your mana regen are transfered to the target ally, while the same amount is drained from you.\nYou can't target yourself."
 "DOTA_Tooltip_ability_furion_custom_nature_heal_Lore"						"Nature's Prophet is able to transfer his own essence of life."
 "DOTA_Tooltip_ability_furion_custom_nature_heal_channel_tooltip"			"MAX CHANNEL:"

@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_axe_custom_last_cleave"									"Last Cleave"
+"DOTA_Tooltip_ability_axe_custom_last_cleave"									"<font color='#70EA72'>Last Cleave</font>"
 "DOTA_Tooltip_ability_axe_custom_last_cleave_Description"						"Axe spots a weakness and strikes, dealing damage that increases with his strength. If the enemy dies in the next second, Last Cleave is refreshed.\n\nUpgradeable by Aghanim's Scepter."
 "DOTA_Tooltip_ability_axe_custom_last_cleave_Lore"								"Mogul Khan is the embodiment of battle and fury, launching into a gruesome fatality against those who dare engage the Axe in combat."
 "DOTA_Tooltip_ability_axe_custom_last_cleave_base_damage"					    "BASE DAMAGE:"

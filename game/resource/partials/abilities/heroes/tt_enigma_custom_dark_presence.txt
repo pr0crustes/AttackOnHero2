@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_enigma_custom_dark_presence"						    "Dark Presence"
+"DOTA_Tooltip_Ability_enigma_custom_dark_presence"						    "<font color='#70EA72'>Dark Presence</font>"
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence_Description"			    "Provides an aura that increases allies health regen while reducing the regen of enemies."
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence_Lore"				    "Enigma has a dark presence."
 "DOTA_Tooltip_Ability_enigma_custom_dark_presence_regen_bonus"		        "Ally Regen:"

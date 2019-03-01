@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_pudge_custom_flesh_heap"						    "Flesh Heap"
+"DOTA_Tooltip_Ability_pudge_custom_flesh_heap"						    "<font color='#70EA72'>Flesh Heap</font>"
 "DOTA_Tooltip_Ability_pudge_custom_flesh_heap_Description"			    "Pudge multiplies his own Strength for a brief duration."
 "DOTA_Tooltip_Ability_pudge_custom_flesh_heap_multiplier"               "STR MULTIPLIER:"
 "DOTA_Tooltip_Ability_pudge_custom_flesh_heap_duration"                 "DURATION:"

@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_necrophos_custom_aura_heal"						"Perfect Heal"
+"DOTA_Tooltip_Ability_necrophos_custom_aura_heal"						"<font color='#70EA72'>Perfect Heal</font>"
 "DOTA_Tooltip_Ability_necrophos_custom_aura_heal_Description"			"Spend %health_pct%%  of your current health to heal all your nearby allies by the same amount."
 "DOTA_Tooltip_Ability_necrophos_custom_aura_heal_radius"                "RADIUS:"
 "DOTA_Tooltip_Ability_necrophos_custom_aura_heal_lore"					"Life is magic."

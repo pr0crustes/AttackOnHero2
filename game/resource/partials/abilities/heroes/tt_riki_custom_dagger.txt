@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_riki_custom_dagger"							"Dagger"
+"DOTA_Tooltip_ability_riki_custom_dagger"							"<font color='#70EA72'>Dagger</font>"
 "DOTA_Tooltip_ability_riki_custom_dagger_Description"				"Every time Riki strikes, he deals bonus damage based on his Agility."
 "DOTA_Tooltip_ability_riki_custom_dagger_agi_multiplier"			"AGI DAMAGE MULT:"
 "DOTA_Tooltip_ability_riki_custom_dagger_Lore"						"Riki comes for you."

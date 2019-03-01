@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_sniper_custom_rifle"							"Fast Rifle"
+"DOTA_Tooltip_Ability_sniper_custom_rifle"							"<font color='#70EA72'>Fast Rifle</font>"
 "DOTA_Tooltip_Ability_sniper_custom_rifle_Description"				"Sniper concentrates, attacking faster but dealing less damage and having less range."
 "DOTA_Tooltip_Ability_sniper_custom_rifle_base_attack_time"		    "Base Attack Time:"
 "DOTA_Tooltip_Ability_sniper_custom_rifle_damage"					"%Damage Reduction:"

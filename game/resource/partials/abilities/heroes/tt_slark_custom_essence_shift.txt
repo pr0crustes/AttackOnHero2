@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_slark_custom_essence_shift"						"Essence Shift"
+"DOTA_Tooltip_Ability_slark_custom_essence_shift"						"<font color='#70EA72'>Essence Shift</font>"
 "DOTA_Tooltip_Ability_slark_custom_essence_shift_Description"			"Slark has a chance to steal agility with every hit."
 "DOTA_Tooltip_Ability_slark_custom_essence_shift_chance"	            "%CHANCE:"
 "DOTA_Tooltip_Ability_slark_custom_essence_shift_duration"	            "DURATION:"

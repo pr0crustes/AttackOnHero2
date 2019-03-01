@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_terrorblade_custom_war_shout"							"War Shout"
+"DOTA_Tooltip_Ability_terrorblade_custom_war_shout"							"<font color='#70EA72'>War Shout</font>"
 "DOTA_Tooltip_Ability_terrorblade_custom_war_shout_Description"				"On cast, provides every ally unit in a %radius% radius with bonus attack speed."
 "DOTA_Tooltip_ability_terrorblade_custom_war_shout_duration"				"Duration:"
 "DOTA_Tooltip_ability_terrorblade_custom_war_shout_attack_speed"		    "Attack Speed:"

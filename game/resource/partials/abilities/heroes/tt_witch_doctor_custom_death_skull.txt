@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_witch_doctor_custom_death_skull"							"Death Skull"
+"DOTA_Tooltip_Ability_witch_doctor_custom_death_skull"							"<font color='#70EA72'>Death Skull</font>"
 "DOTA_Tooltip_Ability_witch_doctor_custom_death_skull_Description"				"Fires skulls in a diretion, dealing damage to the first enemies that they find.\n\nUpgradeable by Aghanim's Scepter."
 "DOTA_Tooltip_Ability_witch_doctor_custom_death_skull_duration"					"CHANNEL TIME:"
 "DOTA_Tooltip_Ability_witch_doctor_custom_death_skull_damage"					"DAMAGE:"

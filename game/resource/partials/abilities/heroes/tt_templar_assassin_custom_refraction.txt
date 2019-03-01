@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_templar_assassin_custom_refraction"								"Refraction"
+"DOTA_Tooltip_ability_templar_assassin_custom_refraction"								"<font color='#70EA72'>Refraction</font>"
 "DOTA_Tooltip_ability_templar_assassin_custom_refraction_Lore"							"Manipulating her psionic veil, Lanaya bends nature's law to her will."
 "DOTA_Tooltip_ability_templar_assassin_custom_refraction_Description"					"Templar Assassin becomes highly elusive, reducing all damage."
 "DOTA_Tooltip_ability_templar_assassin_custom_refraction_damage_reduction"			    "%DAMAGE REDUCTION:"

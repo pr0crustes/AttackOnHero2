@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_bloodseeker_custom_thirst"								"Thirst"
+"DOTA_Tooltip_ability_bloodseeker_custom_thirst"								"<font color='#70EA72'>Thirst</font>"
 "DOTA_Tooltip_ability_bloodseeker_custom_thirst_Description"					"Bloodseeker gains bonus attack damage, movement speed and attack speed passively."
 "DOTA_Tooltip_ability_bloodseeker_custom_thirst_damage_bonus"					"Bonus Damage:"
 "DOTA_Tooltip_ability_bloodseeker_custom_thirst_attack_speed_bonus"				"Attackspeed Bonus:"

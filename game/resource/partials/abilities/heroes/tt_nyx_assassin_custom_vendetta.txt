@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta"							    "Vendetta"
+"DOTA_Tooltip_ability_nyx_assassin_custom_vendetta"							    "<font color='#70EA72'>Vendetta</font>"
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Description"				    "<h1>Passive:</h1>Every second that Nyx does not attack he gains a Vendetta Stack, up to %max_crit_stacks%. When he attacks, all stacks are consumed to increase the attack damage.\n<h1>Active:</h1> Allows Nyx Assassin to become invisible and gain spell amp and speed bonus. Spells do not break Vendetta."
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Lore"						"The scarab kills for the glory of his queen."
 "DOTA_Tooltip_ability_nyx_assassin_custom_vendetta_Note0"						"Has a 0 second fadetime."

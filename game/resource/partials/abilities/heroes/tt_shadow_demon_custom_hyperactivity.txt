@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_shadow_demon_custom_hyperactivity"						"Hyperactivity"
+"DOTA_Tooltip_Ability_shadow_demon_custom_hyperactivity"						"<font color='#70EA72'>Hyperactivity</font>"
 "DOTA_Tooltip_Ability_shadow_demon_custom_hyperactivity_Description"			"Shadow Demon gets hyperactive for a brief duration, reducing all used abilities cooldowns to %cooldown%.\nDoes not affect Refresher Orb, Arcane Boots, Guardian Greaves and Scythe Of Vyse."
 "DOTA_Tooltip_Ability_shadow_demon_custom_hyperactivity_duration"               "DURATION:"
 "DOTA_Tooltip_Ability_shadow_demon_custom_hyperactivity_lore"				    "Give up now."

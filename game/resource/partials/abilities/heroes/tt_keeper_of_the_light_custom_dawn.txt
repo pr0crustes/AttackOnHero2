@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_keeper_of_the_light_custom_dawn"                      "Dawn"
+"DOTA_Tooltip_ability_keeper_of_the_light_custom_dawn"                      "<font color='#70EA72'>Dawn</font>"
 "DOTA_Tooltip_ability_keeper_of_the_light_custom_dawn_Description"			"When activated, transforms night into day for %duration% seconds. After the duration, the cicle will continue what was before.\nPassively increases your movement speed."
 "DOTA_Tooltip_ability_keeper_of_the_light_custom_dawn_move_speed"           "MOVE SPEED:"
 "DOTA_Tooltip_ability_keeper_of_the_light_custom_dawn_Lore"					"In the same vein, Ezalor bestows his harmony among others."

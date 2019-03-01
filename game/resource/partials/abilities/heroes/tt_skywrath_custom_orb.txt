@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_skywrath_custom_orb"						"Supreme Orb"
+"DOTA_Tooltip_Ability_skywrath_custom_orb"						"<font color='#70EA72'>Supreme Orb</font>"
 "DOTA_Tooltip_Ability_skywrath_custom_orb_Description"			"Skywrath deals damage to all enemies in an area."
 "DOTA_Tooltip_Ability_skywrath_custom_orb_damage"               "DAMAGE:"
 "DOTA_Tooltip_Ability_skywrath_custom_orb_radius"               "RADIUS:"

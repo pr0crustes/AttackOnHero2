@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_puck_custom_dream_strike"						    "Dream Strike"
+"DOTA_Tooltip_Ability_puck_custom_dream_strike"						    "<font color='#70EA72'>Dream Strike</font>"
 "DOTA_Tooltip_Ability_puck_custom_dream_strike_Description"			    "Puck materializes a huge amount of fairy dust around an enemy, dealing damage based on her intellect."
 "DOTA_Tooltip_Ability_puck_custom_dream_strike_int_multiplier"          "INT MULTIPLIER:"
 "DOTA_Tooltip_Ability_puck_custom_dream_strike_Note0"                   "Damage is done in 10 small amounts of damage in 0.1 intervals."

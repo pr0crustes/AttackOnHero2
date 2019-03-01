@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_bloodseeker_custom_rampage"								"Rampage"
+"DOTA_Tooltip_Ability_bloodseeker_custom_rampage"								"<font color='#70EA72'>Rampage</font>"
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage_Description"					"All damage dealt and received is amplified."
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage_damage_bonus_pct"				"%Bonus Damage Dealt:"
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage_bonues_damage_taken"			"%Bonus Damage Received:"

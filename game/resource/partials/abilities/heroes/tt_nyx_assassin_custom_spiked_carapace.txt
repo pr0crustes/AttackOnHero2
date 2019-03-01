@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace"						"Spiked Carapace"
+"DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace"						"<font color='#70EA72'>Spiked Carapace</font>"
 "DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace_Description"			"Nyx channels for up to %channel% seconds. During this time, he is completely invulnerable and unselectable."
 "DOTA_Tooltip_ability_nyx_assassin_custom_spiked_carapace_Lore"				    "While their carapace is relatively thin, it's guarded by a retractable field of razor-sharp spikes."
 

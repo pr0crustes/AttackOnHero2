@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_legion_commander_custom_duel"                         "Duel"
+"DOTA_Tooltip_ability_legion_commander_custom_duel"                         "<font color='#70EA72'>Duel</font>"
 "DOTA_Tooltip_ability_legion_commander_custom_duel_Description"			    "Permanently increases your damage on cast."
 "DOTA_Tooltip_ability_legion_commander_custom_duel_Lore"					"Destroy all of them."
 "DOTA_Tooltip_ability_legion_commander_custom_duel_damage"					"BONUS DAMAGE:"

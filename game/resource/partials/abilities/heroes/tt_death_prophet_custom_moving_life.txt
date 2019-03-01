@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_death_prophet_custom_moving_life"						    "Moving Life"
+"DOTA_Tooltip_Ability_death_prophet_custom_moving_life"						    "<font color='#70EA72'>Moving Life</font>"
 "DOTA_Tooltip_Ability_death_prophet_custom_moving_life_Description"			    "Damages all enemies in a target area, healing all allies in the area for %damage_as_heal%%  of the damage dealt."
 "DOTA_Tooltip_Ability_death_prophet_custom_moving_life_Lore"				    "Peering into the veil of her opponent's demise, Krobelus sees a silent future."
 "DOTA_Tooltip_Ability_death_prophet_custom_moving_life_radius"				    "RADIUS:"

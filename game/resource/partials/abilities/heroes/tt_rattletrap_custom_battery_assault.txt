@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_rattletrap_custom_battery_assault"					"Battery Assault"
+"DOTA_Tooltip_ability_rattletrap_custom_battery_assault"					"<font color='#70EA72'>Battery Assault</font>"
 "DOTA_Tooltip_ability_rattletrap_custom_battery_assault_Description"		"Discharges high-powered shrapnel at random nearby enemy units, dealing magical damage equal to %attack_as_damage%%  of your attack damage."
 "DOTA_Tooltip_ability_rattletrap_custom_battery_assault_Lore"				"Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver."
 "DOTA_Tooltip_ability_rattletrap_custom_battery_assault_radius"				"RADIUS:"

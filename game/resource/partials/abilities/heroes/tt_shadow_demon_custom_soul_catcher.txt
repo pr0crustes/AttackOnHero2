@@ -1,4 +1,4 @@
-"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher"						    "Soul Catcher"
+"DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher"						    "<font color='#70EA72'>Soul Catcher</font>"
 "DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_Description"			    "Catches the soul of a target, causing it to take damage over time. Multiple instances stacks."
 "DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_duration"                "DURATION:"
 "DOTA_Tooltip_Ability_shadow_demon_custom_soul_catcher_damage"                  "TOTAL DAMAGE:"

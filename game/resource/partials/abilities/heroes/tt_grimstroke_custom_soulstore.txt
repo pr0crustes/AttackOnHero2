@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_grimstroke_custom_soulstore"							"Soulstore"
+"DOTA_Tooltip_ability_grimstroke_custom_soulstore"							"<font color='#70EA72'>Soulstore</font>"
 "DOTA_Tooltip_ability_grimstroke_custom_soulstore_Description"				"Grimstroke stores the essence of magic every time he uses a spell. On cast, Grimstroke consumes all the stacks stored to deal damage to an enemy or heal an ally."
 "DOTA_Tooltip_ability_grimstroke_custom_soulstore_Lore"						"The Ascended were chosen sons of Ashkavor, granted immense power by the bonds forged between their own souls and those they were charged with protecting. In the years that followed the ruination of his kin, Grimstroke discovered much more sinister applications for the binding rituals…"
 "DOTA_Tooltip_ability_grimstroke_custom_soulstore_damage"				    "STACK DAMAGE:"
