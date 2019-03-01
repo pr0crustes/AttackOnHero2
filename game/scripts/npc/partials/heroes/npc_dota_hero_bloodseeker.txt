@@ -1,5 +1,5 @@
 "npc_dota_hero_bloodseeker"
 {
-    "Ability3"          "bloodseeker_custom_thirst"
+    "Ability3"          "bloodseeker_custom_life_drain"
     "Ability6"          "bloodseeker_custom_rampage"
 }

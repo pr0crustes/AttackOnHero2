@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_bloodseeker_custom_life_drain"								"<font color='#70EA72'>Life Drain</font>"
+"DOTA_Tooltip_ability_bloodseeker_custom_life_drain_Description"					"Bloodseeker is constantly draining the life of enemies around him. The amount of life drained is based on his attack damage."
+"DOTA_Tooltip_ability_bloodseeker_custom_life_drain_radius"					        "RADIUS:"
+"DOTA_Tooltip_ability_bloodseeker_custom_life_drain_attack_as_damage"				"%DAMAGE AS DPS:"
+"DOTA_Tooltip_ability_bloodseeker_custom_life_drain_heal"				            "%DRAIN HEAL:"
+
+"DOTA_Tooltip_modifier_bloodseeker_custom_life_drain_debuff"                        "Life Drain"
+"DOTA_Tooltip_modifier_bloodseeker_custom_life_drain_debuff_Description"            "Life is being drained by Bloodseeker."
