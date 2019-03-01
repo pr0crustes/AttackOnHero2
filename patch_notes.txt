@@ -5,6 +5,8 @@
 
     New upgrades to Vampiric Blade.
 
+    Heroes abilities coded by me now have a green title.
+
 
 
 
