@@ -3,5 +3,5 @@
 "DOTA_Tooltip_Ability_zuus_custom_thundergods_wrath_lore"				"The Lord of Heaven smites all who oppose him."
 
 
-"DOTA_Tooltip_zuus_custom_thundergods_wrath_buff"                       "Thundergod's Wrath"
-"DOTA_Tooltip_zuus_custom_thundergods_wrath_buff_Description"           "The next thunder spell used will be recasted."
+"DOTA_Tooltip_modifier_zuus_custom_thundergods_wrath"                   "Thundergod's Wrath"
+"DOTA_Tooltip_modifier_zuus_custom_thundergods_wrath_Description"       "The next thunder spell used will be recasted."

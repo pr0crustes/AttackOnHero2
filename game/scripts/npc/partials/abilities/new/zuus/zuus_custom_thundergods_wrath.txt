@@ -1,6 +1,8 @@
 "zuus_custom_thundergods_wrath"
 {
-    "BaseClass"						        "ability_datadriven"
+    "BaseClass"					            "ability_lua"
+    "ScriptFile"		                    "abilities/heroes/zuus_custom_thundergods_wrath.lua"
+
     "AbilityBehavior"                       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "AbilityType"					        "DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityTextureName" 			        "zuus_thundergods_wrath"
