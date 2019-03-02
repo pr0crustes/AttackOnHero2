@@ -16,6 +16,7 @@
 
     "Ability1"					"custom_spectral_dagger"
     "Ability2"                  "custom_dispersion"
+    "Ability3"                  "custom_aphotic_shield"
 
     "ArmorPhysical"				"50"
     "MagicalResistance"			"20"
@@ -55,6 +56,10 @@
 
         "OffensiveAbilities"
         {
+            "Ability3"
+            {
+                "Name"              "custom_aphotic_shield"
+            }
             "Ability1"
             {
                 "Name"				"custom_spectral_dagger"

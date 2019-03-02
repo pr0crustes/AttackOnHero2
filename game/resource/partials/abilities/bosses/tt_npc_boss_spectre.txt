@@ -18,3 +18,14 @@
 "DOTA_Tooltip_ability_custom_dispersion_damage_reflection_pct"		"%DAMAGE REFLECTED:"
 "DOTA_Tooltip_ability_custom_dispersion_min_radius"				    "MIN RADIUS:"
 "DOTA_Tooltip_ability_custom_dispersion_max_radius"				    "MAX RADIUS:"
+
+
+"DOTA_Tooltip_ability_custom_aphotic_shield"						"Mirror"
+"DOTA_Tooltip_ability_custom_aphotic_shield_Description"			"Spectre covers himself with a shield made of mirrors. When the shield expires, it deals damage equal to %percentage%% of all damage Spectre received while protected."
+"DOTA_Tooltip_ability_custom_aphotic_shield_Lore"					"Sometimes, your enemy is yourself."
+"DOTA_Tooltip_ability_custom_aphotic_shield_duration"				"DURATION:"
+"DOTA_Tooltip_ability_custom_aphotic_shield_radius"				    "RADIUS:"
+
+
+"DOTA_Tooltip_modifier_custom_aphotic_shield"                       "Mirror Shield"
+"DOTA_Tooltip_modifier_custom_aphotic_shield_Description"           "Damage is being stored and will be released on expired."
