@@ -12,7 +12,7 @@
 
     "precache"
     {
-        "particle_folder"				    "particles/units/heroes/hero_puck"
+        "particle_folder"				    "particles/units/heroes/hero_mirana"
     }
 
     "Ability1"								"custom_sacred_arrow"

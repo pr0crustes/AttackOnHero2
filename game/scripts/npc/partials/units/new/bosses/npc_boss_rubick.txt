@@ -42,7 +42,7 @@
     "BountyGoldMin"                         "630"
     "BountyGoldMax"                         "660"
     "MovementCapabilities"         		    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"                         "550"
+    "MovementSpeed"                         "1000"
     "StatusHealth"                          "400000"
     "StatusHealthRegen"                     "80"
     "StatusMana"                            "6000"

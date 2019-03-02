@@ -19,7 +19,7 @@
     "Ability1"                              "custom_heat_seeking_missile"
     "Ability2"                              "custom_march_of_the_machines_op"
 
-    "ArmorPhysical"                         "30"
+    "ArmorPhysical"                         "33"
     "MagicalResistance"						"25"
     "AttackCapabilities"          		    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageMin"                       "350"

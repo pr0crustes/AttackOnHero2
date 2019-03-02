@@ -30,7 +30,7 @@
     "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
     "MovementSpeed"				"260"
     "MovementTurnRate"			"0.5"
-    "StatusHealth"				"415"
+    "StatusHealth"				"500"
     "StatusHealthRegen"			"0.5"
     "StatusMana"				"100"
     "StatusManaRegen"			"8"
