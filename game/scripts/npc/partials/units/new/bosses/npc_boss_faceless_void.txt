@@ -38,8 +38,8 @@
     "AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 
     "BountyXP"					"0"
-    "BountyGoldMin"				"40"
-    "BountyGoldMax"				"50"
+    "BountyGoldMin"				"1"
+    "BountyGoldMax"				"1"
 
     "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
     "RingRadius"				"100"

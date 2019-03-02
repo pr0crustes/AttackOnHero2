@@ -35,8 +35,8 @@
     "AttackAnimationPoint"		"0.3"
 
     "BountyXP"					"0"
-    "BountyGoldMin"				"80"
-    "BountyGoldMax"				"85"
+    "BountyGoldMin"				"1"
+    "BountyGoldMax"				"1"
 
     "BoundsHullName"			"DOTA_HULL_SIZE_HERO"
     "RingRadius"				"100"

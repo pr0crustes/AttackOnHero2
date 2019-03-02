@@ -4,6 +4,7 @@
     With this update:
 
     Many changes to bosses.
+    Bosses no longer give more gold to the last hitter.
 
     New upgrades to Vampiric Blade.
 
