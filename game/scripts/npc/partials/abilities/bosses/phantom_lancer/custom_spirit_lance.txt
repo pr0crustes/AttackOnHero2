@@ -53,12 +53,6 @@
                 {
                     "Target"			    "TARGET"
                 }
-                "AttachEffect"
-                {
-                    "EffectName"			"particles/units/heroes/hero_phantom_lancer/phantomlancer_spiritlance_projectile.vpcff"
-                    "EffectAttachType"		"follow_origin"
-                    "Target"				"CASTER"
-                }
                 "FireSound"
                 {
                     "EffectName"		"Hero_PhantomLancer.Strike.End"

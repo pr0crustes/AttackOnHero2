@@ -3,6 +3,8 @@
 2.0.8:
     With this update:
 
+    Many changes to bosses.
+
     Small changes to Bloodseeker's ult, after feedback.
 
 

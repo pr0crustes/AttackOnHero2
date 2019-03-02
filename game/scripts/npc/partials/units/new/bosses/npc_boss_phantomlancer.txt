@@ -19,7 +19,7 @@
 
     "Ability1"					"custom_spirit_lance"
     "Ability2"					"custom_viper_strike"
-    "Ability3"                  "custom_phantom_edge"
+    "Ability3"                  "custom_mana_break"
 
     "ArmorPhysical"				"35"
     "MagicalResistance"			"10"
@@ -65,10 +65,6 @@
             "Ability2"
             {
                 "Name"				"custom_viper_strike"
-            }
-            "Ability3"
-            {
-                "Name"				"custom_phantom_charge"
             }
         }
         "EquippedItems"

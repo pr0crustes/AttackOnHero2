@@ -1,1 +1,6 @@
 "npc_boss_phantomlancer_clone"                     "Phantomlancer (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_decay_spirit_lance"								"Spirit Lance Clone"
+"DOTA_Tooltip_ability_custom_decay_spirit_lance_Description"					"Sends a magical spirit lance to a target enemy unit, teleporting to it and creating a clone."
+

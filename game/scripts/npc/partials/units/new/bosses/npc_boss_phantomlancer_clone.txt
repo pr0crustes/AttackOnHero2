@@ -11,8 +11,11 @@
     "CanBeDominated"			"0"
     "HasInventory"				"1"
     "AbilityLayout"				"4"
-    "Ability1"					"custom_phantom_edge"
-    "Ability2"                  "custom_mana_break"
+
+    "Ability1"					"custom_decay_spirit_lance"
+    "Ability2"					"custom_viper_strike"
+    "Ability3"                  "custom_mana_break"
+
     "ArmorPhysical"				"35"
     "MagicalResistance"			"0"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -53,16 +56,17 @@
 
     "Creature"
     {
-        "DisableResistance"          "10.0"
+        "DisableResistance"          "25.0"
         "OffensiveAbilities"
         {
-            "Ability1"
+            "Ability2"
             {
-                "Name"				"custom_phantom_charge"
+                "Name"				"custom_viper_strike"
             }
         }
         "EquippedItems"
         {
+            "Vlads"                { "Item"        "item_vladmir"    }
             "Moonshard"            { "Item"        "item_moon_shard" }
         }
         "AttachWearables"
