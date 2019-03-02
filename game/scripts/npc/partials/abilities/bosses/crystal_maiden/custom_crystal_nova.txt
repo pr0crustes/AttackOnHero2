@@ -44,7 +44,7 @@
         "06"
         {
             "var_type"				"FIELD_INTEGER"
-            "nova_damage"			"900"
+            "nova_damage"			"1000"
         }
     }
     "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"

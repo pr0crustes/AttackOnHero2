@@ -20,7 +20,7 @@
         "02"
         {
             "var_type"					"FIELD_INTEGER"
-            "crit_bonus"				"500"
+            "crit_bonus"				"530"
         }
     }
 }

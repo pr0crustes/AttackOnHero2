@@ -13,7 +13,7 @@
     "AbilityCastGestureSlot"		"DEFAULT"
     "AbilityCastRange"				"1000"
     "AbilityCastPoint"				"0.3"
-    "AbilityCooldown"				"17.0"
+    "AbilityCooldown"				"16.0"
     "AbilityDamage"					"4000"
     "AbilityManaCost"				"0"
 

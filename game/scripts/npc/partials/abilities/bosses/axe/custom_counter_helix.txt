@@ -7,7 +7,7 @@
 	"FightRecapLevel"				"1"
 	"BaseClass"						"axe_counter_helix"
 
-	"AbilityDamage"					"110"
+	"AbilityDamage"					"120"
 
 	"AbilitySpecial"
 	{

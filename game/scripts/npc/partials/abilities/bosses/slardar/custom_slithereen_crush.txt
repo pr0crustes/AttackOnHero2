@@ -11,7 +11,7 @@
 
     "AbilityCooldown"				"6"
 
-    "AbilityDamage"					"310"
+    "AbilityDamage"					"320"
     "AbilityManaCost"				"0"
 
     "AbilitySpecial"

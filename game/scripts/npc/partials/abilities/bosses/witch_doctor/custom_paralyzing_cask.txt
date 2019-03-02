@@ -30,7 +30,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "hero_damage"			"40"
+            "hero_damage"			"60"
         }
         "04"
         {

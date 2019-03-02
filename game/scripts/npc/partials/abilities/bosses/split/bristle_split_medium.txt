@@ -11,7 +11,7 @@
             "ScriptFile"			"abilities/bosses/split_on_death.lua"
             "Function"				"split_on_death"
             "unit_name"             "npc_bristle_medium"
-            "unit_count"            "5"
+            "unit_count"            "6"
         }
     }
 }

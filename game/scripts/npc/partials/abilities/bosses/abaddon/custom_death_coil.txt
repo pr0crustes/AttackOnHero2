@@ -24,7 +24,7 @@
         "02"
         {
             "var_type"				"FIELD_FLOAT"
-            "target_damage"			"1000"
+            "target_damage"			"1400"
         }
         "03"
         {

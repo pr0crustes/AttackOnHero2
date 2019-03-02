@@ -22,12 +22,12 @@
         "01"
         {
             "var_type"						"FIELD_FLOAT"
-            "mana_void_damage_per_mana"		"3.1"
+            "mana_void_damage_per_mana"		"3.4"
         }
         "02"
         {
             "var_type"						"FIELD_FLOAT"
-            "mana_void_ministun"			"0.3"
+            "mana_void_ministun"			"0.5"
         }
         "03"
         {

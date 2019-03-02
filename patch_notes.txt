@@ -3,6 +3,8 @@
 2.0.7:
     With this update:
 
+    Many changes to bosses.
+
     New upgrades to Vampiric Blade.
 
     Heroes abilities coded by me now have a green title.

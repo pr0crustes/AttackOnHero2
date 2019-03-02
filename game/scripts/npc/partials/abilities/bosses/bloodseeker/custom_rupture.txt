@@ -11,10 +11,10 @@
     "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
     "BaseClass"                     "bloodseeker_rupture"
 
-    "AbilityCastPoint"				"0.4"
+    "AbilityCastPoint"				"0.2"
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
 
-    "AbilityCooldown"				"12"
+    "AbilityCooldown"				"10"
     "AbilityManaCost"				"0"		
     "AbilityCastRange"				"1000"
     
