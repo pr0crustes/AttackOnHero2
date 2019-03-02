@@ -1,9 +1,9 @@
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage"								"<font color='#70EA72'>Rampage</font>"
-"DOTA_Tooltip_Ability_bloodseeker_custom_rampage_Description"					"Bloodseeker empowers his weapons with his own blood, dealing more damage but taking damage whenever he attacks."
+"DOTA_Tooltip_Ability_bloodseeker_custom_rampage_Description"					"Bloodseeker empowers his weapons with his own blood, dealing more damage but capping his max life."
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage_duration"				        "DURATION:"
 "DOTA_Tooltip_Ability_bloodseeker_custom_rampage_increased_damage"			    "%BONUS DAMAGE:"
-"DOTA_Tooltip_Ability_bloodseeker_custom_rampage_damage_taken"			        "%DAMAGE TAKEN:"
+"DOTA_Tooltip_Ability_bloodseeker_custom_rampage_max_hp"			            "%HEALTH CAP:"
 
 
 "DOTA_Tooltip_modifier_bloodseeker_custom_rampage"                              "Rampage"
-"DOTA_Tooltip_modifier_bloodseeker_custom_rampage_Description"                  "Damage increased, taking damage on every attack."
+"DOTA_Tooltip_modifier_bloodseeker_custom_rampage_Description"                  "Damage increased, health sealed."

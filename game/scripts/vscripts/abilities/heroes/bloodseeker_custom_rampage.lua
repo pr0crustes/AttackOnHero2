@@ -29,7 +29,6 @@ end
 function modifier_bloodseeker_custom_rampage:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE,
-        MODIFIER_EVENT_ON_ATTACK_LANDED,
         MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE,
     }
 end
@@ -46,27 +45,19 @@ end
 
 
 if IsServer() then
-    function modifier_bloodseeker_custom_rampage:OnAttackLanded(keys)
+    function modifier_bloodseeker_custom_rampage:OnCreated(keys)
         local ability = self:GetAbility()
-        local attacker = keys.attacker
-        local attack_damage = keys.damage
-        local target = keys.target
-    
-        if attacker == self:GetParent() then
-            local increased_damage = ability:GetSpecialValueFor("increased_damage")
-            local damage_taken = ability:GetSpecialValueFor("damage_taken")
+        self.max_hp = ability:GetSpecialValueFor("max_hp")
 
-            local damage_multiplier = damage_taken / (100 + increased_damage)
-            local damage = attack_damage * damage_multiplier
-        
-            ApplyDamage({
-                victim = attacker,
-                attacker = attacker,
-                ability = ability,
-                damage_type = DAMAGE_TYPE_PHYSICAL,
-                damage = damage,
-                damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION,
-            })
+        self:StartIntervalThink(0.1)
+    end
+
+
+    function modifier_bloodseeker_custom_rampage:OnIntervalThink()
+        local parent = self:GetParent()
+
+        if parent and parent:GetHealthPercent() > self.max_hp then
+            parent:SetHealth(parent:GetMaxHealth() * self.max_hp * 0.01)
         end
     end
 end

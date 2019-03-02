@@ -32,7 +32,7 @@
         "03"
         {	
             "var_type"			    "FIELD_INTEGER"
-            "damage_taken"		    "100 150 200"
+            "max_hp"		        "50"
         }
     }
 }

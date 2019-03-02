@@ -1,5 +1,14 @@
 
 
+2.0.8:
+    With this update:
+
+    Small changes to Bloodseeker's ult, after feedback.
+
+
+
+
+
 2.0.7:
     With this update:
 
