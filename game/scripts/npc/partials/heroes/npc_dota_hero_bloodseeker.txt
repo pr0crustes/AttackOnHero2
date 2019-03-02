@@ -2,4 +2,8 @@
 {
     "Ability3"          "bloodseeker_custom_life_drain"
     "Ability6"          "bloodseeker_custom_rampage"
+
+    "Ability14"		    "special_bonus_movement_speed_100"
+    "Ability15"		    "special_bonus_lifesteal_10"
+    "Ability17"		    "special_bonus_attack_speed_200"
 }
