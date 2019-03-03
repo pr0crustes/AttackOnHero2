@@ -1,4 +1,5 @@
 require("lib/my")
+require("lib/timers")
 
 
 
@@ -6,21 +7,53 @@ custom_attribute_teleport = class({})
 
 
 if IsServer() then
+    function custom_attribute_teleport:StartEffect()
+        local caster = self:GetCaster()
+
+        local effect = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_blink_start.vpcf", PATTACH_ABSORIGIN, caster)
+        ParticleManager:ReleaseParticleIndex(effect)
+
+        caster:EmitSound("Hero_Antimage.Blink_out")
+    end
+
+
+    function custom_attribute_teleport:EndEffect()
+        Timers:CreateTimer(
+            0.05,
+            function()
+                local caster = self:GetCaster()
+
+                local effect = ParticleManager:CreateParticle("particles/units/heroes/hero_antimage/antimage_blink_end.vpcf", PATTACH_ABSORIGIN, caster)
+                ParticleManager:ReleaseParticleIndex(effect)
+
+                caster:EmitSound("Hero_Antimage.Blink_in")
+            end
+        )
+    end
+
+
     function custom_attribute_teleport:OnSpellStart()
-        print("OnSpellStart")
-        local random_target = random_from_table(self:GetValidTargets())
+        local target = random_from_table(self:GetValidTargets())
 
-        if random_target then
-            print("random_target")
+        if target then
+            self:StartEffect()
+
             local caster = self:GetCaster()
+            
+            local target_pos = target:GetAbsOrigin()
 
-            local new_pos = random_target:GetAbsOrigin() + RandomVector(300)
+            local new_pos = target_pos + RandomVector(300)
 
             caster:SetAbsOrigin(new_pos)
 
+            local new_direction = (target_pos - new_pos):Normalized()
+            caster:SetForwardVector(new_direction)
+
             FindClearSpaceForUnit(caster, new_pos, true)
 
-            caster:SetAggroTarget(random_target)
+            caster:SetAggroTarget(target)
+
+            self:EndEffect()
         end
     end
 
@@ -31,14 +64,10 @@ if IsServer() then
         local caster = self:GetCaster()
 
         local current_attribute = self:GetCurrentAttribute()
-
-        print("Current attribute is " .. current_attribute)
         
         local units = FindUnitsInRadius(caster:GetTeam(), caster:GetAbsOrigin(), nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, 0, false)
         for _, unit in ipairs(units) do
-            print("UNIT")
             if unit:IsRealHero() and unit:IsAlive() and unit:GetPrimaryAttribute() == current_attribute then
-                print("FOUND ONE")
                 table.insert(valid_targets, unit)
             end
         end

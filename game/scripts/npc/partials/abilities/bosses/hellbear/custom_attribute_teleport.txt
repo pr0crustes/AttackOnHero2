@@ -11,6 +11,13 @@
     "AbilityCooldown"				"10"
     "AbilityManaCost"				"0"
 
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_antimage/antimage_blink_start.vpcf"
+        "particle"                  "particles/units/heroes/hero_antimage/antimage_blink_end.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+    }
+
     "AbilitySpecial"
     {
         "01"
