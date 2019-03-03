@@ -1,0 +1,42 @@
+"custom_attribute_burn"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/bosses/custom_attribute_burn.lua"
+
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityUnitTargetTeam"		    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"		    "DOTA_UNIT_TARGET_HERO"
+
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+    "AbilityTextureName" 			"ember_spirit_flame_guard"
+
+    "AbilityCastRange"				"1300"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "radius"			    "1300"
+        }
+        "02"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "ticks_per_sec"	        "10"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "attribute_mult"        "1.0"
+        }
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "attribute_mult_if_att" "2.0"
+        }
+    }
+}

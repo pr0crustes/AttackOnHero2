@@ -15,6 +15,7 @@
     "Ability1"					"custom_attribute_focus"
     "Ability2"                  "custom_attribute_teleport"
     "Ability3"                  "custom_attribute_blow"
+    "Ability4"                  "custom_attribute_burn"
 
     "ArmorPhysical"				"70"
     "MagicalResistance"			"55"

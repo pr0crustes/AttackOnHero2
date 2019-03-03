@@ -113,3 +113,21 @@ modifier_custom_attribute_focus_blue.attribute = 2
 modifier_custom_attribute_focus_blue.next_modifier = "modifier_custom_attribute_focus_red"
 modifier_custom_attribute_focus_blue.texture = "attribute_focus_blue"
 modifier_custom_attribute_focus_blue.status_effect = "particles/custom/status_effect_hellbear_blue.vpcf"
+
+
+
+function get_attribute_focus(unit)
+    if unit:HasModifier("modifier_custom_attribute_focus_red") then
+        return 0
+    end
+
+    if unit:HasModifier("modifier_custom_attribute_focus_green") then
+        return 1
+    end
+
+    if unit:HasModifier("modifier_custom_attribute_focus_blue") then
+        return 2
+    end
+
+    return -1
+end
