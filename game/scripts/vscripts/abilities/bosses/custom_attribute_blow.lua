@@ -62,6 +62,11 @@ function modifier_custom_attribute_blow_stun:IsStunDebuff()
 end
 
 
+function modifier_custom_attribute_blow_stun:IsPurgable()
+    return true
+end
+
+
 function modifier_custom_attribute_blow_stun:GetEffectName()
     return "particles/generic_gameplay/generic_stunned.vpcf"
 end
