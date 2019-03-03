@@ -9,7 +9,7 @@ function AIThink()
 
     local ancient = Entities:FindByName(nil, "dota_goodguys_fort")
 
-    if ancient:IsAlive() then
+    if ancient:IsAlive() and thisEntity:IsAlive() then
 
         local attackOrder = {
             UnitIndex = thisEntity:entindex(), 
