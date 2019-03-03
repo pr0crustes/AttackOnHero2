@@ -1,5 +1,6 @@
 require("lib/my")
 require("lib/timers")
+require("abilities/bosses/custom_attribute_focus")
 
 
 
@@ -63,7 +64,7 @@ if IsServer() then
 
         local caster = self:GetCaster()
 
-        local current_attribute = self:GetCurrentAttribute()
+        local current_attribute = get_attribute_focus(caster)
         
         local units = FindUnitsInRadius(caster:GetTeam(), caster:GetAbsOrigin(), nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, 0, false)
         for _, unit in ipairs(units) do
@@ -73,25 +74,6 @@ if IsServer() then
         end
 
         return valid_targets
-    end
-
-    
-    function custom_attribute_teleport:GetCurrentAttribute()
-        local caster = self:GetCaster()
-
-        if caster:HasModifier("modifier_custom_attribute_focus_red") then
-            return 0
-        end
-
-        if caster:HasModifier("modifier_custom_attribute_focus_green") then
-            return 1
-        end
-
-        if caster:HasModifier("modifier_custom_attribute_focus_blue") then
-            return 2
-        end
-
-        return -1
     end
 end
 

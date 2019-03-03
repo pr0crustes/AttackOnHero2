@@ -1,3 +1,6 @@
+require("abilities/bosses/custom_attribute_focus")
+
+
 
 custom_attribute_blow = class({})
 
@@ -21,7 +24,7 @@ if IsServer() then
         local pct_damage = self:GetSpecialValueFor("life_damage")
         local stun_duration = self:GetSpecialValueFor("stun")
 
-        if unit:IsRealHero() and unit:GetPrimaryAttribute() == self:GetCurrentAttribute()then
+        if unit:IsRealHero() and unit:GetPrimaryAttribute() == get_attribute_focus(caster) then
             pct_damage = self:GetSpecialValueFor("life_damage_if_att")
             stun_duration = self:GetSpecialValueFor("stun_if_att")
         end
@@ -39,25 +42,6 @@ if IsServer() then
         unit:AddNewModifier(caster, self, "modifier_custom_attribute_blow_stun", {
             duration = stun_duration
         })
-    end
-
-    
-    function custom_attribute_blow:GetCurrentAttribute()
-        local caster = self:GetCaster()
-
-        if caster:HasModifier("modifier_custom_attribute_focus_red") then
-            return 0
-        end
-
-        if caster:HasModifier("modifier_custom_attribute_focus_green") then
-            return 1
-        end
-
-        if caster:HasModifier("modifier_custom_attribute_focus_blue") then
-            return 2
-        end
-
-        return -1
     end
 end
 
