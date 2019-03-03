@@ -4,6 +4,8 @@
     "SoundSet"					"n_creep_Melee"
     "BaseClass"					"npc_dota_creature"
 
+    "vscripts"					"bosses/hellbear.lua"
+
     "ModelScale"				"2.0"
     "Level"						"36"
     "ConsideredHero"			"1"
@@ -50,12 +52,5 @@
     "Creature"
     {
         "DisableResistance"          "70.0"
-        "OffensiveAbilities"
-        {
-            "Ability2"
-            {
-                "Name"          "custom_attribute_teleport"
-            }
-        }
     }
 }
