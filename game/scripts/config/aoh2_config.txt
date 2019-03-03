@@ -661,7 +661,7 @@
 		"28" // Mirana
 		{
 			"Title"						"Star"
-			"MaxGold"					"8800"
+			"MaxGold"					"8500"
 			"BagCount"					"1"
 			"BagVariance"				"0"
 			"FixedXP"					"5100"
@@ -678,7 +678,7 @@
 		"29" // Phantom Lance
 		{
 			"Title"						"Real?"
-			"MaxGold"					"10000"
+			"MaxGold"					"9000"
 			"BagCount"					"5"
 			"BagVariance"				"0"
 			"FixedXP"					"5600"
@@ -695,7 +695,7 @@
 		"30" // Phantom Assassin
 		{
 			"Title"						"Dagger"
-			"MaxGold"					"10900"
+			"MaxGold"					"9500"
 			"BagCount"					"3"
 			"BagVariance"				"0"
 			"FixedXP"					"5600"
@@ -712,7 +712,7 @@
 		"31" // Spectre
 		{
 			"Title"						"Lost"
-			"MaxGold"					"11500"
+			"MaxGold"					"10000"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6400"
@@ -729,7 +729,7 @@
 		"32" // Anti-Mage
 		{
 			"Title"						"Ban Magic"
-			"MaxGold"					"13000"
+			"MaxGold"					"10500"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6400"
@@ -746,7 +746,7 @@
 		"33" // Roshan
 		{
 			"Title"						"The Immortal"
-			"MaxGold"					"13100"
+			"MaxGold"					"11000"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6400"
@@ -763,7 +763,7 @@
 		"34" // Lich
 		{
 			"Title"						"Ethreain"
-			"MaxGold"					"13300"
+			"MaxGold"					"11500"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6500"
@@ -780,7 +780,7 @@
 		"35" // Rubick
 		{
 			"Title"						"Spells"
-			"MaxGold"					"14000"
+			"MaxGold"					"12000"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6500"
