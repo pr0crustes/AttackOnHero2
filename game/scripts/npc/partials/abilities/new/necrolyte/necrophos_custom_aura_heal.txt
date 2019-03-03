@@ -1,0 +1,43 @@
+"necrolyte_custom_aura_heal"
+{
+    "BaseClass"					    "ability_datadriven"
+
+    "AbilityTextureName"            "necrolyte_reapers_scythe"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityCastRange"			    "1500"
+    "AbilityCooldown"               "70 60 50"
+    "AbilityManaCost"               "100 150 200"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_necrolyte/necrolyte_scythe_start.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "health_pct"		    "50"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "1500"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		"abilities/heroes/necrolyte_custom_aura_heal.lua"
+            "Function"			"cast_aura_heal"
+        } 
+    }
+}

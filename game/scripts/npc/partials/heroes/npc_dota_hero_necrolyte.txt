@@ -1,5 +1,5 @@
 "npc_dota_hero_necrolyte"
 {
-    "Ability3"		"necrophos_intelligence_supremacy"
-    "Ability6"		"necrophos_custom_aura_heal"
+    "Ability3"		"necrolyte_intelligence_supremacy"
+    "Ability6"		"necrolyte_custom_aura_heal"
 }
