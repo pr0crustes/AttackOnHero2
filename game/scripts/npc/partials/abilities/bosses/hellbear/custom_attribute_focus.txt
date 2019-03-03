@@ -1,0 +1,17 @@
+"custom_attribute_focus"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/bosses/custom_attribute_focus.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"invoker_alacrity"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "rotation_time"		    "10.0"
+        }
+    }
+}

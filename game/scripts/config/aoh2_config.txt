@@ -777,10 +777,27 @@
 			}
 		}
 
-		"35" // Rubick
+		"35" // Hellbear
+		{
+			"Title"						"Claw"
+			"MaxGold"					"12000"
+			"BagCount"					"1"
+			"BagVariance"				"30"
+			"FixedXP"					"6500"
+
+			"a"
+			{
+				"NPCName"				"npc_boss_hellbear"
+				"TotalUnitsToSpawn"		"1"
+				"UnitsPerSpawn"			"1"
+				"SpawnInterval"			"30"
+			}
+		}
+
+		"36" // Rubick
 		{
 			"Title"						"Spells"
-			"MaxGold"					"12000"
+			"MaxGold"					"12500"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6500"
