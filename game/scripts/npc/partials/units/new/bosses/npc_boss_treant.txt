@@ -11,6 +11,7 @@
     "Ability1"					"custom_berserkers_call"
     "Ability2"					"custom_overgrowth"
     "Ability3"					"custom_primal_roar"
+    "Ability4"					"custom_inner_beast"
 
     "ArmorPhysical"				"27"
     "AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"

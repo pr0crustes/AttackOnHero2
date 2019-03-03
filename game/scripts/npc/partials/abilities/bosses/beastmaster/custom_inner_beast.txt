@@ -1,0 +1,23 @@
+"custom_inner_beast"
+{
+    "ID"					        "$ID"
+    "BaseClass"                     "beastmaster_inner_beast"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"500"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"80"
+            "LinkedSpecialBonus"	"special_bonus_unique_beastmaster_4"
+        }
+    }
+}

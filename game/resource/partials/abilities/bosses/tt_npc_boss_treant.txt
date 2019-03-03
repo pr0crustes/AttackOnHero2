@@ -20,3 +20,10 @@
 "DOTA_Tooltip_ability_custom_primal_roar_damage_radius"					    "SHOUT WIDTH:"
 "DOTA_Tooltip_ability_custom_primal_roar_slow_movement_speed_pct"			"%MOVEMENT SLOW:"
 "DOTA_Tooltip_ability_custom_primal_roar_slow_attack_speed_pct"			    "ATTACK SLOW:"
+
+
+"DOTA_Tooltip_ability_custom_inner_beast"									"Inner Beast"
+"DOTA_Tooltip_ability_custom_inner_beast_Description"						"Untaps the inner fury of allies, passively increasing their attack speed."
+"DOTA_Tooltip_ability_custom_inner_beast_Lore"								"Beastmaster's ability to incite the innate strength of animals was seen in the mauling of the king of Slom."
+"DOTA_Tooltip_ability_custom_inner_beast_radius"							"RADIUS:"
+"DOTA_Tooltip_ability_custom_inner_beast_bonus_attack_speed"				"BONUS ATTACK SPEED:"
