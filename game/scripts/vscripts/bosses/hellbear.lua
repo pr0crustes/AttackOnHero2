@@ -20,7 +20,7 @@ function AIThink()
             if thisEntity.custom_attribute_teleport:IsCooldownReady() and thisEntity.custom_attribute_blow:IsCooldownReady() then
 
                 Timers:CreateTimer(
-                    0.5,
+                    0.3,
                     function()
                         if thisEntity:IsAlive() then
                             ExecuteOrderFromTable({
@@ -34,7 +34,7 @@ function AIThink()
 
 
                 Timers:CreateTimer(
-                    2.0,
+                    1.0,
                     function()
                         if thisEntity:IsAlive() then
                             ExecuteOrderFromTable({
