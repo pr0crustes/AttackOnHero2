@@ -9,6 +9,8 @@
 
     Spectre Dispersion: Reflected damage percentage decreased from "7 12 17 22" to "5 10 15 20".
 
+    Silencer Read a Book: Duration changed from "6.0 8.0 10.0" to always "8.0", multiplier increased from "1.0" to "1.0 1.5 2.0".
+
 
 
 

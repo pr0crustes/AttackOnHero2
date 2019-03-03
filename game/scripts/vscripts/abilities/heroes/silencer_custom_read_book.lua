@@ -16,5 +16,7 @@ function cast_read_book(keys)
     ability:ApplyDataDrivenModifier(caster, caster, modifier, {duration = duration})
     caster:SetModifierStackCount(modifier, caster, bonus_int)
 
+    caster:CalculateStatBonus()
+
     caster:EmitSound("Hero_Silencer.GlobalSilence.Cast")
 end

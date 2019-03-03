@@ -1,5 +1,5 @@
 "DOTA_Tooltip_Ability_silencer_custom_read_book"						"<font color='#70EA72'>Read a Book</font>"
-"DOTA_Tooltip_Ability_silencer_custom_read_book_Description"			"Silencer stops and reads a book, multiplying his own intellect for a while."
+"DOTA_Tooltip_Ability_silencer_custom_read_book_Description"			"Silencer stops and reads a book, multiplying his own intellect for a brief duration."
 "DOTA_Tooltip_Ability_silencer_custom_read_book_multiplier"             "INT MULTIPLIER:"
 "DOTA_Tooltip_Ability_silencer_custom_read_book_duration"               "DURATION:"
 "DOTA_Tooltip_Ability_silencer_custom_read_book_lore"				    "Nothing better than an old book."
