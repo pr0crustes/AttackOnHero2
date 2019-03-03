@@ -1,0 +1,29 @@
+"boss_dash"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"		            "abilities/bosses/boss_dash.lua"
+
+    "AbilityTextureName"            "roshan_bash"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+    "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				"7"
+    "AbilityManaCost"				"0"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "distance"					"600"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "speed"			            "900"
+        }
+    }
+}

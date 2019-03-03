@@ -1,0 +1,55 @@
+"custom_overwhelming_odds"
+{
+    "ID"							"$ID"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "BaseClass"						"legion_commander_overwhelming_odds"
+
+    "AbilityCooldown"				"8.0"
+    "AbilityCastRange"				"1000"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"				"500"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"200"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_unit"		"20"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_per_hero"		"130"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "illusion_dmg_pct"		"25"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_speed_creeps"	"6"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_speed_heroes"	"25"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"5.0"
+        }
+    }
+}

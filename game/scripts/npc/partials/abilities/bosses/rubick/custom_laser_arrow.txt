@@ -1,0 +1,86 @@
+"custom_laser_arrow"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"            "windrunner_powershot"
+
+    "AbilityCastRange"				"5000"
+    "AbilityCastPoint"				"0.5"
+    "AbilityCooldown"				"8.0"
+    "AbilityDamage"					"1300"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arrow_width"			"200"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arrow_range"			"5000"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arrow_speed"			"5000"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ActOnTargets"
+        {
+            "Target"
+            {
+                "Center"			"CASTER"
+                "Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                "Flags"             "DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
+                "Radius"			"1000"
+            }
+            "Action"
+            {
+                "FireSound"
+                {
+                    "EffectName"	    "Ability.AssassinateLoad"
+                    "Target"		    "CASTER"
+                }
+                "LinearProjectile"
+                {
+                    "Target"      		"TARGET"
+                    "EffectName"  		"particles/units/heroes/hero_windrunner/windrunner_spell_powershot_rubick.vpcf"
+                    "MoveSpeed"   		"%arrow_speed"
+                    "StartRadius"   	"%arrow_width"
+                    "StartPosition" 	"attach_origin"
+                    "EndRadius"     	"%arrow_width"
+                    "FixedDistance" 	"%arrow_range"
+                    "TargetTeams"  		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                    "TargetTypes"   	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+                    "TargetFlags"   	"DOTA_UNIT_TARGET_FLAG_NONE"
+                    "HasFrontalCone"    "1"
+                    "ProvidesVision" 	"1"
+                }
+            }
+        }
+    }
+
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"	"0"
+        "Damage"
+        {
+            "Target"			    "TARGET"
+            "Type"				    "DAMAGE_TYPE_MAGICAL"
+            "Damage"			    "%AbilityDamage"
+        }
+        "FireSound"
+        {
+            "Target"				"TARGET"
+            "EffectName"			"Hero_Tinker.LaserAnim"
+        }
+    }
+}

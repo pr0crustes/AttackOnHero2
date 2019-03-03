@@ -1,0 +1,96 @@
+"custom_chaos_meteor"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"            "invoker_chaos_meteor"
+
+    "AbilityCastRange"				"5000"
+    "AbilityCastPoint"				"0.5"
+    "AbilityCooldown"				"10.0"
+    "AbilityDamage"					"3300"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_reduction"		"0.1"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "speed_reduction"		"0.1"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arrow_width"			"300"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "arrow_range"			"5000"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "arrow_speed"			"100"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ActOnTargets"
+        {
+            "Target"
+            {
+                "Center"			"CASTER"
+                "Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                "Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                "Radius"			"1000"
+                "MaxTargets"        "2"
+            }
+            "Action"
+            {
+                "FireSound"
+                {
+                    "EffectName"	    "Hero_Invoker.ChaosMeteor.Cast"
+                    "Target"		    "CASTER"
+                }
+                "LinearProjectile"
+                {
+                    "Target"      		"TARGET"
+                    "EffectName"  		"particles/units/heroes/hero_rubick/rubick_chaos_meteor.vpcf"
+                    "MoveSpeed"   		"%arrow_speed"
+                    "StartRadius"   	"%arrow_width"
+                    "StartPosition" 	"attach_origin"
+                    "EndRadius"     	"%arrow_width"
+                    "FixedDistance" 	"%arrow_range"
+                    "TargetTeams"  		"DOTA_UNIT_TARGET_TEAM_ENEMY"
+                    "TargetTypes"   	"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+                    "TargetFlags"   	"DOTA_UNIT_TARGET_FLAG_NONE"
+                    "HasFrontalCone"    "1"
+                    "ProvidesVision" 	"1"
+                }
+            }
+        }
+    }
+
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"	"0"
+        "Damage"
+        {
+            "Target"			    "TARGET"
+            "Type"				    "DAMAGE_TYPE_MAGICAL"
+            "Damage"			    "%AbilityDamage"
+        }
+        "FireSound"
+        {
+            "Target"				"TARGET"
+            "EffectName"			"Hero_Invoker.ChaosMeteor.Impact"
+        }
+    }
+}

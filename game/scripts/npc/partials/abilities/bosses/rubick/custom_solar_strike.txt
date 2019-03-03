@@ -1,0 +1,76 @@
+"custom_solar_strike"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityCastPoint"				"0.2"
+    "AbilityTextureName"			"invoker_sun_strike"
+
+    "precache"
+    {
+        "particle"					"particles/econ/items/invoker/invoker_apex/invoker_sun_strike_team_immortal1.vpcf"
+        "particle"					"particles/econ/items/invoker/invoker_apex/invoker_sun_strike_immortal1.vpcf"
+        "soundfile"					"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+    }
+
+    "AbilityCooldown"				"10.0"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage"						"9999"
+        }
+        "02"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "delay"							"2.5"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "radius"    					"175"
+        }
+    }
+    
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"			"abilities/bosses/custom_solar_strike.lua"
+            "Function"				"solar_strike_start"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_dummy"
+        {
+            "ThinkInterval"		"0.01"
+            "OnIntervalThink"	
+            {
+                "Damage"
+                {
+                    "Damage"		"9999"
+                    "Type"			"DAMAGE_TYPE_PURE"
+                    "Target"		"TARGET"
+                }
+            }
+            "States"
+            {
+                "MODIFIER_STATE_ATTACK_IMMUNE"			"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_COMMAND_RESTRICTED"		"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_INVISIBLE"				"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NOT_ON_MINIMAP"			"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NO_HEALTH_BAR"			"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_UNSELECTABLE"			"MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}

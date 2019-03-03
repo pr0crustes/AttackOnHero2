@@ -1,0 +1,28 @@
+"custom_summon_ancient_apparition"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityTextureName"			"ancient_apparition_ice_blast"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityCooldown"				"20.0"
+    "AbilityCastPoint"				"0.1"
+    "AbilityManaCost"				"0"
+    
+    "OnSpellStart"
+    {
+        "SpawnUnit"
+        {
+            "UnitName"			"npc_boss_ancient_apparition"
+            "UnitCount"			"1"
+            "Target"
+            {
+                "Center"	"CASTER"
+                "Radius"	"400"
+                "Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+                "Types"		"DOTA_UNIT_TARGET_HERO"
+                "Flags"		"DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
+            }
+            "Duration"		"60"
+        }
+    }
+}
