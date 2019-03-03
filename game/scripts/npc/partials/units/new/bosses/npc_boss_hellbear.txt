@@ -11,7 +11,7 @@
     "HasInventory"				"1"
 
     "Ability1"					"custom_attribute_focus"
-    "Ability2"                  "custom_heartstopper_aura"
+    //"Ability2"                  "custom_heartstopper_aura"
 
     "ArmorPhysical"				"70"
     "MagicalResistance"			"55"
@@ -51,10 +51,6 @@
         "DisableResistance"          "70.0"
         "OffensiveAbilities"
         {
-            "Ability1"
-            {
-                "Name"				"custom_war_stomp"
-            }
         }
     }
 }

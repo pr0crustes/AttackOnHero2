@@ -1,0 +1,1 @@
+"npc_boss_hellbear"                     "Hellbear (Boss)"
