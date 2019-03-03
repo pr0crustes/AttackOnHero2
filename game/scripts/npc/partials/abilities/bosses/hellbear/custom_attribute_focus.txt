@@ -10,7 +10,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "rotation_time"		    "10.0"
+            "rotation_time"		    "8.0"
         }
         "02"
         {

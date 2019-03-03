@@ -11,7 +11,7 @@
     "HasInventory"				"1"
 
     "Ability1"					"custom_attribute_focus"
-    //"Ability2"                  "custom_heartstopper_aura"
+    "Ability2"                  "custom_attribute_teleport"
 
     "ArmorPhysical"				"70"
     "MagicalResistance"			"55"
@@ -51,6 +51,10 @@
         "DisableResistance"          "70.0"
         "OffensiveAbilities"
         {
+            "Ability2"
+            {
+                "Name"          "custom_attribute_teleport"
+            }
         }
     }
 }

@@ -1,0 +1,22 @@
+"custom_attribute_teleport"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/bosses/custom_attribute_teleport.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityTextureName"			"abyssal_underlord_dark_rift"
+
+    "AbilityCastRange"				"2600"
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"10"
+    "AbilityManaCost"				"0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "2600"
+        }
+    }
+}
