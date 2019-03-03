@@ -30,13 +30,13 @@
         }
         "03"
         {
-            "var_type"			    "FIELD_FLOAT"
-            "attribute_mult"        "1.0"
+            "var_type"			    "FIELD_INTEGER"
+            "attribute_mult"        "100"
         }
         "03"
         {
-            "var_type"			    "FIELD_FLOAT"
-            "attribute_mult_if_att" "2.0"
+            "var_type"			    "FIELD_INTEGER"
+            "attribute_mult_if_att" "200"
         }
     }
 }

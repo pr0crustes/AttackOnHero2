@@ -77,8 +77,8 @@ if IsServer() then
         local ability = self:GetAbility()
 
         self.ticks_per_sec = ability:GetSpecialValueFor("ticks_per_sec")
-        self.attribute_mult = ability:GetSpecialValueFor("attribute_mult") / self.ticks_per_sec
-        self.attribute_mult_if_att = ability:GetSpecialValueFor("attribute_mult_if_att") / self.ticks_per_sec
+        self.attribute_mult = (ability:GetSpecialValueFor("attribute_mult") / self.ticks_per_sec) * 0.01
+        self.attribute_mult_if_att = (ability:GetSpecialValueFor("attribute_mult_if_att") / self.ticks_per_sec) * 0.01
 
         self.tick_interval = 1 / self.ticks_per_sec
 

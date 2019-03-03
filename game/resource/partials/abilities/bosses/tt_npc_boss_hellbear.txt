@@ -1,1 +1,49 @@
 "npc_boss_hellbear"                     "Hellbear (Boss)"
+
+
+"DOTA_Tooltip_ability_custom_attribute_focus"								    "Attribute Focus"
+"DOTA_Tooltip_ability_custom_attribute_focus_Description"					    "Hellbear is obsessed with one attribute at a given moment, changing his color based on it. Hellbear takes %damage_reduction%%  less damage from heroes that have their primary attribute other than the one being focused."
+"DOTA_Tooltip_ability_custom_attribute_focus_rotation_time"			            "FOCUS DURATION:"
+
+
+"DOTA_Tooltip_modifier_custom_attribute_focus_red"                              "Attribute Focus"
+"DOTA_Tooltip_modifier_custom_attribute_focus_red_Description"                  "Hellbear is focusing Strength."
+
+"DOTA_Tooltip_modifier_custom_attribute_focus_green"                            "Attribute Focus"
+"DOTA_Tooltip_modifier_custom_attribute_focus_green_Description"                "Hellbear is focusing Agility."
+
+"DOTA_Tooltip_modifier_custom_attribute_focus_blue"                             "Attribute Focus"
+"DOTA_Tooltip_modifier_custom_attribute_focus_blue_Description"                 "Hellbear is focusing Intelligence."
+
+
+
+"DOTA_Tooltip_ability_custom_attribute_teleport"							    "Attribute Teleport"
+"DOTA_Tooltip_ability_custom_attribute_teleport_Description"					"Hellbear teleports to a nearby enemy. Targets that have their primary attribute equal to the one being focused are preferred."
+"DOTA_Tooltip_ability_custom_attribute_teleport_radius"			                "RADIUS:"
+
+
+
+"DOTA_Tooltip_ability_custom_attribute_blow"							        "Attribute Clap"
+"DOTA_Tooltip_ability_custom_attribute_blow_Description"					    "Hellbear claps, dealing damage and stunning all nearby enemies based on their primary attribute."
+"DOTA_Tooltip_ability_custom_attribute_blow_radius"			                    "RADIUS:"
+"DOTA_Tooltip_ability_custom_attribute_blow_base_damage"			            "BASE DAMAGE:"
+"DOTA_Tooltip_ability_custom_attribute_blow_life_damage"			            "HEALTH AS DAMAGE:"
+"DOTA_Tooltip_ability_custom_attribute_blow_life_damage_if_att"			        "HEALTH AS DAMAGE (IF FOCUSED):"
+"DOTA_Tooltip_ability_custom_attribute_blow_stun"			                    "STUN DURATION:"
+"DOTA_Tooltip_ability_custom_attribute_blow_stun_if_att"			            "STUN DURATION (IF FOCUSED):"
+
+
+"DOTA_Tooltip_modifier_custom_attribute_blow_stun"                              "Attribute Clap"
+"DOTA_Tooltip_modifier_custom_attribute_blow_stun_Description"                  "Stunned."
+
+
+
+"DOTA_Tooltip_ability_custom_attribute_burn"							        "Attribute Burn"
+"DOTA_Tooltip_ability_custom_attribute_burn_Description"					    "Hellbear's presence causes all nearby enemies to burn, taking damage every second based on their primary attribute."
+"DOTA_Tooltip_ability_custom_attribute_burn_radius"			                    "RADIUS:"
+"DOTA_Tooltip_ability_custom_attribute_burn_attribute_mult"			            "%ATTRIBUTE AS DAMAGE:"
+"DOTA_Tooltip_ability_custom_attribute_burn_attribute_mult_if_att"			    "%ATTRIBUTE AS DAMAGE (IF FOCUSED):"
+
+
+"DOTA_Tooltip_modifier_custom_attribute_burn_debuff"                            "Attribute Burn"
+"DOTA_Tooltip_modifier_custom_attribute_burn_debuff_Description"                "Tooking damage every second based on primary attribute."
