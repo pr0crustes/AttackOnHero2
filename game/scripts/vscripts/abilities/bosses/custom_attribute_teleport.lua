@@ -68,7 +68,7 @@ if IsServer() then
         
         local units = FindUnitsInRadius(caster:GetTeam(), caster:GetAbsOrigin(), nil, self:GetSpecialValueFor("radius"), DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO, 0, 0, false)
         for _, unit in ipairs(units) do
-            if unit:IsRealHero() and unit:IsAlive() and unit:GetPrimaryAttribute() == current_attribute then
+            if unit:IsRealHero() and unit:IsAlive() and unit.GetPrimaryAttribute and unit:GetPrimaryAttribute() == current_attribute then
                 table.insert(valid_targets, unit)
             end
         end

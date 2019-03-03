@@ -24,7 +24,7 @@ if IsServer() then
         local pct_damage = self:GetSpecialValueFor("life_damage")
         local stun_duration = self:GetSpecialValueFor("stun")
 
-        if unit:IsRealHero() and unit:GetPrimaryAttribute() == get_attribute_focus(caster) then
+        if unit:IsRealHero() and unit.GetPrimaryAttribute and unit:GetPrimaryAttribute() == get_attribute_focus(caster) then
             pct_damage = self:GetSpecialValueFor("life_damage_if_att")
             stun_duration = self:GetSpecialValueFor("stun_if_att")
         end

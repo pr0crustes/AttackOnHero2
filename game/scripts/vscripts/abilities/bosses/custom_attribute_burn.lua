@@ -82,7 +82,10 @@ if IsServer() then
 
         self.tick_interval = 1 / self.ticks_per_sec
 
-        self:StartIntervalThink(self.tick_interval)
+        local parent = self:GetParent()
+        if parent and parent.GetPrimaryAttribute and parent.GetPrimaryStatValue then
+            self:StartIntervalThink(self.tick_interval)
+        end
     end
 
 

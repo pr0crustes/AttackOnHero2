@@ -71,6 +71,7 @@ if IsServer() then
         if keys.unit == parent 
             and keys.inflictor ~= ability  -- so it does not create a recursion loop and crash.
             and attacker
+            and attacker.GetPrimaryAttribute
             and attacker:GetPrimaryAttribute() == self.attribute then
 
             ApplyDamage({
