@@ -102,7 +102,7 @@
 		{
 			_class = "C_OP_RenderStatusEffect"
 			m_pTextureDiffuseWarp = resource:"materials/models/heroes/statuseffects/colorwarp_rupture.vtex"
-			m_pTextureColorWarp = resource:"materials/models/heroes/statuseffects/colorwarp_inversion.vtex"
+			m_pTextureColorWarp = resource:"materials/models/heroes/statuseffects/colorwarp_jade_stone_dire.vtex"
 		},
 	]
 	m_controlPointConfigurations = 

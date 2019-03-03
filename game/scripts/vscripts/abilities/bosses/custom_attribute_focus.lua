@@ -24,6 +24,21 @@ LinkLuaModifier("modifier_custom_attribute_focus_base", "abilities/bosses/custom
 modifier_custom_attribute_focus_base = class({})
 
 
+function modifier_custom_attribute_focus_base:GetTexture()
+    return self.texture
+end
+
+
+function modifier_custom_attribute_focus_base:GetStatusEffectName()
+    return self.status_effect
+end
+
+
+function modifier_custom_attribute_focus_base:StatusEffectPriority()
+    return 20
+end
+
+
 if IsServer() then
     function modifier_custom_attribute_focus_base:OnDestroy()
         local parent = self:GetParent()
@@ -33,7 +48,6 @@ if IsServer() then
             duration = ability:GetSpecialValueFor("rotation_time")
         })
     end
-
 
 
     function modifier_custom_attribute_focus_base:DeclareFunctions()
@@ -51,18 +65,21 @@ if IsServer() then
     
     function modifier_custom_attribute_focus_base:OnTakeDamage(keys)
         local parent = self:GetParent()
-        if keys.unit == parent then
-            local attacker = keys.attacker
-            if attacker and attacker:GetPrimaryAttribute() == self.attribute then
-                print("IS ATTRIBUTE")
-                ApplyDamage({
-                    ability = keys.inflictor,
-                    attacker = attacker,
-                    damage = keys.damage,
-                    damage_type = DAMAGE_TYPE_PURE,
-                    victim = parent
-                })
-            end
+        local ability = self:GetAbility()
+        local attacker = keys.attacker
+
+        if keys.unit == parent 
+            and keys.inflictor ~= ability  -- so it does not create a recursion loop and crash.
+            and attacker
+            and attacker:GetPrimaryAttribute() == self.attribute then
+
+            ApplyDamage({
+                ability = self:GetAbility(),
+                attacker = attacker,
+                damage = keys.damage,
+                damage_type = DAMAGE_TYPE_PURE,
+                victim = parent
+            })
         end
     end
 end
@@ -74,6 +91,8 @@ LinkLuaModifier("modifier_custom_attribute_focus_red", "abilities/bosses/custom_
 modifier_custom_attribute_focus_red = class(modifier_custom_attribute_focus_base)
 modifier_custom_attribute_focus_red.attribute = 0
 modifier_custom_attribute_focus_red.next_modifier = "modifier_custom_attribute_focus_green"
+modifier_custom_attribute_focus_red.texture = "attribute_focus_red"
+modifier_custom_attribute_focus_red.status_effect = "particles/custom/status_effect_hellbear_red.vpcf"
 
 
 
@@ -82,6 +101,8 @@ LinkLuaModifier("modifier_custom_attribute_focus_green", "abilities/bosses/custo
 modifier_custom_attribute_focus_green = class(modifier_custom_attribute_focus_base)
 modifier_custom_attribute_focus_green.attribute = 1
 modifier_custom_attribute_focus_green.next_modifier = "modifier_custom_attribute_focus_blue"
+modifier_custom_attribute_focus_green.texture = "attribute_focus_green"
+modifier_custom_attribute_focus_green.status_effect = "particles/custom/status_effect_hellbear_green.vpcf"
 
 
 
@@ -90,3 +111,5 @@ LinkLuaModifier("modifier_custom_attribute_focus_blue", "abilities/bosses/custom
 modifier_custom_attribute_focus_blue = class(modifier_custom_attribute_focus_base)
 modifier_custom_attribute_focus_blue.attribute = 2
 modifier_custom_attribute_focus_blue.next_modifier = "modifier_custom_attribute_focus_red"
+modifier_custom_attribute_focus_blue.texture = "attribute_focus_blue"
+modifier_custom_attribute_focus_blue.status_effect = "particles/custom/status_effect_hellbear_blue.vpcf"
