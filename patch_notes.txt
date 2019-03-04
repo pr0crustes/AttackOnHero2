@@ -5,6 +5,8 @@
 
     Reworked Axe's W.
 
+    Phantom Asssassin's Q now throws multiple daggers.
+
 
 
 
