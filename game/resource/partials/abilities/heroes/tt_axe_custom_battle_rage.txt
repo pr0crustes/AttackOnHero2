@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_axe_custom_battle_rage"								"<font color='#70EA72'>Battle Rage</font>"
+"DOTA_Tooltip_ability_axe_custom_battle_rage_Description"					"Sends target allied unit into a Battle Rage. When affected by Battle Rage, all damage dealt by that unit steals life."
+"DOTA_Tooltip_ability_axe_custom_battle_rage_Lore"							"Mogul Khan's rage propels him through terrifying acts of brutality and destruction."
+"DOTA_Tooltip_ability_axe_custom_battle_rage_duration"					    "DURATION:"
+"DOTA_Tooltip_ability_axe_custom_battle_rage_lifesteal"					    "%LIFESTEAL:"
+
+"DOTA_Tooltip_modifier_axe_custom_battle_rage_buff"			                "Battle Rage"
+"DOTA_Tooltip_modifier_axe_custom_battle_rage_buff_Description"			    "The hunger of battle steals life on damage dealt."

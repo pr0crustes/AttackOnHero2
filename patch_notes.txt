@@ -1,5 +1,13 @@
 
 
+2.1.0:
+    With this update:
+
+    Reworked Axe's W.
+
+
+
+
 2.0.9:
     With this update:
 
