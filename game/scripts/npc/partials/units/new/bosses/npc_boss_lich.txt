@@ -12,6 +12,7 @@
 
     "Ability1"					"custom_frost_nova"
     "Ability2"                  "custom_chain_frost"
+    "Ability3"                  "custom_cold_ground"
 
     "ArmorPhysical"				"65"
     "MagicalResistance"			"35"
@@ -51,6 +52,10 @@
         "DisableResistance"          "70.0"
         "OffensiveAbilities"
         {
+            "Ability3"
+            {
+                "Name"              "custom_cold_ground"
+            }
             "Ability2"
             {
                 "Name"              "custom_chain_frost"

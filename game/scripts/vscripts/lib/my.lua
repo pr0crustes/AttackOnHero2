@@ -247,3 +247,8 @@ function kill_dummy(dummy)
 		end
 	)
 end
+
+
+function create_dummy(caster, pos)
+	return CreateUnitByName("npc_dummy_unit", pos, false, caster, caster, caster:GetTeamNumber())
+end

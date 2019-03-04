@@ -24,3 +24,11 @@
 "DOTA_Tooltip_ability_custom_chain_frost_slow_duration"							"SLOW DURATION:"		
 "DOTA_Tooltip_ability_custom_chain_frost_damage_scepter"						"SCEPTER DAMAGE:"
 "DOTA_Tooltip_ability_custom_chain_frost_aghanim_description"					"Increases damage and casting range. Removes the limit on the number of times Chain Frost can jump."
+
+
+"DOTA_Tooltip_ability_custom_cold_ground"										"Cold Ground"
+"DOTA_Tooltip_ability_custom_cold_ground_Description"							"Creates a cold vortex nearby. After %delay% seconds, the vortex explodes, dealing damage to enemies on top of it. Cold Ground cooldown is directly proportional to the caster health."
+"DOTA_Tooltip_ability_custom_cold_ground_radius"							    "CAST RADIUS:"
+"DOTA_Tooltip_ability_custom_cold_ground_damage_radius"							"DAMAGE RADIUS:"
+"DOTA_Tooltip_ability_custom_cold_ground_base_damage"					        "BASE DAMAGE:"
+"DOTA_Tooltip_ability_custom_cold_ground_life_damage"						    "%HEALTH AS DAMAGE:"

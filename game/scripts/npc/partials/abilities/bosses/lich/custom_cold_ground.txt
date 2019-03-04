@@ -1,0 +1,76 @@
+"custom_cold_ground"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/bosses/custom_cold_ground.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+    "AbilityTextureName"			"ancient_apparition_ice_vortex"
+
+    "AbilityUnitTargetTeam"		    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"		    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+    "AbilityCastRange"				"1000"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilityCooldown"				"5.0"
+    "AbilityManaCost"				"0"
+
+    "precache"
+    {
+        "particle"                  "particles/econ/items/crystal_maiden/crystal_maiden_cowl_of_ice/maiden_crystal_nova_cowlofice.vpcf"
+        "particle"                  "particles/units/heroes/hero_ancient_apparition/ancient_ice_vortex.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "radius"		        "1000"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_radius"		    "275"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_damage"		    "1000"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "life_damage"		    "60"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "use_at_hp_pct"		    "80"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "max_cd"		        "5.0"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "min_cd"		        "1.0"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "min_cd_hp_pct"		    "10"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "delay"		            "6.0"
+        }
+    }
+}
