@@ -3,7 +3,7 @@
 2.0.9:
     With this update:
 
-    New boss wave.
+    New boss wave (I will probably have to nerf or buff this one).
 
     Nerfed PL (Boss) damage, made the original a little different.
 
@@ -12,6 +12,8 @@
     Vampiric Blade: Heal reduced from "10 20 30 40" to "7 15 20 25", ranged from "5 10 15 20" to "3 5 7 10".
 
     Bane Brain Sap: Enfeeble bonus damage increased from "50 100 150 200" to "100 200 300 400".
+
+    Found and fixed multiple missing particles.
 
 
 
