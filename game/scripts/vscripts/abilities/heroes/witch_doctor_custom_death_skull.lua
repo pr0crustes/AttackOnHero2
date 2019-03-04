@@ -2,81 +2,87 @@ require("lib/timers")
 require("lib/my")
 
 
-function cast_death_skull(keys)
-	local ability = keys.ability
-	local caster = keys.caster
+witch_doctor_custom_death_skull = class({})
 
-	local projectile_width = ability:GetSpecialValueFor("width") 
-	local projectile_velocity = ability:GetSpecialValueFor("velocity")
-	local interval = ability:GetSpecialValueFor("interval")
 
-	if caster:HasScepter() then
-		local aps = 1 / caster:GetAttacksPerSecond()
-		interval = math.min(interval, aps)
-	end
+if IsServer() then
+	function witch_doctor_custom_death_skull:OnSpellStart()
+		local caster = self:GetCaster()
 
-	local projectileTable = {
-		Ability = ability,
-		EffectName = "particles/custom/death_attacker_projectile.vpcf",
-		vSpawnOrigin = caster:GetAbsOrigin(),
-		fDistance = ability:GetCastRange(),
-		fStartRadius = projectile_width,			
-		fEndRadius = projectile_width,
-		Source = caster,
-		bHasFrontalCone = false,
-		bReplaceExisting = false,
-		iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
-		iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_NONE,
-		iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
-		fExpireTime = GameRules:GetGameTime() + 10.0,
-		bDeleteOnHit = true,
-		vVelocity = caster:GetForwardVector() * projectile_velocity,
-		bProvidesVision = true,
-		iVisionRadius = 200,
-		iVisionTeamNumber = caster:GetTeamNumber(),
-	}
-	
-	Timers:CreateTimer(
-		function()
-			if ability:IsChanneling() then
-				ProjectileManager:CreateLinearProjectile(projectileTable)
+        self.velocity = self:GetSpecialValueFor("velocity")
+        self.offset = self:GetSpecialValueFor("offset")
+		self.range = self:GetSpecialValueFor("range")
+		self.interval = self:GetSpecialValueFor("interval")
 
-				local talent = caster:FindAbilityByName("witch_doctor_custom_bonus_unique_1")
-
-				if talent and talent:GetLevel() > 0 then
-					Timers:CreateTimer(
-						0.1,
-						function()
-							ProjectileManager:CreateLinearProjectile(projectileTable)
-							return nil
-						end
-					)
-				end
-
-				caster:EmitSound("Hero_WitchDoctor_Ward.Attack")
-				return interval
-			end
-			return nil
+		if caster:HasScepter() then
+			local aps = 1 / caster:GetAttacksPerSecond()
+			self.interval = math.min(self.interval, aps)
 		end
-	)
+
+		local talent = caster:FindAbilityByName("witch_doctor_custom_bonus_unique_1")
+		if talent and talent:GetLevel() > 0 then
+			self.interval = self.interval * 0.5
+		end
+
+		self.accumulated_time = 0.0
+		self.target_location = self:GetCursorPosition()
+        self.direction = self.target_location - self:GetCaster():GetOrigin()
+
+        self:LaunchSkull(self.direction:Normalized())
+    end
+
+
+    function witch_doctor_custom_death_skull:OnChannelThink(flInterval)
+        self.accumulated_time = self.accumulated_time + flInterval 
+        if self.accumulated_time >= self.interval then
+            self.accumulated_time = self.accumulated_time - self.interval
+
+			local target_pos = self.target_location + RandomVector(self.offset)
+            local direction = (target_pos - self:GetCaster():GetOrigin()):Normalized()
+
+            self:LaunchSkull(direction)
+        end
+    end
+
+
+    function witch_doctor_custom_death_skull:OnProjectileHit(target, pos)
+        if target ~= nil and not target:IsInvulnerable() then
+			local caster = self:GetCaster()
+			
+			local damage = self:GetSpecialValueFor("damage")
+
+			ApplyDamage({
+				ability = self,
+				attacker = caster,
+				damage = damage,
+				damage_type = self:GetAbilityDamageType(),
+				victim = target
+			})
+
+            EmitSoundOn("Hero_WitchDoctor_Ward.Attack", target)
+        end
+
+        return true
+    end
+
+
+    function witch_doctor_custom_death_skull:LaunchSkull(direction)
+		local caster = self:GetCaster()
+
+        ProjectileManager:CreateLinearProjectile({
+            EffectName = "particles/custom/death_attacker_projectile.vpcf",
+            Ability = self,
+            vSpawnOrigin = caster:GetOrigin(), 
+            fStartRadius = 100.0,
+            fEndRadius = 100.0,
+            vVelocity = direction * self.velocity,
+            fDistance = self.range,
+            Source = caster,
+            iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
+			iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+			bDeleteOnHit = true,
+        })
+
+		caster:EmitSound("Hero_WitchDoctor_Ward.Attack")
+    end
 end
-
-
-function on_hit(keys)
-	local caster = keys.caster
-	local target = keys.target
-	local ability = keys.ability
-
-	local damage = ability:GetSpecialValueFor("damage")
-
-	ApplyDamage({
-		ability = ability,
-		attacker = caster,
-		damage = damage,
-		damage_type = ability:GetAbilityDamageType(),
-		victim = target
-	})
-end
-
-
-

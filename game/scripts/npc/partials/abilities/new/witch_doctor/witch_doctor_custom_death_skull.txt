@@ -1,21 +1,34 @@
 "witch_doctor_custom_death_skull"
 {
-    "BaseClass"					"ability_datadriven"
-    "AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-    "AbilityUnitDamageType"		"DAMAGE_TYPE_MAGICAL"
-    "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
-    "AbilityTextureName"		"witch_doctor_death_ward"
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/witch_doctor_custom_death_skull.lua"
 
-    "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
-    "AbilityChannelAnimation"   "ACT_DOTA_CHANNEL_ABILITY_4"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"		    "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
-    "HasScepterUpgrade"			"1"
+    "AbilityType"				    "DOTA_ABILITY_TYPE_ULTIMATE"
 
-    "AbilityCastPoint"			"0.3"
-    "AbilityCastRange"			"1500"
-    "AbilityChannelTime"		"8.0"
-    "AbilityCooldown"			"60.0"
-    "AbilityManaCost"			"150 250 300"
+    "AbilityTextureName"		    "witch_doctor_death_ward"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_4"
+    "AbilityChannelAnimation"       "ACT_DOTA_CHANNEL_ABILITY_4"
+
+    "HasScepterUpgrade"			    "1"
+
+    "AbilityCastPoint"			    "0.3"
+    "AbilityCastRange"			    "1500"
+    "AbilityChannelTime"		    "8.0"
+    "AbilityCooldown"			    "60.0"
+    "AbilityManaCost"			    "150 250 300"
+
+    "precache"
+    {
+        "particle"                  "particles/custom/death_attacker_projectile.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_witchdoctor.vsndevts"
+    }
 
     "AbilitySpecial"
     {
@@ -27,47 +40,22 @@
         "02"
         {
             "var_type"			    "FIELD_INTEGER"
-            "width"	                "100"			
+            "velocity"	            "600"			
         }
         "03"
         {
             "var_type"			    "FIELD_INTEGER"
-            "velocity"	            "600"			
+            "range"	                "1500"			
         }
-        "05"
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "offset"	            "50"			
+        }
+        "04"
         {
             "var_type"			    "FIELD_FLOAT"
             "interval"	            "1.0"			
-        }
-    }
-    
-    "OnSpellStart"
-    {
-        "FireSound"
-        {
-            "EffectName"		"Hero_WitchDoctor.Death_WardBuild"
-            "Target"			"CASTER"
-        }
-        "RunScript"
-        {
-            "ScriptFile"		"abilities/heroes/witch_doctor_custom_death_skull.lua"
-            "Function"			"cast_death_skull"
-            "Target"			"POINT"
-        }
-        
-    }
-
-    "OnProjectileHitUnit"
-    {
-        "FireSound"
-        {
-            "EffectName"		"Hero_WitchDoctor_Ward.ProjectileImpact"
-            "Target"			"TARGET"
-        }
-        "RunScript"
-        {
-            "ScriptFile"		"abilities/heroes/witch_doctor_custom_death_skull.lua"
-            "Function"			"on_hit"
         }
     }
 }
