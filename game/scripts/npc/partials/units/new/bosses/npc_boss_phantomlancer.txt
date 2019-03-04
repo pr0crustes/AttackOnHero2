@@ -18,8 +18,7 @@
     }
 
     "Ability1"					"custom_spirit_lance"
-    "Ability2"					"custom_viper_strike"
-    "Ability3"                  "custom_mana_break"
+    "Ability2"                  "custom_mana_break"
 
     "ArmorPhysical"				"35"
     "MagicalResistance"			"10"
@@ -62,15 +61,11 @@
             {
                 "Name"				"custom_spirit_lance"
             }
-            "Ability2"
-            {
-                "Name"				"custom_viper_strike"
-            }
         }
         "EquippedItems"
         {
-            "Vlads"                { "Item"        "item_vladmir"    }
-            "Moonshard"            { "Item"        "item_moon_shard" }
+            "Vlads"                { "Item"        "item_ultimate_heart" }
+            "Moonshard"            { "Item"        "item_moon_shard"     }
         }
         "AttachWearables"
         {

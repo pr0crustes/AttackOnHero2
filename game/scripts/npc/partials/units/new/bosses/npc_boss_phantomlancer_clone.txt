@@ -13,8 +13,7 @@
     "AbilityLayout"				"4"
 
     "Ability1"					"custom_decay_spirit_lance"
-    "Ability2"					"custom_viper_strike"
-    "Ability3"                  "custom_mana_break"
+    "Ability2"                  "custom_mana_break"
 
     "ArmorPhysical"				"35"
     "MagicalResistance"			"0"
@@ -56,17 +55,12 @@
 
     "Creature"
     {
-        "DisableResistance"          "25.0"
+        "DisableResistance"          "20.0"
         "OffensiveAbilities"
         {
-            "Ability2"
-            {
-                "Name"				"custom_viper_strike"
-            }
         }
         "EquippedItems"
         {
-            "Vlads"                { "Item"        "item_vladmir"    }
             "Moonshard"            { "Item"        "item_moon_shard" }
         }
         "AttachWearables"
