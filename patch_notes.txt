@@ -9,6 +9,8 @@
 
     Many changes to bosses.
 
+    Vampiric Blade: Heal reduced from "10 20 30 40" to "7 15 20 25", ranged from "5 10 15 20" to "3 5 7 10".
+
 
 
 

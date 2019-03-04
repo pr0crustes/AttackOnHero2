@@ -53,12 +53,12 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal"			        "10 20 30 40"
+            "heal"			        "7 15 20 25"
         }
         "04"
         {
             "var_type"				"FIELD_INTEGER"
-            "heal_ranged"	        "5 10 15 20"
+            "heal_ranged"	        "3 5 7 10"
         }
     }
 }
