@@ -1,0 +1,4 @@
+"npc_dota_hero_phantom_assassin"
+{
+    "Ability1"		"phantom_assassin_custom_stifling_dagger"
+}

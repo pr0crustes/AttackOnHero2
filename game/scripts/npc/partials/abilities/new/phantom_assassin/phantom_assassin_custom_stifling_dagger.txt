@@ -1,0 +1,83 @@
+"phantom_assassin_custom_stifling_dagger"
+{
+    "AbilityTextureName"			"phantom_assassin_stifling_dagger"
+
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/phantom_assassin_custom_stifling_dagger.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+    "AbilityCastRange"				"525 750 975 1200"
+    "AbilityCastPoint"				"0.3"
+    "AbilityChannelTime"			"0.45 0.6 0.75 0.9"
+
+    "AbilityDuration"				"1 2 3 4"
+    "AbilityCooldown"				"12 10 8 6"
+
+    "AbilityManaCost"				"50 60 70 80"
+
+
+    "precache"
+    {
+        "particle"                  "particles/custom/phantom_assassin_linear_dagger.vpcf"
+    }
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "move_slow"				"-50"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "dagger_speed"			"1200"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"1 1.3 1.6 2"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_damage"			"60"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_factor"			"-60 -50 -40 -30"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_factor_tooltip"	"40 50 60 70"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "dagger_count"			"3 4 5 6"
+        }
+        "08"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "dagger_offset"			"100"
+        }
+        "09"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "dagger_rate"			"0.14"
+        }
+        "10"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "dagger_range"			"525 750 975 1200"
+        }
+    }
+}
