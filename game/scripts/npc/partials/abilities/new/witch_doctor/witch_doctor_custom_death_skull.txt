@@ -35,24 +35,29 @@
         "01"
         {
             "var_type"			    "FIELD_INTEGER"
-            "damage"			    "300 500 700"
+            "damage"			    "200 350 500"
         }
         "02"
         {
             "var_type"			    "FIELD_INTEGER"
-            "velocity"	            "600"			
+            "int_as_damage"			"100 150 200"
         }
         "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "velocity"	            "600"			
+        }
+        "04"
         {
             "var_type"			    "FIELD_INTEGER"
             "range"	                "1500"			
         }
-        "03"
+        "05"
         {
             "var_type"			    "FIELD_INTEGER"
             "offset"	            "50"			
         }
-        "04"
+        "06"
         {
             "var_type"			    "FIELD_FLOAT"
             "interval"	            "1.0"			

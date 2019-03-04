@@ -12,6 +12,8 @@ if IsServer() then
         self.velocity = self:GetSpecialValueFor("velocity")
         self.offset = self:GetSpecialValueFor("offset")
 		self.range = self:GetSpecialValueFor("range")
+		self.damage = self:GetSpecialValueFor("damage")
+		self.int_as_damage = self:GetSpecialValueFor("int_as_damage") * 0.01
 		self.interval = self:GetSpecialValueFor("interval")
 
 		if caster:HasScepter() then
@@ -49,7 +51,7 @@ if IsServer() then
         if target ~= nil and not target:IsInvulnerable() then
 			local caster = self:GetCaster()
 			
-			local damage = self:GetSpecialValueFor("damage")
+			local damage = self.damage + (self.int_as_damage * caster:GetIntellect()) 
 
 			ApplyDamage({
 				ability = self,
