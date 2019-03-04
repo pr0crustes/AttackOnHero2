@@ -1,9 +1,19 @@
+require("lib/my")
 
 
 phantom_assassin_custom_stifling_dagger = class({})
 
 
 if IsServer() then
+    function phantom_assassin_custom_stifling_dagger:GetCooldown(iLevel)
+        local talent_value = talent_value(self:GetCaster(), "phantom_assassin_custom_bonus_unique_1")
+        if talent_value > 0 then
+            return talent_value
+        end
+        return self.BaseClass.GetCooldown(self, iLevel)
+    end
+
+
     function phantom_assassin_custom_stifling_dagger:OnSpellStart()	
         self.duration = self:GetSpecialValueFor("duration")
         self.dagger_speed = self:GetSpecialValueFor("dagger_speed")
