@@ -6,6 +6,7 @@
     New Item: Great Ethereal Blade.
     New Item: Ultimate Ethereal Blade.
     New Item: Cursed Bloodthorn.
+    New Item: Furious Eul's Scepter of Divinity.
 
     Removed Blade Mail. Blade Mail could create an endless damage reflect loop, crashing the game.
 

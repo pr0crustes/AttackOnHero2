@@ -1,11 +1,41 @@
 "item_cyclone"
 {
+	"AbilityCooldown"				"20.0"
+
+	"MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
 	"AbilitySpecial"
 	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_intellect"		"10 20"
+		}
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"bonus_mana_regen"		"25.0"
+			"bonus_mana_regen"		"25.0 50.0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"	"20 30"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"cyclone_duration"		"2.5"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"cast_range_tooltip"	"575"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"tooltip_drop_damage"	"50"
 		}
 	}
 }

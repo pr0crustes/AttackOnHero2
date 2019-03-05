@@ -1,0 +1,79 @@
+"item_recipe_furious_cyclone"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_cyclone"
+
+    "ItemCost"						"1600"	
+    "ItemShopTags"					""
+    
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_furious_cyclone"
+    "ItemRequirements"
+    {
+        "01"						"item_cyclone;item_staff_of_wizardry"
+    }
+}
+
+
+
+"item_furious_cyclone"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_cyclone"
+
+    "AbilityTextureName"			"furious_cyclone"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+    "AbilityCastRange"				"575"
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"20.0"
+
+    "AbilityManaCost"				"175"
+    "ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
+    "ItemQuality"					"rare"
+    "ItemAliases"					"cyclone euls;eul's scepter of divinity"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+	"MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "2"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_intellect"		"10 20"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"bonus_mana_regen"		"25.0 50.0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movement_speed"	"20 30"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"cyclone_duration"		"2.5"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"cast_range_tooltip"	"575"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"tooltip_drop_damage"	"50"
+		}
+	}
+}
