@@ -5,8 +5,11 @@
 
     New Item: Great Ethereal Blade.
     New Item: Ultimate Ethereal Blade.
+    New Item: Cursed Bloodthorn.
 
     Removed Blade Mail. Blade Mail could create an endless damage reflect loop, crashing the game.
+
+    Bloodthorn: Mana Regen increased from "5.5" to "25.0".
 
     Reworked Axe's W.
 
