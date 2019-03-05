@@ -38,6 +38,7 @@ function AOHGameMode:InitGameMode()
 	GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_BADGUYS, 0)
 
 	self:_ReadGameConfiguration()
+	GameRules:SetCustomGameSetupAutoLaunchDelay(3.0)
 	GameRules:SetTimeOfDay(0.75)
 	GameRules:SetHeroRespawnEnabled(false)
 	GameRules:SetUseUniversalShopMode(true)

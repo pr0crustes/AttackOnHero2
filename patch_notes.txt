@@ -3,6 +3,8 @@
 2.1.1:
     With this update:
 
+    Loading Screen countdown reduced to 3 seconds.
+
     Clockwerk Hookshot: Active can now be used on allies or enemies, autocast no longer cast on allies, no longer deal damage to allies.
 
     Pudge Dismember: Cooldown is now always "30".
