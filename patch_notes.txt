@@ -11,6 +11,8 @@
 
     Monkey King Jingu Mastery: Lifesteal incraesed from "10 15 20 30" to "10 20 30 40".
 
+    Removed Phantom Asssassin (BOSS). She was just bad.
+
 
 
 

@@ -692,24 +692,7 @@
 			}
 		}
 		
-		"30" // Phantom Assassin
-		{
-			"Title"						"Dagger"
-			"MaxGold"					"9500"
-			"BagCount"					"3"
-			"BagVariance"				"0"
-			"FixedXP"					"5600"
-		
-			"a"
-			{
-				"NPCName"				"npc_boss_phantom_assassin"
-				"TotalUnitsToSpawn"		"1"
-				"UnitsPerSpawn"			"1"
-				"SpawnInterval"			"1"
-			}
-		}
-		
-		"31" // Spectre
+		"30" // Spectre
 		{
 			"Title"						"Lost"
 			"MaxGold"					"10000"
@@ -726,7 +709,7 @@
 			}
 		}
 		
-		"32" // Anti-Mage
+		"31" // Anti-Mage
 		{
 			"Title"						"Ban Magic"
 			"MaxGold"					"10500"
@@ -743,7 +726,7 @@
 			}
 		}
 
-		"33" // Roshan
+		"32" // Roshan
 		{
 			"Title"						"The Immortal"
 			"MaxGold"					"11000"
@@ -760,7 +743,7 @@
 			}
 		}
 		
-		"34" // Lich
+		"33" // Lich
 		{
 			"Title"						"Ethreain"
 			"MaxGold"					"11500"
@@ -777,7 +760,7 @@
 			}
 		}
 
-		"35" // Hellbear
+		"34" // Hellbear
 		{
 			"Title"						"Claw"
 			"MaxGold"					"12000"
@@ -794,7 +777,7 @@
 			}
 		}
 
-		"36" // Rubick
+		"35" // Rubick
 		{
 			"Title"						"Spells"
 			"MaxGold"					"12500"
