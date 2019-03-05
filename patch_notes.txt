@@ -7,6 +7,8 @@
 
     Pudge Dismember: Cooldown is now always "30".
 
+    Minor map changes, fixed spots that pudge could abuse to trap bosses.
+
 
 
 
