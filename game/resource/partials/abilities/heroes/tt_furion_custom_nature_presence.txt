@@ -1,8 +1,0 @@
-"DOTA_Tooltip_Ability_furion_custom_nature_presence"					        "<font color='#70EA72'>Nature's Presence</font>"
-"DOTA_Tooltip_Ability_furion_custom_nature_presence_Description"		        "Provides an aura that increases the max health of heroes nearby."
-"DOTA_Tooltip_Ability_furion_custom_nature_presence_health_bonus"		        "Health Bonus:"
-"DOTA_Tooltip_Ability_furion_custom_nature_presence_radius"		                "RADIUS:"
-
-
-"DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff"                 "Nature's Presence"
-"DOTA_Tooltip_modifier_furion_custom_nature_presence_aura_buff_Description"     "Max Health Increased by %dMODIFIER_PROPERTY_HEALTH_BONUS%."

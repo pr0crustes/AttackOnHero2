@@ -1,0 +1,4 @@
+"DOTA_Tooltip_Ability_furion_custom_nature_warrior"						    "<font color='#70EA72'>Nature's Warrior</font>"
+"DOTA_Tooltip_Ability_furion_custom_nature_warrior_Description"			    "Summons a powerfull Earth Golem that fights for you. The golem has %health_multiplier%x your max health, %armor_multiplier%x your armor, %magic_resistance%%  magic resistance and lasts for %duration% seconds."
+"DOTA_Tooltip_ability_furion_custom_nature_warrior_Lore"					"Verdant overgrowth is a common ailment reported by Nature's Prophet's attackers."
+
