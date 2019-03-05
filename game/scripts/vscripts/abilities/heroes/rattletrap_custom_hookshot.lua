@@ -84,9 +84,12 @@ if IsServer() then
         if keys.order_type == DOTA_UNIT_ORDER_ATTACK_TARGET then
             local attacker = keys.unit
             local ability = self:GetAbility()
+            local target = keys.target
 
-            if attacker == self:GetParent() and ability:GetAutoCastState() and ability:IsCooldownReady() then
-                local target = keys.target
+            if attacker == self:GetParent() 
+                and ability:GetAutoCastState() 
+                and ability:IsCooldownReady() 
+                and attacker:IsOpposingTeam(target:GetTeam()) then
 
                 ability:CastOnTarget(target, false)
             end
@@ -181,17 +184,19 @@ if IsServer() then
         local ability = self:GetAbility()
 
         parent:EmitSound("Hero_Rattletrap.Hookshot.Impact")
-            
-        self.target:Interrupt()
-        self.target:InterruptChannel()
 
-        ApplyDamage({
-            ability = ability,
-            attacker = parent,
-            damage = ability:GetSpecialValueFor("damage"),
-            damage_type = ability:GetAbilityDamageType(),
-            victim = self.target
-        })
+        if parent:IsOpposingTeam(self.target:GetTeam()) then
+            self.target:Interrupt()
+            self.target:InterruptChannel()
+
+            ApplyDamage({
+                ability = ability,
+                attacker = parent,
+                damage = ability:GetSpecialValueFor("damage"),
+                damage_type = ability:GetAbilityDamageType(),
+                victim = self.target
+            })
+        end
     end
 
 

@@ -1,5 +1,15 @@
 
 
+2.1.1:
+    With this update:
+
+    Clockwerk Hookshot: Active can now be used on allies or enemies, autocast no longer cast on allies, no longer deal damage to allies.
+
+
+
+
+
+
 2.1.0:
     With this update:
 
