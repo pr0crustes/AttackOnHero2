@@ -1,0 +1,14 @@
+"furion_treant_custom_teleport"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "furion_teleportation"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+    "AbilitySound"					"Hero_Furion.Teleport_Grow"
+
+    "AbilityCastRange"				"0"
+    "AbilityCastPoint"				"3"
+    "AbilityCooldown"				"20"
+    "AbilityManaCost"				"50"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
+}

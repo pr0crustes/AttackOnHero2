@@ -33,10 +33,13 @@ if IsServer() then
                 treant:SetControllableByPlayer(caster:GetPlayerID(), true)
 
                 local treant_hp = caster:GetMaxHealth() * self.health_multiplier
-
                 treant:SetBaseMaxHealth(treant_hp)
                 treant:SetMaxHealth(treant_hp)
                 treant:SetHealth(treant_hp)
+
+                local treant_damage = caster:GetAverageTrueAttackDamage(caster)
+                treant:SetBaseDamageMin(treant_damage)
+                treant:SetBaseDamageMax(treant_damage)
         
                 treant:SetPhysicalArmorBaseValue(caster:GetPhysicalArmorValue() * self.armor_multiplier)
         
@@ -47,7 +50,28 @@ if IsServer() then
                 FindClearSpaceForUnit(treant, spawn_pos, true)
             
                 caster:EmitSound("Hero_Furion.WrathOfNature_Cast")
+
+                self:TreantLevelSpells(treant)
             end
         )
+    end
+
+
+    function furion_custom_nature_warrior:TreantLevelSpells(treant)
+        local level = self:GetLevel()
+
+        if level >= 2 then
+            local teleport = treant:FindAbilityByName("furion_treant_custom_teleport")
+            if teleport then
+                teleport:SetLevel(teleport:GetMaxLevel())
+            end
+        end
+
+        if level >= 3 then
+            local stone = treant:FindAbilityByName("furion_treant_custom_stone_formation")
+            if stone then
+                stone:SetLevel(stone:GetMaxLevel())
+            end
+        end
     end
 end

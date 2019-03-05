@@ -9,8 +9,8 @@
     "SelectionGroup"			"Furion_Treants"
     "wearable"				    "8363"
 
-    "Ability1"					""
-    "Ability2"					""
+    "Ability1"					"furion_treant_custom_teleport"
+    "Ability2"					"furion_treant_custom_stone_formation"
     "Ability3"					""
     "Ability4"					""
     "Ability5"					""
