@@ -1,10 +1,12 @@
 "furion_custom_nature_heal"
 {
-    "BaseClass"					    "ability_datadriven"
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/furion_custom_nature_heal.lua"
 
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"		    "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-    "AbilityUnitTargetType"		    "DOTA_UNIT_TARGET_HERO"
+    "AbilityUnitTargetType"		    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
     "AbilityTextureName"		    "furion_wrath_of_nature"
 
@@ -21,23 +23,33 @@
     {
         "01"
         {
-            "var_type"				"FIELD_FLOAT"
-            "interval"		        "0.3"
+            "var_type"				"FIELD_INTEGER"
+            "base_heal"		        "10 20 30 40"
         }
         "02"
         {
             "var_type"				"FIELD_FLOAT"
+            "health_transfer"		"0.0 0.5 1.0 1.5"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_mana"		        "5 8 12 15"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "mana_transfer"		    "0.0 0.5 1.0 1.5"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "interval"		        "0.2"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
             "channel_tooltip"		"10.0"
         }
-    }
-
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"		"abilities/heroes/furion_custom_nature_heal.lua"
-            "Function"			"cast_furion_custom_nature_heal"
-            "Target"			"TARGET"
-        } 
     }
 }

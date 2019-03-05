@@ -9,6 +9,8 @@
 
     Minor map changes, fixed spots that pudge could abuse to trap bosses.
 
+    Nature's Prophet Nature's Blessing: Moved to Q, now has a base heal.
+
 
 
 
