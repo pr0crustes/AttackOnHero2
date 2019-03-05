@@ -9,6 +9,9 @@
 
     Witch Doctor Death Skull: Now deals extra damage based on int.
 
+    Monkey King Jingu Mastery: Lifesteal incraesed from "10 15 20 30" to "10 20 30 40".
+
+
 
 
 

@@ -8,6 +8,7 @@
 
     "precache"
     {
+        "particle"                  "particles/units/heroes/hero_monkey_king/monkey_king_quad_tap_debuff.vpcf"
         "particle"                  "particles/units/heroes/hero_monkey_king/monkey_king_quad_tap_hit.vpcf"
         "particle"                  "particles/units/heroes/hero_monkey_king/monkey_king_quad_tap_stack.vpcf"
         "particle"                  "particles/generic_gameplay/generic_lifesteal.vpcf"
@@ -28,7 +29,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "lifesteal"		        "10 15 20 30"
+            "lifesteal"		        "10 20 30 40"
         }
     }
 }

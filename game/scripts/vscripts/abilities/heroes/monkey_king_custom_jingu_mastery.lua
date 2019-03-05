@@ -90,6 +90,16 @@ LinkLuaModifier("modifier_monkey_king_custom_jingu_mastery_buff", "abilities/her
 modifier_monkey_king_custom_jingu_mastery_buff = class({})
 
 
+function modifier_monkey_king_custom_jingu_mastery_buff:GetEffectName()
+    return "particles/units/heroes/hero_monkey_king/monkey_king_quad_tap_debuff.vpcf"
+end
+
+
+function modifier_monkey_king_custom_jingu_mastery_buff:GetEffectAttachType()
+    return PATTACH_OVERHEAD_FOLLOW
+end
+
+
 function modifier_monkey_king_custom_jingu_mastery_buff:IsBuff()
     return true
 end
@@ -109,7 +119,7 @@ end
 
 
 if IsServer() then
-    function modifier_monkey_king_custom_jingu_mastery_buff:DisplayEffect(target)
+    function modifier_monkey_king_custom_jingu_mastery_buff:DisplayHitEffect(target)
         local heal_effect = ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
         ParticleManager:ReleaseParticleIndex(heal_effect)
 
@@ -119,23 +129,15 @@ if IsServer() then
     end
 
 
-    function modifier_monkey_king_custom_jingu_mastery_buff:OnJinguHit(damage, target)
-        local parent = self:GetParent()
-        local ability = self:GetAbility()
-
-        local lifesteal = ability:GetSpecialValueFor("lifesteal") * 0.01
-
-        parent:Heal(damage * lifesteal, parent)
-
-        self:DisplayEffect(target)
-
-        self:Destroy()
-    end
-
-
     function modifier_monkey_king_custom_jingu_mastery_buff:OnAttackLanded(keys)
         if keys.attacker == self:GetParent() then
-            self:OnJinguHit(keys.damage, keys.target)
+            local lifesteal = self:GetAbility():GetSpecialValueFor("lifesteal") * 0.01
+
+            local parent = self:GetParent()
+            parent:Heal(keys.damage * lifesteal, parent)
+
+            self:DisplayHitEffect(keys.target)
+            self:Destroy()  
         end
     end
 end
