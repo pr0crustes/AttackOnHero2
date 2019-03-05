@@ -1,5 +1,7 @@
 "item_bloodthorn"
 {
+    "AbilityCooldown"				"25.0"
+
     "MaxUpgradeLevel"               "2"
     "ItemBaseLevel"                 "1"
 

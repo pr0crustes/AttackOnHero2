@@ -31,7 +31,7 @@
 
     "AbilityCastRange"				"900"
     "AbilityCastPoint"				"0.0"
-    "AbilityCooldown"				"15.0"
+    "AbilityCooldown"				"25.0"
     "AbilitySharedCooldown"			"orchid"
 
     "AbilityManaCost"				"200"
