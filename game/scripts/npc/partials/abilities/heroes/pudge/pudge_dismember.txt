@@ -1,5 +1,7 @@
 "pudge_dismember"
 {
+    "AbilityCooldown"				"30"
+
     "AbilitySpecial"
     {
         "02"
