@@ -31,3 +31,12 @@ function add_modifier_if_not_max(keys)
         ability:ApplyDataDrivenModifier(caster, caster, modifier, {})
     end
 end
+
+
+function increate_hud_modifier_by_amount(keys)
+    local count = keys.count
+
+    for i = 1, count do
+        increate_hud_modifier(keys)
+    end
+end

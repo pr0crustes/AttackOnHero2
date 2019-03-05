@@ -32,8 +32,9 @@
         "RunScript"
         {
             "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
-            "Function"			    "increate_hud_modifier"
+            "Function"			    "increate_hud_modifier_by_amount"
             "modifier"              "modifier_legion_commander_custom_duel_buff"
+            "count"                 "%damage"
         }
 
         "FireEffect"
@@ -60,7 +61,7 @@
 
             "Properties" 
             {
-                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "%damage"
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "1"
             }
         }
     }
