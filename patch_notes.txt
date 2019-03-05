@@ -13,6 +13,8 @@
 
     Removed Phantom Asssassin (BOSS). She was just bad.
 
+    Increased Hellbear (BOSS) clap cast point.
+
 
 
 

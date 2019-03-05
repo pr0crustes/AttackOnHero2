@@ -11,11 +11,11 @@
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
 
     "AbilityCastRange"				"3000"
-    "AbilityCastPoint"				"0.4"
+    "AbilityCastPoint"				"0.6"
 
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_1"
 
-    "AbilityCooldown"				"10"
+    "AbilityCooldown"				"13"
     "AbilityManaCost"				"0"
 
     "precache"
