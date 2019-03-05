@@ -1,0 +1,105 @@
+"item_recipe_great_ethereal_blade"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"						"item_recipe_ethereal_blade"
+
+    "ItemCost"						"100"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_great_ethereal_blade"
+    "ItemRequirements"
+    {
+        "01"						"item_ethereal_blade;item_eagle"
+    }
+}
+
+
+
+"item_great_ethereal_blade"
+{
+    "ID"							"$ID"
+    "BaseClass"                     "item_ethereal_blade"
+    "AbilityTextureName"		    "great_ethereal_blade"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+    "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+    "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+    "AbilityCastRange"				"800"
+    "AbilityCastPoint"				"0.0"
+    "AbilityCooldown"				"20.0"	    
+    "AbilitySharedCooldown"			"ethereal"
+
+    "AbilityManaCost"				"200"
+    "ItemShopTags"					"agi;str;int;hard_to_tag"
+    "ItemQuality"					"epic"
+    "ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+    "ItemAliases"					"eb;ethereal blade;eblade"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "2"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_agility"			    "40 70 90"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_strength"		    "10"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_intellect"		    "10"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "blast_movement_slow"	    "-80"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"				    "2.0 2.5 3.0"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "blast_agility_multiplier"	"2.0 5.0 8.0"
+        }
+        "07"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "blast_damage_base"		    "75 150 250"
+        }
+        "08"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration_ally"			    "2.0 2.5 3.0"
+        }
+        "09"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "ethereal_damage_bonus"	    "-30 -35 -40"
+        }
+        "10"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "projectile_speed"	        "1275"
+        }
+        "11"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "tooltip_range"			    "800"
+        }
+    }
+}

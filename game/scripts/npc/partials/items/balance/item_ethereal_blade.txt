@@ -1,0 +1,64 @@
+"item_ethereal_blade"
+{
+    "MaxUpgradeLevel"               "3"
+    "ItemBaseLevel"                 "1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_agility"			    "40 70 90"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_strength"		    "10"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_intellect"		    "10"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "blast_movement_slow"	    "-80"
+        }
+        "05"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration"				    "2.0 2.5 3.0"
+        }
+        "06"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "blast_agility_multiplier"	"2.0 5.0 8.0"
+        }
+        "07"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "blast_damage_base"		    "75 150 250"
+        }
+        "08"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "duration_ally"			    "2.0 2.5 3.0"
+        }
+        "09"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "ethereal_damage_bonus"	    "-30 -35 -40"
+        }
+        "10"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "projectile_speed"	        "1275"
+        }
+        "11"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "tooltip_range"			    "800"
+        }
+    }
+}

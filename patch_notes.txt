@@ -3,6 +3,9 @@
 2.1.0:
     With this update:
 
+    New Item: Great Ethereal Blade.
+    New Item: Ultimate Ethereal Blade.
+
     Reworked Axe's W.
 
     Phantom Asssassin's Q now throws multiple daggers.
