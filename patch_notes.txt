@@ -6,6 +6,8 @@
     New Item: Great Ethereal Blade.
     New Item: Ultimate Ethereal Blade.
 
+    Removed Blade Mail. Blade Mail could create an endless damage reflect loop, crashing the game.
+
     Reworked Axe's W.
 
     Phantom Asssassin's Q now throws multiple daggers.

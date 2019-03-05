@@ -1,0 +1,5 @@
+"item_blade_mail"
+{
+    "ItemCost"						"99999"
+    "ItemPurchasable"				"0"
+}
