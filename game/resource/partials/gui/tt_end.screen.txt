@@ -1,0 +1,9 @@
+"end_screen_legend_boss_damage"                 "DD"
+"end_screen_legend_boss_damage_tooltip"         "Damge done"
+
+"end_screen_legend_damage_taken"                "DT"
+"end_screen_legend_damage_taken_tooltip"        "Damage taken"
+
+
+"end_screen_victory"                            "VICTORY"
+"end_screen_defeat"                             "DEFEAT"

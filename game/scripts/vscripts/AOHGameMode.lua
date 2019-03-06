@@ -19,6 +19,8 @@ require("lib/ai")
 require("lib/chat_handler")
 require("items/ice_staff")
 require("lib/parsers")
+require("lib/end_screen")
+require("lib/data")
 
 
 
@@ -93,6 +95,27 @@ function AOHGameMode:OnDamageDealt(damageTable)
 			if attacker:HasItemInInventory("item_ice_staff") then
 				damageTable = ice_staff_calculate_crit(damageTable)
 			end
+
+			local victim_index = damageTable.entindex_victim_const
+
+			if victim_index then
+				local victim = EntIndexToHScript(victim_index)
+				if victim then
+					if attacker.GetPlayerOwnerID then
+						local attackerPlayerId = attacker:GetPlayerOwnerID()
+						if attackerPlayerId and attackerPlayerId >= 0 and attacker:IsOpposingTeam(victim:GetTeam()) then
+							player_data_modify_value(attackerPlayerId, "bossDamage", damageTable.damage)
+						end
+					end
+
+					if attacker:IsCreature() and victim:IsRealHero() and victim.GetPlayerOwnerID then
+						local victimPlayerId = victim:GetPlayerOwnerID()
+						if victimPlayerId and victimPlayerId >= 0 and attacker:IsOpposingTeam(victim:GetTeam()) then
+							player_data_modify_value(victimPlayerId, "damageTaken", damageTable.damage)
+						end
+					end
+				end
+			end
 		end
 	end
 
@@ -160,6 +183,7 @@ function AOHGameMode:OnThink()
 
 		if self._nRoundNumber > #self._vRounds then
 			GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
+			end_screen_setup(true)
 			return false
 		end
 
@@ -182,9 +206,11 @@ function AOHGameMode:_CheckForDefeat()
 		if self._entAncient and self._entAncient:IsAlive() then
 			if are_all_heroes_dead() then
 				self._entAncient:ForceKill(false)
+				end_screen_setup(false)
 			end
 		else
 			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
+			end_screen_setup(false)
 		end
 	end
 end

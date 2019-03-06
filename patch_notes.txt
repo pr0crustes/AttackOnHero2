@@ -1,5 +1,15 @@
 
 
+2.1.2:
+    With this update:
+
+    Added an end game screen with stats. Hopefully this works. Special thanks to 'Angel Arena Black Star', project wich is open sourced under the Apache-2.0 license. This end game screen uses snippets from 'Angel Arena Black Star', respecting the project License. Without it I would not even know where to start codding this GUI.
+
+
+
+
+
+
 2.1.1:
     With this update:
 
