@@ -9,6 +9,12 @@
     "ConsideredHero"			"1"
     "HasInventory"				"1"
 
+    "precache"
+    {
+        "particle_folder"		"particles/units/heroes/hero_death_prophet"
+        "soundfile"				"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
+    }
+
     "Ability1"					"custom_carrion_swarm"
 
     "ArmorPhysical"				"2"
