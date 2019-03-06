@@ -52,8 +52,8 @@
         }
         "05"
         {
-            "var_type"				"FIELD_FLOAT"
-            "lifesteal"		        "20"
+            "var_type"				"FIELD_INTEGER"
+            "lifesteal"		        "15"
         }
     }
 

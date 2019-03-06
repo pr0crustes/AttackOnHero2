@@ -18,6 +18,8 @@
 
     Lion Finger Of Death: Spell was rewrote to increase damage after every usage.
 
+    Ultimate Octarine Core: Lifesteal reduced from "20" to "15".
+
 
 
 
