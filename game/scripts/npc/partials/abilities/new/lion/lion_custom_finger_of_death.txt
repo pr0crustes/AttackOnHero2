@@ -1,0 +1,64 @@
+"lion_custom_finger_of_death"
+{
+    "BaseClass"						    "ability_lua"
+    "ScriptFile"					    "abilities/heroes/lion_custom_finger_of_death.lua"
+
+    "AbilityTextureName"			    "lion_finger_of_death"
+
+    "AbilityType"					    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+    "AbilityUnitTargetTeam"			    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"			    "DAMAGE_TYPE_MAGICAL"	
+    "SpellImmunityType"				    "SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilitySound"					    "Hero_Lion.FingerOfDeath"
+
+    "HasScepterUpgrade"			        "1"
+
+    "AbilityCastRange"				    "900"
+    "AbilityCastPoint"				    "0.3 0.3 0.3"
+    "AbilityCastAnimation"		        "ACT_DOTA_CAST_ABILITY_4"
+
+    "AbilityCooldown"				    "90.0 60.0 40.0"
+    "AbilityManaCost"				    "200 420 650"
+
+    "precache"
+    {
+        "particle"                      "particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
+        "soundfile"                     "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage"					"725 850 1000"
+        }
+        "02"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_scepter"			"1000 2000 3000"
+        }
+        "03"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "damage_per_use"			"10"
+        }
+        "04"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "damage_delay"				"0.25"
+        }
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "cooldown_scepter"			"60.0 40.0 20.0"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "splash_radius_scepter"		"325"
+        }
+    }
+}

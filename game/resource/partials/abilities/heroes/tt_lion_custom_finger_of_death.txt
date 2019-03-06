@@ -1,0 +1,15 @@
+"DOTA_Tooltip_ability_lion_custom_finger_of_death"										"Finger of Death"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_Description"							"Rips at an enemy unit, trying to turn it inside-out. Deals massive damage and grows stronger with each use.\n\nUpgradable by Aghanim's Scepter."
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_Lore"								    "Lion's disfigured hand is also the source of his greatest power, capable of flooding victims with malefic force."
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_Note0"								"Finger of Death has a 0.25 delay before the damage is applied after the spell is cast, allowing certain abilities to avoid the damage."
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_damage"								"DAMAGE:"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_damage_scepter"						"SCEPTER DAMAGE:"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_damage_per_use"						"DAMAGE PER USE:"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_cooldown_scepter"					    "SCEPTER COOLDOWN:"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_splash_radius_scepter"				"SCEPTER AREA OF EFFECT:"
+"DOTA_Tooltip_ability_lion_custom_finger_of_death_aghanim_description"					"Increases damage. Decreases cooldown. Finger of Death hits all units in a small area."
+
+
+
+"DOTA_Tooltip_modifier_lion_custom_finger_of_death_bonus"	                            "Finger of Death Damage"
+"DOTA_Tooltip_modifier_lion_custom_finger_of_death_bonus_Description"	                "Bonus Finger of Death damage."

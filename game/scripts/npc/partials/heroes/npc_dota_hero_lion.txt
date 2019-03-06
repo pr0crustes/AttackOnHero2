@@ -1,0 +1,5 @@
+"npc_dota_hero_lion"
+{
+    "Ability6"		"lion_custom_finger_of_death"
+    "Ability12"		"special_bonus_movement_speed_45"
+}

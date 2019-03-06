@@ -16,6 +16,8 @@
 
     Mars Bulwark: Front Reduction reduced from "25 40 55 70" to "15 25 30 40", side reduction reduced from "12 20 27 35" to "5 10 15 20".
 
+    Lion Finger Of Death: Spell was rewrote to increase damage after every usage.
+
 
 
 
