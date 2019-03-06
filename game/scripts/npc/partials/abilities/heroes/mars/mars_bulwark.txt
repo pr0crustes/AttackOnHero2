@@ -1,0 +1,16 @@
+"mars_bulwark"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "physical_damage_reduction"		    "15 25 30 40"
+        }
+        "03"
+        {
+            "var_type"						    "FIELD_INTEGER"
+            "physical_damage_reduction_side"	"5 10 15 20"
+        }
+    }
+}
