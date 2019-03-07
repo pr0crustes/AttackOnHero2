@@ -1,4 +1,5 @@
 require("lib/timers")
+require("lib/data")
 
 
 treant_custom_ultimate_sacrifice = class({})
@@ -21,6 +22,8 @@ if IsServer() then
             local ressurected = self:RessurectAll()
 
             if ressurected > 0 then
+                player_data_modify_value(caster:GetPlayerID(), "saves", ressurected)
+
                 caster:EmitSound("Hero_Treant.Overgrowth.Cast")
 
                 self:DestroyTrees()
