@@ -7,7 +7,6 @@
     </styles>
 
     <scripts>
-		<include src="file://{resources}/scripts/playertables/playertables_base.js" />
         <include src="file://{resources}/scripts/utils.js"/>
     	<include src="file://{resources}/scripts/end_screen.js" />
     </scripts>

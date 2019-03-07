@@ -8,8 +8,6 @@
 
 var GAME_RESULT = {};
 var _ = GameUI.CustomUIConfig()._;
-var PlayerTables = GameUI.CustomUIConfig().PlayerTables;
-
 
 
 function FinishGame() {
@@ -91,49 +89,31 @@ function Snippet_Team(team) {
 
 
 
-function OnGameResult(gameResult) {
-	if (gameResult.error === 1) {
-		Game.FinishGame();
+function OnGameResult(table, key, gameResult) {
+	if (!gameResult || key !== "game_info") {
+		FinishGame();
 		return;
 	}
 
-	if (!gameResult.players) {
-		$("#LoadingPanel").visible = false;
-		$("#ErrorPanel").visible = true;
-		$("#ErrorMessage").text = $.Localize(gameResult.error);
+
+	$("#LoadingPanel").visible = false;
+	$("#EndScreenWindow").visible = true;
+	$("#TeamsContainer").RemoveAndDeleteChildren();
+	
+	GAME_RESULT = gameResult;
+
+	Snippet_Team(2);
+
+
+	var result_label = $("#EndScreenVictory")
+	
+	if (GAME_RESULT.isWinner) {
+		result_label.text = $.Localize("end_screen_victory");
+		result_label.style.color = "#008000";
 	} else {
-		$("#LoadingPanel").visible = false;
-		$("#EndScreenWindow").visible = true;
-		$("#TeamsContainer").RemoveAndDeleteChildren();
-		
-		GAME_RESULT = gameResult;
-
-		Snippet_Team(2);
-
-
-		var result_label = $("#EndScreenVictory")
-		
-		if (GAME_RESULT.isWinner) {
-			result_label.text = $.Localize("end_screen_victory");
-			result_label.style.color = "#008000";
-		} else {
-			result_label.text = $.Localize("end_screen_defeat");
-			result_label.style.color = "#FF0000";
-		}
+		result_label.text = $.Localize("end_screen_defeat");
+		result_label.style.color = "#FF0000";
 	}
-}
-
-
-
-function DynamicSubscribePTListener(table, callback, OnConnectedCallback) {
-    var tableData = PlayerTables.GetAllTableValues(table);
-    if (tableData != null) {
-        callback(table, tableData, {});
-    }
-    var ptid = PlayerTables.SubscribeNetTableListener(table, callback);
-    if (OnConnectedCallback != null) {
-        OnConnectedCallback(ptid);
-    }
 }
 
 
@@ -145,10 +125,8 @@ function DynamicSubscribePTListener(table, callback, OnConnectedCallback) {
 
 	$.GetContextPanel().RemoveClass("FadeOut");
 	$("#LoadingPanel").visible = true;
-	$("#ErrorPanel").visible = false;
 	$("#EndScreenWindow").visible = false;
 
-    DynamicSubscribePTListener("stats_game_result", function(tableName, changesObject) {
-		OnGameResult(changesObject);
-    });
+	CustomNetTables.SubscribeNetTableListener("end_game_scoreboard", OnGameResult);
+	OnGameResult(null, "game_info", CustomNetTables.GetTableValue("end_game_scoreboard", "game_info"));
 })();

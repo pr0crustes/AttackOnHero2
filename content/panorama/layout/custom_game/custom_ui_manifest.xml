@@ -1,7 +1,5 @@
 <root>
 	<script>
-		<include src="file://{resources}/scripts/playertables/playertables_base.js" />
-
 		function findSetVisibility(root, find, newValue) {
 			root.FindChildTraverse(find).style.visibility = newValue;
 		}
