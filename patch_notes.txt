@@ -9,15 +9,10 @@
     Added a discord link ingame, I am still working on improving it, but there you are able to directly contact me and discuss builds and so on with other players.
 
 
-
 2.1.2:
     With this update:
 
     Added an end game screen with stats. Hopefully this works. Special thanks to 'Angel Arena Black Star', project wich is open sourced under the Apache-2.0 license. This end game screen uses snippets from 'Angel Arena Black Star', respecting the project License. Without it I would not even know where to start codding this GUI.
-
-
-
-
 
 
 2.1.1:
@@ -39,8 +34,6 @@
     Lion Finger Of Death: Spell was rewrote to increase damage after every usage.
 
     Ultimate Octarine Core: Lifesteal reduced from "20" to "15".
-
-
 
 
 2.1.0:
@@ -68,9 +61,6 @@
     Increased Hellbear (BOSS) clap cast point.
 
 
-
-
-
 2.0.9:
     With this update:
 
@@ -85,9 +75,6 @@
     Bane Brain Sap: Enfeeble bonus damage increased from "50 100 150 200" to "100 200 300 400".
 
     Found and fixed multiple missing particles.
-
-
-
 
 
 2.0.8:
@@ -108,8 +95,6 @@
     Small fixes.
 
 
-
-
 2.0.7:
     With this update:
 
@@ -119,9 +104,6 @@
     New upgrades to Vampiric Blade.
 
     Heroes abilities coded by me now have a green title.
-
-
-
 
 
 2.0.6:
@@ -135,7 +117,6 @@
     Spectre Shadow Heal: No longer disables health regen.
 
     Reworked Monkey King Jingu Mastery.
-
 
 
 2.0.5:
@@ -168,8 +149,6 @@
 
     Rock: Cost reduced from "200" to "110".
     Tango: Cost reduced from "30" to "25".
-
-
 
 
 2.0.4:
@@ -230,7 +209,6 @@
     Abyssal Blade: Cooldown increased from "35.0" t0 "40.0". Active stun duration increased from "2.0" to "5.0". Passive proc stun duration reduced from "1.5" to "1.0". Passive proc damage increased from "100" to "250".
 
     Removed Ultimate Vladmir due to a bug. Buffed Vladmir in compensation.
-
 
 
 
