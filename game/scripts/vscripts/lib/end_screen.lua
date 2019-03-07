@@ -49,6 +49,7 @@ function end_screen_get_data(isWinner)
                 bossDamage = formated_number(player_data_get_value(playerID, "bossDamage")),
                 heroHealing = formated_number(PlayerResource:GetHealing(playerID)),
                 deaths = PlayerResource:GetDeaths(playerID),
+                goldBags = player_data_get_value(playerID, "goldBagsCollected"),
                 heroName = "",
 
                 str = 0,

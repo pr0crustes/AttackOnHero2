@@ -47,6 +47,7 @@ function Snippet_Player(playerId, rootPanel, index) {
 	panel.SetDialogVariable("hero_name", $.Localize(playerData.heroName));
 
 	panel.SetDialogVariableInt("deaths", Players.GetDeaths(playerId));
+	panel.SetDialogVariableInt("goldBags", playerData.goldBags);
 
 	panel.SetDialogVariable("damageTaken", playerData.damageTaken);
 	panel.SetDialogVariable("bossDamage", playerData.bossDamage);

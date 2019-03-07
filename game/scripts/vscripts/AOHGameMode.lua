@@ -62,6 +62,7 @@ function AOHGameMode:InitGameMode()
 	ListenToGameEvent("npc_spawned", Dynamic_Wrap(AOHGameMode, 'OnEntitySpawned'), self)
 	ListenToGameEvent("entity_killed", Dynamic_Wrap(AOHGameMode, 'OnEntityKilled'), self)
 	ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(AOHGameMode, "OnGameRulesStateChange"), self)
+	ListenToGameEvent("dota_item_picked_up", Dynamic_Wrap(AOHGameMode, 'OnItemPickedUp'), self)
 	ListenToGameEvent("player_chat", Dynamic_Wrap(ChatHandler, "OnPlayerChat"), ChatHandler)
 
 	GameRules:GetGameModeEntity():SetThink("OnThink", self, 0.25)
@@ -120,6 +121,13 @@ function AOHGameMode:OnDamageDealt(damageTable)
 	end
 
 	return true
+end
+
+
+function AOHGameMode:OnItemPickedUp(keys)
+	if keys.itemname == "item_bag_of_gold" then
+		player_data_modify_value(keys.PlayerID, "goldBagsCollected", 1)
+	end
 end
 
 
