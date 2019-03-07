@@ -7,6 +7,8 @@
 "end_screen_legend_gold_bags"                   "GB"
 "end_screen_legend_gold_bags_tooltip"           "Gold bags collected"
 
+"end_screen_legend_saves"                       "R"
+"end_screen_legend_saves_tooltip"               "Players ressurected"
 
 "end_screen_victory"                            "VICTORY"
 "end_screen_defeat"                             "DEFEAT"

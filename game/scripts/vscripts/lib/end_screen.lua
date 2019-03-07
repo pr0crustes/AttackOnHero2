@@ -50,6 +50,7 @@ function end_screen_get_data(isWinner)
                 heroHealing = formated_number(PlayerResource:GetHealing(playerID)),
                 deaths = PlayerResource:GetDeaths(playerID),
                 goldBags = player_data_get_value(playerID, "goldBagsCollected"),
+                saves = player_data_get_value(playerID, "saves"),
                 heroName = "",
 
                 str = 0,

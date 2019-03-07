@@ -63,6 +63,7 @@ function AOHGameMode:InitGameMode()
 	ListenToGameEvent("entity_killed", Dynamic_Wrap(AOHGameMode, 'OnEntityKilled'), self)
 	ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(AOHGameMode, "OnGameRulesStateChange"), self)
 	ListenToGameEvent("dota_item_picked_up", Dynamic_Wrap(AOHGameMode, 'OnItemPickedUp'), self)
+	ListenToGameEvent("dota_holdout_revive_complete", Dynamic_Wrap(AOHGameMode, 'OnHoldoutReviveComplete'), self)
 	ListenToGameEvent("player_chat", Dynamic_Wrap(ChatHandler, "OnPlayerChat"), ChatHandler)
 
 	GameRules:GetGameModeEntity():SetThink("OnThink", self, 0.25)
@@ -127,6 +128,15 @@ end
 function AOHGameMode:OnItemPickedUp(keys)
 	if keys.itemname == "item_bag_of_gold" then
 		player_data_modify_value(keys.PlayerID, "goldBagsCollected", 1)
+	end
+end
+
+
+function AOHGameMode:OnHoldoutReviveComplete(keys)
+	local castingHero = EntIndexToHScript(keys.caster)
+	if castingHero then
+		local playerID = castingHero:GetPlayerOwnerID()
+		player_data_modify_value(playerID, "saves", 1)
 	end
 end
 
