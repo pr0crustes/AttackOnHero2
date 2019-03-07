@@ -9,7 +9,20 @@ require("lib/data")
 ]]
 
 
-AllPlayersInterval = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+ALL_PLAYERS_INTERVAL = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23}
+
+
+function formated_number(number)
+    local as_string = tostring(math.floor(number))
+    if number < 1000 then
+        return as_string
+    end
+
+    local len = as_string:len()
+    local split_point = len - 3
+
+    return as_string:sub(1, split_point) .. "." .. as_string:sub(split_point, len - 3) .. "K"
+end
 
 
 
@@ -32,9 +45,9 @@ function end_screen_get_data(isWinner)
             local playerInfo = {
                 steamid = tostring(PlayerResource:GetSteamID(playerID)),
 
-                damageTaken = player_data_get_value(playerID, "damageTaken"),
-                bossDamage = player_data_get_value(playerID, "bossDamage"),
-                heroHealing = PlayerResource:GetHealing(playerID),
+                damageTaken = formated_number(player_data_get_value(playerID, "damageTaken")),
+                bossDamage = formated_number(player_data_get_value(playerID, "bossDamage")),
+                heroHealing = formated_number(PlayerResource:GetHealing(playerID)),
                 deaths = PlayerResource:GetDeaths(playerID),
                 heroName = "",
 
@@ -64,10 +77,11 @@ function end_screen_get_data(isWinner)
                 end
             end
 
-            playerInfo.netWorth = PlayerResource:GetGold(playerID)
+            local net_worth = PlayerResource:GetGold(playerID)
             for slot, item in pairs(playerInfo.items) do
-                playerInfo.netWorth = GetItemCost(item)
+                net_worth = net_worth + GetItemCost(item)
             end
+            playerInfo.netWorth = formated_number(net_worth)
 
             data.players[playerID] = playerInfo
         end
@@ -86,7 +100,7 @@ function end_screen_setup(isWinner)
                 has_send_data = true
 
                 local data = end_screen_get_data(isWinner)
-                PlayerTables:CreateTable("stats_game_result", data, AllPlayersInterval)
+                PlayerTables:CreateTable("stats_game_result", data, ALL_PLAYERS_INTERVAL)
             end
         end,
 
@@ -95,6 +109,6 @@ function end_screen_setup(isWinner)
         end
     )
     if not status then
-		PlayerTables:CreateTable("stats_game_result", {error = nextCall}, AllPlayersInterval)
+		PlayerTables:CreateTable("stats_game_result", {error = nextCall}, ALL_PLAYERS_INTERVAL)
 	end
 end

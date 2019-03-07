@@ -54,12 +54,12 @@
 				</Panel>
 
 				<Label class="DeathsColumn" text="{d:deaths}" />
-				<Label class="NetWorthColumn" text="{d:net_worth}" />
+				<Label class="NetWorthColumn" text="{s:net_worth}" />
 				<Panel id="ItemsContainer" class="ItemsColumn LeftRightFlow" />
 				<Panel id="BackpackItemsContainer" class="BackpackItemsColumn LeftRightFlow" />
-				<Label class="DamageTakenColumn" text="{d:damageTaken}" />
-				<Label class="HeroHealingColumn" text="{d:heroHealing}" />
-				<Label class="BossDamageColumn" text="{d:bossDamage}" />
+				<Label class="DamageTakenColumn" text="{s:damageTaken}" />
+				<Label class="HeroHealingColumn" text="{s:heroHealing}" />
+				<Label class="BossDamageColumn" text="{s:bossDamage}" />
 				<Label class="StrColumn" text="{d:strength}" />
 				<Label class="AgiColumn" text="{d:agility}" />
 				<Label class="IntColumn" text="{d:intellect}" />

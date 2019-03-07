@@ -48,15 +48,15 @@ function Snippet_Player(playerId, rootPanel, index) {
 
 	panel.SetDialogVariableInt("deaths", Players.GetDeaths(playerId));
 
-	panel.SetDialogVariableInt("damageTaken", playerData.damageTaken);
-	panel.SetDialogVariableInt("bossDamage", playerData.bossDamage);
-	panel.SetDialogVariableInt("heroHealing", playerData.heroHealing);
+	panel.SetDialogVariable("damageTaken", playerData.damageTaken);
+	panel.SetDialogVariable("bossDamage", playerData.bossDamage);
+	panel.SetDialogVariable("heroHealing", playerData.heroHealing);
 
 	panel.SetDialogVariableInt("strength", playerData.str);
 	panel.SetDialogVariableInt("agility", playerData.agi);
 	panel.SetDialogVariableInt("intellect", playerData.int);
 
-	panel.SetDialogVariableInt("net_worth", playerData.netWorth);
+	panel.SetDialogVariable("net_worth", playerData.netWorth);
 
 	for (var i = 0; i < 9; i++) {
 		var item = playerData.items[i];
