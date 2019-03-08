@@ -1,6 +1,6 @@
 "DOTA_Tooltip_Ability_item_ultimate_crit"						"Ultimate Daedalus"
 "DOTA_Tooltip_Ability_item_ultimate_crit_Description"			"Passive: Critical Strike - Grants each attack a chance to deal additional damage."
-"DOTA_Tooltip_Ability_item_ultimate_crit_Lore"					"The ultimate result of blacksmithing."
+"DOTA_Tooltip_Ability_item_ultimate_crit_Lore"					"The last weapon forged by the legendary blacksmith ForaMon."
 "DOTA_Tooltip_Ability_item_ultimate_crit_crit_chance"			"%Critical Chance:"
 "DOTA_Tooltip_Ability_item_ultimate_crit_crit_multiplier"		"%Critical Damage:"
 "DOTA_Tooltip_Ability_item_ultimate_crit_bonus_damage"			"+$damage"

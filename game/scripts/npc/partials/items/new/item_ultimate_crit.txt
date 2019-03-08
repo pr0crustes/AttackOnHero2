@@ -23,7 +23,7 @@
     "ID"							"$ID"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_greater_crit"
-    "AbilityTextureName"		    "ultimate_crit"
+    "AbilityTextureName"		    "ForaMon/ultimate_crit"
 
     "ItemCost"						"10000"
     "ItemShopTags"					"damage;crit"
