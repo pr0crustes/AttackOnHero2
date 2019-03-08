@@ -15,3 +15,5 @@
 "item_lotus_orb"            "REMOVE"
 "item_sphere"               "REMOVE"
 "item_blade_mail"           "REMOVE"
+"item_bloodstone"           "REMOVE"
+"item_recipe_bloodstone"    "REMOVE"

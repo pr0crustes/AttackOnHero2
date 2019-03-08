@@ -7,6 +7,8 @@
 
     Recoded Refresher, attempting to solve stats bug. 
 
+    Only Dark Bloodstone has now the active.
+
 
 
 

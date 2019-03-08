@@ -1,0 +1,60 @@
+"item_recipe_custom_bloodstone"
+{
+    "ID"							"$ID"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "BaseClass"                     "item_recipe_bloodstone"
+
+    "ItemCost"						"0"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_custom_bloodstone"
+    "ItemRequirements"
+    {
+        "01"						"item_pers;item_soul_booster"
+    }
+}
+
+
+
+
+"item_custom_bloodstone"
+{
+    "ID"							    "$ID"
+    "BaseClass"						    "item_lua"
+    "ScriptFile"                        "items/custom_bloodstone.lua"
+
+    "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityTextureName"			    "ForaMon/custom_bloodstone"
+
+    "ItemShopTags"					    "regen_health;regen_mana;mana_pool;health_pool"
+    "ItemQuality"					    "epic"
+    "ItemAliases"					    "bs;bloodstone"
+    "ItemDeclarations"				    "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_health"			    "550"
+        }
+        "02"
+        {
+            "var_type"				    "FIELD_INTEGER"
+            "bonus_mana"			    "500"
+        }
+        "03"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "bonus_health_regen"	    "10.0"
+        }
+        "04"
+        {
+            "var_type"				    "FIELD_FLOAT"
+            "bonus_mana_regen"		    "200.0"
+        }
+    }
+}
