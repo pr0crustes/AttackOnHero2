@@ -1,16 +1,16 @@
 "DOTA_Tooltip_Ability_item_trade_kaya"					    "Trade Kaya"
 "DOTA_Tooltip_Ability_item_trade_kaya_Description"			"<h1>Passive: Stats Bargain</h1> Trade Kaya reduces your strenght and agility by %stats_reduction%, at the same time that amplifies your magic damage by %spell_amp%%."
 "DOTA_Tooltip_Ability_item_trade_kaya_Note0"				"Multiple instances of Stats Bargain do not stack."
-"DOTA_Tooltip_Ability_item_trade_kaya_Lore"					"The staff of a renowned sorceress, used to bargain."
+"DOTA_Tooltip_Ability_item_trade_kaya_Lore"					"A staff once created by the renowned sorceress ForaMon, forged to bargain."
 
 
 "DOTA_Tooltip_Ability_item_trade_kaya_2"					"Trade Kaya LVL 2"
 "DOTA_Tooltip_Ability_item_trade_kaya_2_Description"	    "<h1>Passive: Stats Bargain</h1> Trade Kaya reduces your strenght and agility by %stats_reduction%, at the same time that amplifies your magic damage by %spell_amp%%."
 "DOTA_Tooltip_Ability_item_trade_kaya_2_Note0"				"Multiple instances of Stats Bargain do not stack."
-"DOTA_Tooltip_Ability_item_trade_kaya_2_Lore"				"The staff of a renowned sorceress, used to bargain."
+"DOTA_Tooltip_Ability_item_trade_kaya_2_Lore"				"A staff once created by the renowned sorceress ForaMon, forged to bargain."
 
 
 "DOTA_Tooltip_Ability_item_trade_kaya_3"					"Trade Kaya LVL 3"
 "DOTA_Tooltip_Ability_item_trade_kaya_3_Description"	    "<h1>Passive: Stats Bargain</h1> Trade Kaya reduces your strenght and agility by %stats_reduction%, at the same time that amplifies your magic damage by %spell_amp%%."
 "DOTA_Tooltip_Ability_item_trade_kaya_3_Note0"				"Multiple instances of Stats Bargain do not stack."
-"DOTA_Tooltip_Ability_item_trade_kaya_3_Lore"				"The staff of a renowned sorceress, used to bargain."
+"DOTA_Tooltip_Ability_item_trade_kaya_3_Lore"				"A staff once created by the renowned sorceress ForaMon, forged to bargain."

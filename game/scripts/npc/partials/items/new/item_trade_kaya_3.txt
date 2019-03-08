@@ -23,7 +23,7 @@
     "ID"							"$ID"
     "BaseClass"                     "item_datadriven"
     
-    "AbilityTextureName"		    "trade_kaya_3"
+    "AbilityTextureName"		    "ForaMon/trade_kaya_3"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
