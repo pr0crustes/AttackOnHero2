@@ -19,7 +19,8 @@
 "item_custom_refresher"
 {
     "ID"							"$ID"
-    "BaseClass"						"item_datadriven"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/custom_refresher.lua"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 
