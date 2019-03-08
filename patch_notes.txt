@@ -7,6 +7,8 @@
 
     Recoded Refresher, attempting to solve stats bug. 
 
+    Recoded Dragon Scale, aura now applies to caster. 
+
     Only Dark Bloodstone has now the active.
 
     Dragon Lance 2: Bonus ranged reduced from "280" to "240".
