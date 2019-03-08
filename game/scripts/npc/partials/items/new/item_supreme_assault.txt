@@ -78,6 +78,7 @@
         {
             "Passive"			"1"
             "IsHidden"			"1"
+            "Attributes"		"MODIFIER_ATTRIBUTE_MULTIPLE"
             
             "Properties"
             {
@@ -101,8 +102,6 @@
 
         "modifier_item_supreme_assault_buff"
         {
-            "TextureName"		    "item_supreme_assault"
-            
             "Properties"
             {
                 "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%aura_attack_speed"
@@ -125,8 +124,7 @@
         "modifier_item_supreme_assault_debuff"
         {
             "IsDebuff"              "1"
-            "TextureName"		    "item_supreme_assault"
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"			"%aura_negative_armor"
