@@ -5,5 +5,5 @@
 "DOTA_Tooltip_ability_item_health_bag_mana_regen"				"+$mana_regen"
 "DOTA_Tooltip_ability_item_health_bag_bonus_all_stats"			"+$all"
 
-"DOTA_Tooltip_modifier_health_bag"					            "Seed of Life"
-"DOTA_Tooltip_modifier_health_bag_Description"		            "A Health Bag was used at you. You are being healed."
+"DOTA_Tooltip_modifier_item_health_bag_buff"					"Seed of Life"
+"DOTA_Tooltip_modifier_item_health_bag_buff_Description"		"A Health Bag was used at you. You are being healed."

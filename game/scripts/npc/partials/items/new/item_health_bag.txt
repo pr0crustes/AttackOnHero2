@@ -21,7 +21,8 @@
 "item_health_bag"
 {
     "ID"							"$ID"
-    "BaseClass"						"item_datadriven"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/health_bag.lua"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -79,33 +80,6 @@
         {
             "var_type"				"FIELD_FLOAT"
             "duration"				"6"
-        }
-    }
-    
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"			"items/health_bag.lua"
-            "Function"				"health_bag_cast"
-        }
-    }
-    
-    "Modifiers"
-    {
-        "modifier_item_health_bag"
-        {
-            "Passive"			"1"
-            "IsHidden"			"1"
-            
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"		    "%mana_regen"
-                "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"		"%hp_regen"
-                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"        "%bonus_all_stats"
-                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"         "%bonus_all_stats"
-                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%bonus_all_stats"
-            }
         }
     }
 }
