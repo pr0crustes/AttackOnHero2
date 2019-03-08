@@ -22,7 +22,7 @@
     "ID"							"$ID"
     "BaseClass"						"item_datadriven"
 
-    "AbilityTextureName"		    "supreme_assault"
+    "AbilityTextureName"		    "ForaMon/supreme_assault"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityCastRange"				"1200"
