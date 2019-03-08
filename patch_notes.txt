@@ -13,6 +13,8 @@
 
     Recoded Health Bag, small fixes.
 
+    Recoded Ice Staff, small fixes.
+
     Only Dark Bloodstone has now the active.
 
     Dragon Lance 2: Bonus ranged reduced from "280" to "240".

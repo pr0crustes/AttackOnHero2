@@ -22,7 +22,9 @@
 "item_ice_staff"
 {
     "ID"							"$ID"
-    "BaseClass"						"item_datadriven"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/ice_staff.lua"
+
     "AbilityTextureName"		    "ice_staff"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -55,21 +57,6 @@
         {
             "var_type"				"FIELD_INTEGER"
             "crit_damage_mult" 	    "220"
-        }
-    }
-
-    "Modifiers"
-    {
-        "modifier_item_ice_staff"
-        {
-            "Passive"			"1"
-            "IsHidden"			"1"
-            
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"      "%damage"
-                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "%bonus_int"
-            }
         }
     }
 }

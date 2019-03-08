@@ -30,6 +30,11 @@ function modifier_item_health_bag:IsHidden()
 end
 
 
+function modifier_item_health_bag:GetAttributes()
+    return MODIFIER_ATTRIBUTE_MULTIPLE
+end
+
+
 function modifier_item_health_bag:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_MANA_REGEN_CONSTANT,
