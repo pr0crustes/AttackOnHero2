@@ -3,7 +3,7 @@
 2.1.4:
     With this update:
 
-
+    Changed the icons of a few items. Special thanks to "ForaMan", who granted me permission to use these icons by he created.
 
 
 
