@@ -47,7 +47,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "base_attack_range"		"140 280"
+            "base_attack_range"		"140 240"
         }
     }
 }
