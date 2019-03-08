@@ -1,11 +1,24 @@
 "item_diffusal_blade"
 {
+    "MaxUpgradeLevel"               "2"
+    "ItemBaseLevel"                 "1"
+
     "AbilitySpecial"
     {
+        "01"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "bonus_agility"			                "20 35"
+        }
+        "02"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "bonus_intellect"		                "10 20"
+        }
         "03"
         {
             "var_type"				                "FIELD_INTEGER"
-            "feedback_mana_burn"	                "16"
+            "feedback_mana_burn"	                "10"
         }
         "04"
         {
@@ -15,12 +28,32 @@
         "05"
         {
             "var_type"				                "FIELD_INTEGER"
-            "feedback_mana_burn_illusion_ranged"	"7"
+            "feedback_mana_burn_illusion_ranged"	"5"
+        }
+        "06"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "purge_rate"			                "5"
+        }
+        "07"
+        {
+            "var_type"				                "FIELD_FLOAT"
+            "purge_root_duration"	                "3.0"
+        }
+        "08"
+        {
+            "var_type"				                "FIELD_FLOAT"
+            "purge_slow_duration"	                "4.0"
         }
         "09"
         {
             "var_type"				                "FIELD_FLOAT"
-            "damage_per_burn"		                "2.0"
+            "damage_per_burn"		                "3.0 6.0"
+        }
+        "10"
+        {
+            "var_type"				                "FIELD_INTEGER"
+            "cast_range_tooltip"		            "600"
         }
     }
 }
