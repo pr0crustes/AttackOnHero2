@@ -21,8 +21,10 @@
 "item_formidable_chest"
 {
     "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/formidable_chest.lua"
+
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "BaseClass"                     "item_datadriven"
 
     "AbilityTextureName"		    "ForaMon/formidable_chest"
 

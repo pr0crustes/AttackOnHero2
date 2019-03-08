@@ -86,10 +86,16 @@ end
 
 
 function modifier_item_dragon_scale_aura_buff:GetModifierHealthBonus()
-    return self:GetAbility():GetSpecialValueFor("aura_bonus_health")
+    local ability = self:GetAbility()
+    if ability then
+        return ability:GetSpecialValueFor("aura_bonus_health")
+    end
 end
 
 
 function modifier_item_dragon_scale_aura_buff:GetModifierBonusStats_Strength()
-    return self:GetAbility():GetSpecialValueFor("aura_bonus_strength")
+    local ability = self:GetAbility()
+    if ability then
+        return ability:GetSpecialValueFor("aura_bonus_strength")
+    end
 end

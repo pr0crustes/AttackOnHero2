@@ -9,6 +9,8 @@
 
     Recoded Dragon Scale, aura now applies to caster. 
 
+    Recoded Formidable Chest, attempting to solve missing armor bug.
+
     Only Dark Bloodstone has now the active.
 
     Dragon Lance 2: Bonus ranged reduced from "280" to "240".
