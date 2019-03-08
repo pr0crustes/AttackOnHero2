@@ -1,0 +1,59 @@
+"item_recipe_polarized_plate"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe"
+
+    "ItemCost"						"500"
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_polarized_plate"
+    "ItemRequirements"
+    {
+        "01"						"item_platemail;item_soul_booster"
+    }
+}
+
+
+
+"item_polarized_plate"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/polarized_plate.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityTextureName"		    "ForaMon/polarized_plate"
+
+    "ItemShopTags"					"armor; mana"
+    "ItemQuality"					"secret_shop"
+    "ItemAliases"					"Mana Plate"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"10"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_health"			"425"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_mana"			"425"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_to_mana"	    "10"
+        }
+    }
+}

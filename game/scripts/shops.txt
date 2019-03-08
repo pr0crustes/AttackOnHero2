@@ -121,7 +121,7 @@
 		"item"		"item_hood_of_defiance"
 		"item"		"item_vanguard"
 		//"item"		"item_blade_mail"
-		"item"		"item_soul_booster"
+		//"item"		"item_soul_booster"
 		"item"		"item_crimson_guard"	
 		"item"		"item_black_king_bar"
 		"item"		"item_hurricane_pike"	
@@ -132,6 +132,7 @@
 		"item"		"item_assault"
 		"item"		"item_dragon_scale"
 		"item"		"item_formidable_chest"
+		"item"		"item_polarized_plate"
 	}
 			
 	"weapons"

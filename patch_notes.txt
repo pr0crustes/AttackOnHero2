@@ -5,6 +5,8 @@
 
     Changed the icons of a few items. Special thanks to "ForaMan", who granted me permission to use these icons by he created.
 
+    New item: Polarized Plate.
+
     New item: Corrupted Diffusal Blade.
 
     Recoded Refresher, attempting to solve stats bug. 

@@ -1,0 +1,7 @@
+"DOTA_Tooltip_Ability_item_polarized_plate"                         "Polarized Plate"
+"DOTA_Tooltip_Ability_item_polarized_plate_Description"			    "<h1>Passive: Light Absorption</h1> Regenerates mana whenever damage is taken.\n<font color='#F2A93E'>Does not trigger for self dealt damage.</font>\n<font color='#F2A93E'>Mana restoration is calculated before damage reduction.</font>"
+"DOTA_Tooltip_Ability_item_polarized_plate_Lore"				    "A plate ages ago imbued with arcane magic by the legendary ForaMon."
+"DOTA_Tooltip_Ability_item_polarized_plate_damage_to_mana"		    "%DAMAGE TAKEN TO MANA:"
+"DOTA_Tooltip_Ability_item_polarized_plate_bonus_armor"		        "+$armor"
+"DOTA_Tooltip_Ability_item_polarized_plate_bonus_health"		    "+$health"
+"DOTA_Tooltip_Ability_item_polarized_plate_bonus_mana"		        "+$mana"
