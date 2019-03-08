@@ -69,19 +69,4 @@
             "duration"	            "10"
         }
     }
-
-
-    "OnSpellStart"
-    {
-        "ApplyModifier"
-        {
-            "Target"				"CASTER"
-            "ModifierName"			"modifier_item_formidable_chest_aura"
-        }
-        "FireSound"
-        {
-            "Target"				"CASTER"
-            "EffectName"			"Item.CrimsonGuard.Cast"
-        }
-    }
 }
