@@ -1,7 +1,7 @@
 "DOTA_Tooltip_ability_item_formidable_chest"                            "Formidable Chest"
 "DOTA_Tooltip_ability_item_formidable_chest_Description"				"<h1>Active: Formidable Defense</h1> Grants %damage_reduction%%  damage reduction for %duration% seconds to all allies in a %radius% radius."
 "DOTA_Tooltip_ability_item_formidable_chest_bonus_armor"				"+$armor"
-"DOTA_Tooltip_ability_item_formidable_chest_Lore"						"A powerfull metal plate forged in an unknown and mysterious place."
+"DOTA_Tooltip_ability_item_formidable_chest_Lore"						"A powerfull metal plate forged by ForaMon in an unknown dimension."
 
 
 "DOTA_Tooltip_modifier_item_formidable_chest_buff"                      "Formidable Defense"

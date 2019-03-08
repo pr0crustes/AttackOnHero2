@@ -24,14 +24,14 @@
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "BaseClass"                     "item_datadriven"
 
-    "AbilityTextureName"		    "formidable_chest"
+    "AbilityTextureName"		    "ForaMon/formidable_chest"
 
     "ItemShopTags"					"armor"
     "ItemQuality"					"secret_shop"
     "ItemAliases"					"Formidable Chest"
 
 
-    "AbilityCooldown"				"40.0"
+    "AbilityCooldown"				"50.0"
     "AbilityCastRange"				"1000"
     "AbilityCastPoint"				"0.0"
 
