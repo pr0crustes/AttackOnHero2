@@ -25,6 +25,8 @@
 
     Dragon Lance 2: Bonus ranged reduced from "280" to "240".
 
+    Fixed End Game Screen not always showing.
+
 
 
 
