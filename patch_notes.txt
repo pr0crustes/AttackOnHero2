@@ -11,6 +11,7 @@
 
     Io Tether: Regen amp reduced from "1.05 1.2 1.35 1.5" to "0.8 0.9 1.0 1.1".
     Io Overcharge: Cooldown increased from "18.0" to "24.0".
+    Io Fundamental Heal has a nice particle effect.
 
 
 
