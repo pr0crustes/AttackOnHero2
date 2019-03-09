@@ -171,6 +171,8 @@ function AOHGameMode:OnGameRulesStateChange()
 		self:_RevealShop()
 	elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		self._flPrepTimeEnd = GameRules:GetGameTime() + self._flPrepTimeBetweenRounds
+	elseif nNewState == DOTA_GAMERULES_STATE_POST_GAME then
+		end_screen_setup(self._entAncient and self._entAncient:IsAlive())
 	end
 end
 
@@ -201,7 +203,6 @@ function AOHGameMode:OnThink()
 
 		if self._nRoundNumber > #self._vRounds then
 			GameRules:SetGameWinner(DOTA_TEAM_GOODGUYS)
-			end_screen_setup(true)
 			return false
 		end
 
@@ -224,11 +225,9 @@ function AOHGameMode:_CheckForDefeat()
 		if self._entAncient and self._entAncient:IsAlive() then
 			if are_all_heroes_dead() then
 				self._entAncient:ForceKill(false)
-				end_screen_setup(false)
 			end
 		else
 			GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
-			end_screen_setup(false)
 		end
 	end
 end
