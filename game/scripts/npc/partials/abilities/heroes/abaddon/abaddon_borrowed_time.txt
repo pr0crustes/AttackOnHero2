@@ -1,4 +1,4 @@
 "abaddon_borrowed_time"
 {
-    "AbilityCooldown"				"70.0 60.0 50.0"
+    "AbilityCooldown"				"70.0 65.0 60.0"
 }

@@ -1,0 +1,12 @@
+"abaddon_aphotic_shield"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_absorb"			"110 200 290 380"
+            "LinkedSpecialBonus"	"special_bonus_unique_abaddon"
+        }
+    }
+}
