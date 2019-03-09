@@ -2,4 +2,7 @@
 {
     "Ability6"		"wisp_custom_fundamental_heal"
     "Ability16"		"special_bonus_movement_speed_100"
+
+    "AttributeAgilityGain"		    "1.100000"
+    "AttributeIntelligenceGain"		"1.300000"
 }
