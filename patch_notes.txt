@@ -13,6 +13,8 @@
     Io Overcharge: Cooldown increased from "18.0" to "24.0".
     Io Fundamental Heal has a nice particle effect.
 
+    Techies Talent Mine Movespeed Increased from "25" to "300".
+
 
 
 2.1.5:
