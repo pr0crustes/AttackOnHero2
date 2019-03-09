@@ -3,7 +3,7 @@
 2.1.4:
     With this update:
 
-    Changed the icons of a few items. Special thanks to "ForaMan", who granted me permission to use these icons by he created.
+    Changed the icons of a few items. Special thanks to "ForaMon", who granted me permission to use these icons by he created.
 
     New item: Polarized Plate.
 
@@ -21,11 +21,13 @@
 
     Recoded Supreme Assault, attempting to solve missing armor bug.
 
-    Only Dark Bloodstone has now the active.
+    Only Dark Bloodstone has now the active - this fixes stacking bug.
 
     Dragon Lance 2: Bonus ranged reduced from "280" to "240".
 
     Fixed End Game Screen not always showing.
+
+    Fixed End Game Screen networth ignoring a few items.
 
 
 

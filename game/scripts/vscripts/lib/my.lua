@@ -252,3 +252,18 @@ end
 function create_dummy(caster, pos)
 	return CreateUnitByName("npc_dummy_unit", pos, false, caster, caster, caster:GetTeamNumber())
 end
+
+
+function get_item_true_cost(name)
+	local cost = GetItemCost(name)
+	if cost <= 0 then
+		local item = CreateItem(name, nil, nil)
+		if item then
+			cost = item:GetCost()
+			UTIL_Remove(item)
+		else
+			print("[get_item_true_cost] COULD NOT CREATE ITEM " .. name)
+		end
+	end
+	return cost
+end

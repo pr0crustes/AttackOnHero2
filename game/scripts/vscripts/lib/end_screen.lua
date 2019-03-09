@@ -1,4 +1,5 @@
 require("lib/data")
+require("lib/my")
 
 
 --[[
@@ -70,7 +71,7 @@ function end_screen_get_data(isWinner)
 
                 local net_worth = PlayerResource:GetGold(playerID)
                 for slot, item in pairs(playerInfo.items) do
-                    net_worth = net_worth + GetItemCost(item)
+                    net_worth = net_worth + get_item_true_cost(item)
                 end
                 playerInfo.netWorth = formated_number(net_worth)
 
