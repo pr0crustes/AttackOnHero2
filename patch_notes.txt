@@ -1,5 +1,12 @@
 
 
+2.1.6:
+    With this update:
+
+    Replaced Jakiro 100 Agi talent with 25 spell amp.
+
+
+
 2.1.5:
     With this update:
 
