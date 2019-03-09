@@ -3,6 +3,8 @@
 2.1.5:
     With this update:
 
+    New Item: Health Bag LVL 2.
+
     Fixed supreme assault buff not showing the icon.
 
 

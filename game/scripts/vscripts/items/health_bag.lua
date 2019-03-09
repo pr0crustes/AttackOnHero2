@@ -19,6 +19,9 @@ function item_health_bag:OnSpellStart()
 end
 
 
+item_health_bag_2 = class(item_health_bag)
+
+
 
 LinkLuaModifier("modifier_item_health_bag", "items/health_bag.lua", LUA_MODIFIER_MOTION_NONE)
 
