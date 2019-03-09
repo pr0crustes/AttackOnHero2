@@ -5,6 +5,8 @@
 
     New Item: Health Bag LVL 2.
 
+    Lion Finger Of Death: Damage per use increased from "10" to "20 30 40".
+
     Fixed supreme assault buff not showing the icon.
 
 

@@ -43,7 +43,7 @@
         "03"
         {
             "var_type"					"FIELD_INTEGER"
-            "damage_per_use"			"10"
+            "damage_per_use"			"20 30 40"
         }
         "04"
         {
