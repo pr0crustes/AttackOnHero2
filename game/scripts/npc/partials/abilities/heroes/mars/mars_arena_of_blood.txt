@@ -1,0 +1,13 @@
+"mars_arena_of_blood"
+{
+    "AbilityCooldown"			"50 45 40"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"			"FIELD_INTEGER"
+            "spear_damage"		"500 1000 1500"
+        }
+    }
+}

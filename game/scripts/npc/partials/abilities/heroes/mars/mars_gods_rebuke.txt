@@ -1,0 +1,12 @@
+"mars_gods_rebuke"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "crit_mult"					"200 260 320 380"
+            "LinkedSpecialBonus"		"special_bonus_unique_mars_gods_rebuke_extra_crit"
+        }
+    }
+}

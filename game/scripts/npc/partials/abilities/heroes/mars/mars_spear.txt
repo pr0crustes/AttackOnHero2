@@ -1,0 +1,14 @@
+"mars_spear"
+{
+    "AbilityCooldown"				"14.0 12.0 10.0 8.0"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"100 200 300 400"
+            "LinkedSpecialBonus"	"special_bonus_unique_mars_spear_bonus_damage"
+        }
+    }
+}
