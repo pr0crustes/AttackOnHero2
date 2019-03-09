@@ -83,7 +83,7 @@ end
 
 
 function modifier_item_health_bag_buff:GetTexture()
-    return "item_health_bag"
+    return "item_ForaMon/health_bag"
 end
 
 
