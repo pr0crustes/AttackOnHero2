@@ -3,7 +3,7 @@
 2.1.5:
     With this update:
 
-
+    Fixed supreme assault buff not showing the icon.
 
 
 2.1.4:

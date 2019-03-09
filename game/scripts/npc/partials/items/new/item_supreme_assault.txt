@@ -102,6 +102,7 @@
 
         "modifier_item_supreme_assault_buff"
         {
+            "TextureName"		    "item_ForaMon/supreme_assault"
             "Properties"
             {
                 "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%aura_attack_speed"
@@ -124,6 +125,7 @@
         "modifier_item_supreme_assault_debuff"
         {
             "IsDebuff"              "1"
+            "TextureName"		    "item_ForaMon/supreme_assault"
 
             "Properties"
             {
