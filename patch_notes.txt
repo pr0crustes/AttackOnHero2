@@ -9,6 +9,8 @@
 
     Io: Agi per level reduced from "1.6" to "1.1", int per level reduced from "1.7" to "1.3".
 
+    Io Tether: Regen amp reduced from "1.05 1.2 1.35 1.5" to "0.8 0.9 1.0 1.1".
+
 
 
 2.1.5:

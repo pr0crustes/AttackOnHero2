@@ -1,0 +1,11 @@
+"wisp_tether"
+{
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"					"FIELD_FLOAT"
+            "tether_heal_amp"			"0.8 0.9 1.0 1.1"
+        }
+    }
+}
