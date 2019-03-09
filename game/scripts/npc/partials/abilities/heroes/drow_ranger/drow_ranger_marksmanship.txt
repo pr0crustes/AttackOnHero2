@@ -5,7 +5,7 @@
         "01"
         {
             "var_type"						"FIELD_INTEGER"
-            "chance"	                    "10 20 30"
+            "chance"	                    "10 17 25"
         }
         "02"
         {
