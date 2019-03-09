@@ -1,0 +1,12 @@
+"omniknight_purification"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal"					"150 260 310 410"
+            "LinkedSpecialBonus"	"special_bonus_unique_omniknight_1"
+        }
+    }
+}

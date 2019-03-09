@@ -1,0 +1,4 @@
+"omniknight_guardian_angel"
+{
+    "AbilityCooldown"				    "50.0"
+}

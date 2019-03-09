@@ -5,6 +5,9 @@
 
     New Item: Health Bag LVL 2.
 
+    Omniknight Purification: Heal increased from "90 160 230 300" to "150 260 310 410".
+    Omniknight Guardian Angel: Cooldown reduced from "160 150 140" to "50.0".
+
     Mars Spear: Damage increased from "100 175 250 325" to "100 200 300 400", cooldown reduced from "14.0" to "14.0 12.0 10.0 8.0".
     Mars Gods Rebuke: Crit increased from "160 200 240 280" to "200 260 320 380".
     Mars Arena Of Blood: Damage increased from "150 200 250" to "500 1000 1500", cooldown reduced from "90 75 60" to "50 45 40".
