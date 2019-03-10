@@ -1,0 +1,4 @@
+"night_stalker_void"
+{
+    "AbilityDamage"					"120 220 320 420"
+}
