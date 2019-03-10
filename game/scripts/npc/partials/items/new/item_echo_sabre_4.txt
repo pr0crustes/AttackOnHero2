@@ -23,6 +23,7 @@
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
     "BaseClass"						"item_echo_sabre"
+    "AbilityTextureName"			"ForaMon/echo_sabre_4"
 
     "AbilityCastPoint"				"0.0"
     "AbilityCooldown"				"2.0"

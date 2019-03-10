@@ -24,6 +24,7 @@
     "FightRecapLevel"				"1"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
     "BaseClass"						"item_echo_sabre"
+    "AbilityTextureName"			"ForaMon/echo_sabre_3"
 
     "AbilityCastPoint"				"0.0"
     "AbilityCooldown"				"3.0"
