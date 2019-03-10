@@ -11,6 +11,7 @@
 
     "AbilityTextureName"		    "nyx_assassin_mana_burn"
 
+    "AbilityCastRange"				"1200"
     "AbilityCastPoint"				"0.31"
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
     
@@ -23,7 +24,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "mana_multiplier"		"0.4 0.5 0.6 0.7"
+            "mana_multiplier"		"0.6 0.7 0.8 0.9"
         }
     }
 

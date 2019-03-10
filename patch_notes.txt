@@ -21,6 +21,9 @@
     Io Overcharge: Cooldown increased from "18.0" to "24.0".
     Io Fundamental Heal has a nice particle effect.
 
+    Nyx Assassin Mana Strike: multiplier increased from "0.4 0.5 0.6 0.7" to "0.6 0.7 0.8 0.9".
+    Nyx Assassin Vendetta: Crit increase increased from "90 110 130" to "110 130 150".
+
     Bristleback Viscous Nasal Goo: Cooldown changed from "1.5 1.5 1.5 1.5" to "1.7 1.6 1.5 1.4", armor per stack reduced from "1.4 1.8 2.2 2.6" to "1.1 1.2 1.3 1.4".
     Bristleback Additional Viscous Nasal Goo stacks talent replaced with cleave talent.
     Bristleback Warpath: Duration increased from "14.0" to "20.0", stack damage reescaled from "18 24 30" to "10 20 30", max stacks increased from "5 7 9" to "9 11 13".
@@ -28,7 +31,6 @@
 
     Night Stalker Void: Damage increased from "90 160 255 335" to "120 220 320 420".
     Night Stalker Hunter In The Night: Bonus attack speed increased from "30 50 70 90" to "50 100 200 300".
-
 
     Spirit Breaker Greater Bash: Damage increased from "8 16 24 32" to "20 40 60 80".
 
