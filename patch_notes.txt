@@ -3,6 +3,8 @@
 2.1.6:
     With this update:
 
+    Discord link was moved to info tab.
+
     New Item: High Tech Boots.
 
     Renamed Ice Staff to Arcane Staff.

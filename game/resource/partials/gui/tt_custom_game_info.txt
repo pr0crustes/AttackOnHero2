@@ -5,4 +5,5 @@
 "game_info_drops"                   "Bosses may drop items and gold on death. These drops expire after 2 minutes."
 "game_info_items"                   "The shop is filled with new items and new upgrades, these will help your journey."
 "game_info_survivability"           "Never underestimate how important survivability is."
+"game_info_discord"                 "You can join us on Discord by clicking on the image."
 "game_info_footer"                  "Good Luck, Have Fun!"

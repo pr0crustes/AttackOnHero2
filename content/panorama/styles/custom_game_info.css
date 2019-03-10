@@ -29,6 +29,7 @@
     padding: 15px;
     background-color: #202020;
     flow-children: down;
+    overflow: squish scroll;
 }
 
 
