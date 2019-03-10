@@ -22,7 +22,7 @@
     "ID"							"$ID"
     "BaseClass"						"item_desolator"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"			"desolator_3"
+    "AbilityTextureName"			"ForaMon/desolator_3"
 
     "ItemShopTags"					"damage;unique"
     "ItemQuality"					"epic"
