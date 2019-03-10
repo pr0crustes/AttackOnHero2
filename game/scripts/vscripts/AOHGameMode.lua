@@ -17,7 +17,7 @@ require("lib/atr_fix")
 require("lib/timers")
 require("lib/ai")
 require("lib/chat_handler")
-require("items/ice_staff")
+require("items/arcane_staff")
 require("lib/parsers")
 require("lib/end_screen")
 require("lib/data")
@@ -94,8 +94,8 @@ function AOHGameMode:OnDamageDealt(damageTable)
 		local attacker = EntIndexToHScript(attacker_index)
 
 		if attacker then
-			if attacker:HasItemInInventory("item_ice_staff") then
-				damageTable = ice_staff_calculate_crit(damageTable)
+			if attacker:HasItemInInventory("item_arcane_staff") then
+				damageTable = arcane_staff_calculate_crit(damageTable)
 			end
 
 			local victim_index = damageTable.entindex_victim_const

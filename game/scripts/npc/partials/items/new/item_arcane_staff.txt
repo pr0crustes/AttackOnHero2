@@ -1,0 +1,62 @@
+"item_recipe_arcane_staff"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"500"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_arcane_staff"
+
+    "ItemRequirements"
+    {
+        "01"						"item_greater_crit;item_kaya"
+    }
+}
+
+
+
+"item_arcane_staff"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/arcane_staff.lua"
+
+    "AbilityTextureName"		    "arcane_staff"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityManaCost"				"50"
+
+    "ItemShopTags"					"crit"
+    "ItemQuality"					"epic"
+
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+    "ItemAliases"					"ice staff"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"	            "80"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_int" 	        "20"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_chance" 	        "20"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "crit_damage_mult" 	    "220"
+        }
+    }
+}

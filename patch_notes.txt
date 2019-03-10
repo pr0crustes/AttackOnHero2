@@ -5,6 +5,8 @@
 
     New Item: High Tech Boots.
 
+    Renamed Ice Staff to Arcane Staff.
+
     Replaced Jakiro 100 Agi talent with 25 spell amp.
 
     Mars: Str per level reduced from "3.6" to "3.2", int per level reduced from "1.4" to "1.0".

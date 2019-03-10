@@ -113,7 +113,7 @@
 		"item"		"item_custom_refresher"
 		"item"		"item_sheepstick"
 		"item"		"item_octarine_core"
-		"item"		"item_ice_staff"
+		"item"		"item_arcane_staff"
 	}
 		
 	// Level 3 - Purple Recipes	
