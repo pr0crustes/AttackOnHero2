@@ -24,7 +24,7 @@
     "ID"							"$ID"
     "BaseClass"						"item_lua"
     "ScriptFile"                    "items/vampiric_blade.lua"
-    "AbilityTextureName"		    "vampiric_blade"
+    "AbilityTextureName"		    "ForaMon/vampiric_blade"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
