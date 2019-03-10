@@ -7,6 +7,8 @@
 
     Renamed Ice Staff to Arcane Staff.
 
+    Sniper Fast Riffle: Attack time changed from "1.0 0.75 0.65" to "0.90 0.80 0.70"
+
     Replaced Jakiro 100 Agi talent with 25 spell amp.
 
     Mars: Str per level reduced from "3.6" to "3.2", int per level reduced from "1.4" to "1.0".
