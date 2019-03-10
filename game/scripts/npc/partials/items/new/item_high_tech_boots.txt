@@ -1,0 +1,46 @@
+"item_recipe_high_tech_boots"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"1100"	
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_high_tech_boots"
+
+    "ItemRequirements"
+    {
+        "01"						"item_travel_boots_2;item_wind_lace"
+    }
+}
+
+
+
+"item_high_tech_boots"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/high_tech_boots.lua"
+
+    "AbilityTextureName"		    "high_tech_boots"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"teleport;move_speed"
+    "ItemQuality"					"common"
+    "ItemAliases"					"boht;boots of tech;tech"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_movement_speed"	"55"
+        }
+    }
+}

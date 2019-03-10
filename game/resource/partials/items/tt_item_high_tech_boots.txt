@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_item_high_tech_boots"                             "High Tech Boots"
+"DOTA_Tooltip_ability_item_high_tech_boots_Description"					"<h1>Passive: Supersonic</h1> Removes the movespeed cap of 550."
+"DOTA_Tooltip_ability_item_high_tech_boots_Lore"						"An unbelievable piece of tech."
+"DOTA_Tooltip_ability_item_high_tech_boots_bonus_movement_speed"		"%+$move_speed"
