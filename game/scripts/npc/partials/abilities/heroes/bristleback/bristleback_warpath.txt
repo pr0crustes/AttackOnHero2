@@ -1,0 +1,22 @@
+"bristleback_warpath"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "damage_per_stack"				"10 20 30"
+            "LinkedSpecialBonus"	        "special_bonus_unique_bristleback_3"
+        }
+        "03"
+        {
+            "var_type"						"FIELD_FLOAT"
+            "stack_duration"				"20.0"
+        }
+        "04"
+        {
+            "var_type"						"FIELD_INTEGER"
+            "max_stacks"					"9 11 13"
+        }
+    }
+}

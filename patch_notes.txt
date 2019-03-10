@@ -13,6 +13,11 @@
     Io Overcharge: Cooldown increased from "18.0" to "24.0".
     Io Fundamental Heal has a nice particle effect.
 
+    Bristleback Viscous Nasal Goo: Cooldown changed from "1.5 1.5 1.5 1.5" to "1.7 1.6 1.5 1.4", armor per stack reduced from "1.4 1.8 2.2 2.6" to "1.1 1.2 1.3 1.4".
+    Bristleback Additional Viscous Nasal Goo stacks talent replaced with cleave talent.
+    Bristleback Warpath: Duration increased from "14.0" to "20.0", stack damage reescaled from "18 24 30" to "10 20 30", max stacks increased from "5 7 9" to "9 11 13".
+    Bristleback Additional Warpath damage talent replaced with 40% cooldown reduction.
+
     Techies Talent Mine Movespeed Increased from "25" to "300".
 
 

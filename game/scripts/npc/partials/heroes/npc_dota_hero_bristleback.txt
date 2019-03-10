@@ -1,0 +1,5 @@
+"npc_dota_hero_bristleback"
+{
+    "Ability13"		"special_bonus_cleave_100"
+    "Ability17"		"special_bonus_cooldown_reduction_40"
+}

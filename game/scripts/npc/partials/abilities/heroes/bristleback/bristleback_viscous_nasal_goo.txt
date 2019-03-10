@@ -1,0 +1,13 @@
+"bristleback_viscous_nasal_goo"
+{
+    "AbilityCooldown"				"1.7 1.6 1.5 1.4"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "armor_per_stack"		"1.1 1.2 1.3 1.4"
+        }
+    }
+}
