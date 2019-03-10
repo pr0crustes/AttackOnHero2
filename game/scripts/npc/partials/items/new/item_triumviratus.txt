@@ -27,7 +27,7 @@
     "ID"							"$ID"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"						"item_datadriven"
-    "AbilityTextureName"		    "triumviratus"
+    "AbilityTextureName"		    "ForaMon/triumviratus"
 
     "ItemQuality"					"epic"
     "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
