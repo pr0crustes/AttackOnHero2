@@ -21,7 +21,7 @@
     "ID"							"$ID"
     "BaseClass"                     "item_butterfly"
 
-    "AbilityTextureName"		    "ultimate_butterfly"
+    "AbilityTextureName"		    "ForaMon/ultimate_butterfly"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
