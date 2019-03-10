@@ -24,7 +24,7 @@
 {
     "ID"							"$ID"
     "BaseClass"						"item_datadriven"
-    "AbilityTextureName"		    "mana_staff_2"
+    "AbilityTextureName"		    "ForaMon/mana_staff_2"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
