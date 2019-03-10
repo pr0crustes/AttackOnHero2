@@ -61,6 +61,9 @@ function modifier_item_polarized_plate:OnTakeDamage(keys)
             if damage and damage > 0 and ability then
                 local damage_to_mana = ability:GetSpecialValueFor("damage_to_mana")
                 unit:GiveMana(damage * damage_to_mana * 0.01)
+
+                local particle = ParticleManager:CreateParticle("particles/custom/manasteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, unit)
+                ParticleManager:ReleaseParticleIndex(particle)
             end
         end
     end

@@ -9,6 +9,8 @@
 
     Renamed Ice Staff to Arcane Staff.
 
+    Added a nice particle to Polarized Plate.
+
     Sniper Fast Riffle: Attack time changed from "1.0 0.75 0.65" to "0.90 0.80 0.70"
 
     Replaced Jakiro 100 Agi talent with 25 spell amp.

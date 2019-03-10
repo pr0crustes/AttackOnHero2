@@ -11,7 +11,8 @@ function on_attack(keys)
 
     local mana_gain = damage * mana_steal_pct * 0.01
 
-    ParticleManager:CreateParticle("particles/custom/manasteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+    local particle = ParticleManager:CreateParticle("particles/custom/manasteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+    ParticleManager:ReleaseParticleIndex(particle)
 
     caster:GiveMana(mana_gain)
 end
