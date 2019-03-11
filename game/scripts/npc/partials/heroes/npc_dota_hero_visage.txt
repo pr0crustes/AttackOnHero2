@@ -1,6 +1,6 @@
 "npc_dota_hero_visage"
 {
-    "Ability1"		                "visage_grave_chill"
+    "Ability1"		                "visage_custom_imperfect_shield"
     "Ability2"		                "visage_soul_assumption"
     "Ability3"		                "visage_gravekeepers_cloak"
     "Ability4"		                "visage_stone_form_self_cast"

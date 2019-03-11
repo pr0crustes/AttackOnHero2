@@ -1,0 +1,10 @@
+"DOTA_Tooltip_ability_visage_custom_imperfect_shield"						"Imperfect Shield"
+"DOTA_Tooltip_ability_visage_custom_imperfect_shield_Description"			"Creates an imperfect shield to protect the target allie unit. While active, a percentage of all damage that unit takes will be blocked, at the cost of Visage's mana."
+"DOTA_Tooltip_ability_visage_custom_imperfect_shield_Lore"					"The warmth of the sun is never felt in the dark cold of the Narrow Maze."
+"DOTA_Tooltip_ability_visage_custom_imperfect_shield_duration"		        "DURATION:"
+"DOTA_Tooltip_ability_visage_custom_imperfect_shield_damage_transfer"		"%DAMAGE BLOCK:"
+
+
+"DOTA_Tooltip_modifier_visage_custom_imperfect_shield"                      "Imperfect Shield"
+"DOTA_Tooltip_modifier_visage_custom_imperfect_shield_Description"          "Taking less damage."
+
