@@ -1,0 +1,16 @@
+"lich_frost_shield"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_reduction"		"25 30 35 40"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage"				"50 100 150 200"
+        }
+    }
+}
