@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_visage_custom_spirit_teleport"						"Spirit Teleport"
+"DOTA_Tooltip_ability_visage_custom_spirit_teleport_Description"			"Visage throws an orb, targeting an ally. When the orb hits the unit, Visage is teleported to the unit, healing it."
+"DOTA_Tooltip_ability_visage_custom_spirit_teleport_Lore"					"The collected souls of the dead reach out to bring another into their fold."
+"DOTA_Tooltip_ability_visage_custom_spirit_teleport_range"		            "RANGE:"
+"DOTA_Tooltip_ability_visage_custom_spirit_teleport_heal"		            "HEAL:"
+
