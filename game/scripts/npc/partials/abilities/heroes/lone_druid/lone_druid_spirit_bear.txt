@@ -31,7 +31,7 @@
         "05"
         {
             "var_type"					"FIELD_FLOAT"
-            "backlash_damage"			"90.0"
+            "backlash_damage"			"50.0"
         }
         "06"
         {

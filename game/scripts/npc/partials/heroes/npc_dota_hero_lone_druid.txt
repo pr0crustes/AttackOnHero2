@@ -3,6 +3,5 @@
     "Ability3"		            "lone_druid_custom_bear_style"
     "Ability16"		            "special_bonus_agility_100"
 
-    "AttributeStrengthGain"		"1.500000"
-    "AttributeAgilityGain"		"1.200000"
+    "AttackRate"		        "2.000000"
 }
