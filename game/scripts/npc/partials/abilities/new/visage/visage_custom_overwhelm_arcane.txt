@@ -1,0 +1,29 @@
+"visage_custom_overwhelm_arcane"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/heroes/visage_custom_overwhelm_arcane.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"		    "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+    "AbilityType"				    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName"			"visage_grave_chill"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "int_multiplier"		"1.0 2.0 3.0"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_as_mana"		"100"
+        }
+    }
+}
