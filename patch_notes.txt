@@ -4,6 +4,8 @@
 
     New loading screen, special thanks to "ForaMon", who made it.
 
+    Reworked Visage.
+
     Lone Druid: Attack rate increased from "1.7" to "2.0", str gain increased from "1.5" to "2.4", agi gain increased from "1.2" to "2.8".
     Lone Druid Spirit Bear: Damage on bear death reduced from "90" to "50".
 
