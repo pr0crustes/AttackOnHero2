@@ -1,0 +1,15 @@
+"lich_frost_nova"
+{
+    "AbilityCooldown"				"7.0 6.8 6.4 6.0"
+
+    "AbilityDamage"					"100 200 300 400"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "aoe_damage"			"100 150 200 250"
+        }
+    }
+}
