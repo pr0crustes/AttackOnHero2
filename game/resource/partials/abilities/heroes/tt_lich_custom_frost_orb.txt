@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_lich_custom_frost_orb"                        "<font color='#70EA72'>Frost Orb</font>"
+"DOTA_Tooltip_ability_lich_custom_frost_orb_Description"		    "Releases an orb of frost that deals damage based on the caster intellect."
+"DOTA_Tooltip_ability_lich_custom_frost_orb_Lore"					"Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him."
+"DOTA_Tooltip_ability_lich_custom_frost_orb_damage"					"BASE DAMAGE:"
+"DOTA_Tooltip_ability_lich_custom_frost_orb_int_multiplier"			"INT MULTIPLIER:"
