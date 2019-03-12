@@ -35,7 +35,7 @@ if IsServer() then
         ApplyDamage({
             ability = self,
             attacker = caster,
-            damage = damage,
+            damage = base_damage + int_damage,
             damage_type = self:GetAbilityDamageType(),
             victim = target
         })
