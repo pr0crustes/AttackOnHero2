@@ -1,7 +1,7 @@
 "npc_dota_hero_lich"
 {
     "Ability3"		"lich_custom_frost_orb"
-    "Ability6"		"lich_custom_mime"
+    "Ability6"		"lich_custom_mimic"
 
     "Ability17"		"special_bonus_unique_lich_2"
 }

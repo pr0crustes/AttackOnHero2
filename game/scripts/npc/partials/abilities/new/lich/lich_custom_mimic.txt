@@ -1,0 +1,38 @@
+"lich_custom_mimic"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/lich_custom_mimic.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityTextureName"		    "lich_sinister_gaze"
+
+    "AbilityCastPoint"				"0.4"
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+    
+    "AbilityCooldown"				"60.0 50.0 40.0"
+
+    "AbilityManaCost"				"200 150 100"
+
+    "precache"
+    {
+        "particle"                  "particles/econ/items/crystal_maiden/crystal_maiden_cowl_of_ice/maiden_crystal_nova_cowlofice.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "delay"		            "5.0 3.0 1.0"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "max_distance"		    "1200 1400 1600"
+        }
+    }
+}
