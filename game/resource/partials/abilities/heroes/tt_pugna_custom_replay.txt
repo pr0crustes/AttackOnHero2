@@ -1,5 +1,5 @@
 "DOTA_Tooltip_Ability_pugna_custom_replay"						    "<font color='#70EA72'>Replay</font>"
-"DOTA_Tooltip_Ability_pugna_custom_replay_Description"			    "Pugna is able to recast abilities and items used by him, after a brief delay and paying the original spell mana cost."
+"DOTA_Tooltip_Ability_pugna_custom_replay_Description"			    "Pugna is able to recast abilities and items used by him, after a brief delay and paying the original spell mana cost.\n<font color='#F2A93E'>Replay is not affected by cooldown reduction.</font>"
 "DOTA_Tooltip_Ability_pugna_custom_replay_delay"                    "DELAY:"
 "DOTA_Tooltip_Ability_pugna_custom_replay_lore"				        "While at the lamasery for the Arts of Oblivion, Pugna learned to dominate Nether magic."
 
