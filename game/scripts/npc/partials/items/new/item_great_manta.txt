@@ -21,7 +21,7 @@
 {
     "ID"							"$ID"
     "BaseClass"                     "item_manta"
-    "AbilityTextureName"		    "great_manta"
+    "AbilityTextureName"		    "ForaMon/great_manta"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 

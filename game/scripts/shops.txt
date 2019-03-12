@@ -163,6 +163,7 @@
 		"item"		"item_sange"
  		"item"		"item_yasha"
  		"item"		"item_kaya"
+		"item"		"item_triumviratus"
 		"item"		"item_echo_sabre"	
  		"item"		"item_maelstrom"
  		"item"		"item_diffusal_blade"			

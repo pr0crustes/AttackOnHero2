@@ -73,7 +73,7 @@ modifier_item_dragon_scale_aura_buff = class({})
 
 
 function modifier_item_dragon_scale_aura_buff:GetTexture()
-    return "item_dragon_scale"
+    return "item_ForaMon/dragon_scale"
 end
 
 
