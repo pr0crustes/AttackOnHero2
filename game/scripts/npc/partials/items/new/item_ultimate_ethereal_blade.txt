@@ -21,7 +21,7 @@
 {
     "ID"							"$ID"
     "BaseClass"                     "item_ethereal_blade"
-    "AbilityTextureName"		    "ultimate_ethereal_blade"
+    "AbilityTextureName"		    "ForaMon/ultimate_ethereal_blade"
 
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
     "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"

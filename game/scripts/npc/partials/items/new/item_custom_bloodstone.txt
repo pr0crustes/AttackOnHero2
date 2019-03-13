@@ -26,7 +26,7 @@
 
     "AbilityBehavior"				    "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-    "AbilityTextureName"			    "ForaMon/custom_bloodstone"
+    "AbilityTextureName"			    "item_bloodstone"
 
     "ItemShopTags"					    "regen_health;regen_mana;mana_pool;health_pool"
     "ItemQuality"					    "epic"
