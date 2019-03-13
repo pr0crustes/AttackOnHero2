@@ -23,7 +23,7 @@
     "BaseClass"                     "item_aether_lens"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-    "AbilityTextureName"			"refined_aether_lens"
+    "AbilityTextureName"			"ForaMon/refined_aether_lens"
 
     "ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
     "ItemQuality"					"epic"
