@@ -23,7 +23,7 @@
     "BaseClass"                     "item_soul_ring"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
-    "AbilityTextureName"		    "soul_ring_3"
+    "AbilityTextureName"		    "ForaMon/soul_ring_3"
 
     "AbilityCooldown"				"12.0"
     "AbilitySharedCooldown"			"soul_ring"

@@ -23,7 +23,7 @@
     "ID"							"$ID"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "BaseClass"                     "item_monkey_king_bar"
-    "AbilityTextureName"		    "great_king_bar"
+    "AbilityTextureName"		    "ForaMon/great_king_bar"
 
     "ItemCost"						"9000"
     "ItemShopTags"					"damage;attack_speed;hard_to_tag"

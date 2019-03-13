@@ -24,7 +24,7 @@
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
     "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 
-    "AbilityTextureName"			"great_shivas_guard"
+    "AbilityTextureName"			"ForaMon/great_shivas_guard"
 
     "AbilityCooldown"				"30"
     "AbilityCastRange"				"900"
