@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_visage_custom_str_to_int"							"<font color='#70EA72'>Attribute Shift (Intelligence Gain)</font>"
+"DOTA_Tooltip_ability_visage_custom_str_to_int_Description"				"Visage shifts its form, pulling points from Strength and pouring them into Intelligence. The process is reversible."
+"DOTA_Tooltip_ability_visage_custom_str_to_int_Lore"					"Shifting water makes it difficult to discern the essence of death."
+"DOTA_Tooltip_ability_visage_custom_str_to_int_Note0"					"Can't convert stats from items."
+"DOTA_Tooltip_ability_visage_custom_str_to_int_stats_per_second"		"SHIFT RATE:"
+
+"DOTA_Tooltip_modifier_visage_custom_str_to_int"				        "Attribute Shift (Intelligence)"
+"DOTA_Tooltip_modifier_visage_custom_str_to_int_Description"	        "Gaining Intelligence at the cost of Strength"

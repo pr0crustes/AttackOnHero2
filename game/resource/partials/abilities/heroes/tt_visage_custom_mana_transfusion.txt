@@ -1,8 +1,0 @@
-"DOTA_Tooltip_ability_visage_custom_mana_transfusion"						"Mana Transfusion"
-"DOTA_Tooltip_ability_visage_custom_mana_transfusion_Description"			"Channels for up to 10 seconds, converting health to mana. The amount converted increases with your mana regen."
-"DOTA_Tooltip_ability_visage_custom_mana_transfusion_Lore"					"Visage's tough scales share equal properties of ghost and stone, making it nearly impervious to blade and magical assault."
-"DOTA_Tooltip_ability_visage_custom_mana_transfusion_base_mana"		        "BASE LIFE TO MANA:"
-
-
-"DOTA_Tooltip_modifier_visage_custom_mana_transfusion"                      "Mana Transfusion"
-"DOTA_Tooltip_modifier_visage_custom_mana_transfusion_Description"          "Restoring mana."

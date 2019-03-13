@@ -2,8 +2,8 @@
 {
     "Ability1"		                "visage_custom_imperfect_shield"
     "Ability2"		                "visage_custom_spirit_heal"
-    "Ability3"		                "visage_custom_life_transfusion"
-    "Ability4"		                "visage_custom_mana_transfusion"
+    "Ability3"		                "visage_custom_str_to_int"
+    "Ability4"		                "visage_custom_int_to_str"
     "Ability5"		                "generic_hidden"
     "Ability6"		                "visage_custom_overwhelm_arcane"
 

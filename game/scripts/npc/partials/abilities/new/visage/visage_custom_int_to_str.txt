@@ -1,0 +1,30 @@
+"visage_custom_int_to_str"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/visage_custom_int_to_str.lua"
+
+    "LinkedAbility"					"visage_custom_str_to_int"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+
+    "AbilityTextureName"		    "red_visage_gravekeepers_cloak"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_3"
+
+    "AbilityCooldown"			    "1.0"
+
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_morphling/morphling_morph_str.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "stats_per_second"		"2 5 10 20"
+        }
+    }
+}
