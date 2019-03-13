@@ -1,0 +1,6 @@
+"DOTA_Tooltip_ability_visage_custom_spirit_heal"						"Spirit Heal"
+"DOTA_Tooltip_ability_visage_custom_spirit_heal_Description"			"Visage throws an orb, that heals on hit."
+"DOTA_Tooltip_ability_visage_custom_spirit_heal_Lore"					"The collected souls of the dead reach out to bring another into their fold."
+"DOTA_Tooltip_ability_visage_custom_spirit_heal_range"		            "RANGE:"
+"DOTA_Tooltip_ability_visage_custom_spirit_heal_heal"		            "HEAL:"
+

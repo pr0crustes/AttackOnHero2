@@ -6,6 +6,8 @@
 
     New Worshop Logo, thanks to "ForaMon", who made it.
 
+    A few tweaks to Visage.
+
 
 
 2.1.8:

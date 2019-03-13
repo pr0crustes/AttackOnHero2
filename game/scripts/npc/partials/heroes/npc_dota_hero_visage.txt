@@ -1,7 +1,7 @@
 "npc_dota_hero_visage"
 {
     "Ability1"		                "visage_custom_imperfect_shield"
-    "Ability2"		                "visage_custom_spirit_teleport"
+    "Ability2"		                "visage_custom_spirit_heal"
     "Ability3"		                "visage_custom_life_transfusion"
     "Ability4"		                "visage_custom_mana_transfusion"
     "Ability5"		                "generic_hidden"

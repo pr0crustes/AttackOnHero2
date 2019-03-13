@@ -1,7 +1,7 @@
-"visage_custom_spirit_teleport"
+"visage_custom_spirit_heal"
 {
     "BaseClass"						"ability_lua"
-    "ScriptFile"					"abilities/heroes/visage_custom_spirit_teleport.lua"
+    "ScriptFile"					"abilities/heroes/visage_custom_spirit_heal.lua"
 
     "AbilityBehavior"			    "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"		    "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -19,9 +19,6 @@
     "precache"
     {
         "particle"                  "particles/units/heroes/hero_visage/visage_familiar_base_attack.vpcf"
-        "particle"                  "particles/units/heroes/hero_queenofpain/queen_blink_start.vpcf"
-        "particle"                  "particles/units/heroes/hero_queenofpain/queen_blink_end.vpcf"
-        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
         "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
     }
 
