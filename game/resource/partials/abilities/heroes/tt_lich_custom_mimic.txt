@@ -1,6 +1,0 @@
-"DOTA_Tooltip_ability_lich_custom_mimic"                        "<font color='#70EA72'>Mimic</font>"
-"DOTA_Tooltip_ability_lich_custom_mimic_Description"		    "Creates a Mini Lich at your current position that will repeat any ability you used. Max of one Mini Lich."
-"DOTA_Tooltip_ability_lich_custom_mimic_Lore"					"Mind the cold..."
-"DOTA_Tooltip_ability_lich_custom_mimic_damage"					"BASE DAMAGE:"
-"DOTA_Tooltip_ability_lich_custom_mimic_delay"			        "DELAY:"
-"DOTA_Tooltip_ability_lich_custom_mimic_max_distance"			"MAX DISTANCE FROM CASTER:"

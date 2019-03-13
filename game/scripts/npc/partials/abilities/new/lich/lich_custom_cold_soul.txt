@@ -1,0 +1,20 @@
+"lich_custom_cold_soul"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/lich_custom_cold_soul.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityTextureName"		    "lich_sinister_gaze"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "spell_amp"		        "50 100 150"
+        }
+    }
+}

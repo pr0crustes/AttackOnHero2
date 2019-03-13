@@ -1,4 +1,13 @@
 
+2.1.9:
+    With this update:
+
+    Fixed Lich.
+
+    New Worshop Logo, thanks to "ForaMon", who made it.
+
+
+
 2.1.8:
     With this update:
 

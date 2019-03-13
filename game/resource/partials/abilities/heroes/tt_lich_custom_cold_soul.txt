@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_lich_custom_cold_soul"                        "<font color='#70EA72'>Cold Soul</font>"
+"DOTA_Tooltip_ability_lich_custom_cold_soul_Description"		    "Passively increases your spell amp."
+"DOTA_Tooltip_ability_lich_custom_cold_soul_Lore"					"Almost universally considered the ultimate in frost magic, Ethreain's orb of frozen death strikes fear into those who dare stand against him."
+"DOTA_Tooltip_ability_lich_custom_cold_soul_spell_amp"			    "%SPELL AMP:"
