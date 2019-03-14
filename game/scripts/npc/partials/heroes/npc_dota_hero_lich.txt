@@ -3,5 +3,5 @@
     "Ability3"		"lich_custom_frost_orb"
     "Ability6"		"lich_custom_cold_soul"
 
-    "Ability17"		"special_bonus_unique_lich_2"
+    "Ability17"		"special_bonus_cooldown_reduction_15"
 }

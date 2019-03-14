@@ -1,4 +1,14 @@
 
+
+2.2.0:
+    With this update:
+
+    Replaced LVL 25 lich talent.
+
+
+
+
+
 2.1.9:
     With this update:
 
