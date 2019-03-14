@@ -1,4 +1,4 @@
-"DOTA_Tooltip_ability_visage_custom_overwhelm_arcane"						"Overwhelm Arcane"
+"DOTA_Tooltip_ability_visage_custom_overwhelm_arcane"						"<font color='#70EA72'>Overwhelm Arcane</font>"
 "DOTA_Tooltip_ability_visage_custom_overwhelm_arcane_Description"			"Visage attacks deal extra magic damage based on his intelligence and restore mana proportional to the damage dealt."
 "DOTA_Tooltip_ability_visage_custom_overwhelm_arcane_Lore"					"Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain."
 "DOTA_Tooltip_ability_visage_custom_overwhelm_arcane_int_multiplier"		"DAMAGE PER INT:"
