@@ -7,6 +7,8 @@
 
     Silencer Read a Book: Multiplier increased from "1.0 1.5 2.0" to "1.0 2.0 3.0".
 
+    Replaced Enigma Talents.
+
 
 
 2.1.9:
