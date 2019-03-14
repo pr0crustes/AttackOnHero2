@@ -17,7 +17,7 @@
         "01"
         {
             "var_type"				"FIELD_FLOAT"
-            "multiplier"      		"1.0 1.5 2.0"
+            "multiplier"      		"1.0 2.0 3.0"
         }
         "02"
         {
