@@ -9,7 +9,7 @@
 
     Templar Assassin Refraction: Now increases dealt damage.
 
-
+    Reworked Medusa R.
 
 
 2.2.0:
