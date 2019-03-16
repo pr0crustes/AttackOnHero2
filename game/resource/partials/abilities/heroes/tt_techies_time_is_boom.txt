@@ -1,0 +1,5 @@
+"DOTA_Tooltip_ability_techies_time_is_boom"									"<font color='#70EA72'>Time Is Boom</font>"
+"DOTA_Tooltip_ability_techies_time_is_boom_Description"						"Passively reduces your cooldowns based on your level."
+"DOTA_Tooltip_ability_techies_time_is_boom_Lore"							"Where we going?"
+"DOTA_Tooltip_ability_techies_time_is_boom_base_cooldown_red"			    "%BASE REDUCTION:"
+"DOTA_Tooltip_ability_techies_time_is_boom_level_cooldown_red"				"%REDUCTION PER HERO LEVEL:"

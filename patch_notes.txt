@@ -5,7 +5,7 @@
 
     Lich Could Soul: Spell amp reduced from "50 100 150" to "40 70 100".
 
-
+    Techies - Reworked E.
 
 
 

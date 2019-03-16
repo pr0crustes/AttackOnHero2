@@ -1,0 +1,10 @@
+"npc_dota_hero_techies"
+{
+    "Ability1"		"techies_land_mines"
+    "Ability2"		"techies_stasis_trap"
+    "Ability3"		"techies_time_is_boom"
+    "Ability4"		"techies_focused_detonate"
+    "Ability5"		"generic_hidden"
+    "Ability6"		"techies_remote_mines"
+    "Ability12"		"special_bonus_hp_200"
+}

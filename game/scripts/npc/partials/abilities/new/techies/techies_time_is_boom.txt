@@ -1,0 +1,23 @@
+"techies_time_is_boom"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/techies_time_is_boom.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityTextureName"		    "techies_suicide"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "base_cooldown_red"		"5 6 8 10"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "level_cooldown_red"	"0.0 0.2 0.4 0.6"
+        }
+    }
+}
