@@ -27,7 +27,7 @@
     "ItemQuality"					"artifact"
     "ItemAliases"					"dragon lance"
 
-    "AbilityTextureName"			"dragon_lance_2"
+    "AbilityTextureName"			"ForaMon/dragon_lance_2"
 
     "MaxUpgradeLevel"               "2"
     "ItemBaseLevel"                 "2"
