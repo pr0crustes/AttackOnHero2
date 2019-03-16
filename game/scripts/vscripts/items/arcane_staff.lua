@@ -87,9 +87,6 @@ function arcane_staff_calculate_crit(damageTable)
                                     })
 
                                     attacker:SpendMana(mana_cost, item)
-                
-                                    local fx1 = ParticleManager:CreateParticle("particles/econ/items/rubick/rubick_arcana/rbck_arc_skywrath_mage_mystic_flare_sparks.vpcf", PATTACH_ABSORIGIN_FOLLOW, attacker)
-                                    ParticleManager:ReleaseParticleIndex(fx1)
                                 end 
                             end
                         end
