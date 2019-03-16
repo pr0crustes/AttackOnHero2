@@ -26,6 +26,11 @@
         }
         "02"
         {
+            "var_type"				"FIELD_INTEGER"
+            "damage_bonus"		    "10 15 20 25"
+        }
+        "03"
+        {
             "var_type"				"FIELD_FLOAT"
             "duration"				"7.0"
         }
@@ -66,6 +71,7 @@
             "Properties"
             {
                 "MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"%damage_reduction"
+                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"       "%damage_bonus"
             }
         }
     }
