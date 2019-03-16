@@ -1,0 +1,30 @@
+"medusa_custom_stone_arrows"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/medusa_custom_stone_arrows.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+
+    "AbilityTextureName"		    "medusa_stone_gaze"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "extra_damage"		    "100 200 300"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "attack_speed_loss"     "-50 -75 -100"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "move_speed_loss"       "-10 -20 -30"
+        }
+    }
+}

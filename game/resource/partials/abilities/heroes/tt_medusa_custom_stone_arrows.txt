@@ -1,0 +1,6 @@
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows"						"<font color='#70EA72'>Stone Arrows</font>"
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows_Description"			"Medusa upgrades her arrows, increasing her base damage but loosing attack speed and move speed."
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows_Lore"				    "The beauty of Medusa is legendary."
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows_extra_damage"		    "BONUS DAMAGE:"
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows_attack_speed_loss"		"ATTACK SPEED LOSS:"
+"DOTA_Tooltip_Ability_medusa_custom_stone_arrows_move_speed_loss"		"MOVE SPEED LOSS:"
