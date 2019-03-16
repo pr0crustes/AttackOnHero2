@@ -1,0 +1,4 @@
+"earthshaker_aftershock"
+{
+    "AbilityDamage"					"75 100 225 350"
+}

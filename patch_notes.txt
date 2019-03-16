@@ -13,6 +13,11 @@
 
     Skywrath Mage Inteligence Bonus: int bonus increased from "30 60 100" to "40 80 120".
 
+    Earthshaker Fissure: Damage increased from "110 160 210 260" to "110 260 310 460".
+    Earthshaker Enchant Totem: Damage increased from "300 400 500 600" to "300 400 500 700".
+    Earthshaker Aftershock: Damage increased from "75 100 125 150" to "75 100 225 350".
+    Earthshaker Echo Slam: Cooldown reduced from "150.0 130.0 110.0" to "70.0 60.0 50.0", damage increased from "70 90 110" to "100 140 180".
+
 
 
 2.1.9:

@@ -1,0 +1,14 @@
+"earthshaker_echo_slam"
+{
+    "AbilityCooldown"				"70.0 60.0 50.0"
+
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "echo_slam_echo_damage"		"100 140 180"
+            "LinkedSpecialBonus"		"special_bonus_unique_earthshaker_2"
+        }
+    }
+}

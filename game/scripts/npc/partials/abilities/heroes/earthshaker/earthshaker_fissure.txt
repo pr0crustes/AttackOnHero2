@@ -1,0 +1,4 @@
+"earthshaker_fissure"
+{
+    "AbilityDamage"					"110 260 310 460"
+}
