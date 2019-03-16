@@ -10,7 +10,7 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "inteligence_bonus"		"30 60 100"
+            "inteligence_bonus"		"40 80 120"
         }
     }
     

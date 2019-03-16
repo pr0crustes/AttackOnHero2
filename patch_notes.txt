@@ -11,6 +11,8 @@
 
     Centaur Return: Now has a "0.3" cooldown.
 
+    Skywrath Mage Inteligence Bonus: int bonus increased from "30 60 100" to "40 80 120".
+
 
 
 2.1.9:
