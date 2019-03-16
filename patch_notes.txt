@@ -9,6 +9,8 @@
 
     Replaced Enigma Talents.
 
+    Centaur Return: Now has a "0.3" cooldown.
+
 
 
 2.1.9:
