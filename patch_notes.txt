@@ -17,6 +17,8 @@
     Earthshaker Enchant Totem: Damage increased from "300 400 500 600" to "300 400 500 700".
     Earthshaker Aftershock: Damage increased from "75 100 125 150" to "75 100 225 350".
     Earthshaker Echo Slam: Cooldown reduced from "150.0 130.0 110.0" to "70.0 60.0 50.0", damage increased from "70 90 110" to "100 140 180".
+    
+    Night Stalker Hunter in the Night: Attack speed increased from "50 100 200 300" to "100 200 300 400".
 
 
 
