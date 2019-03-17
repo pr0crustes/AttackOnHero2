@@ -1,6 +1,6 @@
 
 2.2.3:
-    With this update:
+    HOTFIX
 
     Tomes and Speed Orb cost reduced by 100.
     Fixed multiples bugs involving Tomes and Speed Orb.
