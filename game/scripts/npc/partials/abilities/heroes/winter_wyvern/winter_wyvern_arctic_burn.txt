@@ -5,7 +5,7 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "attack_range_bonus"	"350 750 1050 1550"
+            "attack_range_bonus"	"350 400 600 750"
         }
         "03"
         {
