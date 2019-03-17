@@ -21,7 +21,7 @@
     "ID"							"$ID"
     "BaseClass"                     "item_skadi"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "dark_skadi"
+    "AbilityTextureName"            "ForaMon/dark_skadi"
 
     "ItemShopTags"					"agi;str;int;hard_to_tag;mana_pool;health_pool;unique"
     "ItemQuality"					"artifact"
