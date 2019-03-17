@@ -1,0 +1,11 @@
+"medusa_mana_shield"
+{
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "damage_per_mana"		"1.5 2.0 3.0 3.5"
+        }
+    }
+}
