@@ -5,11 +5,16 @@
     
     "AbilityTextureName"		    "speed_orb"
 
-    "ItemCost"						"800"	
+    "ItemCost"						"700"	
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "ItemShopTags"					"move_speed"
-    "ItemQuality"					"common"
     "ItemAliases"					"speed"
+
+    "ItemShopTags"					"consumable"
+    "ItemQuality"					"consumable"
+    "ItemStackable"					"1"
+    "ItemPermanent"					"0"
+    "ItemInitialCharges"			"1"
+    "IsTempestDoubleClonable"		"0"
 
     "AbilitySpecial"
     {			
@@ -20,7 +25,6 @@
         }
     }
 
-    "ItemCastOnPickup"				"1"
     "OnSpellStart"
     {
         "RunScript"
@@ -28,11 +32,6 @@
             "ScriptFile"			"items/consumables.lua"
             "Function"				"item_consumable_used"
             "modifier"              "modifier_item_speed_orb_consumed"
-        }
-        "FireSound"
-        {
-            "EffectName"			"DOTA_Item.MoonShard.Consume"
-            "Target"				"CASTER"
         }
     }
 
