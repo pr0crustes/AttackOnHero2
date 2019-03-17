@@ -1,0 +1,16 @@
+"chaos_knight_phantasm"
+{
+    "AbilitySpecial"
+    {
+        "05"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "incoming_damage"			"50"
+        }
+        "06"
+        {
+            "var_type"					"FIELD_INTEGER"
+            "incoming_damage_tooltip"	"150"
+        }	
+    }
+}

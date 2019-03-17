@@ -1,0 +1,4 @@
+"chaos_knight_chaos_strike"
+{
+    "AbilityCooldown"				"4 3.7 3.4 3.0"
+}

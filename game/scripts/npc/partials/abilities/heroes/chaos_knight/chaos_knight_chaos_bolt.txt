@@ -1,0 +1,16 @@
+"chaos_knight_chaos_bolt"
+{
+    "AbilitySpecial"
+    {
+        "04"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_min"			"60 90 120 150"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "damage_max"			"180 250 320 390"
+        }
+    }
+}
