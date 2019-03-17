@@ -11,6 +11,8 @@
 
     Ultimate Rapier: Damage increased from "400" to "430".
 
+    Ember Spirit Sleight Of Fist: Now deals MORE damage to bosses.
+
     Medusa Mana Shield: Damage Per Mana increased from "1.6 1.9 2.2 2.5" to "1.5 2.0 3.0 3.5".
 
     Reworked Antimage Mana Break.
