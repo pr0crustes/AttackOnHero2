@@ -5,6 +5,8 @@
     Tomes and Speed Orb cost reduced by 100.
     Fixed multiples bugs involving Tomes and Speed Orb.
 
+    Morphiling Adaptative Strike Agi: Cooldown reduced from "10" to "11 10 9 8".
+
 
 
 2.2.2:
