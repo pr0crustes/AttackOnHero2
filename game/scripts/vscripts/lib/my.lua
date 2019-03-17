@@ -7,13 +7,6 @@ function debug_print(a)
 end
 
 
-function debug_start_at_round(rounds, startAt)
-	for i = 1, startAt - 1 do
-		table.remove(rounds, 1)
-	end
-end
-
-
 function value_if_scepter(caster, ifYes, ifNot)
 	if caster:HasScepter() then
 		return ifYes
@@ -43,23 +36,6 @@ function decrease_modifier(caster, target, modifier)
 			target:RemoveModifierByName(modifier)
 		end
 	end
-end
-
-
-function increase_lua_modifier(caster, target, modifier)
-	if target:HasModifier(modifier) then
-		local newCount = target:GetModifierStackCount(modifier, caster) + 1
-        target:SetModifierStackCount(modifier, caster, newCount)
-	else
-		target:AddNewModifier(caster, nil, modifier, {})
-		target:SetModifierStackCount(modifier, caster, 1)
-    end
-end
-
-
-function consumable_used(caster, item, modifier)
-	increase_modifier(caster, caster, item, modifier)
-    caster:RemoveItem(item)
 end
 
 
