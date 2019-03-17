@@ -141,8 +141,8 @@
 		//"item"		"item_lesser_crit"	
 		"item"		"item_armlet"
 		"item"		"item_meteor_hammer"	
-		"item"		"item_invis_sword"
-		"item"		"item_basher"	
+		//"item"		"item_invis_sword"
+		//"item"		"item_basher"	
 		"item"		"item_monkey_king_bar" 	
 		//"item"		"item_bfury"
 		"item"		"item_ethereal_blade"
@@ -154,6 +154,7 @@
 		"item"		"item_abyssal_blade"	
 		"item"		"item_bloodthorn"
 		"item"		"item_vampiric_blade"
+		"item"		"item_broken_bow"
 	}
 		
 	// Level 4 - Orange / Orb / Artifacts				
