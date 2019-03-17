@@ -51,8 +51,8 @@
 
     "StatusHealth"				"5500"
     "StatusHealthRegen"			"3"
-    "StatusMana"				"575"
-    "StatusManaRegen"			"4"
+    "StatusMana"				"875"
+    "StatusManaRegen"			"20"
 
     "TeamName"					"DOTA_TEAM_BADGUYS"
     "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"

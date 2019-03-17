@@ -8,6 +8,8 @@
 
     Reworked Antimage Mana Break.
 
+    All bosses now have mana.
+
 
 2.2.1:
     With this update:

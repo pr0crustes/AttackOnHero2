@@ -37,7 +37,7 @@
     "MovementTurnRate"			"0.001"
     "StatusHealth"				"30000"
     "StatusHealthRegen"			"2"
-    "StatusMana"				"3000"
+    "StatusMana"				"2000"
     "StatusManaRegen"			"20"
     "VisionDaytimeRange"		"1400"
     "VisionNighttimeRange"		"1400"

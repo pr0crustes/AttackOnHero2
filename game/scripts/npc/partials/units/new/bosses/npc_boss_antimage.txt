@@ -46,7 +46,7 @@
     "MovementTurnRate"			"0.5"
     "StatusHealth"				"340000"
     "StatusHealthRegen"			"50"
-    "StatusMana"				"3000"
+    "StatusMana"				"5000"
     "StatusManaRegen"			"3000"
     "TeamName"					"DOTA_TEAM_BADGUYS"
     "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"

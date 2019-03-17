@@ -35,7 +35,7 @@
     "MovementSpeed"                         "320"
     "StatusHealth"                          "3000"
     "StatusHealthRegen"                     "6"
-    "StatusMana"                            "100"
+    "StatusMana"                            "400"
     "StatusManaRegen"                       "10"
     "VisionDaytimeRange"            		"1600"
     "VisionNighttimeRange"          		"1600"
