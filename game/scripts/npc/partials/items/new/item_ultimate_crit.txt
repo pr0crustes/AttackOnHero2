@@ -47,7 +47,7 @@
         "03"
         {
             "var_type"				"FIELD_INTEGER"
-            "crit_multiplier"		"235 300"
+            "crit_multiplier"		"235 320"
         }
         "04"
         {

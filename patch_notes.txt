@@ -7,6 +7,8 @@
 
     Polarized Plate: Damage to mana increased from "10" to "15", mana and health increased from "425" to "500".
 
+    Ultimate Daedalus: Crit damage increased from "300" to "320".
+
     Ultimate Rapier: Damage increased from "400" to "430".
 
     Medusa Mana Shield: Damage Per Mana increased from "1.6 1.9 2.2 2.5" to "1.5 2.0 3.0 3.5".
