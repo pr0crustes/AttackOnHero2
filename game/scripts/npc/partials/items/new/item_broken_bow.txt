@@ -1,0 +1,66 @@
+"item_recipe_broken_bow"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_datadriven"
+    "Model"							"models/props_gameplay/recipe.mdl"
+    "AbilityTextureName"			"custom_recipe"
+
+    "ItemCost"						"400"
+    "ItemShopTags"					""
+
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_broken_bow"
+
+    "ItemRequirements"
+    {
+        "01"						"item_yasha;item_oblivion_staff;item_oblivion_staff"
+    }
+}
+
+
+
+"item_broken_bow"
+{
+    "ID"							"$ID"
+    "BaseClass"						"item_lua"
+    "ScriptFile"                    "items/broken_bow.lua"
+
+    "AbilityTextureName"		    "ForaMon/broken_bow"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "ItemShopTags"					"damage;attack speed"
+    "ItemQuality"					"common"
+    "ItemAliases"					"broken sword"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "bonus_agility"			        "26"
+        }
+        "02"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "bonus_int"	                    "20"
+        }
+        "03"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "bonus_attack_speed"	        "30"
+        }
+        "04"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "movement_speed_bonus"	        "20"
+        }
+        "05"
+        {
+            "var_type"				        "FIELD_INTEGER"
+            "attacks_needed"	            "5"
+        }
+    }
+}

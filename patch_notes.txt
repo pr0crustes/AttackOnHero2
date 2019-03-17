@@ -1,4 +1,10 @@
 
+2.2.2:
+    With this update:
+
+    New Item: Broken Bow.
+
+
 
 2.2.1:
     With this update:

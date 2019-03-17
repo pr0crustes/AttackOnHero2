@@ -1,0 +1,7 @@
+"DOTA_Tooltip_Ability_item_broken_bow"                              "Broken Bow"
+"DOTA_Tooltip_Ability_item_broken_bow_Description"			        "<h1>Passive: Ghost Attack</h1> After %attacks_needed% <font color='#800000'>RANGED</font> attacks, launches an additional attack."
+"DOTA_Tooltip_Ability_item_broken_bow_Lore"				            "A broken bow, still operational."
+"DOTA_Tooltip_Ability_item_broken_bow_bonus_agility"		        "+$agi"
+"DOTA_Tooltip_Ability_item_broken_bow_bonus_int"		            "+$int"
+"DOTA_Tooltip_Ability_item_broken_bow_bonus_attack_speed"		    "+$attack"
+"DOTA_Tooltip_Ability_item_broken_bow_movement_speed_bonus"		    "+$move_speed"
