@@ -1,0 +1,29 @@
+"antimage_custom_mana_break"
+{
+    "BaseClass"             		"ability_lua"
+    "ScriptFile"             		"abilities/heroes/antimage_custom_mana_break.lua"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"			"antimage_mana_break"
+    "HasInnateModifiers"			"1"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_burn_as_damage"   "100"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "mana_per_hit"			"20 40 60 80"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "mana_pct"			    "1.0 2.0 3.0 4.0"
+        }
+    }
+}

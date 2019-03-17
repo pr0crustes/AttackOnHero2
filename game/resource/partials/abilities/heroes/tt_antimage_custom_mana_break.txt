@@ -1,0 +1,7 @@
+"DOTA_Tooltip_ability_antimage_custom_mana_break"						"<font color='#70EA72'>Mana Break</font>"
+"DOTA_Tooltip_ability_antimage_custom_mana_break_Description"			"Burns an opponent's mana on each attack.  Mana Break deals %mana_burn_as_damage%%%  of the mana burned as damage to the target."
+"DOTA_Tooltip_ability_antimage_custom_mana_break_Lore"					"A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner."
+"DOTA_Tooltip_ability_antimage_custom_mana_break_Note0"					"Mana Burn is blocked by spell immunity."
+"DOTA_Tooltip_ability_antimage_custom_mana_break_Note1"					"You can lifeleech the damage dealt by this skill with a Lifesteal aura."
+"DOTA_Tooltip_ability_antimage_custom_mana_break_mana_per_hit"			"MANA BURNED PER HIT:"
+"DOTA_Tooltip_ability_antimage_custom_mana_break_mana_pct"				"%MANA BURN PERCENTAGE:"
