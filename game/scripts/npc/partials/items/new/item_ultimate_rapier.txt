@@ -36,7 +36,7 @@
 
     "ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 
-    "MaxUpgradeLevel"           "2"
+    "MaxUpgradeLevel"           "3"
     "ItemBaseLevel"             "2"
 
     "AbilitySpecial"
@@ -44,7 +44,7 @@
         "01"
         {
             "var_type"			"FIELD_INTEGER"
-            "bonus_damage"		"200 400"
+            "bonus_damage"		"200 430 1000"
         }
     }
 
