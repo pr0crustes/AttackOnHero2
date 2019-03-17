@@ -17,6 +17,8 @@
 
     All bosses now have mana.
 
+    Fixed Loading screen.
+
 
 2.2.1:
     With this update:
