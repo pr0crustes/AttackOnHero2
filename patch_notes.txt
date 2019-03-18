@@ -4,6 +4,7 @@
 
     Night Stalker Crippling Fear: Day duration reduced from "3.0" to "2.0", night duration reduced from "5.0 6.0 7.0 8.0" to "2.0 3.0 4.0 5.0".
 
+    Viper Poison Wound: Damage pct increased from "10 20 30 40" to "20 40 60 80".
 
 
 
