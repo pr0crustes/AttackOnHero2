@@ -1,4 +1,12 @@
 
+2.2.4:
+    With this update:
+
+    Night Stalker Crippling Fear: Day duration reduced from "3.0" to "2.0", night duration reduced from "5.0 6.0 7.0 8.0" to "2.0 3.0 4.0 5.0".
+
+
+
+
 2.2.3:
     HOTFIX
 
