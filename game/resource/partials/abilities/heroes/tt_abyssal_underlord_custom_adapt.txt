@@ -1,0 +1,7 @@
+"DOTA_Tooltip_ability_abyssal_underlord_custom_adapt"						"<font color='#70EA72'>Adapt</font>"
+"DOTA_Tooltip_ability_abyssal_underlord_custom_adapt_Description"			"Abyssal Underlord learns with battle, permanently increasing all his attributes by %stats%."
+"DOTA_Tooltip_ability_abyssal_underlord_custom_adapt_Lore"					"Abysall Underlord can bend reality at will."
+
+
+"DOTA_Tooltip_modifier_abyssal_underlord_custom_adapt"                        "Adapt"
+"DOTA_Tooltip_modifier_abyssal_underlord_custom_adapt_Description"            "Attributes increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."

@@ -1,0 +1,68 @@
+"abyssal_underlord_custom_adapt"
+{
+    "BaseClass"						"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityTextureName" 			"abyssal_underlord_dark_rift"
+
+    "AbilityCastPoint"				"0.0"
+
+    "AbilityCooldown"				"55.0"
+
+    "AbilityManaCost"				"150"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "stats"	                "1 2 3"
+        }
+    }
+    
+    "precache"
+    {
+        "particle"                  "particles/units/heroes/hero_legion_commander/legion_commander_duel_winner_rays.vpcf"
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"		    "abilities/other/modify_hud_modifier.lua"
+            "Function"			    "increate_hud_modifier_by_amount"
+            "modifier"              "modifier_abyssal_underlord_custom_adapt"
+            "count"                 "%stats"
+        }
+
+        "FireEffect"
+        {
+            "Target"      		    "CASTER"
+            "EffectName"		    "particles/units/heroes/hero_legion_commander/legion_commander_duel_winner_rays.vpcf"
+            "EffectAttachType"		"follow_origin"
+        }
+
+        "FireSound"
+        {
+            "Target"				"CASTER"
+            "EffectName"			"Hero_AbyssalUnderlord.DarkRift.Complete"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_abyssal_underlord_custom_adapt"
+        {
+            "IsBuff"                "1"
+            "IsPurgable"			"0"
+            "Attributes"            "MODIFIER_ATTRIBUTE_PERMANENT"
+
+            "Properties" 
+            {
+                "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"        "1"
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"         "1"
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"       "1"
+            }
+        }
+    }
+}
