@@ -1,7 +1,9 @@
 "npc_dota_hero_tiny"
 {
     "Ability2"                  "tiny_custom_toss"
+    "Ability15"		            "special_bonus_cooldown_reduction_15"
     "Ability16"		            "special_bonus_armor_20"
+    "Ability17"		            "special_bonus_attack_damage_120"
 
     "AttributeBaseAgility"		"10"
     "AttributeAgilityGain"		"1.0"
