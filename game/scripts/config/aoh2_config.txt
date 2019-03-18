@@ -56,7 +56,7 @@
 		"1" // Death Prophet	
 		{
 			"Title"						"Moth"
-			"MaxGold"					"2800"
+			"MaxGold"					"3200"
 			"BagCount"					"1"
 			"BagVariance"				"50"
 			"FixedXP"					"2500"
@@ -73,7 +73,7 @@
 		"2" // Kobolds
 		{
 			"Title"						"Devils"
-			"MaxGold"					"5400"
+			"MaxGold"					"3700"
 			"BagCount"					"30"
 			"BagVariance"				"0"
 			"FixedXP"					"3400"
@@ -178,7 +178,7 @@
 		"4" // Undying
 		{
 			"Title"						"Undead"
-			"MaxGold"					"4000"
+			"MaxGold"					"4600"
 			"BagCount"					"20"
 			"BagVariance"				"75"
 			"FixedXP"					"2500"
@@ -204,7 +204,7 @@
 		"5" // Chaos Knight And Faceless Void
 		{
 			"Title"						"Other World"
-			"MaxGold"					"5200"
+			"MaxGold"					"5500"
 			"BagCount"					"6"
 			"BagVariance"				"20"
 			"FixedXP"					"4500"
@@ -229,7 +229,7 @@
 		"6" // Axe
 		{
 			"Title"						"Mogul Khan"
-			"MaxGold"					"3500"
+			"MaxGold"					"4000"
 			"BagCount"					"1"
 			"BagVariance"				"25"
 			"FixedXP"					"3000"
@@ -245,7 +245,7 @@
 		"7" // Witch Doctor
 		{
 			"Title"						"Dark Magic"
-			"MaxGold"					"3600" 
+			"MaxGold"					"4000" 
 			"BagCount"					"1"
 			"BagVariance"				"25"
 			"FixedXP"					"3000"
@@ -261,7 +261,7 @@
 		"8" // Grimstroke
 		{
 			"Title"						"Ink"
-			"MaxGold"					"4000"
+			"MaxGold"					"4400"
 			"BagCount"					"1"
 			"BagVariance"				"100"
 			"FixedXP"					"3400"	
@@ -278,7 +278,7 @@
 		"9" // Ursa
 		{
 			"Title"						"Scars"
-			"MaxGold"					"4200"
+			"MaxGold"					"4400"
 			"BagCount"					"1"
 			"BagVariance"				"0"
 			"FixedXP"					"3500"
@@ -295,7 +295,7 @@
 		"10" // Bristle
 		{
 			"Title"						"Die Trying"
-			"MaxGold"					"4550"
+			"MaxGold"					"4700"
 			"BagCount"					"10"
 			"BagVariance"				"40"
 			"FixedXP"					"4100"
@@ -335,7 +335,7 @@
 		"11" // Luna
 		{
 			"Title"						"Nightfall"
-			"MaxGold"					"4200"
+			"MaxGold"					"4400"
 			"BagCount"					"1"
 			"BagVariance"				"20"
 			"FixedXP"					"4200"
@@ -352,7 +352,7 @@
 		"12" // Tiny
 		{
 			"Title"						"Ignoring You"
-			"MaxGold"					"4400"
+			"MaxGold"					"4600"
 			"BagCount"					"5"
 			"BagVariance"				"20"
 			"FixedXP"					"4200"
@@ -377,7 +377,7 @@
 		"13" // Sea Creatures
 		{
 			"Title"						"Respect The Sea"
-			"MaxGold"					"4500"
+			"MaxGold"					"4700"
 			"BagCount"					"13"
 			"BagVariance"				"30"
 			"FixedXP"					"4300"
@@ -404,7 +404,7 @@
 		"14" // Bloodseeker
 		{
 			"Title"						"Blood"
-			"MaxGold"					"4400"
+			"MaxGold"					"4600"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"4400"
@@ -421,7 +421,7 @@
 		"15" // Sven
 		{
 			"Title"						"Outcast Blade"
-			"MaxGold"					"4600"
+			"MaxGold"					"4800"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"4600"
@@ -438,7 +438,7 @@
 		"16" // Troll
 		{
 			"Title"						"Jah'rakal"
-			"MaxGold"					"4144"
+			"MaxGold"					"4700"
 			"BagCount"					"9"
 			"BagVariance"				"00"
 			"FixedXP"					"4444"
@@ -455,7 +455,7 @@
 		"17" // Enigma 
 		{
 			"Title"						"Consumer of Worlds"
-			"MaxGold"					"4000"
+			"MaxGold"					"4500"
 			"BagCount"					"1"
 			"BagVariance"				"0"
 			"FixedXP"					"5700"
@@ -472,7 +472,7 @@
 		"18" // Razor
 		{
 			"Title"						"Narrow Maze"
-			"MaxGold"					"4500"
+			"MaxGold"					"4700"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"4000"
@@ -506,7 +506,7 @@
 		"20" // Lycan
 		{
 			"Title"						"Wolf"
-			"MaxGold"					"5500"
+			"MaxGold"					"5700"
 			"BagCount"					"1"
 			"BagVariance"				"20"
 			"FixedXP"					"5000"
@@ -523,7 +523,7 @@
 		"21" // Doom
 		{
 			"Title"						"Doom"
-			"MaxGold"					"5600"
+			"MaxGold"					"5800"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"5300"
@@ -540,7 +540,7 @@
 		"22" // Kunkka
 		{
 			"Title"						"Sunken Isles"
-			"MaxGold"					"5800"
+			"MaxGold"					"5900"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"5000"
@@ -557,7 +557,7 @@
 		"23" // Vengeful
 		{
 			"Title"						"Revenge"
-			"MaxGold"					"6000"
+			"MaxGold"					"6100"
 			"BagCount"					"1"
 			"BagVariance"				"0"
 			"FixedXP"					"5100"
@@ -574,7 +574,7 @@
 		"24" // Crystal Maiden
 		{
 			"Title"						"Freeze"
-			"MaxGold"					"6500"
+			"MaxGold"					"6200"
 			"BagCount"					"1"
 			"BagVariance"				"30"
 			"FixedXP"					"6000"

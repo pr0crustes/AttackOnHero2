@@ -11,6 +11,8 @@
 
     End game screen no longer shows Networth.
 
+    Increased wave gold reward by 10%.
+
 
 
 2.2.3:
