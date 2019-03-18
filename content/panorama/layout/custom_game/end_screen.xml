@@ -20,10 +20,6 @@
 					<Label class="LegendPanel DeathsColumn" text="#dota_page_match_details_legend_deaths" onmouseover="UIShowTextTooltipStyled( #dota_page_match_details_legend_deaths_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
 					<Label class="LegendPanel SavesColumn" text="#end_screen_legend_saves" onmouseover="UIShowTextTooltipStyled( #end_screen_legend_saves_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
 					<Label class="LegendPanel GoldBagsColumn" text="#end_screen_legend_gold_bags" onmouseover="UIShowTextTooltipStyled( #end_screen_legend_gold_bags_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
-					<Panel class="LegendPanel NetWorthColumn LeftRightFlow" onmouseover="UIShowTextTooltipStyled( #dota_page_match_details_legend_net_worth_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()">
-						<Panel class="GoldIcon"/>
-						<Label class="LegendGold" text="#dota_page_match_details_legend_net_worth" />
-					</Panel>
 
 					<Label class="LegendPanel ItemsColumn" text="#dota_page_match_details_legend_items" />
 					<Label class="LegendPanel BackpackItemsColumn" text="#dota_page_match_details_legend_backpack_items" />
@@ -57,7 +53,6 @@
 				<Label class="DeathsColumn" text="{d:deaths}" />
 				<Label class="SavesColumn" text="{d:saves}" />
 				<Label class="GoldBagsColumn" text="{d:goldBags}" />
-				<Label class="NetWorthColumn" text="{s:net_worth}" />
 				<Panel id="ItemsContainer" class="ItemsColumn LeftRightFlow" />
 				<Panel id="BackpackItemsContainer" class="BackpackItemsColumn LeftRightFlow" />
 				<Label class="DamageTakenColumn" text="{s:damageTaken}" />

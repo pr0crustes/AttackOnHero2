@@ -56,7 +56,6 @@ function Snippet_Player(playerId, rootPanel, index) {
 	panel.SetDialogVariableInt("agility", playerData.agi);
 	panel.SetDialogVariableInt("intellect", playerData.int);
 
-	panel.SetDialogVariable("net_worth", playerData.netWorth);
 
 	for (var i = 0; i < 9; i++) {
 		var item = playerData.items[i];

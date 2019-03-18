@@ -192,11 +192,6 @@
   width: 150px;
 }
 
-.NetWorthColumn {
-  width: 64px;
-  margin-right: 16px;
-  margin-left: 32px;
-}
 
 .DamageTakenColumn {
   width: 100px;
@@ -218,13 +213,6 @@
 .IntColumn {
   width: 48px;
   margin: 0 2px;
-}
-
-.GoldIcon {
-  width: 24px;
-  height: 24px;
-  background-image: url("s2r://panorama/images/hud/icon_gold_psd.vtex");
-  background-size: 100% 100%;
 }
 
 .Team {
@@ -345,17 +333,6 @@
 
 .Team #TeamInfo .LegendPanel {
   vertical-align: bottom;
-}
-
-.Team #TeamInfo .LegendPanel > .LegendGold {
-  max-height: 32px;
-  font-size: 20px;
-  font-weight: thin;
-  color: #c48103;
-  text-align: right;
-  text-overflow: shrink;
-  text-transform: uppercase;
-  horizontal-align: right;
 }
 
 .Player {

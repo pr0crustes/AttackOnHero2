@@ -9,6 +9,8 @@
     Reworked Underlord R.
     Reworked Underlord W.
 
+    End game screen no longer shows Networth.
+
 
 
 2.2.3:
