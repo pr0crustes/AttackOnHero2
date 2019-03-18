@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_tiny_custom_toss"								"<font color='#70EA72'>Toss</font>"
+"DOTA_Tooltip_ability_tiny_custom_toss_Description"					"Toss a stone that deals damage based on your attack damage."
+"DOTA_Tooltip_ability_tiny_custom_toss_Lore"					    "Tiny's gargantuan stature allows him to catapult even the sturdiest of warriors."
+"DOTA_Tooltip_ability_tiny_custom_toss_damage_percentage"		    "%DAMAGE PERCENTAGE:"
