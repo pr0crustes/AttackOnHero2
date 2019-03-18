@@ -7,6 +7,7 @@
     Viper Poison Wound: Damage pct increased from "10 20 30 40" to "20 40 60 80".
 
     Reworked Underlord R.
+    Reworked Underlord W.
 
 
 

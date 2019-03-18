@@ -3,4 +3,7 @@
     "Ability2"      "abyssal_underlord_custom_consume"
     "Ability6"		"abyssal_underlord_custom_adapt"
     "Ability7"		"generic_hidden"
+    "Ability10"		"special_bonus_mp_regen_6"
+    "Ability13"		"special_bonus_lifesteal_10"
+    "Ability16"		"special_bonus_all_stats_15"
 }
