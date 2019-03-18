@@ -1,0 +1,10 @@
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume"						    "<font color='#70EA72'>Consume</font>"
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume_Description"			    "Weakens an enemy soul, causing it to take damage over time based on Underlord stats. If the target moves more than %distance_break% units from the cast position, the spell is dismissed."
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume_Lore"					"Twisting into the seams of reality itself, Vrogros' manifest hatred paralyzes those who defy his will."
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume_stats_multiplier"		"STAT MULTIPLIER:"
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume_ticks"		            "TICKS:"
+"DOTA_Tooltip_ability_abyssal_underlord_custom_consume_tick_interval"		    "TICK INTERVAL:"
+
+
+"DOTA_Tooltip_modifier_abyssal_underlord_custom_consume"                        "Consume"
+"DOTA_Tooltip_modifier_abyssal_underlord_custom_consume_Description"            "Taking damage over time."

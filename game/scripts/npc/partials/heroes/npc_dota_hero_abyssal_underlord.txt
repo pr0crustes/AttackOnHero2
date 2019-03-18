@@ -1,5 +1,6 @@
 "npc_dota_hero_abyssal_underlord"
 {
+    "Ability2"      "abyssal_underlord_custom_consume"
     "Ability6"		"abyssal_underlord_custom_adapt"
     "Ability7"		"generic_hidden"
 }
