@@ -9,6 +9,8 @@
 
     Invoker: Intelligence Gain increased from "4.6" to "18.4".
 
+    Lifestealer: Feat heal pct increased from "3.0 4.0 5.0" to "4.0 5.0 6.0".
+
     Tusk Walrus Punch: Damage mult increased from "500 700 900" to "700 900 1100".
 
 
