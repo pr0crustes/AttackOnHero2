@@ -1,0 +1,4 @@
+"npc_dota_hero_invoker"
+{
+    "AttributeIntelligenceGain"		"18.400000"
+}

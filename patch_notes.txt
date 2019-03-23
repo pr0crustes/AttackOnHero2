@@ -5,7 +5,9 @@
     Underlord Atrophy Aura: Damage bonus increased from "5" to "5 10 15 20".
 
     Morphiling: Strength Gain increased from "3.0" to "4.0".
-    Morphiling:Agility Gain increased from "4.3" to "5.0".
+    Morphiling: Agility Gain increased from "4.3" to "5.0".
+
+    Invoker: Intelligence Gain increased from "4.6" to "18.4".
 
     Tusk Walrus Punch: Damage mult increased from "500 700 900" to "700 900 1100".
 
