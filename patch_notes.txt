@@ -1,4 +1,11 @@
 
+2.2.5:
+    With this update:
+
+    Underlord Atrophy Aura: Damage bonus increased from "5" to "5 10 15 20".
+
+
+
 2.2.4:
     With this update:
 
