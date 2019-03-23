@@ -7,7 +7,7 @@
         "01"
         {
             "var_type"					"FIELD_INTEGER"
-            "crit_multiplier"			"500 700 900"
+            "crit_multiplier"			"700 900 1100"
             "LinkedSpecialBonus"		"special_bonus_unique_tusk"
         }
         "02"
