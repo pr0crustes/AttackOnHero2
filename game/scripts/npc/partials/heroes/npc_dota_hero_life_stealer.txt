@@ -1,6 +1,6 @@
 "npc_dota_hero_life_stealer"
 {
-    "Ability2"		"life_stealer_custom_borrow"
+    "Ability2"		"life_stealer_custom_deny"
     "Ability4"		"generic_hidden"
     "Ability5"		"generic_hidden"
     "Ability6"		"life_stealer_custom_feast"

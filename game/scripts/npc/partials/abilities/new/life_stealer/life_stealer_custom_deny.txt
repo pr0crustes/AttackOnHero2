@@ -1,0 +1,17 @@
+"life_stealer_custom_deny"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/life_stealer_custom_deny.lua"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"			"life_stealer_assimilate_eject"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "regen_decrease"        "-0.25 -0.5 -0.75 -1.0"
+        }
+    }
+}

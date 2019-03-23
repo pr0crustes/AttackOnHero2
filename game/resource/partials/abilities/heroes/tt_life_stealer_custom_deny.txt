@@ -1,0 +1,8 @@
+"DOTA_Tooltip_ability_life_stealer_custom_deny"								    "<font color='#70EA72'>Life Deny</font>"
+"DOTA_Tooltip_ability_life_stealer_custom_deny_Description"					    "Lifestealer cuts the life essence of enemy heroes with his attacks, decreasing their health regeneration."
+"DOTA_Tooltip_ability_life_stealer_custom_deny_Lore"							"How can Lifestealer resist the chance to borrow the essence of life?"
+"DOTA_Tooltip_ability_life_stealer_custom_deny_regen_decrease"                  "HP REGEN DECREASE:"
+
+
+"DOTA_Tooltip_modifier_life_stealer_custom_deny_debuff"					        "Life Deny"
+"DOTA_Tooltip_modifier_life_stealer_custom_deny_debuff_Description"		        "HP regen decreased by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%."
