@@ -14,6 +14,7 @@
 
     "AbilityTextureName" 			"abyssal_underlord_pit_of_malice"
 
+    "AbilityCastRange"			    "800"
     "AbilityCastPoint"				"0.45"
 
     "AbilityCooldown"				"30.0 28.0 26.0 25.0"
