@@ -2,4 +2,7 @@
 {
     "Ability15"		"special_bonus_unique_morphling_5"
     "Ability19"		"special_bonus_agility_30"
+
+    "AttributeStrengthGain"		"4.000000"
+    "AttributeAgilityGain"		"5.000000"
 }

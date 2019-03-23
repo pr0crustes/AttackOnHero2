@@ -4,6 +4,9 @@
 
     Underlord Atrophy Aura: Damage bonus increased from "5" to "5 10 15 20".
 
+    Morphiling: Strength Gain increased from "3.0" to "4.0".
+    Morphiling:Agility Gain increased from "4.3" to "5.0".
+
 
 
 2.2.4:
