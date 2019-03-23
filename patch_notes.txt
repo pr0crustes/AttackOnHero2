@@ -14,6 +14,10 @@
 
     Tusk Walrus Punch: Damage mult increased from "500 700 900" to "700 900 1100".
 
+    Dark Willow: Strength Gain reduced from "2.0" to "1.0".
+    Dark Willow: Agility Gain increased from "1.6" to "2.0".
+    Dark Willow: Intelligence Gain increased from "3.5" to "7.0".
+
 
 
 2.2.4:

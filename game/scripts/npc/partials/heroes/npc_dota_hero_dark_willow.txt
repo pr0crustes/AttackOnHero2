@@ -2,4 +2,8 @@
 {
     "Ability1"		"dark_willow_custom_bramble"
     "Ability16"		"talent_bonus_attack_speed_1000"
+
+    "AttributeStrengthGain"		    "1.00000"
+    "AttributeAgilityGain"		    "2.000000"
+    "AttributeIntelligenceGain"		"7.000000"
 }
