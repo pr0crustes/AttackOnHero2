@@ -33,7 +33,7 @@
         "02"
         {
             "var_type"					"FIELD_INTEGER"
-            "heal_factor"			    "300"
+            "heal_factor"			    "200"
         }
     }
 }
