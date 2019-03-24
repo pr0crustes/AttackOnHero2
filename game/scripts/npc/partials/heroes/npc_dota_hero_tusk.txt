@@ -1,5 +1,4 @@
 "npc_dota_hero_tusk"
 {
-    "Ability4"		"generic_hidden"
     "Ability16"		"special_bonus_attack_damage_120"
 }

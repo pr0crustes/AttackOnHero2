@@ -1,4 +1,10 @@
 
+2.2.7:
+    With this update:
+
+    Fixed Aghs not granting Tusk the kick.
+
+
 2.2.6:
     HOTFIX:
 
