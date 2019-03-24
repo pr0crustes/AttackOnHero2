@@ -23,6 +23,8 @@
 
     Reworked Queen Of Pain Q.
 
+    Fixed Broken Bow tooltip.
+
 
 
 2.2.4:

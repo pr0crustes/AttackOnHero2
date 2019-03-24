@@ -5,3 +5,7 @@
 "DOTA_Tooltip_Ability_item_broken_bow_bonus_int"		            "+$int"
 "DOTA_Tooltip_Ability_item_broken_bow_bonus_attack_speed"		    "+$attack"
 "DOTA_Tooltip_Ability_item_broken_bow_movement_speed_bonus"		    "+$move_speed"
+
+
+"DOTA_Tooltip_modifier_item_broken_bow_count"                       "Broken Bow Count"
+"DOTA_Tooltip_modifier_item_broken_bow_count_Description"           "Amount of attacks dealt."
