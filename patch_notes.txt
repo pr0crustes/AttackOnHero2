@@ -1,4 +1,11 @@
 
+2.2.6:
+    HOTFIX:
+
+    Fixed broken bow stacking.
+
+
+
 2.2.5:
     With this update:
 
