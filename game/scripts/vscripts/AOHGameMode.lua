@@ -173,6 +173,7 @@ function AOHGameMode:OnGameRulesStateChange()
 	elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		self._flPrepTimeEnd = GameRules:GetGameTime() + self._flPrepTimeBetweenRounds
 	elseif nNewState == DOTA_GAMERULES_STATE_POST_GAME then
+		GameRules:SetSafeToLeave(true)
 		end_screen_setup(self._entAncient and self._entAncient:IsAlive())
 	end
 end
