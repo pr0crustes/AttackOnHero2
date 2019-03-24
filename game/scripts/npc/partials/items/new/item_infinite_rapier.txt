@@ -19,7 +19,7 @@
 {
     "ID"           				"$ID"
     "BaseClass" 			    "item_datadriven"
-    "AbilityTextureName"		"infinite_rapier"
+    "AbilityTextureName"		"ForaMon/infinite_rapier"
     "Model"       				"models/props_gameplay/divine_rapier.vmdl" 
     "Effect"       				"particles/generic_gameplay/dropped_item_rapier.vpcf"
     "ItemQuality"  				"epic"
