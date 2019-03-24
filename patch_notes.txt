@@ -18,6 +18,11 @@
     Dark Willow: Agility Gain increased from "1.6" to "2.0".
     Dark Willow: Intelligence Gain increased from "3.5" to "7.0".
 
+    Queen Of Pain: Attack rate increased from "1.5" to "2.0".
+    Queen Of Pain: Intelligence Gain increased from "2.9" to "6.6".
+
+    Reworked Queen Of Pain Q.
+
 
 
 2.2.4:

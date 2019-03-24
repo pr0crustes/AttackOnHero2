@@ -1,0 +1,11 @@
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike"								"<font color='#70EA72'>Shadow Strike</font>"
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_Description"					"Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for %duration% seconds.  An instance of damage is dealt every 1 seconds.  Stacks with itself."
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_Lore"						"Akasha's envenomed dagger allows her to delight in the drawn out suffering of her victims."
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_movement_slow"				"%MOVEMENT SLOW:"
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_strike_damage"				"INITIAL DAMAGE:"
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_int_pct_tick"				"%INT AS DAMAGE PER TICK:"
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_duration"			        "DURATION:"
+"DOTA_Tooltip_ability_queenofpain_custom_shadow_strike_cast_range_tooltip"			"CAST RANGE:"
+
+"DOTA_Tooltip_modifier_queenofpain_custom_shadow_strike"			                "Shadow Strike"					
+"DOTA_Tooltip_modifier_queenofpain_custom_shadow_strike_Description"		        "Taking periodic damage and moving %fMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% slower."
