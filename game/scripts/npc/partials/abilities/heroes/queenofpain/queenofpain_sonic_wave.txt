@@ -6,18 +6,28 @@
     {
         "05"
         {
-            "var_type"			"FIELD_INTEGER"
-            "damage"			"410 500 650"
+            "var_type"			    "FIELD_INTEGER"
+            "damage"			    "600 900 1300"
         }
         "06"
         {
-            "var_type"			"FIELD_FLOAT"
-            "cooldown_scepter"	"24"
+            "var_type"			    "FIELD_FLOAT"
+            "cooldown_scepter"	    "25"
         }
         "07"
         {
-            "var_type"			"FIELD_INTEGER"
-            "damage_scepter"	"670 880 1390"
+            "var_type"			    "FIELD_INTEGER"
+            "damage_scepter"	    "800 1400 1800"
+        }
+        "08"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "knockback_distance"	"100"
+        }
+        "09"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "knockback_duration"    "0.3"
         }
     }
 }
