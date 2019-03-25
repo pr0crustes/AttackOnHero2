@@ -2,7 +2,7 @@
 2.2.7:
     With this update:
 
-    Fixed Aghs not granting Tusk the kick.
+    Removed Tusk Aghs.
 
 
 2.2.6:
