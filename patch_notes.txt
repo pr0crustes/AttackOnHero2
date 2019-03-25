@@ -8,6 +8,11 @@
     Sand King Epicenter: Damage increased from "110" to "160 260 360".
 
     Invoker Tornado: Damage increased from "135 180 225 270 315 360 410 470" to "160 360 420 530 650 710 800 900".
+    Invoker Sun Strike: Damage increased from "225 287.5 350 412.5 475 537.5 600.0 700.0" to "280 400 560 770 900 1000 1200 1500".
+    Invoker Deafening Blast: Damage increased from "120 160 200 240 280 320 360 400" to "120 220 320 420 520 620 720 820".
+    Invoker Chaos Meteor: Base damage increased from "92.5 110 127.5 145 162.5 180 200 230" to "100 190 240 300 350 410 500 560".
+
+    Invoker Intelligence Gain reduced from "18.4" to "10.4".
 
 
 2.2.6:

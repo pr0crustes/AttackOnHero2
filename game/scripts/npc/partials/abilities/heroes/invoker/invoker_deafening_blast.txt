@@ -7,7 +7,7 @@
         "06"
         {
             "var_type"				"FIELD_FLOAT"
-            "damage"				"120 160 200 240 280 320 360 400"
+            "damage"				"120 220 320 420 520 620 720 820"
             "levelkey"				"exortlevel"
         }
     }

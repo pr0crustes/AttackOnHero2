@@ -13,7 +13,7 @@
         "08"
         {
             "var_type"				"FIELD_FLOAT"
-            "main_damage"			"92.5 110 127.5 145 162.5 180 200 230"
+            "main_damage"			"100 190 240 300 350 410 500 560"
             "LinkedSpecialBonus"	"special_bonus_unique_invoker_6"
             "levelkey"				"exortlevel"
         }
