@@ -1,0 +1,11 @@
+"sandking_epicenter"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "epicenter_damage"	    "160 260 360"
+        }		
+    }
+}
