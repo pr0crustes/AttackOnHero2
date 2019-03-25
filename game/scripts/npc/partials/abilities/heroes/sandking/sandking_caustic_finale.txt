@@ -1,0 +1,21 @@
+"sandking_caustic_finale"
+{
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"					        "FIELD_INTEGER"
+            "caustic_finale_damage_expire"		"40 90 150 200"
+        }
+        "04"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "caustic_finale_duration"	        "4 2 1 0.2"
+        }
+        "06"
+        {
+            "var_type"					        "FIELD_FLOAT"
+            "caustic_finale_slow_duration"		"1"
+        }	
+    }
+}
