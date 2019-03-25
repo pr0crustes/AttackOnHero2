@@ -7,6 +7,8 @@
     Sand King Caustic Finale: Duration reduced from "6" to "4 2 1 0.2", damage increased from "20 50 80 110" to "40 90 150 200", slow duration reduced from "3" to "1".
     Sand King Epicenter: Damage increased from "110" to "160 260 360".
 
+    Invoker Tornado: Damage increased from "135 180 225 270 315 360 410 470" to "160 360 420 530 650 710 800 900".
+
 
 2.2.6:
     HOTFIX:
