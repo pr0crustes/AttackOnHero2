@@ -2,6 +2,8 @@
 2.2.7:
     With this update:
 
+    Removed Leaving Penalties. Dev Note: As I said on the patch notes that enabled it, this was a test, and it is clear that without it is better, even if it means more leavers, I hope people stop messaging me asking to enable it. 
+
     Removed Tusk Aghs.
 
     Sand King Caustic Finale: Duration reduced from "6" to "4 2 1 0.2", damage increased from "20 50 80 110" to "40 90 150 200", slow duration reduced from "3" to "1".

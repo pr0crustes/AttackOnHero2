@@ -3,7 +3,6 @@
 	"TeamCount" 		"2"
 	"maps" 				"attack_on_hero2"
 	"IsPlayable"  		"1"
-	"PenaltiesEnabled"	"1"
 
 	"attack_on_hero2"
 	{
