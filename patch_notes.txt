@@ -5,7 +5,6 @@
     Reworked Mirana's W.
 
     Mirana Moonlight Shadow: Movement speed increased from "15" to "20 30 40", duration from "18" to "18 20 22".
-
     Mirana Starfall: Damage increased from "75 150 225 300" to "75 190 270 390", cooldown changed from "12.0" to "13.0 12.0 11.0 10.0", scepter interval reduced from "10" to "4". 
 
 
