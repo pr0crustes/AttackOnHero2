@@ -9,6 +9,8 @@
 
     Pudge Meat Hook: Range reduced to "500", scepter damage doubled.
 
+    Reworked Riki's Q.
+
 
 2.2.7:
     With this update:

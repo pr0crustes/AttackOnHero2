@@ -1,3 +1,8 @@
 "DOTA_Tooltip_Ability_riki_custom_trick_hit"							"<font color='#70EA72'>Trick Hit</font>"
-"DOTA_Tooltip_Ability_riki_custom_trick_hit_Description"				"Every basic attack deals %percentage%%  of its damage as bonus magic damage."
+"DOTA_Tooltip_Ability_riki_custom_trick_hit_Description"				"Rick prepares the next stab, increasing his agility for the next attack."
 "DOTA_Tooltip_ability_riki_custom_trick_hit_Lore"						"The Stealth Assassin knows how to use a dagger."
+"DOTA_Tooltip_ability_riki_custom_trick_hit_bonus_agi_pct"				"%BONUS AGILITY:"
+
+
+"DOTA_Tooltip_modifier_riki_custom_trick_hit"							"Trick Hit"
+"DOTA_Tooltip_modifier_riki_custom_trick_hit_Description"				"Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%, looses on attack."
