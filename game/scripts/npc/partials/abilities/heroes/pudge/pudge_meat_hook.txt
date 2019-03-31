@@ -1,7 +1,14 @@
 "pudge_meat_hook"
 {
+    "AbilityCastRange"				"400"
+
     "AbilitySpecial"
     {
+        "03"
+        {
+            "var_type"			    "FIELD_INTEGER"
+            "hook_distance"		    "400"
+        }
         "06"
         {
             "var_type"				"FIELD_FLOAT"
@@ -10,7 +17,7 @@
         "07"
         {
             "var_type"				"FIELD_INTEGER"
-            "damage_scepter"		"270 360 450 630"
+            "damage_scepter"		"400 700 900 1200"
         }
     }
 }
