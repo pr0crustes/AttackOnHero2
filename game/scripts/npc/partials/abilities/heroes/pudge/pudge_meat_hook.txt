@@ -1,13 +1,13 @@
 "pudge_meat_hook"
 {
-    "AbilityCastRange"				"400"
+    "AbilityCastRange"				"500"
 
     "AbilitySpecial"
     {
         "03"
         {
             "var_type"			    "FIELD_INTEGER"
-            "hook_distance"		    "400"
+            "hook_distance"		    "500"
         }
         "06"
         {
