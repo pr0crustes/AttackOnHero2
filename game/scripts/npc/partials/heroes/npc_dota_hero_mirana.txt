@@ -2,5 +2,8 @@
 {
     "Ability2"		"mirana_custom_arrow"
 
+    "Ability12"		"special_bonus_cooldown_reduction_15"
+    "Ability16"		"special_bonus_attack_range_300"
+
     "AttackRate"	"2.000000"
 }
