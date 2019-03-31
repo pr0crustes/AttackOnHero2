@@ -1,5 +1,3 @@
-require("lib/my")
-require("lib/timers")
 
 
 riki_custom_trick_hit = class({})
