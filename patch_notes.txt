@@ -1,4 +1,11 @@
 
+2.2.8:
+    With this update:
+
+    Reworked Mirana's W.
+
+
+
 2.2.7:
     With this update:
 

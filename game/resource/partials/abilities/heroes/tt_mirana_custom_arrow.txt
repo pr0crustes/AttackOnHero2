@@ -1,0 +1,4 @@
+"DOTA_Tooltip_ability_mirana_custom_arrow"							"<font color='#70EA72'>Sacred Arrow</font>"
+"DOTA_Tooltip_ability_mirana_custom_arrow_Description"				"Whenever Mirana attacks, fires a long-range arrow with deadly precision, which damages the first enemy unit it strikes based on Mirana's attack damage."
+"DOTA_Tooltip_ability_mirana_custom_arrow_Lore"						"Lunar energies make the Princess of the Moon's arrows more deadly than most."
+"DOTA_Tooltip_ability_mirana_custom_arrow_damage_pct"				"%ATTACK AS DAMAGE:"
