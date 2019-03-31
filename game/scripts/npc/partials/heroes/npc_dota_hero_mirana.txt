@@ -1,4 +1,6 @@
 "npc_dota_hero_mirana"
 {
     "Ability2"		"mirana_custom_arrow"
+
+    "AttackRate"	"2.000000"
 }
