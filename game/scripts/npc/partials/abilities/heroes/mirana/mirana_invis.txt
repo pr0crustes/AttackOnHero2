@@ -1,0 +1,16 @@
+"mirana_invis"
+{
+    "AbilitySpecial"
+    {
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"				"18.0 20.0 22.0"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_movement_speed"	"20 30 40"
+        }
+    }
+}

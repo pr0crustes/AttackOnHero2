@@ -4,6 +4,8 @@
 
     Reworked Mirana's W.
 
+    Mirana Moonlight Shadow: Movement speed increased from "15" to "20 30 40", duration from "18" to "18 20 22".
+
 
 
 2.2.7:
