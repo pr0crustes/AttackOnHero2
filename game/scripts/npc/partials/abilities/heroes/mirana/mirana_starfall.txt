@@ -1,0 +1,16 @@
+"mirana_starfall"
+{
+    "AbilityCooldown"				"13.0 12.0 11.0 10.0"
+    "AbilityDuration"				"4.0"
+
+    "AbilityDamage"					"75 190 270 390"
+
+    "AbilitySpecial"
+    {
+        "03"
+        {
+            "var_type"			    "FIELD_FLOAT"
+            "interval_scepter"	    "4.0"
+        }
+    }
+}
