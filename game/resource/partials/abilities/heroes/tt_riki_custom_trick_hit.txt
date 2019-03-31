@@ -5,4 +5,4 @@
 
 
 "DOTA_Tooltip_modifier_riki_custom_trick_hit"							"Trick Hit"
-"DOTA_Tooltip_modifier_riki_custom_trick_hit_Description"				"Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%, looses on attack."
+"DOTA_Tooltip_modifier_riki_custom_trick_hit_Description"				"Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%, loses on attack."
