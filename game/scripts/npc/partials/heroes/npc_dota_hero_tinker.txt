@@ -2,5 +2,6 @@
 {
     "Ability2"		"tinker_custom_energy_missile"
     "Ability6"      "tinker_rearm_fix"
-    "Ability17"		"tinker_custom_bonus_unique_1"
+    "Ability16"		"tinker_custom_bonus_unique_1"
+    "Ability17"		"tinker_custom_bonus_unique_2"
 }

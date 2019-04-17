@@ -1,4 +1,10 @@
 
+2.2.9:
+    With this update:
+
+    Tinker has a new lvl 25 talent.
+
+
 2.2.8:
     With this update:
 

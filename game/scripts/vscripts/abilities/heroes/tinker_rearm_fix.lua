@@ -51,6 +51,33 @@ function tinker_rearm_fix:IsStealable()
 end
 
 
+function tinker_rearm_fix:GetChannelTime()
+    if IsServer() then
+        local caster = self:GetCaster()
+        local channel = self:GetSpecialValueFor("channel_tooltip")
+
+        local talent_value = talent_value(caster, "tinker_custom_bonus_unique_2")
+        if talent_value ~= 0 then
+            channel = channel + talent_value
+
+            CustomNetTables:SetTableValue("heroes", "tinker_rearm_channel", {
+                channel = channel
+            })
+        end
+
+        return channel
+    else
+        local tinker_rearm_channel = CustomNetTables:GetTableValue("heroes", "tinker_rearm_channel")
+
+        if tinker_rearm_channel then
+            return tinker_rearm_channel.channel
+        end
+
+        return self:GetSpecialValueFor("channel_tooltip")
+    end
+end
+
+
 function tinker_rearm_fix:OnSpellStart()
     local caster = self:GetCaster()
 
