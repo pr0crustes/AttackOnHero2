@@ -1,0 +1,29 @@
+"earth_spirit_custom_earth_walking"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/earth_spirit_custom_earth_walking.lua"
+
+    "AbilityTextureName"		    "earth_spirit_stone_caller"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "distance"	            "1000"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "str_bonus"		        "1 2 3 4"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"		        "30.0"
+        }
+    }
+}
