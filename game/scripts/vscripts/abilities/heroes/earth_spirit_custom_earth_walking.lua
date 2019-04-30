@@ -1,3 +1,4 @@
+require("lib/my")
 
 
 earth_spirit_custom_earth_walking = class({})
@@ -12,7 +13,7 @@ function earth_spirit_custom_earth_walking:AddEarthPoint()
     local caster = self:GetCaster()
 
     caster:AddNewModifier(caster, self, "modifier_earth_spirit_custom_str_buff", {
-        duration = self:GetSpecialValueFor("duration")
+        duration = self:GetSpecialValueFor("duration") + talent_value(caster, "earth_spirit_custom_bonus_unique_1")
     })
 end
 

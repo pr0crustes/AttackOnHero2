@@ -24,6 +24,7 @@
         {
             "var_type"				"FIELD_FLOAT"
             "duration"		        "30.0"
+            "LinkedSpecialBonus"    "earth_spirit_custom_bonus_unique_1"
         }
     }
 }
