@@ -7,6 +7,7 @@
     Reworked Earth Spirit Q.
     Reworked Earth Spirit W.
     Reworked Earth Spirit E.
+    Reworked Earth Spirit R.
 
 
 2.2.8:
