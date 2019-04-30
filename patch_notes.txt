@@ -5,6 +5,7 @@
     Tinker has a new lvl 25 talent.
 
     Reworked Earth Spirit Q.
+    Reworked Earth Spirit W.
 
 
 2.2.8:

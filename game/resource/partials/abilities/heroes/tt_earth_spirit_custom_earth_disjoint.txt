@@ -1,0 +1,9 @@
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_disjoint"						    "<font color='#70EA72'>Earth Disjoint</font>"
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_disjoint_Description"			    "Temporarily increases your movement speed. Passively grants phased moviment and removes move speed cap."
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_disjoint_Lore"				        "Calling upon his connection to the land, the Earth Spirit draws loose stone to him, which forms a protective ball that he can use to roll short distances."
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_disjoint_bonus_move_speed"			"%BONUS MOVEMENT SPEED:"
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_disjoint_duration"				    "DURATION:"
+
+
+"DOTA_Tooltip_modifier_earth_spirit_custom_earth_disjoint_active"                   "Earth Disjoint"
+"DOTA_Tooltip_modifier_earth_spirit_custom_earth_disjoint_active_Description"       "Moviment speed increased."

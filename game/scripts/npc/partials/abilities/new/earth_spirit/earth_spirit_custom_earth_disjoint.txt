@@ -1,0 +1,29 @@
+"earth_spirit_custom_earth_disjoint"
+{
+    "BaseClass"						"ability_lua"
+    "ScriptFile"					"abilities/heroes/earth_spirit_custom_earth_disjoint.lua"
+
+    "AbilityTextureName"		    "earth_spirit_rolling_boulder"
+
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+    "AbilityCooldown"				"25 21 18 15"
+    "AbilityManaCost"				"130 150 170 190"
+
+    "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_move_speed"	    "20 25 30 35"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "duration"		        "7.0"
+        }
+    }
+}
