@@ -18,7 +18,7 @@
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "str_bonus"		        "1 2 3 4"
+            "str_bonus"		        "2 3 4 5"
         }
         "03"
         {
