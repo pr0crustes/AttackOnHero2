@@ -29,6 +29,11 @@ LinkLuaModifier("modifier_earth_spirit_custom_earth_disjoint_active", "abilities
 modifier_earth_spirit_custom_earth_disjoint_active = class({})
 
 
+function modifier_earth_spirit_custom_earth_disjoint_active:GetEffectName()
+    return "particles/generic_gameplay/rune_haste_owner.vpcf"
+end
+
+
 function modifier_earth_spirit_custom_earth_disjoint_active:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
