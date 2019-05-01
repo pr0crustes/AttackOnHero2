@@ -38,7 +38,7 @@ if IsServer() then
             victim = target
         })
 
-        ParticleManager:CreateParticle("particles/econ/items/undying/undying_manyone/undying_pale_tombstone.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
+        ParticleManager:CreateParticle("particles/units/heroes/hero_earth_spirit/earthspirit_petrify_shockwave.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
 
         caster:EmitSound("Hero_EarthSpirit.BoulderSmash.Target")
     end
