@@ -37,12 +37,18 @@ end
 function modifier_earth_spirit_custom_earth_disjoint_active:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
+        MODIFIER_PROPERTY_TURN_RATE_PERCENTAGE,
     }
 end
 
 
 function modifier_earth_spirit_custom_earth_disjoint_active:GetModifierMoveSpeedBonus_Percentage()
     return self:GetAbility():GetSpecialValueFor("bonus_move_speed")
+end
+
+
+function modifier_earth_spirit_custom_earth_disjoint_active:GetModifierTurnRate_Percentage()
+    return self:GetAbility():GetSpecialValueFor("turn_rate_percentage")
 end
 
 

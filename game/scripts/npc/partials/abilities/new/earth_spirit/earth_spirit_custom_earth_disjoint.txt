@@ -22,6 +22,11 @@
         }
         "02"
         {
+            "var_type"				"FIELD_INTEGER"
+            "turn_rate_percentage"	"99999"
+        }
+        "03"
+        {
             "var_type"				"FIELD_FLOAT"
             "duration"		        "7.0"
         }
