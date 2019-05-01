@@ -18,6 +18,11 @@ LinkLuaModifier("modifier_earth_spirit_custom_earth_form", "abilities/heroes/ear
 modifier_earth_spirit_custom_earth_form = class({})
 
 
+function modifier_earth_spirit_custom_earth_form:GetEffectName()
+    return "particles/units/heroes/hero_earth_spirit/espirit_geomagentic_target_sphere.vpcf"
+end
+
+
 function modifier_earth_spirit_custom_earth_form:DeclareFunctions()
     return {
         MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
