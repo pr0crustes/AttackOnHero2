@@ -4,7 +4,7 @@
 
     "Ability1"		"earth_spirit_custom_smash"
     "Ability2"		"earth_spirit_custom_earth_disjoint"
-    "Ability3"		"earth_spirit_custom_earth_walking"
+    "Ability3"		"earth_spirit_custom_earth_essence"
     "Ability4"		"generic_hidden"
     "Ability5"		"generic_hidden"
     "Ability6"		"earth_spirit_custom_earth_form"

@@ -1,7 +1,7 @@
-"earth_spirit_custom_earth_walking"
+"earth_spirit_custom_earth_essence"
 {
     "BaseClass"						"ability_lua"
-    "ScriptFile"					"abilities/heroes/earth_spirit_custom_earth_walking.lua"
+    "ScriptFile"					"abilities/heroes/earth_spirit_custom_earth_essence.lua"
 
     "AbilityTextureName"		    "earth_spirit_stone_caller"
 

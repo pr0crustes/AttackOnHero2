@@ -1,15 +1,15 @@
 require("lib/my")
 
 
-earth_spirit_custom_earth_walking = class({})
+earth_spirit_custom_earth_essence = class({})
 
 
-function earth_spirit_custom_earth_walking:GetIntrinsicModifierName()
-    return "modifier_earth_spirit_custom_earth_walking"
+function earth_spirit_custom_earth_essence:GetIntrinsicModifierName()
+    return "modifier_earth_spirit_custom_earth_essence"
 end
 
 
-function earth_spirit_custom_earth_walking:AddEarthPoint()
+function earth_spirit_custom_earth_essence:AddEarthPoint()
     local caster = self:GetCaster()
 
     caster:AddNewModifier(caster, self, "modifier_earth_spirit_custom_str_buff", {
@@ -19,7 +19,7 @@ end
 
 
 if IsServer() then
-	function earth_spirit_custom_earth_walking:OnUpgrade()
+	function earth_spirit_custom_earth_essence:OnUpgrade()
 		local modifier = self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
 		if modifier then
 			modifier:UpdatePercentage()
@@ -29,12 +29,12 @@ end
 
 
 
-LinkLuaModifier("modifier_earth_spirit_custom_earth_walking", "abilities/heroes/earth_spirit_custom_earth_walking.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_earth_spirit_custom_earth_essence", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
 
-modifier_earth_spirit_custom_earth_walking = class({})
+modifier_earth_spirit_custom_earth_essence = class({})
 
 
-function modifier_earth_spirit_custom_earth_walking:DeclareFunctions()
+function modifier_earth_spirit_custom_earth_essence:DeclareFunctions()
 	return {
 		MODIFIER_PROPERTY_TOOLTIP,
         MODIFIER_EVENT_ON_UNIT_MOVED,
@@ -42,17 +42,17 @@ function modifier_earth_spirit_custom_earth_walking:DeclareFunctions()
 end
 
 
-function modifier_earth_spirit_custom_earth_walking:OnTooltip()
+function modifier_earth_spirit_custom_earth_essence:OnTooltip()
 	return self:GetStackCount()
 end
 
 
 if IsServer() then
-	function modifier_earth_spirit_custom_earth_walking:OnCreated()
+	function modifier_earth_spirit_custom_earth_essence:OnCreated()
 		self.distance = 0
 	end
 
-	function modifier_earth_spirit_custom_earth_walking:OnUnitMoved()
+	function modifier_earth_spirit_custom_earth_essence:OnUnitMoved()
 		local parent = self:GetParent()
         local position = parent:GetAbsOrigin()
 
@@ -68,7 +68,7 @@ if IsServer() then
 	end
 
 
-	function modifier_earth_spirit_custom_earth_walking:UpdatePercentage()
+	function modifier_earth_spirit_custom_earth_essence:UpdatePercentage()
 		local ability = self:GetAbility()
         local completed = self.distance / ability:GetSpecialValueFor("distance")
 
@@ -78,7 +78,7 @@ if IsServer() then
 			self.distance = 0
             self:SetStackCount(0)
             
-            local spell = self:GetParent():FindAbilityByName("earth_spirit_custom_earth_walking")
+            local spell = self:GetParent():FindAbilityByName("earth_spirit_custom_earth_essence")
             if spell then
                 spell:AddEarthPoint()
             end
@@ -88,7 +88,7 @@ end
 
 
 
-LinkLuaModifier("modifier_earth_spirit_custom_str_hud", "abilities/heroes/earth_spirit_custom_earth_walking.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_earth_spirit_custom_str_hud", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
 
 modifier_earth_spirit_custom_str_hud = class({})
 
@@ -116,7 +116,7 @@ end
 
 
 
-LinkLuaModifier("modifier_earth_spirit_custom_str_buff", "abilities/heroes/earth_spirit_custom_earth_walking.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_earth_spirit_custom_str_buff", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
 
 modifier_earth_spirit_custom_str_buff = class({})
 

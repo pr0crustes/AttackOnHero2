@@ -43,7 +43,7 @@ if IsServer() then
 
 
     function modifier_earth_spirit_custom_earth_form:OnIntervalThink()
-        local spell = self:GetParent():FindAbilityByName("earth_spirit_custom_earth_walking")
+        local spell = self:GetParent():FindAbilityByName("earth_spirit_custom_earth_essence")
         if spell and spell:GetLevel() > 0 then
             spell:AddEarthPoint()
         end
