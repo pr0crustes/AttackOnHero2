@@ -19,8 +19,23 @@ end
 
 
 if IsServer() then
+    function earth_spirit_custom_earth_essence:GetModifierHandle()
+        return self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
+    end
+
+
+    function earth_spirit_custom_earth_essence:GetCount()
+        local modifier = self:GetModifierHandle()
+
+        if modifier then
+            return modifier:GetStackCount()
+        end
+        return 0
+    end
+
+
     function earth_spirit_custom_earth_essence:OnUpgrade()
-        local modifier = self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
+        local modifier = self:GetModifierHandle()
         if modifier then
             modifier:UpdatePercentage()
         end

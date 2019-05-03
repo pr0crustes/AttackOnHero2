@@ -1,5 +1,5 @@
 "DOTA_Tooltip_Ability_earth_spirit_custom_smash"						    "<font color='#70EA72'>Smash</font>"
-"DOTA_Tooltip_Ability_earth_spirit_custom_smash_Description"			    "Teleports to an enemy, dealing damage based on your strength."
+"DOTA_Tooltip_Ability_earth_spirit_custom_smash_Description"			    "Teleports to an enemy, dealing damage based on your strength. Each Earth Essence stack increases the damage by %earth_essence_mult%%."
 "DOTA_Tooltip_Ability_earth_spirit_custom_smash_Lore"				        "It is with the power of a mountain that Earth Spirit strikes his enemies."
 "DOTA_Tooltip_Ability_earth_spirit_custom_smash_base_damage"				"DAMAGE:"
 "DOTA_Tooltip_Ability_earth_spirit_custom_smash_str_as_damage"				"%STR AS DAMAGE:"

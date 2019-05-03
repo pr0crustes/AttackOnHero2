@@ -6,6 +6,27 @@ earth_spirit_custom_smash = class({})
 
 
 if IsServer() then
+    function earth_spirit_custom_smash:GetEarthEssenceCount()
+        local spell = self:GetCaster():FindAbilityByName("earth_spirit_custom_earth_essence")
+        if spell then
+            return spell:GetCount()
+        end
+        return 0
+    end
+
+
+    function earth_spirit_custom_smash:CalculateDamage()
+        local base_damage = self:GetSpecialValueFor("base_damage")
+        local str_damage = self:GetSpecialValueFor("str_as_damage") * 0.01 * self:GetCaster():GetStrength()
+
+        local total = base_damage + str_damage
+
+        local mult = self:GetEarthEssenceCount() * self:GetSpecialValueFor("earth_essence_mult") * 0.01
+
+        return total * (mult + 1)
+    end
+
+
     function earth_spirit_custom_smash:OnSpellStart()
         local caster = self:GetCaster()
         local target = self:GetCursorTarget()
@@ -25,10 +46,7 @@ if IsServer() then
 
         caster:EmitSound("Hero_EarthSpirit.BoulderSmash.Cast")
 
-        local base_damage = self:GetSpecialValueFor("base_damage")
-        local str_damage = self:GetSpecialValueFor("str_as_damage") * 0.01 * caster:GetStrength()
-
-        local damage = base_damage + str_damage
+        local damage = self:CalculateDamage()
 
         ApplyDamage({
             ability = self,
