@@ -18,6 +18,16 @@ function earth_spirit_custom_earth_essence:AddEarthPoint()
 end
 
 
+if IsServer() then
+    function earth_spirit_custom_earth_essence:OnUpgrade()
+        local modifier = self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
+        if modifier then
+            modifier:UpdatePercentage()
+        end
+    end
+end
+
+
 
 LinkLuaModifier("modifier_earth_spirit_custom_earth_essence", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
 

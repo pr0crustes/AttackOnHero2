@@ -13,12 +13,12 @@
         "01"
         {
             "var_type"				"FIELD_INTEGER"
-            "distance"	            "1000"
+            "distance"	            "500 333 250 200"
         }
         "02"
         {
             "var_type"				"FIELD_INTEGER"
-            "str_bonus"		        "2 3 4 5"
+            "str_bonus"		        "1"
         }
         "03"
         {
