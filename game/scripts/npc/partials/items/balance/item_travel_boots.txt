@@ -1,0 +1,4 @@
+"item_recipe_travel_boots"
+{
+    "ItemCost"						"1000"	
+}
