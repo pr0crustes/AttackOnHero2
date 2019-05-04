@@ -9,16 +9,22 @@ function earth_spirit_custom_earth_essence:GetIntrinsicModifierName()
 end
 
 
-function earth_spirit_custom_earth_essence:AddEarthPoint()
-    local caster = self:GetCaster()
-
-    caster:AddNewModifier(caster, self, "modifier_earth_spirit_custom_str_buff", {
-        duration = self:GetSpecialValueFor("duration") + talent_value(caster, "earth_spirit_custom_bonus_unique_1")
-    })
-end
-
-
 if IsServer() then
+    function earth_spirit_custom_earth_essence:OnSpellStart()
+        local caster = self:GetCaster()
+        local modifier_count = self:GetCount()
+
+        local heal = caster:GetMaxHealth() * modifier_count * self:GetSpecialValueFor("hp_pct_heal") * 0.01
+        caster:Heal(heal, caster)
+
+        caster:EmitSound("Hero_EarthSpirit.StoneRemnant.Impact")
+
+        ParticleManager:CreateParticle("particles/custom/treantheal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+
+        self:GetModifierHandle():SetStackCount(1)
+    end
+
+
     function earth_spirit_custom_earth_essence:GetModifierHandle()
         return self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName())
     end
@@ -26,19 +32,10 @@ if IsServer() then
 
     function earth_spirit_custom_earth_essence:GetCount()
         local modifier = self:GetModifierHandle()
-
         if modifier then
             return modifier:GetStackCount()
         end
         return 0
-    end
-
-
-    function earth_spirit_custom_earth_essence:OnUpgrade()
-        local modifier = self:GetModifierHandle()
-        if modifier then
-            modifier:UpdatePercentage()
-        end
     end
 end
 
@@ -51,121 +48,53 @@ modifier_earth_spirit_custom_earth_essence = class({})
 
 function modifier_earth_spirit_custom_earth_essence:DeclareFunctions()
 	return {
-		MODIFIER_PROPERTY_TOOLTIP,
-        MODIFIER_EVENT_ON_UNIT_MOVED,
+        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
 	}
 end
 
 
-function modifier_earth_spirit_custom_earth_essence:OnTooltip()
-	return self:GetStackCount()
+function modifier_earth_spirit_custom_earth_essence:GetModifierBonusStats_Strength()
+    return self:GetStackCount() * self:GetAbility():GetSpecialValueFor("str_bonus")
 end
 
 
 if IsServer() then
+    function modifier_earth_spirit_custom_earth_essence:OnStackCountChanged(count)
+        self:GetParent():CalculateStatBonus()
+    end
+
+
 	function modifier_earth_spirit_custom_earth_essence:OnCreated()
-		self.distance = 0
+        self.distance = 0
+
+        self:SetStackCount(1)
+        
+        self:StartIntervalThink(0.1)
 	end
 
-	function modifier_earth_spirit_custom_earth_essence:OnUnitMoved()
-		local parent = self:GetParent()
+
+    function modifier_earth_spirit_custom_earth_essence:OnIntervalThink()
+        local parent = self:GetParent()
+        local ability = self:GetAbility()
         local position = parent:GetAbsOrigin()
 
-		if self.position then
-			local distance = math.min((self.position - position):Length2D(), 1000)
-			if distance > 0 then
-				self.distance = self.distance + distance
-				self:UpdatePercentage()
-			end
-        end
+        if self.position then
+            local distance = math.min((self.position - position):Length2D(), 1000)
+            if distance > 0 then
+                self.distance = self.distance + distance
 
-		self.position = position
-	end
+                local distance_value = ability:GetSpecialValueFor("distance")
+                local max_stacks = ability:GetSpecialValueFor("max_stacks")
+                while self.distance >= distance_value do
+                    self.distance = self.distance - distance_value
 
-
-	function modifier_earth_spirit_custom_earth_essence:UpdatePercentage()
-		local ability = self:GetAbility()
-        local completed = self.distance / ability:GetSpecialValueFor("distance")
-
-		if completed < 1 then
-			self:SetStackCount(math.floor(completed * 100))
-		else
-			self.distance = 0
-            self:SetStackCount(0)
-            
-            local spell = self:GetParent():FindAbilityByName("earth_spirit_custom_earth_essence")
-            if spell then
-                spell:AddEarthPoint()
-            end
-		end
-	end
-end
-
-
-
-LinkLuaModifier("modifier_earth_spirit_custom_str_hud", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
-
-modifier_earth_spirit_custom_str_hud = class({})
-
-
-function modifier_earth_spirit_custom_str_hud:IsBuff()
-    return true
-end
-
-
-function modifier_earth_spirit_custom_str_hud:GetTexture()
-    return "earth_spirit_stone_caller"
-end
-
-
-function modifier_earth_spirit_custom_str_hud:DeclareFunctions()
-    return {
-        MODIFIER_PROPERTY_STATS_STRENGTH_BONUS,
-    }
-end
-
-
-function modifier_earth_spirit_custom_str_hud:GetModifierBonusStats_Strength()
-    return self:GetAbility():GetSpecialValueFor("str_bonus") * self:GetStackCount()
-end
-
-
-
-LinkLuaModifier("modifier_earth_spirit_custom_str_buff", "abilities/heroes/earth_spirit_custom_earth_essence.lua", LUA_MODIFIER_MOTION_NONE)
-
-modifier_earth_spirit_custom_str_buff = class({})
-
-
-function modifier_earth_spirit_custom_str_buff:IsHidden()
-    return true
-end
-
-
-function modifier_earth_spirit_custom_str_buff:GetAttributes()
-    return MODIFIER_ATTRIBUTE_MULTIPLE
-end
-
-
-if IsServer() then
-    function modifier_earth_spirit_custom_str_buff:OnCreated()
-        local caster = self:GetCaster()
-        if not caster:HasModifier("modifier_earth_spirit_custom_str_hud") then
-            caster:AddNewModifier(caster, self:GetAbility(), "modifier_earth_spirit_custom_str_hud", {})
-        end
-        caster:FindModifierByName("modifier_earth_spirit_custom_str_hud"):IncrementStackCount()
-    end
-
-
-    function modifier_earth_spirit_custom_str_buff:OnDestroy()
-        local caster = self:GetCaster()
-        if caster:HasModifier("modifier_earth_spirit_custom_str_hud") then
-            local modifier = caster:FindModifierByName("modifier_earth_spirit_custom_str_hud")
-
-            if modifier:GetStackCount() > 1 then
-                modifier:DecrementStackCount()
-            else 
-                modifier:Destroy()
+                    if self:GetStackCount() < max_stacks then
+                        self:IncrementStackCount()
+                    end
+                end
             end
         end
-    end
+
+        self.position = position
+	end
 end

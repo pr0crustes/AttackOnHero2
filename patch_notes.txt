@@ -2,7 +2,8 @@
 2.3.0:
     With this update:
 
-    Earth Spirit: Changed how Earth Essence is calculate. This is neither a buff or a nerf.
+    Earth Spirit: Earth Essence no longer has a duration, but a limit on the amount of stacks.
+    Earth Spirit: Earth Form provides flat bonus STR instead of Earth Essences.
     
 
 

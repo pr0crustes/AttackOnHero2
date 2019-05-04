@@ -1,8 +1,9 @@
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_form"						    "<font color='#70EA72'>Earth Form</font>"
-"DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_Description"			    "Transforms into a powerfull being, receiving bonus health regeneration and getting a Earth Walking Stack every %time_for_earth_point% seconds."
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_Description"			    "Transforms into a powerfull being, receiving bonus strength and health regeneration."
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_Lore"				        "Kaolin uses the elemental power of the Earth to temporarily petrify living beings, so that they might be conscripted into his stone funerary army."
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_health_regen"			    "BONUS HEALTH REGEN:"
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_str_bonus"				    "BONUS STRENGTH:"
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_form_duration"				    "DURATION:"
 
 "DOTA_Tooltip_modifier_earth_spirit_custom_earth_form"                          "Earth Form"
-"DOTA_Tooltip_modifier_earth_spirit_custom_earth_form_Description"              "Bonus health regeneration."
+"DOTA_Tooltip_modifier_earth_spirit_custom_earth_form_Description"              "Bonus strength and health regeneration."

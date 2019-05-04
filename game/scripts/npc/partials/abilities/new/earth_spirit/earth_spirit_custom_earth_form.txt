@@ -24,8 +24,8 @@
         }
         "02"
         {
-            "var_type"				"FIELD_FLOAT"
-            "time_for_earth_point"  "0.8 0.6 0.4"
+            "var_type"				"FIELD_INTEGER"
+            "str_bonus"             "40 60 80"
         }
         "03"
         {

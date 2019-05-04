@@ -1,13 +1,10 @@
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence"						    "<font color='#70EA72'>Earth Essence</font>"
-"DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_Description"			    "After walking %distance% units, grants an Earth Essence Stack. Each stack increases your strength."
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_Description"			    "After walking %distance% units, grants an Earth Essence Stack. Each stack increases your strength. Can be activated to consume all stacks, healing based on the amount of stacks and your max health."
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_Lore"				        "Earth Spirit calls forth a remnant of his stone army, long buried with him in the dark embrace of the Earth."
 "DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_str_bonus"			        "BONUS STRENGTH:"
-"DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_duration"				    "DURATION:"
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_hp_pct_heal"				"%HP HEAL:"
+"DOTA_Tooltip_Ability_earth_spirit_custom_earth_essence_max_stacks"				    "MAX STACKS:"
 
 
 "DOTA_Tooltip_modifier_earth_spirit_custom_earth_essence"                           "Earth Essence"
-"DOTA_Tooltip_modifier_earth_spirit_custom_earth_essence_Description"               "Earth Essence progress."
-
-
-"DOTA_Tooltip_modifier_earth_spirit_custom_str_hud"                                 "Earth Essence Stack"
-"DOTA_Tooltip_modifier_earth_spirit_custom_str_hud_Description"                     "Strength increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
+"DOTA_Tooltip_modifier_earth_spirit_custom_earth_essence_Description"               "Earth Essence stacks."
