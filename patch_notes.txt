@@ -2,7 +2,7 @@
 2.3.0:
     With this update:
 
-    Earth Spirit: Earth Essence no longer has a duration, but a limit on the amount of stacks.
+    Earth Spirit: Earth Essence no longer has a duration, but a limit on the amount of stacks. Can be activated to heal.
     Earth Spirit: Earth Form provides flat bonus STR instead of Earth Essences.
     
 
