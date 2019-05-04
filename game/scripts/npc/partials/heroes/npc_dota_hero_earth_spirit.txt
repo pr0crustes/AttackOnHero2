@@ -15,6 +15,6 @@
     "Ability13"		"special_bonus_gold_income_25"
     "Ability14"		"special_bonus_spell_amplify_15"
     "Ability15"		"special_bonus_magic_resistance_12"
-    "Ability16"		"special_bonus_agility_40"
+    "Ability16"		"special_bonus_movement_speed_100"
     "Ability17"		"earth_spirit_custom_bonus_unique_1"
 }
