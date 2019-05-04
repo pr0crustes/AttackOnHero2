@@ -12,6 +12,11 @@
 
     "AbilityCastAnimation"		    "ACT_DOTA_CAST_ABILITY_2"
 
+    "precache"
+    {
+        "particle"                  "particles/generic_gameplay/rune_haste_owner.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+    }
 
     "AbilitySpecial"
     {

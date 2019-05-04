@@ -13,6 +13,7 @@
     "precache"
     {
         "particle"                  "particles/custom/treantheal.vpcf"
+        "soundfile"                 "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
     }
 
     "AbilitySpecial"
