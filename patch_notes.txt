@@ -6,7 +6,7 @@
     Earth Spirit: Earth Form provides flat bonus STR instead of Earth Essences.
 
     Reduced Travel Boots Recipe cost from "2000" to "1000".
-    
+
 
 
 2.2.9:
@@ -26,7 +26,7 @@
     Reworked Mirana's W.
 
     Mirana Moonlight Shadow: Movement speed increased from "15" to "20 30 40", duration from "18" to "18 20 22".
-    Mirana Starfall: Damage increased from "75 150 225 300" to "75 190 270 390", cooldown changed from "12.0" to "13.0 12.0 11.0 10.0", scepter interval reduced from "10" to "4". 
+    Mirana Starfall: Damage increased from "75 150 225 300" to "75 190 270 390", cooldown changed from "12.0" to "13.0 12.0 11.0 10.0", scepter interval reduced from "10" to "4".
 
     Pudge Meat Hook: Range reduced to "500", scepter damage doubled.
 
@@ -36,7 +36,7 @@
 2.2.7:
     With this update:
 
-    Removed Leaving Penalties. Dev Note: As I said on the patch notes that enabled it, this was a test, and it is clear that without it is better, even if it means more leavers, I hope people stop messaging me asking to enable it. 
+    Removed Leaving Penalties. Dev Note: As I said on the patch notes that enabled it, this was a test, and it is clear that without it is better, even if it means more leavers, I hope people stop messaging me asking to enable it.
 
     Removed Tusk Aghs.
 
@@ -172,7 +172,7 @@
     Earthshaker Enchant Totem: Damage increased from "300 400 500 600" to "300 400 500 700".
     Earthshaker Aftershock: Damage increased from "75 100 125 150" to "75 100 225 350".
     Earthshaker Echo Slam: Cooldown reduced from "150.0 130.0 110.0" to "70.0 60.0 50.0", damage increased from "70 90 110" to "100 140 180".
-    
+
     Night Stalker Hunter in the Night: Attack speed increased from "50 100 200 300" to "100 200 300 400".
 
 
@@ -281,9 +281,9 @@
 
     New item: Corrupted Diffusal Blade.
 
-    Recoded Refresher, attempting to solve stats bug. 
+    Recoded Refresher, attempting to solve stats bug.
 
-    Recoded Dragon Scale, aura now applies to caster. 
+    Recoded Dragon Scale, aura now applies to caster.
 
     Recoded Formidable Chest, attempting to solve missing armor bug.
 
@@ -307,7 +307,7 @@
 2.1.3:
     With this update:
 
-    (FIXED) Added an end game screen with stats. Hopefully this works. 
+    (FIXED) Added an end game screen with stats. Hopefully this works.
     Special thanks to 'Angel Arena Black Star', project wich is open sourced under the Apache-2.0 license. This end game screen uses snippets from 'Angel Arena Black Star', respecting the project License. Without it I would not even know where to start codding this GUI.
 
     Added a discord link ingame, I am still working on improving it, but there you are able to directly contact me and discuss builds and so on with other players.
@@ -543,4 +543,4 @@
     Tidehunter Kraken Shell: Damage reduction increased from "12 24 36 48" to "20 40 60 80".
     Tidehunter Anchor Smash: Damage increased from "45 90 135 180" to "90 180 270 360", damage reduction reduced from "-30 -40 -50 -60" to "-5 -8 -12 -15".
     Tidehunter Ravage: Cooldown reduced from "150.0 150.0 150.0" to "100.0 95.0 90.0", damage increased from "200 300 400" to "700 1400 2100".
-    
+
