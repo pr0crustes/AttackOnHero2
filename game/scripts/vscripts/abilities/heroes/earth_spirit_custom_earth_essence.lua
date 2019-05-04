@@ -84,7 +84,7 @@ if IsServer() then
                 self.distance = self.distance + distance
 
                 local distance_value = ability:GetSpecialValueFor("distance")
-                local max_stacks = ability:GetSpecialValueFor("max_stacks")
+                local max_stacks = ability:GetSpecialValueFor("max_stacks") + talent_value(parent, "earth_spirit_custom_bonus_unique_1")
                 while self.distance >= distance_value do
                     self.distance = self.distance - distance_value
 

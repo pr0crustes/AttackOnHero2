@@ -1,1 +1,1 @@
-"DOTA_Tooltip_Ability_earth_spirit_custom_bonus_unique_1"          "+20s to Earth Essence duration"
+"DOTA_Tooltip_Ability_earth_spirit_custom_bonus_unique_1"          "+20 to Max Earth Essence"
